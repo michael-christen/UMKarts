@@ -1,0 +1,1065 @@
+#Build: Synplify Pro G-2012.09M-SP1 , Build 013R, Feb 15 2013
+#install: C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1
+#OS: Windows 7 6.1
+#Hostname: EECS373-01
+
+#Implementation: synthesis
+
+$ Start of Compile
+#Tue Oct 29 18:12:59 2013
+
+Synopsys Verilog Compiler, version comp201209rcp1, Build 245R, built Feb 20 2013
+@N|Running in 64-bit mode
+Copyright (C) 1994-2012 Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+
+@I::"C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v"
+@I::"C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\vlog\umr_capim.v"
+@I::"C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\vlog\scemi_objects.v"
+@I::"C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\vlog\scemi_pipes.svh"
+@I::"C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\vlog\hypermods.v"
+@I::"C:\Users\knekritz\Desktop\gc\gc\component\work\gc_MSS\mss_tshell.v"
+@I::"C:\Users\knekritz\Desktop\gc\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v"
+@I::"C:\Users\knekritz\Desktop\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v"
+@I::"C:\Users\knekritz\Desktop\gc\gc\component\work\gc_MSS\gc_MSS.v"
+@I::"C:\Users\knekritz\Desktop\gc\gc\hdl\query.v"
+@I::"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v"
+@I::"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v"
+@I::"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v"
+@I::"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v"
+@I::"C:\Users\knekritz\Desktop\gc\gc\component\work\gc\gc.v"
+@W: CG775 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Found Component CoreAPB3 in library COREAPB3_LIB
+Verilog syntax check successful!
+Selecting top level module gc
+@W: CG775 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Found Component CoreAPB3 in library COREAPB3_LIB
+@N: CG364 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v":13:0:13:5|Synthesizing module CAPB3l
+
+@N: CG364 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Synthesizing module CoreAPB3
+
+	APB_DWIDTH=6'b100000
+	IADDR_OPTION=32'b00000000000000000000000000000000
+	APBSLOT0ENABLE=1'b1
+	APBSLOT1ENABLE=1'b0
+	APBSLOT2ENABLE=1'b0
+	APBSLOT3ENABLE=1'b0
+	APBSLOT4ENABLE=1'b0
+	APBSLOT5ENABLE=1'b0
+	APBSLOT6ENABLE=1'b0
+	APBSLOT7ENABLE=1'b0
+	APBSLOT8ENABLE=1'b0
+	APBSLOT9ENABLE=1'b0
+	APBSLOT10ENABLE=1'b0
+	APBSLOT11ENABLE=1'b0
+	APBSLOT12ENABLE=1'b0
+	APBSLOT13ENABLE=1'b0
+	APBSLOT14ENABLE=1'b0
+	APBSLOT15ENABLE=1'b0
+	SC_0=1'b0
+	SC_1=1'b0
+	SC_2=1'b0
+	SC_3=1'b0
+	SC_4=1'b0
+	SC_5=1'b0
+	SC_6=1'b0
+	SC_7=1'b0
+	SC_8=1'b0
+	SC_9=1'b0
+	SC_10=1'b0
+	SC_11=1'b0
+	SC_12=1'b0
+	SC_13=1'b0
+	SC_14=1'b0
+	SC_15=1'b0
+	MADDR_BITS=6'b001100
+	UPR_NIBBLE_POSN=4'b0010
+	CAPB3I1I=32'b00000000000000000000000000000000
+	CAPB3l1I=32'b00000000000000000000000000000001
+	CAPB3OOl=32'b00000000000000000000000000000010
+	CAPB3IOl=32'b00000000000000000000000000000011
+	CAPB3lOl=32'b00000000000000000000000000000100
+	CAPB3OIl=32'b00000000000000000000000000000101
+	CAPB3IIl=32'b00000000000000000000000000000110
+	CAPB3lIl=32'b00000000000000000000000000000111
+	CAPB3Oll=32'b00000000000000000000000000001000
+	CAPB3Ill=32'b00000000000000000000000000001001
+	CAPB3lll=32'b00000000000000000000000000001010
+	CAPB3O0l=32'b00000000000000000000000000001011
+	CAPB3I0l=32'b00000000000000000000000000001100
+	CAPB3l0l=32'b00000000000000000000000000001101
+	CAPB3O1l=32'b00000000000000000000000000001110
+	CAPB3I1l=32'b00000000000000000000000000001111
+	CAPB3l1l=32'b00000000000000000000000000010000
+	CAPB3OO0=32'b00000000000000000000000000010001
+	CAPB3IO0=16'b0000000000000001
+	CAPB3lO0=16'b0000000000000000
+	CAPB3OI0=16'b0000000000000000
+	CAPB3II0=16'b0000000000000000
+	CAPB3lI0=16'b0000000000000000
+	CAPB3Ol0=16'b0000000000000000
+	CAPB3Il0=16'b0000000000000000
+	CAPB3ll0=16'b0000000000000000
+	CAPB3O00=16'b0000000000000000
+	CAPB3I00=16'b0000000000000000
+	CAPB3l00=16'b0000000000000000
+	CAPB3O10=16'b0000000000000000
+	CAPB3I10=16'b0000000000000000
+	CAPB3l10=16'b0000000000000000
+	CAPB3OO1=16'b0000000000000000
+	CAPB3IO1=16'b0000000000000000
+	CAPB3lO1=16'b0000000000000000
+	CAPB3OI1=16'b0000000000000000
+   Generated name = CoreAPB3_Z1
+
+@W: CG360 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":1477:0:1477:8|No assignment to wire CAPB3lIOI
+
+@N: CG364 :"C:\Users\knekritz\Desktop\gc\gc\component\work\gc_MSS\mss_tshell.v":1:7:1:13|Synthesizing module MSS_APB
+
+@N: CG364 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":151:7:151:13|Synthesizing module MSS_CCC
+
+@N: CG364 :"C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v":2620:7:2620:11|Synthesizing module RCOSC
+
+@N: CG364 :"C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v":1141:7:1141:9|Synthesizing module GND
+
+@N: CG364 :"C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v":1868:7:1868:9|Synthesizing module VCC
+
+@N: CG364 :"C:\Users\knekritz\Desktop\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":5:7:5:34|Synthesizing module gc_MSS_tmp_MSS_CCC_0_MSS_CCC
+
+@N: CG364 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":23:7:23:15|Synthesizing module INBUF_MSS
+
+@N: CG364 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":37:7:37:16|Synthesizing module OUTBUF_MSS
+
+@N: CG364 :"C:\Users\knekritz\Desktop\gc\gc\component\work\gc_MSS\gc_MSS.v":9:7:9:12|Synthesizing module gc_MSS
+
+@N: CG364 :"C:\Users\knekritz\Desktop\gc\gc\hdl\query.v":39:7:39:15|Synthesizing module clkdiv100
+
+@N: CG364 :"C:\Users\knekritz\Desktop\gc\gc\hdl\query.v":4:7:4:14|Synthesizing module gc_query
+
+@N: CG364 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":1:7:1:16|Synthesizing module gc_receive
+
+@N: CG179 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":28:25:28:43|Removing redundant assignment
+@N: CG179 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":40:25:40:43|Removing redundant assignment
+@N: CG364 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":46:7:46:21|Synthesizing module gc_response_apb
+
+@N: CG364 :"C:\Users\knekritz\Desktop\gc\gc\component\work\gc\gc.v":9:7:9:8|Synthesizing module gc
+
+@W: CL246 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":56:13:56:17|Input port bits 31 to 3 of PADDR[31:0] are unused
+
+@W: CL246 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":56:13:56:17|Input port bits 1 to 0 of PADDR[31:0] are unused
+
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":50:6:50:12|Input PRESERN is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":51:6:51:9|Input PSEL is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":52:6:52:12|Input PENABLE is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":55:6:55:11|Input PWRITE is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":57:18:57:23|Input PWDATA is unused
+@W: CL189 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit next_response[0] is always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 0 of next_response[63:0] 
+
+@W: CL189 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit next_response[1] is always 0, optimizing ...
+@W: CL189 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit response[0] is always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 0 of response[63:0] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 1 of next_response[63:1] 
+
+@W: CL189 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit next_response[2] is always 0, optimizing ...
+@W: CL189 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit response[1] is always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 1 of response[63:1] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 2 of next_response[63:2] 
+
+@W: CL189 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit next_response[3] is always 0, optimizing ...
+@W: CL189 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit response[2] is always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 2 of response[63:2] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 3 of next_response[63:3] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 1 always 0, optimizing ...
+@W: CL279 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bits 4 to 3 of response[63:3] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 4 of next_response[63:4] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 5 of response[63:5] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 5 of next_response[63:5] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 6 of response[63:6] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 6 of next_response[63:6] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 7 of response[63:7] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 7 of next_response[63:7] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 8 of response[63:8] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 8 of next_response[63:8] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 9 of response[63:9] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 9 of next_response[63:9] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 10 of response[63:10] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 10 of next_response[63:10] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 11 of response[63:11] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 11 of next_response[63:11] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 12 of response[63:12] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 12 of next_response[63:12] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 13 of response[63:13] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 13 of next_response[63:13] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 14 of response[63:14] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 14 of next_response[63:14] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 15 of response[63:15] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 15 of next_response[63:15] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 16 of response[63:16] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 16 of next_response[63:16] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 17 of response[63:17] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 17 of next_response[63:17] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 18 of response[63:18] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 18 of next_response[63:18] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 19 of response[63:19] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 19 of next_response[63:19] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 20 of response[63:20] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 20 of next_response[63:20] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 21 of response[63:21] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 21 of next_response[63:21] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 22 of response[63:22] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 22 of next_response[63:22] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 23 of response[63:23] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 23 of next_response[63:23] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 24 of response[63:24] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 24 of next_response[63:24] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 25 of response[63:25] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 25 of next_response[63:25] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 26 of response[63:26] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 26 of next_response[63:26] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 27 of response[63:27] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 27 of next_response[63:27] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 28 of response[63:28] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 28 of next_response[63:28] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 29 of response[63:29] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 29 of next_response[63:29] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 30 of response[63:30] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 30 of next_response[63:30] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 31 of response[63:31] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 31 of next_response[63:31] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 32 of response[63:32] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 32 of next_response[63:32] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 33 of response[63:33] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 33 of next_response[63:33] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 34 of response[63:34] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 34 of next_response[63:34] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 35 of response[63:35] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 35 of next_response[63:35] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 36 of response[63:36] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 36 of next_response[63:36] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 37 of response[63:37] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 37 of next_response[63:37] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 38 of response[63:38] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 38 of next_response[63:38] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 39 of response[63:39] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 39 of next_response[63:39] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 40 of response[63:40] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 40 of next_response[63:40] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 41 of response[63:41] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 41 of next_response[63:41] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 42 of response[63:42] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 42 of next_response[63:42] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 43 of response[63:43] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 43 of next_response[63:43] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 44 of response[63:44] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 44 of next_response[63:44] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 45 of response[63:45] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 45 of next_response[63:45] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 46 of response[63:46] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 46 of next_response[63:46] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 47 of response[63:47] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 47 of next_response[63:47] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 48 of response[63:48] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 48 of next_response[63:48] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 49 of response[63:49] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 49 of next_response[63:49] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 50 of response[63:50] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 50 of next_response[63:50] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 51 of response[63:51] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 51 of next_response[63:51] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 52 of response[63:52] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 52 of next_response[63:52] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 53 of response[63:53] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 53 of next_response[63:53] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 54 of response[63:54] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 54 of next_response[63:54] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 55 of response[63:55] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 55 of next_response[63:55] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 56 of response[63:56] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 56 of next_response[63:56] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 57 of response[63:57] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 57 of next_response[63:57] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 58 of response[63:58] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 58 of next_response[63:58] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 59 of response[63:59] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 59 of next_response[63:59] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 60 of response[63:60] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 60 of next_response[63:60] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 61 of response[63:61] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 61 of next_response[63:61] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 62 of response[63:62] 
+
+@W: CL260 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register bit 62 of next_response[63:62] 
+
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL257 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Register bit 0 always 0, optimizing ...
+@W: CL169 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register response[63] 
+
+@W: CL169 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register next_response[63] 
+
+@W: CL169 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register data1 
+
+@W: CL169 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register data2 
+
+@W: CL169 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":16:0:16:5|Pruning register start_count 
+
+@W: CL169 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register next_response_count[5:0] 
+
+@W: CL169 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":23:0:23:5|Pruning register count[6:0] 
+
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":1:18:1:20|Input clk is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":1:23:1:26|Input data is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\hdl\receive.v":1:29:1:32|Input send is unused
+@W: CL157 :"C:\Users\knekritz\Desktop\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":62:7:62:18|*Output RCOSC_CLKOUT has undriven bits -- simulation mismatch possible.
+@W: CL157 :"C:\Users\knekritz\Desktop\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":63:7:63:20|*Output MAINXIN_CLKOUT has undriven bits -- simulation mismatch possible.
+@W: CL157 :"C:\Users\knekritz\Desktop\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":64:7:64:18|*Output LPXIN_CLKOUT has undriven bits -- simulation mismatch possible.
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":36:7:36:10|Input CLKA is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":37:7:37:14|Input CLKA_PAD is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":38:7:38:15|Input CLKA_PADP is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":39:7:39:15|Input CLKA_PADN is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":40:7:40:10|Input CLKB is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":41:7:41:14|Input CLKB_PAD is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":42:7:42:15|Input CLKB_PADP is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":43:7:43:15|Input CLKB_PADN is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":44:7:44:10|Input CLKC is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":45:7:45:14|Input CLKC_PAD is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":46:7:46:15|Input CLKC_PADP is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":47:7:47:15|Input CLKC_PADN is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":48:7:48:13|Input MAINXIN is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":49:7:49:11|Input LPXIN is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":50:7:50:13|Input MAC_CLK is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":378:0:378:4|Input IADDR is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":380:0:380:6|Input PRESETN is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":382:0:382:3|Input PCLK is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":503:0:503:7|Input PRDATAS1 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":510:0:510:7|Input PRDATAS2 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":517:0:517:7|Input PRDATAS3 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":524:0:524:7|Input PRDATAS4 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":531:0:531:7|Input PRDATAS5 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":538:0:538:7|Input PRDATAS6 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":545:0:545:7|Input PRDATAS7 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":552:0:552:7|Input PRDATAS8 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":559:0:559:7|Input PRDATAS9 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":566:0:566:8|Input PRDATAS10 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":573:0:573:8|Input PRDATAS11 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":580:0:580:8|Input PRDATAS12 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":587:0:587:8|Input PRDATAS13 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":594:0:594:8|Input PRDATAS14 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":601:0:601:8|Input PRDATAS15 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":612:0:612:7|Input PREADYS1 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":614:0:614:7|Input PREADYS2 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":616:0:616:7|Input PREADYS3 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":618:0:618:7|Input PREADYS4 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":620:0:620:7|Input PREADYS5 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":622:0:622:7|Input PREADYS6 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":624:0:624:7|Input PREADYS7 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":626:0:626:7|Input PREADYS8 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":628:0:628:7|Input PREADYS9 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":630:0:630:8|Input PREADYS10 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":632:0:632:8|Input PREADYS11 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":634:0:634:8|Input PREADYS12 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":636:0:636:8|Input PREADYS13 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":638:0:638:8|Input PREADYS14 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":640:0:640:8|Input PREADYS15 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":646:0:646:8|Input PSLVERRS1 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":648:0:648:8|Input PSLVERRS2 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":650:0:650:8|Input PSLVERRS3 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":652:0:652:8|Input PSLVERRS4 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":654:0:654:8|Input PSLVERRS5 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":656:0:656:8|Input PSLVERRS6 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":658:0:658:8|Input PSLVERRS7 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":660:0:660:8|Input PSLVERRS8 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":662:0:662:8|Input PSLVERRS9 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":664:0:664:9|Input PSLVERRS10 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":666:0:666:9|Input PSLVERRS11 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":668:0:668:9|Input PSLVERRS12 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":670:0:670:9|Input PSLVERRS13 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":672:0:672:9|Input PSLVERRS14 is unused
+@W: CL159 :"C:\Users\knekritz\Desktop\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":674:0:674:9|Input PSLVERRS15 is unused
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Oct 29 18:12:59 2013
+
+###########################################################]
+Premap Report
+
+Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 904R, Built Feb 15 2013 10:53:22
+Copyright (C) 1994-2012, Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version G-2012.09M-SP1 
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 92MB)
+
+Reading constraint file: C:\Users\knekritz\Desktop\gc\gc\component\work\gc_MSS\mss_tshell_syn.sdc
+@L: C:\Users\knekritz\Desktop\gc\gc\synthesis\gc_scck.rpt 
+Printing clock  summary report in "C:\Users\knekritz\Desktop\gc\gc\synthesis\gc_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 93MB peak: 94MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 93MB peak: 94MB)
+
+@W: BN522 |Property syn_clock_priority is not supported for this target technology
+Finished Pre Mapping Phase.@N: BN225 |Writing default property annotation file C:\Users\knekritz\Desktop\gc\gc\synthesis\gc.sap.
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 40MB peak: 105MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Oct 29 18:13:01 2013
+
+###########################################################]
+Map & Optimize Report
+
+Synopsys Microsemi Technology Mapper, Version mapact, Build 904R, Built Feb 15 2013 10:53:22
+Copyright (C) 1994-2012, Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version G-2012.09M-SP1 
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 92MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 92MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 92MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 102MB)
+
+@W: MO111 :"c:\users\knekritz\desktop\gc\gc\component\work\gc_mss\mss_ccc_0\gc_mss_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT on net LPXIN_CLKOUT has its enable tied to GND (module gc_MSS_tmp_MSS_CCC_0_MSS_CCC) 
+@W: MO111 :"c:\users\knekritz\desktop\gc\gc\component\work\gc_mss\mss_ccc_0\gc_mss_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT on net MAINXIN_CLKOUT has its enable tied to GND (module gc_MSS_tmp_MSS_CCC_0_MSS_CCC) 
+@W: MO111 :"c:\users\knekritz\desktop\gc\gc\component\work\gc_mss\mss_ccc_0\gc_mss_tmp_mss_ccc_0_mss_ccc.v":62:7:62:18|Tristate driver RCOSC_CLKOUT on net RCOSC_CLKOUT has its enable tied to GND (module gc_MSS_tmp_MSS_CCC_0_MSS_CCC) 
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@W: MT462 :"c:\users\knekritz\desktop\gc\gc\hdl\query.v":52:6:52:16|Net gc_query_0.II_0.clkout6 appears to be an unidentified clock source. Assuming default frequency. 
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 103MB)
+
+@N:"c:\users\knekritz\desktop\gc\gc\hdl\query.v":13:0:13:5|Found counter in view:work.gc_query(verilog) inst count[12:0]
+@N: MF238 :"c:\users\knekritz\desktop\gc\gc\hdl\query.v":48:12:48:21|Found 7-bit incrementor, 'un3_count_1[6:0]'
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 103MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 103MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 103MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 103MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 103MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 103MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 103MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 103MB)
+
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 103MB)
+
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 103MB)
+
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+1 non-gated/non-generated clock tree(s) driving 7 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 13 clock pin(s) of sequential element(s)
+0 instances converted, 13 sequential instances remain driven by gated/generated clocks
+
+================================ Non-Gated/Non-Generated Clocks ================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance         
+------------------------------------------------------------------------------------------------
+@K:CKID0002       gc_MSS_0            hierarchy              7          gc_query_0.II_0.count[6]
+================================================================================================
+========================================================== Gated/Generated Clocks ==========================================================
+Clock Tree ID     Driving Element                       Drive Element Type     Fanout     Sample Instance          Explanation              
+--------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       gc_query_0.II_0.count_RNIPTVK2[6]     AO1                    13         gc_query_0.count[10]     No clocks found on inputs
+============================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+Writing Analyst data base C:\Users\knekritz\Desktop\gc\gc\synthesis\gc.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 103MB)
+
+Writing EDIF Netlist and constraint files
+G-2012.09M-SP1 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 103MB)
+
+Found clock FAB_CLK with period 10.00ns 
+Found clock FCLK with period 10.00ns 
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Tue Oct 29 18:13:03 2013
+#
+
+
+Top view:               gc
+Library name:           smartfusion
+Operating conditions:   COMWC-1 ( T = 70.0, V = 1.42, P = 1.48, tree_type = balanced_tree )
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Wire load model:        smartfusion
+Paths requested:        5
+Constraint File(s):    C:\Users\knekritz\Desktop\gc\gc\component\work\gc_MSS\mss_tshell_syn.sdc
+                       
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: 0.238
+
+                   Requested     Estimated     Requested     Estimated               Clock        Clock          
+Starting Clock     Frequency     Frequency     Period        Period        Slack     Type         Group          
+-----------------------------------------------------------------------------------------------------------------
+FAB_CLK            100.0 MHz     181.7 MHz     10.000        5.503         4.497     declared     clk_group_0    
+FCLK               100.0 MHz     NA            10.000        NA            NA        declared     clk_group_0    
+System             100.0 MHz     102.4 MHz     10.000        9.762         0.238     system       system_clkgroup
+=================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks             |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+---------------------------------------------------------------------------------------------------------
+Starting  Ending   |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+---------------------------------------------------------------------------------------------------------
+System    System   |  10.000      9.726  |  10.000      0.238  |  No paths    -      |  No paths    -    
+FAB_CLK   FAB_CLK  |  10.000      4.497  |  No paths    -      |  No paths    -      |  No paths    -    
+=========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: FAB_CLK
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                             Starting                                    Arrival          
+Instance                     Reference     Type     Pin     Net          Time        Slack
+                             Clock                                                        
+------------------------------------------------------------------------------------------
+gc_query_0.II_0.count[1]     FAB_CLK       DFN1     Q       count[1]     0.627       4.497
+gc_query_0.II_0.count[0]     FAB_CLK       DFN1     Q       count[0]     0.627       4.565
+gc_query_0.II_0.count[3]     FAB_CLK       DFN1     Q       count[3]     0.627       4.615
+gc_query_0.II_0.count[2]     FAB_CLK       DFN1     Q       count[2]     0.627       4.624
+gc_query_0.II_0.count[4]     FAB_CLK       DFN1     Q       count[4]     0.627       4.928
+gc_query_0.II_0.count[5]     FAB_CLK       DFN1     Q       count[5]     0.627       5.288
+gc_query_0.II_0.count[6]     FAB_CLK       DFN1     Q       count[6]     0.627       5.639
+==========================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                             Starting                                      Required          
+Instance                     Reference     Type     Pin     Net            Time         Slack
+                             Clock                                                           
+---------------------------------------------------------------------------------------------
+gc_query_0.II_0.count[2]     FAB_CLK       DFN1     D       count_3[2]     9.512        4.497
+gc_query_0.II_0.count[5]     FAB_CLK       DFN1     D       count_3[5]     9.512        4.497
+gc_query_0.II_0.count[6]     FAB_CLK       DFN1     D       count_3[6]     9.512        4.497
+gc_query_0.II_0.count[0]     FAB_CLK       DFN1     D       count_3[0]     9.512        4.522
+gc_query_0.II_0.count[4]     FAB_CLK       DFN1     D       I_12           9.542        5.004
+gc_query_0.II_0.count[3]     FAB_CLK       DFN1     D       I_9            9.542        6.224
+gc_query_0.II_0.count[1]     FAB_CLK       DFN1     D       I_5            9.542        6.633
+=============================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.488
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.512
+
+    - Propagation time:                      5.015
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 4.497
+
+    Number of logic level(s):                3
+    Starting point:                          gc_query_0.II_0.count[1] / Q
+    Ending point:                            gc_query_0.II_0.count[2] / D
+    The start point is clocked by            FAB_CLK [rising] on pin CLK
+    The end   point is clocked by            FAB_CLK [rising] on pin CLK
+
+Instance / Net                                  Pin      Pin               Arrival     No. of    
+Name                                  Type      Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------
+gc_query_0.II_0.count[1]              DFN1      Q        Out     0.627     0.627       -         
+count[1]                              Net       -        -       1.211     -           6         
+gc_query_0.II_0.count_RNIS19O[1]      NOR2      B        In      -         1.838       -         
+gc_query_0.II_0.count_RNIS19O[1]      NOR2      Y        Out     0.550     2.388       -         
+count11_2                             Net       -        -       0.274     -           1         
+gc_query_0.II_0.count_RNIQ5IG1[2]     NOR3B     B        In      -         2.662       -         
+gc_query_0.II_0.count_RNIQ5IG1[2]     NOR3B     Y        Out     0.531     3.193       -         
+count11_4                             Net       -        -       1.007     -           4         
+gc_query_0.II_0.count_RNO[2]          AOI1B     A        In      -         4.200       -         
+gc_query_0.II_0.count_RNO[2]          AOI1B     Y        Out     0.541     4.741       -         
+count_3[2]                            Net       -        -       0.274     -           1         
+gc_query_0.II_0.count[2]              DFN1      D        In      -         5.015       -         
+=================================================================================================
+Total path delay (propagation time + setup) of 5.503 is 2.737(49.7%) logic and 2.766(50.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                        Starting                                      Arrival          
+Instance                Reference     Type       Pin     Net          Time        Slack
+                        Clock                                                          
+---------------------------------------------------------------------------------------
+gc_query_0.count[0]     System        DFN0       Q       count[0]     0.448       0.238
+gc_query_0.count[2]     System        DFN0       Q       count[2]     0.448       0.241
+gc_query_0.count[1]     System        DFN0       Q       count[1]     0.448       0.277
+gc_query_0.count[3]     System        DFN0       Q       count[3]     0.448       0.568
+gc_query_0.count[4]     System        DFN0       Q       count[4]     0.448       0.912
+gc_query_0.count[5]     System        DFN0       Q       count[5]     0.448       1.723
+gc_query_0.count[6]     System        DFN0       Q       count[6]     0.448       1.828
+gc_query_0.count[7]     System        DFN0       Q       count[7]     0.448       4.104
+gc_query_0.count[8]     System        DFN0E0     Q       count[8]     0.448       4.982
+gc_query_0.count[9]     System        DFN0E0     Q       count[9]     0.448       5.861
+=======================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                         Starting                                    Required          
+Instance                 Reference     Type       Pin     Net        Time         Slack
+                         Clock                                                         
+---------------------------------------------------------------------------------------
+gc_query_0.count[12]     System        DFN0E0     E       N_39       9.482        0.238
+gc_query_0.count[11]     System        DFN0E0     E       N_31       9.482        1.062
+gc_query_0.count[10]     System        DFN0E0     E       N_30       9.482        1.940
+gc_query_0.count[9]      System        DFN0E0     E       N_29       9.482        2.818
+gc_query_0.count[8]      System        DFN0E0     E       N_28       9.482        3.697
+gc_query_0.count[7]      System        DFN0       D       N_43_i     9.394        3.797
+gc_query_0.count[6]      System        DFN0       D       N_42_i     9.394        4.247
+gc_query_0.count[5]      System        DFN0       D       N_41_i     9.394        4.676
+gc_query_0.count[4]      System        DFN0       D       N_40_i     9.394        5.399
+gc_query_0.count[3]      System        DFN0       D       N_38_i     9.394        5.828
+=======================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.518
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         9.482
+
+    - Propagation time:                      9.244
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (critical) :                     0.238
+
+    Number of logic level(s):                8
+    Starting point:                          gc_query_0.count[0] / Q
+    Ending point:                            gc_query_0.count[12] / E
+    The start point is clocked by            System [falling] on pin CLK
+    The end   point is clocked by            System [falling] on pin CLK
+
+Instance / Net                               Pin      Pin               Arrival     No. of    
+Name                              Type       Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------
+gc_query_0.count[0]               DFN0       Q        Out     0.448     0.448       -         
+count[0]                          Net        -        -       1.211     -           6         
+gc_query_0.count_RNIAT9N[1]       OR3C       A        In      -         1.659       -         
+gc_query_0.count_RNIAT9N[1]       OR3C       Y        Out     0.447     2.106       -         
+N_22                              Net        -        -       0.686     -           3         
+gc_query_0.count_RNIBBR61[1]      OR2        B        In      -         2.792       -         
+gc_query_0.count_RNIBBR61[1]      OR2        Y        Out     0.550     3.342       -         
+N_24                              Net        -        -       0.686     -           3         
+gc_query_0.count_RNIGTCM1[6]      OR2        B        In      -         4.029       -         
+gc_query_0.count_RNIGTCM1[6]      OR2        Y        Out     0.550     4.579       -         
+N_26                              Net        -        -       0.328     -           2         
+gc_query_0.count_RNI4O5U1[7]      OR2A       B        In      -         4.907       -         
+gc_query_0.count_RNI4O5U1[7]      OR2A       Y        Out     0.550     5.457       -         
+N_28                              Net        -        -       0.328     -           2         
+gc_query_0.count_RNIPJU52[8]      OR2A       B        In      -         5.785       -         
+gc_query_0.count_RNIPJU52[8]      OR2A       Y        Out     0.550     6.336       -         
+N_29                              Net        -        -       0.328     -           2         
+gc_query_0.count_RNIFGND2[9]      OR2A       B        In      -         6.664       -         
+gc_query_0.count_RNIFGND2[9]      OR2A       Y        Out     0.550     7.214       -         
+N_30                              Net        -        -       0.328     -           2         
+gc_query_0.count_RNID73E2[10]     OR2A       B        In      -         7.542       -         
+gc_query_0.count_RNID73E2[10]     OR2A       Y        Out     0.550     8.092       -         
+N_31                              Net        -        -       0.328     -           2         
+gc_query_0.count_RNO_0[12]        OR2A       B        In      -         8.421       -         
+gc_query_0.count_RNO_0[12]        OR2A       Y        Out     0.550     8.971       -         
+N_39                              Net        -        -       0.274     -           1         
+gc_query_0.count[12]              DFN0E0     E        In      -         9.244       -         
+==============================================================================================
+Total path delay (propagation time + setup) of 9.762 is 5.263(53.9%) logic and 4.499(46.1%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+--------------------------------------------------------------------------------
+Target Part: A2F200M3F_FBGA484_-1
+Report for cell gc.verilog
+  Core Cell usage:
+              cell count     area count*area
+              AND2     1      1.0        1.0
+              AND3     4      1.0        4.0
+               AO1     2      1.0        2.0
+              AO13     1      1.0        1.0
+              AOI1     1      1.0        1.0
+             AOI1B     3      1.0        3.0
+               AX1     2      1.0        2.0
+              AX1C     1      1.0        1.0
+               GND     5      0.0        0.0
+               INV     6      1.0        6.0
+           MSS_APB     1      0.0        0.0
+           MSS_CCC     1      0.0        0.0
+              NOR2     1      1.0        1.0
+             NOR2A     3      1.0        3.0
+             NOR2B     3      1.0        3.0
+              NOR3     1      1.0        1.0
+             NOR3B     5      1.0        5.0
+              OA1B     1      1.0        1.0
+               OR2     7      1.0        7.0
+              OR2A     5      1.0        5.0
+              OR2B     2      1.0        2.0
+               OR3     3      1.0        3.0
+              OR3C     1      1.0        1.0
+             RCOSC     1      0.0        0.0
+               VCC     5      0.0        0.0
+             XNOR2     3      1.0        3.0
+              XOR2     7      1.0        7.0
+
+
+              DFN0     8      1.0        8.0
+            DFN0E0     5      1.0        5.0
+              DFN1     7      1.0        7.0
+                   -----          ----------
+             TOTAL    96                83.0
+
+
+  IO Cell usage:
+              cell count
+         INBUF_MSS     2
+        OUTBUF_MSS     1
+           TRIBUFF     1
+                   -----
+             TOTAL     4
+
+
+Core Cells         : 83 of 4608 (2%)
+IO Cells           : 4
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 8 (0%)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 40MB peak: 103MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Oct 29 18:13:03 2013
+
+###########################################################]

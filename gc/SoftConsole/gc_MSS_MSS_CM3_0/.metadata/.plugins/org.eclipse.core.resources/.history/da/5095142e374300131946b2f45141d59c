@@ -1,0 +1,92 @@
+#include <stdio.h>
+#include <stdint.h>
+
+typedef struct
+{
+
+
+
+	int8_t right : 8;
+	int8_t left : 8;
+
+    int8_t cstick_x : 8;
+    int8_t cstick_y : 8;
+
+
+
+
+
+
+    int8_t joystick_x : 8;
+    int8_t joystick_y : 8;
+
+    _Bool empty4 : 1;
+    _Bool l : 1;
+    _Bool r : 1;
+    _Bool z : 1;
+    _Bool d_up : 1;
+    _Bool d_down : 1;
+    _Bool d_right : 1;
+    _Bool d_left : 1;
+
+    _Bool a : 1;
+    _Bool b : 1;
+    _Bool x : 1;
+    _Bool y : 1;
+    _Bool start : 1;
+	_Bool empty1 : 1;
+    _Bool empty2 : 1;
+    _Bool empty3 : 1;
+
+
+
+
+
+} gc_t;
+
+gc_t * GC;
+
+void print_gc() {
+	if (GC->start)
+		printf("Start ");
+	if (GC->y)
+		printf("Y ");
+	if (GC->x)
+		printf("X ");
+	if (GC->b)
+		printf("B ");
+	if (GC->a)
+		printf("A ");
+	if (GC->l)
+		printf("L ");
+	if (GC->r)
+		printf("R ");
+	if (GC->z)
+		printf("Z ");
+	if (GC->d_up)
+		printf("UP ");
+	if (GC->d_down)
+		printf("DOWN ");
+	if (GC->d_right)
+		printf("RIGHT ");
+	if (GC->d_left)
+		printf("LEFT ");
+	printf("\n\r");
+	printf("Joystick X: %d, Y: %d\n\r", GC->joystick_x, GC->joystick_y);
+	printf("C stick X: %d, Y: %d\n\r", GC->cstick_x, GC->cstick_y);
+	printf("Trigger Pressure Left: %d, Right: %d\n\r", GC->left, GC->right);
+}
+
+int main()
+{
+	volatile int d = 0;
+	uint32_t *mem = (uint32_t *) malloc(8);
+	GC = (gc_t *) mem;
+	while( 1 )
+	{
+		mem[0] = (volatile int) *((volatile int *)0x40050000);
+		mem[1] = (volatile int) *((volatile int *)0x40050004);
+		print_gc();
+		for (d = 0; d < 1000000; d++);
+	}
+}

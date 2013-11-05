@@ -1,0 +1,80 @@
+Actel Designer Software
+Version: 11.0.0.23
+Release: v11.0
+
+Info: The design gc.adb was last modified by software version 11.0.0.23.
+Opened an existing Libero design gc.adb.
+'BA_NAME' set to 'gc_ba'
+'IDE_DESIGNERVIEW_NAME' set to 'Impl1'
+'IDE_DESIGNERVIEW_COUNT' set to '1'
+'IDE_DESIGNERVIEW_REV0' set to 'Impl1'
+'IDE_DESIGNERVIEW_REVNUM0' set to '1'
+'IDE_DESIGNERVIEW_ROOTDIR' set to 'C:\Users\mikechri\Downloads\gc\gc\designer'
+'IDE_DESIGNERVIEW_LASTREV' set to '1'
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+Info: I/O Bank Assigner detected (1) out of (6) I/O Bank(s) with locked I/O technologies.
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+
+Planning global net placement...
+
+
+Global net placement completed successfully.
+
+                        o - o - o - o - o - o
+
+Timing-driven Placer Started: Sun Nov 03 20:30:33 2013
+
+Placer Finished: Sun Nov 03 20:30:52 2013
+Total Placer CPU Time:     00:00:19
+
+                        o - o - o - o - o - o
+
+
+Timing-driven Router 
+Design: gc                              Started: Sun Nov 03 20:30:58 2013
+
+ 
+Iterative improvement...
+
+Timing-driven Router completed successfully.
+
+Design: gc                              
+Finished: Sun Nov 03 20:31:17 2013
+Total CPU Time:     00:00:19            Total Elapsed Time: 00:00:19
+Total Memory Usage: 166.0 Mbytes
+                        o - o - o - o - o - o
+
+Loading the Timing data for the design.
+Finished loading the Timing data.
+TIMER: Max delay timing requirements have NOT been met.
+TIMER: Min delay timing requirements have been met.
+
+The Layout command succeeded ( 00:00:53 )
+Wrote status report to file: gc_place_and_route_report.txt
+
+The Report command succeeded ( 00:00:00 )
+Wrote globalnet report to file: gc_globalnet_report.txt
+
+The Report command succeeded ( 00:00:00 )
+Wrote globalusage report to file: gc_globalusage_report.txt
+
+The Report command succeeded ( 00:00:00 )
+Wrote iobank report to file: gc_iobank_report.txt
+
+The Report command succeeded ( 00:00:01 )
+Design saved to file C:\Users\mikechri\Downloads\gc\gc\designer\impl1\gc.adb.
+
+The Execute Script command succeeded ( 00:00:57 )
+Design closed.
+

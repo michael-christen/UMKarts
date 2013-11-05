@@ -1,0 +1,65 @@
+
+Starting:    C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\win64\mbin\synbatch.exe
+Install:     C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1
+Date:        Sun Nov 03 20:30:01 2013
+Version:     G-2012.09M-SP1 
+
+Arguments:   -product synplify_pro  -licensetype synplifypro_actel -batch -log synplify.log gc_syn.tcl
+ProductType: synplify_pro
+
+License checkout: synplifypro_actel
+License: synplifypro_actel node-locked 
+Licensed Vendor: actel
+License Option: actel_oem
+
+Running in Vendor Mode
+
+
+
+log file: "C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.srr"
+
+
+Running gc_syn|synthesis
+
+Running Compile on gc_syn|synthesis
+
+Running Compile Process on gc_syn|synthesis
+
+Running Compile Input on gc_syn|synthesis
+
+Copied C:\Users\mikechri\Downloads\gc\gc\synthesis\synwork\gc_compiler.srs to C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.srs
+
+compiler Completed with warnings
+Return Code: 1
+Run Time:0h:00m:02s
+
+
+Job Compile Process completed on gc_syn|synthesis
+
+Running Premap on gc_syn|synthesis
+
+premap Completed with warnings
+Return Code: 1
+Run Time:0h:00m:00s
+
+
+Job Compile completed on gc_syn|synthesis
+
+Running Map on gc_syn|synthesis
+
+Running Map & Optimize on gc_syn|synthesis
+
+fpga_mapper Completed with warnings
+Return Code: 1
+Run Time:0h:00m:03s
+
+
+Job Map completed on gc_syn|synthesis
+
+Job Logic Synthesis completed on gc_syn|synthesis
+
+TCL script complete: "gc_syn.tcl"
+
+exit status=0
+
+

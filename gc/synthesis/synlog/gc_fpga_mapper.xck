@@ -1,0 +1,3 @@
+CKID0001:@|S:send_query_0.II_0.clockout@|E:send_query_0.send@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001
+CKID0002:@|S:CAPTURE_SWITCH@|E:motorWrapper_0.motor_0.capture_status_async@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002
+CKID0003:@|S:gc_MSS_0@|E:send_query_0.reset_count[7]@|F:@syn_sample_clock_path==CKID0003@|M:ClockId0003

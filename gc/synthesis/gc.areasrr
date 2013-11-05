@@ -1,0 +1,215 @@
+----------------------------------------------------------------------
+Report for cell gc.verilog
+                                          Cell usage:
+                               cell       count     area    count*area
+                              BIBUF         1       0.0        0.0
+                               BUFF         1       1.0        1.0
+                        CoreAPB3_Z1         1      64.0       64.0
+                                GND         1       0.0        0.0
+                              INBUF         1       0.0        0.0
+                             OUTBUF         9       0.0        0.0
+                                VCC         1       0.0        0.0
+                             gc_MSS         1       7.0        7.0
+                         gc_receive         1     197.0      197.0
+                    gc_response_apb         1      66.0       66.0
+                       motorWrapper         1     958.0      958.0
+                         send_query         1     156.0      156.0
+                            
+                         TOTAL             20               1449.0
+----------------------------------------------------------------------
+Report for cell send_query.netlist
+     Instance path:  send_query_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2         2       1.0        2.0
+                               AND3        13       1.0       13.0
+                                AO1         5       1.0        5.0
+                               AO1A         2       1.0        2.0
+                              AOI1B         2       1.0        2.0
+                               AXO1         1       1.0        1.0
+                               AXO5         1       1.0        1.0
+                               DFN1        24       1.0       24.0
+                                GND         1       0.0        0.0
+                               NOR2         5       1.0        5.0
+                              NOR2A        14       1.0       14.0
+                              NOR2B         5       1.0        5.0
+                              NOR3A         2       1.0        2.0
+                              NOR3B         5       1.0        5.0
+                              NOR3C         4       1.0        4.0
+                                OR2         7       1.0        7.0
+                               OR2A         3       1.0        3.0
+                               OR2B         1       1.0        1.0
+                                OR3        10       1.0       10.0
+                                VCC         1       0.0        0.0
+                              XNOR2         7       1.0        7.0
+                               XOR2        12       1.0       12.0
+                           clockdiv         1      31.0       31.0
+                            
+                         TOTAL            128                156.0
+----------------------------------------------------------------------
+Report for cell clockdiv.netlist
+     Instance path:  send_query_0.II_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2         1       1.0        1.0
+                               AND3         4       1.0        4.0
+                                AO1         1       1.0        1.0
+                               DFN1         8       1.0        8.0
+                                GND         1       0.0        0.0
+                              NOR2B         4       1.0        4.0
+                               NOR3         1       1.0        1.0
+                                OA1         3       1.0        3.0
+                               OA1B         1       1.0        1.0
+                               OR2B         1       1.0        1.0
+                                OR3         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                               XOR2         6       1.0        6.0
+                            
+                         TOTAL             33                 31.0
+----------------------------------------------------------------------
+Report for cell motorWrapper.netlist
+     Instance path:  motorWrapper_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                                GND         1       0.0        0.0
+                               NOR2         1       1.0        1.0
+                              NOR2A         2       1.0        2.0
+                              NOR2B         6       1.0        6.0
+                                VCC         1       0.0        0.0
+                              motor         1     949.0      949.0
+                            
+                         TOTAL             12                958.0
+----------------------------------------------------------------------
+Report for cell motor.netlist
+     Instance path:  motorWrapper_0.motor_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                                AO1         3       1.0        3.0
+                               AO1A         3       1.0        3.0
+                               AO1C         1       1.0        1.0
+                               AOI1         1       1.0        1.0
+                              AOI1B         2       1.0        2.0
+                               AX1A         1       1.0        1.0
+                               AX1E         2       1.0        2.0
+                               DFN1       104       1.0      104.0
+                             DFN1C0         3       1.0        3.0
+                           DFN1E0C1        33       1.0       33.0
+                             DFN1E1        96       1.0       96.0
+                           DFN1E1C0        32       1.0       32.0
+                             DFN1P0         1       1.0        1.0
+                                GND         1       0.0        0.0
+                                INV         1       1.0        1.0
+                                MX2       281       1.0      281.0
+                               MX2A        17       1.0       17.0
+                               NOR2         5       1.0        5.0
+                              NOR2A        20       1.0       20.0
+                              NOR2B       161       1.0      161.0
+                               NOR3         1       1.0        1.0
+                              NOR3A         8       1.0        8.0
+                              NOR3B         4       1.0        4.0
+                              NOR3C        17       1.0       17.0
+                               OA1B         1       1.0        1.0
+                               OA1C         4       1.0        4.0
+                                OR2         3       1.0        3.0
+                               OR2A        26       1.0       26.0
+                               OR2B         3       1.0        3.0
+                                OR3        21       1.0       21.0
+                               OR3B         4       1.0        4.0
+                               OR3C         3       1.0        3.0
+                                VCC         1       0.0        0.0
+                               XA1B         8       1.0        8.0
+                               XA1C        15       1.0       15.0
+                                XO1        21       1.0       21.0
+                               XOR2        43       1.0       43.0
+                            
+                         TOTAL            951                949.0
+----------------------------------------------------------------------
+Report for cell gc_response_apb.netlist
+     Instance path:  gc_response_apb_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                               DFN1        33       1.0       33.0
+                                GND         1       0.0        0.0
+                                MX2        32       1.0       32.0
+                              NOR3B         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                            
+                         TOTAL             68                 66.0
+----------------------------------------------------------------------
+Report for cell gc_receive.netlist
+     Instance path:  gc_receive_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2         3       1.0        3.0
+                                AO1         1       1.0        1.0
+                               AO1B         1       1.0        1.0
+                               AX1A         1       1.0        1.0
+                               AX1E         1       1.0        1.0
+                             CLKINT         1       0.0        0.0
+                               DFN1        10       1.0       10.0
+                             DFN1E0        63       1.0       63.0
+                             DFN1E1        70       1.0       70.0
+                                GND         1       0.0        0.0
+                              NOR2A         3       1.0        3.0
+                              NOR2B         8       1.0        8.0
+                               NOR3         8       1.0        8.0
+                              NOR3A         1       1.0        1.0
+                              NOR3B         1       1.0        1.0
+                              NOR3C         1       1.0        1.0
+                               OA1A         3       1.0        3.0
+                                OR2         5       1.0        5.0
+                               OR2A         3       1.0        3.0
+                                OR3         1       1.0        1.0
+                               OR3C         2       1.0        2.0
+                                VCC         1       0.0        0.0
+                              XNOR2         1       1.0        1.0
+                               XOR2        10       1.0       10.0
+                            
+                         TOTAL            200                197.0
+----------------------------------------------------------------------
+Report for cell gc_MSS.netlist
+     Instance path:  gc_MSS_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                               BUFF         7       1.0        7.0
+                             CLKINT         2       0.0        0.0
+                                GND         1       0.0        0.0
+                          INBUF_MSS         2       0.0        0.0
+                            MSS_APB         1       0.0        0.0
+                         OUTBUF_MSS         1       0.0        0.0
+                                VCC         1       0.0        0.0
+          gc_MSS_tmp_MSS_CCC_0_MSS_CCC         1       0.0        0.0
+                            
+                         TOTAL             16                  7.0
+----------------------------------------------------------------------
+Report for cell gc_MSS_tmp_MSS_CCC_0_MSS_CCC.netlist
+     Instance path:  gc_MSS_0.MSS_CCC_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                                GND         1       0.0        0.0
+                            MSS_CCC         1       0.0        0.0
+                              RCOSC         1       0.0        0.0
+                                VCC         1       0.0        0.0
+                            
+                         TOTAL              4                  0.0
+----------------------------------------------------------------------
+Report for cell CoreAPB3_Z1.netlist
+     Instance path:  CoreAPB3_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                             CAPB3l         1      64.0       64.0
+                                GND         1       0.0        0.0
+                                VCC         1       0.0        0.0
+                            
+                         TOTAL              3                 64.0
+----------------------------------------------------------------------
+Report for cell CAPB3l.netlist
+     Instance path:  CoreAPB3_0.CAPB3lOII
+                                          Cell usage:
+                               cell       count     area    count*area
+                                AO1        32       1.0       32.0
+                                GND         1       0.0        0.0
+                              NOR3B        32       1.0       32.0
+                                VCC         1       0.0        0.0
+                            
+                         TOTAL             66                 64.0
