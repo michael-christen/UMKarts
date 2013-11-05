@@ -8,13 +8,15 @@ typedef struct
 	_Bool empty1 : 1;
     _Bool empty2 : 1;
     _Bool empty3 : 1;
+    // temp hack for wavebird
+    _Bool empty4 : 1;
     _Bool start : 1;
     _Bool y : 1;
     _Bool x : 1;
     _Bool b : 1;
     _Bool a : 1;
 
-	_Bool empty4 : 1;
+	_Bool empty5 : 1;
     _Bool l : 1;
     _Bool r : 1;
     _Bool z : 1;

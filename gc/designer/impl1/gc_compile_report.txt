@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Sun Nov 03 20:30:26 2013 ***************************************************************************
+                          Tue Nov 05 13:22:10 2013 ***************************************************************************
 
 Product: Designer
 Release: v11.0
 Version: 11.0.0.23
 File Name: C:\Users\mikechri\Downloads\gc\gc\designer\impl1\gc.adb
 Design Name: gc  Design State: compile
-Last Saved: Sun Nov 03 20:26:00 2013
+Last Saved: Tue Nov 05 13:02:09 2013
 
 ***** Device Data **************************************************
 
@@ -22,7 +22,7 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Sun Nov 03 20:30:10 2013:
+Source File(s) Imported on Tue Nov 05 13:21:55 2013:
         C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.edn
         C:\Users\mikechri\Downloads\gc\gc\component\work\gc\gc.pdc
 
@@ -378,9 +378,9 @@ Optimized macros:
   - Buffers:                0
   - Inverters:              0
   - Tieoff:                 0
-  - Logic combining:        21
+  - Logic combining:        29
 
-    Total macros optimized  21
+    Total macros optimized  29
 
 Warning: CMP503: Remapped 65 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
          pin on the enable flip-flop is not being driven by a global net.
@@ -405,7 +405,7 @@ Compile report:
 ===============
 
     Microcontroller Subsystem  Used:      1  Total:      1   (100.00%)
-    Fabric                     Used:   1493  Total:   4608   (32.40%)
+    Fabric                     Used:   1489  Total:   4608   (32.31%)
     Fabric IO (W/ clocks)      Used:     11  Total:     94   (11.70%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
@@ -434,7 +434,7 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 1016         | 1016
+    COMB    | 1012         | 1012
     SEQ     | 477          | 477
 
 I/O Function:
@@ -482,7 +482,7 @@ The following nets have been assigned to a chip global resource:
     429     CLK_NET       Net   : FAB_CLK
                           Driver: gc_MSS_0/MSS_CCC_0/I_MSSCCC
                           Source: ESSENTIAL
-    144     INT_NET       Net   : gc_MSS_0_M2F_RESET_N
+    145     INT_NET       Net   : gc_MSS_0_M2F_RESET_N
                           Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3/U_CLKSRC
                           Source: NETLIST
     133     INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[4]
@@ -495,17 +495,15 @@ The following nets have been assigned to a chip global resource:
 High fanout nets in the post compile netlist:
     Fanout  Type          Name
     --------------------------
-    24      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR_0[3]
-                          Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_6
-    24      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR_1[3]
-                          Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_4
-    24      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR_0[2]
-                          Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_2
-    24      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR_1[2]
-                          Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_1
-    23      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR_2[3]
+    24      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[2]
+                          Driver: gc_MSS_0/MSS_ADLIB_INST
+    23      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR_0[3]
                           Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_5
-    23      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR_2[2]
+    23      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR_1[3]
+                          Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_4
+    23      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR_0[2]
+                          Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_2
+    23      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR_1[2]
                           Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_3
     22      INT_NET       Net   : send_query_0/count12
                           Driver: send_query_0/reset_count_RNIK86R[1]
@@ -515,18 +513,18 @@ High fanout nets in the post compile netlist:
                           Driver: gc_receive_0/count_RNICJH81_1[7]
     21      INT_NET       Net   : gc_receive_0/N_35
                           Driver: gc_receive_0/count_RNICJH81_2[7]
+    19      CLK_NET       Net   : CAPTURE_SWITCH_c
+                          Driver: CAPTURE_SWITCH_pad
 
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
     --------------------------
-    71      INT_NET       Net   : gc_MSS_0/CoreAPB3_0_APBmslave0_PADDR[2]
+    69      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[3]
                           Driver: gc_MSS_0/MSS_ADLIB_INST
-    71      INT_NET       Net   : gc_MSS_0/CoreAPB3_0_APBmslave0_PADDR[3]
+    68      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[2]
                           Driver: gc_MSS_0/MSS_ADLIB_INST
     36      CLK_NET       Net   : CAPTURE_SWITCH_c
                           Driver: CAPTURE_SWITCH_pad
-    35      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[8]
-                          Driver: gc_MSS_0/MSS_ADLIB_INST
     22      INT_NET       Net   : send_query_0/count12
                           Driver: send_query_0/reset_count_RNIK86R[1]
     22      INT_NET       Net   : gc_receive_0/N_35_1
@@ -535,9 +533,11 @@ Nets that are candidates for clock assignment and the resulting fanout:
                           Driver: gc_receive_0/count_RNICJH81_1[7]
     21      INT_NET       Net   : gc_receive_0/N_35
                           Driver: gc_receive_0/count_RNICJH81_2[7]
-    18      INT_NET       Net   : N_142
-                          Driver: motorWrapper_0/BUS_WRITE_EN_0_a2_0
     17      INT_NET       Net   : N_143
                           Driver: motorWrapper_0/BUS_WRITE_EN_0_a2
+    17      INT_NET       Net   : N_144_0
+                          Driver: gc_response_apb_0/init4_0_a2_0
+    17      INT_NET       Net   : N_143_0
+                          Driver: motorWrapper_0/BUS_WRITE_EN_0_a2_0
 
 

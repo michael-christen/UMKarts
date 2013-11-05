@@ -116,13 +116,13 @@ Selecting top level module gc
 
 @N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\motorWrapper.v":2:7:2:18|Synthesizing module motorWrapper
 
-@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\query.v":84:7:84:14|Synthesizing module clockdiv
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\query.v":87:7:87:14|Synthesizing module clockdiv
 
 @N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\query.v":4:7:4:16|Synthesizing module send_query
 
 @W: CL169 :"C:\Users\mikechri\Downloads\gc\gc\hdl\query.v":29:0:29:5|Pruning register data_cl 
 
-@N: CL177 :"C:\Users\mikechri\Downloads\gc\gc\hdl\query.v":35:5:66:28|Sharing sequential element data.
+@N: CL177 :"C:\Users\mikechri\Downloads\gc\gc\hdl\query.v":35:5:69:28|Sharing sequential element data.
 @N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc\gc.v":9:7:9:8|Synthesizing module gc
 
 @W: CL189 :"C:\Users\mikechri\Downloads\gc\gc\hdl\query.v":20:0:20:5|Register bit reset_count[9] is always 0, optimizing ...

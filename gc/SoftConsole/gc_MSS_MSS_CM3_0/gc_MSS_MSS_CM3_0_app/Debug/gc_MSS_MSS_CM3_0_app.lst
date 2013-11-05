@@ -19,23 +19,23 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
   7 .debug_pubnames 000006cf  00000000  00000000  0001074f  2**0
                   CONTENTS, READONLY, DEBUGGING
-  8 .debug_info   00003883  00000000  00000000  00010e1e  2**0
+  8 .debug_info   00003894  00000000  00000000  00010e1e  2**0
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_abbrev 00000803  00000000  00000000  000146a1  2**0
+  9 .debug_abbrev 00000803  00000000  00000000  000146b2  2**0
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_line   0000171b  00000000  00000000  00014ea4  2**0
+ 10 .debug_line   0000171b  00000000  00000000  00014eb5  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_frame  000014a0  00000000  00000000  000165c0  2**2
+ 11 .debug_frame  000014a0  00000000  00000000  000165d0  2**2
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_str    00001ae3  00000000  00000000  00017a60  2**0
+ 12 .debug_str    00001aea  00000000  00000000  00017a70  2**0
                   CONTENTS, READONLY, DEBUGGING
- 13 .debug_loc    00000e70  00000000  00000000  00019543  2**0
+ 13 .debug_loc    00000e70  00000000  00000000  0001955a  2**0
                   CONTENTS, READONLY, DEBUGGING
- 14 .debug_macinfo 00025a05  00000000  00000000  0001a3b3  2**0
+ 14 .debug_macinfo 00025a05  00000000  00000000  0001a3ca  2**0
                   CONTENTS, READONLY, DEBUGGING
- 15 .ARM.attributes 00000025  00000000  00000000  0003fdb8  2**0
+ 15 .ARM.attributes 00000025  00000000  00000000  0003fdcf  2**0
                   CONTENTS, READONLY
- 16 .debug_ranges 00000290  00000000  00000000  0003fddd  2**0
+ 16 .debug_ranges 00000290  00000000  00000000  0003fdf4  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -1020,7 +1020,7 @@ void print_gc() {
 200006e0:	f2c2 0300 	movt	r3, #8192	; 0x2000
 200006e4:	681b      	ldr	r3, [r3, #0]
 200006e6:	781b      	ldrb	r3, [r3, #0]
-200006e8:	f3c3 03c0 	ubfx	r3, r3, #3, #1
+200006e8:	f3c3 1300 	ubfx	r3, r3, #4, #1
 200006ec:	b2db      	uxtb	r3, r3
 200006ee:	2b00      	cmp	r3, #0
 200006f0:	d005      	beq.n	200006fe <print_gc+0x26>
@@ -1033,7 +1033,7 @@ void print_gc() {
 20000702:	f2c2 0300 	movt	r3, #8192	; 0x2000
 20000706:	681b      	ldr	r3, [r3, #0]
 20000708:	781b      	ldrb	r3, [r3, #0]
-2000070a:	f3c3 1300 	ubfx	r3, r3, #4, #1
+2000070a:	f3c3 1340 	ubfx	r3, r3, #5, #1
 2000070e:	b2db      	uxtb	r3, r3
 20000710:	2b00      	cmp	r3, #0
 20000712:	d005      	beq.n	20000720 <print_gc+0x48>
@@ -1046,7 +1046,7 @@ void print_gc() {
 20000724:	f2c2 0300 	movt	r3, #8192	; 0x2000
 20000728:	681b      	ldr	r3, [r3, #0]
 2000072a:	781b      	ldrb	r3, [r3, #0]
-2000072c:	f3c3 1340 	ubfx	r3, r3, #5, #1
+2000072c:	f3c3 1380 	ubfx	r3, r3, #6, #1
 20000730:	b2db      	uxtb	r3, r3
 20000732:	2b00      	cmp	r3, #0
 20000734:	d005      	beq.n	20000742 <print_gc+0x6a>
@@ -1059,7 +1059,7 @@ void print_gc() {
 20000746:	f2c2 0300 	movt	r3, #8192	; 0x2000
 2000074a:	681b      	ldr	r3, [r3, #0]
 2000074c:	781b      	ldrb	r3, [r3, #0]
-2000074e:	f3c3 1380 	ubfx	r3, r3, #6, #1
+2000074e:	f3c3 13c0 	ubfx	r3, r3, #7, #1
 20000752:	b2db      	uxtb	r3, r3
 20000754:	2b00      	cmp	r3, #0
 20000756:	d005      	beq.n	20000764 <print_gc+0x8c>
@@ -1071,8 +1071,8 @@ void print_gc() {
 20000764:	f248 4328 	movw	r3, #33832	; 0x8428
 20000768:	f2c2 0300 	movt	r3, #8192	; 0x2000
 2000076c:	681b      	ldr	r3, [r3, #0]
-2000076e:	781b      	ldrb	r3, [r3, #0]
-20000770:	f3c3 13c0 	ubfx	r3, r3, #7, #1
+2000076e:	785b      	ldrb	r3, [r3, #1]
+20000770:	f3c3 0300 	ubfx	r3, r3, #0, #1
 20000774:	b2db      	uxtb	r3, r3
 20000776:	2b00      	cmp	r3, #0
 20000778:	d005      	beq.n	20000786 <print_gc+0xae>
@@ -1085,7 +1085,7 @@ void print_gc() {
 2000078a:	f2c2 0300 	movt	r3, #8192	; 0x2000
 2000078e:	681b      	ldr	r3, [r3, #0]
 20000790:	785b      	ldrb	r3, [r3, #1]
-20000792:	f3c3 0340 	ubfx	r3, r3, #1, #1
+20000792:	f3c3 0380 	ubfx	r3, r3, #2, #1
 20000796:	b2db      	uxtb	r3, r3
 20000798:	2b00      	cmp	r3, #0
 2000079a:	d005      	beq.n	200007a8 <print_gc+0xd0>
@@ -1098,7 +1098,7 @@ void print_gc() {
 200007ac:	f2c2 0300 	movt	r3, #8192	; 0x2000
 200007b0:	681b      	ldr	r3, [r3, #0]
 200007b2:	785b      	ldrb	r3, [r3, #1]
-200007b4:	f3c3 0380 	ubfx	r3, r3, #2, #1
+200007b4:	f3c3 03c0 	ubfx	r3, r3, #3, #1
 200007b8:	b2db      	uxtb	r3, r3
 200007ba:	2b00      	cmp	r3, #0
 200007bc:	d005      	beq.n	200007ca <print_gc+0xf2>
@@ -1111,7 +1111,7 @@ void print_gc() {
 200007ce:	f2c2 0300 	movt	r3, #8192	; 0x2000
 200007d2:	681b      	ldr	r3, [r3, #0]
 200007d4:	785b      	ldrb	r3, [r3, #1]
-200007d6:	f3c3 03c0 	ubfx	r3, r3, #3, #1
+200007d6:	f3c3 1300 	ubfx	r3, r3, #4, #1
 200007da:	b2db      	uxtb	r3, r3
 200007dc:	2b00      	cmp	r3, #0
 200007de:	d005      	beq.n	200007ec <print_gc+0x114>
@@ -1124,7 +1124,7 @@ void print_gc() {
 200007f0:	f2c2 0300 	movt	r3, #8192	; 0x2000
 200007f4:	681b      	ldr	r3, [r3, #0]
 200007f6:	785b      	ldrb	r3, [r3, #1]
-200007f8:	f3c3 1300 	ubfx	r3, r3, #4, #1
+200007f8:	f3c3 1340 	ubfx	r3, r3, #5, #1
 200007fc:	b2db      	uxtb	r3, r3
 200007fe:	2b00      	cmp	r3, #0
 20000800:	d005      	beq.n	2000080e <print_gc+0x136>
@@ -1137,7 +1137,7 @@ void print_gc() {
 20000812:	f2c2 0300 	movt	r3, #8192	; 0x2000
 20000816:	681b      	ldr	r3, [r3, #0]
 20000818:	785b      	ldrb	r3, [r3, #1]
-2000081a:	f3c3 1340 	ubfx	r3, r3, #5, #1
+2000081a:	f3c3 1380 	ubfx	r3, r3, #6, #1
 2000081e:	b2db      	uxtb	r3, r3
 20000820:	2b00      	cmp	r3, #0
 20000822:	d005      	beq.n	20000830 <print_gc+0x158>
@@ -1150,7 +1150,7 @@ void print_gc() {
 20000834:	f2c2 0300 	movt	r3, #8192	; 0x2000
 20000838:	681b      	ldr	r3, [r3, #0]
 2000083a:	785b      	ldrb	r3, [r3, #1]
-2000083c:	f3c3 1380 	ubfx	r3, r3, #6, #1
+2000083c:	f3c3 13c0 	ubfx	r3, r3, #7, #1
 20000840:	b2db      	uxtb	r3, r3
 20000842:	2b00      	cmp	r3, #0
 20000844:	d005      	beq.n	20000852 <print_gc+0x17a>
@@ -1162,8 +1162,8 @@ void print_gc() {
 20000852:	f248 4328 	movw	r3, #33832	; 0x8428
 20000856:	f2c2 0300 	movt	r3, #8192	; 0x2000
 2000085a:	681b      	ldr	r3, [r3, #0]
-2000085c:	785b      	ldrb	r3, [r3, #1]
-2000085e:	f3c3 13c0 	ubfx	r3, r3, #7, #1
+2000085c:	789b      	ldrb	r3, [r3, #2]
+2000085e:	f3c3 0300 	ubfx	r3, r3, #0, #1
 20000862:	b2db      	uxtb	r3, r3
 20000864:	2b00      	cmp	r3, #0
 20000866:	d005      	beq.n	20000874 <print_gc+0x19c>
@@ -1179,12 +1179,12 @@ void print_gc() {
 20000880:	f248 4328 	movw	r3, #33832	; 0x8428
 20000884:	f2c2 0300 	movt	r3, #8192	; 0x2000
 20000888:	681b      	ldr	r3, [r3, #0]
-2000088a:	789b      	ldrb	r3, [r3, #2]
+2000088a:	78db      	ldrb	r3, [r3, #3]
 2000088c:	b25a      	sxtb	r2, r3
 2000088e:	f248 4328 	movw	r3, #33832	; 0x8428
 20000892:	f2c2 0300 	movt	r3, #8192	; 0x2000
 20000896:	681b      	ldr	r3, [r3, #0]
-20000898:	78db      	ldrb	r3, [r3, #3]
+20000898:	791b      	ldrb	r3, [r3, #4]
 2000089a:	b25b      	sxtb	r3, r3
 2000089c:	f647 308c 	movw	r0, #31628	; 0x7b8c
 200008a0:	f2c2 0000 	movt	r0, #8192	; 0x2000
@@ -1195,12 +1195,12 @@ void print_gc() {
 200008ac:	f248 4328 	movw	r3, #33832	; 0x8428
 200008b0:	f2c2 0300 	movt	r3, #8192	; 0x2000
 200008b4:	681b      	ldr	r3, [r3, #0]
-200008b6:	791b      	ldrb	r3, [r3, #4]
+200008b6:	795b      	ldrb	r3, [r3, #5]
 200008b8:	b25a      	sxtb	r2, r3
 200008ba:	f248 4328 	movw	r3, #33832	; 0x8428
 200008be:	f2c2 0300 	movt	r3, #8192	; 0x2000
 200008c2:	681b      	ldr	r3, [r3, #0]
-200008c4:	795b      	ldrb	r3, [r3, #5]
+200008c4:	799b      	ldrb	r3, [r3, #6]
 200008c6:	b25b      	sxtb	r3, r3
 200008c8:	f647 30a4 	movw	r0, #31652	; 0x7ba4
 200008cc:	f2c2 0000 	movt	r0, #8192	; 0x2000
@@ -1211,12 +1211,12 @@ void print_gc() {
 200008d8:	f248 4328 	movw	r3, #33832	; 0x8428
 200008dc:	f2c2 0300 	movt	r3, #8192	; 0x2000
 200008e0:	681b      	ldr	r3, [r3, #0]
-200008e2:	799b      	ldrb	r3, [r3, #6]
+200008e2:	79db      	ldrb	r3, [r3, #7]
 200008e4:	b25a      	sxtb	r2, r3
 200008e6:	f248 4328 	movw	r3, #33832	; 0x8428
 200008ea:	f2c2 0300 	movt	r3, #8192	; 0x2000
 200008ee:	681b      	ldr	r3, [r3, #0]
-200008f0:	79db      	ldrb	r3, [r3, #7]
+200008f0:	7a1b      	ldrb	r3, [r3, #8]
 200008f2:	b25b      	sxtb	r3, r3
 200008f4:	f647 30bc 	movw	r0, #31676	; 0x7bbc
 200008f8:	f2c2 0000 	movt	r0, #8192	; 0x2000
@@ -1361,8 +1361,8 @@ int main()
 20000a34:	f248 4328 	movw	r3, #33832	; 0x8428
 20000a38:	f2c2 0300 	movt	r3, #8192	; 0x2000
 20000a3c:	681b      	ldr	r3, [r3, #0]
-20000a3e:	781b      	ldrb	r3, [r3, #0]
-20000a40:	f3c3 13c0 	ubfx	r3, r3, #7, #1
+20000a3e:	785b      	ldrb	r3, [r3, #1]
+20000a40:	f3c3 0300 	ubfx	r3, r3, #0, #1
 20000a44:	b2db      	uxtb	r3, r3
 20000a46:	2b00      	cmp	r3, #0
 20000a48:	d008      	beq.n	20000a5c <main+0x154>
@@ -1378,7 +1378,7 @@ int main()
 20000a60:	f2c2 0300 	movt	r3, #8192	; 0x2000
 20000a64:	681b      	ldr	r3, [r3, #0]
 20000a66:	781b      	ldrb	r3, [r3, #0]
-20000a68:	f3c3 1380 	ubfx	r3, r3, #6, #1
+20000a68:	f3c3 13c0 	ubfx	r3, r3, #7, #1
 20000a6c:	b2db      	uxtb	r3, r3
 20000a6e:	2b00      	cmp	r3, #0
 20000a70:	d008      	beq.n	20000a84 <main+0x17c>
@@ -1401,7 +1401,7 @@ int main()
 20000a94:	f2c2 0300 	movt	r3, #8192	; 0x2000
 20000a98:	681b      	ldr	r3, [r3, #0]
 20000a9a:	785b      	ldrb	r3, [r3, #1]
-20000a9c:	f3c3 1380 	ubfx	r3, r3, #6, #1
+20000a9c:	f3c3 13c0 	ubfx	r3, r3, #7, #1
 20000aa0:	b2db      	uxtb	r3, r3
 20000aa2:	2b00      	cmp	r3, #0
 20000aa4:	d004      	beq.n	20000ab0 <main+0x1a8>
@@ -1414,8 +1414,8 @@ int main()
 20000ab0:	f248 4328 	movw	r3, #33832	; 0x8428
 20000ab4:	f2c2 0300 	movt	r3, #8192	; 0x2000
 20000ab8:	681b      	ldr	r3, [r3, #0]
-20000aba:	785b      	ldrb	r3, [r3, #1]
-20000abc:	f3c3 13c0 	ubfx	r3, r3, #7, #1
+20000aba:	789b      	ldrb	r3, [r3, #2]
+20000abc:	f3c3 0300 	ubfx	r3, r3, #0, #1
 20000ac0:	b2db      	uxtb	r3, r3
 20000ac2:	2b00      	cmp	r3, #0
 20000ac4:	d004      	beq.n	20000ad0 <main+0x1c8>

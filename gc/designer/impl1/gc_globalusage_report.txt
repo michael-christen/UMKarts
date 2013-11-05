@@ -5,7 +5,7 @@
 Product: Designer
 Release: v11.0
 Version: 11.0.0.23
-Date: Sun Nov 03 20:31:23 2013
+Date: Tue Nov 05 13:23:06 2013
 Design Name: gc  Family: SmartFusion  Die: A2F200M3F  Package: 484 FBGA
 Design State: Post-Layout
 
@@ -17,7 +17,7 @@ The following nets have been routed to a chip global resource:
                       Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_0/U_CLKSRC/U_GL
     429               Net   : FAB_CLK
                       Driver: gc_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1
-    144               Net   : gc_MSS_0_M2F_RESET_N
+    145               Net   : gc_MSS_0_M2F_RESET_N
                       Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3/U_CLKSRC/U_GL
     70                Net   : gc_receive_0/response_0_sqmuxa
                       Driver: gc_receive_0/count_RNIPEVS2_0[5]/U_CLKSRC/U_GL

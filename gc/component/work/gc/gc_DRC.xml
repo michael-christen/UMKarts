@@ -6,13 +6,6 @@
     <status>C:\Microsemi\Libero_v11.0\Designer/data/drcreport\warn.png</status>
     <StatusMessage>Warning</StatusMessage>
     <message>Floating Driver</message>
-    <detail>Floating output bus pin motorWrapper_0:TPS[4:0]</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/gc/pins/motorWrapper_0:TPS</crossprobe>
-  </drc>
-  <drc>
-    <status>C:\Microsemi\Libero_v11.0\Designer/data/drcreport\warn.png</status>
-    <StatusMessage>Warning</StatusMessage>
-    <message>Floating Driver</message>
     <detail>Floating output pin motorWrapper_0:FABINT</detail>
     <crossprobe>liberoaction://cross_probe/smartdesign/gc/pins/motorWrapper_0:FABINT</crossprobe>
   </drc>
@@ -22,5 +15,12 @@
     <message>Floating Driver</message>
     <detail>Floating output pin motorWrapper_0:PWM2</detail>
     <crossprobe>liberoaction://cross_probe/smartdesign/gc/pins/motorWrapper_0:PWM2</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_v11.0\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output bus pin motorWrapper_0:TPS[4:0]</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/gc/pins/motorWrapper_0:TPS</crossprobe>
   </drc>
 </drcreport>

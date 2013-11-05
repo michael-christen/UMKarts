@@ -5,9 +5,9 @@ Release: v11.0
 Software Version: 11.0.0.23
 PDB file 'C:\Users\mikechri\Downloads\gc\gc\designer\impl1\gc_fp\gc.pdb' has been loaded
 successfully.
-DESIGN : gc;  CHECKSUM : 891E;  PDB_VERSION : 1.8
+DESIGN : gc;  CHECKSUM : FBB8;  PDB_VERSION : 1.8
 Driver : 3.0.0 build 1
-programmer '78524' : FlashPro3
+programmer '78125' : FlashPro3
 Opened 'C:/Users/mikechri/Downloads/gc/gc/designer/impl1/gc_fp/gc.pro'
 The 'open_project' command succeeded.
 The 'set_programming_file' command succeeded.
@@ -18,25 +18,25 @@ Info: Adding Flash Memory data from file
 Info: Adding FPGA Array data from file C:\Users\mikechri\Downloads\gc\gc\designer\impl1\gc.fdb.
 PDB file 'C:\Users\mikechri\Downloads\gc\gc\designer\impl1\gc_fp\gc.pdb' has been loaded
 successfully.
-DESIGN : gc;  CHECKSUM : FBB8;  PDB_VERSION : 1.8
+DESIGN : gc;  CHECKSUM : 4CE0;  PDB_VERSION : 1.8
 The 'update_programming_file' command succeeded.
 The 'set_programming_action' command succeeded.
-programmer '78524' : Scan Chain...
-Warning: programmer '78524' : Vpump has been selected on programmer AND an externally provided
+programmer '78125' : Scan Chain...
+Warning: programmer '78125' : Vpump has been selected on programmer AND an externally provided
          Vpump has also been detected. Using externally provided Vpump voltage source.
-programmer '78524' : Scan Chain PASSED.
-programmer '78524' : Executing action PROGRAM
-programmer '78524' : EXPORT FSN[48] = 0114ab28106c
-programmer '78524' : Erase ...
-programmer '78524' : Completed erase
-programmer '78524' : EXPORT CHECKSUM: [16] = fbb8
-programmer '78524' : Programming FPGA Array
-programmer '78524' : Verifying FPGA Array
-programmer '78524' :         Verifying FPGA Array -- pass
-programmer '78524' : Program System Init and Boot Clients...
-programmer '78524' : Verify System Init and Boot Clients...
-programmer '78524' : Finished: Sun Nov 03 20:32:41 2013 (Elapsed time 00:00:39)
-programmer '78524' : Executing action PROGRAM PASSED.
+programmer '78125' : Scan Chain PASSED.
+programmer '78125' : Executing action PROGRAM
+programmer '78125' : EXPORT FSN[48] = 0114ab381078
+programmer '78125' : Erase ...
+programmer '78125' : Completed erase
+programmer '78125' : EXPORT CHECKSUM: [16] = 4ce0
+programmer '78125' : Programming FPGA Array
+programmer '78125' : Verifying FPGA Array
+programmer '78125' :         Verifying FPGA Array -- pass
+programmer '78125' : Program System Init and Boot Clients...
+programmer '78125' : Verify System Init and Boot Clients...
+programmer '78125' : Finished: Tue Nov 05 13:24:24 2013 (Elapsed time 00:00:39)
+programmer '78125' : Executing action PROGRAM PASSED.
 
                         o - o - o - o - o - o
 

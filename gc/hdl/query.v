@@ -57,7 +57,10 @@ always @(posedge clk) begin
 		end
 	end else if (count / 4 == 1 || count / 4 == 14 || count / 4 == 15 || count / 4 == 22 || count / 4 == 24) begin
 		init <= 0;
-		send <= 1'b1;
+		if (count / 4 == 24 && count % 4 != 0)
+			send <= 1'b0;
+		else 
+			send <= 1'b1;
 		if (count % 4 == 0) begin
 			data <= 0;
 		end else begin

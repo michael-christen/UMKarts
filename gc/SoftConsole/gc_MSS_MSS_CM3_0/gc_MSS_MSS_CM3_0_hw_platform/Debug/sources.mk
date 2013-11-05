@@ -36,3 +36,14 @@ EXECUTABLE := gc_MSS_MSS_CM3_0_hw_platform.a
 # Target-specific items to be cleaned up in the top directory.
 clean::
 	-$(RM) $(wildcard ./*.map) 
+################################################################################
+# Microsemi SoftConsole IDE Variables
+################################################################################
+
+BUILDCMD = arm-none-eabi-ar -r 
+SHELL := cmd.exe
+EXECUTABLE := gc_MSS_MSS_CM3_0_hw_platform.a
+
+# Target-specific items to be cleaned up in the top directory.
+clean::
+	-$(RM) $(wildcard ./*.map) 
