@@ -1,0 +1,39 @@
+/*
+ * controller.c
+ *
+ *  Created on: Nov 6, 2013
+ *      Author: mikechri
+ */
+#include "controller.h"
+
+void CONTROLLER_print() {
+	if (CONTROLLER->start)
+		printf("Start ");
+	if (GC->y)
+		printf("Y ");
+	if (GC->x)
+		printf("X ");
+	if (GC->b)
+		printf("B ");
+	if (GC->a)
+		printf("A ");
+	if (GC->l)
+		printf("L ");
+	if (GC->r)
+			printf("R ");
+	if (GC->z)
+		printf("Z ");
+	if (GC->d_up)
+		printf("UP ");
+	if (GC->d_down)
+		printf("DOWN ");
+	if (GC->d_right)
+		printf("RIGHT ");
+	if (GC->d_left)
+		printf("LEFT ");
+	printf("\n\r");
+	printf("Joystick X: %d, Y: %d\n\r", GC->joystick_x, GC->joystick_y);
+	printf("C stick X: %d, Y: %d\n\r", GC->cstick_x, GC->cstick_y);
+	printf("Trigger Pressure Left: %d, Right: %d\n\r\n\r", GC->left, GC->right);
+}
+

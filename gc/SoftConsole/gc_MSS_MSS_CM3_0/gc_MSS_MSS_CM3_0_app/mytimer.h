@@ -2,6 +2,8 @@
 #define MYTIMER_H_  // Only define once
 
 #include "CMSIS/a2fxxxm3.h"
+#include <stdio.h>
+
 
 #define MYTIMER_BASE (FPGA_FABRIC_BASE + 0x100)
 

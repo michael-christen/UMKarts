@@ -6,7 +6,7 @@
 #Implementation: synthesis
 
 $ Start of Compile
-#Sun Nov 03 20:30:01 2013
+#Wed Nov 06 12:52:46 2013
 
 Synopsys Verilog Compiler, version comp201209rcp1, Build 245R, built Feb 20 2013
 @N|Running in 64-bit mode
@@ -244,7 +244,7 @@ Selecting top level module gc
 @W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":674:0:674:9|Input PSLVERRS15 is unused
 @END
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Nov 03 20:30:02 2013
+# Wed Nov 06 12:52:47 2013
 
 ###########################################################]
 Premap Report
@@ -273,7 +273,7 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 41MB peak: 105MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Nov 03 20:30:03 2013
+# Wed Nov 06 12:52:49 2013
 
 ###########################################################]
 Map & Optimize Report
@@ -324,7 +324,7 @@ Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; M
 @N: BN362 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":208:0:208:5|Removing sequential instance motorWrapper_0.motor_0.timer_interrupt of view:PrimLib.dff(prim) in hierarchy view:work.gc(verilog) because there are no references to its outputs 
 @N: BN362 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":267:0:267:5|Removing sequential instance motorWrapper_0.motor_0.capture_interrupt of view:PrimLib.dffr(prim) in hierarchy view:work.gc(verilog) because there are no references to its outputs 
 
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 109MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 109MB)
 
 
 Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 108MB peak: 110MB)
@@ -376,7 +376,7 @@ motorWrapper_0.motor_0.un1_nreset_1_i_0_0 / Y              32
 Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 108MB peak: 110MB)
 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 108MB peak: 110MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 108MB peak: 110MB)
 
 Replicating Combinational Instance motorWrapper_0.motor_0.un1_nreset_1_i_0_0, fanout 32 segments 2
 Buffering CAPTURE_SWITCH_c, fanout 36 segments 2
@@ -402,7 +402,7 @@ Added 15 Cells via replication
 	Added 1 Sequential Cells via replication
 	Added 14 Combinational Cells via replication
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 109MB peak: 110MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 109MB peak: 110MB)
 
 
 
@@ -446,7 +446,7 @@ Found clock FCLK with period 10.00ns
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Sun Nov 03 20:30:06 2013
+# Timing Report written on Wed Nov 06 12:52:52 2013
 #
 
 
@@ -1417,6 +1417,6 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 41MB peak: 110MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:02s cputime
-# Sun Nov 03 20:30:06 2013
+# Wed Nov 06 12:52:52 2013
 
 ###########################################################]

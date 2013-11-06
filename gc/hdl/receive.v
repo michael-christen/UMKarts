@@ -7,6 +7,7 @@ output reg [63:0]response;
 
 wire start_count;
 output reg data1, data2;
+//This keeps track of intermediate signals
 reg [63:0]next_response;
 reg [7:0] next_response_count;
 reg [7:0] count;
@@ -17,33 +18,44 @@ assign t = count[0];
 assign start_count = ~send && ~data1 && data2;
 
 always @(posedge clk) begin
+	//Clock the input
 	data1 <= data;
 	data2 <= data1;
+	//Begin
 	if (count == 0 && start_count == 1) begin
 		count <= 1;
+		//What?
 		next_response_count <= next_response_count;
 		response <= response;
-	end else if (count == 200) begin
+	end 
+	else if (count == 200) begin
 		count <= 0;
+		//shift everything over
+		//not sure if this is the best way to shift
 		next_response[63] <= data;
 		next_response[62:0] <= next_response[63:1];
+		//finishing receive, and putting in response
 		if (next_response_count >= 62) begin
 			next_response_count <= 0;
 			response[63] <= data;
 			response[62:0] <= next_response[63:1];
-		end else begin
+		end 
+		else begin
 			next_response_count <= next_response_count + 1;
 			response <= response;
 		end
-	end else if (count == 0) begin
+	end 
+	else if (count == 0) begin
 		count <= count;
 		if (!send)
 			next_response_count <= next_response_count;
 		else
 			next_response_count <= 0;
 		response <= response;
-	end else begin
+	end 
+	else begin
 		count <= count + 1;
+		//Why?
 		next_response_count <= next_response_count;
 		response <= response;
 	end

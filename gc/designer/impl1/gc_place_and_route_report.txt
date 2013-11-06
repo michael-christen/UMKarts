@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Sun Nov 03 20:31:23 2013 ***************************************************************************
+                          Wed Nov 06 12:54:08 2013 ***************************************************************************
 
 Product: Designer
 Release: v11.0
 Version: 11.0.0.23
 File Name: C:\Users\mikechri\Downloads\gc\gc\designer\impl1\gc.adb
 Design Name: gc  Design State: layout
-Last Saved: Sun Nov 03 20:30:27 2013
+Last Saved: Wed Nov 06 12:53:13 2013
 
 ***** Device Data **************************************************
 
@@ -22,7 +22,7 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Sun Nov 03 20:30:10 2013:
+Source File(s) Imported on Wed Nov 06 12:52:57 2013:
         C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.edn
         C:\Users\mikechri\Downloads\gc\gc\component\work\gc\gc.pdc
 
@@ -564,16 +564,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Sun Nov 03 20:30:33 2013
+Timing-driven Placer Started: Wed Nov 06 12:53:18 2013
 
-Placer Finished: Sun Nov 03 20:30:52 2013
+Placer Finished: Wed Nov 06 12:53:37 2013
 Total Placer CPU Time:     00:00:19
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: gc                              Started: Sun Nov 03 20:30:58 2013
+Design: gc                              Started: Wed Nov 06 12:53:43 2013
 
  
 Iterative improvement...
@@ -581,8 +581,8 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: gc                              
-Finished: Sun Nov 03 20:31:17 2013
-Total CPU Time:     00:00:19            Total Elapsed Time: 00:00:19
+Finished: Wed Nov 06 12:54:01 2013
+Total CPU Time:     00:00:18            Total Elapsed Time: 00:00:18
 Total Memory Usage: 166.0 Mbytes
                         o - o - o - o - o - o
 

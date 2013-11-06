@@ -12,7 +12,7 @@ Opened an existing Libero design gc.adb.
 'IDE_DESIGNERVIEW_ROOTDIR' set to 'C:\Users\mikechri\Downloads\gc\gc\designer'
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
 
- Netlist Reading Time = 1.0 seconds
+ Netlist Reading Time = 0.0 seconds
 Imported the files:
    C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.edn
    C:\Users\mikechri\Downloads\gc\gc\component\work\gc\gc.pdc
@@ -515,12 +515,12 @@ Nets that are candidates for clock assignment and the resulting fanout:
     17      INT_NET       Net   : N_143
                           Driver: motorWrapper_0/BUS_WRITE_EN_0_a2
 
-The Compile command succeeded ( 00:00:06 )
+The Compile command succeeded ( 00:00:05 )
 Wrote status report to file: gc_compile_report.txt
 
 The Report command succeeded ( 00:00:00 )
 Design saved to file C:\Users\mikechri\Downloads\gc\gc\designer\impl1\gc.adb.
 
-The Execute Script command succeeded ( 00:00:18 )
+The Execute Script command succeeded ( 00:00:17 )
 Design closed.
 

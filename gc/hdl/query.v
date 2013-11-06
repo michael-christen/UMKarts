@@ -20,7 +20,8 @@ clockdiv(clk100mhz, clk);
 always @(posedge clk100mhz) begin
 	if (reset && ~init) begin
 		reset_count <= 150;
-	end else if (reset_count == 0)
+	end 
+	else if (reset_count == 0)
 		reset_count <= 0;
 	else
 		reset_count <= reset_count - 1;
@@ -37,25 +38,32 @@ always @(posedge clk) begin
 		if (count / 4 == 1 || count / 4 == 4 || count / 4 == 5 || count / 4 == 6 || count / 4 == 8 || count / 4 == 9 || count / 4 == 10 || count / 4 == 11 || count / 4 == 16 || count / 4 == 17 || count / 4 == 19 || count / 4 == 21 || count / 4 == 22 || count / 4 == 24) begin
 			if (count % 4 == 0) begin
 				data <= 0;
-			end else begin
+			end 
+			else begin
 				data <= 1'bz;
 			end
-		end else if (count / 4 < 24) begin
+		end 
+		else if (count / 4 < 24) begin
 			if (count % 4 == 3) begin
 				data <= 1'bz;
-			end else begin
+			end 
+			else begin
 				data <= 0;
 			end
-		end else begin
+		end 
+		else begin
 			data <= 1'bz;
 		end
 
 		if (count / 4 == 26) begin
 			init <= 0;
-		end else begin
+		end 
+		else begin
 			init <= 1;
 		end
-	end else if (count / 4 == 1 || count / 4 == 14 || count / 4 == 15 || count / 4 == 22 || count / 4 == 24) begin
+	end 
+	//normal grabbing
+	else if (count / 4 == 1 || count / 4 == 14 || count / 4 == 15 || count / 4 == 22 || count / 4 == 24) begin
 		init <= 0;
 		send <= 1'b1;
 		if (count % 4 == 0) begin
@@ -63,7 +71,8 @@ always @(posedge clk) begin
 		end else begin
 			data <= 1'bz;
 		end
-	end else if (count / 4 < 24) begin
+	end 
+	else if (count / 4 < 24) begin
 		init <= 0;
 		send <= 1'b1;
 		if (count % 4 == 3) begin
@@ -71,7 +80,8 @@ always @(posedge clk) begin
 		end else begin
 			data <= 0;
 		end
-	end else begin
+	end 
+	else begin
 		init <= 0;
 		data <= 1'bz;
 		send <= 1'b0;
@@ -79,6 +89,8 @@ always @(posedge clk) begin
 end
 
 endmodule
+
+
 
 // Divides clock by 100.
 module clockdiv(clockin, clockout);
