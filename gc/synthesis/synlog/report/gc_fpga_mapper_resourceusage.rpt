@@ -2,61 +2,63 @@ Target Part: A2F200M3F_FBGA484_-1
 Report for cell gc.verilog
   Core Cell usage:
               cell count     area count*area
-              AND2     8      1.0        8.0
-              AND3    17      1.0       17.0
-               AO1    45      1.0       45.0
-              AO13     1      1.0        1.0
+              AND2     6      1.0        6.0
+              AND3     4      1.0        4.0
+               AO1    33      1.0       33.0
               AO1A     4      1.0        4.0
               AO1B     1      1.0        1.0
               AO1C     1      1.0        1.0
-              AO1D     1      1.0        1.0
-              AOI1     1      1.0        1.0
-             AOI1B     4      1.0        4.0
-              AX1A     2      1.0        2.0
-              AX1E     3      1.0        3.0
-              BUFF     6      1.0        6.0
+             AOI1B     5      1.0        5.0
+               AX1     2      1.0        2.0
+              AX1A     1      1.0        1.0
+              AX1B     1      1.0        1.0
+              AX1C     3      1.0        3.0
+              AX1E     4      1.0        4.0
+              BUFF     2      1.0        2.0
             CLKINT     3      0.0        0.0
                GND    11      0.0        0.0
                INV     1      1.0        1.0
            MSS_APB     1      0.0        0.0
            MSS_CCC     1      0.0        0.0
-               MX2   315      1.0      315.0
-              MX2A    18      1.0       18.0
-              NOR2    16      1.0       16.0
-             NOR2A    40      1.0       40.0
-             NOR2B   207      1.0      207.0
+               MX2   295      1.0      295.0
+              MX2A    17      1.0       17.0
+              MX2C     8      1.0        8.0
+              NOR2    10      1.0       10.0
+             NOR2A    35      1.0       35.0
+             NOR2B   225      1.0      225.0
               NOR3    10      1.0       10.0
              NOR3A    11      1.0       11.0
-             NOR3B    14      1.0       14.0
-             NOR3C    23      1.0       23.0
-               OA1     3      1.0        3.0
+             NOR3B    16      1.0       16.0
+             NOR3C    31      1.0       31.0
+               OA1     1      1.0        1.0
               OA1A     3      1.0        3.0
               OA1B     2      1.0        2.0
-              OA1C     5      1.0        5.0
-               OR2    16      1.0       16.0
-              OR2A    30      1.0       30.0
-              OR2B     5      1.0        5.0
-               OR3    31      1.0       31.0
-              OR3B     5      1.0        5.0
-              OR3C     4      1.0        4.0
+              OA1C     6      1.0        6.0
+               OR2    22      1.0       22.0
+              OR2A    29      1.0       29.0
+              OR2B     8      1.0        8.0
+               OR3    26      1.0       26.0
+              OR3A     1      1.0        1.0
+              OR3B     4      1.0        4.0
+              OR3C     3      1.0        3.0
              RCOSC     1      0.0        0.0
                VCC    11      0.0        0.0
-              XA1B     4      1.0        4.0
+              XA1B     8      1.0        8.0
               XA1C    12      1.0       12.0
-             XNOR2    11      1.0       11.0
-               XO1    21      1.0       21.0
-              XOR2    75      1.0       75.0
+             XNOR2     5      1.0        5.0
+               XO1    20      1.0       20.0
+              XOR2    67      1.0       67.0
 
 
-              DFN1   179      1.0      179.0
+              DFN1   152      1.0      152.0
             DFN1C0     3      1.0        3.0
-            DFN1E0    63      1.0       63.0
+            DFN1E0    74      1.0       74.0
           DFN1E0C1    33      1.0       33.0
-            DFN1E1   166      1.0      166.0
+            DFN1E1   126      1.0      126.0
           DFN1E1C0    32      1.0       32.0
             DFN1P0     1      1.0        1.0
                    -----          ----------
-             TOTAL  1481              1453.0
+             TOTAL  1392              1364.0
 
 
   IO Cell usage:
@@ -64,14 +66,14 @@ Report for cell gc.verilog
              BIBUF     1
              INBUF     1
          INBUF_MSS     2
-            OUTBUF     9
+            OUTBUF     5
         OUTBUF_MSS     1
                    -----
-             TOTAL    14
+             TOTAL    10
 
 
-Core Cells         : 1453 of 4608 (32%)
-IO Cells           : 14
+Core Cells         : 1364 of 4608 (30%)
+IO Cells           : 10
 
   RAM/ROM Usage Summary
 Block Rams : 0 of 8 (0%)

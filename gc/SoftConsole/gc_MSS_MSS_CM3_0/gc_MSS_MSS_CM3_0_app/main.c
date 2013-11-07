@@ -183,28 +183,30 @@ int main()
 	*((volatile int *) 0x40050000) = 0;
 
 	while( 1 )
-	{
+	{*((volatile int *) 0x40050000) = 0;
 		mem[0] = (volatile int) *((volatile int *)0x40050000);
 		mem[1] = (volatile int) *((volatile int *)0x40050004);
-		print_gc();
+		//print_gc();
+		printf("%8x\n\r", (volatile int) *((volatile int *)0x40050004));
+
 		if(GC->a) {
-			setPWM(0.5);
+			//setPWM(0.5);
 		}
 		else if(GC->b) {
-			setPWM(-0.5);
+			//setPWM(-0.5);
 		}
 		else {
-			setPWM(0);
+			//setPWM(0);
 		}
 
 		if(GC->d_right) {
-			MYTIMER_set_servo_direction(1);
+			//MYTIMER_set_servo_direction(1);
 		}
 		else if(GC->d_left) {
-			MYTIMER_set_servo_direction(-1);
+			//MYTIMER_set_servo_direction(-1);
 		}
 		else {
-			MYTIMER_set_servo_direction(0);
+			//MYTIMER_set_servo_direction(0);
 		}
 		for (d = 0; d < 1000000; d++);//*((volatile int *) 0x40050000) = 0;
 	}

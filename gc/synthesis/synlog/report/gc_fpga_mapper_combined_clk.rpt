@@ -3,21 +3,20 @@
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
 Clock optimization not enabled
-2 non-gated/non-generated clock tree(s) driving 461 clock pin(s) of sequential element(s)
-1 gated/generated clock tree(s) driving 16 clock pin(s) of sequential element(s)
-0 instances converted, 16 sequential instances remain driven by gated/generated clocks
+2 non-gated/non-generated clock tree(s) driving 421 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
 ========================================= Non-Gated/Non-Generated Clocks ==========================================
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                            
 -------------------------------------------------------------------------------------------------------------------
-@K:CKID0002       CAPTURE_SWITCH      port                   33         motorWrapper_0.motor_0.capture_status_async
-@K:CKID0003       gc_MSS_0            hierarchy              428        send_query_0.reset_count[7]                
+@K:CKID0001       CAPTURE_SWITCH      port                   33         motorWrapper_0.motor_0.capture_status_async
+@K:CKID0002       gc_MSS_0            hierarchy              388        send_query_0.count[0]                      
 ===================================================================================================================
-============================================================================ Gated/Generated Clocks =============================================================================
-Clock Tree ID     Driving Element                Drive Element Type     Fanout     Sample Instance       Explanation                                                             
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       send_query_0.II_0.clockout     DFN1                   16         send_query_0.send     No generated or derived clock directive on output of sequential instance
-=================================================================================================================================================================================
+===== Gated/Generated Clocks =====
+************** None **************
+----------------------------------
+==================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]

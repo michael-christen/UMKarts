@@ -87,8 +87,14 @@
         <spirit:right>0</spirit:right>
       </spirit:signal>
       <spirit:signal>
-        <spirit:name>init</spirit:name>
+        <spirit:name>start_init</spirit:name>
         <spirit:direction>out</spirit:direction>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>x</spirit:name>
+        <spirit:direction>in</spirit:direction>
+        <spirit:left>23</spirit:left>
+        <spirit:right>0</spirit:right>
       </spirit:signal>
     </spirit:signals>
     <spirit:hwParameters>

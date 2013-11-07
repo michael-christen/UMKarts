@@ -1,65 +1,55 @@
-@P:  Worst Slack : -2.647
-@P:  FAB_CLK - Estimated Frequency : 79.1 MHz
+@P:  Worst Slack : -3.005
+@P:  FAB_CLK - Estimated Frequency : 76.9 MHz
 @P:  FAB_CLK - Requested Frequency : 100.0 MHz
-@P:  FAB_CLK - Estimated Period : 12.647
+@P:  FAB_CLK - Estimated Period : 13.005
 @P:  FAB_CLK - Requested Period : 10.000
-@P:  FAB_CLK - Slack : -2.647
+@P:  FAB_CLK - Slack : -3.005
 @P:  FCLK - Estimated Frequency : NA
 @P:  FCLK - Requested Frequency : 100.0 MHz
 @P:  FCLK - Estimated Period : NA
 @P:  FCLK - Requested Period : 10.000
 @P:  FCLK - Slack : NA
-@P:  clockdiv|clockout_inferred_clock - Estimated Frequency : 138.6 MHz
-@P:  clockdiv|clockout_inferred_clock - Requested Frequency : 100.0 MHz
-@P:  clockdiv|clockout_inferred_clock - Estimated Period : 7.217
-@P:  clockdiv|clockout_inferred_clock - Requested Period : 10.000
-@P:  clockdiv|clockout_inferred_clock - Slack : 2.783
 @P:  gc|CAPTURE_SWITCH - Estimated Frequency : 238.2 MHz
 @P:  gc|CAPTURE_SWITCH - Requested Frequency : 100.0 MHz
 @P:  gc|CAPTURE_SWITCH - Estimated Period : 4.199
 @P:  gc|CAPTURE_SWITCH - Requested Period : 10.000
 @P:  gc|CAPTURE_SWITCH - Slack : 5.801
-@P:  System - Estimated Frequency : 172.4 MHz
+@P:  System - Estimated Frequency : 171.3 MHz
 @P:  System - Requested Frequency : 100.0 MHz
-@P:  System - Estimated Period : 5.799
+@P:  System - Estimated Period : 5.837
 @P:  System - Requested Period : 10.000
-@P:  System - Slack : 4.201
+@P:  System - Slack : 4.163
 @P:  Worst Slack(min analysis) : 0.192
-@P:  FAB_CLK - Estimated Frequency(min analysis) : 79.1 MHz
+@P:  FAB_CLK - Estimated Frequency(min analysis) : 76.9 MHz
 @P:  FAB_CLK - Requested Frequency(min analysis) : 100.0 MHz
-@P:  FAB_CLK - Estimated Period(min analysis) : 12.647
+@P:  FAB_CLK - Estimated Period(min analysis) : 13.005
 @P:  FAB_CLK - Requested Period(min analysis) : 10.000
-@P:  FAB_CLK - Slack(min analysis) : -2.647
+@P:  FAB_CLK - Slack(min analysis) : -3.005
 @P:  FCLK - Estimated Frequency(min analysis) : NA
 @P:  FCLK - Requested Frequency(min analysis) : 100.0 MHz
 @P:  FCLK - Estimated Period(min analysis) : NA
 @P:  FCLK - Requested Period(min analysis) : 10.000
 @P:  FCLK - Slack(min analysis) : NA
-@P:  clockdiv|clockout_inferred_clock - Estimated Frequency(min analysis) : 138.6 MHz
-@P:  clockdiv|clockout_inferred_clock - Requested Frequency(min analysis) : 100.0 MHz
-@P:  clockdiv|clockout_inferred_clock - Estimated Period(min analysis) : 7.217
-@P:  clockdiv|clockout_inferred_clock - Requested Period(min analysis) : 10.000
-@P:  clockdiv|clockout_inferred_clock - Slack(min analysis) : 2.783
 @P:  gc|CAPTURE_SWITCH - Estimated Frequency(min analysis) : 238.2 MHz
 @P:  gc|CAPTURE_SWITCH - Requested Frequency(min analysis) : 100.0 MHz
 @P:  gc|CAPTURE_SWITCH - Estimated Period(min analysis) : 4.199
 @P:  gc|CAPTURE_SWITCH - Requested Period(min analysis) : 10.000
 @P:  gc|CAPTURE_SWITCH - Slack(min analysis) : 5.801
-@P:  System - Estimated Frequency(min analysis) : 172.4 MHz
+@P:  System - Estimated Frequency(min analysis) : 171.3 MHz
 @P:  System - Requested Frequency(min analysis) : 100.0 MHz
-@P:  System - Estimated Period(min analysis) : 5.799
+@P:  System - Estimated Period(min analysis) : 5.837
 @P:  System - Requested Period(min analysis) : 10.000
-@P:  System - Slack(min analysis) : 4.201
-@P:  Total Area : 1453.0
-@P:  Total Area : 158.0
-@P:  Total Area : 31.0
-@P:  Total Area : 960.0
-@P:  Total Area : 954.0
-@P:  Total Area : 68.0
-@P:  Total Area : 197.0
-@P:  Total Area : 5.0
+@P:  System - Slack(min analysis) : 4.163
+@P:  Total Area : 1364.0
+@P:  Total Area : 112.0
+@P:  Total Area : 963.0
+@P:  Total Area : 957.0
+@P:  Total Area : 16.0
+@P:  Total Area : 52.0
+@P:  Total Area : 163.0
+@P:  Total Area : 1.0
 @P:  Total Area : 0.0
-@P:  Total Area : 64.0
-@P:  Total Area : 64.0
-@P:  Total Area : 1453.0
+@P:  Total Area : 56.0
+@P:  Total Area : 56.0
+@P:  Total Area : 1364.0
 @P:  CPU Time : 0h:00m:02s

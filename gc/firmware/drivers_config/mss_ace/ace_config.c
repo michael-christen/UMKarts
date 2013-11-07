@@ -2,7 +2,7 @@
 * (c) Copyright  Actel Corporation. All rights reserved.
 *
 *ACE configuration .c file
-*Created by Actel MSS_ACE Configurator Tue Oct 29 18:29:58 2013
+*Created by Actel MSS_ACE Configurator Wed Nov 06 22:49:41 2013
 *
 */
 
