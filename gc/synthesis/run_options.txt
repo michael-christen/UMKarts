@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version G-2012.09M-SP1 
 #--  Project file C:\Users\mikechri\Downloads\gc\gc\synthesis\run_options.txt
-#--  Written on Wed Nov 06 12:52:46 2013
+#--  Written on Wed Nov 06 23:23:58 2013
 
 
 #project files
@@ -16,6 +16,7 @@ add_file -verilog "C:/Users/mikechri/Downloads/gc/gc/hdl/query.v"
 add_file -verilog -lib COREAPB3_LIB "C:/Users/mikechri/Downloads/gc/gc/component/Actel/DirectCore/CoreAPB3/4.0.100/rtl/vlog/core_obfuscated/coreapb3_muxptob3.v"
 add_file -verilog -lib COREAPB3_LIB "C:/Users/mikechri/Downloads/gc/gc/component/Actel/DirectCore/CoreAPB3/4.0.100/rtl/vlog/core_obfuscated/coreapb3_iaddr_reg.v"
 add_file -verilog -lib COREAPB3_LIB "C:/Users/mikechri/Downloads/gc/gc/component/Actel/DirectCore/CoreAPB3/4.0.100/rtl/vlog/core_obfuscated/coreapb3.v"
+add_file -verilog "C:/Users/mikechri/Downloads/gc/gc/hdl/generalQuery.v"
 add_file -verilog "C:/Users/mikechri/Downloads/gc/gc/component/work/gc/gc.v"
 add_file -constraint "C:/Users/mikechri/Downloads/gc/gc/component/work/gc_MSS/mss_tshell_syn.sdc"
 

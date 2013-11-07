@@ -49,9 +49,12 @@ typedef struct
 
 } controller_t;
 
-#define CONTROLLER ((controller_t *) CONTROLLER_BASE)
+controller_t * CONTROLLER;
+uint32_t *MEM;
 
 void CONTROLLER_print();
 void CONTROLLER_init();
+void CONTROLLER_load();
+void CONTROLLER_setup_mem();
 
 #endif /* CONTROLLER_H_ */

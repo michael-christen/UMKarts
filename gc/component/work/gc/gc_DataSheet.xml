@@ -12,7 +12,7 @@
     <project-description>
     </project-description>
     <location>C:/Users/mikechri/Downloads/gc/gc/component/work/gc</location>
-    <state>GENERATED ( Wed Nov 06 12:52:40 2013 )</state>
+    <state>GENERATED ( Wed Nov 06 23:11:13 2013 )</state>
     <swide-toolchain>SoftConsole workspace generated to C:\Users\mikechri\Downloads\gc\gc\SoftConsole</swide-toolchain>
   </project-settings>
   <site-map>
@@ -27,6 +27,7 @@
     <file>C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\gc_MSS.v</file>
     <file>C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v</file>
     <file>C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\mss_tshell.v</file>
+    <file>C:\Users\mikechri\Downloads\gc\gc\hdl\generalQuery.v</file>
     <file>C:\Users\mikechri\Downloads\gc\gc\hdl\motor.v</file>
     <file>C:\Users\mikechri\Downloads\gc\gc\hdl\motorWrapper.v</file>
     <file>C:\Users\mikechri\Downloads\gc\gc\hdl\pulser.v</file>
@@ -35,8 +36,74 @@
   </fileset>
   <fileset>
     <name>Flash Memory File(s)</name>
-    <file>C:\Users\mikechri\Downloads\gc\gc\component\work\./MSS_ENVM_0/MSS_ENVM_0.efc</file>
+    <file>C:\Users\mikechri\Downloads\gc\gc\component\work\C:/Users/mikechri/Downloads/gc/gc/component/work/gc_MSS/MSS_ENVM_0/MSS_ENVM_0.efc</file>
   </fileset>
+  <io>
+    <port-name>data2</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>data_0</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>PWM1</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>MSS_RESET_N</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>send_0</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>LSERVO</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>UART_0_TXD</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>UART_0_RXD</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>LMOTOR</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>start_count</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>RSERVO</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
   <io>
     <port-name>data1</port-name>
     <direction>OUT</direction>
@@ -56,67 +123,7 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>MSS_RESET_N</port-name>
-    <direction>IN</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
     <port-name>RMOTOR</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>UART_0_TXD</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>UART_0_RXD</port-name>
-    <direction>IN</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>PWM1</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>start_count</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>LSERVO</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>send</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>RSERVO</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>data2</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>LMOTOR</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
@@ -402,6 +409,12 @@ There is one APB3 Master interface.
   </core>
   <core>
     <core-name>gc_response_apb_0</core-name>
+  </core>
+  <core type="HdlModule">
+    <core-type>HdlModule</core-type>
+    <core-exttype>generalQuery</core-exttype>
+    <core-location>hdl\generalQuery.v</core-location>
+    <core-name>generalQuery_0</core-name>
   </core>
   <core>
     <core-name>motorWrapper_0</core-name>

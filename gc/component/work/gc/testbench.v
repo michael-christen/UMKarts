@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by Actel SmartDesign Wed Nov 06 12:52:38 2013
+// Created by Actel SmartDesign Wed Nov 06 23:11:11 2013
 // Testbench Template
 // This is a basic testbench that instantiates your design with basic 
 // clock and reset pins connected.  If your design has special
@@ -51,7 +51,6 @@ gc gc_0 (
     // Outputs
     .UART_0_TXD( ),
     .start_count( ),
-    .send( ),
     .data1( ),
     .data2( ),
     .PWM1( ),
@@ -59,6 +58,8 @@ gc gc_0 (
     .RMOTOR( ),
     .LSERVO( ),
     .RSERVO( ),
+    .data_0( ),
+    .send_0( ),
 
     // Inouts
     .data( )

@@ -11,19 +11,20 @@
 @N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":37:7:37:16|Synthesizing module OUTBUF_MSS
 @N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\gc_MSS.v":9:7:9:12|Synthesizing module gc_MSS
 @N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":1:7:1:16|Synthesizing module gc_receive
-@N: CG179 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":24:25:24:43|Removing redundant assignment
-@N: CG179 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":25:14:25:21|Removing redundant assignment
-@N: CG179 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":36:15:36:22|Removing redundant assignment
-@N: CG179 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":39:11:39:15|Removing redundant assignment
-@N: CG179 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":41:26:41:44|Removing redundant assignment
-@N: CG179 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":44:14:44:21|Removing redundant assignment
-@N: CG179 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":47:25:47:43|Removing redundant assignment
-@N: CG179 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":48:14:48:21|Removing redundant assignment
-@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":54:7:54:21|Synthesizing module gc_response_apb
+@N: CG179 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":28:25:28:43|Removing redundant assignment
+@N: CG179 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":29:14:29:21|Removing redundant assignment
+@N: CG179 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":45:15:45:22|Removing redundant assignment
+@N: CG179 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":49:11:49:15|Removing redundant assignment
+@N: CG179 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":51:26:51:44|Removing redundant assignment
+@N: CG179 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":54:14:54:21|Removing redundant assignment
+@N: CG179 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":59:25:59:43|Removing redundant assignment
+@N: CG179 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":60:14:60:21|Removing redundant assignment
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":66:7:66:21|Synthesizing module gc_response_apb
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\query.v":96:7:96:14|Synthesizing module clockdiv
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\generalQuery.v":5:7:5:18|Synthesizing module generalQuery
 @N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\motor.v":1:7:1:11|Synthesizing module motor
 @N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\motorWrapper.v":2:7:2:18|Synthesizing module motorWrapper
-@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\query.v":84:7:84:14|Synthesizing module clockdiv
 @N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\query.v":4:7:4:16|Synthesizing module send_query
-@N: CL177 :"C:\Users\mikechri\Downloads\gc\gc\hdl\query.v":35:5:66:28|Sharing sequential element data.
+@N: CL177 :"C:\Users\mikechri\Downloads\gc\gc\hdl\query.v":36:5:75:24|Sharing sequential element data.
 @N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc\gc.v":9:7:9:8|Synthesizing module gc
 

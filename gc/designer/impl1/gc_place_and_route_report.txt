@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Wed Nov 06 12:54:08 2013 ***************************************************************************
+                          Wed Nov 06 23:25:28 2013 ***************************************************************************
 
 Product: Designer
 Release: v11.0
 Version: 11.0.0.23
 File Name: C:\Users\mikechri\Downloads\gc\gc\designer\impl1\gc.adb
 Design Name: gc  Design State: layout
-Last Saved: Wed Nov 06 12:53:13 2013
+Last Saved: Wed Nov 06 23:24:26 2013
 
 ***** Device Data **************************************************
 
@@ -22,7 +22,7 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Wed Nov 06 12:52:57 2013:
+Source File(s) Imported on Wed Nov 06 23:24:11 2013:
         C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.edn
         C:\Users\mikechri\Downloads\gc\gc\component\work\gc\gc.pdc
 
@@ -378,9 +378,9 @@ Optimized macros:
   - Buffers:                0
   - Inverters:              0
   - Tieoff:                 0
-  - Logic combining:        21
+  - Logic combining:        55
 
-    Total macros optimized  21
+    Total macros optimized  55
 
 Warning: CMP503: Remapped 65 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
          pin on the enable flip-flop is not being driven by a global net.
@@ -405,8 +405,8 @@ Compile report:
 ===============
 
     Microcontroller Subsystem  Used:      1  Total:      1   (100.00%)
-    Fabric                     Used:   1493  Total:   4608   (32.40%)
-    Fabric IO (W/ clocks)      Used:     11  Total:     94   (11.70%)
+    Fabric                     Used:   1779  Total:   4608   (38.61%)
+    Fabric IO (W/ clocks)      Used:     12  Total:     94   (12.77%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
     Dedicated MSS IO           Used:      3  Total:     43   (6.98%)
@@ -434,15 +434,15 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 1016         | 1016
-    SEQ     | 477          | 477
+    COMB    | 1253         | 1253
+    SEQ     | 526          | 526
 
 I/O Function:
 
     Type                          | w/o register  | w/ register  | w/ DDR register
     ------------------------------|---------------|--------------|----------------
     Input I/O                     | 1             | 0            | 0
-    Output I/O                    | 9             | 0            | 0
+    Output I/O                    | 10            | 0            | 0
     Bidirectional I/O             | 1             | 0            | 0
     Differential Input I/O Pairs  | 0             | 0            | 0
     Differential Output I/O Pairs | 0             | 0            | 0
@@ -453,11 +453,11 @@ I/O Technology:
     --------------------------------|-------|-------|-------|--------|--------------
     I/O Standard(s)                 | Vcci  | Vref  | Input | Output | Bidirectional
     --------------------------------|-------|-------|-------|--------|--------------
-    LVTTL                           | 3.30v | N/A   | 1     | 9      | 1
+    LVTTL                           | 3.30v | N/A   | 1     | 10     | 1
 
 I/O Placement:
 
-    Locked  :  11 ( 100.00% )
+    Locked  :  12 ( 100.00% )
     Placed  :   0
     UnPlaced:   0
 
@@ -467,11 +467,11 @@ Net information report:
 The following nets drive enable flip-flops that have been remapped to a 2-tile implementation:
     EffCnt  Type          Name
     --------------------------
-    17      SET/RESET_NET Net   : motorWrapper_0/motor_0/reset_capture_sync_0
+    18      SET/RESET_NET Net   : motorWrapper_0/motor_0/reset_capture_sync_0
                           Driver: motorWrapper_0/motor_0/reset_capture_sync_0_0
     17      SET/RESET_NET Net   : motorWrapper_0/motor_0/N_1227_0
                           Driver: motorWrapper_0/motor_0/reset_capture_async_RNIKK9A_0
-    16      SET/RESET_NET Net   : motorWrapper_0/motor_0/reset_capture_sync
+    15      SET/RESET_NET Net   : motorWrapper_0/motor_0/reset_capture_sync
                           Driver: motorWrapper_0/motor_0/reset_capture_sync
     15      SET/RESET_NET Net   : motorWrapper_0/motor_0/reset_capture_async_RNIKK9A
                           Driver: motorWrapper_0/motor_0/reset_capture_async_RNIKK9A
@@ -479,66 +479,66 @@ The following nets drive enable flip-flops that have been remapped to a 2-tile i
 The following nets have been assigned to a chip global resource:
     Fanout  Type          Name
     --------------------------
-    429     CLK_NET       Net   : FAB_CLK
+    448     CLK_NET       Net   : FAB_CLK
                           Driver: gc_MSS_0/MSS_CCC_0/I_MSSCCC
                           Source: ESSENTIAL
-    144     INT_NET       Net   : gc_MSS_0_M2F_RESET_N
+    147     INT_NET       Net   : gc_MSS_0_M2F_RESET_N
                           Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3/U_CLKSRC
                           Source: NETLIST
     133     INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[4]
-                          Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_0/U_CLKSRC
+                          Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_1/U_CLKSRC
                           Source: NETLIST
-    70      INT_NET       Net   : gc_receive_0/response_0_sqmuxa
-                          Driver: gc_receive_0/count_RNIPEVS2_0[5]/U_CLKSRC
+    73      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[2]
+                          Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_0/U_CLKSRC
                           Source: NETLIST
 
 High fanout nets in the post compile netlist:
     Fanout  Type          Name
     --------------------------
-    24      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR_0[3]
-                          Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_6
-    24      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR_1[3]
-                          Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_4
-    24      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR_0[2]
-                          Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_2
-    24      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR_1[2]
-                          Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_1
-    23      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR_2[3]
-                          Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_5
-    23      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR_2[2]
-                          Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_3
+    30      CLK_NET       Net   : generalQuery_0/clockout
+                          Driver: generalQuery_0/II_0/clockout
+    24      INT_NET       Net   : gc_receive_0/response_0_sqmuxa_1
+                          Driver: gc_receive_0/count_RNIPEVS2[5]
+    24      INT_NET       Net   : gc_receive_0/response_0_sqmuxa_0
+                          Driver: gc_receive_0/count_RNIPEVS2_0[5]
     22      INT_NET       Net   : send_query_0/count12
                           Driver: send_query_0/reset_count_RNIK86R[1]
     22      INT_NET       Net   : gc_receive_0/N_35_1
                           Driver: gc_receive_0/count_RNICJH81_0[7]
     22      INT_NET       Net   : gc_receive_0/N_35_0
                           Driver: gc_receive_0/count_RNICJH81_1[7]
+    22      INT_NET       Net   : gc_receive_0/response_0_sqmuxa
+                          Driver: gc_receive_0/count_RNIPEVS2_1[5]
     21      INT_NET       Net   : gc_receive_0/N_35
                           Driver: gc_receive_0/count_RNICJH81_2[7]
+    19      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[3]
+                          Driver: gc_MSS_0/MSS_ADLIB_INST
+    19      CLK_NET       Net   : CAPTURE_SWITCH_c
+                          Driver: CAPTURE_SWITCH_pad
 
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
     --------------------------
-    71      INT_NET       Net   : gc_MSS_0/CoreAPB3_0_APBmslave0_PADDR[2]
-                          Driver: gc_MSS_0/MSS_ADLIB_INST
-    71      INT_NET       Net   : gc_MSS_0/CoreAPB3_0_APBmslave0_PADDR[3]
+    73      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[3]
                           Driver: gc_MSS_0/MSS_ADLIB_INST
     36      CLK_NET       Net   : CAPTURE_SWITCH_c
                           Driver: CAPTURE_SWITCH_pad
     35      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[8]
                           Driver: gc_MSS_0/MSS_ADLIB_INST
+    30      CLK_NET       Net   : generalQuery_0/clockout
+                          Driver: generalQuery_0/II_0/clockout
+    24      INT_NET       Net   : gc_receive_0/response_0_sqmuxa_1
+                          Driver: gc_receive_0/count_RNIPEVS2[5]
+    24      INT_NET       Net   : gc_receive_0/response_0_sqmuxa_0
+                          Driver: gc_receive_0/count_RNIPEVS2_0[5]
     22      INT_NET       Net   : send_query_0/count12
                           Driver: send_query_0/reset_count_RNIK86R[1]
     22      INT_NET       Net   : gc_receive_0/N_35_1
                           Driver: gc_receive_0/count_RNICJH81_0[7]
     22      INT_NET       Net   : gc_receive_0/N_35_0
                           Driver: gc_receive_0/count_RNICJH81_1[7]
-    21      INT_NET       Net   : gc_receive_0/N_35
-                          Driver: gc_receive_0/count_RNICJH81_2[7]
-    18      INT_NET       Net   : N_142
-                          Driver: motorWrapper_0/BUS_WRITE_EN_0_a2_0
-    17      INT_NET       Net   : N_143
-                          Driver: motorWrapper_0/BUS_WRITE_EN_0_a2
+    22      INT_NET       Net   : gc_receive_0/response_0_sqmuxa
+                          Driver: gc_receive_0/count_RNIPEVS2_1[5]
 
 
 Layout Output:
@@ -564,16 +564,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Wed Nov 06 12:53:18 2013
+Timing-driven Placer Started: Wed Nov 06 23:24:32 2013
 
-Placer Finished: Wed Nov 06 12:53:37 2013
-Total Placer CPU Time:     00:00:19
+Placer Finished: Wed Nov 06 23:24:56 2013
+Total Placer CPU Time:     00:00:24
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: gc                              Started: Wed Nov 06 12:53:43 2013
+Design: gc                              Started: Wed Nov 06 23:25:02 2013
 
  
 Iterative improvement...
@@ -581,9 +581,9 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: gc                              
-Finished: Wed Nov 06 12:54:01 2013
-Total CPU Time:     00:00:18            Total Elapsed Time: 00:00:18
-Total Memory Usage: 166.0 Mbytes
+Finished: Wed Nov 06 23:25:21 2013
+Total CPU Time:     00:00:19            Total Elapsed Time: 00:00:19
+Total Memory Usage: 169.1 Mbytes
                         o - o - o - o - o - o
 
 

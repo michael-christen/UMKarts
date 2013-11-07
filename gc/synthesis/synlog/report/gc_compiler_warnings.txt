@@ -1,8 +1,9 @@
+@W: CG978 :"C:\Users\mikechri\Downloads\gc\gc\hdl\generalQuery.v":23:0:23:7|An instance name was not specified - using generated name II_0
 @W: CG775 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Found Component CoreAPB3 in library COREAPB3_LIB
 @W: CG775 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Found Component CoreAPB3 in library COREAPB3_LIB
 @W: CG360 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":1477:0:1477:8|No assignment to wire CAPB3lIOI
-@W: CL265 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":19:0:19:5|Pruning bit 0 of next_response_5[63:0] -- not in use ...
-@W: CL169 :"C:\Users\mikechri\Downloads\gc\gc\hdl\query.v":29:0:29:5|Pruning register data_cl 
+@W: CL265 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":20:0:20:5|Pruning bit 0 of next_response_5[63:0] -- not in use ...
+@W: CL169 :"C:\Users\mikechri\Downloads\gc\gc\hdl\query.v":30:0:30:5|Pruning register data_cl 
 @W: CL189 :"C:\Users\mikechri\Downloads\gc\gc\hdl\query.v":20:0:20:5|Register bit reset_count[9] is always 0, optimizing ...
 @W: CL260 :"C:\Users\mikechri\Downloads\gc\gc\hdl\query.v":20:0:20:5|Pruning register bit 9 of reset_count[9:0] 
 @W: CL189 :"C:\Users\mikechri\Downloads\gc\gc\hdl\query.v":20:0:20:5|Register bit reset_count[8] is always 0, optimizing ...
@@ -10,13 +11,18 @@
 @W: CL157 :"C:\Users\mikechri\Downloads\gc\gc\hdl\motorWrapper.v":36:13:36:15|*Output TPS has undriven bits -- simulation mismatch possible.
 @W: CL246 :"C:\Users\mikechri\Downloads\gc\gc\hdl\motor.v":20:12:20:19|Input port bits 7 to 5 of bus_addr[7:0] are unused
 @W: CL246 :"C:\Users\mikechri\Downloads\gc\gc\hdl\motor.v":20:12:20:19|Input port bits 1 to 0 of bus_addr[7:0] are unused
-@W: CL246 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":64:13:64:17|Input port bits 31 to 3 of PADDR[31:0] are unused
-@W: CL246 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":64:13:64:17|Input port bits 1 to 0 of PADDR[31:0] are unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":58:6:58:12|Input PRESERN is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":65:18:65:23|Input PWDATA is unused
-@W: CL189 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":19:0:19:5|Register bit next_response_count[6] is always 0, optimizing ...
-@W: CL189 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":19:0:19:5|Register bit next_response_count[7] is always 0, optimizing ...
-@W: CL279 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":19:0:19:5|Pruning register bits 7 to 6 of next_response_count[7:0] 
+@W: CL189 :"C:\Users\mikechri\Downloads\gc\gc\hdl\generalQuery.v":25:0:25:5|Register bit reset_count[9] is always 0, optimizing ...
+@W: CL189 :"C:\Users\mikechri\Downloads\gc\gc\hdl\generalQuery.v":35:0:35:5|Register bit data is always 0, optimizing ...
+@W: CL260 :"C:\Users\mikechri\Downloads\gc\gc\hdl\generalQuery.v":25:0:25:5|Pruning register bit 9 of reset_count[9:0] 
+@W: CL189 :"C:\Users\mikechri\Downloads\gc\gc\hdl\generalQuery.v":25:0:25:5|Register bit reset_count[8] is always 0, optimizing ...
+@W: CL260 :"C:\Users\mikechri\Downloads\gc\gc\hdl\generalQuery.v":25:0:25:5|Pruning register bit 8 of reset_count[8:0] 
+@W: CL246 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":76:13:76:17|Input port bits 31 to 3 of PADDR[31:0] are unused
+@W: CL246 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":76:13:76:17|Input port bits 1 to 0 of PADDR[31:0] are unused
+@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":70:6:70:12|Input PRESERN is unused
+@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":77:18:77:23|Input PWDATA is unused
+@W: CL189 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":20:0:20:5|Register bit next_response_count[6] is always 0, optimizing ...
+@W: CL189 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":20:0:20:5|Register bit next_response_count[7] is always 0, optimizing ...
+@W: CL279 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":20:0:20:5|Pruning register bits 7 to 6 of next_response_count[7:0] 
 @W: CL157 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":62:7:62:18|*Output RCOSC_CLKOUT has undriven bits -- simulation mismatch possible.
 @W: CL157 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":63:7:63:20|*Output MAINXIN_CLKOUT has undriven bits -- simulation mismatch possible.
 @W: CL157 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":64:7:64:18|*Output LPXIN_CLKOUT has undriven bits -- simulation mismatch possible.

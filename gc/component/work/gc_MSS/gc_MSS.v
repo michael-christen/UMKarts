@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Tue Oct 29 18:30:03 2013
+// Created by SmartDesign Wed Nov 06 19:37:36 2013
 // Version: v11.0 11.0.0.23
 //////////////////////////////////////////////////////////////////////
 
@@ -8,6 +8,7 @@
 // gc_MSS
 module gc_MSS(
     // Inputs
+    FABINT,
     MSSPRDATA,
     MSSPREADY,
     MSSPSLVERR,
@@ -27,6 +28,7 @@ module gc_MSS(
 //--------------------------------------------------------------------
 // Input
 //--------------------------------------------------------------------
+input         FABINT;
 input  [31:0] MSSPRDATA;
 input         MSSPREADY;
 input         MSSPSLVERR;
@@ -46,6 +48,7 @@ output        UART_0_TXD;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
+wire          FABINT;
 wire          MSS_ADLIB_INST_EMCCLK;
 wire          MSS_ADLIB_INST_FCLK;
 wire          MSS_ADLIB_INST_MACCLK;
@@ -139,7 +142,7 @@ MSS_ADLIB_INST(
         .FABPENABLE     ( GND_net ), // tied to 1'b0 from definition
         .SYNCCLKFDBK    ( MSS_ADLIB_INST_SYNCCLKFDBK ),
         .CALIBIN        ( GND_net ), // tied to 1'b0 from definition
-        .FABINT         ( GND_net ), // tied to 1'b0 from definition
+        .FABINT         ( FABINT ),
         .F2MRESETn      ( VCC_net ), // tied to 1'b1 from definition
         .DMAREADY       ( DMAREADY_const_net_0 ), // tied to 2'h0 from definition
         .RXEV           ( GND_net ), // tied to 1'b0 from definition

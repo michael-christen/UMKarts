@@ -7,6 +7,7 @@
 #include "controller.h"
 
 void CONTROLLER_print() {
+	CONTROLLER_load();
 	if (CONTROLLER->start)
 		printf("Start ");
 	if (CONTROLLER->y)
@@ -40,6 +41,15 @@ void CONTROLLER_print() {
 void CONTROLLER_init() {
 	// Write to send wavebird init command
 	*((volatile int *) CONTROLLER_BASE) = 0;
+}
+
+void CONTROLLER_setup_mem() {
+	MEM = (uint32_t*) malloc(8);
+	CONTROLLER = (controller_t *) MEM;
+}
+void CONTROLLER_load() {
+	MEM[0] = (volatile int) *((volatile int *)CONTROLLER_BASE);
+    MEM[1] = (volatile int) *((volatile int *)CONTROLLER_BASE + 4);
 }
 
 

@@ -1,14 +1,12 @@
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled 
-@N: MF238 :"c:\users\mikechri\downloads\gc\gc\hdl\query.v":33:11:33:20|Found 13-bit incrementor, 'un3_count[12:0]'
-@N: MF239 :"c:\users\mikechri\downloads\gc\gc\hdl\query.v":26:17:26:32|Found 8-bit decrementor, 'un6_reset_count[7:0]'
-@N: MF238 :"c:\users\mikechri\downloads\gc\gc\hdl\query.v":92:12:92:22|Found 7-bit incrementor, 'ccount_2[6:0]'
-@N: BN362 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":75:0:75:5|Removing sequential instance motorWrapper_0.motor_0.fabint of view:PrimLib.dff(prim) in hierarchy view:work.gc(verilog) because there are no references to its outputs 
-@N: BN362 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":208:0:208:5|Removing sequential instance motorWrapper_0.motor_0.timer_interrupt of view:PrimLib.dff(prim) in hierarchy view:work.gc(verilog) because there are no references to its outputs 
-@N: BN362 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":267:0:267:5|Removing sequential instance motorWrapper_0.motor_0.capture_interrupt of view:PrimLib.dffr(prim) in hierarchy view:work.gc(verilog) because there are no references to its outputs 
-@N: FP130 |Promoting Net gc_MSS_0_M2F_RESET_N on CLKINT  I_133 
-@N: FP130 |Promoting Net CoreAPB3_0_APBmslave0_PADDR[4] on CLKINT  I_134 
-@N: FP130 |Promoting Net gc_receive_0.response_0_sqmuxa on CLKINT  I_135 
+@N: MF239 :"c:\users\mikechri\downloads\gc\gc\hdl\generalquery.v":32:17:32:32|Found 8-bit decrementor, 'un6_reset_count[7:0]'
+@N: MF238 :"c:\users\mikechri\downloads\gc\gc\hdl\query.v":104:12:104:22|Found 7-bit incrementor, 'ccount_2[6:0]'
+@N: MF238 :"c:\users\mikechri\downloads\gc\gc\hdl\query.v":34:11:34:20|Found 13-bit incrementor, 'un3_count[12:0]'
+@N: MF239 :"c:\users\mikechri\downloads\gc\gc\hdl\query.v":27:17:27:32|Found 8-bit decrementor, 'un6_reset_count[7:0]'
+@N: FP130 |Promoting Net gc_MSS_0_M2F_RESET_N on CLKINT  I_150 
+@N: FP130 |Promoting Net CoreAPB3_0_APBmslave0_PADDR[4] on CLKINT  I_151 
+@N: FP130 |Promoting Net CoreAPB3_0_APBmslave0_PADDR[2] on CLKINT  I_152 
 @N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
 @N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
 @N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.

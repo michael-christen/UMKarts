@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Wed Nov 06 12:52:38 2013
+// Created by SmartDesign Wed Nov 06 23:11:11 2013
 // Version: v11.0 11.0.0.23
 //////////////////////////////////////////////////////////////////////
 
@@ -20,7 +20,8 @@ module gc(
     UART_0_TXD,
     data1,
     data2,
-    send,
+    data_0,
+    send_0,
     start_count,
     // Inouts
     data
@@ -43,7 +44,8 @@ output RSERVO;
 output UART_0_TXD;
 output data1;
 output data2;
-output send;
+output data_0;
+output send_0;
 output start_count;
 //--------------------------------------------------------------------
 // Inout
@@ -67,6 +69,7 @@ wire          CoreAPB3_0_APBmslave1_PSLVERR;
 wire          data_net_0;
 wire          data1_net_0;
 wire          data2_net_0;
+wire          data_0_net_0;
 wire          gc_MSS_0_FAB_CLK;
 wire          gc_MSS_0_M2F_RESET_N;
 wire          gc_MSS_0_MSS_MASTER_APB_PENABLE;
@@ -80,17 +83,18 @@ wire   [63:0] gc_receive_0_response;
 wire          gc_response_apb_0_init;
 wire          LMOTOR_net_0;
 wire          LSERVO_net_0;
+wire          motorWrapper_0_FABINT;
 wire          MSS_RESET_N;
 wire          PWM1_net_0;
 wire          RMOTOR_net_0;
 wire          RSERVO_net_0;
-wire          send_net_0;
+wire          send;
+wire          send_0_net_0;
 wire          start_count_net_0;
 wire          UART_0_RXD;
-wire          UART_0_TXD_1;
-wire          UART_0_TXD_1_net_0;
+wire          UART_0_TXD_0;
+wire          UART_0_TXD_0_net_0;
 wire          start_count_net_1;
-wire          send_net_1;
 wire          data1_net_1;
 wire          data2_net_1;
 wire          data_net_1;
@@ -99,9 +103,13 @@ wire          LMOTOR_net_1;
 wire          RMOTOR_net_1;
 wire          LSERVO_net_1;
 wire          RSERVO_net_1;
+wire          data_0_net_1;
+wire          send_0_net_1;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
+wire   [24:0] command_const_net_0;
+wire   [12:0] cmdLength_const_net_0;
 wire          GND_net;
 wire          VCC_net;
 wire   [31:0] IADDR_const_net_0;
@@ -123,16 +131,18 @@ wire   [31:0] PRDATAS16_const_net_0;
 //--------------------------------------------------------------------
 // Bus Interface Nets Declarations - Unequal Pin Widths
 //--------------------------------------------------------------------
-wire   [31:0] CoreAPB3_0_APBmslave0_PADDR;
 wire   [7:0]  CoreAPB3_0_APBmslave0_PADDR_0_7to0;
 wire   [7:0]  CoreAPB3_0_APBmslave0_PADDR_0;
+wire   [31:0] CoreAPB3_0_APBmslave0_PADDR;
+wire   [19:0] gc_MSS_0_MSS_MASTER_APB_PADDR;
 wire   [31:20]gc_MSS_0_MSS_MASTER_APB_PADDR_0_31to20;
 wire   [19:0] gc_MSS_0_MSS_MASTER_APB_PADDR_0_19to0;
 wire   [31:0] gc_MSS_0_MSS_MASTER_APB_PADDR_0;
-wire   [19:0] gc_MSS_0_MSS_MASTER_APB_PADDR;
 //--------------------------------------------------------------------
 // Constant assignments
 //--------------------------------------------------------------------
+assign command_const_net_0   = 25'h0400300;
+assign cmdLength_const_net_0 = 13'h0018;
 assign GND_net               = 1'b0;
 assign VCC_net               = 1'b1;
 assign IADDR_const_net_0     = 32'h00000000;
@@ -154,12 +164,10 @@ assign PRDATAS16_const_net_0 = 32'h00000000;
 //--------------------------------------------------------------------
 // Top level output port assignments
 //--------------------------------------------------------------------
-assign UART_0_TXD_1_net_0 = UART_0_TXD_1;
-assign UART_0_TXD         = UART_0_TXD_1_net_0;
+assign UART_0_TXD_0_net_0 = UART_0_TXD_0;
+assign UART_0_TXD         = UART_0_TXD_0_net_0;
 assign start_count_net_1  = start_count_net_0;
 assign start_count        = start_count_net_1;
-assign send_net_1         = send_net_0;
-assign send               = send_net_1;
 assign data1_net_1        = data1_net_0;
 assign data1              = data1_net_1;
 assign data2_net_1        = data2_net_0;
@@ -176,6 +184,10 @@ assign LSERVO_net_1       = LSERVO_net_0;
 assign LSERVO             = LSERVO_net_1;
 assign RSERVO_net_1       = RSERVO_net_0;
 assign RSERVO             = RSERVO_net_1;
+assign data_0_net_1       = data_0_net_0;
+assign data_0             = data_0_net_1;
+assign send_0_net_1       = send_0_net_0;
+assign send_0             = send_0_net_1;
 //--------------------------------------------------------------------
 // Bus Interface Nets Assignments - Unequal Pin Widths
 //--------------------------------------------------------------------
@@ -322,6 +334,7 @@ gc_MSS gc_MSS_0(
         .MSSPREADY   ( gc_MSS_0_MSS_MASTER_APB_PREADY ),
         .MSSPSLVERR  ( gc_MSS_0_MSS_MASTER_APB_PSLVERR ),
         .UART_0_RXD  ( UART_0_RXD ),
+        .FABINT      ( motorWrapper_0_FABINT ),
         .MSSPRDATA   ( gc_MSS_0_MSS_MASTER_APB_PRDATA ),
         // Outputs
         .FAB_CLK     ( gc_MSS_0_FAB_CLK ),
@@ -329,7 +342,7 @@ gc_MSS gc_MSS_0(
         .MSSPSEL     ( gc_MSS_0_MSS_MASTER_APB_PSELx ),
         .MSSPENABLE  ( gc_MSS_0_MSS_MASTER_APB_PENABLE ),
         .MSSPWRITE   ( gc_MSS_0_MSS_MASTER_APB_PWRITE ),
-        .UART_0_TXD  ( UART_0_TXD_1 ),
+        .UART_0_TXD  ( UART_0_TXD_0 ),
         .MSSPADDR    ( gc_MSS_0_MSS_MASTER_APB_PADDR ),
         .MSSPWDATA   ( gc_MSS_0_MSS_MASTER_APB_PWDATA ) 
         );
@@ -339,7 +352,7 @@ gc_receive gc_receive_0(
         // Inputs
         .clk      ( gc_MSS_0_FAB_CLK ),
         .data     ( data_net_0 ),
-        .send     ( send_net_0 ),
+        .send     ( send ),
         // Outputs
         .t        ( start_count_net_0 ),
         .data1    ( data1_net_0 ),
@@ -365,6 +378,18 @@ gc_response_apb gc_response_apb_0(
         .PRDATA   ( CoreAPB3_0_APBmslave0_PRDATA ) 
         );
 
+//--------generalQuery
+generalQuery generalQuery_0(
+        // Inputs
+        .clk100mhz ( gc_MSS_0_FAB_CLK ),
+        .reset     ( gc_response_apb_0_init ),
+        .command   ( command_const_net_0 ),
+        .cmdLength ( cmdLength_const_net_0 ),
+        // Outputs
+        .data      ( data_0_net_0 ),
+        .send      ( send_0_net_0 ) 
+        );
+
 //--------motorWrapper
 motorWrapper motorWrapper_0(
         // Inputs
@@ -379,7 +404,7 @@ motorWrapper motorWrapper_0(
         // Outputs
         .PREADY         ( CoreAPB3_0_APBmslave1_PREADY ),
         .PSLVERR        ( CoreAPB3_0_APBmslave1_PSLVERR ),
-        .FABINT         (  ),
+        .FABINT         ( motorWrapper_0_FABINT ),
         .PWM1           ( PWM1_net_0 ),
         .PWM2           (  ),
         .LMOTOR         ( LMOTOR_net_0 ),
@@ -397,7 +422,7 @@ send_query send_query_0(
         .reset     ( gc_response_apb_0_init ),
         // Outputs
         .data      ( data_net_0 ),
-        .send      ( send_net_0 ) 
+        .send      ( send ) 
         );
 
 

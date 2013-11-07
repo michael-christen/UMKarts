@@ -57,14 +57,14 @@ __attribute__ ((interrupt)) void Fabric_IRQHandler( void )
 	printf("%d Prev \n\r", prevClock);
 	printf("%d Cur \n\r", curClock);
     printf("%d Inches \n\r", diff);
-    */
-    printf("%d Count \n\r", (int)count);
+
+    //printf("%d Count \n\r", (int)count);
     if(status & 0x01 && count > 1000)
     {
         setPWM(.5);
         count = 0;
     }
-    /*
+
     if(status & 0x02)
     {
         printf("Compare latency %ld\n\r", (1<<27) - time);
@@ -73,8 +73,9 @@ __attribute__ ((interrupt)) void Fabric_IRQHandler( void )
     {
     	printf("Sync time: %ld, Async time: %ld, diff: %ld\n\r", sync_out, async_out, sync_out - async_out);
     }
-    */
+
     count ++;
+    */
     NVIC_ClearPendingIRQ( Fabric_IRQn );
 }
 
@@ -110,7 +111,7 @@ int main()
 	double speed = 0;
 	int dir = 1;
 	*/
-
+	CONTROLLER_setup_mem();
 	CONTROLLER_init();
 
 	while( 1 )

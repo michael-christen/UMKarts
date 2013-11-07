@@ -8,4 +8,4 @@
 @W: MO111 :"c:\users\mikechri\downloads\gc\gc\hdl\motorwrapper.v":36:13:36:15|Tristate driver TPS_5 on net TPS_5 has its enable tied to GND (module motorWrapper) 
 @W: BN522 |Property syn_clock_priority is not supported for this target technology
 @W: MT420 |Found inferred clock gc|CAPTURE_SWITCH with period 10.00ns. Please declare a user-defined clock on object "p:CAPTURE_SWITCH"
-@W: MT420 |Found inferred clock clockdiv|clockout_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:send_query_0.II_0.clockout"
+@W: MT420 |Found inferred clock clockdiv_II_0_0|clockout_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:send_query_0.II_0.clockout"

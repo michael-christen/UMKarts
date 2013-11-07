@@ -5,10 +5,9 @@ Release: v11.0
 Software Version: 11.0.0.23
 PDB file 'C:\Users\mikechri\Downloads\gc\gc\designer\impl1\gc_fp\gc.pdb' has been loaded
 successfully.
-DESIGN : gc;  CHECKSUM : FBB8;  PDB_VERSION : 1.8
+DESIGN : gc;  CHECKSUM : 69D6;  PDB_VERSION : 1.8
 Driver : 3.0.0 build 1
 programmer '78125' : FlashPro3
-Warning: The programmer with id '78524' in the project file cannot be detected and connected.
 Opened 'C:/Users/mikechri/Downloads/gc/gc/designer/impl1/gc_fp/gc.pro'
 The 'open_project' command succeeded.
 The 'set_programming_file' command succeeded.
@@ -19,7 +18,7 @@ Info: Adding Flash Memory data from file
 Info: Adding FPGA Array data from file C:\Users\mikechri\Downloads\gc\gc\designer\impl1\gc.fdb.
 PDB file 'C:\Users\mikechri\Downloads\gc\gc\designer\impl1\gc_fp\gc.pdb' has been loaded
 successfully.
-DESIGN : gc;  CHECKSUM : FBB8;  PDB_VERSION : 1.8
+DESIGN : gc;  CHECKSUM : 8C47;  PDB_VERSION : 1.8
 The 'update_programming_file' command succeeded.
 The 'set_programming_action' command succeeded.
 programmer '78125' : Scan Chain...
@@ -30,13 +29,13 @@ programmer '78125' : Executing action PROGRAM
 programmer '78125' : EXPORT FSN[48] = 0114ab381078
 programmer '78125' : Erase ...
 programmer '78125' : Completed erase
-programmer '78125' : EXPORT CHECKSUM: [16] = fbb8
+programmer '78125' : EXPORT CHECKSUM: [16] = 8c47
 programmer '78125' : Programming FPGA Array
 programmer '78125' : Verifying FPGA Array
 programmer '78125' :         Verifying FPGA Array -- pass
 programmer '78125' : Program System Init and Boot Clients...
 programmer '78125' : Verify System Init and Boot Clients...
-programmer '78125' : Finished: Wed Nov 06 12:55:24 2013 (Elapsed time 00:00:37)
+programmer '78125' : Finished: Wed Nov 06 23:26:46 2013 (Elapsed time 00:00:38)
 programmer '78125' : Executing action PROGRAM PASSED.
 
                         o - o - o - o - o - o
