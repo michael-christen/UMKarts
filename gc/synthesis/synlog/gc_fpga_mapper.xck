@@ -1,2 +1,2 @@
 CKID0001:@|S:CAPTURE_SWITCH@|E:motorWrapper_0.motor_0.capture_status_async@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001
-CKID0002:@|S:gc_MSS_0@|E:send_query_0.count[0]@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002
+CKID0002:@|S:gc_MSS_0@|E:send_query_0.wavebird_id_sent@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002

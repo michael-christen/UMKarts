@@ -13,7 +13,7 @@ Opened an existing Libero design gc.adb.
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
 Wrote timing report to file: gc_maxdelay_timing_report.txt
 
-The Report command succeeded ( 00:00:04 )
+The Report command succeeded ( 00:00:05 )
 Wrote timing report to file: gc_mindelay_timing_report.txt
 
 The Report command succeeded ( 00:00:00 )
@@ -25,6 +25,6 @@ Wrote timing_violations report to file: gc_mindelay_timingviolations_report.txt
 The Report command succeeded ( 00:00:00 )
 Design saved to file C:\Users\knekritz\UMKarts\gc\designer\impl1\gc.adb.
 
-The Execute Script command succeeded ( 00:00:06 )
+The Execute Script command succeeded ( 00:00:07 )
 Design closed.
 

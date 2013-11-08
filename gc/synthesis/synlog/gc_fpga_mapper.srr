@@ -14,142 +14,16 @@ Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 103MB peak: 103MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 103MB)
 
 @W: MO111 :"c:\users\knekritz\umkarts\gc\component\work\gc_mss\mss_ccc_0\gc_mss_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT on net LPXIN_CLKOUT has its enable tied to GND (module gc_MSS_tmp_MSS_CCC_0_MSS_CCC) 
 @W: MO111 :"c:\users\knekritz\umkarts\gc\component\work\gc_mss\mss_ccc_0\gc_mss_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT on net MAINXIN_CLKOUT has its enable tied to GND (module gc_MSS_tmp_MSS_CCC_0_MSS_CCC) 
 @W: MO111 :"c:\users\knekritz\umkarts\gc\component\work\gc_mss\mss_ccc_0\gc_mss_tmp_mss_ccc_0_mss_ccc.v":62:7:62:18|Tristate driver RCOSC_CLKOUT on net RCOSC_CLKOUT has its enable tied to GND (module gc_MSS_tmp_MSS_CCC_0_MSS_CCC) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_2 on net response_2 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_3 on net response_3 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_4 on net response_4 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_5 on net response_5 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_6 on net response_6 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_7 on net response_7 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_8 on net response_8 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_9 on net response_9 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_10 on net response_10 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_11 on net response_11 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_12 on net response_12 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_13 on net response_13 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_14 on net response_14 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_15 on net response_15 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_16 on net response_16 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_17 on net response_17 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_18 on net response_18 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_19 on net response_19 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_20 on net response_20 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_21 on net response_21 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_22 on net response_22 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_23 on net response_23 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_24 on net response_24 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_25 on net response_25 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_26 on net response_26 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_27 on net response_27 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_28 on net response_28 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_29 on net response_29 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_30 on net response_30 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_31 on net response_31 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_32 on net response_32 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_33 on net response_33 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_34 on net response_34 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_35 on net response_35 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_36 on net response_36 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_37 on net response_37 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_38 on net response_38 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_39 on net response_39 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_40 on net response_40 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_41 on net response_41 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_42 on net response_42 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_43 on net response_43 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_44 on net response_44 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_45 on net response_45 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_46 on net response_46 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_47 on net response_47 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_48 on net response_48 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_49 on net response_49 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_50 on net response_50 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_51 on net response_51 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_52 on net response_52 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_53 on net response_53 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_54 on net response_54 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_55 on net response_55 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_56 on net response_56 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_57 on net response_57 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_58 on net response_58 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_59 on net response_59 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_60 on net response_60 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_61 on net response_61 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_62 on net response_62 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_63 on net response_63 has its enable tied to GND (module gc_receive) 
-@W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Tristate driver response_64 on net response_64 has its enable tied to GND (module gc_receive) 
 @W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\motorwrapper.v":36:13:36:15|Tristate driver TPS_1 on net TPS_1 has its enable tied to GND (module motorWrapper) 
 @W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\motorwrapper.v":36:13:36:15|Tristate driver TPS_2 on net TPS_2 has its enable tied to GND (module motorWrapper) 
 @W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\motorwrapper.v":36:13:36:15|Tristate driver TPS_3 on net TPS_3 has its enable tied to GND (module motorWrapper) 
 @W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\motorwrapper.v":36:13:36:15|Tristate driver TPS_4 on net TPS_4 has its enable tied to GND (module motorWrapper) 
 @W: MO111 :"c:\users\knekritz\umkarts\gc\hdl\motorwrapper.v":36:13:36:15|Tristate driver TPS_5 on net TPS_5 has its enable tied to GND (module motorWrapper) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[0] on net gc_receive_0_response[0] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[1] on net gc_receive_0_response[1] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[2] on net gc_receive_0_response[2] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[3] on net gc_receive_0_response[3] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[4] on net gc_receive_0_response[4] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[5] on net gc_receive_0_response[5] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[6] on net gc_receive_0_response[6] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[7] on net gc_receive_0_response[7] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[8] on net gc_receive_0_response[8] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[9] on net gc_receive_0_response[9] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[10] on net gc_receive_0_response[10] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[11] on net gc_receive_0_response[11] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[12] on net gc_receive_0_response[12] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[13] on net gc_receive_0_response[13] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[14] on net gc_receive_0_response[14] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[15] on net gc_receive_0_response[15] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[16] on net gc_receive_0_response[16] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[17] on net gc_receive_0_response[17] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[18] on net gc_receive_0_response[18] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[19] on net gc_receive_0_response[19] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[20] on net gc_receive_0_response[20] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[21] on net gc_receive_0_response[21] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[22] on net gc_receive_0_response[22] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[23] on net gc_receive_0_response[23] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[24] on net gc_receive_0_response[24] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[25] on net gc_receive_0_response[25] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[26] on net gc_receive_0_response[26] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[27] on net gc_receive_0_response[27] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[28] on net gc_receive_0_response[28] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[29] on net gc_receive_0_response[29] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[30] on net gc_receive_0_response[30] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[31] on net gc_receive_0_response[31] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[32] on net gc_receive_0_response[32] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[33] on net gc_receive_0_response[33] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[34] on net gc_receive_0_response[34] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[35] on net gc_receive_0_response[35] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[36] on net gc_receive_0_response[36] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[37] on net gc_receive_0_response[37] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[38] on net gc_receive_0_response[38] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[39] on net gc_receive_0_response[39] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[40] on net gc_receive_0_response[40] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[41] on net gc_receive_0_response[41] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[42] on net gc_receive_0_response[42] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[43] on net gc_receive_0_response[43] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[44] on net gc_receive_0_response[44] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[45] on net gc_receive_0_response[45] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[46] on net gc_receive_0_response[46] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[47] on net gc_receive_0_response[47] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[48] on net gc_receive_0_response[48] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[49] on net gc_receive_0_response[49] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[50] on net gc_receive_0_response[50] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[51] on net gc_receive_0_response[51] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[52] on net gc_receive_0_response[52] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[53] on net gc_receive_0_response[53] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[54] on net gc_receive_0_response[54] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[55] on net gc_receive_0_response[55] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[56] on net gc_receive_0_response[56] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[57] on net gc_receive_0_response[57] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[58] on net gc_receive_0_response[58] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[59] on net gc_receive_0_response[59] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[60] on net gc_receive_0_response[60] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[61] on net gc_receive_0_response[61] has its enable tied to GND (module gc) 
-@W: MO111 :|Tristate driver gc_receive_0_response_t[62] on net gc_receive_0_response[62] has its enable tied to GND (module gc) 
 
 Available hyper_sources - for debug and ip models
 	None Found
@@ -157,34 +31,34 @@ Available hyper_sources - for debug and ip models
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 103MB peak: 104MB)
 
-@N:"c:\users\knekritz\umkarts\gc\hdl\receive.v":20:0:20:5|Found counter in view:work.gc_receive(verilog) inst next_response_count[5:0]
+@N:"c:\users\knekritz\umkarts\gc\hdl\receive.v":21:0:21:5|Found counter in view:work.gc_receive(verilog) inst next_response_count[6:0]
+@N:"c:\users\knekritz\umkarts\gc\hdl\query.v":13:0:13:5|Found counter in view:work.gc_state(verilog) inst last_response[31:0]
 @N:"c:\users\knekritz\umkarts\gc\hdl\motor.v":208:0:208:5|Found counter in view:work.motor(verilog) inst counterReg[31:0]
-@N:"c:\users\knekritz\umkarts\gc\hdl\query.v":66:0:66:5|Found counter in view:work.send_query(verilog) inst count[12:0]
-@N: MF238 :"c:\users\knekritz\umkarts\gc\hdl\query.v":72:13:72:24|Found 7-bit incrementor, 'un3_c_count_1[6:0]'
+@N:"c:\users\knekritz\umkarts\gc\hdl\query.v":87:0:87:5|Found counter in view:work.send_query(verilog) inst count[12:0]
+@N: MF238 :"c:\users\knekritz\umkarts\gc\hdl\query.v":93:13:93:24|Found 7-bit incrementor, 'un3_c_count_1[6:0]'
 
-Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 109MB)
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 110MB)
 
 @N: BN362 :"c:\users\knekritz\umkarts\gc\hdl\motor.v":75:0:75:5|Removing sequential instance motorWrapper_0.motor_0.fabint of view:PrimLib.dff(prim) in hierarchy view:work.gc(verilog) because there are no references to its outputs 
 @N: BN362 :"c:\users\knekritz\umkarts\gc\hdl\motor.v":208:0:208:5|Removing sequential instance motorWrapper_0.motor_0.timer_interrupt of view:PrimLib.dff(prim) in hierarchy view:work.gc(verilog) because there are no references to its outputs 
 @N: BN362 :"c:\users\knekritz\umkarts\gc\hdl\motor.v":267:0:267:5|Removing sequential instance motorWrapper_0.motor_0.capture_interrupt of view:PrimLib.dffr(prim) in hierarchy view:work.gc(verilog) because there are no references to its outputs 
-@W: BN132 :"c:\users\knekritz\umkarts\gc\hdl\receive.v":80:0:80:5|Removing sequential instance gc_response_apb_0.PRDATA[23],  because it is equivalent to instance gc_response_apb_0.PRDATA[22]
 
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 110MB)
-
-
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 110MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 110MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 108MB peak: 110MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 109MB peak: 111MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 109MB peak: 110MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 109MB peak: 111MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 108MB peak: 110MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 111MB peak: 111MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 108MB peak: 110MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 111MB peak: 112MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 110MB peak: 112MB)
 
 
 High Fanout Net Report
@@ -192,65 +66,73 @@ High Fanout Net Report
 
 Driver Instance / Pin Name                                 Fanout, notes                 
 -----------------------------------------------------------------------------------------
-gc_MSS_0.MSS_ADLIB_INST / MSSPADDR[2]                      39                            
-gc_MSS_0.MSS_ADLIB_INST / MSSPADDR[3]                      94                            
-gc_MSS_0.MSS_ADLIB_INST / MSSPADDR[4]                      131                           
+gc_MSS_0.MSS_ADLIB_INST / MSSPADDR[2]                      70                            
+gc_MSS_0.MSS_ADLIB_INST / MSSPADDR[3]                      102                           
+gc_MSS_0.MSS_ADLIB_INST / MSSPADDR[4]                      133                           
+gc_MSS_0.MSS_ADLIB_INST / MSSPADDR[8]                      34                            
 gc_MSS_0.MSS_ADLIB_INST / M2FRESETn                        141                           
-motorWrapper_0.BUS_WRITE_EN_0_a2 / Y                       34                            
-gc_response_apb_0.start_init4_0_a2 / Y                     25                            
-motorWrapper_0.motor_0.capture_status_async4 / Y           32                            
-motorWrapper_0.motor_0.directionReg_1_sqmuxa_0_a2 / Y      33                            
-motorWrapper_0.motor_0.overflowReset_0_sqmuxa_0_a2 / Y     33                            
-motorWrapper_0.motor_0.compareReg_1_sqmuxa_0_a2 / Y        32                            
-motorWrapper_0.motor_0.controlReg_1_sqmuxa_0_a2 / Y        32                            
-motorWrapper_0.motor_0.captureSyncReg_1_sqmuxa / Y         33                            
 motorWrapper_0.motor_0.reset_capture_sync / Q              34 : 33 asynchronous set/reset
-motorWrapper_0.motor_0.counterReglde_0 / Y                 32                            
 motorWrapper_0.motor_0.capture_status_async8_i_a2 / Y      33 : 33 asynchronous set/reset
-motorWrapper_0.motor_0.un1_fabint9_i_a2 / Y                33                            
-gc_receive_0.count14_0_o2 / Y                              66                            
+gc_receive_0.response_0_sqmuxa_0_a3 / Y                    65                            
+gc_receive_0.wavebird_id_1_sqmuxa_0_a3 / Y                 25                            
+motorWrapper_0.motor_0.directionReg_1_sqmuxa_0_a2 / Y      33                            
+motorWrapper_0.motor_0.captureSyncReg_1_sqmuxa / Y         33                            
+motorWrapper_0.motor_0.counterReglde_0 / Y                 32                            
+motorWrapper_0.motor_0.overflowReset_0_sqmuxa_0_a2 / Y     33                            
+motorWrapper_0.motor_0.controlReg_1_sqmuxa_0_a2 / Y        32                            
+motorWrapper_0.motor_0.compareReg_1_sqmuxa_0_a2 / Y        32                            
 motorWrapper_0.motor_0.un1_nreset_1_i_0_0 / Y              32                            
+motorWrapper_0.BUS_WRITE_EN_0_a2 / Y                       34                            
+motorWrapper_0.motor_0.un1_fabint9_i_a2 / Y                33                            
+gc_receive_0.count14_0_o2 / Y                              67                            
+motorWrapper_0.BUS_WRITE_EN_0_a2_0 / Y                     34                            
+motorWrapper_0.motor_0.capture_status_async4 / Y           32                            
+gc_state_0.last_response_n2_i_0_o3 / Y                     33                            
 =========================================================================================
 
-@N: FP130 |Promoting Net gc_MSS_0_M2F_RESET_N on CLKINT  I_131 
-@N: FP130 |Promoting Net CoreAPB3_0_APBmslave0_PADDR[4] on CLKINT  I_132 
-@N: FP130 |Promoting Net CoreAPB3_0_APBmslave0_PADDR[3] on CLKINT  I_133 
+@N: FP130 |Promoting Net gc_MSS_0_M2F_RESET_N on CLKINT  I_216 
+@N: FP130 |Promoting Net CoreAPB3_0_APBmslave0_PADDR[4] on CLKINT  I_217 
+@N: FP130 |Promoting Net CoreAPB3_0_APBmslave0_PADDR[3] on CLKINT  I_218 
 
-Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 108MB peak: 110MB)
+Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 111MB peak: 113MB)
 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 108MB peak: 110MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 111MB peak: 113MB)
 
-Replicating Combinational Instance motorWrapper_0.motor_0.un1_nreset_1_i_0_0, fanout 32 segments 2
-Buffering CAPTURE_SWITCH_c, fanout 36 segments 2
-Replicating Combinational Instance gc_receive_0.count14_0_o2, fanout 66 segments 3
-Replicating Combinational Instance motorWrapper_0.motor_0.un1_fabint9_i_a2, fanout 33 segments 2
-Replicating Combinational Instance motorWrapper_0.motor_0.capture_status_async8_i_a2, fanout 33 segments 2
-Replicating Combinational Instance motorWrapper_0.motor_0.counterReglde_0, fanout 32 segments 2
-Replicating Sequential Instance motorWrapper_0.motor_0.reset_capture_sync, fanout 34 segments 2
-Replicating Combinational Instance motorWrapper_0.motor_0.captureSyncReg_1_sqmuxa, fanout 33 segments 2
-Replicating Combinational Instance motorWrapper_0.motor_0.controlReg_1_sqmuxa_0_a2, fanout 32 segments 2
-Replicating Combinational Instance motorWrapper_0.motor_0.compareReg_1_sqmuxa_0_a2, fanout 32 segments 2
-Replicating Combinational Instance motorWrapper_0.motor_0.overflowReset_0_sqmuxa_0_a2, fanout 33 segments 2
-Replicating Combinational Instance motorWrapper_0.motor_0.directionReg_1_sqmuxa_0_a2, fanout 33 segments 2
+Replicating Combinational Instance gc_state_0.last_response_n2_i_0_o3, fanout 33 segments 2
 Replicating Combinational Instance motorWrapper_0.motor_0.capture_status_async4, fanout 32 segments 2
-Replicating Combinational Instance gc_response_apb_0.start_init4_0_a2, fanout 25 segments 2
+Replicating Combinational Instance motorWrapper_0.BUS_WRITE_EN_0_a2_0, fanout 34 segments 2
+Replicating Combinational Instance gc_receive_0.count14_0_o2, fanout 67 segments 3
+Replicating Combinational Instance motorWrapper_0.motor_0.un1_fabint9_i_a2, fanout 33 segments 2
 Replicating Combinational Instance motorWrapper_0.BUS_WRITE_EN_0_a2, fanout 34 segments 2
-Buffering CoreAPB3_0_APBmslave0_PADDR[2], fanout 42 segments 2
+Replicating Combinational Instance motorWrapper_0.motor_0.un1_nreset_1_i_0_0, fanout 32 segments 2
+Replicating Combinational Instance motorWrapper_0.motor_0.compareReg_1_sqmuxa_0_a2, fanout 32 segments 2
+Replicating Combinational Instance motorWrapper_0.motor_0.controlReg_1_sqmuxa_0_a2, fanout 32 segments 2
+Replicating Combinational Instance motorWrapper_0.motor_0.overflowReset_0_sqmuxa_0_a2, fanout 33 segments 2
+Replicating Combinational Instance motorWrapper_0.motor_0.counterReglde_0, fanout 32 segments 2
+Replicating Combinational Instance motorWrapper_0.motor_0.captureSyncReg_1_sqmuxa, fanout 33 segments 2
+Replicating Combinational Instance motorWrapper_0.motor_0.directionReg_1_sqmuxa_0_a2, fanout 33 segments 2
+Buffering CAPTURE_SWITCH_c, fanout 36 segments 2
+Replicating Combinational Instance gc_receive_0.wavebird_id_1_sqmuxa_0_a3, fanout 25 segments 2
+Replicating Combinational Instance gc_receive_0.response_0_sqmuxa_0_a3, fanout 65 segments 3
+Replicating Combinational Instance motorWrapper_0.motor_0.capture_status_async8_i_a2, fanout 33 segments 2
+Replicating Sequential Instance motorWrapper_0.motor_0.reset_capture_sync, fanout 34 segments 2
+Buffering CoreAPB3_0_APBmslave0_PADDR[8], fanout 35 segments 2
+Buffering CoreAPB3_0_APBmslave0_PADDR[2], fanout 73 segments 4
 
-Added 2 Buffers
-Added 15 Cells via replication
+Added 5 Buffers
+Added 19 Cells via replication
 	Added 1 Sequential Cells via replication
-	Added 14 Combinational Cells via replication
+	Added 18 Combinational Cells via replication
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 109MB peak: 110MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 112MB peak: 113MB)
 
 
 
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
 Clock optimization not enabled
-2 non-gated/non-generated clock tree(s) driving 421 clock pin(s) of sequential element(s)
+2 non-gated/non-generated clock tree(s) driving 530 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
 0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
@@ -258,7 +140,7 @@ Clock optimization not enabled
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                            
 -------------------------------------------------------------------------------------------------------------------
 @K:CKID0001       CAPTURE_SWITCH      port                   33         motorWrapper_0.motor_0.capture_status_async
-@K:CKID0002       gc_MSS_0            hierarchy              388        send_query_0.count[0]                      
+@K:CKID0002       gc_MSS_0            hierarchy              497        send_query_0.wavebird_id_sent              
 ===================================================================================================================
 ===== Gated/Generated Clocks =====
 ************** None **************
@@ -270,12 +152,12 @@ Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample I
 
 Writing Analyst data base C:\Users\knekritz\UMKarts\gc\synthesis\gc.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 107MB peak: 110MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 110MB peak: 113MB)
 
 Writing EDIF Netlist and constraint files
 G-2012.09M-SP1 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 108MB peak: 110MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 111MB peak: 113MB)
 
 @W: MT420 |Found inferred clock gc|CAPTURE_SWITCH with period 10.00ns. Please declare a user-defined clock on object "p:CAPTURE_SWITCH"
 
@@ -284,7 +166,7 @@ Found clock FCLK with period 10.00ns
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Wed Nov 06 23:02:37 2013
+# Timing Report written on Thu Nov 07 20:18:51 2013
 #
 
 
@@ -307,15 +189,15 @@ Performance Summary
 *******************
 
 
-Worst slack in design: -3.005
+Worst slack in design: -3.682
 
                       Requested     Estimated     Requested     Estimated                Clock        Clock              
 Starting Clock        Frequency     Frequency     Period        Period        Slack      Type         Group              
 -------------------------------------------------------------------------------------------------------------------------
-FAB_CLK               100.0 MHz     76.9 MHz      10.000        13.005        -3.005     declared     clk_group_0        
+FAB_CLK               100.0 MHz     86.2 MHz      10.000        11.595        -1.595     declared     clk_group_0        
 FCLK                  100.0 MHz     NA            10.000        NA            NA         declared     clk_group_0        
 gc|CAPTURE_SWITCH     100.0 MHz     238.2 MHz     10.000        4.199         5.801      inferred     Inferred_clkgroup_0
-System                100.0 MHz     171.3 MHz     10.000        5.837         4.163      system       system_clkgroup    
+System                100.0 MHz     135.4 MHz     10.000        7.383         2.617      system       system_clkgroup    
 =========================================================================================================================
 
 
@@ -329,10 +211,10 @@ Clocks                                |    rise  to  rise    |    fall  to  fall
 -----------------------------------------------------------------------------------------------------------------------------
 Starting           Ending             |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
 -----------------------------------------------------------------------------------------------------------------------------
-System             System             |  10.000      4.163   |  No paths    -      |  No paths    -      |  No paths    -    
-System             FAB_CLK            |  10.000      -2.842  |  No paths    -      |  No paths    -      |  No paths    -    
-FAB_CLK            System             |  10.000      7.425   |  No paths    -      |  No paths    -      |  No paths    -    
-FAB_CLK            FAB_CLK            |  10.000      -3.005  |  No paths    -      |  No paths    -      |  No paths    -    
+System             System             |  10.000      2.617   |  No paths    -      |  No paths    -      |  No paths    -    
+System             FAB_CLK            |  10.000      -3.682  |  No paths    -      |  No paths    -      |  No paths    -    
+FAB_CLK            System             |  10.000      7.498   |  No paths    -      |  No paths    -      |  No paths    -    
+FAB_CLK            FAB_CLK            |  10.000      -1.595  |  No paths    -      |  No paths    -      |  No paths    -    
 FAB_CLK            gc|CAPTURE_SWITCH  |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -    
 gc|CAPTURE_SWITCH  FAB_CLK            |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -    
 gc|CAPTURE_SWITCH  gc|CAPTURE_SWITCH  |  10.000      5.801   |  No paths    -      |  No paths    -      |  No paths    -    
@@ -362,37 +244,37 @@ Starting Points with Worst Slack
 Instance                                  Reference     Type       Pin     Net                Time        Slack 
                                           Clock                                                                 
 ----------------------------------------------------------------------------------------------------------------
-motorWrapper_0.motor_0.counterReg[5]      FAB_CLK       DFN1E1     Q       counterReg[5]      0.494       -3.005
-motorWrapper_0.motor_0.counterReg[4]      FAB_CLK       DFN1E1     Q       counterReg[4]      0.494       -2.957
-motorWrapper_0.motor_0.counterReg[3]      FAB_CLK       DFN1E1     Q       counterReg[3]      0.627       -2.349
-motorWrapper_0.motor_0.counterReg[2]      FAB_CLK       DFN1E1     Q       counterReg[2]      0.494       -2.232
-motorWrapper_0.motor_0.counterReg[8]      FAB_CLK       DFN1E1     Q       counterReg[8]      0.494       -2.105
-motorWrapper_0.motor_0.counterReg[7]      FAB_CLK       DFN1E1     Q       counterReg[7]      0.494       -2.022
-motorWrapper_0.motor_0.counterReg[6]      FAB_CLK       DFN1E1     Q       counterReg[6]      0.494       -2.021
-motorWrapper_0.motor_0.counterReg[9]      FAB_CLK       DFN1E1     Q       counterReg[9]      0.494       -1.985
-motorWrapper_0.motor_0.counterReg[21]     FAB_CLK       DFN1E1     Q       counterReg[21]     0.627       -1.722
-motorWrapper_0.motor_0.counterReg[11]     FAB_CLK       DFN1E1     Q       counterReg[11]     0.627       -1.482
+gc_receive_0.count[2]                     FAB_CLK       DFN1       Q       count[2]           0.627       -1.595
+gc_receive_0.count[4]                     FAB_CLK       DFN1       Q       count[4]           0.627       -1.564
+gc_receive_0.count[5]                     FAB_CLK       DFN1       Q       count[5]           0.627       -1.543
+motorWrapper_0.motor_0.counterReg[21]     FAB_CLK       DFN1E1     Q       counterReg[21]     0.627       -1.448
+motorWrapper_0.motor_0.counterReg[16]     FAB_CLK       DFN1E1     Q       counterReg[16]     0.627       -1.447
+gc_receive_0.count[1]                     FAB_CLK       DFN1       Q       count[1]           0.627       -1.425
+gc_receive_0.count[0]                     FAB_CLK       DFN1       Q       count[0]           0.627       -1.290
+motorWrapper_0.motor_0.counterReg[5]      FAB_CLK       DFN1E1     Q       counterReg[5]      0.627       -0.977
+gc_receive_0.count[6]                     FAB_CLK       DFN1       Q       count[6]           0.627       -0.950
+motorWrapper_0.motor_0.counterReg[6]      FAB_CLK       DFN1E1     Q       counterReg[6]      0.627       -0.922
 ================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                                          Starting                                                  Required           
-Instance                                  Reference     Type       Pin     Net                      Time         Slack 
-                                          Clock                                                                        
------------------------------------------------------------------------------------------------------------------------
-motorWrapper_0.motor_0.counterReg[22]     FAB_CLK       DFN1E1     D       counterReg_RNO[22]       9.542        -3.005
-motorWrapper_0.motor_0.counterReg[17]     FAB_CLK       DFN1E1     D       N_44                     9.512        -2.744
-motorWrapper_0.motor_0.counterReg[25]     FAB_CLK       DFN1E1     D       counterReg_N_3_mux_1     9.512        -2.574
-motorWrapper_0.motor_0.counterReg[29]     FAB_CLK       DFN1E1     D       counterReg_n29           9.512        -2.556
-motorWrapper_0.motor_0.counterReg[30]     FAB_CLK       DFN1E1     D       counterReg_n30           9.512        -2.556
-motorWrapper_0.motor_0.counterReg[31]     FAB_CLK       DFN1E1     D       counterReg_n31           9.512        -2.556
-motorWrapper_0.motor_0.counterReg[9]      FAB_CLK       DFN1E1     D       N_68                     9.542        -2.349
-motorWrapper_0.motor_0.counterReg[26]     FAB_CLK       DFN1E1     D       counterReg_n26           9.512        -2.157
-motorWrapper_0.motor_0.counterReg[27]     FAB_CLK       DFN1E1     D       counterReg_n27           9.512        -2.028
-motorWrapper_0.motor_0.counterReg[28]     FAB_CLK       DFN1E1     D       counterReg_RNO[28]       9.512        -1.990
-=======================================================================================================================
+                                   Starting                                                 Required           
+Instance                           Reference     Type       Pin     Net                     Time         Slack 
+                                   Clock                                                                       
+---------------------------------------------------------------------------------------------------------------
+gc_receive_0.button_data_ready     FAB_CLK       DFN1       D       response_0_sqmuxa       9.542        -1.595
+gc_receive_0.response[10]          FAB_CLK       DFN1E1     E       response_0_sqmuxa_0     9.630        -1.530
+gc_receive_0.response[11]          FAB_CLK       DFN1E1     E       response_0_sqmuxa_0     9.630        -1.530
+gc_receive_0.response[12]          FAB_CLK       DFN1E1     E       response_0_sqmuxa_0     9.630        -1.530
+gc_receive_0.response[13]          FAB_CLK       DFN1E1     E       response_0_sqmuxa_0     9.630        -1.530
+gc_receive_0.response[14]          FAB_CLK       DFN1E1     E       response_0_sqmuxa_0     9.630        -1.530
+gc_receive_0.response[15]          FAB_CLK       DFN1E1     E       response_0_sqmuxa_0     9.630        -1.530
+gc_receive_0.response[16]          FAB_CLK       DFN1E1     E       response_0_sqmuxa_0     9.630        -1.530
+gc_receive_0.response[17]          FAB_CLK       DFN1E1     E       response_0_sqmuxa_0     9.630        -1.530
+gc_receive_0.response[18]          FAB_CLK       DFN1E1     E       response_0_sqmuxa_0     9.630        -1.530
+===============================================================================================================
 
 
 
@@ -406,54 +288,39 @@ Path information for path number 1:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         9.542
 
-    - Propagation time:                      12.547
+    - Propagation time:                      11.136
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -3.005
+    = Slack (non-critical) :                 -1.595
 
-    Number of logic level(s):                10
-    Starting point:                          motorWrapper_0.motor_0.counterReg[5] / Q
-    Ending point:                            motorWrapper_0.motor_0.counterReg[22] / D
+    Number of logic level(s):                5
+    Starting point:                          gc_receive_0.count[2] / Q
+    Ending point:                            gc_receive_0.button_data_ready / D
     The start point is clocked by            FAB_CLK [rising] on pin CLK
     The end   point is clocked by            FAB_CLK [rising] on pin CLK
 
-Instance / Net                                                Pin      Pin               Arrival     No. of    
-Name                                               Type       Name     Dir     Delay     Time        Fan Out(s)
----------------------------------------------------------------------------------------------------------------
-motorWrapper_0.motor_0.counterReg[5]               DFN1E1     Q        Out     0.494     0.494       -         
-counterReg[5]                                      Net        -        -       1.420     -           9         
-motorWrapper_0.motor_0.counterReg_RNIFRTQ[4]       NOR2B      B        In      -         1.914       -         
-motorWrapper_0.motor_0.counterReg_RNIFRTQ[4]       NOR2B      Y        Out     0.439     2.353       -         
-counterReg_m5_0_a2_3                               Net        -        -       0.274     -           1         
-motorWrapper_0.motor_0.counterReg_RNIQIRL1[2]      NOR3C      C        In      -         2.627       -         
-motorWrapper_0.motor_0.counterReg_RNIQIRL1[2]      NOR3C      Y        Out     0.566     3.193       -         
-counterReg_m5_0_a2_5                               Net        -        -       0.274     -           1         
-motorWrapper_0.motor_0.counterReg_RNI4MNB3[2]      NOR3C      C        In      -         3.466       -         
-motorWrapper_0.motor_0.counterReg_RNI4MNB3[2]      NOR3C      Y        Out     0.566     4.033       -         
-counterReg_m5_0_a2_6                               Net        -        -       0.274     -           1         
-motorWrapper_0.motor_0.counterReg_RNIB9L64[1]      NOR3C      C        In      -         4.306       -         
-motorWrapper_0.motor_0.counterReg_RNIB9L64[1]      NOR3C      Y        Out     0.566     4.873       -         
-counterReg_N_11_mux                                Net        -        -       1.007     -           4         
-motorWrapper_0.motor_0.counterReg_RNIA4CB5[12]     NOR2B      B        In      -         5.880       -         
-motorWrapper_0.motor_0.counterReg_RNIA4CB5[12]     NOR2B      Y        Out     0.439     6.319       -         
-counterReg_N_3_mux                                 Net        -        -       1.089     -           5         
-motorWrapper_0.motor_0.counterReg_RNI1QJN5[13]     OR2B       A        In      -         7.408       -         
-motorWrapper_0.motor_0.counterReg_RNI1QJN5[13]     OR2B       Y        Out     0.415     7.823       -         
-N_1147                                             Net        -        -       0.686     -           3         
-motorWrapper_0.motor_0.counterReg_RNIPGR36[14]     OR2A       B        In      -         8.510       -         
-motorWrapper_0.motor_0.counterReg_RNIPGR36[14]     OR2A       Y        Out     0.550     9.060       -         
-N_1148                                             Net        -        -       0.328     -           2         
-motorWrapper_0.motor_0.counterReg_RNII83G6[15]     OR2A       B        In      -         9.388       -         
-motorWrapper_0.motor_0.counterReg_RNII83G6[15]     OR2A       Y        Out     0.550     9.938       -         
-N_1150                                             Net        -        -       0.686     -           3         
-motorWrapper_0.motor_0.counterReg_RNO_0[22]        NOR3A      C        In      -         10.624      -         
-motorWrapper_0.motor_0.counterReg_RNO_0[22]        NOR3A      Y        Out     0.609     11.234      -         
-counterReg_n22_i_a0_6                              Net        -        -       0.274     -           1         
-motorWrapper_0.motor_0.counterReg_RNO[22]          OA1B       A        In      -         11.507      -         
-motorWrapper_0.motor_0.counterReg_RNO[22]          OA1B       Y        Out     0.766     12.273      -         
-counterReg_RNO[22]                                 Net        -        -       0.274     -           1         
-motorWrapper_0.motor_0.counterReg[22]              DFN1E1     D        In      -         12.547      -         
-===============================================================================================================
-Total path delay (propagation time + setup) of 13.005 is 6.421(49.4%) logic and 6.584(50.6%) route.
+Instance / Net                                               Pin      Pin               Arrival     No. of    
+Name                                               Type      Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------
+gc_receive_0.count[2]                              DFN1      Q        Out     0.627     0.627       -         
+count[2]                                           Net       -        -       1.089     -           5         
+gc_receive_0.count_RNIKE6F[0]                      OR3       C        In      -         1.716       -         
+gc_receive_0.count_RNIKE6F[0]                      OR3       Y        Out     0.639     2.354       -         
+count_3_0_i_o2_0_2                                 Net       -        -       0.274     -           1         
+gc_receive_0.count_RNIEQAP[0]                      OR2       A        In      -         2.628       -         
+gc_receive_0.count_RNIEQAP[0]                      OR2       Y        Out     0.432     3.060       -         
+N_35                                               Net       -        -       1.211     -           6         
+gc_receive_0.count_RNICJH81_1[7]                   OR2       B        In      -         4.271       -         
+gc_receive_0.count_RNICJH81_1[7]                   OR2       Y        Out     0.550     4.821       -         
+N_39                                               Net       -        -       2.050     -           22        
+gc_receive_0.next_response_count_RNIO81J1[6]       NOR2A     B        In      -         6.871       -         
+gc_receive_0.next_response_count_RNIO81J1[6]       NOR2A     Y        Out     0.346     7.217       -         
+N_80                                               Net       -        -       1.454     -           10        
+gc_receive_0.next_response_count_RNIM08V1_1[6]     NOR2A     A        In      -         8.671       -         
+gc_receive_0.next_response_count_RNIM08V1_1[6]     NOR2A     Y        Out     0.439     9.110       -         
+response_0_sqmuxa                                  Net       -        -       2.026     -           21        
+gc_receive_0.button_data_ready                     DFN1      D        In      -         11.136      -         
+==============================================================================================================
+Total path delay (propagation time + setup) of 11.595 is 3.491(30.1%) logic and 8.103(69.9%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -463,222 +330,165 @@ Path information for path number 2:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         9.542
 
-    - Propagation time:                      12.498
+    - Propagation time:                      11.105
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -2.957
+    = Slack (non-critical) :                 -1.564
 
-    Number of logic level(s):                10
-    Starting point:                          motorWrapper_0.motor_0.counterReg[4] / Q
-    Ending point:                            motorWrapper_0.motor_0.counterReg[22] / D
+    Number of logic level(s):                5
+    Starting point:                          gc_receive_0.count[4] / Q
+    Ending point:                            gc_receive_0.button_data_ready / D
     The start point is clocked by            FAB_CLK [rising] on pin CLK
     The end   point is clocked by            FAB_CLK [rising] on pin CLK
 
-Instance / Net                                                Pin      Pin               Arrival     No. of    
-Name                                               Type       Name     Dir     Delay     Time        Fan Out(s)
----------------------------------------------------------------------------------------------------------------
-motorWrapper_0.motor_0.counterReg[4]               DFN1E1     Q        Out     0.494     0.494       -         
-counterReg[4]                                      Net        -        -       1.395     -           8         
-motorWrapper_0.motor_0.counterReg_RNIFRTQ[4]       NOR2B      A        In      -         1.889       -         
-motorWrapper_0.motor_0.counterReg_RNIFRTQ[4]       NOR2B      Y        Out     0.415     2.304       -         
-counterReg_m5_0_a2_3                               Net        -        -       0.274     -           1         
-motorWrapper_0.motor_0.counterReg_RNIQIRL1[2]      NOR3C      C        In      -         2.578       -         
-motorWrapper_0.motor_0.counterReg_RNIQIRL1[2]      NOR3C      Y        Out     0.566     3.144       -         
-counterReg_m5_0_a2_5                               Net        -        -       0.274     -           1         
-motorWrapper_0.motor_0.counterReg_RNI4MNB3[2]      NOR3C      C        In      -         3.418       -         
-motorWrapper_0.motor_0.counterReg_RNI4MNB3[2]      NOR3C      Y        Out     0.566     3.984       -         
-counterReg_m5_0_a2_6                               Net        -        -       0.274     -           1         
-motorWrapper_0.motor_0.counterReg_RNIB9L64[1]      NOR3C      C        In      -         4.258       -         
-motorWrapper_0.motor_0.counterReg_RNIB9L64[1]      NOR3C      Y        Out     0.566     4.824       -         
-counterReg_N_11_mux                                Net        -        -       1.007     -           4         
-motorWrapper_0.motor_0.counterReg_RNIA4CB5[12]     NOR2B      B        In      -         5.831       -         
-motorWrapper_0.motor_0.counterReg_RNIA4CB5[12]     NOR2B      Y        Out     0.439     6.271       -         
-counterReg_N_3_mux                                 Net        -        -       1.089     -           5         
-motorWrapper_0.motor_0.counterReg_RNI1QJN5[13]     OR2B       A        In      -         7.359       -         
-motorWrapper_0.motor_0.counterReg_RNI1QJN5[13]     OR2B       Y        Out     0.415     7.774       -         
-N_1147                                             Net        -        -       0.686     -           3         
-motorWrapper_0.motor_0.counterReg_RNIPGR36[14]     OR2A       B        In      -         8.461       -         
-motorWrapper_0.motor_0.counterReg_RNIPGR36[14]     OR2A       Y        Out     0.550     9.011       -         
-N_1148                                             Net        -        -       0.328     -           2         
-motorWrapper_0.motor_0.counterReg_RNII83G6[15]     OR2A       B        In      -         9.339       -         
-motorWrapper_0.motor_0.counterReg_RNII83G6[15]     OR2A       Y        Out     0.550     9.889       -         
-N_1150                                             Net        -        -       0.686     -           3         
-motorWrapper_0.motor_0.counterReg_RNO_0[22]        NOR3A      C        In      -         10.576      -         
-motorWrapper_0.motor_0.counterReg_RNO_0[22]        NOR3A      Y        Out     0.609     11.185      -         
-counterReg_n22_i_a0_6                              Net        -        -       0.274     -           1         
-motorWrapper_0.motor_0.counterReg_RNO[22]          OA1B       A        In      -         11.459      -         
-motorWrapper_0.motor_0.counterReg_RNO[22]          OA1B       Y        Out     0.766     12.225      -         
-counterReg_RNO[22]                                 Net        -        -       0.274     -           1         
-motorWrapper_0.motor_0.counterReg[22]              DFN1E1     D        In      -         12.498      -         
-===============================================================================================================
-Total path delay (propagation time + setup) of 12.957 is 6.397(49.4%) logic and 6.559(50.6%) route.
+Instance / Net                                               Pin      Pin               Arrival     No. of    
+Name                                               Type      Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------
+gc_receive_0.count[4]                              DFN1      Q        Out     0.627     0.627       -         
+count[4]                                           Net       -        -       1.089     -           5         
+gc_receive_0.count_RNIKE6F[0]                      OR3       B        In      -         1.716       -         
+gc_receive_0.count_RNIKE6F[0]                      OR3       Y        Out     0.608     2.323       -         
+count_3_0_i_o2_0_2                                 Net       -        -       0.274     -           1         
+gc_receive_0.count_RNIEQAP[0]                      OR2       A        In      -         2.597       -         
+gc_receive_0.count_RNIEQAP[0]                      OR2       Y        Out     0.432     3.029       -         
+N_35                                               Net       -        -       1.211     -           6         
+gc_receive_0.count_RNICJH81_1[7]                   OR2       B        In      -         4.240       -         
+gc_receive_0.count_RNICJH81_1[7]                   OR2       Y        Out     0.550     4.790       -         
+N_39                                               Net       -        -       2.050     -           22        
+gc_receive_0.next_response_count_RNIO81J1[6]       NOR2A     B        In      -         6.840       -         
+gc_receive_0.next_response_count_RNIO81J1[6]       NOR2A     Y        Out     0.346     7.186       -         
+N_80                                               Net       -        -       1.454     -           10        
+gc_receive_0.next_response_count_RNIM08V1_1[6]     NOR2A     A        In      -         8.640       -         
+gc_receive_0.next_response_count_RNIM08V1_1[6]     NOR2A     Y        Out     0.439     9.079       -         
+response_0_sqmuxa                                  Net       -        -       2.026     -           21        
+gc_receive_0.button_data_ready                     DFN1      D        In      -         11.105      -         
+==============================================================================================================
+Total path delay (propagation time + setup) of 11.564 is 3.460(29.9%) logic and 8.103(70.1%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 3: 
       Requested Period:                      10.000
-    - Setup time:                            0.488
+    - Setup time:                            0.458
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.512
+    = Required time:                         9.542
 
-    - Propagation time:                      12.256
+    - Propagation time:                      11.085
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -2.744
+    = Slack (non-critical) :                 -1.543
 
-    Number of logic level(s):                10
-    Starting point:                          motorWrapper_0.motor_0.counterReg[5] / Q
-    Ending point:                            motorWrapper_0.motor_0.counterReg[17] / D
+    Number of logic level(s):                5
+    Starting point:                          gc_receive_0.count[5] / Q
+    Ending point:                            gc_receive_0.button_data_ready / D
     The start point is clocked by            FAB_CLK [rising] on pin CLK
     The end   point is clocked by            FAB_CLK [rising] on pin CLK
 
-Instance / Net                                                Pin      Pin               Arrival     No. of    
-Name                                               Type       Name     Dir     Delay     Time        Fan Out(s)
----------------------------------------------------------------------------------------------------------------
-motorWrapper_0.motor_0.counterReg[5]               DFN1E1     Q        Out     0.494     0.494       -         
-counterReg[5]                                      Net        -        -       1.420     -           9         
-motorWrapper_0.motor_0.counterReg_RNIFRTQ[4]       NOR2B      B        In      -         1.914       -         
-motorWrapper_0.motor_0.counterReg_RNIFRTQ[4]       NOR2B      Y        Out     0.439     2.353       -         
-counterReg_m5_0_a2_3                               Net        -        -       0.274     -           1         
-motorWrapper_0.motor_0.counterReg_RNIQIRL1[2]      NOR3C      C        In      -         2.627       -         
-motorWrapper_0.motor_0.counterReg_RNIQIRL1[2]      NOR3C      Y        Out     0.566     3.193       -         
-counterReg_m5_0_a2_5                               Net        -        -       0.274     -           1         
-motorWrapper_0.motor_0.counterReg_RNI4MNB3[2]      NOR3C      C        In      -         3.466       -         
-motorWrapper_0.motor_0.counterReg_RNI4MNB3[2]      NOR3C      Y        Out     0.566     4.033       -         
-counterReg_m5_0_a2_6                               Net        -        -       0.274     -           1         
-motorWrapper_0.motor_0.counterReg_RNIB9L64[1]      NOR3C      C        In      -         4.306       -         
-motorWrapper_0.motor_0.counterReg_RNIB9L64[1]      NOR3C      Y        Out     0.566     4.873       -         
-counterReg_N_11_mux                                Net        -        -       1.007     -           4         
-motorWrapper_0.motor_0.counterReg_RNIA4CB5[12]     NOR2B      B        In      -         5.880       -         
-motorWrapper_0.motor_0.counterReg_RNIA4CB5[12]     NOR2B      Y        Out     0.439     6.319       -         
-counterReg_N_3_mux                                 Net        -        -       1.089     -           5         
-motorWrapper_0.motor_0.counterReg_RNI1QJN5[13]     OR2B       A        In      -         7.408       -         
-motorWrapper_0.motor_0.counterReg_RNI1QJN5[13]     OR2B       Y        Out     0.415     7.823       -         
-N_1147                                             Net        -        -       0.686     -           3         
-motorWrapper_0.motor_0.counterReg_RNIPGR36[14]     OR2A       B        In      -         8.510       -         
-motorWrapper_0.motor_0.counterReg_RNIPGR36[14]     OR2A       Y        Out     0.550     9.060       -         
-N_1148                                             Net        -        -       0.328     -           2         
-motorWrapper_0.motor_0.counterReg_RNII83G6[15]     OR2A       B        In      -         9.388       -         
-motorWrapper_0.motor_0.counterReg_RNII83G6[15]     OR2A       Y        Out     0.550     9.938       -         
-N_1150                                             Net        -        -       0.686     -           3         
-motorWrapper_0.motor_0.counterReg_RNO_0[17]        OR2A       B        In      -         10.624      -         
-motorWrapper_0.motor_0.counterReg_RNO_0[17]        OR2A       Y        Out     0.550     11.175      -         
-N_112                                              Net        -        -       0.274     -           1         
-motorWrapper_0.motor_0.counterReg_RNO[17]          XA1C       B        In      -         11.448      -         
-motorWrapper_0.motor_0.counterReg_RNO[17]          XA1C       Y        Out     0.534     11.982      -         
-N_44                                               Net        -        -       0.274     -           1         
-motorWrapper_0.motor_0.counterReg[17]              DFN1E1     D        In      -         12.256      -         
-===============================================================================================================
-Total path delay (propagation time + setup) of 12.744 is 6.159(48.3%) logic and 6.584(51.7%) route.
+Instance / Net                                               Pin      Pin               Arrival     No. of    
+Name                                               Type      Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------
+gc_receive_0.count[5]                              DFN1      Q        Out     0.627     0.627       -         
+count[5]                                           Net       -        -       1.007     -           4         
+gc_receive_0.count_RNIQB4A[1]                      OR2       B        In      -         1.634       -         
+gc_receive_0.count_RNIQB4A[1]                      OR2       Y        Out     0.550     2.184       -         
+count_3_0_i_o2_0_0                                 Net       -        -       0.274     -           1         
+gc_receive_0.count_RNIEQAP[0]                      OR2       B        In      -         2.458       -         
+gc_receive_0.count_RNIEQAP[0]                      OR2       Y        Out     0.550     3.008       -         
+N_35                                               Net       -        -       1.211     -           6         
+gc_receive_0.count_RNICJH81_1[7]                   OR2       B        In      -         4.219       -         
+gc_receive_0.count_RNICJH81_1[7]                   OR2       Y        Out     0.550     4.769       -         
+N_39                                               Net       -        -       2.050     -           22        
+gc_receive_0.next_response_count_RNIO81J1[6]       NOR2A     B        In      -         6.819       -         
+gc_receive_0.next_response_count_RNIO81J1[6]       NOR2A     Y        Out     0.346     7.165       -         
+N_80                                               Net       -        -       1.454     -           10        
+gc_receive_0.next_response_count_RNIM08V1_1[6]     NOR2A     A        In      -         8.619       -         
+gc_receive_0.next_response_count_RNIM08V1_1[6]     NOR2A     Y        Out     0.439     9.058       -         
+response_0_sqmuxa                                  Net       -        -       2.026     -           21        
+gc_receive_0.button_data_ready                     DFN1      D        In      -         11.085      -         
+==============================================================================================================
+Total path delay (propagation time + setup) of 11.543 is 3.521(30.5%) logic and 8.022(69.5%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 4: 
       Requested Period:                      10.000
-    - Setup time:                            0.488
+    - Setup time:                            0.370
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.512
+    = Required time:                         9.630
 
-    - Propagation time:                      12.207
+    - Propagation time:                      11.160
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -2.695
+    = Slack (non-critical) :                 -1.530
 
-    Number of logic level(s):                10
-    Starting point:                          motorWrapper_0.motor_0.counterReg[4] / Q
-    Ending point:                            motorWrapper_0.motor_0.counterReg[17] / D
+    Number of logic level(s):                5
+    Starting point:                          gc_receive_0.count[2] / Q
+    Ending point:                            gc_receive_0.response[10] / E
     The start point is clocked by            FAB_CLK [rising] on pin CLK
     The end   point is clocked by            FAB_CLK [rising] on pin CLK
 
 Instance / Net                                                Pin      Pin               Arrival     No. of    
 Name                                               Type       Name     Dir     Delay     Time        Fan Out(s)
 ---------------------------------------------------------------------------------------------------------------
-motorWrapper_0.motor_0.counterReg[4]               DFN1E1     Q        Out     0.494     0.494       -         
-counterReg[4]                                      Net        -        -       1.395     -           8         
-motorWrapper_0.motor_0.counterReg_RNIFRTQ[4]       NOR2B      A        In      -         1.889       -         
-motorWrapper_0.motor_0.counterReg_RNIFRTQ[4]       NOR2B      Y        Out     0.415     2.304       -         
-counterReg_m5_0_a2_3                               Net        -        -       0.274     -           1         
-motorWrapper_0.motor_0.counterReg_RNIQIRL1[2]      NOR3C      C        In      -         2.578       -         
-motorWrapper_0.motor_0.counterReg_RNIQIRL1[2]      NOR3C      Y        Out     0.566     3.144       -         
-counterReg_m5_0_a2_5                               Net        -        -       0.274     -           1         
-motorWrapper_0.motor_0.counterReg_RNI4MNB3[2]      NOR3C      C        In      -         3.418       -         
-motorWrapper_0.motor_0.counterReg_RNI4MNB3[2]      NOR3C      Y        Out     0.566     3.984       -         
-counterReg_m5_0_a2_6                               Net        -        -       0.274     -           1         
-motorWrapper_0.motor_0.counterReg_RNIB9L64[1]      NOR3C      C        In      -         4.258       -         
-motorWrapper_0.motor_0.counterReg_RNIB9L64[1]      NOR3C      Y        Out     0.566     4.824       -         
-counterReg_N_11_mux                                Net        -        -       1.007     -           4         
-motorWrapper_0.motor_0.counterReg_RNIA4CB5[12]     NOR2B      B        In      -         5.831       -         
-motorWrapper_0.motor_0.counterReg_RNIA4CB5[12]     NOR2B      Y        Out     0.439     6.271       -         
-counterReg_N_3_mux                                 Net        -        -       1.089     -           5         
-motorWrapper_0.motor_0.counterReg_RNI1QJN5[13]     OR2B       A        In      -         7.359       -         
-motorWrapper_0.motor_0.counterReg_RNI1QJN5[13]     OR2B       Y        Out     0.415     7.774       -         
-N_1147                                             Net        -        -       0.686     -           3         
-motorWrapper_0.motor_0.counterReg_RNIPGR36[14]     OR2A       B        In      -         8.461       -         
-motorWrapper_0.motor_0.counterReg_RNIPGR36[14]     OR2A       Y        Out     0.550     9.011       -         
-N_1148                                             Net        -        -       0.328     -           2         
-motorWrapper_0.motor_0.counterReg_RNII83G6[15]     OR2A       B        In      -         9.339       -         
-motorWrapper_0.motor_0.counterReg_RNII83G6[15]     OR2A       Y        Out     0.550     9.889       -         
-N_1150                                             Net        -        -       0.686     -           3         
-motorWrapper_0.motor_0.counterReg_RNO_0[17]        OR2A       B        In      -         10.576      -         
-motorWrapper_0.motor_0.counterReg_RNO_0[17]        OR2A       Y        Out     0.550     11.126      -         
-N_112                                              Net        -        -       0.274     -           1         
-motorWrapper_0.motor_0.counterReg_RNO[17]          XA1C       B        In      -         11.399      -         
-motorWrapper_0.motor_0.counterReg_RNO[17]          XA1C       Y        Out     0.534     11.933      -         
-N_44                                               Net        -        -       0.274     -           1         
-motorWrapper_0.motor_0.counterReg[17]              DFN1E1     D        In      -         12.207      -         
+gc_receive_0.count[2]                              DFN1       Q        Out     0.627     0.627       -         
+count[2]                                           Net        -        -       1.089     -           5         
+gc_receive_0.count_RNIKE6F[0]                      OR3        C        In      -         1.716       -         
+gc_receive_0.count_RNIKE6F[0]                      OR3        Y        Out     0.639     2.354       -         
+count_3_0_i_o2_0_2                                 Net        -        -       0.274     -           1         
+gc_receive_0.count_RNIEQAP[0]                      OR2        A        In      -         2.628       -         
+gc_receive_0.count_RNIEQAP[0]                      OR2        Y        Out     0.432     3.060       -         
+N_35                                               Net        -        -       1.211     -           6         
+gc_receive_0.count_RNICJH81_1[7]                   OR2        B        In      -         4.271       -         
+gc_receive_0.count_RNICJH81_1[7]                   OR2        Y        Out     0.550     4.821       -         
+N_39                                               Net        -        -       2.050     -           22        
+gc_receive_0.next_response_count_RNIO81J1[6]       NOR2A      B        In      -         6.871       -         
+gc_receive_0.next_response_count_RNIO81J1[6]       NOR2A      Y        Out     0.346     7.217       -         
+N_80                                               Net        -        -       1.454     -           10        
+gc_receive_0.next_response_count_RNIM08V1_0[6]     NOR2A      A        In      -         8.671       -         
+gc_receive_0.next_response_count_RNIM08V1_0[6]     NOR2A      Y        Out     0.439     9.110       -         
+response_0_sqmuxa_0                                Net        -        -       2.050     -           22        
+gc_receive_0.response[10]                          DFN1E1     E        In      -         11.160      -         
 ===============================================================================================================
-Total path delay (propagation time + setup) of 12.695 is 6.136(48.3%) logic and 6.559(51.7%) route.
+Total path delay (propagation time + setup) of 11.530 is 3.403(29.5%) logic and 8.127(70.5%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 5: 
       Requested Period:                      10.000
-    - Setup time:                            0.458
+    - Setup time:                            0.370
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.542
+    = Required time:                         9.630
 
-    - Propagation time:                      11.890
+    - Propagation time:                      11.160
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -2.349
+    = Slack (non-critical) :                 -1.530
 
-    Number of logic level(s):                9
-    Starting point:                          motorWrapper_0.motor_0.counterReg[3] / Q
-    Ending point:                            motorWrapper_0.motor_0.counterReg[9] / D
+    Number of logic level(s):                5
+    Starting point:                          gc_receive_0.count[2] / Q
+    Ending point:                            gc_receive_0.response[32] / E
     The start point is clocked by            FAB_CLK [rising] on pin CLK
     The end   point is clocked by            FAB_CLK [rising] on pin CLK
 
-Instance / Net                                                 Pin      Pin               Arrival     No. of    
-Name                                                Type       Name     Dir     Delay     Time        Fan Out(s)
-----------------------------------------------------------------------------------------------------------------
-motorWrapper_0.motor_0.counterReg[3]                DFN1E1     Q        Out     0.627     0.627       -         
-counterReg[3]                                       Net        -        -       1.420     -           9         
-motorWrapper_0.motor_0.overflowReg_RNI0GKE[3]       XOR2       B        In      -         2.047       -         
-motorWrapper_0.motor_0.overflowReg_RNI0GKE[3]       XOR2       Y        Out     0.797     2.844       -         
-N_130_i                                             Net        -        -       0.274     -           1         
-motorWrapper_0.motor_0.overflowReg_RNI449T[5]       XO1        C        In      -         3.118       -         
-motorWrapper_0.motor_0.overflowReg_RNI449T[5]       XO1        Y        Out     0.293     3.410       -         
-counterReg7_NE_7                                    Net        -        -       0.274     -           1         
-motorWrapper_0.motor_0.overflowReg_RNI2E632[5]      OR3        C        In      -         3.684       -         
-motorWrapper_0.motor_0.overflowReg_RNI2E632[5]      OR3        Y        Out     0.581     4.265       -         
-counterReg7_NE_19                                   Net        -        -       0.274     -           1         
-motorWrapper_0.motor_0.overflowReg_RNIA6H64[29]     OR3        C        In      -         4.539       -         
-motorWrapper_0.motor_0.overflowReg_RNIA6H64[29]     OR3        Y        Out     0.581     5.120       -         
-counterReg7_NE_25                                   Net        -        -       0.274     -           1         
-motorWrapper_0.motor_0.overflowReg_RNIGGEH8[9]      OR3        C        In      -         5.394       -         
-motorWrapper_0.motor_0.overflowReg_RNIGGEH8[9]      OR3        Y        Out     0.581     5.975       -         
-counterReg7_NE_28                                   Net        -        -       0.274     -           1         
-motorWrapper_0.motor_0.overflowReg_RNI20TSG[13]     OR3        C        In      -         6.248       -         
-motorWrapper_0.motor_0.overflowReg_RNI20TSG[13]     OR3        Y        Out     0.581     6.830       -         
-counterReg8                                         Net        -        -       1.211     -           6         
-motorWrapper_0.motor_0.reset_interrupt_RNI6P9MH     OR2A       A        In      -         8.041       -         
-motorWrapper_0.motor_0.reset_interrupt_RNI6P9MH     OR2A       Y        Out     0.457     8.498       -         
-un1_nreset_1_i_1                                    Net        -        -       1.849     -           16        
-motorWrapper_0.motor_0.counterReg_RNO_0[9]          OR2        B        In      -         10.347      -         
-motorWrapper_0.motor_0.counterReg_RNO_0[9]          OR2        Y        Out     0.550     10.897      -         
-counterReg_n9_i_0                                   Net        -        -       0.274     -           1         
-motorWrapper_0.motor_0.counterReg_RNO[9]            OA1C       C        In      -         11.170      -         
-motorWrapper_0.motor_0.counterReg_RNO[9]            OA1C       Y        Out     0.447     11.617      -         
-N_68                                                Net        -        -       0.274     -           1         
-motorWrapper_0.motor_0.counterReg[9]                DFN1E1     D        In      -         11.890      -         
-================================================================================================================
-Total path delay (propagation time + setup) of 12.349 is 5.954(48.2%) logic and 6.395(51.8%) route.
+Instance / Net                                              Pin      Pin               Arrival     No. of    
+Name                                             Type       Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------
+gc_receive_0.count[2]                            DFN1       Q        Out     0.627     0.627       -         
+count[2]                                         Net        -        -       1.089     -           5         
+gc_receive_0.count_RNIKE6F[0]                    OR3        C        In      -         1.716       -         
+gc_receive_0.count_RNIKE6F[0]                    OR3        Y        Out     0.639     2.354       -         
+count_3_0_i_o2_0_2                               Net        -        -       0.274     -           1         
+gc_receive_0.count_RNIEQAP[0]                    OR2        A        In      -         2.628       -         
+gc_receive_0.count_RNIEQAP[0]                    OR2        Y        Out     0.432     3.060       -         
+N_35                                             Net        -        -       1.211     -           6         
+gc_receive_0.count_RNICJH81_1[7]                 OR2        B        In      -         4.271       -         
+gc_receive_0.count_RNICJH81_1[7]                 OR2        Y        Out     0.550     4.821       -         
+N_39                                             Net        -        -       2.050     -           22        
+gc_receive_0.next_response_count_RNIO81J1[6]     NOR2A      B        In      -         6.871       -         
+gc_receive_0.next_response_count_RNIO81J1[6]     NOR2A      Y        Out     0.346     7.217       -         
+N_80                                             Net        -        -       1.454     -           10        
+gc_receive_0.next_response_count_RNIM08V1[6]     NOR2A      A        In      -         8.671       -         
+gc_receive_0.next_response_count_RNIM08V1[6]     NOR2A      Y        Out     0.439     9.110       -         
+response_0_sqmuxa_1                              Net        -        -       2.050     -           22        
+gc_receive_0.response[32]                        DFN1E1     E        In      -         11.160      -         
+=============================================================================================================
+Total path delay (propagation time + setup) of 11.530 is 3.403(29.5%) logic and 8.127(70.5%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -771,16 +581,16 @@ Starting Points with Worst Slack
 Instance                    Reference     Type        Pin              Net                                 Time        Slack 
                             Clock                                                                                            
 -----------------------------------------------------------------------------------------------------------------------------
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPSEL          gc_MSS_0_MSS_MASTER_APB_PSELx       0.000       -2.842
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[9]      CoreAPB3_0_APBmslave0_PADDR[9]      0.000       -2.636
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[10]     CoreAPB3_0_APBmslave0_PADDR[10]     0.000       -2.624
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[11]     CoreAPB3_0_APBmslave0_PADDR[11]     0.000       -2.495
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[8]      CoreAPB3_0_APBmslave0_PADDR[8]      0.000       -2.064
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWRITE        CoreAPB3_0_APBmslave0_PWRITE        0.000       0.841 
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPENABLE       CoreAPB3_0_APBmslave0_PENABLE       0.000       1.078 
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[2]      CoreAPB3_0_APBmslave0_PADDR[2]      0.000       1.174 
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[4]      MSS_ADLIB_INST_MSSPADDR[4]          0.000       1.351 
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     M2FRESETn        MSS_ADLIB_INST_M2FRESETn            0.000       2.251 
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[10]     CoreAPB3_0_APBmslave0_PADDR[10]     0.000       -3.682
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPSEL          gc_MSS_0_MSS_MASTER_APB_PSELx       0.000       -3.682
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[11]     CoreAPB3_0_APBmslave0_PADDR[11]     0.000       -3.553
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[9]      CoreAPB3_0_APBmslave0_PADDR[9]      0.000       -3.476
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[8]      CoreAPB3_0_APBmslave0_PADDR[8]      0.000       -2.012
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWRITE        CoreAPB3_0_APBmslave0_PWRITE        0.000       1.144 
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[2]      CoreAPB3_0_APBmslave0_PADDR[2]      0.000       1.172 
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPENABLE       CoreAPB3_0_APBmslave0_PENABLE       0.000       1.295 
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[4]      MSS_ADLIB_INST_MSSPADDR[4]          0.000       1.986 
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[3]      MSS_ADLIB_INST_MSSPADDR[3]          0.000       2.137 
 =============================================================================================================================
 
 
@@ -791,16 +601,16 @@ Ending Points with Worst Slack
 Instance                                   Reference     Type     Pin     Net                     Time         Slack 
                                            Clock                                                                     
 ---------------------------------------------------------------------------------------------------------------------
-motorWrapper_0.motor_0.overflowReset       System        DFN1     D       overflowReset_RNO       9.512        -2.842
-motorWrapper_0.motor_0.compareReg[0]       System        DFN1     D       compareReg_RNO[0]       9.512        -1.817
-motorWrapper_0.motor_0.overflowReg[10]     System        DFN1     D       overflowReg_RNO[10]     9.542        -1.778
-motorWrapper_0.motor_0.overflowReg[11]     System        DFN1     D       overflowReg_RNO[11]     9.542        -1.778
-motorWrapper_0.motor_0.overflowReg[12]     System        DFN1     D       overflowReg_RNO[12]     9.542        -1.778
-motorWrapper_0.motor_0.overflowReg[13]     System        DFN1     D       overflowReg_RNO[13]     9.542        -1.778
-motorWrapper_0.motor_0.overflowReg[14]     System        DFN1     D       overflowReg_RNO[14]     9.542        -1.778
-motorWrapper_0.motor_0.overflowReg[15]     System        DFN1     D       overflowReg_RNO[15]     9.542        -1.778
-motorWrapper_0.motor_0.overflowReg[16]     System        DFN1     D       N_107                   9.542        -1.778
-motorWrapper_0.motor_0.overflowReg[17]     System        DFN1     D       N_109                   9.542        -1.778
+motorWrapper_0.motor_0.overflowReset       System        DFN1     D       overflowReset_RNO       9.512        -3.682
+motorWrapper_0.motor_0.overflowReg[10]     System        DFN1     D       overflowReg_RNO[10]     9.542        -3.469
+motorWrapper_0.motor_0.overflowReg[11]     System        DFN1     D       overflowReg_RNO[11]     9.542        -3.469
+motorWrapper_0.motor_0.overflowReg[12]     System        DFN1     D       overflowReg_RNO[12]     9.542        -3.469
+motorWrapper_0.motor_0.overflowReg[13]     System        DFN1     D       overflowReg_RNO[13]     9.542        -3.469
+motorWrapper_0.motor_0.overflowReg[14]     System        DFN1     D       overflowReg_RNO[14]     9.542        -3.469
+motorWrapper_0.motor_0.overflowReg[15]     System        DFN1     D       overflowReg_RNO[15]     9.542        -3.469
+motorWrapper_0.motor_0.overflowReg[16]     System        DFN1     D       N_107                   9.542        -3.469
+motorWrapper_0.motor_0.overflowReg[17]     System        DFN1     D       N_109                   9.542        -3.469
+motorWrapper_0.motor_0.overflowReg[18]     System        DFN1     D       overflowReg_RNO[18]     9.542        -3.469
 =====================================================================================================================
 
 
@@ -815,114 +625,10 @@ Path information for path number 1:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         9.512
 
-    - Propagation time:                      12.354
+    - Propagation time:                      13.194
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (non-critical) :                 -2.842
-
-    Number of logic level(s):                8
-    Starting point:                          gc_MSS_0.MSS_ADLIB_INST / MSSPSEL
-    Ending point:                            motorWrapper_0.motor_0.overflowReset / D
-    The start point is clocked by            System [rising]
-    The end   point is clocked by            FAB_CLK [rising] on pin CLK
-
-Instance / Net                                                     Pin         Pin               Arrival     No. of    
-Name                                                   Type        Name        Dir     Delay     Time        Fan Out(s)
------------------------------------------------------------------------------------------------------------------------
-gc_MSS_0.MSS_ADLIB_INST                                MSS_APB     MSSPSEL     Out     0.000     0.000       -         
-gc_MSS_0_MSS_MASTER_APB_PSELx                          Net         -           -       0.274     -           1         
-motorWrapper_0.BUS_WRITE_EN_0_a2_0_2                   NOR2A       A           In      -         0.274       -         
-motorWrapper_0.BUS_WRITE_EN_0_a2_0_2                   NOR2A       Y           Out     0.534     0.808       -         
-N_135_2                                                Net         -           -       1.007     -           4         
-motorWrapper_0.BUS_WRITE_EN_0_a2_0                     NOR3C       B           In      -         1.815       -         
-motorWrapper_0.BUS_WRITE_EN_0_a2_0                     NOR3C       Y           Out     0.516     2.331       -         
-N_136_0                                                Net         -           -       1.887     -           17        
-motorWrapper_0.BUS_WRITE_EN_0_a3                       NOR3C       C           In      -         4.218       -         
-motorWrapper_0.BUS_WRITE_EN_0_a3                       NOR3C       Y           Out     0.546     4.764       -         
-BUS_WRITE_EN                                           Net         -           -       1.007     -           4         
-motorWrapper_0.motor_0.compareReg_1_sqmuxa_0_a2_1      NOR2A       A           In      -         5.771       -         
-motorWrapper_0.motor_0.compareReg_1_sqmuxa_0_a2_1      NOR2A       Y           Out     0.534     6.305       -         
-N_194                                                  Net         -           -       1.211     -           6         
-motorWrapper_0.motor_0.overflowReset_0_sqmuxa_0_a2     NOR3A       A           In      -         7.516       -         
-motorWrapper_0.motor_0.overflowReset_0_sqmuxa_0_a2     NOR3A       Y           Out     0.546     8.062       -         
-overflowReset_0_sqmuxa                                 Net         -           -       1.849     -           16        
-motorWrapper_0.motor_0.overflowReset_2_0_a2_0          AND2        B           In      -         9.911       -         
-motorWrapper_0.motor_0.overflowReset_2_0_a2_0          AND2        Y           Out     0.534     10.444      -         
-N_183                                                  Net         -           -       0.274     -           1         
-motorWrapper_0.motor_0.overflowReset_2_0_0             OR2         B           In      -         10.718      -         
-motorWrapper_0.motor_0.overflowReset_2_0_0             OR2         Y           Out     0.550     11.268      -         
-overflowReset_2_0_0                                    Net         -           -       0.274     -           1         
-motorWrapper_0.motor_0.overflowReset_RNO               AO1         C           In      -         11.542      -         
-motorWrapper_0.motor_0.overflowReset_RNO               AO1         Y           Out     0.538     12.080      -         
-overflowReset_RNO                                      Net         -           -       0.274     -           1         
-motorWrapper_0.motor_0.overflowReset                   DFN1        D           In      -         12.354      -         
-=======================================================================================================================
-Total path delay (propagation time + setup) of 12.842 is 4.786(37.3%) logic and 8.056(62.7%) route.
-Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
-
-
-Path information for path number 2: 
-      Requested Period:                      10.000
-    - Setup time:                            0.488
-    + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.512
-
-    - Propagation time:                      12.148
-    - Clock delay at starting point:         0.000 (ideal)
-    - Estimated clock delay at start point:  -0.000
-    = Slack (non-critical) :                 -2.636
-
-    Number of logic level(s):                8
-    Starting point:                          gc_MSS_0.MSS_ADLIB_INST / MSSPADDR[9]
-    Ending point:                            motorWrapper_0.motor_0.overflowReset / D
-    The start point is clocked by            System [rising]
-    The end   point is clocked by            FAB_CLK [rising] on pin CLK
-
-Instance / Net                                                     Pin             Pin               Arrival     No. of    
-Name                                                   Type        Name            Dir     Delay     Time        Fan Out(s)
----------------------------------------------------------------------------------------------------------------------------
-gc_MSS_0.MSS_ADLIB_INST                                MSS_APB     MSSPADDR[9]     Out     0.000     0.000       -         
-CoreAPB3_0_APBmslave0_PADDR[9]                         Net         -               -       0.274     -           1         
-motorWrapper_0.BUS_WRITE_EN_0_a2_0_2                   NOR2A       B               In      -         0.274       -         
-motorWrapper_0.BUS_WRITE_EN_0_a2_0_2                   NOR2A       Y               Out     0.328     0.602       -         
-N_135_2                                                Net         -               -       1.007     -           4         
-motorWrapper_0.BUS_WRITE_EN_0_a2_0                     NOR3C       B               In      -         1.609       -         
-motorWrapper_0.BUS_WRITE_EN_0_a2_0                     NOR3C       Y               Out     0.516     2.125       -         
-N_136_0                                                Net         -               -       1.887     -           17        
-motorWrapper_0.BUS_WRITE_EN_0_a3                       NOR3C       C               In      -         4.012       -         
-motorWrapper_0.BUS_WRITE_EN_0_a3                       NOR3C       Y               Out     0.546     4.558       -         
-BUS_WRITE_EN                                           Net         -               -       1.007     -           4         
-motorWrapper_0.motor_0.compareReg_1_sqmuxa_0_a2_1      NOR2A       A               In      -         5.565       -         
-motorWrapper_0.motor_0.compareReg_1_sqmuxa_0_a2_1      NOR2A       Y               Out     0.534     6.099       -         
-N_194                                                  Net         -               -       1.211     -           6         
-motorWrapper_0.motor_0.overflowReset_0_sqmuxa_0_a2     NOR3A       A               In      -         7.311       -         
-motorWrapper_0.motor_0.overflowReset_0_sqmuxa_0_a2     NOR3A       Y               Out     0.546     7.856       -         
-overflowReset_0_sqmuxa                                 Net         -               -       1.849     -           16        
-motorWrapper_0.motor_0.overflowReset_2_0_a2_0          AND2        B               In      -         9.705       -         
-motorWrapper_0.motor_0.overflowReset_2_0_a2_0          AND2        Y               Out     0.534     10.239      -         
-N_183                                                  Net         -               -       0.274     -           1         
-motorWrapper_0.motor_0.overflowReset_2_0_0             OR2         B               In      -         10.512      -         
-motorWrapper_0.motor_0.overflowReset_2_0_0             OR2         Y               Out     0.550     11.063      -         
-overflowReset_2_0_0                                    Net         -               -       0.274     -           1         
-motorWrapper_0.motor_0.overflowReset_RNO               AO1         C               In      -         11.336      -         
-motorWrapper_0.motor_0.overflowReset_RNO               AO1         Y               Out     0.538     11.874      -         
-overflowReset_RNO                                      Net         -               -       0.274     -           1         
-motorWrapper_0.motor_0.overflowReset                   DFN1        D               In      -         12.148      -         
-===========================================================================================================================
-Total path delay (propagation time + setup) of 12.636 is 4.580(36.2%) logic and 8.056(63.8%) route.
-Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
-
-
-Path information for path number 3: 
-      Requested Period:                      10.000
-    - Setup time:                            0.488
-    + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.512
-
-    - Propagation time:                      12.136
-    - Clock delay at starting point:         0.000 (ideal)
-    - Estimated clock delay at start point:  -0.000
-    = Slack (non-critical) :                 -2.624
+    = Slack (critical) :                     -3.682
 
     Number of logic level(s):                8
     Starting point:                          gc_MSS_0.MSS_ADLIB_INST / MSSPADDR[10]
@@ -937,44 +643,96 @@ gc_MSS_0.MSS_ADLIB_INST                                MSS_APB     MSSPADDR[10] 
 CoreAPB3_0_APBmslave0_PADDR[10]                        Net         -                -       0.274     -           1         
 motorWrapper_0.BUS_WRITE_EN_0_a2_0_1                   NOR2        B                In      -         0.274       -         
 motorWrapper_0.BUS_WRITE_EN_0_a2_0_1                   NOR2        Y                Out     0.438     0.711       -         
-N_135_1                                                Net         -                -       1.007     -           4         
-motorWrapper_0.BUS_WRITE_EN_0_a2_0                     NOR3C       A                In      -         1.718       -         
-motorWrapper_0.BUS_WRITE_EN_0_a2_0                     NOR3C       Y                Out     0.395     2.113       -         
-N_136_0                                                Net         -                -       1.887     -           17        
-motorWrapper_0.BUS_WRITE_EN_0_a3                       NOR3C       C                In      -         4.000       -         
-motorWrapper_0.BUS_WRITE_EN_0_a3                       NOR3C       Y                Out     0.546     4.546       -         
+N_142_1                                                Net         -                -       0.328     -           2         
+motorWrapper_0.BUS_WRITE_EN_0_a2_0                     NOR2B       B                In      -         1.040       -         
+motorWrapper_0.BUS_WRITE_EN_0_a2_0                     NOR2B       Y                Out     0.534     1.573       -         
+N_142                                                  Net         -                -       1.926     -           18        
+motorWrapper_0.BUS_WRITE_EN_0_a2                       NOR2B       B                In      -         3.499       -         
+motorWrapper_0.BUS_WRITE_EN_0_a2                       NOR2B       Y                Out     0.534     4.033       -         
+N_143                                                  Net         -                -       1.887     -           17        
+motorWrapper_0.BUS_WRITE_EN_0_a3                       NOR2B       B                In      -         5.920       -         
+motorWrapper_0.BUS_WRITE_EN_0_a3                       NOR2B       Y                Out     0.534     6.454       -         
 BUS_WRITE_EN                                           Net         -                -       1.007     -           4         
-motorWrapper_0.motor_0.compareReg_1_sqmuxa_0_a2_1      NOR2A       A                In      -         5.553       -         
-motorWrapper_0.motor_0.compareReg_1_sqmuxa_0_a2_1      NOR2A       Y                Out     0.534     6.087       -         
+motorWrapper_0.motor_0.compareReg_1_sqmuxa_0_a2_1      NOR2A       A                In      -         7.461       -         
+motorWrapper_0.motor_0.compareReg_1_sqmuxa_0_a2_1      NOR2A       Y                Out     0.534     7.995       -         
 N_194                                                  Net         -                -       1.211     -           6         
-motorWrapper_0.motor_0.overflowReset_0_sqmuxa_0_a2     NOR3A       A                In      -         7.299       -         
-motorWrapper_0.motor_0.overflowReset_0_sqmuxa_0_a2     NOR3A       Y                Out     0.546     7.844       -         
+motorWrapper_0.motor_0.overflowReset_0_sqmuxa_0_a2     NOR3A       A                In      -         9.207       -         
+motorWrapper_0.motor_0.overflowReset_0_sqmuxa_0_a2     NOR3A       Y                Out     0.546     9.752       -         
 overflowReset_0_sqmuxa                                 Net         -                -       1.849     -           16        
-motorWrapper_0.motor_0.overflowReset_2_0_a2_0          AND2        B                In      -         9.693       -         
-motorWrapper_0.motor_0.overflowReset_2_0_a2_0          AND2        Y                Out     0.534     10.227      -         
+motorWrapper_0.motor_0.overflowReset_RNO_1             NOR2B       A                In      -         11.601      -         
+motorWrapper_0.motor_0.overflowReset_RNO_1             NOR2B       Y                Out     0.438     12.039      -         
 N_183                                                  Net         -                -       0.274     -           1         
-motorWrapper_0.motor_0.overflowReset_2_0_0             OR2         B                In      -         10.501      -         
-motorWrapper_0.motor_0.overflowReset_2_0_0             OR2         Y                Out     0.550     11.051      -         
-overflowReset_2_0_0                                    Net         -                -       0.274     -           1         
-motorWrapper_0.motor_0.overflowReset_RNO               AO1         C                In      -         11.324      -         
-motorWrapper_0.motor_0.overflowReset_RNO               AO1         Y                Out     0.538     11.863      -         
+motorWrapper_0.motor_0.overflowReset_RNO               OR3         B                In      -         12.312      -         
+motorWrapper_0.motor_0.overflowReset_RNO               OR3         Y                Out     0.608     12.920      -         
 overflowReset_RNO                                      Net         -                -       0.274     -           1         
-motorWrapper_0.motor_0.overflowReset                   DFN1        D                In      -         12.136      -         
+motorWrapper_0.motor_0.overflowReset                   DFN1        D                In      -         13.194      -         
 ============================================================================================================================
-Total path delay (propagation time + setup) of 12.624 is 4.568(36.2%) logic and 8.056(63.8%) route.
+Total path delay (propagation time + setup) of 13.682 is 4.652(34.0%) logic and 9.029(66.0%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
-Path information for path number 4: 
+Path information for path number 2: 
       Requested Period:                      10.000
     - Setup time:                            0.488
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         9.512
 
-    - Propagation time:                      12.008
+    - Propagation time:                      13.194
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (non-critical) :                 -2.495
+    = Slack (critical) :                     -3.682
+
+    Number of logic level(s):                8
+    Starting point:                          gc_MSS_0.MSS_ADLIB_INST / MSSPSEL
+    Ending point:                            motorWrapper_0.motor_0.overflowReset / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            FAB_CLK [rising] on pin CLK
+
+Instance / Net                                                     Pin         Pin               Arrival     No. of    
+Name                                                   Type        Name        Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------
+gc_MSS_0.MSS_ADLIB_INST                                MSS_APB     MSSPSEL     Out     0.000     0.000       -         
+gc_MSS_0_MSS_MASTER_APB_PSELx                          Net         -           -       0.274     -           1         
+motorWrapper_0.BUS_WRITE_EN_0_a2_0_2                   NOR2A       A           In      -         0.274       -         
+motorWrapper_0.BUS_WRITE_EN_0_a2_0_2                   NOR2A       Y           Out     0.534     0.808       -         
+N_142_2                                                Net         -           -       0.328     -           2         
+motorWrapper_0.BUS_WRITE_EN_0_a2_0                     NOR2B       A           In      -         1.136       -         
+motorWrapper_0.BUS_WRITE_EN_0_a2_0                     NOR2B       Y           Out     0.438     1.573       -         
+N_142                                                  Net         -           -       1.926     -           18        
+motorWrapper_0.BUS_WRITE_EN_0_a2                       NOR2B       B           In      -         3.499       -         
+motorWrapper_0.BUS_WRITE_EN_0_a2                       NOR2B       Y           Out     0.534     4.033       -         
+N_143                                                  Net         -           -       1.887     -           17        
+motorWrapper_0.BUS_WRITE_EN_0_a3                       NOR2B       B           In      -         5.920       -         
+motorWrapper_0.BUS_WRITE_EN_0_a3                       NOR2B       Y           Out     0.534     6.454       -         
+BUS_WRITE_EN                                           Net         -           -       1.007     -           4         
+motorWrapper_0.motor_0.compareReg_1_sqmuxa_0_a2_1      NOR2A       A           In      -         7.461       -         
+motorWrapper_0.motor_0.compareReg_1_sqmuxa_0_a2_1      NOR2A       Y           Out     0.534     7.995       -         
+N_194                                                  Net         -           -       1.211     -           6         
+motorWrapper_0.motor_0.overflowReset_0_sqmuxa_0_a2     NOR3A       A           In      -         9.207       -         
+motorWrapper_0.motor_0.overflowReset_0_sqmuxa_0_a2     NOR3A       Y           Out     0.546     9.752       -         
+overflowReset_0_sqmuxa                                 Net         -           -       1.849     -           16        
+motorWrapper_0.motor_0.overflowReset_RNO_1             NOR2B       A           In      -         11.601      -         
+motorWrapper_0.motor_0.overflowReset_RNO_1             NOR2B       Y           Out     0.438     12.039      -         
+N_183                                                  Net         -           -       0.274     -           1         
+motorWrapper_0.motor_0.overflowReset_RNO               OR3         B           In      -         12.312      -         
+motorWrapper_0.motor_0.overflowReset_RNO               OR3         Y           Out     0.608     12.920      -         
+overflowReset_RNO                                      Net         -           -       0.274     -           1         
+motorWrapper_0.motor_0.overflowReset                   DFN1        D           In      -         13.194      -         
+=======================================================================================================================
+Total path delay (propagation time + setup) of 13.682 is 4.652(34.0%) logic and 9.029(66.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      10.000
+    - Setup time:                            0.488
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.512
+
+    - Propagation time:                      13.065
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -3.553
 
     Number of logic level(s):                8
     Starting point:                          gc_MSS_0.MSS_ADLIB_INST / MSSPADDR[11]
@@ -989,47 +747,47 @@ gc_MSS_0.MSS_ADLIB_INST                                MSS_APB     MSSPADDR[11] 
 CoreAPB3_0_APBmslave0_PADDR[11]                        Net         -                -       0.274     -           1         
 motorWrapper_0.BUS_WRITE_EN_0_a2_0_1                   NOR2        A                In      -         0.274       -         
 motorWrapper_0.BUS_WRITE_EN_0_a2_0_1                   NOR2        Y                Out     0.309     0.583       -         
-N_135_1                                                Net         -                -       1.007     -           4         
-motorWrapper_0.BUS_WRITE_EN_0_a2_0                     NOR3C       A                In      -         1.590       -         
-motorWrapper_0.BUS_WRITE_EN_0_a2_0                     NOR3C       Y                Out     0.395     1.985       -         
-N_136_0                                                Net         -                -       1.887     -           17        
-motorWrapper_0.BUS_WRITE_EN_0_a3                       NOR3C       C                In      -         3.872       -         
-motorWrapper_0.BUS_WRITE_EN_0_a3                       NOR3C       Y                Out     0.546     4.418       -         
+N_142_1                                                Net         -                -       0.328     -           2         
+motorWrapper_0.BUS_WRITE_EN_0_a2_0                     NOR2B       B                In      -         0.911       -         
+motorWrapper_0.BUS_WRITE_EN_0_a2_0                     NOR2B       Y                Out     0.534     1.445       -         
+N_142                                                  Net         -                -       1.926     -           18        
+motorWrapper_0.BUS_WRITE_EN_0_a2                       NOR2B       B                In      -         3.371       -         
+motorWrapper_0.BUS_WRITE_EN_0_a2                       NOR2B       Y                Out     0.534     3.905       -         
+N_143                                                  Net         -                -       1.887     -           17        
+motorWrapper_0.BUS_WRITE_EN_0_a3                       NOR2B       B                In      -         5.792       -         
+motorWrapper_0.BUS_WRITE_EN_0_a3                       NOR2B       Y                Out     0.534     6.326       -         
 BUS_WRITE_EN                                           Net         -                -       1.007     -           4         
-motorWrapper_0.motor_0.compareReg_1_sqmuxa_0_a2_1      NOR2A       A                In      -         5.425       -         
-motorWrapper_0.motor_0.compareReg_1_sqmuxa_0_a2_1      NOR2A       Y                Out     0.534     5.959       -         
+motorWrapper_0.motor_0.compareReg_1_sqmuxa_0_a2_1      NOR2A       A                In      -         7.333       -         
+motorWrapper_0.motor_0.compareReg_1_sqmuxa_0_a2_1      NOR2A       Y                Out     0.534     7.867       -         
 N_194                                                  Net         -                -       1.211     -           6         
-motorWrapper_0.motor_0.overflowReset_0_sqmuxa_0_a2     NOR3A       A                In      -         7.170       -         
-motorWrapper_0.motor_0.overflowReset_0_sqmuxa_0_a2     NOR3A       Y                Out     0.546     7.716       -         
+motorWrapper_0.motor_0.overflowReset_0_sqmuxa_0_a2     NOR3A       A                In      -         9.078       -         
+motorWrapper_0.motor_0.overflowReset_0_sqmuxa_0_a2     NOR3A       Y                Out     0.546     9.624       -         
 overflowReset_0_sqmuxa                                 Net         -                -       1.849     -           16        
-motorWrapper_0.motor_0.overflowReset_2_0_a2_0          AND2        B                In      -         9.564       -         
-motorWrapper_0.motor_0.overflowReset_2_0_a2_0          AND2        Y                Out     0.534     10.098      -         
+motorWrapper_0.motor_0.overflowReset_RNO_1             NOR2B       A                In      -         11.472      -         
+motorWrapper_0.motor_0.overflowReset_RNO_1             NOR2B       Y                Out     0.438     11.910      -         
 N_183                                                  Net         -                -       0.274     -           1         
-motorWrapper_0.motor_0.overflowReset_2_0_0             OR2         B                In      -         10.372      -         
-motorWrapper_0.motor_0.overflowReset_2_0_0             OR2         Y                Out     0.550     10.922      -         
-overflowReset_2_0_0                                    Net         -                -       0.274     -           1         
-motorWrapper_0.motor_0.overflowReset_RNO               AO1         C                In      -         11.196      -         
-motorWrapper_0.motor_0.overflowReset_RNO               AO1         Y                Out     0.538     11.734      -         
+motorWrapper_0.motor_0.overflowReset_RNO               OR3         B                In      -         12.184      -         
+motorWrapper_0.motor_0.overflowReset_RNO               OR3         Y                Out     0.608     12.791      -         
 overflowReset_RNO                                      Net         -                -       0.274     -           1         
-motorWrapper_0.motor_0.overflowReset                   DFN1        D                In      -         12.008      -         
+motorWrapper_0.motor_0.overflowReset                   DFN1        D                In      -         13.065      -         
 ============================================================================================================================
-Total path delay (propagation time + setup) of 12.496 is 4.439(35.5%) logic and 8.056(64.5%) route.
+Total path delay (propagation time + setup) of 13.553 is 4.524(33.4%) logic and 9.029(66.6%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
-Path information for path number 5: 
+Path information for path number 4: 
       Requested Period:                      10.000
     - Setup time:                            0.488
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         9.512
 
-    - Propagation time:                      11.576
+    - Propagation time:                      12.988
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (non-critical) :                 -2.064
+    = Slack (non-critical) :                 -3.476
 
-    Number of logic level(s):                7
-    Starting point:                          gc_MSS_0.MSS_ADLIB_INST / MSSPADDR[8]
+    Number of logic level(s):                8
+    Starting point:                          gc_MSS_0.MSS_ADLIB_INST / MSSPADDR[9]
     Ending point:                            motorWrapper_0.motor_0.overflowReset / D
     The start point is clocked by            System [rising]
     The end   point is clocked by            FAB_CLK [rising] on pin CLK
@@ -1037,32 +795,87 @@ Path information for path number 5:
 Instance / Net                                                     Pin             Pin               Arrival     No. of    
 Name                                                   Type        Name            Dir     Delay     Time        Fan Out(s)
 ---------------------------------------------------------------------------------------------------------------------------
-gc_MSS_0.MSS_ADLIB_INST                                MSS_APB     MSSPADDR[8]     Out     0.000     0.000       -         
-CoreAPB3_0_APBmslave0_PADDR[8]                         Net         -               -       1.007     -           4         
-motorWrapper_0.BUS_WRITE_EN_0_a2_0                     NOR3C       C               In      -         1.007       -         
-motorWrapper_0.BUS_WRITE_EN_0_a2_0                     NOR3C       Y               Out     0.546     1.553       -         
-N_136_0                                                Net         -               -       1.887     -           17        
-motorWrapper_0.BUS_WRITE_EN_0_a3                       NOR3C       C               In      -         3.440       -         
-motorWrapper_0.BUS_WRITE_EN_0_a3                       NOR3C       Y               Out     0.546     3.986       -         
+gc_MSS_0.MSS_ADLIB_INST                                MSS_APB     MSSPADDR[9]     Out     0.000     0.000       -         
+CoreAPB3_0_APBmslave0_PADDR[9]                         Net         -               -       0.274     -           1         
+motorWrapper_0.BUS_WRITE_EN_0_a2_0_2                   NOR2A       B               In      -         0.274       -         
+motorWrapper_0.BUS_WRITE_EN_0_a2_0_2                   NOR2A       Y               Out     0.328     0.602       -         
+N_142_2                                                Net         -               -       0.328     -           2         
+motorWrapper_0.BUS_WRITE_EN_0_a2_0                     NOR2B       A               In      -         0.930       -         
+motorWrapper_0.BUS_WRITE_EN_0_a2_0                     NOR2B       Y               Out     0.438     1.368       -         
+N_142                                                  Net         -               -       1.926     -           18        
+motorWrapper_0.BUS_WRITE_EN_0_a2                       NOR2B       B               In      -         3.294       -         
+motorWrapper_0.BUS_WRITE_EN_0_a2                       NOR2B       Y               Out     0.534     3.828       -         
+N_143                                                  Net         -               -       1.887     -           17        
+motorWrapper_0.BUS_WRITE_EN_0_a3                       NOR2B       B               In      -         5.715       -         
+motorWrapper_0.BUS_WRITE_EN_0_a3                       NOR2B       Y               Out     0.534     6.249       -         
 BUS_WRITE_EN                                           Net         -               -       1.007     -           4         
-motorWrapper_0.motor_0.compareReg_1_sqmuxa_0_a2_1      NOR2A       A               In      -         4.993       -         
-motorWrapper_0.motor_0.compareReg_1_sqmuxa_0_a2_1      NOR2A       Y               Out     0.534     5.527       -         
+motorWrapper_0.motor_0.compareReg_1_sqmuxa_0_a2_1      NOR2A       A               In      -         7.256       -         
+motorWrapper_0.motor_0.compareReg_1_sqmuxa_0_a2_1      NOR2A       Y               Out     0.534     7.790       -         
 N_194                                                  Net         -               -       1.211     -           6         
-motorWrapper_0.motor_0.overflowReset_0_sqmuxa_0_a2     NOR3A       A               In      -         6.738       -         
-motorWrapper_0.motor_0.overflowReset_0_sqmuxa_0_a2     NOR3A       Y               Out     0.546     7.284       -         
+motorWrapper_0.motor_0.overflowReset_0_sqmuxa_0_a2     NOR3A       A               In      -         9.001       -         
+motorWrapper_0.motor_0.overflowReset_0_sqmuxa_0_a2     NOR3A       Y               Out     0.546     9.547       -         
 overflowReset_0_sqmuxa                                 Net         -               -       1.849     -           16        
-motorWrapper_0.motor_0.overflowReset_2_0_a2_0          AND2        B               In      -         9.133       -         
-motorWrapper_0.motor_0.overflowReset_2_0_a2_0          AND2        Y               Out     0.534     9.666       -         
+motorWrapper_0.motor_0.overflowReset_RNO_1             NOR2B       A               In      -         11.395      -         
+motorWrapper_0.motor_0.overflowReset_RNO_1             NOR2B       Y               Out     0.438     11.833      -         
 N_183                                                  Net         -               -       0.274     -           1         
-motorWrapper_0.motor_0.overflowReset_2_0_0             OR2         B               In      -         9.940       -         
-motorWrapper_0.motor_0.overflowReset_2_0_0             OR2         Y               Out     0.550     10.490      -         
-overflowReset_2_0_0                                    Net         -               -       0.274     -           1         
-motorWrapper_0.motor_0.overflowReset_RNO               AO1         C               In      -         10.764      -         
-motorWrapper_0.motor_0.overflowReset_RNO               AO1         Y               Out     0.538     11.302      -         
+motorWrapper_0.motor_0.overflowReset_RNO               OR3         B               In      -         12.107      -         
+motorWrapper_0.motor_0.overflowReset_RNO               OR3         Y               Out     0.608     12.714      -         
 overflowReset_RNO                                      Net         -               -       0.274     -           1         
-motorWrapper_0.motor_0.overflowReset                   DFN1        D               In      -         11.576      -         
+motorWrapper_0.motor_0.overflowReset                   DFN1        D               In      -         12.988      -         
 ===========================================================================================================================
-Total path delay (propagation time + setup) of 12.064 is 4.281(35.5%) logic and 7.782(64.5%) route.
+Total path delay (propagation time + setup) of 13.476 is 4.447(33.0%) logic and 9.029(67.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      10.000
+    - Setup time:                            0.458
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.542
+
+    - Propagation time:                      13.010
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -3.469
+
+    Number of logic level(s):                8
+    Starting point:                          gc_MSS_0.MSS_ADLIB_INST / MSSPADDR[10]
+    Ending point:                            motorWrapper_0.motor_0.overflowReg[10] / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            FAB_CLK [rising] on pin CLK
+
+Instance / Net                                                       Pin              Pin               Arrival     No. of    
+Name                                                     Type        Name             Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------------
+gc_MSS_0.MSS_ADLIB_INST                                  MSS_APB     MSSPADDR[10]     Out     0.000     0.000       -         
+CoreAPB3_0_APBmslave0_PADDR[10]                          Net         -                -       0.274     -           1         
+motorWrapper_0.BUS_WRITE_EN_0_a2_0_1                     NOR2        B                In      -         0.274       -         
+motorWrapper_0.BUS_WRITE_EN_0_a2_0_1                     NOR2        Y                Out     0.438     0.711       -         
+N_142_1                                                  Net         -                -       0.328     -           2         
+motorWrapper_0.BUS_WRITE_EN_0_a2_0                       NOR2B       B                In      -         1.040       -         
+motorWrapper_0.BUS_WRITE_EN_0_a2_0                       NOR2B       Y                Out     0.534     1.573       -         
+N_142                                                    Net         -                -       1.926     -           18        
+motorWrapper_0.BUS_WRITE_EN_0_a2                         NOR2B       B                In      -         3.499       -         
+motorWrapper_0.BUS_WRITE_EN_0_a2                         NOR2B       Y                Out     0.534     4.033       -         
+N_143                                                    Net         -                -       1.887     -           17        
+motorWrapper_0.BUS_WRITE_EN_0_a3                         NOR2B       B                In      -         5.920       -         
+motorWrapper_0.BUS_WRITE_EN_0_a3                         NOR2B       Y                Out     0.534     6.454       -         
+BUS_WRITE_EN                                             Net         -                -       1.007     -           4         
+motorWrapper_0.motor_0.compareReg_1_sqmuxa_0_a2_1        NOR2A       A                In      -         7.461       -         
+motorWrapper_0.motor_0.compareReg_1_sqmuxa_0_a2_1        NOR2A       Y                Out     0.534     7.995       -         
+N_194                                                    Net         -                -       1.211     -           6         
+motorWrapper_0.motor_0.overflowReset_0_sqmuxa_0_a2_0     NOR3A       A                In      -         9.207       -         
+motorWrapper_0.motor_0.overflowReset_0_sqmuxa_0_a2_0     NOR3A       Y                Out     0.546     9.752       -         
+overflowReset_0_sqmuxa_0                                 Net         -                -       1.887     -           17        
+motorWrapper_0.motor_0.overflowReg_RNO_0[10]             MX2         S                In      -         11.640      -         
+motorWrapper_0.motor_0.overflowReg_RNO_0[10]             MX2         Y                Out     0.408     12.048      -         
+N_643                                                    Net         -                -       0.274     -           1         
+motorWrapper_0.motor_0.overflowReg_RNO[10]               NOR2B       A                In      -         12.321      -         
+motorWrapper_0.motor_0.overflowReg_RNO[10]               NOR2B       Y                Out     0.415     12.737      -         
+overflowReg_RNO[10]                                      Net         -                -       0.274     -           1         
+motorWrapper_0.motor_0.overflowReg[10]                   DFN1        D                In      -         13.010      -         
+==============================================================================================================================
+Total path delay (propagation time + setup) of 13.469 is 4.401(32.7%) logic and 9.068(67.3%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -1074,63 +887,66 @@ Target Part: A2F200M3F_FBGA484_-1
 Report for cell gc.verilog
   Core Cell usage:
               cell count     area count*area
-              AND2     6      1.0        6.0
+              AND2    18      1.0       18.0
               AND3     4      1.0        4.0
-               AO1    33      1.0       33.0
-              AO1A     4      1.0        4.0
-              AO1B     1      1.0        1.0
-              AO1C     1      1.0        1.0
-             AOI1B     5      1.0        5.0
-               AX1     2      1.0        2.0
-              AX1A     1      1.0        1.0
+               AO1    38      1.0       38.0
+              AO1A     7      1.0        7.0
+              AO1B     2      1.0        2.0
+              AO1C     2      1.0        2.0
+              AO1D     2      1.0        2.0
+              AOI1     2      1.0        2.0
+             AOI1B     2      1.0        2.0
+              AOI5     1      1.0        1.0
+               AX1     4      1.0        4.0
+              AX1A     3      1.0        3.0
               AX1B     1      1.0        1.0
-              AX1C     3      1.0        3.0
-              AX1E     4      1.0        4.0
-              BUFF     2      1.0        2.0
+              AX1C     1      1.0        1.0
+              AX1E     3      1.0        3.0
+              BUFF     5      1.0        5.0
             CLKINT     3      0.0        0.0
                GND    11      0.0        0.0
                INV     1      1.0        1.0
            MSS_APB     1      0.0        0.0
            MSS_CCC     1      0.0        0.0
-               MX2   295      1.0      295.0
+               MX2   342      1.0      342.0
               MX2A    17      1.0       17.0
-              MX2C     8      1.0        8.0
+              MX2B     1      1.0        1.0
               NOR2    10      1.0       10.0
-             NOR2A    35      1.0       35.0
-             NOR2B   225      1.0      225.0
-              NOR3    10      1.0       10.0
-             NOR3A    11      1.0       11.0
-             NOR3B    16      1.0       16.0
-             NOR3C    31      1.0       31.0
-               OA1     1      1.0        1.0
-              OA1A     3      1.0        3.0
-              OA1B     2      1.0        2.0
-              OA1C     6      1.0        6.0
-               OR2    22      1.0       22.0
-              OR2A    29      1.0       29.0
-              OR2B     8      1.0        8.0
-               OR3    26      1.0       26.0
-              OR3A     1      1.0        1.0
-              OR3B     4      1.0        4.0
-              OR3C     3      1.0        3.0
+             NOR2A    46      1.0       46.0
+             NOR2B   191      1.0      191.0
+              NOR3    21      1.0       21.0
+             NOR3A    25      1.0       25.0
+             NOR3B    59      1.0       59.0
+             NOR3C    38      1.0       38.0
+               OA1     3      1.0        3.0
+              OA1A     6      1.0        6.0
+              OA1B     4      1.0        4.0
+              OA1C    16      1.0       16.0
+               OR2    24      1.0       24.0
+              OR2A    31      1.0       31.0
+              OR2B    13      1.0       13.0
+               OR3    30      1.0       30.0
+              OR3A     4      1.0        4.0
+              OR3B    11      1.0       11.0
+              OR3C     9      1.0        9.0
              RCOSC     1      0.0        0.0
                VCC    11      0.0        0.0
-              XA1B     8      1.0        8.0
-              XA1C    12      1.0       12.0
-             XNOR2     5      1.0        5.0
+              XA1B    16      1.0       16.0
+              XA1C    21      1.0       21.0
+             XNOR2     8      1.0        8.0
                XO1    20      1.0       20.0
-              XOR2    67      1.0       67.0
+              XOR2    62      1.0       62.0
 
 
-              DFN1   152      1.0      152.0
+              DFN1   195      1.0      195.0
             DFN1C0     3      1.0        3.0
-            DFN1E0    74      1.0       74.0
+            DFN1E0    75      1.0       75.0
           DFN1E0C1    33      1.0       33.0
-            DFN1E1   126      1.0      126.0
+            DFN1E1   191      1.0      191.0
           DFN1E1C0    32      1.0       32.0
             DFN1P0     1      1.0        1.0
                    -----          ----------
-             TOTAL  1392              1364.0
+             TOTAL  1682              1654.0
 
 
   IO Cell usage:
@@ -1138,23 +954,23 @@ Report for cell gc.verilog
              BIBUF     1
              INBUF     1
          INBUF_MSS     2
-            OUTBUF     5
+            OUTBUF     7
         OUTBUF_MSS     1
                    -----
-             TOTAL    10
+             TOTAL    12
 
 
-Core Cells         : 1364 of 4608 (30%)
-IO Cells           : 10
+Core Cells         : 1654 of 4608 (36%)
+IO Cells           : 12
 
   RAM/ROM Usage Summary
 Block Rams : 0 of 8 (0%)
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 42MB peak: 110MB)
+At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 42MB peak: 113MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:02s cputime
-# Wed Nov 06 23:02:37 2013
+Process took 0h:00m:03s realtime, 0h:00m:02s cputime
+# Thu Nov 07 20:18:51 2013
 
 ###########################################################]

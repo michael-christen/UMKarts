@@ -3,7 +3,7 @@ Timing Report Max Delay Analysis
 SmartTime Version v11.0
 Microsemi Corporation - Actel Designer Software Release v11.0 (Version 11.0.0.23)
 Copyright (c) 1989-2013
-Date: Wed Nov 06 23:03:54 2013
+Date: Thu Nov 07 20:20:22 2013
 
 
 Design: gc
@@ -25,8 +25,8 @@ Scenario for Timing Analysis: Primary
 SUMMARY
 
 Clock Domain:               CAPTURE_SWITCH
-Period (ns):                7.571
-Frequency (MHz):            132.083
+Period (ns):                6.646
+Frequency (MHz):            150.466
 Required Period (ns):       N/A
 Required Frequency (MHz):   N/A
 External Setup (ns):        N/A
@@ -45,8 +45,8 @@ Min Clock-To-Out (ns):      N/A
 Max Clock-To-Out (ns):      N/A
 
 Clock Domain:               mss_fabric_interface_clock
-Period (ns):                7.662
-Frequency (MHz):            130.514
+Period (ns):                8.223
+Frequency (MHz):            121.610
 Required Period (ns):       10.000
 Required Frequency (MHz):   100.000
 External Setup (ns):        N/A
@@ -65,14 +65,14 @@ Min Clock-To-Out (ns):      N/A
 Max Clock-To-Out (ns):      N/A
 
 Clock Domain:               mss_ccc_gla1
-Period (ns):                10.359
-Frequency (MHz):            96.534
+Period (ns):                10.610
+Frequency (MHz):            94.251
 Required Period (ns):       10.000
 Required Frequency (MHz):   100.000
-External Setup (ns):        -1.976
-External Hold (ns):         2.654
-Min Clock-To-Out (ns):      6.008
-Max Clock-To-Out (ns):      12.252
+External Setup (ns):        -3.038
+External Hold (ns):         3.076
+Min Clock-To-Out (ns):      6.119
+Max Clock-To-Out (ns):      12.228
 
 Clock Domain:               mss_ccc_gla0
 Period (ns):                10.000
@@ -107,60 +107,60 @@ SET Register to Register
 
 Path 1
   From:                        motorWrapper_0/motor_0/capture_status_async:CLK
-  To:                          motorWrapper_0/motor_0/captureAsyncReg[13]/U1:D
-  Delay (ns):                  7.099
+  To:                          motorWrapper_0/motor_0/captureAsyncReg[18]/U1:D
+  Delay (ns):                  6.364
   Slack (ns):
-  Arrival (ns):                9.686
+  Arrival (ns):                8.365
   Required (ns):
   Setup (ns):                  0.540
-  Minimum Period (ns):         7.571
+  Minimum Period (ns):         6.646
 
 Path 2
   From:                        motorWrapper_0/motor_0/capture_status_async:CLK
-  To:                          motorWrapper_0/motor_0/captureAsyncReg[14]/U1:D
-  Delay (ns):                  7.099
+  To:                          motorWrapper_0/motor_0/captureAsyncReg[27]/U1:D
+  Delay (ns):                  5.715
   Slack (ns):
-  Arrival (ns):                9.686
+  Arrival (ns):                7.716
   Required (ns):
   Setup (ns):                  0.540
-  Minimum Period (ns):         7.571
+  Minimum Period (ns):         5.992
 
 Path 3
   From:                        motorWrapper_0/motor_0/capture_status_async:CLK
-  To:                          motorWrapper_0/motor_0/captureAsyncReg[6]/U1:D
-  Delay (ns):                  7.172
+  To:                          motorWrapper_0/motor_0/captureAsyncReg[22]/U1:D
+  Delay (ns):                  5.681
   Slack (ns):
-  Arrival (ns):                9.759
+  Arrival (ns):                7.682
   Required (ns):
   Setup (ns):                  0.540
-  Minimum Period (ns):         7.148
+  Minimum Period (ns):         5.838
 
 Path 4
   From:                        motorWrapper_0/motor_0/capture_status_async:CLK
-  To:                          motorWrapper_0/motor_0/captureAsyncReg[12]/U1:D
-  Delay (ns):                  6.886
+  To:                          motorWrapper_0/motor_0/captureAsyncReg[19]/U1:D
+  Delay (ns):                  5.150
   Slack (ns):
-  Arrival (ns):                9.473
+  Arrival (ns):                7.151
   Required (ns):
   Setup (ns):                  0.540
-  Minimum Period (ns):         6.850
+  Minimum Period (ns):         5.429
 
 Path 5
   From:                        motorWrapper_0/motor_0/capture_status_async:CLK
-  To:                          motorWrapper_0/motor_0/captureAsyncReg[11]/U1:D
-  Delay (ns):                  7.013
+  To:                          motorWrapper_0/motor_0/captureAsyncReg[17]/U1:D
+  Delay (ns):                  5.396
   Slack (ns):
-  Arrival (ns):                9.600
+  Arrival (ns):                7.397
   Required (ns):
   Setup (ns):                  0.540
-  Minimum Period (ns):         6.700
+  Minimum Period (ns):         4.818
 
 
 Expanded Path 1
   From: motorWrapper_0/motor_0/capture_status_async:CLK
-  To: motorWrapper_0/motor_0/captureAsyncReg[13]/U1:D
+  To: motorWrapper_0/motor_0/captureAsyncReg[18]/U1:D
   data required time                             N/C
-  data arrival time                          -   9.686
+  data arrival time                          -   8.365
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
@@ -175,22 +175,22 @@ Expanded Path 1
   0.806                        CAPTURE_SWITCH_pad/U0/U1:YIN (r)
                +     0.033          cell: ADLIB:IOIN_IB
   0.839                        CAPTURE_SWITCH_pad/U0/U1:Y (r)
-               +     1.748          net: CAPTURE_SWITCH_c
-  2.587                        motorWrapper_0/motor_0/capture_status_async:CLK (r)
+               +     1.162          net: CAPTURE_SWITCH_c
+  2.001                        motorWrapper_0/motor_0/capture_status_async:CLK (r)
                +     0.399          cell: ADLIB:DFN1C0
-  2.986                        motorWrapper_0/motor_0/capture_status_async:Q (r)
-               +     1.510          net: motorWrapper_0/motor_0/capture_status_async
-  4.496                        motorWrapper_0/motor_0/capture_status_async_RNIQKRC_0:B (r)
+  2.400                        motorWrapper_0/motor_0/capture_status_async:Q (r)
+               +     0.430          net: motorWrapper_0/motor_0/capture_status_async
+  2.830                        motorWrapper_0/motor_0/capture_status_async_RNIQKRC:B (r)
                +     0.293          cell: ADLIB:NOR2A
-  4.789                        motorWrapper_0/motor_0/capture_status_async_RNIQKRC_0:Y (f)
-               +     4.256          net: motorWrapper_0/motor_0/capture_status_async4_0
-  9.045                        motorWrapper_0/motor_0/captureAsyncReg[13]/U0:S (f)
+  3.123                        motorWrapper_0/motor_0/capture_status_async_RNIQKRC:Y (f)
+               +     4.577          net: motorWrapper_0/motor_0/capture_status_async4
+  7.700                        motorWrapper_0/motor_0/captureAsyncReg[18]/U0:S (f)
                +     0.394          cell: ADLIB:MX2
-  9.439                        motorWrapper_0/motor_0/captureAsyncReg[13]/U0:Y (f)
-               +     0.247          net: motorWrapper_0/motor_0/captureAsyncReg[13]/Y
-  9.686                        motorWrapper_0/motor_0/captureAsyncReg[13]/U1:D (f)
+  8.094                        motorWrapper_0/motor_0/captureAsyncReg[18]/U0:Y (f)
+               +     0.271          net: motorWrapper_0/motor_0/captureAsyncReg[18]/Y
+  8.365                        motorWrapper_0/motor_0/captureAsyncReg[18]/U1:D (f)
                                     
-  9.686                        data arrival time
+  8.365                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          CAPTURE_SWITCH
@@ -204,14 +204,10 @@ Expanded Path 1
   N/C                          CAPTURE_SWITCH_pad/U0/U1:YIN (r)
                +     0.033          cell: ADLIB:IOIN_IB
   N/C                          CAPTURE_SWITCH_pad/U0/U1:Y (r)
-               +     1.171          net: CAPTURE_SWITCH_c
-  N/C                          CAPTURE_SWITCH_pad_RNIPMP8:A (r)
-               +     0.353          cell: ADLIB:BUFF
-  N/C                          CAPTURE_SWITCH_pad_RNIPMP8:Y (r)
-               +     0.292          net: CAPTURE_SWITCH_c_0
-  N/C                          motorWrapper_0/motor_0/captureAsyncReg[13]/U1:CLK (r)
+               +     1.420          net: CAPTURE_SWITCH_c
+  N/C                          motorWrapper_0/motor_0/captureAsyncReg[18]/U1:CLK (r)
                -     0.540          Library setup time: ADLIB:DFN1C0
-  N/C                          motorWrapper_0/motor_0/captureAsyncReg[13]/U1:D
+  N/C                          motorWrapper_0/motor_0/captureAsyncReg[18]/U1:D
 
 
 END SET Register to Register
@@ -314,61 +310,61 @@ SET Register to Register
 
 Path 1
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          gc_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[5]
-  Delay (ns):                  9.514
-  Slack (ns):                  2.338
-  Arrival (ns):                12.964
-  Required (ns):               15.302
-  Setup (ns):                  -1.852
-  Minimum Period (ns):         7.662
+  To:                          gc_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[11]
+  Delay (ns):                  10.079
+  Slack (ns):                  1.777
+  Arrival (ns):                13.529
+  Required (ns):               15.306
+  Setup (ns):                  -1.856
+  Minimum Period (ns):         8.223
 
 Path 2
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          gc_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[20]
-  Delay (ns):                  9.498
-  Slack (ns):                  2.361
-  Arrival (ns):                12.948
-  Required (ns):               15.309
-  Setup (ns):                  -1.859
-  Minimum Period (ns):         7.639
+  To:                          gc_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[25]
+  Delay (ns):                  10.023
+  Slack (ns):                  1.853
+  Arrival (ns):                13.473
+  Required (ns):               15.326
+  Setup (ns):                  -1.876
+  Minimum Period (ns):         8.147
 
 Path 3
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          gc_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[4]
-  Delay (ns):                  9.479
-  Slack (ns):                  2.374
-  Arrival (ns):                12.929
-  Required (ns):               15.303
-  Setup (ns):                  -1.853
-  Minimum Period (ns):         7.626
+  To:                          gc_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[24]
+  Delay (ns):                  9.830
+  Slack (ns):                  2.044
+  Arrival (ns):                13.280
+  Required (ns):               15.324
+  Setup (ns):                  -1.874
+  Minimum Period (ns):         7.956
 
 Path 4
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          gc_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[2]
-  Delay (ns):                  9.425
-  Slack (ns):                  2.421
-  Arrival (ns):                12.875
-  Required (ns):               15.296
-  Setup (ns):                  -1.846
-  Minimum Period (ns):         7.579
+  To:                          gc_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[20]
+  Delay (ns):                  9.806
+  Slack (ns):                  2.070
+  Arrival (ns):                13.256
+  Required (ns):               15.326
+  Setup (ns):                  -1.876
+  Minimum Period (ns):         7.930
 
 Path 5
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          gc_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[15]
-  Delay (ns):                  9.169
-  Slack (ns):                  2.692
-  Arrival (ns):                12.619
-  Required (ns):               15.311
-  Setup (ns):                  -1.861
-  Minimum Period (ns):         7.308
+  To:                          gc_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[22]
+  Delay (ns):                  9.799
+  Slack (ns):                  2.077
+  Arrival (ns):                13.249
+  Required (ns):               15.326
+  Setup (ns):                  -1.876
+  Minimum Period (ns):         7.923
 
 
 Expanded Path 1
   From: gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To: gc_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[5]
-  data required time                             15.302
-  data arrival time                          -   12.964
-  slack                                          2.338
+  To: gc_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[11]
+  data required time                             15.306
+  data arrival time                          -   13.529
+  slack                                          1.777
   ________________________________________________________
   Data arrival time calculation
   0.000                        mss_fabric_interface_clock
@@ -386,26 +382,26 @@ Expanded Path 1
   6.989                        motorWrapper_0/BUS_WRITE_EN_0_a2_0_1:B (f)
                +     0.490          cell: ADLIB:NOR2
   7.479                        motorWrapper_0/BUS_WRITE_EN_0_a2_0_1:Y (r)
-               +     1.463          net: N_135_1
-  8.942                        gc_response_apb_0/start_init4_0_a2_0:A (r)
-               +     0.505          cell: ADLIB:NOR3B
-  9.447                        gc_response_apb_0/start_init4_0_a2_0:Y (r)
-               +     1.178          net: N_137_0
-  10.625                       CoreAPB3_0/CAPB3lOII/PRDATA_1_a3[5]:A (r)
-               +     0.370          cell: ADLIB:NOR2B
-  10.995                       CoreAPB3_0/CAPB3lOII/PRDATA_1_a3[5]:Y (r)
-               +     0.247          net: CoreAPB3_0/CAPB3lOII/N_87
-  11.242                       CoreAPB3_0/CAPB3lOII/PRDATA_1[5]:C (r)
-               +     0.581          cell: ADLIB:AO1
-  11.823                       CoreAPB3_0/CAPB3lOII/PRDATA_1[5]:Y (r)
-               +     0.711          net: gc_MSS_0_MSS_MASTER_APB_PRDATA[5]
-  12.534                       gc_MSS_0/MSS_ADLIB_INST/U_38:PIN4 (r)
+               +     1.100          net: motorWrapper_0/N_142_1
+  8.579                        motorWrapper_0/BUS_WRITE_EN_0_a2_0_0:B (r)
+               +     0.392          cell: ADLIB:NOR2B
+  8.971                        motorWrapper_0/BUS_WRITE_EN_0_a2_0_0:Y (r)
+               +     1.609          net: N_142_0
+  10.580                       CoreAPB3_0/CAPB3lOII/PRDATA_1_a3_0[11]:A (r)
+               +     0.570          cell: ADLIB:NOR3B
+  11.150                       CoreAPB3_0/CAPB3lOII/PRDATA_1_a3_0[11]:Y (r)
+               +     0.255          net: CoreAPB3_0/CAPB3lOII/N_100
+  11.405                       CoreAPB3_0/CAPB3lOII/PRDATA_1[11]:C (r)
+               +     0.497          cell: ADLIB:AO1
+  11.902                       CoreAPB3_0/CAPB3lOII/PRDATA_1[11]:Y (r)
+               +     1.199          net: gc_MSS_0_MSS_MASTER_APB_PRDATA[11]
+  13.101                       gc_MSS_0/MSS_ADLIB_INST/U_40:PIN4 (r)
                +     0.065          cell: ADLIB:MSS_IF
-  12.599                       gc_MSS_0/MSS_ADLIB_INST/U_38:PIN4INT (r)
-               +     0.365          net: gc_MSS_0/MSS_ADLIB_INST/MSSPRDATA[5]INT_NET
-  12.964                       gc_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[5] (r)
+  13.166                       gc_MSS_0/MSS_ADLIB_INST/U_40:PIN4INT (r)
+               +     0.363          net: gc_MSS_0/MSS_ADLIB_INST/MSSPRDATA[11]INT_NET
+  13.529                       gc_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[11] (r)
                                     
-  12.964                       data arrival time
+  13.529                       data arrival time
   ________________________________________________________
   Data required time calculation
   10.000                       mss_fabric_interface_clock
@@ -413,10 +409,10 @@ Expanded Path 1
   10.000                       gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB (r)
                +     3.450          Clock generation
   13.450
-               -    -1.852          Library setup time: ADLIB:MSS_APB_IP
-  15.302                       gc_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[5]
+               -    -1.856          Library setup time: ADLIB:MSS_APB_IP
+  15.306                       gc_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[11]
                                     
-  15.302                       data required time
+  15.306                       data required time
 
 
 END SET Register to Register
@@ -466,57 +462,57 @@ END SET Asynchronous to Register
 SET mss_ccc_gla1 to mss_fabric_interface_clock
 
 Path 1
-  From:                        motorWrapper_0/motor_0/bus_read_data[13]:CLK
-  To:                          gc_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[13]
-  Delay (ns):                  4.912
-  Slack (ns):                  5.256
-  Arrival (ns):                10.073
-  Required (ns):               15.329
-  Setup (ns):                  -1.879
+  From:                        gc_response_apb_0/PRDATA[20]:CLK
+  To:                          gc_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[20]
+  Delay (ns):                  4.619
+  Slack (ns):                  5.480
+  Arrival (ns):                9.829
+  Required (ns):               15.309
+  Setup (ns):                  -1.859
 
 Path 2
-  From:                        gc_response_apb_0/PRDATA[31]:CLK
-  To:                          gc_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[31]
-  Delay (ns):                  4.363
-  Slack (ns):                  5.686
-  Arrival (ns):                9.635
-  Required (ns):               15.321
-  Setup (ns):                  -1.871
+  From:                        gc_response_apb_0/PRDATA[23]:CLK
+  To:                          gc_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[23]
+  Delay (ns):                  4.586
+  Slack (ns):                  5.507
+  Arrival (ns):                9.823
+  Required (ns):               15.330
+  Setup (ns):                  -1.880
 
 Path 3
-  From:                        motorWrapper_0/motor_0/bus_read_data[30]:CLK
-  To:                          gc_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[30]
-  Delay (ns):                  4.309
-  Slack (ns):                  5.824
-  Arrival (ns):                9.508
-  Required (ns):               15.332
-  Setup (ns):                  -1.882
-
-Path 4
-  From:                        motorWrapper_0/motor_0/bus_read_data[17]:CLK
+  From:                        gc_response_apb_0/PRDATA[17]:CLK
   To:                          gc_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[17]
-  Delay (ns):                  4.119
-  Slack (ns):                  6.067
-  Arrival (ns):                9.260
+  Delay (ns):                  4.308
+  Slack (ns):                  5.829
+  Arrival (ns):                9.498
   Required (ns):               15.327
   Setup (ns):                  -1.877
 
+Path 4
+  From:                        motorWrapper_0/motor_0/bus_read_data[20]:CLK
+  To:                          gc_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[20]
+  Delay (ns):                  4.324
+  Slack (ns):                  5.846
+  Arrival (ns):                9.463
+  Required (ns):               15.309
+  Setup (ns):                  -1.859
+
 Path 5
-  From:                        motorWrapper_0/motor_0/bus_read_data[3]:CLK
-  To:                          gc_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[3]
-  Delay (ns):                  3.969
-  Slack (ns):                  6.200
-  Arrival (ns):                9.118
-  Required (ns):               15.318
-  Setup (ns):                  -1.868
+  From:                        gc_response_apb_0/PRDATA[14]:CLK
+  To:                          gc_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[14]
+  Delay (ns):                  4.288
+  Slack (ns):                  5.858
+  Arrival (ns):                9.466
+  Required (ns):               15.324
+  Setup (ns):                  -1.874
 
 
 Expanded Path 1
-  From: motorWrapper_0/motor_0/bus_read_data[13]:CLK
-  To: gc_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[13]
-  data required time                             15.329
-  data arrival time                          -   10.073
-  slack                                          5.256
+  From: gc_response_apb_0/PRDATA[20]:CLK
+  To: gc_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[20]
+  data required time                             15.309
+  data arrival time                          -   9.829
+  slack                                          5.480
   ________________________________________________________
   Data arrival time calculation
   0.000                        mss_ccc_gla1
@@ -528,26 +524,26 @@ Expanded Path 1
   4.630                        gc_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   4.630                        gc_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.531          net: FAB_CLK
-  5.161                        motorWrapper_0/motor_0/bus_read_data[13]:CLK (r)
-               +     0.559          cell: ADLIB:DFN1E1
-  5.720                        motorWrapper_0/motor_0/bus_read_data[13]:Q (f)
-               +     2.137          net: CoreAPB3_0_APBmslave1_PRDATA[13]
-  7.857                        CoreAPB3_0/CAPB3lOII/PRDATA_1_a3_0[13]:A (f)
-               +     0.293          cell: ADLIB:NOR2B
-  8.150                        CoreAPB3_0/CAPB3lOII/PRDATA_1_a3_0[13]:Y (f)
-               +     0.255          net: CoreAPB3_0/CAPB3lOII/N_104
-  8.405                        CoreAPB3_0/CAPB3lOII/PRDATA_1[13]:C (f)
-               +     0.535          cell: ADLIB:AO1
-  8.940                        CoreAPB3_0/CAPB3lOII/PRDATA_1[13]:Y (f)
-               +     0.715          net: gc_MSS_0_MSS_MASTER_APB_PRDATA[13]
-  9.655                        gc_MSS_0/MSS_ADLIB_INST/U_41:PIN5 (f)
-               +     0.079          cell: ADLIB:MSS_IF
-  9.734                        gc_MSS_0/MSS_ADLIB_INST/U_41:PIN5INT (f)
-               +     0.339          net: gc_MSS_0/MSS_ADLIB_INST/MSSPRDATA[13]INT_NET
-  10.073                       gc_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[13] (f)
+               +     0.580          net: FAB_CLK
+  5.210                        gc_response_apb_0/PRDATA[20]:CLK (r)
+               +     0.440          cell: ADLIB:DFN1
+  5.650                        gc_response_apb_0/PRDATA[20]:Q (r)
+               +     1.146          net: CoreAPB3_0_APBmslave0_PRDATA[20]
+  6.796                        CoreAPB3_0/CAPB3lOII/PRDATA_1_a3_0[20]:B (r)
+               +     0.543          cell: ADLIB:NOR3B
+  7.339                        CoreAPB3_0/CAPB3lOII/PRDATA_1_a3_0[20]:Y (r)
+               +     0.255          net: CoreAPB3_0/CAPB3lOII/N_118
+  7.594                        CoreAPB3_0/CAPB3lOII/PRDATA_1[20]:C (r)
+               +     0.497          cell: ADLIB:AO1
+  8.091                        CoreAPB3_0/CAPB3lOII/PRDATA_1[20]:Y (r)
+               +     1.311          net: gc_MSS_0_MSS_MASTER_APB_PRDATA[20]
+  9.402                        gc_MSS_0/MSS_ADLIB_INST/U_54:PIN4 (r)
+               +     0.065          cell: ADLIB:MSS_IF
+  9.467                        gc_MSS_0/MSS_ADLIB_INST/U_54:PIN4INT (r)
+               +     0.362          net: gc_MSS_0/MSS_ADLIB_INST/MSSPRDATA[20]INT_NET
+  9.829                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[20] (r)
                                     
-  10.073                       data arrival time
+  9.829                        data arrival time
   ________________________________________________________
   Data required time calculation
   10.000                       mss_fabric_interface_clock
@@ -555,10 +551,10 @@ Expanded Path 1
   10.000                       gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB (r)
                +     3.450          Clock generation
   13.450
-               -    -1.879          Library setup time: ADLIB:MSS_APB_IP
-  15.329                       gc_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[13]
+               -    -1.859          Library setup time: ADLIB:MSS_APB_IP
+  15.309                       gc_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[20]
                                     
-  15.329                       data required time
+  15.309                       data required time
 
 
 END SET mss_ccc_gla1 to mss_fabric_interface_clock
@@ -620,62 +616,62 @@ Clock Domain mss_ccc_gla1
 SET Register to Register
 
 Path 1
-  From:                        motorWrapper_0/motor_0/counterReg[3]:CLK
+  From:                        motorWrapper_0/motor_0/counterReg[16]:CLK
   To:                          motorWrapper_0/motor_0/interrupt_status[0]:D
-  Delay (ns):                  9.914
-  Slack (ns):                  -0.359
-  Arrival (ns):                15.072
-  Required (ns):               14.713
+  Delay (ns):                  10.155
+  Slack (ns):                  -0.610
+  Arrival (ns):                15.310
+  Required (ns):               14.700
   Setup (ns):                  0.435
-  Minimum Period (ns):         10.359
+  Minimum Period (ns):         10.610
 
 Path 2
-  From:                        motorWrapper_0/motor_0/counterReg[5]:CLK
-  To:                          motorWrapper_0/motor_0/counterReg[22]:D
-  Delay (ns):                  9.758
-  Slack (ns):                  -0.164
-  Arrival (ns):                14.916
-  Required (ns):               14.752
-  Setup (ns):                  0.409
-  Minimum Period (ns):         10.164
+  From:                        motorWrapper_0/motor_0/counterReg[16]:CLK
+  To:                          motorWrapper_0/motor_0/pwm2_1:D
+  Delay (ns):                  10.069
+  Slack (ns):                  -0.524
+  Arrival (ns):                15.224
+  Required (ns):               14.700
+  Setup (ns):                  0.435
+  Minimum Period (ns):         10.524
 
 Path 3
-  From:                        motorWrapper_0/motor_0/counterReg[3]:CLK
-  To:                          motorWrapper_0/motor_0/counterReg[18]:D
-  Delay (ns):                  9.579
-  Slack (ns):                  -0.007
-  Arrival (ns):                14.737
-  Required (ns):               14.730
+  From:                        motorWrapper_0/motor_0/counterReg[2]:CLK
+  To:                          motorWrapper_0/motor_0/interrupt_status[1]:D
+  Delay (ns):                  9.880
+  Slack (ns):                  -0.368
+  Arrival (ns):                15.063
+  Required (ns):               14.695
   Setup (ns):                  0.435
-  Minimum Period (ns):         10.007
+  Minimum Period (ns):         10.368
 
 Path 4
-  From:                        motorWrapper_0/motor_0/overflowReg[21]:CLK
+  From:                        motorWrapper_0/motor_0/counterReg[5]:CLK
   To:                          motorWrapper_0/motor_0/interrupt_status[0]:D
-  Delay (ns):                  9.550
-  Slack (ns):                  -0.002
-  Arrival (ns):                14.715
-  Required (ns):               14.713
+  Delay (ns):                  9.833
+  Slack (ns):                  -0.298
+  Arrival (ns):                14.998
+  Required (ns):               14.700
   Setup (ns):                  0.435
-  Minimum Period (ns):         10.002
+  Minimum Period (ns):         10.298
 
 Path 5
-  From:                        motorWrapper_0/motor_0/counterReg[11]:CLK
+  From:                        motorWrapper_0/motor_0/counterReg[4]:CLK
   To:                          motorWrapper_0/motor_0/interrupt_status[0]:D
-  Delay (ns):                  9.536
-  Slack (ns):                  0.012
-  Arrival (ns):                14.701
-  Required (ns):               14.713
+  Delay (ns):                  9.805
+  Slack (ns):                  -0.280
+  Arrival (ns):                14.980
+  Required (ns):               14.700
   Setup (ns):                  0.435
-  Minimum Period (ns):         9.988
+  Minimum Period (ns):         10.280
 
 
 Expanded Path 1
-  From: motorWrapper_0/motor_0/counterReg[3]:CLK
+  From: motorWrapper_0/motor_0/counterReg[16]:CLK
   To: motorWrapper_0/motor_0/interrupt_status[0]:D
-  data required time                             14.713
-  data arrival time                          -   15.072
-  slack                                          -0.359
+  data required time                             14.700
+  data arrival time                          -   15.310
+  slack                                          -0.610
   ________________________________________________________
   Data arrival time calculation
   0.000                        mss_ccc_gla1
@@ -687,54 +683,54 @@ Expanded Path 1
   4.630                        gc_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   4.630                        gc_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.528          net: FAB_CLK
-  5.158                        motorWrapper_0/motor_0/counterReg[3]:CLK (r)
+               +     0.525          net: FAB_CLK
+  5.155                        motorWrapper_0/motor_0/counterReg[16]:CLK (r)
                +     0.559          cell: ADLIB:DFN1E1
-  5.717                        motorWrapper_0/motor_0/counterReg[3]:Q (f)
-               +     0.826          net: motorWrapper_0/motor_0/counterReg[3]
-  6.543                        motorWrapper_0/motor_0/overflowReg_RNI0GKE[3]:B (f)
+  5.714                        motorWrapper_0/motor_0/counterReg[16]:Q (f)
+               +     0.995          net: motorWrapper_0/motor_0/counterReg[16]
+  6.709                        motorWrapper_0/motor_0/overflowReg_RNI8TTI[16]:B (f)
                +     0.749          cell: ADLIB:XOR2
-  7.292                        motorWrapper_0/motor_0/overflowReg_RNI0GKE[3]:Y (f)
-               +     0.235          net: motorWrapper_0/motor_0/N_130_i
-  7.527                        motorWrapper_0/motor_0/overflowReg_RNI449T[5]:C (f)
+  7.458                        motorWrapper_0/motor_0/overflowReg_RNI8TTI[16]:Y (f)
+               +     0.235          net: motorWrapper_0/motor_0/N_157_i
+  7.693                        motorWrapper_0/motor_0/overflowReg_RNIISR51[17]:C (f)
                +     0.372          cell: ADLIB:XO1
-  7.899                        motorWrapper_0/motor_0/overflowReg_RNI449T[5]:Y (f)
-               +     0.255          net: motorWrapper_0/motor_0/counterReg7_NE_7
-  8.154                        motorWrapper_0/motor_0/overflowReg_RNI2E632[5]:C (f)
+  8.065                        motorWrapper_0/motor_0/overflowReg_RNIISR51[17]:Y (f)
+               +     0.255          net: motorWrapper_0/motor_0/counterReg7_NE_15
+  8.320                        motorWrapper_0/motor_0/overflowReg_RNI4PNB2[15]:C (f)
                +     0.504          cell: ADLIB:OR3
-  8.658                        motorWrapper_0/motor_0/overflowReg_RNI2E632[5]:Y (f)
-               +     0.255          net: motorWrapper_0/motor_0/counterReg7_NE_19
-  8.913                        motorWrapper_0/motor_0/overflowReg_RNIA6H64[29]:C (f)
+  8.824                        motorWrapper_0/motor_0/overflowReg_RNI4PNB2[15]:Y (f)
+               +     0.255          net: motorWrapper_0/motor_0/counterReg7_NE_23
+  9.079                        motorWrapper_0/motor_0/overflowReg_RNI6IHN4[14]:C (f)
                +     0.504          cell: ADLIB:OR3
-  9.417                        motorWrapper_0/motor_0/overflowReg_RNIA6H64[29]:Y (f)
-               +     0.255          net: motorWrapper_0/motor_0/counterReg7_NE_25
-  9.672                        motorWrapper_0/motor_0/overflowReg_RNIGGEH8[9]:C (f)
+  9.583                        motorWrapper_0/motor_0/overflowReg_RNI6IHN4[14]:Y (f)
+               +     0.255          net: motorWrapper_0/motor_0/counterReg7_NE_27
+  9.838                        motorWrapper_0/motor_0/overflowReg_RNI403B9[3]:C (f)
                +     0.504          cell: ADLIB:OR3
-  10.176                       motorWrapper_0/motor_0/overflowReg_RNIGGEH8[9]:Y (f)
-               +     0.647          net: motorWrapper_0/motor_0/counterReg7_NE_28
-  10.823                       motorWrapper_0/motor_0/overflowReg_RNI20TSG[13]:C (f)
-               +     0.504          cell: ADLIB:OR3
-  11.327                       motorWrapper_0/motor_0/overflowReg_RNI20TSG[13]:Y (f)
-               +     0.975          net: motorWrapper_0/motor_0/counterReg8
-  12.302                       motorWrapper_0/motor_0/interrupt_status_RNO_2[0]:C (f)
-               +     0.398          cell: ADLIB:NOR3B
-  12.700                       motorWrapper_0/motor_0/interrupt_status_RNO_2[0]:Y (r)
-               +     0.291          net: motorWrapper_0/motor_0/N_1230
-  12.991                       motorWrapper_0/motor_0/interrupt_status_RNO_1[0]:C (r)
-               +     0.497          cell: ADLIB:AO1
-  13.488                       motorWrapper_0/motor_0/interrupt_status_RNO_1[0]:Y (r)
-               +     0.267          net: motorWrapper_0/motor_0/interrupt_status_11[0]
-  13.755                       motorWrapper_0/motor_0/interrupt_status_RNO_0[0]:A (r)
+  10.342                       motorWrapper_0/motor_0/overflowReg_RNI403B9[3]:Y (f)
+               +     0.877          net: motorWrapper_0/motor_0/counterReg7_NE_29
+  11.219                       motorWrapper_0/motor_0/overflowReg_RNIO6RJH[0]:A (f)
+               +     0.407          cell: ADLIB:OR2
+  11.626                       motorWrapper_0/motor_0/overflowReg_RNIO6RJH[0]:Y (f)
+               +     0.969          net: motorWrapper_0/motor_0/counterReg8
+  12.595                       motorWrapper_0/motor_0/overflowReset_RNISHUBI:B (f)
+               +     0.370          cell: ADLIB:NOR2A
+  12.965                       motorWrapper_0/motor_0/overflowReset_RNISHUBI:Y (r)
+               +     0.292          net: motorWrapper_0/motor_0/N_196
+  13.257                       motorWrapper_0/motor_0/interrupt_status_RNO_1[0]:B (r)
+               +     0.505          cell: ADLIB:AO1
+  13.762                       motorWrapper_0/motor_0/interrupt_status_RNO_1[0]:Y (r)
+               +     0.255          net: motorWrapper_0/motor_0/interrupt_status_11[0]
+  14.017                       motorWrapper_0/motor_0/interrupt_status_RNO_0[0]:A (r)
                +     0.431          cell: ADLIB:MX2
-  14.186                       motorWrapper_0/motor_0/interrupt_status_RNO_0[0]:Y (r)
-               +     0.257          net: motorWrapper_0/motor_0/N_560
-  14.443                       motorWrapper_0/motor_0/interrupt_status_RNO[0]:A (r)
+  14.448                       motorWrapper_0/motor_0/interrupt_status_RNO_0[0]:Y (r)
+               +     0.245          net: motorWrapper_0/motor_0/N_560
+  14.693                       motorWrapper_0/motor_0/interrupt_status_RNO[0]:A (r)
                +     0.370          cell: ADLIB:NOR2B
-  14.813                       motorWrapper_0/motor_0/interrupt_status_RNO[0]:Y (r)
-               +     0.259          net: motorWrapper_0/motor_0/interrupt_status_RNO[0]
-  15.072                       motorWrapper_0/motor_0/interrupt_status[0]:D (r)
+  15.063                       motorWrapper_0/motor_0/interrupt_status_RNO[0]:Y (r)
+               +     0.247          net: motorWrapper_0/motor_0/interrupt_status_RNO[0]
+  15.310                       motorWrapper_0/motor_0/interrupt_status[0]:D (r)
                                     
-  15.072                       data arrival time
+  15.310                       data arrival time
   ________________________________________________________
   Data required time calculation
   10.000                       mss_ccc_gla1
@@ -746,12 +742,12 @@ Expanded Path 1
   14.630                       gc_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   14.630                       gc_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.518          net: FAB_CLK
-  15.148                       motorWrapper_0/motor_0/interrupt_status[0]:CLK (r)
+               +     0.505          net: FAB_CLK
+  15.135                       motorWrapper_0/motor_0/interrupt_status[0]:CLK (r)
                -     0.435          Library setup time: ADLIB:DFN1
-  14.713                       motorWrapper_0/motor_0/interrupt_status[0]:D
+  14.700                       motorWrapper_0/motor_0/interrupt_status[0]:D
                                     
-  14.713                       data required time
+  14.700                       data required time
 
 
 END SET Register to Register
@@ -762,40 +758,20 @@ SET External Setup
 
 Path 1
   From:                        data
-  To:                          gc_receive_0/next_response[62]:D
-  Delay (ns):                  2.861
-  Slack (ns):
-  Arrival (ns):                2.861
-  Required (ns):
-  Setup (ns):                  0.435
-  External Setup (ns):         -1.976
-
-Path 2
-  From:                        data
-  To:                          gc_receive_0/wavebird_id_1[22]:D
-  Delay (ns):                  2.518
-  Slack (ns):
-  Arrival (ns):                2.518
-  Required (ns):
-  Setup (ns):                  0.435
-  External Setup (ns):         -2.240
-
-Path 3
-  From:                        data
   To:                          gc_receive_0/data1:D
-  Delay (ns):                  2.367
+  Delay (ns):                  1.651
   Slack (ns):
-  Arrival (ns):                2.367
+  Arrival (ns):                1.651
   Required (ns):
   Setup (ns):                  0.435
-  External Setup (ns):         -2.326
+  External Setup (ns):         -3.038
 
 
 Expanded Path 1
   From: data
-  To: gc_receive_0/next_response[62]:D
+  To: gc_receive_0/data1:D
   data required time                             N/C
-  data arrival time                          -   2.861
+  data arrival time                          -   1.651
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
@@ -808,10 +784,10 @@ Expanded Path 1
   0.779                        data_pad/U0/U1:YIN (r)
                +     0.033          cell: ADLIB:IOBI_IB_OB_EB
   0.812                        data_pad/U0/U1:Y (r)
-               +     2.049          net: data_in
-  2.861                        gc_receive_0/next_response[62]:D (r)
+               +     0.839          net: data_in
+  1.651                        gc_receive_0/data1:D (r)
                                     
-  2.861                        data arrival time
+  1.651                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          mss_ccc_gla1
@@ -823,10 +799,10 @@ Expanded Path 1
   N/C                          gc_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   N/C                          gc_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.642          net: FAB_CLK
-  N/C                          gc_receive_0/next_response[62]:CLK (r)
-               -     0.435          Library setup time: ADLIB:DFN1E0
-  N/C                          gc_receive_0/next_response[62]:D
+               +     0.494          net: FAB_CLK
+  N/C                          gc_receive_0/data1:CLK (r)
+               -     0.435          Library setup time: ADLIB:DFN1
+  N/C                          gc_receive_0/data1:D
 
 
 END SET External Setup
@@ -838,54 +814,54 @@ SET Clock to Output
 Path 1
   From:                        motorWrapper_0/motor_0/directionReg[3]:CLK
   To:                          RSERVO
-  Delay (ns):                  7.053
+  Delay (ns):                  7.013
   Slack (ns):
-  Arrival (ns):                12.252
+  Arrival (ns):                12.228
   Required (ns):
-  Clock to Out (ns):           12.252
+  Clock to Out (ns):           12.228
 
 Path 2
   From:                        motorWrapper_0/motor_0/directionReg[2]:CLK
   To:                          LSERVO
-  Delay (ns):                  6.732
+  Delay (ns):                  6.768
   Slack (ns):
-  Arrival (ns):                11.936
+  Arrival (ns):                11.961
   Required (ns):
-  Clock to Out (ns):           11.936
+  Clock to Out (ns):           11.961
 
 Path 3
-  From:                        motorWrapper_0/motor_0/directionReg[1]:CLK
-  To:                          RMOTOR
-  Delay (ns):                  5.576
+  From:                        gc_receive_0/wavebird_id_ready:CLK
+  To:                          wavebird_id_ready
+  Delay (ns):                  5.789
   Slack (ns):
-  Arrival (ns):                10.780
+  Arrival (ns):                11.026
   Required (ns):
-  Clock to Out (ns):           10.780
+  Clock to Out (ns):           11.026
 
 Path 4
-  From:                        send_query_0/data_e:CLK
-  To:                          data
-  Delay (ns):                  5.495
+  From:                        gc_receive_0/button_data_ready:CLK
+  To:                          button_data_ready
+  Delay (ns):                  5.544
   Slack (ns):
-  Arrival (ns):                10.685
+  Arrival (ns):                10.713
   Required (ns):
-  Clock to Out (ns):           10.685
+  Clock to Out (ns):           10.713
 
 Path 5
   From:                        motorWrapper_0/motor_0/directionReg[0]:CLK
   To:                          LMOTOR
-  Delay (ns):                  5.309
+  Delay (ns):                  5.358
   Slack (ns):
-  Arrival (ns):                10.508
+  Arrival (ns):                10.573
   Required (ns):
-  Clock to Out (ns):           10.508
+  Clock to Out (ns):           10.573
 
 
 Expanded Path 1
   From: motorWrapper_0/motor_0/directionReg[3]:CLK
   To: RSERVO
   data required time                             N/C
-  data arrival time                          -   12.252
+  data arrival time                          -   12.228
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
@@ -898,22 +874,22 @@ Expanded Path 1
   4.630                        gc_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   4.630                        gc_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.569          net: FAB_CLK
-  5.199                        motorWrapper_0/motor_0/directionReg[3]:CLK (r)
+               +     0.585          net: FAB_CLK
+  5.215                        motorWrapper_0/motor_0/directionReg[3]:CLK (r)
                +     0.559          cell: ADLIB:DFN1E1
-  5.758                        motorWrapper_0/motor_0/directionReg[3]:Q (f)
-               +     3.343          net: RSERVO_c
-  9.101                        RSERVO_pad/U0/U1:D (f)
+  5.774                        motorWrapper_0/motor_0/directionReg[3]:Q (f)
+               +     3.303          net: RSERVO_c
+  9.077                        RSERVO_pad/U0/U1:D (f)
                +     0.442          cell: ADLIB:IOTRI_OB_EB
-  9.543                        RSERVO_pad/U0/U1:DOUT (f)
+  9.519                        RSERVO_pad/U0/U1:DOUT (f)
                +     0.000          net: RSERVO_pad/U0/NET1
-  9.543                        RSERVO_pad/U0/U0:D (f)
+  9.519                        RSERVO_pad/U0/U0:D (f)
                +     2.709          cell: ADLIB:IOPAD_TRI
-  12.252                       RSERVO_pad/U0/U0:PAD (f)
+  12.228                       RSERVO_pad/U0/U0:PAD (f)
                +     0.000          net: RSERVO
-  12.252                       RSERVO (f)
+  12.228                       RSERVO (f)
                                     
-  12.252                       data arrival time
+  12.228                       data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          mss_ccc_gla1
@@ -932,67 +908,67 @@ END SET Clock to Output
 SET Register to Asynchronous
 
 Path 1
-  From:                        motorWrapper_0/motor_0/reset_capture_sync_0_0:CLK
-  To:                          motorWrapper_0/motor_0/captureSyncReg[15]/U1:CLR
-  Delay (ns):                  2.779
-  Slack (ns):                  6.941
-  Arrival (ns):                7.995
-  Required (ns):               14.936
+  From:                        motorWrapper_0/motor_0/reset_capture_sync:CLK
+  To:                          motorWrapper_0/motor_0/captureSyncReg[16]/U1:CLR
+  Delay (ns):                  3.444
+  Slack (ns):                  6.305
+  Arrival (ns):                8.595
+  Required (ns):               14.900
   Recovery (ns):               0.225
-  Minimum Period (ns):         3.059
-  Skew (ns):                   0.055
+  Minimum Period (ns):         3.695
+  Skew (ns):                   0.026
 
 Path 2
-  From:                        motorWrapper_0/motor_0/reset_capture_sync_0_0:CLK
-  To:                          motorWrapper_0/motor_0/captureSyncReg[14]/U1:CLR
-  Delay (ns):                  2.779
-  Slack (ns):                  6.941
-  Arrival (ns):                7.995
-  Required (ns):               14.936
+  From:                        motorWrapper_0/motor_0/reset_capture_sync:CLK
+  To:                          motorWrapper_0/motor_0/captureSyncReg[20]/U1:CLR
+  Delay (ns):                  3.250
+  Slack (ns):                  6.514
+  Arrival (ns):                8.401
+  Required (ns):               14.915
   Recovery (ns):               0.225
-  Minimum Period (ns):         3.059
-  Skew (ns):                   0.055
+  Minimum Period (ns):         3.486
+  Skew (ns):                   0.011
 
 Path 3
-  From:                        motorWrapper_0/motor_0/reset_capture_sync_0_0:CLK
-  To:                          motorWrapper_0/motor_0/captureSyncReg[13]/U1:CLR
-  Delay (ns):                  2.779
-  Slack (ns):                  6.941
-  Arrival (ns):                7.995
-  Required (ns):               14.936
+  From:                        motorWrapper_0/motor_0/reset_capture_sync:CLK
+  To:                          motorWrapper_0/motor_0/captureSyncReg[22]/U1:CLR
+  Delay (ns):                  3.236
+  Slack (ns):                  6.551
+  Arrival (ns):                8.387
+  Required (ns):               14.938
   Recovery (ns):               0.225
-  Minimum Period (ns):         3.059
-  Skew (ns):                   0.055
+  Minimum Period (ns):         3.449
+  Skew (ns):                   -0.012
 
 Path 4
   From:                        motorWrapper_0/motor_0/reset_capture_sync_0_0:CLK
-  To:                          motorWrapper_0/motor_0/captureSyncReg[11]/U1:CLR
-  Delay (ns):                  2.750
-  Slack (ns):                  6.968
-  Arrival (ns):                7.966
-  Required (ns):               14.934
+  To:                          motorWrapper_0/motor_0/captureSyncReg[2]/U1:CLR
+  Delay (ns):                  3.107
+  Slack (ns):                  6.668
+  Arrival (ns):                8.271
+  Required (ns):               14.939
   Recovery (ns):               0.225
-  Minimum Period (ns):         3.032
-  Skew (ns):                   0.057
+  Minimum Period (ns):         3.332
+  Skew (ns):                   0.000
 
 Path 5
-  From:                        motorWrapper_0/motor_0/reset_capture_sync:CLK
-  To:                          motorWrapper_0/motor_0/captureSyncReg[25]/U1:CLR
-  Delay (ns):                  2.561
-  Slack (ns):                  7.143
-  Arrival (ns):                7.777
-  Required (ns):               14.920
+  From:                        motorWrapper_0/motor_0/reset_capture_sync_0_0:CLK
+  To:                          motorWrapper_0/motor_0/captureSyncReg[0]/U1:CLR
+  Delay (ns):                  3.105
+  Slack (ns):                  6.674
+  Arrival (ns):                8.269
+  Required (ns):               14.943
   Recovery (ns):               0.225
-  Minimum Period (ns):         2.857
-  Skew (ns):                   0.071
+  Minimum Period (ns):         3.326
+  Skew (ns):                   -0.004
 
 
 Expanded Path 1
-  From: motorWrapper_0/motor_0/reset_capture_sync_0_0:CLK
-  To: motorWrapper_0/motor_0/captureSyncReg[15]/U1:CLR
-  data required time                             14.936
-  data arrival time                          -   7.995
-  slack                                          6.941
+  From: motorWrapper_0/motor_0/reset_capture_sync:CLK
+  To: motorWrapper_0/motor_0/captureSyncReg[16]/U1:CLR
+  data required time                             14.900
+  data arrival time                          -   8.595
+  slack                                          6.305
   ________________________________________________________
   Data arrival time calculation
   0.000                        mss_ccc_gla1
@@ -1004,14 +980,14 @@ Expanded Path 1
   4.630                        gc_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   4.630                        gc_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.586          net: FAB_CLK
-  5.216                        motorWrapper_0/motor_0/reset_capture_sync_0_0:CLK (r)
+               +     0.521          net: FAB_CLK
+  5.151                        motorWrapper_0/motor_0/reset_capture_sync:CLK (r)
                +     0.559          cell: ADLIB:DFN1
-  5.775                        motorWrapper_0/motor_0/reset_capture_sync_0_0:Q (f)
-               +     2.220          net: motorWrapper_0/motor_0/reset_capture_sync_0
-  7.995                        motorWrapper_0/motor_0/captureSyncReg[15]/U1:CLR (f)
+  5.710                        motorWrapper_0/motor_0/reset_capture_sync:Q (f)
+               +     2.885          net: motorWrapper_0/motor_0/reset_capture_sync
+  8.595                        motorWrapper_0/motor_0/captureSyncReg[16]/U1:CLR (f)
                                     
-  7.995                        data arrival time
+  8.595                        data arrival time
   ________________________________________________________
   Data required time calculation
   10.000                       mss_ccc_gla1
@@ -1023,12 +999,12 @@ Expanded Path 1
   14.630                       gc_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   14.630                       gc_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.531          net: FAB_CLK
-  15.161                       motorWrapper_0/motor_0/captureSyncReg[15]/U1:CLK (r)
+               +     0.495          net: FAB_CLK
+  15.125                       motorWrapper_0/motor_0/captureSyncReg[16]/U1:CLK (r)
                -     0.225          Library recovery time: ADLIB:DFN1C1
-  14.936                       motorWrapper_0/motor_0/captureSyncReg[15]/U1:CLR
+  14.900                       motorWrapper_0/motor_0/captureSyncReg[16]/U1:CLR
                                     
-  14.936                       data required time
+  14.900                       data required time
 
 
 END SET Register to Asynchronous
@@ -1040,39 +1016,39 @@ SET External Recovery
 Path 1
   From:                        CAPTURE_SWITCH
   To:                          motorWrapper_0/motor_0/switch_syncer[0]:CLR
-  Delay (ns):                  2.521
+  Delay (ns):                  2.225
   Slack (ns):
-  Arrival (ns):                2.521
+  Arrival (ns):                2.225
   Required (ns):
   Recovery (ns):               0.225
-  External Recovery (ns):      -2.369
+  External Recovery (ns):      -2.718
 
 Path 2
   From:                        CAPTURE_SWITCH
   To:                          motorWrapper_0/motor_0/switch_syncer[2]:PRE
-  Delay (ns):                  2.487
+  Delay (ns):                  2.157
   Slack (ns):
-  Arrival (ns):                2.487
+  Arrival (ns):                2.157
   Required (ns):
   Recovery (ns):               0.225
-  External Recovery (ns):      -2.403
+  External Recovery (ns):      -2.773
 
 Path 3
   From:                        CAPTURE_SWITCH
   To:                          motorWrapper_0/motor_0/switch_syncer[1]:CLR
-  Delay (ns):                  2.487
+  Delay (ns):                  2.041
   Slack (ns):
-  Arrival (ns):                2.487
+  Arrival (ns):                2.041
   Required (ns):
   Recovery (ns):               0.225
-  External Recovery (ns):      -2.403
+  External Recovery (ns):      -2.898
 
 
 Expanded Path 1
   From: CAPTURE_SWITCH
   To: motorWrapper_0/motor_0/switch_syncer[0]:CLR
   data required time                             N/C
-  data arrival time                          -   2.521
+  data arrival time                          -   2.225
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
@@ -1085,10 +1061,10 @@ Expanded Path 1
   0.806                        CAPTURE_SWITCH_pad/U0/U1:YIN (r)
                +     0.033          cell: ADLIB:IOIN_IB
   0.839                        CAPTURE_SWITCH_pad/U0/U1:Y (r)
-               +     1.682          net: CAPTURE_SWITCH_c
-  2.521                        motorWrapper_0/motor_0/switch_syncer[0]:CLR (r)
+               +     1.386          net: CAPTURE_SWITCH_c
+  2.225                        motorWrapper_0/motor_0/switch_syncer[0]:CLR (r)
                                     
-  2.521                        data arrival time
+  2.225                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          mss_ccc_gla1
@@ -1100,7 +1076,7 @@ Expanded Path 1
   N/C                          gc_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   N/C                          gc_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.485          net: FAB_CLK
+               +     0.538          net: FAB_CLK
   N/C                          motorWrapper_0/motor_0/switch_syncer[0]:CLK (r)
                -     0.225          Library recovery time: ADLIB:DFN1C0
   N/C                          motorWrapper_0/motor_0/switch_syncer[0]:CLR
@@ -1122,56 +1098,56 @@ SET mss_fabric_interface_clock to mss_ccc_gla1
 
 Path 1
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/controlReg[28]:D
-  Delay (ns):                  12.143
-  Slack (ns):                  -0.880
-  Arrival (ns):                15.593
-  Required (ns):               14.713
+  To:                          motorWrapper_0/motor_0/overflowReg[2]:D
+  Delay (ns):                  13.571
+  Slack (ns):                  -2.291
+  Arrival (ns):                17.021
+  Required (ns):               14.730
   Setup (ns):                  0.435
 
 Path 2
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
   To:                          motorWrapper_0/motor_0/overflowReg[28]:D
-  Delay (ns):                  11.966
-  Slack (ns):                  -0.712
-  Arrival (ns):                15.416
-  Required (ns):               14.704
+  Delay (ns):                  13.421
+  Slack (ns):                  -2.141
+  Arrival (ns):                16.871
+  Required (ns):               14.730
   Setup (ns):                  0.435
 
 Path 3
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/overflowReg[5]:D
-  Delay (ns):                  11.848
-  Slack (ns):                  -0.594
-  Arrival (ns):                15.298
-  Required (ns):               14.704
+  To:                          motorWrapper_0/motor_0/compareReg[20]:D
+  Delay (ns):                  13.384
+  Slack (ns):                  -2.134
+  Arrival (ns):                16.834
+  Required (ns):               14.700
   Setup (ns):                  0.435
 
 Path 4
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/overflowReg[27]:D
-  Delay (ns):                  11.778
-  Slack (ns):                  -0.542
-  Arrival (ns):                15.228
-  Required (ns):               14.686
+  To:                          motorWrapper_0/motor_0/overflowReg[17]:D
+  Delay (ns):                  13.462
+  Slack (ns):                  -2.132
+  Arrival (ns):                16.912
+  Required (ns):               14.780
   Setup (ns):                  0.435
 
 Path 5
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/controlReg[4]:D
-  Delay (ns):                  11.732
-  Slack (ns):                  -0.492
-  Arrival (ns):                15.182
-  Required (ns):               14.690
+  To:                          motorWrapper_0/motor_0/compareReg[14]:D
+  Delay (ns):                  13.372
+  Slack (ns):                  -2.122
+  Arrival (ns):                16.822
+  Required (ns):               14.700
   Setup (ns):                  0.435
 
 
 Expanded Path 1
   From: gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To: motorWrapper_0/motor_0/controlReg[28]:D
-  data required time                             14.713
-  data arrival time                          -   15.593
-  slack                                          -0.880
+  To: motorWrapper_0/motor_0/overflowReg[2]:D
+  data required time                             14.730
+  data arrival time                          -   17.021
+  slack                                          -2.291
   ________________________________________________________
   Data arrival time calculation
   0.000                        mss_fabric_interface_clock
@@ -1179,44 +1155,48 @@ Expanded Path 1
   0.000                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB (r)
                +     3.450          Clock generation
   3.450
-               +     2.484          cell: ADLIB:MSS_APB_IP
-  5.934                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPSEL (r)
-               +     0.103          net: gc_MSS_0/MSS_ADLIB_INST/MSSPSELINT_NET
-  6.037                        gc_MSS_0/MSS_ADLIB_INST/U_42:PIN1INT (r)
-               +     0.074          cell: ADLIB:MSS_IF
-  6.111                        gc_MSS_0/MSS_ADLIB_INST/U_42:PIN1 (r)
-               +     0.902          net: gc_MSS_0_MSS_MASTER_APB_PSELx
-  7.013                        motorWrapper_0/BUS_WRITE_EN_0_a2_0_2:A (r)
-               +     0.392          cell: ADLIB:NOR2A
-  7.405                        motorWrapper_0/BUS_WRITE_EN_0_a2_0_2:Y (r)
-               +     0.579          net: N_135_2
-  7.984                        motorWrapper_0/BUS_WRITE_EN_0_a2_0:B (r)
-               +     0.543          cell: ADLIB:NOR3C
-  8.527                        motorWrapper_0/BUS_WRITE_EN_0_a2_0:Y (r)
-               +     0.255          net: N_136_0
-  8.782                        motorWrapper_0/BUS_WRITE_EN_0_a3:C (r)
-               +     0.505          cell: ADLIB:NOR3C
-  9.287                        motorWrapper_0/BUS_WRITE_EN_0_a3:Y (r)
-               +     1.204          net: motorWrapper_0/BUS_WRITE_EN
-  10.491                       motorWrapper_0/motor_0/compareReg_1_sqmuxa_0_a2_1:A (r)
-               +     0.392          cell: ADLIB:NOR2A
-  10.883                       motorWrapper_0/motor_0/compareReg_1_sqmuxa_0_a2_1:Y (r)
-               +     1.174          net: motorWrapper_0/motor_0/N_194
-  12.057                       motorWrapper_0/motor_0/controlReg_1_sqmuxa_0_a2:A (r)
-               +     0.570          cell: ADLIB:NOR3B
-  12.627                       motorWrapper_0/motor_0/controlReg_1_sqmuxa_0_a2:Y (r)
-               +     1.827          net: motorWrapper_0/motor_0/controlReg_1_sqmuxa
-  14.454                       motorWrapper_0/motor_0/controlReg_RNO_0[28]:S (r)
-               +     0.277          cell: ADLIB:MX2
-  14.731                       motorWrapper_0/motor_0/controlReg_RNO_0[28]:Y (r)
-               +     0.245          net: motorWrapper_0/motor_0/controlReg_RNO_0[28]
-  14.976                       motorWrapper_0/motor_0/controlReg_RNO[28]:A (r)
+               +     3.172          cell: ADLIB:MSS_APB_IP
+  6.622                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPADDR[10] (r)
+               +     0.102          net: gc_MSS_0/MSS_ADLIB_INST/MSSPADDR[10]INT_NET
+  6.724                        gc_MSS_0/MSS_ADLIB_INST/U_33:PIN2INT (r)
+               +     0.079          cell: ADLIB:MSS_IF
+  6.803                        gc_MSS_0/MSS_ADLIB_INST/U_33:PIN2 (r)
+               +     0.285          net: CoreAPB3_0_APBmslave0_PADDR[10]
+  7.088                        motorWrapper_0/BUS_WRITE_EN_0_a2_0_1:B (r)
+               +     0.390          cell: ADLIB:NOR2
+  7.478                        motorWrapper_0/BUS_WRITE_EN_0_a2_0_1:Y (f)
+               +     0.269          net: motorWrapper_0/N_142_1
+  7.747                        motorWrapper_0/BUS_WRITE_EN_0_a2_0:B (f)
+               +     0.476          cell: ADLIB:NOR2B
+  8.223                        motorWrapper_0/BUS_WRITE_EN_0_a2_0:Y (f)
+               +     0.386          net: N_142
+  8.609                        motorWrapper_0/BUS_WRITE_EN_0_a2:B (f)
+               +     0.479          cell: ADLIB:NOR2B
+  9.088                        motorWrapper_0/BUS_WRITE_EN_0_a2:Y (f)
+               +     1.304          net: N_143
+  10.392                       motorWrapper_0/BUS_WRITE_EN_0_a3:B (f)
+               +     0.479          cell: ADLIB:NOR2B
+  10.871                       motorWrapper_0/BUS_WRITE_EN_0_a3:Y (f)
+               +     1.233          net: motorWrapper_0/BUS_WRITE_EN
+  12.104                       motorWrapper_0/motor_0/compareReg_1_sqmuxa_0_a2_1:A (f)
+               +     0.479          cell: ADLIB:NOR2A
+  12.583                       motorWrapper_0/motor_0/compareReg_1_sqmuxa_0_a2_1:Y (f)
+               +     1.306          net: motorWrapper_0/motor_0/N_194
+  13.889                       motorWrapper_0/motor_0/overflowReset_0_sqmuxa_0_a2:A (f)
+               +     0.518          cell: ADLIB:NOR3A
+  14.407                       motorWrapper_0/motor_0/overflowReset_0_sqmuxa_0_a2:Y (f)
+               +     1.388          net: motorWrapper_0/motor_0/overflowReset_0_sqmuxa
+  15.795                       motorWrapper_0/motor_0/overflowReg_RNO_0[2]:S (f)
+               +     0.364          cell: ADLIB:MX2
+  16.159                       motorWrapper_0/motor_0/overflowReg_RNO_0[2]:Y (r)
+               +     0.245          net: motorWrapper_0/motor_0/N_635
+  16.404                       motorWrapper_0/motor_0/overflowReg_RNO[2]:A (r)
                +     0.370          cell: ADLIB:NOR2B
-  15.346                       motorWrapper_0/motor_0/controlReg_RNO[28]:Y (r)
-               +     0.247          net: motorWrapper_0/motor_0/N_67
-  15.593                       motorWrapper_0/motor_0/controlReg[28]:D (r)
+  16.774                       motorWrapper_0/motor_0/overflowReg_RNO[2]:Y (r)
+               +     0.247          net: motorWrapper_0/motor_0/N_79
+  17.021                       motorWrapper_0/motor_0/overflowReg[2]:D (r)
                                     
-  15.593                       data arrival time
+  17.021                       data arrival time
   ________________________________________________________
   Data required time calculation
   10.000                       mss_ccc_gla1
@@ -1228,12 +1208,12 @@ Expanded Path 1
   14.630                       gc_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   14.630                       gc_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.518          net: FAB_CLK
-  15.148                       motorWrapper_0/motor_0/controlReg[28]:CLK (r)
+               +     0.535          net: FAB_CLK
+  15.165                       motorWrapper_0/motor_0/overflowReg[2]:CLK (r)
                -     0.435          Library setup time: ADLIB:DFN1
-  14.713                       motorWrapper_0/motor_0/controlReg[28]:D
+  14.730                       motorWrapper_0/motor_0/overflowReg[2]:D
                                     
-  14.713                       data required time
+  14.730                       data required time
 
 
 END SET mss_fabric_interface_clock to mss_ccc_gla1
@@ -1244,56 +1224,56 @@ SET mss_ccc_gla0 to mss_ccc_gla1
 
 Path 1
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                          motorWrapper_0/motor_0/counterReg[18]:D
-  Delay (ns):                  10.525
-  Slack (ns):                  0.781
-  Arrival (ns):                13.975
-  Required (ns):               14.756
+  To:                          motorWrapper_0/motor_0/counterReg[15]:D
+  Delay (ns):                  10.240
+  Slack (ns):                  1.052
+  Arrival (ns):                13.690
+  Required (ns):               14.742
   Setup (ns):                  0.409
 
 Path 2
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                          motorWrapper_0/motor_0/counterReg[29]:D
-  Delay (ns):                  10.485
-  Slack (ns):                  0.814
-  Arrival (ns):                13.935
-  Required (ns):               14.749
+  To:                          motorWrapper_0/motor_0/counterReg[27]:D
+  Delay (ns):                  10.140
+  Slack (ns):                  1.152
+  Arrival (ns):                13.590
+  Required (ns):               14.742
   Setup (ns):                  0.409
 
 Path 3
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                          motorWrapper_0/motor_0/overflowReset:D
-  Delay (ns):                  10.356
-  Slack (ns):                  0.908
-  Arrival (ns):                13.806
-  Required (ns):               14.714
+  To:                          motorWrapper_0/motor_0/counterReg[28]:D
+  Delay (ns):                  10.008
+  Slack (ns):                  1.288
+  Arrival (ns):                13.458
+  Required (ns):               14.746
   Setup (ns):                  0.409
 
 Path 4
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                          motorWrapper_0/motor_0/counterReg[4]:D
-  Delay (ns):                  10.376
-  Slack (ns):                  0.923
-  Arrival (ns):                13.826
-  Required (ns):               14.749
+  To:                          motorWrapper_0/motor_0/counterReg[10]:D
+  Delay (ns):                  9.928
+  Slack (ns):                  1.396
+  Arrival (ns):                13.378
+  Required (ns):               14.774
   Setup (ns):                  0.409
 
 Path 5
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                          motorWrapper_0/motor_0/counterReg[5]:D
-  Delay (ns):                  10.296
-  Slack (ns):                  1.003
-  Arrival (ns):                13.746
+  To:                          motorWrapper_0/motor_0/overflowReset:D
+  Delay (ns):                  9.846
+  Slack (ns):                  1.453
+  Arrival (ns):                13.296
   Required (ns):               14.749
-  Setup (ns):                  0.409
+  Setup (ns):                  0.435
 
 
 Expanded Path 1
   From: gc_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To: motorWrapper_0/motor_0/counterReg[18]:D
-  data required time                             14.756
-  data arrival time                          -   13.975
-  slack                                          0.781
+  To: motorWrapper_0/motor_0/counterReg[15]:D
+  data required time                             14.742
+  data arrival time                          -   13.690
+  slack                                          1.052
   ________________________________________________________
   Data arrival time calculation
   0.000                        mss_ccc_gla0
@@ -1313,22 +1293,22 @@ Expanded Path 1
   8.845                        gc_MSS_0/MSS_ADLIB_INST_RNI49L3/U_CLKSRC:A (r)
                +     0.583          cell: ADLIB:CLKSRC
   9.428                        gc_MSS_0/MSS_ADLIB_INST_RNI49L3/U_CLKSRC:Y (r)
-               +     0.514          net: gc_MSS_0_M2F_RESET_N
-  9.942                        motorWrapper_0/motor_0/reset_interrupt_RNI4PCP:C (r)
+               +     0.513          net: gc_MSS_0_M2F_RESET_N
+  9.941                        motorWrapper_0/motor_0/overflowReset_RNI4PCP:C (r)
                +     0.497          cell: ADLIB:AO1C
-  10.439                       motorWrapper_0/motor_0/reset_interrupt_RNI4PCP:Y (f)
-               +     0.716          net: motorWrapper_0/motor_0/N_1225
-  11.155                       motorWrapper_0/motor_0/reset_interrupt_RNI6P9MH_0:B (f)
+  10.438                       motorWrapper_0/motor_0/overflowReset_RNI4PCP:Y (f)
+               +     0.419          net: motorWrapper_0/motor_0/N_1225
+  10.857                       motorWrapper_0/motor_0/overflowReset_RNISV7DI:B (f)
                +     0.493          cell: ADLIB:OR2A
-  11.648                       motorWrapper_0/motor_0/reset_interrupt_RNI6P9MH_0:Y (f)
-               +     1.673          net: motorWrapper_0/motor_0/un1_nreset_1_i_1_0
-  13.321                       motorWrapper_0/motor_0/counterReg_RNO[18]:C (f)
-               +     0.399          cell: ADLIB:XA1B
-  13.720                       motorWrapper_0/motor_0/counterReg_RNO[18]:Y (r)
-               +     0.255          net: motorWrapper_0/motor_0/N_46
-  13.975                       motorWrapper_0/motor_0/counterReg[18]:D (r)
+  11.350                       motorWrapper_0/motor_0/overflowReset_RNISV7DI:Y (f)
+               +     1.592          net: motorWrapper_0/motor_0/un1_nreset_1_i_1
+  12.942                       motorWrapper_0/motor_0/counterReg_RNO[15]:B (f)
+               +     0.493          cell: ADLIB:NOR2
+  13.435                       motorWrapper_0/motor_0/counterReg_RNO[15]:Y (r)
+               +     0.255          net: motorWrapper_0/motor_0/N_114
+  13.690                       motorWrapper_0/motor_0/counterReg[15]:D (r)
                                     
-  13.975                       data arrival time
+  13.690                       data arrival time
   ________________________________________________________
   Data required time calculation
   10.000                       mss_ccc_gla1
@@ -1340,12 +1320,12 @@ Expanded Path 1
   14.630                       gc_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   14.630                       gc_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.535          net: FAB_CLK
-  15.165                       motorWrapper_0/motor_0/counterReg[18]:CLK (r)
+               +     0.521          net: FAB_CLK
+  15.151                       motorWrapper_0/motor_0/counterReg[15]:CLK (r)
                -     0.409          Library setup time: ADLIB:DFN1E1
-  14.756                       motorWrapper_0/motor_0/counterReg[18]:D
+  14.742                       motorWrapper_0/motor_0/counterReg[15]:D
                                     
-  14.756                       data required time
+  14.742                       data required time
 
 
 END SET mss_ccc_gla0 to mss_ccc_gla1

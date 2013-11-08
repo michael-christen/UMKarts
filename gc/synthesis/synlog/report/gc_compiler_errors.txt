@@ -1,2 +1,2 @@
-@E: CL172 :"C:\Users\mikechri\Downloads\gc\gc\hdl\query.v":13:4:13:7|Only one always block can assign a given variable init
+@E: CS171 :"C:\Users\knekritz\UMKarts\gc\hdl\receive.v":45:25:45:44|Reversed range
 

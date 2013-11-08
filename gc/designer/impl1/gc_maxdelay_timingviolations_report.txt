@@ -3,7 +3,7 @@ Timing Violation Report Max Delay Analysis
 SmartTime Version v11.0
 Microsemi Corporation - Actel Designer Software Release v11.0 (Version 11.0.0.23)
 Copyright (c) 1989-2013
-Date: Wed Nov 06 23:03:55 2013
+Date: Thu Nov 07 20:20:23 2013
 
 
 Design: gc
@@ -23,297 +23,801 @@ Scenario for Timing Analysis: Primary
 
 Path 1
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/controlReg[28]:D
-  Delay (ns):                  12.143
-  Slack (ns):                  -0.880
-  Arrival (ns):                15.593
-  Required (ns):               14.713
+  To:                          motorWrapper_0/motor_0/overflowReg[2]:D
+  Delay (ns):                  13.571
+  Slack (ns):                  -2.291
+  Arrival (ns):                17.021
+  Required (ns):               14.730
 
 Path 2
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
   To:                          motorWrapper_0/motor_0/overflowReg[28]:D
-  Delay (ns):                  11.966
-  Slack (ns):                  -0.712
-  Arrival (ns):                15.416
-  Required (ns):               14.704
+  Delay (ns):                  13.421
+  Slack (ns):                  -2.141
+  Arrival (ns):                16.871
+  Required (ns):               14.730
 
 Path 3
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/overflowReg[5]:D
-  Delay (ns):                  11.848
-  Slack (ns):                  -0.594
-  Arrival (ns):                15.298
-  Required (ns):               14.704
+  To:                          motorWrapper_0/motor_0/compareReg[20]:D
+  Delay (ns):                  13.384
+  Slack (ns):                  -2.134
+  Arrival (ns):                16.834
+  Required (ns):               14.700
 
 Path 4
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/overflowReg[27]:D
-  Delay (ns):                  11.778
-  Slack (ns):                  -0.542
-  Arrival (ns):                15.228
-  Required (ns):               14.686
+  To:                          motorWrapper_0/motor_0/overflowReg[17]:D
+  Delay (ns):                  13.462
+  Slack (ns):                  -2.132
+  Arrival (ns):                16.912
+  Required (ns):               14.780
 
 Path 5
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/controlReg[4]:D
-  Delay (ns):                  11.732
-  Slack (ns):                  -0.492
-  Arrival (ns):                15.182
-  Required (ns):               14.690
+  To:                          motorWrapper_0/motor_0/compareReg[14]:D
+  Delay (ns):                  13.372
+  Slack (ns):                  -2.122
+  Arrival (ns):                16.822
+  Required (ns):               14.700
 
 Path 6
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/overflowReg[3]:D
-  Delay (ns):                  11.691
-  Slack (ns):                  -0.418
-  Arrival (ns):                15.141
-  Required (ns):               14.723
+  To:                          motorWrapper_0/motor_0/compareReg[12]:D
+  Delay (ns):                  13.369
+  Slack (ns):                  -2.115
+  Arrival (ns):                16.819
+  Required (ns):               14.704
 
 Path 7
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/overflowReset:D
-  Delay (ns):                  11.619
-  Slack (ns):                  -0.381
-  Arrival (ns):                15.069
-  Required (ns):               14.688
+  To:                          motorWrapper_0/motor_0/compareReg[15]:D
+  Delay (ns):                  13.359
+  Slack (ns):                  -2.114
+  Arrival (ns):                16.809
+  Required (ns):               14.695
 
 Path 8
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/overflowReg[7]:D
-  Delay (ns):                  11.600
-  Slack (ns):                  -0.364
-  Arrival (ns):                15.050
-  Required (ns):               14.686
+  To:                          motorWrapper_0/motor_0/compareReg[13]:D
+  Delay (ns):                  13.359
+  Slack (ns):                  -2.109
+  Arrival (ns):                16.809
+  Required (ns):               14.700
 
 Path 9
-  From:                        motorWrapper_0/motor_0/counterReg[3]:CLK
-  To:                          motorWrapper_0/motor_0/interrupt_status[0]:D
-  Delay (ns):                  9.914
-  Slack (ns):                  -0.359
-  Arrival (ns):                15.072
-  Required (ns):               14.713
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/compareReg[24]:D
+  Delay (ns):                  13.359
+  Slack (ns):                  -2.109
+  Arrival (ns):                16.809
+  Required (ns):               14.700
 
 Path 10
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/overflowReg[1]:D
-  Delay (ns):                  11.622
-  Slack (ns):                  -0.359
-  Arrival (ns):                15.072
-  Required (ns):               14.713
+  To:                          motorWrapper_0/motor_0/controlReg[14]:D
+  Delay (ns):                  13.345
+  Slack (ns):                  -2.105
+  Arrival (ns):                16.795
+  Required (ns):               14.690
 
 Path 11
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/compareReg[17]:D
-  Delay (ns):                  11.628
-  Slack (ns):                  -0.348
-  Arrival (ns):                15.078
-  Required (ns):               14.730
+  To:                          motorWrapper_0/motor_0/compareReg[23]:D
+  Delay (ns):                  13.383
+  Slack (ns):                  -2.105
+  Arrival (ns):                16.833
+  Required (ns):               14.728
 
 Path 12
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/controlReg[0]:D
-  Delay (ns):                  11.595
-  Slack (ns):                  -0.332
-  Arrival (ns):                15.045
-  Required (ns):               14.713
+  To:                          motorWrapper_0/motor_0/controlReg[17]:D
+  Delay (ns):                  13.345
+  Slack (ns):                  -2.105
+  Arrival (ns):                16.795
+  Required (ns):               14.690
 
 Path 13
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/compareReg[23]:D
-  Delay (ns):                  11.642
-  Slack (ns):                  -0.328
-  Arrival (ns):                15.092
-  Required (ns):               14.764
+  To:                          motorWrapper_0/motor_0/compareReg[21]:D
+  Delay (ns):                  13.357
+  Slack (ns):                  -2.103
+  Arrival (ns):                16.807
+  Required (ns):               14.704
 
 Path 14
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/overflowReg[6]:D
-  Delay (ns):                  11.560
-  Slack (ns):                  -0.324
-  Arrival (ns):                15.010
-  Required (ns):               14.686
+  To:                          motorWrapper_0/motor_0/compareReg[10]:D
+  Delay (ns):                  13.357
+  Slack (ns):                  -2.102
+  Arrival (ns):                16.807
+  Required (ns):               14.705
 
 Path 15
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/compareReg[18]:D
-  Delay (ns):                  11.615
-  Slack (ns):                  -0.321
-  Arrival (ns):                15.065
-  Required (ns):               14.744
+  To:                          motorWrapper_0/motor_0/compareReg[7]:D
+  Delay (ns):                  13.376
+  Slack (ns):                  -2.095
+  Arrival (ns):                16.826
+  Required (ns):               14.731
 
 Path 16
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/overflowReg[9]:D
-  Delay (ns):                  11.550
-  Slack (ns):                  -0.314
-  Arrival (ns):                15.000
-  Required (ns):               14.686
+  To:                          motorWrapper_0/motor_0/compareReg[17]:D
+  Delay (ns):                  13.357
+  Slack (ns):                  -2.079
+  Arrival (ns):                16.807
+  Required (ns):               14.728
 
 Path 17
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/controlReg[29]:D
-  Delay (ns):                  11.456
-  Slack (ns):                  -0.216
-  Arrival (ns):                14.906
-  Required (ns):               14.690
+  To:                          motorWrapper_0/motor_0/controlReg[10]:D
+  Delay (ns):                  13.298
+  Slack (ns):                  -2.021
+  Arrival (ns):                16.748
+  Required (ns):               14.727
 
 Path 18
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/overflowReg[31]:D
-  Delay (ns):                  11.463
-  Slack (ns):                  -0.190
-  Arrival (ns):                14.913
-  Required (ns):               14.723
+  To:                          motorWrapper_0/motor_0/controlReg[13]:D
+  Delay (ns):                  13.274
+  Slack (ns):                  -2.020
+  Arrival (ns):                16.724
+  Required (ns):               14.704
 
 Path 19
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/compareReg[20]:D
-  Delay (ns):                  11.468
-  Slack (ns):                  -0.188
-  Arrival (ns):                14.918
-  Required (ns):               14.730
+  To:                          motorWrapper_0/motor_0/overflowReset:D
+  Delay (ns):                  13.328
+  Slack (ns):                  -2.003
+  Arrival (ns):                16.778
+  Required (ns):               14.775
 
 Path 20
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/compareReg[11]:D
-  Delay (ns):                  11.464
-  Slack (ns):                  -0.184
-  Arrival (ns):                14.914
-  Required (ns):               14.730
+  To:                          motorWrapper_0/motor_0/overflowReg[16]:D
+  Delay (ns):                  13.288
+  Slack (ns):                  -1.999
+  Arrival (ns):                16.738
+  Required (ns):               14.739
 
 Path 21
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/compareReg[19]:D
-  Delay (ns):                  11.471
-  Slack (ns):                  -0.181
-  Arrival (ns):                14.921
-  Required (ns):               14.740
+  To:                          motorWrapper_0/motor_0/overflowReg[23]:D
+  Delay (ns):                  13.311
+  Slack (ns):                  -1.981
+  Arrival (ns):                16.761
+  Required (ns):               14.780
 
 Path 22
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/compareReg[13]:D
-  Delay (ns):                  11.458
-  Slack (ns):                  -0.164
-  Arrival (ns):                14.908
-  Required (ns):               14.744
+  To:                          motorWrapper_0/motor_0/controlReg[12]:D
+  Delay (ns):                  13.187
+  Slack (ns):                  -1.947
+  Arrival (ns):                16.637
+  Required (ns):               14.690
 
 Path 23
-  From:                        motorWrapper_0/motor_0/counterReg[5]:CLK
-  To:                          motorWrapper_0/motor_0/counterReg[22]:D
-  Delay (ns):                  9.758
-  Slack (ns):                  -0.164
-  Arrival (ns):                14.916
-  Required (ns):               14.752
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/controlReg[18]:D
+  Delay (ns):                  13.191
+  Slack (ns):                  -1.937
+  Arrival (ns):                16.641
+  Required (ns):               14.704
 
 Path 24
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/compareReg[22]:D
-  Delay (ns):                  11.458
-  Slack (ns):                  -0.164
-  Arrival (ns):                14.908
-  Required (ns):               14.744
+  To:                          motorWrapper_0/motor_0/overflowReg[9]:D
+  Delay (ns):                  13.199
+  Slack (ns):                  -1.916
+  Arrival (ns):                16.649
+  Required (ns):               14.733
 
 Path 25
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/compareReg[15]:D
-  Delay (ns):                  11.458
-  Slack (ns):                  -0.164
-  Arrival (ns):                14.908
-  Required (ns):               14.744
+  To:                          motorWrapper_0/motor_0/overflowReg[30]:D
+  Delay (ns):                  13.197
+  Slack (ns):                  -1.914
+  Arrival (ns):                16.647
+  Required (ns):               14.733
 
 Path 26
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/controlReg[26]:D
-  Delay (ns):                  11.356
-  Slack (ns):                  -0.133
-  Arrival (ns):                14.806
-  Required (ns):               14.673
+  To:                          motorWrapper_0/motor_0/overflowReg[4]:D
+  Delay (ns):                  13.197
+  Slack (ns):                  -1.914
+  Arrival (ns):                16.647
+  Required (ns):               14.733
 
 Path 27
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/controlReg[10]:D
-  Delay (ns):                  11.404
-  Slack (ns):                  -0.115
-  Arrival (ns):                14.854
-  Required (ns):               14.739
+  To:                          motorWrapper_0/motor_0/compareReg[1]:D
+  Delay (ns):                  13.179
+  Slack (ns):                  -1.898
+  Arrival (ns):                16.629
+  Required (ns):               14.731
 
 Path 28
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/controlReg[2]:D
-  Delay (ns):                  11.342
-  Slack (ns):                  -0.106
-  Arrival (ns):                14.792
-  Required (ns):               14.686
+  To:                          motorWrapper_0/motor_0/overflowReg[31]:D
+  Delay (ns):                  13.168
+  Slack (ns):                  -1.898
+  Arrival (ns):                16.618
+  Required (ns):               14.720
 
 Path 29
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/controlReg[31]:D
-  Delay (ns):                  11.342
-  Slack (ns):                  -0.106
-  Arrival (ns):                14.792
-  Required (ns):               14.686
+  To:                          motorWrapper_0/motor_0/compareReg[26]:D
+  Delay (ns):                  13.150
+  Slack (ns):                  -1.895
+  Arrival (ns):                16.600
+  Required (ns):               14.705
 
 Path 30
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/controlReg[6]:D
-  Delay (ns):                  11.356
-  Slack (ns):                  -0.093
-  Arrival (ns):                14.806
-  Required (ns):               14.713
+  To:                          motorWrapper_0/motor_0/overflowReg[21]:D
+  Delay (ns):                  13.191
+  Slack (ns):                  -1.893
+  Arrival (ns):                16.641
+  Required (ns):               14.748
 
 Path 31
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/overflowReg[24]:D
-  Delay (ns):                  11.369
-  Slack (ns):                  -0.089
-  Arrival (ns):                14.819
-  Required (ns):               14.730
+  To:                          motorWrapper_0/motor_0/compareReg[16]:D
+  Delay (ns):                  13.139
+  Slack (ns):                  -1.889
+  Arrival (ns):                16.589
+  Required (ns):               14.700
 
 Path 32
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/controlReg[9]:D
-  Delay (ns):                  11.342
-  Slack (ns):                  -0.079
-  Arrival (ns):                14.792
-  Required (ns):               14.713
+  To:                          motorWrapper_0/motor_0/compareReg[11]:D
+  Delay (ns):                  13.150
+  Slack (ns):                  -1.884
+  Arrival (ns):                16.600
+  Required (ns):               14.716
 
 Path 33
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/controlReg[19]:D
-  Delay (ns):                  11.351
-  Slack (ns):                  -0.077
-  Arrival (ns):                14.801
-  Required (ns):               14.724
+  To:                          motorWrapper_0/motor_0/controlReg[26]:D
+  Delay (ns):                  13.182
+  Slack (ns):                  -1.874
+  Arrival (ns):                16.632
+  Required (ns):               14.758
 
 Path 34
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/controlReg[22]:D
-  Delay (ns):                  11.351
-  Slack (ns):                  -0.077
-  Arrival (ns):                14.801
-  Required (ns):               14.724
+  To:                          motorWrapper_0/motor_0/controlReg[31]:D
+  Delay (ns):                  13.182
+  Slack (ns):                  -1.874
+  Arrival (ns):                16.632
+  Required (ns):               14.758
 
 Path 35
   From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          motorWrapper_0/motor_0/controlReg[16]:D
-  Delay (ns):                  11.298
-  Slack (ns):                  -0.013
-  Arrival (ns):                14.748
-  Required (ns):               14.735
+  To:                          motorWrapper_0/motor_0/compareReg[22]:D
+  Delay (ns):                  13.101
+  Slack (ns):                  -1.851
+  Arrival (ns):                16.551
+  Required (ns):               14.700
 
 Path 36
-  From:                        motorWrapper_0/motor_0/counterReg[3]:CLK
-  To:                          motorWrapper_0/motor_0/counterReg[18]:D
-  Delay (ns):                  9.579
-  Slack (ns):                  -0.007
-  Arrival (ns):                14.737
-  Required (ns):               14.730
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/controlReg[8]:D
+  Delay (ns):                  13.153
+  Slack (ns):                  -1.823
+  Arrival (ns):                16.603
+  Required (ns):               14.780
 
 Path 37
-  From:                        motorWrapper_0/motor_0/overflowReg[21]:CLK
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/controlReg[11]:D
+  Delay (ns):                  13.060
+  Slack (ns):                  -1.820
+  Arrival (ns):                16.510
+  Required (ns):               14.690
+
+Path 38
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/compareReg[8]:D
+  Delay (ns):                  13.065
+  Slack (ns):                  -1.795
+  Arrival (ns):                16.515
+  Required (ns):               14.720
+
+Path 39
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/overflowReg[11]:D
+  Delay (ns):                  13.081
+  Slack (ns):                  -1.783
+  Arrival (ns):                16.531
+  Required (ns):               14.748
+
+Path 40
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/controlReg[9]:D
+  Delay (ns):                  13.052
+  Slack (ns):                  -1.773
+  Arrival (ns):                16.502
+  Required (ns):               14.729
+
+Path 41
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/compareReg[27]:D
+  Delay (ns):                  13.042
+  Slack (ns):                  -1.763
+  Arrival (ns):                16.492
+  Required (ns):               14.729
+
+Path 42
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/compareReg[0]:D
+  Delay (ns):                  13.041
+  Slack (ns):                  -1.762
+  Arrival (ns):                16.491
+  Required (ns):               14.729
+
+Path 43
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/compareReg[9]:D
+  Delay (ns):                  13.041
+  Slack (ns):                  -1.762
+  Arrival (ns):                16.491
+  Required (ns):               14.729
+
+Path 44
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/compareReg[30]:D
+  Delay (ns):                  13.085
+  Slack (ns):                  -1.755
+  Arrival (ns):                16.535
+  Required (ns):               14.780
+
+Path 45
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/overflowReg[3]:D
+  Delay (ns):                  13.024
+  Slack (ns):                  -1.744
+  Arrival (ns):                16.474
+  Required (ns):               14.730
+
+Path 46
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/controlReg[16]:D
+  Delay (ns):                  13.019
+  Slack (ns):                  -1.741
+  Arrival (ns):                16.469
+  Required (ns):               14.728
+
+Path 47
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/overflowReg[29]:D
+  Delay (ns):                  13.024
+  Slack (ns):                  -1.741
+  Arrival (ns):                16.474
+  Required (ns):               14.733
+
+Path 48
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/controlReg[4]:D
+  Delay (ns):                  13.022
+  Slack (ns):                  -1.714
+  Arrival (ns):                16.472
+  Required (ns):               14.758
+
+Path 49
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/compareReg[4]:D
+  Delay (ns):                  13.042
+  Slack (ns):                  -1.712
+  Arrival (ns):                16.492
+  Required (ns):               14.780
+
+Path 50
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/compareReg[29]:D
+  Delay (ns):                  13.042
+  Slack (ns):                  -1.712
+  Arrival (ns):                16.492
+  Required (ns):               14.780
+
+Path 51
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/compareReg[3]:D
+  Delay (ns):                  13.041
+  Slack (ns):                  -1.711
+  Arrival (ns):                16.491
+  Required (ns):               14.780
+
+Path 52
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/overflowReg[15]:D
+  Delay (ns):                  13.020
+  Slack (ns):                  -1.690
+  Arrival (ns):                16.470
+  Required (ns):               14.780
+
+Path 53
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/compareReg[2]:D
+  Delay (ns):                  12.950
+  Slack (ns):                  -1.680
+  Arrival (ns):                16.400
+  Required (ns):               14.720
+
+Path 54
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/overflowReg[22]:D
+  Delay (ns):                  12.918
+  Slack (ns):                  -1.619
+  Arrival (ns):                16.368
+  Required (ns):               14.749
+
+Path 55
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/overflowReg[10]:D
+  Delay (ns):                  12.916
+  Slack (ns):                  -1.608
+  Arrival (ns):                16.366
+  Required (ns):               14.758
+
+Path 56
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/compareReg[31]:D
+  Delay (ns):                  12.872
+  Slack (ns):                  -1.606
+  Arrival (ns):                16.322
+  Required (ns):               14.716
+
+Path 57
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/controlReg[3]:D
+  Delay (ns):                  12.883
+  Slack (ns):                  -1.604
+  Arrival (ns):                16.333
+  Required (ns):               14.729
+
+Path 58
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/controlReg[27]:D
+  Delay (ns):                  12.882
+  Slack (ns):                  -1.603
+  Arrival (ns):                16.332
+  Required (ns):               14.729
+
+Path 59
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/controlReg[19]:D
+  Delay (ns):                  12.869
+  Slack (ns):                  -1.591
+  Arrival (ns):                16.319
+  Required (ns):               14.728
+
+Path 60
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/compareReg[6]:D
+  Delay (ns):                  12.920
+  Slack (ns):                  -1.590
+  Arrival (ns):                16.370
+  Required (ns):               14.780
+
+Path 61
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/overflowReg[1]:D
+  Delay (ns):                  12.850
+  Slack (ns):                  -1.570
+  Arrival (ns):                16.300
+  Required (ns):               14.730
+
+Path 62
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/overflowReg[18]:D
+  Delay (ns):                  12.836
+  Slack (ns):                  -1.547
+  Arrival (ns):                16.286
+  Required (ns):               14.739
+
+Path 63
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/controlReg[0]:D
+  Delay (ns):                  12.820
+  Slack (ns):                  -1.541
+  Arrival (ns):                16.270
+  Required (ns):               14.729
+
+Path 64
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/overflowReg[24]:D
+  Delay (ns):                  12.776
+  Slack (ns):                  -1.511
+  Arrival (ns):                16.226
+  Required (ns):               14.715
+
+Path 65
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/controlReg[30]:D
+  Delay (ns):                  12.786
+  Slack (ns):                  -1.478
+  Arrival (ns):                16.236
+  Required (ns):               14.758
+
+Path 66
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/compareReg[19]:D
+  Delay (ns):                  12.737
+  Slack (ns):                  -1.476
+  Arrival (ns):                16.187
+  Required (ns):               14.711
+
+Path 67
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/compareReg[5]:D
+  Delay (ns):                  12.786
+  Slack (ns):                  -1.456
+  Arrival (ns):                16.236
+  Required (ns):               14.780
+
+Path 68
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/controlReg[25]:D
+  Delay (ns):                  12.693
+  Slack (ns):                  -1.439
+  Arrival (ns):                16.143
+  Required (ns):               14.704
+
+Path 69
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/compareReg[18]:D
+  Delay (ns):                  12.698
+  Slack (ns):                  -1.437
+  Arrival (ns):                16.148
+  Required (ns):               14.711
+
+Path 70
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/compareReg[25]:D
+  Delay (ns):                  12.710
+  Slack (ns):                  -1.433
+  Arrival (ns):                16.160
+  Required (ns):               14.727
+
+Path 71
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/controlReg[29]:D
+  Delay (ns):                  12.675
+  Slack (ns):                  -1.384
+  Arrival (ns):                16.125
+  Required (ns):               14.741
+
+Path 72
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/overflowReg[14]:D
+  Delay (ns):                  12.669
+  Slack (ns):                  -1.371
+  Arrival (ns):                16.119
+  Required (ns):               14.748
+
+Path 73
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/overflowReg[7]:D
+  Delay (ns):                  12.647
+  Slack (ns):                  -1.367
+  Arrival (ns):                16.097
+  Required (ns):               14.730
+
+Path 74
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/overflowReg[6]:D
+  Delay (ns):                  12.642
+  Slack (ns):                  -1.362
+  Arrival (ns):                16.092
+  Required (ns):               14.730
+
+Path 75
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/overflowReg[0]:D
+  Delay (ns):                  12.642
+  Slack (ns):                  -1.362
+  Arrival (ns):                16.092
+  Required (ns):               14.730
+
+Path 76
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/overflowReg[27]:D
+  Delay (ns):                  12.642
+  Slack (ns):                  -1.362
+  Arrival (ns):                16.092
+  Required (ns):               14.730
+
+Path 77
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/overflowReg[5]:D
+  Delay (ns):                  12.642
+  Slack (ns):                  -1.359
+  Arrival (ns):                16.092
+  Required (ns):               14.733
+
+Path 78
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/overflowReg[8]:D
+  Delay (ns):                  12.635
+  Slack (ns):                  -1.355
+  Arrival (ns):                16.085
+  Required (ns):               14.730
+
+Path 79
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/controlReg[15]:D
+  Delay (ns):                  12.484
+  Slack (ns):                  -1.206
+  Arrival (ns):                15.934
+  Required (ns):               14.728
+
+Path 80
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/overflowReg[20]:D
+  Delay (ns):                  12.388
+  Slack (ns):                  -1.114
+  Arrival (ns):                15.838
+  Required (ns):               14.724
+
+Path 81
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/overflowReg[13]:D
+  Delay (ns):                  12.388
+  Slack (ns):                  -1.114
+  Arrival (ns):                15.838
+  Required (ns):               14.724
+
+Path 82
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/controlReg[23]:D
+  Delay (ns):                  12.319
+  Slack (ns):                  -1.065
+  Arrival (ns):                15.769
+  Required (ns):               14.704
+
+Path 83
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/overflowReg[25]:D
+  Delay (ns):                  12.368
+  Slack (ns):                  -1.060
+  Arrival (ns):                15.818
+  Required (ns):               14.758
+
+Path 84
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/overflowReg[26]:D
+  Delay (ns):                  12.368
+  Slack (ns):                  -1.060
+  Arrival (ns):                15.818
+  Required (ns):               14.758
+
+Path 85
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/overflowReg[19]:D
+  Delay (ns):                  12.367
+  Slack (ns):                  -1.059
+  Arrival (ns):                15.817
+  Required (ns):               14.758
+
+Path 86
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/overflowReg[12]:D
+  Delay (ns):                  12.367
+  Slack (ns):                  -1.059
+  Arrival (ns):                15.817
+  Required (ns):               14.758
+
+Path 87
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/controlReg[24]:D
+  Delay (ns):                  12.320
+  Slack (ns):                  -1.042
+  Arrival (ns):                15.770
+  Required (ns):               14.728
+
+Path 88
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/controlReg[22]:D
+  Delay (ns):                  12.319
+  Slack (ns):                  -1.041
+  Arrival (ns):                15.769
+  Required (ns):               14.728
+
+Path 89
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/controlReg[20]:D
+  Delay (ns):                  12.319
+  Slack (ns):                  -1.041
+  Arrival (ns):                15.769
+  Required (ns):               14.728
+
+Path 90
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/controlReg[21]:D
+  Delay (ns):                  12.319
+  Slack (ns):                  -1.041
+  Arrival (ns):                15.769
+  Required (ns):               14.728
+
+Path 91
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/controlReg[2]:D
+  Delay (ns):                  12.342
+  Slack (ns):                  -1.034
+  Arrival (ns):                15.792
+  Required (ns):               14.758
+
+Path 92
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/controlReg[6]:D
+  Delay (ns):                  12.336
+  Slack (ns):                  -1.028
+  Arrival (ns):                15.786
+  Required (ns):               14.758
+
+Path 93
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/controlReg[5]:D
+  Delay (ns):                  12.342
+  Slack (ns):                  -1.012
+  Arrival (ns):                15.792
+  Required (ns):               14.780
+
+Path 94
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/controlReg[28]:D
+  Delay (ns):                  12.336
+  Slack (ns):                  -1.006
+  Arrival (ns):                15.786
+  Required (ns):               14.780
+
+Path 95
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/controlReg[1]:D
+  Delay (ns):                  12.336
+  Slack (ns):                  -1.006
+  Arrival (ns):                15.786
+  Required (ns):               14.780
+
+Path 96
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/controlReg[7]:D
+  Delay (ns):                  12.336
+  Slack (ns):                  -1.006
+  Arrival (ns):                15.786
+  Required (ns):               14.780
+
+Path 97
+  From:                        gc_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          motorWrapper_0/motor_0/compareReg[28]:D
+  Delay (ns):                  12.138
+  Slack (ns):                  -0.859
+  Arrival (ns):                15.588
+  Required (ns):               14.729
+
+Path 98
+  From:                        motorWrapper_0/motor_0/counterReg[16]:CLK
   To:                          motorWrapper_0/motor_0/interrupt_status[0]:D
-  Delay (ns):                  9.550
-  Slack (ns):                  -0.002
-  Arrival (ns):                14.715
-  Required (ns):               14.713
+  Delay (ns):                  10.155
+  Slack (ns):                  -0.610
+  Arrival (ns):                15.310
+  Required (ns):               14.700
+
+Path 99
+  From:                        motorWrapper_0/motor_0/counterReg[16]:CLK
+  To:                          motorWrapper_0/motor_0/pwm2_1:D
+  Delay (ns):                  10.069
+  Slack (ns):                  -0.524
+  Arrival (ns):                15.224
+  Required (ns):               14.700
+
+Path 100
+  From:                        motorWrapper_0/motor_0/counterReg[2]:CLK
+  To:                          motorWrapper_0/motor_0/interrupt_status[1]:D
+  Delay (ns):                  9.880
+  Slack (ns):                  -0.368
+  Arrival (ns):                15.063
+  Required (ns):               14.695
 

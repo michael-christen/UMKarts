@@ -5,7 +5,7 @@
 Product: Designer
 Release: v11.0
 Version: 11.0.0.23
-Date: Wed Nov 06 23:03:49 2013
+Date: Thu Nov 07 20:20:16 2013
 Design Name: gc  Family: SmartFusion  Die: A2F200M3F  Package: 484 FBGA
 
 
@@ -20,13 +20,13 @@ Global Nets Information:
         |---------------------------------------------------------------|
         |Name                          |Core      |IO        |RAM       |
         |---------------------------------------------------------------|
-        |CoreAPB3_0_APBmslave0_PADDR[3]|       97 |        0 |        0 |
+        |CoreAPB3_0_APBmslave0_PADDR[3]|      105 |        0 |        0 |
         |---------------------------------------------------------------|
-        |CoreAPB3_0_APBmslave0_PADDR[4]|      131 |        0 |        0 |
+        |CoreAPB3_0_APBmslave0_PADDR[4]|      133 |        0 |        0 |
         |---------------------------------------------------------------|
-        |FAB_CLK                       |      388 |        0 |        0 |
+        |FAB_CLK                       |      497 |        0 |        0 |
         |---------------------------------------------------------------|
-        |gc_MSS_0_M2F_RESET_N          |      145 |        0 |        0 |
+        |gc_MSS_0_M2F_RESET_N          |      144 |        0 |        0 |
         |---------------------------------------------------------------|
 
 Nets Sharing Loads:

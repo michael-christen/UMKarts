@@ -33,16 +33,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Wed Nov 06 23:03:03 2013
+Timing-driven Placer Started: Thu Nov 07 20:19:17 2013
 
-Placer Finished: Wed Nov 06 23:03:21 2013
-Total Placer CPU Time:     00:00:18
+Placer Finished: Thu Nov 07 20:19:41 2013
+Total Placer CPU Time:     00:00:24
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: gc                              Started: Wed Nov 06 23:03:26 2013
+Design: gc                              Started: Thu Nov 07 20:19:46 2013
 
  
 Iterative improvement...
@@ -50,9 +50,9 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: gc                              
-Finished: Wed Nov 06 23:03:43 2013
-Total CPU Time:     00:00:17            Total Elapsed Time: 00:00:17
-Total Memory Usage: 165.5 Mbytes
+Finished: Thu Nov 07 20:20:10 2013
+Total CPU Time:     00:00:24            Total Elapsed Time: 00:00:24
+Total Memory Usage: 168.7 Mbytes
                         o - o - o - o - o - o
 
 Loading the Timing data for the design.
@@ -60,7 +60,7 @@ Finished loading the Timing data.
 TIMER: Max delay timing requirements have NOT been met.
 TIMER: Min delay timing requirements have been met.
 
-The Layout command succeeded ( 00:00:49 )
+The Layout command succeeded ( 00:01:02 )
 Wrote status report to file: gc_place_and_route_report.txt
 
 The Report command succeeded ( 00:00:00 )
@@ -75,6 +75,6 @@ Wrote iobank report to file: gc_iobank_report.txt
 The Report command succeeded ( 00:00:00 )
 Design saved to file C:\Users\knekritz\UMKarts\gc\designer\impl1\gc.adb.
 
-The Execute Script command succeeded ( 00:00:52 )
+The Execute Script command succeeded ( 00:01:05 )
 Design closed.
 

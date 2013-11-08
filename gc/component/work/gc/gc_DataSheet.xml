@@ -12,7 +12,7 @@
     <project-description>
     </project-description>
     <location>C:/Users/knekritz/UMKarts/gc/component/work/gc</location>
-    <state>GENERATED ( Wed Nov 06 23:02:29 2013 )</state>
+    <state>GENERATED ( Thu Nov 07 20:18:38 2013 )</state>
     <swide-toolchain>SoftConsole workspace generated to C:\Users\knekritz\UMKarts\gc\SoftConsole</swide-toolchain>
   </project-settings>
   <site-map>
@@ -68,6 +68,12 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
+    <port-name>button_data_ready</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
     <port-name>UART_0_TXD</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
@@ -81,6 +87,12 @@
   </io>
   <io>
     <port-name>RSERVO</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>wavebird_id_ready</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>

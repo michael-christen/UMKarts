@@ -1,4 +1,4 @@
-module gc_receive(clk, data, send, response, wavebird_id, wavebird_id_ready, controller_init);
+module gc_receive(clk, data, send, response, wavebird_id, wavebird_id_ready, controller_init, button_data_ready);
 
 input wire clk;
 input wire data;
@@ -7,40 +7,44 @@ input wire controller_init;
 output reg [63:0]response;
 output reg [23:0]wavebird_id;
 output reg wavebird_id_ready;
+output reg button_data_ready;
 
 wire start_count;
-reg data1, data2;
+reg data1, data2, data3;
 reg [63:0]next_response;
 reg [7:0] next_response_count;
 reg [7:0] count;
 
 
-assign start_count = ~send && ~data1 && data2;
+assign start_count = ~send && ~data2 && data3;
 
 always @(posedge clk) begin
-	if (controller_init)
-		wavebird_id_ready = 0;
-
+	wavebird_id_ready <= 0;
+	button_data_ready <= 0;
 	data1 <= data;
 	data2 <= data1;
+	data3 <= data2;
 	if (count == 0 && start_count == 1) begin
 		count <= 1;
 	end else if (count == 200) begin
 		count <= 0;
-		next_response[63] = data;
-		next_response[62:0] = next_response[63:1];
+		next_response[0] <= data3;
+		next_response[63:1] <= next_response[62:0];
 		if (!controller_init) begin
-			if (next_response_count >= 62) begin
+			if (next_response_count > 63) begin
 				next_response_count <= 0;
-				response[63] = next_response;
+				response[0] <= data3;
+				response[63:1] <= next_response[62:0];
+				button_data_ready <= 1;
 			end else begin
 				next_response_count <= next_response_count + 1;
 			end
 		end else begin
-			if (next_response_count >= 22) begin
+			if (next_response_count > 23) begin
 				next_response_count <= 0;
-				wavebird_id = next_response[63:40];
-				wavebird_id_ready = 1;
+				wavebird_id[0] <= data3;
+				wavebird_id[23:1] <= next_response[22:0];
+				wavebird_id_ready <= 1;
 			end else begin
 				next_response_count <= next_response_count + 1;
 			end

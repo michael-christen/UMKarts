@@ -5,37 +5,61 @@
 
 typedef struct
 {
-	_Bool empty1 : 1;
-    _Bool empty2 : 1;
-    _Bool empty3 : 1;
-    // temp hack for wavebird
-    _Bool empty4 : 1;
-    _Bool start : 1;
-    _Bool y : 1;
-    _Bool x : 1;
-    _Bool b : 1;
-    _Bool a : 1;
+	uint8_t right : 8;
+	uint8_t left : 8;
 
+	uint8_t cstick_y : 8;
+	uint8_t cstick_x : 8;
+
+	uint8_t joystick_y : 8;
+	uint8_t joystick_x : 8;
+
+	_Bool d_left : 1;
+	_Bool d_right : 1;
+	_Bool d_down : 1;
+	_Bool d_up : 1;
+	_Bool z : 1;
+	_Bool r : 1;
+	_Bool l : 1;
 	_Bool empty5 : 1;
-    _Bool l : 1;
-    _Bool r : 1;
-    _Bool z : 1;
-    _Bool d_up : 1;
-    _Bool d_down : 1;
-    _Bool d_right : 1;
-    _Bool d_left : 1;
 
 
-    int8_t joystick_x : 8;
-    int8_t joystick_y : 8;
+	_Bool a : 1;
+	_Bool b : 1;
+	_Bool x : 1;
+	_Bool y : 1;
+	_Bool start : 1;
+	_Bool empty3 : 1;
+	_Bool empty2 : 1;
+	_Bool empty1 : 1;
 
 
-    int8_t cstick_x : 8;
-    int8_t cstick_y : 8;
 
 
-	int8_t left : 8;
-	int8_t right : 8;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -183,11 +207,11 @@ int main()
 	*((volatile int *) 0x40050000) = 0;
 
 	while( 1 )
-	{*((volatile int *) 0x40050000) = 0;
+	{
 		mem[0] = (volatile int) *((volatile int *)0x40050000);
 		mem[1] = (volatile int) *((volatile int *)0x40050004);
-		//print_gc();
-		printf("%8x\n\r", (volatile int) *((volatile int *)0x40050004));
+		print_gc();
+		//printf("%8x\n\r", (volatile int) *((volatile int *)0x40050008));
 
 		if(GC->a) {
 			//setPWM(0.5);
