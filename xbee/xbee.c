@@ -1,5 +1,13 @@
 #include "xbee/xbee.h"
 static uint8_t _xbee_send_buf[MAX_XBEE_PACKET_SIZE];
+static enum {
+  XBEE_RECEIVE_WAIT,
+  XBEE_RECEIVE_START_BYTE,
+  XBEE_RECEIVE_LENGTH_1,
+  XBEE_RECEIVE_LENGTH_2,
+  XBEE_RECEIVE_DATA,
+  XBEE_RECEIVE_CHECKSUM
+} _xbee_receive_state;
 
 int _xbee_send(uint8_t * data, uint16_t len); 
 uint8_t * _xbee_add_byte(uint8_t * ptr, uint8_t data, uint8_t escape); 
@@ -23,6 +31,8 @@ static int _xbee_send(uint8_t * data, uint16_t len) {
   MSS_UART_irq_tx(&g_mss_uart1, _xbee_send_buf, final_len);
   return 0;
 }
+
+static int _xbee_receive(
 
 static uint8_t * _xbee_add_byte(uint8_t * ptr, uint8_t data, uint8_t escape, uint16_t * len) {
   if (escape && (
