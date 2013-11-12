@@ -11,76 +11,34 @@
     <hdl-type>Verilog</hdl-type>
     <project-description>
     </project-description>
-    <location>C:/Users/mikechri/Downloads/gc/gc/component/work/gc</location>
-    <state>GENERATED ( Mon Nov 11 23:36:11 2013 )</state>
-    <swide-toolchain>SoftConsole workspace generated to C:\Users\mikechri\Downloads\gc\gc\SoftConsole</swide-toolchain>
+    <location>C:/Users/knekritz/UMKarts/gc/component/work/gc</location>
+    <state>GENERATED ( Tue Nov 12 12:26:44 2013 )</state>
+    <swide-toolchain>SoftConsole workspace generated to C:\Users\knekritz\UMKarts\gc\SoftConsole</swide-toolchain>
   </project-settings>
   <site-map>
   </site-map>
   <fileset>
     <name>HDL File(s)</name>
-    <file>C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\component\work\gc\gc.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\gc_MSS.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\mss_tshell.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\hdl\motor.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\hdl\motorWrapper.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\hdl\pulser.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\hdl\query.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\work\gc\gc.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\gc_MSS.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\mss_tshell.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\hdl\motor.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\hdl\motorWrapper.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\hdl\pulser.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\hdl\query.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\hdl\receive.v</file>
   </fileset>
   <fileset>
     <name>Flash Memory File(s)</name>
-    <file>C:\Users\mikechri\Downloads\gc\gc\component\work\./MSS_ENVM_0/MSS_ENVM_0.efc</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\work\./MSS_ENVM_0/MSS_ENVM_0.efc</file>
   </fileset>
   <io>
-    <port-name>LMOTOR</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>count[6]</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>count[4]</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>LSERVO</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>MSS_RESET_N</port-name>
-    <direction>IN</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>count[5]</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>button_data_ready</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>UART_0_TXD</port-name>
+    <port-name>PWM1</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
@@ -92,43 +50,7 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>count[1]</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>count[0]</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>RSERVO</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>data</port-name>
-    <direction>INOUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>wavebird_id_ready</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>PWM1</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>count[7]</port-name>
+    <port-name>LSERVO</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
@@ -140,14 +62,32 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>count[2]</port-name>
+    <port-name>LMOTOR</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>count[3]</port-name>
+    <port-name>UART_0_TXD</port-name>
     <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>data</port-name>
+    <direction>INOUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>RSERVO</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>MSS_RESET_N</port-name>
+    <direction>IN</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
@@ -427,7 +367,7 @@ There is one APB3 Master interface.
   <core type="ComponentModule">
     <core-type>ComponentModule</core-type>
     <core-exttype>HierSpiritDesign</core-exttype>
-    <core-location>C:/Users/mikechri/Downloads/gc/gc/component/work/gc_MSS</core-location>
+    <core-location>C:/Users/knekritz/UMKarts/gc/component/work/gc_MSS</core-location>
     <core-name>gc_MSS_0</core-name>
   </core>
   <core type="HdlModule">

@@ -1,7 +1,7 @@
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Mon Nov 11 23:36:26 2013
+# Timing Report written on Tue Nov 12 12:27:33 2013
 #
 
 
@@ -11,7 +11,7 @@ Requested Frequency:    100.0 MHz
 Wire load mode:         top
 Wire load model:        smartfusion
 Paths requested:        5
-Constraint File(s):    C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\mss_tshell_syn.sdc
+Constraint File(s):    C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\mss_tshell_syn.sdc
                        
 @N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
 
@@ -28,10 +28,10 @@ Worst slack in design: 0.192
                       Requested     Estimated     Requested     Estimated                Clock        Clock              
 Starting Clock        Frequency     Frequency     Period        Period        Slack      Type         Group              
 -------------------------------------------------------------------------------------------------------------------------
-FAB_CLK               100.0 MHz     78.0 MHz      10.000        12.827        -2.827     declared     clk_group_0        
+FAB_CLK               100.0 MHz     81.8 MHz      10.000        12.226        -2.226     declared     clk_group_0        
 FCLK                  100.0 MHz     NA            10.000        NA            NA         declared     clk_group_0        
 gc|CAPTURE_SWITCH     100.0 MHz     238.2 MHz     10.000        4.199         5.801      inferred     Inferred_clkgroup_0
-System                100.0 MHz     172.4 MHz     10.000        5.799         4.201      system       system_clkgroup    
+System                100.0 MHz     135.4 MHz     10.000        7.383         2.617      system       system_clkgroup    
 =========================================================================================================================
 
 
@@ -72,41 +72,41 @@ Detailed Report for Clock: FAB_CLK
 Starting Points with Worst Slack
 ********************************
 
-                                             Starting                                                              Arrival          
-Instance                                     Reference     Type       Pin     Net                                  Time        Slack
-                                             Clock                                                                                  
-------------------------------------------------------------------------------------------------------------------------------------
-motorWrapper_0.motor_0.bus_read_data[2]      FAB_CLK       DFN1E1     Q       CoreAPB3_0_APBmslave1_PRDATA[2]      0.494       1.483
-motorWrapper_0.motor_0.bus_read_data[5]      FAB_CLK       DFN1E1     Q       CoreAPB3_0_APBmslave1_PRDATA[5]      0.494       1.483
-motorWrapper_0.motor_0.bus_read_data[7]      FAB_CLK       DFN1E1     Q       CoreAPB3_0_APBmslave1_PRDATA[7]      0.494       1.483
-motorWrapper_0.motor_0.bus_read_data[9]      FAB_CLK       DFN1E1     Q       CoreAPB3_0_APBmslave1_PRDATA[9]      0.494       1.483
-motorWrapper_0.motor_0.bus_read_data[14]     FAB_CLK       DFN1E1     Q       CoreAPB3_0_APBmslave1_PRDATA[14]     0.494       1.483
-motorWrapper_0.motor_0.bus_read_data[16]     FAB_CLK       DFN1E1     Q       CoreAPB3_0_APBmslave1_PRDATA[16]     0.494       1.483
-motorWrapper_0.motor_0.bus_read_data[25]     FAB_CLK       DFN1E1     Q       CoreAPB3_0_APBmslave1_PRDATA[25]     0.494       1.483
-motorWrapper_0.motor_0.bus_read_data[29]     FAB_CLK       DFN1E1     Q       CoreAPB3_0_APBmslave1_PRDATA[29]     0.494       1.483
-gc_response_apb_0.PRDATA[0]                  FAB_CLK       DFN1       Q       CoreAPB3_0_APBmslave0_PRDATA[0]      0.494       1.523
-gc_response_apb_0.PRDATA[1]                  FAB_CLK       DFN1       Q       CoreAPB3_0_APBmslave0_PRDATA[1]      0.494       1.523
-====================================================================================================================================
+                                            Starting                                                             Arrival          
+Instance                                    Reference     Type       Pin     Net                                 Time        Slack
+                                            Clock                                                                                 
+----------------------------------------------------------------------------------------------------------------------------------
+motorWrapper_0.motor_0.bus_read_data[0]     FAB_CLK       DFN1E1     Q       CoreAPB3_0_APBmslave1_PRDATA[0]     0.494       1.483
+motorWrapper_0.motor_0.bus_read_data[1]     FAB_CLK       DFN1E1     Q       CoreAPB3_0_APBmslave1_PRDATA[1]     0.494       1.483
+motorWrapper_0.motor_0.bus_read_data[2]     FAB_CLK       DFN1E1     Q       CoreAPB3_0_APBmslave1_PRDATA[2]     0.494       1.483
+motorWrapper_0.motor_0.bus_read_data[3]     FAB_CLK       DFN1E1     Q       CoreAPB3_0_APBmslave1_PRDATA[3]     0.494       1.483
+motorWrapper_0.motor_0.bus_read_data[4]     FAB_CLK       DFN1E1     Q       CoreAPB3_0_APBmslave1_PRDATA[4]     0.494       1.483
+motorWrapper_0.motor_0.bus_read_data[5]     FAB_CLK       DFN1E1     Q       CoreAPB3_0_APBmslave1_PRDATA[5]     0.494       1.483
+motorWrapper_0.motor_0.bus_read_data[6]     FAB_CLK       DFN1E1     Q       CoreAPB3_0_APBmslave1_PRDATA[6]     0.494       1.483
+motorWrapper_0.motor_0.bus_read_data[7]     FAB_CLK       DFN1E1     Q       CoreAPB3_0_APBmslave1_PRDATA[7]     0.494       1.483
+motorWrapper_0.motor_0.bus_read_data[8]     FAB_CLK       DFN1E1     Q       CoreAPB3_0_APBmslave1_PRDATA[8]     0.494       1.483
+motorWrapper_0.motor_0.bus_read_data[9]     FAB_CLK       DFN1E1     Q       CoreAPB3_0_APBmslave1_PRDATA[9]     0.494       1.483
+==================================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                            Starting                                                                           Required          
-Instance                    Reference     Type        Pin               Net                                    Time         Slack
-                            Clock                                                                                                
----------------------------------------------------------------------------------------------------------------------------------
-gc_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[2]      gc_MSS_0_MSS_MASTER_APB_PRDATA[2]      0.000        1.319
-gc_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[5]      gc_MSS_0_MSS_MASTER_APB_PRDATA[5]      0.000        1.319
-gc_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[7]      gc_MSS_0_MSS_MASTER_APB_PRDATA[7]      0.000        1.319
-gc_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[9]      gc_MSS_0_MSS_MASTER_APB_PRDATA[9]      0.000        1.319
-gc_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[14]     gc_MSS_0_MSS_MASTER_APB_PRDATA[14]     0.000        1.319
-gc_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[16]     gc_MSS_0_MSS_MASTER_APB_PRDATA[16]     0.000        1.319
-gc_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[25]     gc_MSS_0_MSS_MASTER_APB_PRDATA[25]     0.000        1.319
-gc_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[29]     gc_MSS_0_MSS_MASTER_APB_PRDATA[29]     0.000        1.319
-gc_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[0]      gc_MSS_0_MSS_MASTER_APB_PRDATA[0]      0.000        1.359
-gc_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[1]      gc_MSS_0_MSS_MASTER_APB_PRDATA[1]      0.000        1.359
-=================================================================================================================================
+                            Starting                                                                         Required          
+Instance                    Reference     Type        Pin              Net                                   Time         Slack
+                            Clock                                                                                              
+-------------------------------------------------------------------------------------------------------------------------------
+gc_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[0]     gc_MSS_0_MSS_MASTER_APB_PRDATA[0]     0.000        1.319
+gc_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[1]     gc_MSS_0_MSS_MASTER_APB_PRDATA[1]     0.000        1.319
+gc_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[2]     gc_MSS_0_MSS_MASTER_APB_PRDATA[2]     0.000        1.319
+gc_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[3]     gc_MSS_0_MSS_MASTER_APB_PRDATA[3]     0.000        1.319
+gc_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[4]     gc_MSS_0_MSS_MASTER_APB_PRDATA[4]     0.000        1.319
+gc_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[5]     gc_MSS_0_MSS_MASTER_APB_PRDATA[5]     0.000        1.319
+gc_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[6]     gc_MSS_0_MSS_MASTER_APB_PRDATA[6]     0.000        1.319
+gc_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[7]     gc_MSS_0_MSS_MASTER_APB_PRDATA[7]     0.000        1.319
+gc_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[8]     gc_MSS_0_MSS_MASTER_APB_PRDATA[8]     0.000        1.319
+gc_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[9]     gc_MSS_0_MSS_MASTER_APB_PRDATA[9]     0.000        1.319
+===============================================================================================================================
 
 
 
@@ -124,20 +124,20 @@ Path information for path number 1:
     = Slack (non-critical) :                 1.319
 
     Number of logic level(s):                1
-    Starting point:                          motorWrapper_0.motor_0.bus_read_data[2] / Q
-    Ending point:                            gc_MSS_0.MSS_ADLIB_INST / MSSPRDATA[2]
+    Starting point:                          motorWrapper_0.motor_0.bus_read_data[0] / Q
+    Ending point:                            gc_MSS_0.MSS_ADLIB_INST / MSSPRDATA[0]
     The start point is clocked by            FAB_CLK [rising] on pin CLK
     The end   point is clocked by            System [rising]
 
 Instance / Net                                          Pin              Pin               Arrival     No. of    
 Name                                        Type        Name             Dir     Delay     Time        Fan Out(s)
 -----------------------------------------------------------------------------------------------------------------
-motorWrapper_0.motor_0.bus_read_data[2]     DFN1E1      Q                Out     0.494     0.494       -         
-CoreAPB3_0_APBmslave1_PRDATA[2]             Net         -                -       0.192     -           1         
-CoreAPB3_0.CAPB3lOII.PRDATA_1[2]            AO1         A                In      -         0.685       -         
-CoreAPB3_0.CAPB3lOII.PRDATA_1[2]            AO1         Y                Out     0.442     1.128       -         
-gc_MSS_0_MSS_MASTER_APB_PRDATA[2]           Net         -                -       0.192     -           1         
-gc_MSS_0.MSS_ADLIB_INST                     MSS_APB     MSSPRDATA[2]     In      -         1.319       -         
+motorWrapper_0.motor_0.bus_read_data[0]     DFN1E1      Q                Out     0.494     0.494       -         
+CoreAPB3_0_APBmslave1_PRDATA[0]             Net         -                -       0.192     -           1         
+CoreAPB3_0.CAPB3lOII.PRDATA_1[0]            AO1         A                In      -         0.685       -         
+CoreAPB3_0.CAPB3lOII.PRDATA_1[0]            AO1         Y                Out     0.442     1.128       -         
+gc_MSS_0_MSS_MASTER_APB_PRDATA[0]           Net         -                -       0.192     -           1         
+gc_MSS_0.MSS_ADLIB_INST                     MSS_APB     MSSPRDATA[0]     In      -         1.319       -         
 =================================================================================================================
 
 
@@ -157,32 +157,32 @@ Instance                    Reference     Type        Pin              Net      
                             Clock                                                                                           
 ----------------------------------------------------------------------------------------------------------------------------
 gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     EMCCLK           MSS_ADLIB_INST_EMCCLK               0.000       0.274
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[8]      CoreAPB3_0_APBmslave0_PADDR[8]      0.000       3.830
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[10]     CoreAPB3_0_APBmslave0_PADDR[10]     0.000       4.540
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[9]      CoreAPB3_0_APBmslave0_PADDR[9]      0.000       4.642
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[11]     CoreAPB3_0_APBmslave0_PADDR[11]     0.000       4.669
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPSEL          gc_MSS_0_MSS_MASTER_APB_PSELx       0.000       4.815
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[8]      CoreAPB3_0_APBmslave0_PADDR[8]      0.000       3.317
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[9]      CoreAPB3_0_APBmslave0_PADDR[9]      0.000       4.886
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[10]     CoreAPB3_0_APBmslave0_PADDR[10]     0.000       4.963
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPSEL          gc_MSS_0_MSS_MASTER_APB_PSELx       0.000       5.015
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[11]     CoreAPB3_0_APBmslave0_PADDR[11]     0.000       5.092
 ============================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                            Starting                                                                           Required          
-Instance                    Reference     Type        Pin               Net                                    Time         Slack
-                            Clock                                                                                                
----------------------------------------------------------------------------------------------------------------------------------
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     EMCCLKRTN         MSS_ADLIB_INST_EMCCLK                  0.000        0.192
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[0]      gc_MSS_0_MSS_MASTER_APB_PRDATA[0]      0.000        2.892
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[1]      gc_MSS_0_MSS_MASTER_APB_PRDATA[1]      0.000        2.892
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[4]      gc_MSS_0_MSS_MASTER_APB_PRDATA[4]      0.000        2.892
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[6]      gc_MSS_0_MSS_MASTER_APB_PRDATA[6]      0.000        2.892
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[8]      gc_MSS_0_MSS_MASTER_APB_PRDATA[8]      0.000        2.892
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[31]     gc_MSS_0_MSS_MASTER_APB_PRDATA[31]     0.000        2.892
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[10]     gc_MSS_0_MSS_MASTER_APB_PRDATA[10]     0.000        2.918
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[11]     gc_MSS_0_MSS_MASTER_APB_PRDATA[11]     0.000        2.918
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[12]     gc_MSS_0_MSS_MASTER_APB_PRDATA[12]     0.000        2.918
-=================================================================================================================================
+                            Starting                                                                         Required          
+Instance                    Reference     Type        Pin              Net                                   Time         Slack
+                            Clock                                                                                              
+-------------------------------------------------------------------------------------------------------------------------------
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     EMCCLKRTN        MSS_ADLIB_INST_EMCCLK                 0.000        0.192
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[0]     gc_MSS_0_MSS_MASTER_APB_PRDATA[0]     0.000        2.575
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[1]     gc_MSS_0_MSS_MASTER_APB_PRDATA[1]     0.000        2.575
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[2]     gc_MSS_0_MSS_MASTER_APB_PRDATA[2]     0.000        2.575
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[3]     gc_MSS_0_MSS_MASTER_APB_PRDATA[3]     0.000        2.575
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[4]     gc_MSS_0_MSS_MASTER_APB_PRDATA[4]     0.000        2.575
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[5]     gc_MSS_0_MSS_MASTER_APB_PRDATA[5]     0.000        2.575
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[6]     gc_MSS_0_MSS_MASTER_APB_PRDATA[6]     0.000        2.575
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[7]     gc_MSS_0_MSS_MASTER_APB_PRDATA[7]     0.000        2.575
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[8]     gc_MSS_0_MSS_MASTER_APB_PRDATA[8]     0.000        2.575
+===============================================================================================================================
 
 
 

@@ -56,7 +56,7 @@
 <option id="gnu.c.link.option.paths.71294329" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
 <listOptionValue builtIn="false" value="&quot;${workspace_loc:/gc_MSS_MSS_CM3_0_hw_platform/Debug}&quot;"/>
 </option>
-<option id="gnu.c.link.option.ldflags.988543446" name="Linker flags" superClass="gnu.c.link.option.ldflags" value="-T../../gc_MSS_MSS_CM3_0_hw_platform/CMSIS/startup_gcc/debug-in-actel-smartfusion-esram.ld" valueType="string"/>
+<option id="gnu.c.link.option.ldflags.988543446" name="Linker flags" superClass="gnu.c.link.option.ldflags" value="-T../../gc_MSS_MSS_CM3_0_hw_platform/CMSIS/startup_gcc/debug-in-actel-smartfusion-envm.ld" valueType="string"/>
 <option id="gnu.c.link.option.userobjs.1227465178" name="Other objects" superClass="gnu.c.link.option.userobjs" valueType="userObjs">
 <listOptionValue builtIn="false" value="&quot;${workspace_loc:/gc_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/startup_a2fxxxm3.o}&quot;"/>
 <listOptionValue builtIn="false" value="&quot;${workspace_loc:/gc_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o}&quot;"/>

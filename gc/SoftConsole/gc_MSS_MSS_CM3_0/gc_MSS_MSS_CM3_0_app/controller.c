@@ -6,6 +6,9 @@
  */
 #include "controller.h"
 
+controller_t * CONTROLLER;
+uint32_t *MEM;
+
 void CONTROLLER_print() {
         CONTROLLER_load();
         if (CONTROLLER->start)
@@ -21,7 +24,7 @@ void CONTROLLER_print() {
         if (CONTROLLER->l)
                 printf("L ");
         if (CONTROLLER->r)
-                        printf("R ");
+                printf("R ");
         if (CONTROLLER->z)
                 printf("Z ");
         if (CONTROLLER->d_up)
@@ -38,16 +41,18 @@ void CONTROLLER_print() {
         printf("Trigger Pressure Left: %d, Right: %d\n\r\n\r", CONTROLLER->left, CONTROLLER->right);
 }
 
+// Not actually necessary, will happen automatically in hardware
 void CONTROLLER_init() {
         // Write to send wavebird init command
         *((volatile int *) CONTROLLER_BASE) = 0;
 }
 
 void CONTROLLER_setup_mem() {
-        MEM = (uint32_t*) malloc(8);
-        CONTROLLER = (controller_t *) MEM;
+    MEM = (uint32_t*) malloc(8);
+    CONTROLLER = (controller_t *) MEM;
 }
+
 void CONTROLLER_load() {
-        MEM[0] = (volatile int) *((volatile int *)CONTROLLER_BASE);
-    MEM[1] = (volatile int) *((volatile int *)CONTROLLER_BASE + 4);
+    MEM[0] = (volatile int) *((volatile int *) CONTROLLER_BASE);
+    MEM[1] = (volatile int) *((volatile int *) (CONTROLLER_BASE + 4));
 }
