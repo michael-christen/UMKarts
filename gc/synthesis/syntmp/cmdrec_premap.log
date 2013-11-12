@@ -1,14 +1,14 @@
-C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin64\m_proasic.exe  -prodtype synplify_pro -encrypt  -pro  -rundir  C:\Users\mikechri\Downloads\gc\gc\synthesis  -part A2F200M3F  -package FBGA484  -grade -1   -globalthreshold 50 -maxfan 24 -opcond COMWC     -report_path 0   -RWCheckOnRam 0     -summaryfile C:\Users\mikechri\Downloads\gc\gc\synthesis\synlog\report\gc_premap.xml -top_level_module  gc  -oedif  C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.edn  -conchk_prepass  C:\Users\mikechri\Downloads\gc\gc\synthesis\gc_cck_prepass.rpt  -freq 100.000  -tcl  C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\mss_tshell_syn.sdc  C:\Users\mikechri\Downloads\gc\gc\synthesis\synwork\gc_compiler.srs  -flow prepass  -gcc_prepass  -osrd  C:\Users\mikechri\Downloads\gc\gc\synthesis\synwork\gc_premap.srd  -qsap  C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.sap  -devicelib  C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v  -ologparam  C:\Users\mikechri\Downloads\gc\gc\synthesis\syntmp\gc.plg  -osyn  C:\Users\mikechri\Downloads\gc\gc\synthesis\synwork\gc_premap.srd  -prjdir  C:\Users\mikechri\Downloads\gc\gc\synthesis\  -prjname  gc_syn  -log  C:\Users\mikechri\Downloads\gc\gc\synthesis\synlog\gc_premap.srr 
+C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin64\m_proasic.exe  -prodtype synplify_pro -encrypt  -pro  -rundir  C:\Users\knekritz\UMKarts\gc\synthesis  -part A2F200M3F  -package FBGA484  -grade -1   -globalthreshold 50 -maxfan 24 -opcond COMWC     -report_path 0   -RWCheckOnRam 0     -summaryfile C:\Users\knekritz\UMKarts\gc\synthesis\synlog\report\gc_premap.xml -top_level_module  gc  -oedif  C:\Users\knekritz\UMKarts\gc\synthesis\gc.edn  -conchk_prepass  C:\Users\knekritz\UMKarts\gc\synthesis\gc_cck_prepass.rpt  -freq 100.000  -tcl  C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\mss_tshell_syn.sdc  C:\Users\knekritz\UMKarts\gc\synthesis\synwork\gc_compiler.srs  -flow prepass  -gcc_prepass  -osrd  C:\Users\knekritz\UMKarts\gc\synthesis\synwork\gc_premap.srd  -qsap  C:\Users\knekritz\UMKarts\gc\synthesis\gc.sap  -devicelib  C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v  -ologparam  C:\Users\knekritz\UMKarts\gc\synthesis\syntmp\gc.plg  -osyn  C:\Users\knekritz\UMKarts\gc\synthesis\synwork\gc_premap.srd  -prjdir  C:\Users\knekritz\UMKarts\gc\synthesis\  -prjname  gc_syn  -log  C:\Users\knekritz\UMKarts\gc\synthesis\synlog\gc_premap.srr 
 rc:1 success:1
-C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.edn|o|1384230077|1014116
-C:\Users\mikechri\Downloads\gc\gc\synthesis\gc_cck_prepass.rpt|o|0|0
-C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\mss_tshell_syn.sdc|i|1383784651|184
-C:\Users\mikechri\Downloads\gc\gc\synthesis\synwork\gc_compiler.srs|i|1384230980|62481
-C:\Users\mikechri\Downloads\gc\gc\synthesis\synwork\gc_premap.srd|o|1384230982|66094
-C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.sap|o|1384230982|9585
+C:\Users\knekritz\UMKarts\gc\synthesis\gc.edn|o|1384276713|1009523
+C:\Users\knekritz\UMKarts\gc\synthesis\gc_cck_prepass.rpt|o|0|0
+C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\mss_tshell_syn.sdc|i|1384276471|184
+C:\Users\knekritz\UMKarts\gc\synthesis\synwork\gc_compiler.srs|i|1384277248|62208
+C:\Users\knekritz\UMKarts\gc\synthesis\synwork\gc_premap.srd|o|1384277250|65977
+C:\Users\knekritz\UMKarts\gc\synthesis\gc.sap|o|1384277250|9585
 C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v|i|1360942192|72817
-C:\Users\mikechri\Downloads\gc\gc\synthesis\syntmp\gc.plg|o|1384230982|0
-C:\Users\mikechri\Downloads\gc\gc\synthesis\synwork\gc_premap.srd|o|1384230982|66094
-C:\Users\mikechri\Downloads\gc\gc\synthesis\synlog\gc_premap.srr|o|1384230982|1652
+C:\Users\knekritz\UMKarts\gc\synthesis\syntmp\gc.plg|o|1384277249|0
+C:\Users\knekritz\UMKarts\gc\synthesis\synwork\gc_premap.srd|o|1384277250|65977
+C:\Users\knekritz\UMKarts\gc\synthesis\synlog\gc_premap.srr|o|1384277250|1632
 C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin64\m_proasic.exe|i|1360942034|13812224
 C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin\m_proasic.exe|i|1360942022|11409920

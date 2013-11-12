@@ -1,19 +1,19 @@
-C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin64\c_ver.exe  -osyn  C:\Users\mikechri\Downloads\gc\gc\synthesis\synwork\gc_compiler.srs  -top  gc  -prodtype  synplify_pro  -nram -fixsmult   -divnmod -I C:\Users\mikechri\Downloads\gc\gc\synthesis\  -I C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib  -v2001  -devicelib  C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v  -encrypt  -pro  -dmgen  C:\Users\mikechri\Downloads\gc\gc\synthesis\dm  -ll 2000   -ui -fid2 -ram -sharing on  -autosm -lib work C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\mss_tshell.v -lib work C:\Users\mikechri\Downloads\gc\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v -lib work C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v -lib work C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\gc_MSS.v -lib work C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v -lib work C:\Users\mikechri\Downloads\gc\gc\hdl\query.v -lib work C:\Users\mikechri\Downloads\gc\gc\hdl\motor.v -lib work C:\Users\mikechri\Downloads\gc\gc\hdl\motorWrapper.v -lib COREAPB3_LIB C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v -lib COREAPB3_LIB C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v -lib COREAPB3_LIB C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v -lib work C:\Users\mikechri\Downloads\gc\gc\component\work\gc\gc.v -loga  C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.srr 
+C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin64\c_ver.exe  -osyn  C:\Users\knekritz\UMKarts\gc\synthesis\synwork\gc_compiler.srs  -top  gc  -prodtype  synplify_pro  -nram -fixsmult   -divnmod -I C:\Users\knekritz\UMKarts\gc\synthesis\  -I C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib  -v2001  -devicelib  C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v  -encrypt  -pro  -dmgen  C:\Users\knekritz\UMKarts\gc\synthesis\dm  -ll 2000   -ui -fid2 -ram -sharing on  -autosm -lib work C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\mss_tshell.v -lib work C:\Users\knekritz\UMKarts\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v -lib work C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v -lib work C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\gc_MSS.v -lib work C:\Users\knekritz\UMKarts\gc\hdl\receive.v -lib work C:\Users\knekritz\UMKarts\gc\hdl\query.v -lib work C:\Users\knekritz\UMKarts\gc\hdl\motor.v -lib work C:\Users\knekritz\UMKarts\gc\hdl\motorWrapper.v -lib COREAPB3_LIB C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v -lib COREAPB3_LIB C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v -lib COREAPB3_LIB C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v -lib work C:\Users\knekritz\UMKarts\gc\component\work\gc\gc.v -loga  C:\Users\knekritz\UMKarts\gc\synthesis\gc.srr 
 rc:1 success:1
-C:\Users\mikechri\Downloads\gc\gc\synthesis\synwork\gc_compiler.srs|o|1384230980|62481
+C:\Users\knekritz\UMKarts\gc\synthesis\synwork\gc_compiler.srs|o|1384277248|62208
 C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v|i|1360942192|72817
-C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\mss_tshell.v|i|1383784651|12226
-C:\Users\mikechri\Downloads\gc\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v|i|1359496019|11243
-C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v|i|1383784649|2880
-C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\gc_MSS.v|i|1384205324|18731
-C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v|i|1384230710|2542
-C:\Users\mikechri\Downloads\gc\gc\hdl\query.v|i|1384230958|3904
-C:\Users\mikechri\Downloads\gc\gc\hdl\motor.v|i|1383514683|8498
-C:\Users\mikechri\Downloads\gc\gc\hdl\motorWrapper.v|i|1383514634|1416
-C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v|i|1365462977|6738
-C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v|i|1365462977|3312
-C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v|i|1365462977|32421
-C:\Users\mikechri\Downloads\gc\gc\component\work\gc\gc.v|i|1384230966|18081
-C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.srr|o|1384230981|19623
+C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\mss_tshell.v|i|1384276471|12226
+C:\Users\knekritz\UMKarts\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v|i|1384276467|11942
+C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v|i|1384276471|2880
+C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\gc_MSS.v|i|1384276471|18731
+C:\Users\knekritz\UMKarts\gc\hdl\receive.v|i|1384276548|2542
+C:\Users\knekritz\UMKarts\gc\hdl\query.v|i|1384276548|3904
+C:\Users\knekritz\UMKarts\gc\hdl\motor.v|i|1384276471|8498
+C:\Users\knekritz\UMKarts\gc\hdl\motorWrapper.v|i|1384276471|1416
+C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v|i|1366474074|6738
+C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v|i|1366474074|3312
+C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v|i|1366474074|32421
+C:\Users\knekritz\UMKarts\gc\component\work\gc\gc.v|i|1384277199|17318
+C:\Users\knekritz\UMKarts\gc\synthesis\gc.srr|o|1384277248|19073
 C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin64\c_ver.exe|i|1361373522|5587456
 C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin\c_ver.exe|i|1361373516|2088448

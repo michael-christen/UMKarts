@@ -1,82 +1,82 @@
-@W: CG775 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Found Component CoreAPB3 in library COREAPB3_LIB
-@W: CG775 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Found Component CoreAPB3 in library COREAPB3_LIB
-@W: CG360 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":1477:0:1477:8|No assignment to wire CAPB3lIOI
-@W: CL265 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":19:0:19:5|Pruning bit 63 of next_response_5[63:0] -- not in use ...
-@W: CG360 :"C:\Users\mikechri\Downloads\gc\gc\hdl\query.v":69:5:69:7|No assignment to wire clk
-@W: CL169 :"C:\Users\mikechri\Downloads\gc\gc\hdl\query.v":87:0:87:5|Pruning register data_cl 
-@W: CL246 :"C:\Users\mikechri\Downloads\gc\gc\hdl\query.v":55:76:55:86|Input port bits 23 to 16 of wavebird_id[23:0] are unused
-@W: CL157 :"C:\Users\mikechri\Downloads\gc\gc\hdl\motorWrapper.v":36:13:36:15|*Output TPS has undriven bits -- simulation mismatch possible.
-@W: CL246 :"C:\Users\mikechri\Downloads\gc\gc\hdl\motor.v":20:12:20:19|Input port bits 7 to 5 of bus_addr[7:0] are unused
-@W: CL246 :"C:\Users\mikechri\Downloads\gc\gc\hdl\motor.v":20:12:20:19|Input port bits 1 to 0 of bus_addr[7:0] are unused
-@W: CL246 :"C:\Users\mikechri\Downloads\gc\gc\hdl\query.v":1:50:1:60|Input port bits 15 to 0 of wavebird_id[23:0] are unused
-@W: CL246 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":70:13:70:17|Input port bits 31 to 4 of PADDR[31:0] are unused
-@W: CL246 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":70:13:70:17|Input port bits 1 to 0 of PADDR[31:0] are unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":64:6:64:12|Input PRESERN is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":71:18:71:23|Input PWDATA is unused
-@W: CL189 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":19:0:19:5|Register bit next_response_count[6] is always 0, optimizing ...
-@W: CL189 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":19:0:19:5|Register bit next_response_count[7] is always 0, optimizing ...
-@W: CL279 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":19:0:19:5|Pruning register bits 7 to 6 of next_response_count[7:0] 
-@W: CL157 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":62:7:62:18|*Output RCOSC_CLKOUT has undriven bits -- simulation mismatch possible.
-@W: CL157 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":63:7:63:20|*Output MAINXIN_CLKOUT has undriven bits -- simulation mismatch possible.
-@W: CL157 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":64:7:64:18|*Output LPXIN_CLKOUT has undriven bits -- simulation mismatch possible.
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":36:7:36:10|Input CLKA is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":37:7:37:14|Input CLKA_PAD is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":38:7:38:15|Input CLKA_PADP is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":39:7:39:15|Input CLKA_PADN is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":40:7:40:10|Input CLKB is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":41:7:41:14|Input CLKB_PAD is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":42:7:42:15|Input CLKB_PADP is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":43:7:43:15|Input CLKB_PADN is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":44:7:44:10|Input CLKC is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":45:7:45:14|Input CLKC_PAD is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":46:7:46:15|Input CLKC_PADP is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":47:7:47:15|Input CLKC_PADN is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":48:7:48:13|Input MAINXIN is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":49:7:49:11|Input LPXIN is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":50:7:50:13|Input MAC_CLK is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":378:0:378:4|Input IADDR is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":380:0:380:6|Input PRESETN is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":382:0:382:3|Input PCLK is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":510:0:510:7|Input PRDATAS2 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":517:0:517:7|Input PRDATAS3 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":524:0:524:7|Input PRDATAS4 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":531:0:531:7|Input PRDATAS5 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":538:0:538:7|Input PRDATAS6 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":545:0:545:7|Input PRDATAS7 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":552:0:552:7|Input PRDATAS8 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":559:0:559:7|Input PRDATAS9 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":566:0:566:8|Input PRDATAS10 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":573:0:573:8|Input PRDATAS11 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":580:0:580:8|Input PRDATAS12 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":587:0:587:8|Input PRDATAS13 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":594:0:594:8|Input PRDATAS14 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":601:0:601:8|Input PRDATAS15 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":614:0:614:7|Input PREADYS2 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":616:0:616:7|Input PREADYS3 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":618:0:618:7|Input PREADYS4 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":620:0:620:7|Input PREADYS5 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":622:0:622:7|Input PREADYS6 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":624:0:624:7|Input PREADYS7 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":626:0:626:7|Input PREADYS8 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":628:0:628:7|Input PREADYS9 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":630:0:630:8|Input PREADYS10 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":632:0:632:8|Input PREADYS11 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":634:0:634:8|Input PREADYS12 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":636:0:636:8|Input PREADYS13 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":638:0:638:8|Input PREADYS14 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":640:0:640:8|Input PREADYS15 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":648:0:648:8|Input PSLVERRS2 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":650:0:650:8|Input PSLVERRS3 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":652:0:652:8|Input PSLVERRS4 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":654:0:654:8|Input PSLVERRS5 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":656:0:656:8|Input PSLVERRS6 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":658:0:658:8|Input PSLVERRS7 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":660:0:660:8|Input PSLVERRS8 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":662:0:662:8|Input PSLVERRS9 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":664:0:664:9|Input PSLVERRS10 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":666:0:666:9|Input PSLVERRS11 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":668:0:668:9|Input PSLVERRS12 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":670:0:670:9|Input PSLVERRS13 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":672:0:672:9|Input PSLVERRS14 is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":674:0:674:9|Input PSLVERRS15 is unused
+@W: CG775 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Found Component CoreAPB3 in library COREAPB3_LIB
+@W: CG775 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Found Component CoreAPB3 in library COREAPB3_LIB
+@W: CG360 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":1477:0:1477:8|No assignment to wire CAPB3lIOI
+@W: CL265 :"C:\Users\knekritz\UMKarts\gc\hdl\receive.v":19:0:19:5|Pruning bit 63 of next_response_5[63:0] -- not in use ...
+@W: CG360 :"C:\Users\knekritz\UMKarts\gc\hdl\query.v":69:5:69:7|No assignment to wire clk
+@W: CL169 :"C:\Users\knekritz\UMKarts\gc\hdl\query.v":87:0:87:5|Pruning register data_cl 
+@W: CL246 :"C:\Users\knekritz\UMKarts\gc\hdl\query.v":55:76:55:86|Input port bits 23 to 16 of wavebird_id[23:0] are unused
+@W: CL157 :"C:\Users\knekritz\UMKarts\gc\hdl\motorWrapper.v":36:13:36:15|*Output TPS has undriven bits -- simulation mismatch possible.
+@W: CL246 :"C:\Users\knekritz\UMKarts\gc\hdl\motor.v":20:12:20:19|Input port bits 7 to 5 of bus_addr[7:0] are unused
+@W: CL246 :"C:\Users\knekritz\UMKarts\gc\hdl\motor.v":20:12:20:19|Input port bits 1 to 0 of bus_addr[7:0] are unused
+@W: CL246 :"C:\Users\knekritz\UMKarts\gc\hdl\query.v":1:50:1:60|Input port bits 15 to 0 of wavebird_id[23:0] are unused
+@W: CL246 :"C:\Users\knekritz\UMKarts\gc\hdl\receive.v":70:13:70:17|Input port bits 31 to 4 of PADDR[31:0] are unused
+@W: CL246 :"C:\Users\knekritz\UMKarts\gc\hdl\receive.v":70:13:70:17|Input port bits 1 to 0 of PADDR[31:0] are unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\hdl\receive.v":64:6:64:12|Input PRESERN is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\hdl\receive.v":71:18:71:23|Input PWDATA is unused
+@W: CL189 :"C:\Users\knekritz\UMKarts\gc\hdl\receive.v":19:0:19:5|Register bit next_response_count[6] is always 0, optimizing ...
+@W: CL189 :"C:\Users\knekritz\UMKarts\gc\hdl\receive.v":19:0:19:5|Register bit next_response_count[7] is always 0, optimizing ...
+@W: CL279 :"C:\Users\knekritz\UMKarts\gc\hdl\receive.v":19:0:19:5|Pruning register bits 7 to 6 of next_response_count[7:0] 
+@W: CL157 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":62:7:62:18|*Output RCOSC_CLKOUT has undriven bits -- simulation mismatch possible.
+@W: CL157 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":63:7:63:20|*Output MAINXIN_CLKOUT has undriven bits -- simulation mismatch possible.
+@W: CL157 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":64:7:64:18|*Output LPXIN_CLKOUT has undriven bits -- simulation mismatch possible.
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":36:7:36:10|Input CLKA is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":37:7:37:14|Input CLKA_PAD is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":38:7:38:15|Input CLKA_PADP is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":39:7:39:15|Input CLKA_PADN is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":40:7:40:10|Input CLKB is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":41:7:41:14|Input CLKB_PAD is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":42:7:42:15|Input CLKB_PADP is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":43:7:43:15|Input CLKB_PADN is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":44:7:44:10|Input CLKC is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":45:7:45:14|Input CLKC_PAD is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":46:7:46:15|Input CLKC_PADP is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":47:7:47:15|Input CLKC_PADN is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":48:7:48:13|Input MAINXIN is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":49:7:49:11|Input LPXIN is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":50:7:50:13|Input MAC_CLK is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":378:0:378:4|Input IADDR is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":380:0:380:6|Input PRESETN is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":382:0:382:3|Input PCLK is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":510:0:510:7|Input PRDATAS2 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":517:0:517:7|Input PRDATAS3 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":524:0:524:7|Input PRDATAS4 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":531:0:531:7|Input PRDATAS5 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":538:0:538:7|Input PRDATAS6 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":545:0:545:7|Input PRDATAS7 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":552:0:552:7|Input PRDATAS8 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":559:0:559:7|Input PRDATAS9 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":566:0:566:8|Input PRDATAS10 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":573:0:573:8|Input PRDATAS11 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":580:0:580:8|Input PRDATAS12 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":587:0:587:8|Input PRDATAS13 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":594:0:594:8|Input PRDATAS14 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":601:0:601:8|Input PRDATAS15 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":614:0:614:7|Input PREADYS2 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":616:0:616:7|Input PREADYS3 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":618:0:618:7|Input PREADYS4 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":620:0:620:7|Input PREADYS5 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":622:0:622:7|Input PREADYS6 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":624:0:624:7|Input PREADYS7 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":626:0:626:7|Input PREADYS8 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":628:0:628:7|Input PREADYS9 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":630:0:630:8|Input PREADYS10 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":632:0:632:8|Input PREADYS11 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":634:0:634:8|Input PREADYS12 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":636:0:636:8|Input PREADYS13 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":638:0:638:8|Input PREADYS14 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":640:0:640:8|Input PREADYS15 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":648:0:648:8|Input PSLVERRS2 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":650:0:650:8|Input PSLVERRS3 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":652:0:652:8|Input PSLVERRS4 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":654:0:654:8|Input PSLVERRS5 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":656:0:656:8|Input PSLVERRS6 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":658:0:658:8|Input PSLVERRS7 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":660:0:660:8|Input PSLVERRS8 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":662:0:662:8|Input PSLVERRS9 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":664:0:664:9|Input PSLVERRS10 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":666:0:666:9|Input PSLVERRS11 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":668:0:668:9|Input PSLVERRS12 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":670:0:670:9|Input PSLVERRS13 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":672:0:672:9|Input PSLVERRS14 is unused
+@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":674:0:674:9|Input PSLVERRS15 is unused
 
