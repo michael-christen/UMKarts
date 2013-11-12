@@ -3,7 +3,7 @@
 
 # Version: v11.0 11.0.0.23
 # Family: SmartFusion , Die: A2F200M3F , Package: 484 FBGA
-# Date generated: Wed Nov 06 22:49:37 2013 
+# Date generated: Tue Nov 12 17:11:38 2013 
 
 
 # 
@@ -11,6 +11,8 @@
 # 
 
 define_group -name UART_0_PADs
+
+define_group -name UART_1_PADs
 
 
 # 
@@ -43,6 +45,18 @@ set_io UART_0_RXD            \
 
 set_io UART_0_TXD            \
     -GROUP_NAME UART_0_PADs  \
+    -DIRECTION OUTPUT
+
+
+# User Group UART_1_PADs
+
+set_io UART_1_RXD            \
+    -GROUP_NAME UART_1_PADs  \
+    -DIRECTION INPUT
+
+
+set_io UART_1_TXD            \
+    -GROUP_NAME UART_1_PADs  \
     -DIRECTION OUTPUT
 
 

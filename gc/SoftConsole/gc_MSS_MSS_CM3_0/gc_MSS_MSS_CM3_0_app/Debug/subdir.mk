@@ -5,16 +5,19 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../controller.c \
+../lcd.c \
 ../main.c \
 ../mytimer.c 
 
 OBJS += \
 ./controller.o \
+./lcd.o \
 ./main.o \
 ./mytimer.o 
 
 C_DEPS += \
 ./controller.d \
+./lcd.d \
 ./main.d \
 ./mytimer.d 
 

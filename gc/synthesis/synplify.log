@@ -1,7 +1,7 @@
 
 Starting:    C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\win64\mbin\synbatch.exe
 Install:     C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1
-Date:        Tue Nov 12 12:27:27 2013
+Date:        Tue Nov 12 17:12:14 2013
 Version:     G-2012.09M-SP1 
 
 Arguments:   -product synplify_pro  -licensetype synplifypro_actel -batch -log synplify.log gc_syn.tcl
@@ -28,6 +28,8 @@ Running Compile Process on gc_syn|synthesis
 Running Compile Input on gc_syn|synthesis
 
 Copied C:\Users\knekritz\UMKarts\gc\synthesis\synwork\gc_compiler.srs to C:\Users\knekritz\UMKarts\gc\synthesis\gc.srs
+
+Copied C:\Users\knekritz\UMKarts\gc\synthesis\synwork\gc_compiler.so to C:\Users\knekritz\UMKarts\gc\synthesis\gc.so
 
 compiler Completed with warnings
 Return Code: 1

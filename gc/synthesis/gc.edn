@@ -4,7 +4,7 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timeStamp 2013 11 12 12 27 33)
+      (timeStamp 2013 11 12 17 12 21)
       (author "Synopsys, Inc.")
       (program "Synplify Pro" (version "G-2012.09M-SP1 , mapper mapact, Build 904R"))
      )
@@ -14918,6 +14918,8 @@
            (port MSS_RESET_N (direction INPUT))
            (port UART_0_RXD (direction INPUT))
            (port UART_0_TXD (direction OUTPUT))
+           (port UART_1_RXD (direction INPUT))
+           (port UART_1_TXD (direction OUTPUT))
            (port gc_MSS_0_M2F_RESET_N (direction OUTPUT))
          )
          (contents
@@ -14934,6 +14936,16 @@
           (instance MSS_ADLIB_INST_RNI49L3_1 (viewRef prim (cellRef CLKINT (libraryRef smartfusion)))
           )
           (instance MSS_ADLIB_INST_RNI49L3 (viewRef prim (cellRef CLKINT (libraryRef smartfusion)))
+          )
+          (instance MSS_UART_1_TXD (viewRef prim (cellRef OUTBUF_MSS (libraryRef smartfusion)))
+           (property is_instantiated (integer 1))
+           (property ACT_CONFIG (integer 0))
+           (property ACT_PIN (string "V20"))
+          )
+          (instance MSS_UART_1_RXD (viewRef prim (cellRef INBUF_MSS (libraryRef smartfusion)))
+           (property is_instantiated (integer 1))
+           (property ACT_CONFIG (integer 0))
+           (property ACT_PIN (string "W22"))
           )
           (instance MSS_UART_0_TXD (viewRef prim (cellRef OUTBUF_MSS (libraryRef smartfusion)))
            (property is_instantiated (integer 1))
@@ -15006,6 +15018,22 @@
           (net MSS_ADLIB_INST_M2FRESETn (joined
            (portRef M2FRESETn (instanceRef MSS_ADLIB_INST))
            (portRef A (instanceRef MSS_ADLIB_INST_RNI49L3))
+          ))
+          (net UART_1_TXD (joined
+           (portRef PAD (instanceRef MSS_UART_1_TXD))
+           (portRef UART_1_TXD)
+          ))
+          (net MSS_UART_1_TXD_D (joined
+           (portRef UART1TXD (instanceRef MSS_ADLIB_INST))
+           (portRef D (instanceRef MSS_UART_1_TXD))
+          ))
+          (net MSS_UART_1_RXD_Y (joined
+           (portRef Y (instanceRef MSS_UART_1_RXD))
+           (portRef UART1RXD (instanceRef MSS_ADLIB_INST))
+          ))
+          (net UART_1_RXD (joined
+           (portRef UART_1_RXD)
+           (portRef PAD (instanceRef MSS_UART_1_RXD))
           ))
           (net UART_0_TXD (joined
            (portRef PAD (instanceRef MSS_UART_0_TXD))
@@ -15239,7 +15267,6 @@
            (portRef MACCRSDV (instanceRef MSS_ADLIB_INST))
            (portRef I2C1SCLI (instanceRef MSS_ADLIB_INST))
            (portRef I2C1SDAI (instanceRef MSS_ADLIB_INST))
-           (portRef UART1RXD (instanceRef MSS_ADLIB_INST))
            (portRef SPI1SSI (instanceRef MSS_ADLIB_INST))
            (portRef SPI1CLKI (instanceRef MSS_ADLIB_INST))
            (portRef SPI1DI (instanceRef MSS_ADLIB_INST))
@@ -15340,9 +15367,6 @@
           ))
           (net MSS_ADLIB_INST_SPI1MODE (joined
            (portRef SPI1MODE (instanceRef MSS_ADLIB_INST))
-          ))
-          (net MSS_ADLIB_INST_UART1TXD (joined
-           (portRef UART1TXD (instanceRef MSS_ADLIB_INST))
           ))
           (net MSS_ADLIB_INST_I2C1SDAO (joined
            (portRef I2C1SDAO (instanceRef MSS_ADLIB_INST))
@@ -16429,12 +16453,14 @@
            (port CAPTURE_SWITCH (direction INPUT))
            (port MSS_RESET_N (direction INPUT))
            (port UART_0_RXD (direction INPUT))
+           (port UART_1_RXD (direction INPUT))
            (port LMOTOR (direction OUTPUT))
            (port LSERVO (direction OUTPUT))
            (port PWM1 (direction OUTPUT))
            (port RMOTOR (direction OUTPUT))
            (port RSERVO (direction OUTPUT))
            (port UART_0_TXD (direction OUTPUT))
+           (port UART_1_TXD (direction OUTPUT))
            (port data (direction INOUT))
          )
          (contents
@@ -16514,9 +16540,17 @@
            (portRef UART_0_RXD)
            (portRef UART_0_RXD (instanceRef gc_MSS_0))
           ))
+          (net UART_1_RXD (joined
+           (portRef UART_1_RXD)
+           (portRef UART_1_RXD (instanceRef gc_MSS_0))
+          ))
           (net UART_0_TXD (joined
            (portRef UART_0_TXD (instanceRef gc_MSS_0))
            (portRef UART_0_TXD)
+          ))
+          (net UART_1_TXD (joined
+           (portRef UART_1_TXD (instanceRef gc_MSS_0))
+           (portRef UART_1_TXD)
           ))
           (net GND (joined
            (portRef Y (instanceRef GND_i))

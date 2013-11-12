@@ -1,12 +1,12 @@
 #Build: Synplify Pro G-2012.09M-SP1 , Build 013R, Feb 15 2013
 #install: C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1
 #OS: Windows 7 6.1
-#Hostname: EECS373-04
+#Hostname: EECS373-11
 
 #Implementation: synthesis
 
 $ Start of Compile
-#Tue Nov 12 12:27:27 2013
+#Tue Nov 12 17:12:15 2013
 
 Synopsys Verilog Compiler, version comp201209rcp1, Build 245R, built Feb 20 2013
 @N|Running in 64-bit mode
@@ -237,7 +237,7 @@ Selecting top level module gc
 @W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":674:0:674:9|Input PSLVERRS15 is unused
 @END
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Nov 12 12:27:28 2013
+# Tue Nov 12 17:12:16 2013
 
 ###########################################################]
 Premap Report
@@ -266,7 +266,7 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 41MB peak: 105MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Nov 12 12:27:30 2013
+# Tue Nov 12 17:12:18 2013
 
 ###########################################################]
 Map & Optimize Report
@@ -287,7 +287,7 @@ Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 103MB peak: 103MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 103MB)
 
 @W: MO111 :"c:\users\knekritz\umkarts\gc\component\work\gc_mss\mss_ccc_0\gc_mss_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT on net LPXIN_CLKOUT has its enable tied to GND (module gc_MSS_tmp_MSS_CCC_0_MSS_CCC) 
 @W: MO111 :"c:\users\knekritz\umkarts\gc\component\work\gc_mss\mss_ccc_0\gc_mss_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT on net MAINXIN_CLKOUT has its enable tied to GND (module gc_MSS_tmp_MSS_CCC_0_MSS_CCC) 
@@ -310,13 +310,13 @@ Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00
 @N:"c:\users\knekritz\umkarts\gc\hdl\query.v":87:0:87:5|Found counter in view:work.send_query(verilog) inst count[12:0]
 @N: MF238 :"c:\users\knekritz\umkarts\gc\hdl\query.v":93:13:93:24|Found 7-bit incrementor, 'un3_c_count_1[6:0]'
 
-Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
 
 @N: BN362 :"c:\users\knekritz\umkarts\gc\hdl\motor.v":75:0:75:5|Removing sequential instance motorWrapper_0.motor_0.fabint of view:PrimLib.dff(prim) in hierarchy view:work.gc(verilog) because there are no references to its outputs 
 @N: BN362 :"c:\users\knekritz\umkarts\gc\hdl\motor.v":208:0:208:5|Removing sequential instance motorWrapper_0.motor_0.timer_interrupt of view:PrimLib.dff(prim) in hierarchy view:work.gc(verilog) because there are no references to its outputs 
 @N: BN362 :"c:\users\knekritz\umkarts\gc\hdl\motor.v":267:0:267:5|Removing sequential instance motorWrapper_0.motor_0.capture_interrupt of view:PrimLib.dffr(prim) in hierarchy view:work.gc(verilog) because there are no references to its outputs 
 
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 110MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 110MB)
 
 
 Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 109MB peak: 112MB)
@@ -325,10 +325,10 @@ Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CP
 Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 110MB peak: 112MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 111MB peak: 112MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 111MB peak: 112MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 111MB peak: 112MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 111MB peak: 112MB)
 
 
 Finished preparing to map (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 110MB peak: 112MB)
@@ -398,7 +398,7 @@ Added 19 Cells via replication
 	Added 1 Sequential Cells via replication
 	Added 18 Combinational Cells via replication
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 112MB peak: 114MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 112MB peak: 114MB)
 
 
 
@@ -425,12 +425,12 @@ Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample I
 
 Writing Analyst data base C:\Users\knekritz\UMKarts\gc\synthesis\gc.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 111MB peak: 114MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 111MB peak: 114MB)
 
 Writing EDIF Netlist and constraint files
 G-2012.09M-SP1 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 112MB peak: 114MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 112MB peak: 114MB)
 
 @W: MT420 |Found inferred clock gc|CAPTURE_SWITCH with period 10.00ns. Please declare a user-defined clock on object "p:CAPTURE_SWITCH"
 
@@ -439,7 +439,7 @@ Found clock FCLK with period 10.00ns
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Tue Nov 12 12:27:33 2013
+# Timing Report written on Tue Nov 12 17:12:22 2013
 #
 
 
@@ -1239,24 +1239,24 @@ Report for cell gc.verilog
               cell count
              BIBUF     1
              INBUF     1
-         INBUF_MSS     2
+         INBUF_MSS     3
             OUTBUF     5
-        OUTBUF_MSS     1
+        OUTBUF_MSS     2
                    -----
-             TOTAL    10
+             TOTAL    12
 
 
 Core Cells         : 1659 of 4608 (36%)
-IO Cells           : 10
+IO Cells           : 12
 
   RAM/ROM Usage Summary
 Block Rams : 0 of 8 (0%)
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 42MB peak: 114MB)
+At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 42MB peak: 114MB)
 
-Process took 0h:00m:03s realtime, 0h:00m:02s cputime
-# Tue Nov 12 12:27:33 2013
+Process took 0h:00m:03s realtime, 0h:00m:03s cputime
+# Tue Nov 12 17:12:22 2013
 
 ###########################################################]

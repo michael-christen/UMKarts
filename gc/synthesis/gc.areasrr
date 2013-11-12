@@ -199,13 +199,13 @@ Report for cell gc_MSS.netlist
                                BUFF         4       1.0        4.0
                              CLKINT         3       0.0        0.0
                                 GND         1       0.0        0.0
-                          INBUF_MSS         2       0.0        0.0
+                          INBUF_MSS         3       0.0        0.0
                             MSS_APB         1       0.0        0.0
-                         OUTBUF_MSS         1       0.0        0.0
+                         OUTBUF_MSS         2       0.0        0.0
                                 VCC         1       0.0        0.0
           gc_MSS_tmp_MSS_CCC_0_MSS_CCC         1       0.0        0.0
                             
-                         TOTAL             14                  4.0
+                         TOTAL             16                  4.0
 ----------------------------------------------------------------------
 Report for cell gc_MSS_tmp_MSS_CCC_0_MSS_CCC.netlist
      Instance path:  gc_MSS_0.MSS_CCC_0

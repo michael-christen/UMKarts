@@ -16,15 +16,15 @@ Wrote timing report to file: gc_maxdelay_timing_report.txt
 The Report command succeeded ( 00:00:04 )
 Wrote timing report to file: gc_mindelay_timing_report.txt
 
-The Report command succeeded ( 00:00:01 )
+The Report command succeeded ( 00:00:00 )
 Wrote timing_violations report to file: gc_maxdelay_timingviolations_report.txt
 
-The Report command succeeded ( 00:00:00 )
+The Report command succeeded ( 00:00:01 )
 Wrote timing_violations report to file: gc_mindelay_timingviolations_report.txt
 
 The Report command succeeded ( 00:00:00 )
 Design saved to file C:\Users\knekritz\UMKarts\gc\designer\impl1\gc.adb.
 
-The Execute Script command succeeded ( 00:00:07 )
+The Execute Script command succeeded ( 00:00:06 )
 Design closed.
 

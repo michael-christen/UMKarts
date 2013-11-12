@@ -12,12 +12,12 @@ Opened an existing Libero design gc.adb.
 'IDE_DESIGNERVIEW_ROOTDIR' set to 'C:\Users\knekritz\UMKarts\gc\designer'
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
 
- Netlist Reading Time = 1.0 seconds
+ Netlist Reading Time = 0.0 seconds
 Imported the files:
    C:\Users\knekritz\UMKarts\gc\synthesis\gc.edn
    C:\Users\knekritz\UMKarts\gc\component\work\gc\gc.pdc
 
-The Import command succeeded ( 00:00:10 )
+The Import command succeeded ( 00:00:08 )
 =====================================================================
 Parameters used to run compile:
 ===============================
@@ -78,7 +78,6 @@ Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_SPI1DO drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_SPI1DOE drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_SPI1CLKO drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_SPI1MODE drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_UART1TXD drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_I2C1SDAO drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_I2C1SCLO drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_MACTXEN drives no load.
@@ -360,7 +359,7 @@ Optimized macros:
 Warning: CMP503: Remapped 65 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
          pin on the enable flip-flop is not being driven by a global net.
 
-There were 0 error(s) and 292 warning(s) in this design.
+There were 0 error(s) and 291 warning(s) in this design.
 =====================================================================
 
 Reading previous post-compile physical placement constraints.
@@ -384,7 +383,7 @@ Compile report:
     Fabric IO (W/ clocks)      Used:      7  Total:     94   (7.45%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
-    Dedicated MSS IO           Used:      3  Total:     43   (6.98%)
+    Dedicated MSS IO           Used:      5  Total:     43   (11.63%)
     GLOBAL (Chip+Quadrant)     Used:      3  Total:     15   (20.00%)
     MSS GLOBAL                 Used:      3  Total:      3   (100.00%)
     On-chip RC oscillator      Used:      1  Total:      1   (100.00%)
@@ -515,12 +514,12 @@ Nets that are candidates for clock assignment and the resulting fanout:
     18      INT_NET       Net   : N_142
                           Driver: motorWrapper_0/BUS_WRITE_EN_0_a2_0
 
-The Compile command succeeded ( 00:00:06 )
+The Compile command succeeded ( 00:00:04 )
 Wrote status report to file: gc_compile_report.txt
 
 The Report command succeeded ( 00:00:00 )
 Design saved to file C:\Users\knekritz\UMKarts\gc\designer\impl1\gc.adb.
 
-The Execute Script command succeeded ( 00:00:18 )
+The Execute Script command succeeded ( 00:00:17 )
 Design closed.
 

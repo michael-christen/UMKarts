@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Tue Nov 12 12:29:01 2013 ***************************************************************************
+                          Tue Nov 12 17:13:44 2013 ***************************************************************************
 
 Product: Designer
 Release: v11.0
 Version: 11.0.0.23
 File Name: C:\Users\knekritz\UMKarts\gc\designer\impl1\gc.adb
 Design Name: gc  Design State: layout
-Last Saved: Tue Nov 12 12:27:55 2013
+Last Saved: Tue Nov 12 17:12:42 2013
 
 ***** Device Data **************************************************
 
@@ -22,7 +22,7 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Tue Nov 12 12:27:38 2013:
+Source File(s) Imported on Tue Nov 12 17:12:28 2013:
         C:\Users\knekritz\UMKarts\gc\synthesis\gc.edn
         C:\Users\knekritz\UMKarts\gc\component\work\gc\gc.pdc
 
@@ -103,7 +103,6 @@ Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_SPI1DO drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_SPI1DOE drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_SPI1CLKO drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_SPI1MODE drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_UART1TXD drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_I2C1SDAO drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_I2C1SCLO drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_MACTXEN drives no load.
@@ -385,7 +384,7 @@ Optimized macros:
 Warning: CMP503: Remapped 65 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
          pin on the enable flip-flop is not being driven by a global net.
 
-There were 0 error(s) and 292 warning(s) in this design.
+There were 0 error(s) and 291 warning(s) in this design.
 =====================================================================
 
 Reading previous post-compile physical placement constraints.
@@ -409,7 +408,7 @@ Compile report:
     Fabric IO (W/ clocks)      Used:      7  Total:     94   (7.45%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
-    Dedicated MSS IO           Used:      3  Total:     43   (6.98%)
+    Dedicated MSS IO           Used:      5  Total:     43   (11.63%)
     GLOBAL (Chip+Quadrant)     Used:      3  Total:     15   (20.00%)
     MSS GLOBAL                 Used:      3  Total:      3   (100.00%)
     On-chip RC oscillator      Used:      1  Total:      1   (100.00%)
@@ -564,16 +563,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Tue Nov 12 12:28:01 2013
+Timing-driven Placer Started: Tue Nov 12 17:12:49 2013
 
-Placer Finished: Tue Nov 12 12:28:24 2013
-Total Placer CPU Time:     00:00:23
+Placer Finished: Tue Nov 12 17:13:13 2013
+Total Placer CPU Time:     00:00:24
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: gc                              Started: Tue Nov 12 12:28:30 2013
+Design: gc                              Started: Tue Nov 12 17:13:18 2013
 
  
 Iterative improvement...
@@ -581,9 +580,9 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: gc                              
-Finished: Tue Nov 12 12:28:53 2013
-Total CPU Time:     00:00:22            Total Elapsed Time: 00:00:23
-Total Memory Usage: 169.2 Mbytes
+Finished: Tue Nov 12 17:13:38 2013
+Total CPU Time:     00:00:20            Total Elapsed Time: 00:00:20
+Total Memory Usage: 168.7 Mbytes
                         o - o - o - o - o - o
 
 

@@ -3,6 +3,7 @@
 #include "mytimer.h"
 #include "drivers/mss_uart/mss_uart.h"
 #include "controller.h"
+#include "lcd.h"
 
 
 volatile uint32_t count;
@@ -110,8 +111,19 @@ int main()
 
         CONTROLLER_setup_mem();
 
+        /*int x = 1;
+        LCD_init();
+        while(1) {
+        	LCD_printf("Hi! %d", x++);
+        	for (d = 0; d < 5000000; d++);
+        	LCD_printf("%s %s", "Hello", "World");
+        	for (d = 0; d < 5000000; d++);
+
+        }*/
+
         while( 1 )
         {
+
 				//CONTROLLER_print();
         	CONTROLLER_load();
                 if(CONTROLLER->a) {
