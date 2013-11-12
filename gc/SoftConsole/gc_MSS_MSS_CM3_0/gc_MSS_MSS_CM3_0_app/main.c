@@ -1,72 +1,9 @@
 #include <stdio.h>
 #include <stdint.h>
 #include "mytimer.h"
+#include "controller.h"
 #include "drivers/mss_uart/mss_uart.h"
 
-typedef struct
-{
-	uint8_t right : 8;
-	uint8_t left : 8;
-
-	uint8_t cstick_y : 8;
-	uint8_t cstick_x : 8;
-
-	uint8_t joystick_y : 8;
-	uint8_t joystick_x : 8;
-
-	_Bool d_left : 1;
-	_Bool d_right : 1;
-	_Bool d_down : 1;
-	_Bool d_up : 1;
-	_Bool z : 1;
-	_Bool r : 1;
-	_Bool l : 1;
-	_Bool empty5 : 1;
-
-
-	_Bool a : 1;
-	_Bool b : 1;
-	_Bool x : 1;
-	_Bool y : 1;
-	_Bool start : 1;
-	_Bool empty3 : 1;
-	_Bool empty2 : 1;
-	_Bool empty1 : 1;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-} gc_t;
-
-gc_t * GC;
 volatile uint32_t count;
 volatile uint32_t period, cmpVal;
 volatile int curClock, prevClock;
@@ -141,42 +78,10 @@ __attribute__ ((interrupt)) void Fabric_IRQHandler( void )
     NVIC_ClearPendingIRQ( Fabric_IRQn );
 }
 
-void print_gc() {
-	if (GC->start)
-		printf("Start ");
-	if (GC->y)
-		printf("Y ");
-	if (GC->x)
-		printf("X ");
-	if (GC->b)
-		printf("B ");
-	if (GC->a)
-		printf("A ");
-	if (GC->l)
-		printf("L ");
-	if (GC->r)
-		printf("R ");
-	if (GC->z)
-		printf("Z ");
-	if (GC->d_up)
-		printf("UP ");
-	if (GC->d_down)
-		printf("DOWN ");
-	if (GC->d_right)
-		printf("RIGHT ");
-	if (GC->d_left)
-		printf("LEFT ");
-	printf("\n\r");
-	printf("Joystick X: %d, Y: %d\n\r", GC->joystick_x, GC->joystick_y);
-	printf("C stick X: %d, Y: %d\n\r", GC->cstick_x, GC->cstick_y);
-	printf("Trigger Pressure Left: %d, Right: %d\n\r\n\r", GC->left, GC->right);
-}
-
 int main()
 {
 	volatile int d = 0;
-	uint32_t *mem = (uint32_t *) malloc(8);
-	GC = (gc_t *) mem;
+	CONTROLLER_setup_mem();
 	cmpVal = 200000;
 	period = 2000000;
 	curClock = prevClock = 0;
@@ -204,34 +109,33 @@ int main()
 	int dir = 1;
 
 	// Write to send wavebird init command
-	*((volatile int *) 0x40050000) = 0;
+	CONTROLLER_init();
 
 	while( 1 )
 	{
-		mem[0] = (volatile int) *((volatile int *)0x40050000);
-		mem[1] = (volatile int) *((volatile int *)0x40050004);
-		print_gc();
+		CONTROLLER_load();
+		//CONTROLLER_print();
 		//printf("%8x\n\r", (volatile int) *((volatile int *)0x40050008));
 
-		if(GC->a) {
-			//setPWM(0.5);
+		if(CONTROLLER->a) {
+			setPWM(0.5);
 		}
-		else if(GC->b) {
-			//setPWM(-0.5);
+		else if(CONTROLLER->b) {
+			setPWM(-0.5);
 		}
 		else {
-			//setPWM(0);
+			setPWM(0);
 		}
 
-		if(GC->d_right) {
-			//MYTIMER_set_servo_direction(1);
+		if(CONTROLLER->d_right) {
+			MYTIMER_set_servo_direction(1);
 		}
-		else if(GC->d_left) {
-			//MYTIMER_set_servo_direction(-1);
+		else if(CONTROLLER->d_left) {
+			MYTIMER_set_servo_direction(-1);
 		}
 		else {
-			//MYTIMER_set_servo_direction(0);
+			MYTIMER_set_servo_direction(0);
 		}
-		for (d = 0; d < 1000000; d++);//*((volatile int *) 0x40050000) = 0;
+		//for (d = 0; d < 1000000; d++);//*((volatile int *) 0x40050000) = 0;
 	}
 }

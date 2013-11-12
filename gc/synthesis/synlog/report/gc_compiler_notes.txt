@@ -1,22 +1,22 @@
 @N|Running in 64-bit mode
-@N: CG364 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v":13:0:13:5|Synthesizing module CAPB3l
-@N: CG364 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Synthesizing module CoreAPB3
-@N: CG364 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\mss_tshell.v":1:7:1:13|Synthesizing module MSS_APB
-@N: CG364 :"C:\Users\knekritz\UMKarts\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":151:7:151:13|Synthesizing module MSS_CCC
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v":13:0:13:5|Synthesizing module CAPB3l
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Synthesizing module CoreAPB3
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\mss_tshell.v":1:7:1:13|Synthesizing module MSS_APB
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":151:7:151:13|Synthesizing module MSS_CCC
 @N: CG364 :"C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v":2620:7:2620:11|Synthesizing module RCOSC
 @N: CG364 :"C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v":1141:7:1141:9|Synthesizing module GND
 @N: CG364 :"C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v":1868:7:1868:9|Synthesizing module VCC
-@N: CG364 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":5:7:5:34|Synthesizing module gc_MSS_tmp_MSS_CCC_0_MSS_CCC
-@N: CG364 :"C:\Users\knekritz\UMKarts\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":23:7:23:15|Synthesizing module INBUF_MSS
-@N: CG364 :"C:\Users\knekritz\UMKarts\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":37:7:37:16|Synthesizing module OUTBUF_MSS
-@N: CG364 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\gc_MSS.v":9:7:9:12|Synthesizing module gc_MSS
-@N: CG364 :"C:\Users\knekritz\UMKarts\gc\hdl\receive.v":1:7:1:16|Synthesizing module gc_receive
-@N: CG364 :"C:\Users\knekritz\UMKarts\gc\hdl\receive.v":62:7:62:21|Synthesizing module gc_response_apb
-@N: CG364 :"C:\Users\knekritz\UMKarts\gc\hdl\query.v":1:7:1:14|Synthesizing module gc_state
-@N: CG364 :"C:\Users\knekritz\UMKarts\gc\hdl\motor.v":1:7:1:11|Synthesizing module motor
-@N: CG364 :"C:\Users\knekritz\UMKarts\gc\hdl\motorWrapper.v":2:7:2:18|Synthesizing module motorWrapper
-@N: CG364 :"C:\Users\knekritz\UMKarts\gc\hdl\query.v":55:7:55:16|Synthesizing module send_query
-@N: CG179 :"C:\Users\knekritz\UMKarts\gc\hdl\query.v":92:11:92:15|Removing redundant assignment
-@N: CL177 :"C:\Users\knekritz\UMKarts\gc\hdl\query.v":98:5:114:49|Sharing sequential element data.
-@N: CG364 :"C:\Users\knekritz\UMKarts\gc\component\work\gc\gc.v":9:7:9:8|Synthesizing module gc
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":5:7:5:34|Synthesizing module gc_MSS_tmp_MSS_CCC_0_MSS_CCC
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":23:7:23:15|Synthesizing module INBUF_MSS
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":37:7:37:16|Synthesizing module OUTBUF_MSS
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\gc_MSS.v":9:7:9:12|Synthesizing module gc_MSS
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":1:7:1:16|Synthesizing module gc_receive
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":62:7:62:21|Synthesizing module gc_response_apb
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\query.v":1:7:1:14|Synthesizing module gc_state
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\motor.v":1:7:1:11|Synthesizing module motor
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\motorWrapper.v":2:7:2:18|Synthesizing module motorWrapper
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\query.v":55:7:55:16|Synthesizing module send_query
+@N: CG179 :"C:\Users\mikechri\Downloads\gc\gc\hdl\query.v":92:11:92:15|Removing redundant assignment
+@N: CL177 :"C:\Users\mikechri\Downloads\gc\gc\hdl\query.v":98:5:114:49|Sharing sequential element data.
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc\gc.v":9:7:9:8|Synthesizing module gc
 

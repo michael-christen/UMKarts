@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Thu Nov 07 20:19:11 2013 ***************************************************************************
+                          Mon Nov 11 16:49:21 2013 ***************************************************************************
 
 Product: Designer
 Release: v11.0
 Version: 11.0.0.23
-File Name: C:\Users\knekritz\UMKarts\gc\designer\impl1\gc.adb
+File Name: C:\Users\mikechri\Downloads\gc\gc\designer\impl1\gc.adb
 Design Name: gc  Design State: compile
-Last Saved: Thu Nov 07 20:18:13 2013
+Last Saved: Mon Nov 11 16:28:44 2013
 
 ***** Device Data **************************************************
 
@@ -22,9 +22,9 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Thu Nov 07 20:18:56 2013:
-        C:\Users\knekritz\UMKarts\gc\synthesis\gc.edn
-        C:\Users\knekritz\UMKarts\gc\component\work\gc\gc.pdc
+Source File(s) Imported on Mon Nov 11 16:49:04 2013:
+        C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.edn
+        C:\Users\mikechri\Downloads\gc\gc\component\work\gc\gc.pdc
 
 
 ***** CAE Variables ************************************************
@@ -50,8 +50,8 @@ Parameters used to run compile:
 Family      : SmartFusion
 Device      : A2F200M3F
 Package     : 484 FBGA
-Source      : C:\Users\knekritz\UMKarts\gc\synthesis\gc.edn
-              C:\Users\knekritz\UMKarts\gc\component\work\gc\gc.pdc
+Source      : C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.edn
+              C:\Users\mikechri\Downloads\gc\gc\component\work\gc\gc.pdc
 Format      : EDIF
 Topcell     : gc
 Speed grade : -1

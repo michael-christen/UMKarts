@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Thu Nov 07 20:20:16 2013 ***************************************************************************
+                          Mon Nov 11 16:50:25 2013 ***************************************************************************
 
 Product: Designer
 Release: v11.0
 Version: 11.0.0.23
-File Name: C:\Users\knekritz\UMKarts\gc\designer\impl1\gc.adb
+File Name: C:\Users\mikechri\Downloads\gc\gc\designer\impl1\gc.adb
 Design Name: gc  Design State: layout
-Last Saved: Thu Nov 07 20:19:11 2013
+Last Saved: Mon Nov 11 16:49:22 2013
 
 ***** Device Data **************************************************
 
@@ -22,9 +22,9 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Thu Nov 07 20:18:56 2013:
-        C:\Users\knekritz\UMKarts\gc\synthesis\gc.edn
-        C:\Users\knekritz\UMKarts\gc\component\work\gc\gc.pdc
+Source File(s) Imported on Mon Nov 11 16:49:04 2013:
+        C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.edn
+        C:\Users\mikechri\Downloads\gc\gc\component\work\gc\gc.pdc
 
 
 ***** CAE Variables ************************************************
@@ -50,8 +50,8 @@ Parameters used to run compile:
 Family      : SmartFusion
 Device      : A2F200M3F
 Package     : 484 FBGA
-Source      : C:\Users\knekritz\UMKarts\gc\synthesis\gc.edn
-              C:\Users\knekritz\UMKarts\gc\component\work\gc\gc.pdc
+Source      : C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.edn
+              C:\Users\mikechri\Downloads\gc\gc\component\work\gc\gc.pdc
 Format      : EDIF
 Topcell     : gc
 Speed grade : -1
@@ -564,16 +564,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Thu Nov 07 20:19:17 2013
+Timing-driven Placer Started: Mon Nov 11 16:49:28 2013
 
-Placer Finished: Thu Nov 07 20:19:41 2013
+Placer Finished: Mon Nov 11 16:49:52 2013
 Total Placer CPU Time:     00:00:24
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: gc                              Started: Thu Nov 07 20:19:46 2013
+Design: gc                              Started: Mon Nov 11 16:49:57 2013
 
  
 Iterative improvement...
@@ -581,9 +581,9 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: gc                              
-Finished: Thu Nov 07 20:20:10 2013
-Total CPU Time:     00:00:24            Total Elapsed Time: 00:00:24
-Total Memory Usage: 168.7 Mbytes
+Finished: Mon Nov 11 16:50:19 2013
+Total CPU Time:     00:00:21            Total Elapsed Time: 00:00:22
+Total Memory Usage: 168.4 Mbytes
                         o - o - o - o - o - o
 
 
