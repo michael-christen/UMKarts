@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version G-2012.09M-SP1 
 #--  Project file C:\Users\mikechri\Downloads\gc\gc\synthesis\run_options.txt
-#--  Written on Mon Nov 11 16:48:51 2013
+#--  Written on Mon Nov 11 23:36:20 2013
 
 
 #project files

@@ -11,7 +11,7 @@
 @N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":37:7:37:16|Synthesizing module OUTBUF_MSS
 @N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\gc_MSS.v":9:7:9:12|Synthesizing module gc_MSS
 @N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":1:7:1:16|Synthesizing module gc_receive
-@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":62:7:62:21|Synthesizing module gc_response_apb
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":60:7:60:21|Synthesizing module gc_response_apb
 @N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\query.v":1:7:1:14|Synthesizing module gc_state
 @N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\motor.v":1:7:1:11|Synthesizing module motor
 @N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\motorWrapper.v":2:7:2:18|Synthesizing module motorWrapper

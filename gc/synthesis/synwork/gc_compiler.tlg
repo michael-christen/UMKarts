@@ -100,9 +100,9 @@ Selecting top level module gc
 
 @N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":1:7:1:16|Synthesizing module gc_receive
 
-@W: CL265 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":21:0:21:5|Pruning bit 63 of next_response_5[63:0] -- not in use ...
+@W: CL265 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":19:0:19:5|Pruning bit 63 of next_response_5[63:0] -- not in use ...
 
-@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":62:7:62:21|Synthesizing module gc_response_apb
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":60:7:60:21|Synthesizing module gc_response_apb
 
 @N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\query.v":1:7:1:14|Synthesizing module gc_state
 
@@ -129,14 +129,15 @@ Selecting top level module gc
 
 @W: CL246 :"C:\Users\mikechri\Downloads\gc\gc\hdl\query.v":1:50:1:60|Input port bits 15 to 0 of wavebird_id[23:0] are unused
 
-@W: CL246 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":72:13:72:17|Input port bits 31 to 4 of PADDR[31:0] are unused
+@W: CL246 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":70:13:70:17|Input port bits 31 to 4 of PADDR[31:0] are unused
 
-@W: CL246 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":72:13:72:17|Input port bits 1 to 0 of PADDR[31:0] are unused
+@W: CL246 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":70:13:70:17|Input port bits 1 to 0 of PADDR[31:0] are unused
 
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":66:6:66:12|Input PRESERN is unused
-@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":73:18:73:23|Input PWDATA is unused
-@W: CL189 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":21:0:21:5|Register bit next_response_count[7] is always 0, optimizing ...
-@W: CL260 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":21:0:21:5|Pruning register bit 7 of next_response_count[7:0] 
+@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":64:6:64:12|Input PRESERN is unused
+@W: CL159 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":71:18:71:23|Input PWDATA is unused
+@W: CL189 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":19:0:19:5|Register bit next_response_count[6] is always 0, optimizing ...
+@W: CL189 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":19:0:19:5|Register bit next_response_count[7] is always 0, optimizing ...
+@W: CL279 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":19:0:19:5|Pruning register bits 7 to 6 of next_response_count[7:0] 
 
 @W: CL157 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":62:7:62:18|*Output RCOSC_CLKOUT has undriven bits -- simulation mismatch possible.
 @W: CL157 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":63:7:63:20|*Output MAINXIN_CLKOUT has undriven bits -- simulation mismatch possible.

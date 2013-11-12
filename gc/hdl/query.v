@@ -96,7 +96,7 @@ always @(posedge clk100mhz) begin
 	wavebird_id_sent = 0;
 	
 	if (controller_init && wavebird_id_send && count / 4 <= 24) begin
-		if (count / 4 < 24 || count % 4 == 0) send <= 1; else send <= 0;
+		if (count / 4 < 24 || count % 4 == 0 || count % 4 == 1) send <= 1; else send <= 0;
 		if (count / 4 == 3 || count / 4 == 4 || count / 4 == 5 || count / 4 == 6 || (count / 4 >= 8 && count / 4 < 24 && wavebird_id[23-(count/4)]) || count / 4 == 24)
 			send1();
 		else
@@ -106,14 +106,14 @@ always @(posedge clk100mhz) begin
 			wavebird_id_sent = 1; 
 	end else if (controller_init && count / 4 <= 8) begin
 		// Send 0x00 to check controller status
-		if (count / 4 < 8 || count % 4 == 0) send <= 1; else send <= 0;
+		if (count / 4 < 8 || count % 4 == 0 || count % 4 == 1) send <= 1; else send <= 0;
 		if (count / 4 == 8)
 			send1();
 		else
 			send0();
 	end else if (~controller_init && count / 4 <= 24) begin
 		// Send 0x400302 to poll button status
-		if (count / 4 < 24 || count % 4 == 0) send <= 1; else send <= 0;
+		if (count / 4 < 24 || count % 4 == 0 || count % 4 == 1) send <= 1; else send <= 0;
 		if (count / 4 == 1 || count / 4 == 14 || count / 4 == 15 || count / 4 == 22 || count / 4 == 24)
 			send1();
 		else

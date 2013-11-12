@@ -43,13 +43,13 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\CoreAPB3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1384206518"
+TIME="1384230966"
 SIZE="2783"
 PARENT="<project>\component\work\gc\gc.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\coreparameters.v,tb_hdl"
 STATE="utd"
-TIME="1384206518"
+TIME="1384230966"
 SIZE="1256"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
@@ -256,12 +256,12 @@ SIZE="413"
 ENDFILE
 VALUE "<project>\component\work\gc\gc.cxf,actgen_cxf"
 STATE="utd"
-TIME="1384206525"
-SIZE="5584"
+TIME="1384230972"
+SIZE="5767"
 ENDFILE
 VALUE "<project>\component\work\gc\gc.pdc,pdc"
 STATE="utd"
-TIME="1384206516"
+TIME="1384230966"
 SIZE="1772"
 PARENT="<project>\component\work\gc\gc.cxf"
 BEGIN_USE_CONSTRAINT
@@ -272,15 +272,15 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\gc\gc.v,hdl"
 STATE="utd"
-TIME="1384206518"
-SIZE="17781"
+TIME="1384230966"
+SIZE="18081"
 PARENT="<project>\component\work\gc\gc.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\gc\testbench.v,tb_hdl"
 STATE="utd"
-TIME="1384206520"
-SIZE="1654"
+TIME="1384230967"
+SIZE="1670"
 PARENT="<project>\component\work\gc\gc.cxf"
 IS_READONLY="TRUE"
 ENDFILE
@@ -367,52 +367,52 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\designer\impl1\gc.adb,adb"
 STATE="utd"
-TIME="1384205324"
-SIZE="1691648"
+TIME="1384206647"
+SIZE="1724416"
 ENDFILE
 VALUE "<project>\designer\impl1\gc.fdb,fdb"
 STATE="utd"
-TIME="1384206646"
-SIZE="84550"
+TIME="1384231088"
+SIZE="83090"
 ENDFILE
 VALUE "<project>\designer\impl1\gc.ide_des,ide_des"
 STATE="utd"
-TIME="1384205324"
-SIZE="998"
+TIME="1384206648"
+SIZE="1013"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_compile_log.rpt,log"
 STATE="utd"
-TIME="1384206562"
-SIZE="31206"
+TIME="1384231006"
+SIZE="31243"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_fp\gc.pdb,pdb"
 STATE="utd"
-TIME="1384205324"
+TIME="1384206662"
 SIZE="94208"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_fp\gc.pro,pro"
 STATE="utd"
-TIME="1384205324"
-SIZE="1915"
+TIME="1384206706"
+SIZE="1930"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_fp\projectData\gc.pdb,pdb"
 STATE="utd"
-TIME="1384206706"
-SIZE="94208"
+TIME="1384231152"
+SIZE="92672"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1384206626"
+TIME="1384231067"
 SIZE="2377"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_prgdata_log.rpt,log"
 STATE="utd"
-TIME="1384206648"
+TIME="1384231089"
 SIZE="620"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_verifytiming_log.rpt,log"
 STATE="utd"
-TIME="1384206633"
+TIME="1384231074"
 SIZE="1092"
 ENDFILE
 VALUE "<project>\hdl\motor.v,hdl"
@@ -432,13 +432,13 @@ SIZE="511"
 ENDFILE
 VALUE "<project>\hdl\query.v,hdl"
 STATE="utd"
-TIME="1384205324"
-SIZE="3850"
+TIME="1384230958"
+SIZE="3904"
 ENDFILE
 VALUE "<project>\hdl\receive.v,hdl"
 STATE="utd"
-TIME="1384205324"
-SIZE="2587"
+TIME="1384230710"
+SIZE="2542"
 ENDFILE
 VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
 STATE="utd"
@@ -460,7 +460,7 @@ PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\CoreAPB3.cxf"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1384206519"
+TIME="1384230967"
 SIZE="671"
 PARENT="<project>\component\work\gc\gc.cxf"
 ENDFILE
@@ -478,23 +478,23 @@ PARENT="<project>\component\work\gc_MSS\gc_MSS.cxf"
 ENDFILE
 VALUE "<project>\synthesis\gc.edn,syn_edn"
 STATE="utd"
-TIME="1384205324"
-SIZE="995278"
+TIME="1384206537"
+SIZE="995279"
 ENDFILE
 VALUE "<project>\synthesis\gc.so,so"
 STATE="utd"
-TIME="1384205324"
-SIZE="202"
+TIME="1384206537"
+SIZE="207"
 ENDFILE
 VALUE "<project>\synthesis\gc_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1383798246"
+TIME="1384206537"
 SIZE="633"
 ENDFILE
 VALUE "<project>\synthesis\gc_syn.prj,prj"
 STATE="utd"
-TIME="1384205324"
-SIZE="2633"
+TIME="1384206539"
+SIZE="2703"
 ENDFILE
 VALUE "<project>\synthesis\synwork\gc_compiler.so,so"
 STATE="utd"
@@ -581,17 +581,6 @@ VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\amba_bfm\b
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\test\user\testbench.v,tb_hdl"
-ENDLIST
-LIST ProjectState5.1
-LIST Impl1
-ideSTIMULUS=StateSuccess
-LIST FlowOptions
-UsePhySynth=FALSE
-UseSynth=TRUE
-ENDLIST
-Used_File_List
-ENDUsed_File_List
-ENDLIST
 ENDLIST
 ENDLIST
 ENDLIST
@@ -735,17 +724,6 @@ Used_File_List
 ENDUsed_File_List
 ENDLIST
 ENDLIST
-LIST "CoreAPB3::COREAPB3_LIB"
-LIST Impl1
-ideSTIMULUS=StateSuccess
-LIST FlowOptions
-UsePhySynth=FALSE
-UseSynth=TRUE
-ENDLIST
-Used_File_List
-ENDUsed_File_List
-ENDLIST
-ENDLIST
 ENDLIST
 LIST ExcludePackageForSimulation
 ENDLIST
@@ -763,7 +741,7 @@ SmartDesign;gc
 HDL;hdl\receive.v
 HDL;hdl\query.v
 Reports;Reports
-ACTIVEVIEW;Reports
+ACTIVEVIEW;hdl\receive.v
 ENDLIST
 LIST ModuleSubBlockList
 LIST "BIBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v","FALSE","FALSE"
