@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Thu Nov 14 13:22:34 2013 ***************************************************************************
+                          Thu Nov 14 16:44:11 2013 ***************************************************************************
 
 Product: Designer
 Release: v11.0
 Version: 11.0.0.23
 File Name: C:\Users\knekritz\UMKarts\gc\designer\impl1\gc.adb
 Design Name: gc  Design State: compile
-Last Saved: Thu Nov 14 13:18:54 2013
+Last Saved: Thu Nov 14 13:24:15 2013
 
 ***** Device Data **************************************************
 
@@ -22,7 +22,7 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Thu Nov 14 13:22:17 2013:
+Source File(s) Imported on Thu Nov 14 16:43:53 2013:
         C:\Users\knekritz\UMKarts\gc\synthesis\gc.edn
         C:\Users\knekritz\UMKarts\gc\component\work\gc\gc.pdc
 

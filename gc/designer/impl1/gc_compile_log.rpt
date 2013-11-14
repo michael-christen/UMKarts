@@ -12,12 +12,12 @@ Opened an existing Libero design gc.adb.
 'IDE_DESIGNERVIEW_ROOTDIR' set to 'C:\Users\knekritz\UMKarts\gc\designer'
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
 
- Netlist Reading Time = 1.0 seconds
+ Netlist Reading Time = 0.0 seconds
 Imported the files:
    C:\Users\knekritz\UMKarts\gc\synthesis\gc.edn
    C:\Users\knekritz\UMKarts\gc\component\work\gc\gc.pdc
 
-The Import command succeeded ( 00:00:10 )
+The Import command succeeded ( 00:00:09 )
 =====================================================================
 Parameters used to run compile:
 ===============================
@@ -520,6 +520,6 @@ Wrote status report to file: gc_compile_report.txt
 The Report command succeeded ( 00:00:00 )
 Design saved to file C:\Users\knekritz\UMKarts\gc\designer\impl1\gc.adb.
 
-The Execute Script command succeeded ( 00:00:18 )
+The Execute Script command succeeded ( 00:00:20 )
 Design closed.
 

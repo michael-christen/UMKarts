@@ -532,8 +532,8 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\designer\impl1\gc.adb,adb"
 STATE="ood"
-TIME="1384449957"
-SIZE="1719296"
+TIME="1384453455"
+SIZE="2024448"
 ENDFILE
 VALUE "<project>\designer\impl1\gc.fdb,fdb"
 STATE="ood"
@@ -542,8 +542,8 @@ SIZE="91173"
 ENDFILE
 VALUE "<project>\designer\impl1\gc.ide_des,ide_des"
 STATE="utd"
-TIME="1384449957"
-SIZE="1013"
+TIME="1384453455"
+SIZE="998"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_compile_log.rpt,log"
 STATE="utd"
@@ -552,13 +552,13 @@ SIZE="31094"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_fp\gc.pdb,pdb"
 STATE="utd"
-TIME="1384449957"
-SIZE="93184"
+TIME="1384453470"
+SIZE="100864"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_fp\gc.pro,pro"
 STATE="utd"
-TIME="1384449957"
-SIZE="1930"
+TIME="1384453513"
+SIZE="1915"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_placeroute_log.rpt,log"
 STATE="utd"
@@ -650,23 +650,23 @@ PARENT="<project>\component\work\gc_MSS\gc_MSS.cxf"
 ENDFILE
 VALUE "<project>\synthesis\gc.edn,syn_edn"
 STATE="utd"
-TIME="1384449958"
-SIZE="995321"
+TIME="1384453638"
+SIZE="1251033"
 ENDFILE
 VALUE "<project>\synthesis\gc.so,so"
 STATE="utd"
-TIME="1384449958"
-SIZE="207"
+TIME="1384453638"
+SIZE="202"
 ENDFILE
 VALUE "<project>\synthesis\gc_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1384449958"
+TIME="1384453638"
 SIZE="633"
 ENDFILE
 VALUE "<project>\synthesis\gc_syn.prj,prj"
 STATE="utd"
-TIME="1384449958"
-SIZE="2703"
+TIME="1384453640"
+SIZE="3359"
 ENDFILE
 VALUE "<project>\synthesis\synwork\gc_compiler.so,so"
 STATE="utd"
@@ -738,6 +738,17 @@ VALUE "<project>\component\Actel\DirectCore\CoreUARTapb\5.2.2\rtl\vlog\amba_bfm\
 VALUE "<project>\component\work\gc\CoreUARTapb_0\coreparameters.v,tb_hdl"
 VALUE "<project>\component\work\gc\CoreUARTapb_0\rtl\vlog\test\user\testbench.v,tb_hdl"
 ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 ENDLIST
 LIST "gc_MSS::work"
 FILE "<project>\component\work\gc_MSS\gc_MSS.v,hdl"
@@ -787,6 +798,17 @@ VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\amba_bfm\b
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\test\user\testbench.v,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
 ENDLIST
 ENDLIST
 ENDLIST
@@ -918,8 +940,8 @@ NAME="Synplify Pro AE"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro AE"
 LOCATION="C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 EndProfile
 NAME="ModelSim AE"
 FUNCTION="Simulation"
@@ -950,7 +972,29 @@ Used_File_List
 ENDUsed_File_List
 ENDLIST
 ENDLIST
+LIST "gc_CoreUARTapb_0_CoreUARTapb::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 LIST "gc_MSS::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST "CoreAPB3::COREAPB3_LIB"
 LIST Impl1
 ideSTIMULUS=StateSuccess
 LIST FlowOptions
@@ -974,13 +1018,7 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 StartPage;StartPage
-SmartDesign;gc
-Reports;Reports
-SmartDesign;gc_MSS
-HDL;hdl\query.v
-HDL;hdl\motor.v
-HDL;hdl\receive.v
-ACTIVEVIEW;Reports
+ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
 LIST "BIBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v","FALSE","FALSE"
@@ -1007,12 +1045,12 @@ ENDLIST
 LIST "gc::work","component\work\gc\gc.v","TRUE","FALSE"
 SUBBLOCK "gc_CoreUARTapb_0_CoreUARTapb::work","component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUARTapb.v","FALSE","FALSE"
 SUBBLOCK "gc_MSS::work","component\work\gc_MSS\gc_MSS.v","TRUE","FALSE"
+SUBBLOCK "gc_receive::work","hdl\receive.v","FALSE","FALSE"
+SUBBLOCK "gc_response_apb::work","hdl\receive.v","FALSE","FALSE"
 SUBBLOCK "gc_state::work","hdl\query.v","FALSE","FALSE"
 SUBBLOCK "motorWrapper::work","hdl\motorWrapper.v","FALSE","FALSE"
 SUBBLOCK "send_query::work","hdl\query.v","FALSE","FALSE"
 SUBBLOCK "CoreAPB3::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v","FALSE","FALSE"
-SUBBLOCK "gc_receive::work","hdl\receive.v","FALSE","FALSE"
-SUBBLOCK "gc_response_apb::work","hdl\receive.v","FALSE","FALSE"
 ENDLIST
 LIST "gc_CoreUARTapb_0_Clock_gen::work","component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Clock_gen.v","FALSE","FALSE"
 ENDLIST
@@ -1106,8 +1144,8 @@ LIST "BFM_AHBL::work","component\Actel\DirectCore\CoreUARTapb\5.2.2\rtl\vlog\amb
 SUBBLOCK "BFM_MAIN::work","component\Actel\DirectCore\CoreUARTapb\5.2.2\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
 ENDLIST
 LIST "BFM_AHBLAPB::work","component\Actel\DirectCore\CoreUARTapb\5.2.2\rtl\vlog\amba_bfm\bfm_ahblapb.v","FALSE","TRUE"
-SUBBLOCK "BFMA1l1OII::work","component\Actel\DirectCore\CoreUARTapb\5.2.2\rtl\vlog\amba_bfm\bfm_ahbtoapb.v","FALSE","TRUE"
 SUBBLOCK "BFM_MAIN::work","component\Actel\DirectCore\CoreUARTapb\5.2.2\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
+SUBBLOCK "BFMA1l1OII::work","component\Actel\DirectCore\CoreUARTapb\5.2.2\rtl\vlog\amba_bfm\bfm_ahbtoapb.v","FALSE","TRUE"
 ENDLIST
 LIST "BFM_AHBSLAVE::work","component\Actel\DirectCore\CoreUARTapb\5.2.2\rtl\vlog\amba_bfm\bfm_ahbslave.v","FALSE","TRUE"
 SUBBLOCK "BFM_AHBSLAVEEXT::work","component\Actel\DirectCore\CoreUARTapb\5.2.2\rtl\vlog\amba_bfm\bfm_ahbslaveext.v","FALSE","TRUE"
@@ -1115,8 +1153,8 @@ ENDLIST
 LIST "BFM_AHBSLAVEEXT::work","component\Actel\DirectCore\CoreUARTapb\5.2.2\rtl\vlog\amba_bfm\bfm_ahbslaveext.v","FALSE","TRUE"
 ENDLIST
 LIST "BFM_APB::work","component\Actel\DirectCore\CoreUARTapb\5.2.2\rtl\vlog\amba_bfm\bfm_apb.v","FALSE","TRUE"
-SUBBLOCK "BFMA1l1OII::work","component\Actel\DirectCore\CoreUARTapb\5.2.2\rtl\vlog\amba_bfm\bfm_ahbtoapb.v","FALSE","TRUE"
 SUBBLOCK "BFM_MAIN::work","component\Actel\DirectCore\CoreUARTapb\5.2.2\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
+SUBBLOCK "BFMA1l1OII::work","component\Actel\DirectCore\CoreUARTapb\5.2.2\rtl\vlog\amba_bfm\bfm_ahbtoapb.v","FALSE","TRUE"
 ENDLIST
 LIST "BFM_APB2APB::work","component\Actel\DirectCore\CoreUARTapb\5.2.2\rtl\vlog\amba_bfm\bfm_apbtoapb.v","FALSE","TRUE"
 ENDLIST
