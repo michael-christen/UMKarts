@@ -1,0 +1,26 @@
+
+fsm_encoding {625302532} onehot
+
+fsm_state_encoding {625302532} CUARTlIll {000001}
+
+fsm_state_encoding {625302532} CUARTOlll {000010}
+
+fsm_state_encoding {625302532} CUARTIlll {000100}
+
+fsm_state_encoding {625302532} CUARTllll {001000}
+
+fsm_state_encoding {625302532} CUARTO0ll {010000}
+
+fsm_state_encoding {625302532} CUARTI0ll {100000}
+
+fsm_registers {625302532} {CUARTO1ll[5]}  {CUARTO1ll[4]}  {CUARTO1ll[3]}  {CUARTO1ll[2]}  {CUARTO1ll[1]}  {CUARTO1ll[0]} 
+
+fsm_encoding {772307231} sequential
+
+fsm_state_encoding {772307231} 00 {00}
+
+fsm_state_encoding {772307231} 01 {01}
+
+fsm_state_encoding {772307231} 10 {10}
+
+fsm_registers {772307231} {CUARTOl0[1]}  {CUARTOl0[0]} 

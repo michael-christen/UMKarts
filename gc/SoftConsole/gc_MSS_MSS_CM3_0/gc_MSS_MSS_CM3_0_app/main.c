@@ -111,15 +111,17 @@ int main()
 
         CONTROLLER_setup_mem();
 
-        /*int x = 1;
+        int x = 1;
         LCD_init();
         while(1) {
         	LCD_printf("Hi! %d", x++);
+        	CONTROLLER_print();
         	for (d = 0; d < 5000000; d++);
         	LCD_printf("%s %s", "Hello", "World");
+        	CONTROLLER_print();
         	for (d = 0; d < 5000000; d++);
 
-        }*/
+        }
 
         while( 1 )
         {

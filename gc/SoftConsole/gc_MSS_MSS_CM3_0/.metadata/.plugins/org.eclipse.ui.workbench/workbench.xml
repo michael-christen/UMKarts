@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="14" version="2.0">
+<workbench progressCount="16" version="2.0">
 <workbenchAdvisor/>
 <window height="1007" width="1469" x="383" y="111">
 <fastViewData fastViewLocation="1024"/>
@@ -15,7 +15,7 @@
 <coolItem id="org.eclipse.cdt.ui.CElementCreationActionSet" itemType="typeToolBarContribution" x="167" y="22"/>
 <coolItem id="org.eclipse.cdt.ui.buildConfigActionSet" itemType="typeToolBarContribution" x="89" y="22"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="129" y="22"/>
-<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="53" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
@@ -38,15 +38,14 @@
 <part id="4"/>
 <part id="5"/>
 <part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="controller.h" partName="controller.h" path="C:/Users/mikechri/Downloads/gc/gc/SoftConsole/gc_MSS_MSS_CM3_0/gc_MSS_MSS_CM3_0_app/controller.h" title="controller.h" tooltip="gc_MSS_MSS_CM3_0_app/controller.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/gc_MSS_MSS_CM3_0_app/controller.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="489" selectionTopPixel="178"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="controller.c" partName="controller.c" path="C:/Users/mikechri/Downloads/gc/gc/SoftConsole/gc_MSS_MSS_CM3_0/gc_MSS_MSS_CM3_0_app/controller.c" title="controller.c" tooltip="gc_MSS_MSS_CM3_0_app/controller.c" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="controller.c" partName="controller.c" path="C:/Users/knekritz/UMKarts/gc/SoftConsole/gc_MSS_MSS_CM3_0/gc_MSS_MSS_CM3_0_app/controller.c" title="controller.c" tooltip="gc_MSS_MSS_CM3_0_app/controller.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/gc_MSS_MSS_CM3_0_app/controller.c"/>
 <editorState selectionHorizontalPixel="0" selectionLength="18" selectionOffset="193" selectionTopPixel="0"/>
 </editor>
@@ -54,9 +53,9 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/gc_MSS_MSS_CM3_0_hw_platform/CMSIS/a2fxxxm3.h"/>
 <editorState selectionHorizontalPixel="0" selectionLength="16" selectionOffset="46036" selectionTopPixel="17731"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Users/mikechri/Downloads/gc/gc/SoftConsole/gc_MSS_MSS_CM3_0/gc_MSS_MSS_CM3_0_app/main.c" title="main.c" tooltip="gc_MSS_MSS_CM3_0_app/main.c" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Users/knekritz/UMKarts/gc/SoftConsole/gc_MSS_MSS_CM3_0/gc_MSS_MSS_CM3_0_app/main.c" title="main.c" tooltip="gc_MSS_MSS_CM3_0_app/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/gc_MSS_MSS_CM3_0_app/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2295" selectionTopPixel="1275"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2322" selectionTopPixel="1275"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="mytimer.c" partName="mytimer.c" path="C:/Users/mikechri/Downloads/gc/gc/SoftConsole/gc_MSS_MSS_CM3_0/gc_MSS_MSS_CM3_0_app/mytimer.c" title="mytimer.c" tooltip="gc_MSS_MSS_CM3_0_app/mytimer.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/gc_MSS_MSS_CM3_0_app/mytimer.c"/>
@@ -65,6 +64,22 @@
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="mytimer.h" partName="mytimer.h" path="C:/Users/mikechri/Downloads/gc/gc/SoftConsole/gc_MSS_MSS_CM3_0/gc_MSS_MSS_CM3_0_app/mytimer.h" title="mytimer.h" tooltip="gc_MSS_MSS_CM3_0_app/mytimer.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/gc_MSS_MSS_CM3_0_app/mytimer.h"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="1521"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="core_uart_apb.h" partName="core_uart_apb.h" path="C:/Users/knekritz/UMKarts/gc/SoftConsole/gc_MSS_MSS_CM3_0/gc_MSS_MSS_CM3_0_hw_platform/drivers/CoreUARTapb/core_uart_apb.h" title="core_uart_apb.h" tooltip="gc_MSS_MSS_CM3_0_hw_platform/drivers/CoreUARTapb/core_uart_apb.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/gc_MSS_MSS_CM3_0_hw_platform/drivers/CoreUARTapb/core_uart_apb.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="16050" selectionTopPixel="1419"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="lcd.c" partName="lcd.c" path="C:/Users/knekritz/UMKarts/gc/SoftConsole/gc_MSS_MSS_CM3_0/gc_MSS_MSS_CM3_0_app/lcd.c" title="lcd.c" tooltip="gc_MSS_MSS_CM3_0_app/lcd.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/gc_MSS_MSS_CM3_0_app/lcd.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="651" selectionTopPixel="233"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="controller.h" partName="controller.h" path="C:/Users/knekritz/UMKarts/gc/SoftConsole/gc_MSS_MSS_CM3_0/gc_MSS_MSS_CM3_0_app/controller.h" title="controller.h" tooltip="gc_MSS_MSS_CM3_0_app/controller.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/gc_MSS_MSS_CM3_0_app/controller.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="16" selectionOffset="233" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="lcd.h" partName="lcd.h" path="C:/Users/knekritz/UMKarts/gc/SoftConsole/gc_MSS_MSS_CM3_0/gc_MSS_MSS_CM3_0_app/lcd.h" title="lcd.h" tooltip="gc_MSS_MSS_CM3_0_app/lcd.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/gc_MSS_MSS_CM3_0_app/lcd.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="159" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -97,10 +112,10 @@
 <view id="org.eclipse.debug.ui.RegisterView" partName="Registers">
 <viewState/>
 </view>
-<view id="org.eclipse.cdt.make.ui.views.MakeView" partName="Make Targets"/>
 <view id="org.eclipse.cdt.debug.ui.DisassemblyView" partName="Disassembly">
 <viewState/>
 </view>
+<view id="org.eclipse.cdt.make.ui.views.MakeView" partName="Make Targets"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>&#x0A;<category IMemento.internal.id="Warnings"/>
@@ -117,7 +132,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.debug.ui.DebugView" activePerspective="org.eclipse.debug.ui.DebugPerspective">
+<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.eclipse.debug.ui.DebugPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.cdt.internal.ui.CPerspectiveFactory" id="org.eclipse.cdt.ui.CPerspective" label="C/C++"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -339,7 +354,156 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gc_MSS_MSS_CM3_0_hw_platform/drivers/CoreUARTapb/core_uart_apb.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gc_MSS_MSS_CM3_0_app/lcd.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gc_MSS_MSS_CM3_0_app/controller.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gc_MSS_MSS_CM3_0_app/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gc_MSS_MSS_CM3_0_app/lcd.h"/>
+</editors>
+<item historyLabel="lcd.c" index="1">
+<position info="not_deleted" x="186" y="18"/>
+</item>
+<item historyLabel="controller.h" index="2">
+<position info="not_deleted" x="136" y="27"/>
+</item>
+<item historyLabel="lcd.c" index="1">
+<position info="not_deleted" x="176" y="0"/>
+</item>
+<item historyLabel="controller.h" index="2">
+<position info="not_deleted" x="233" y="16"/>
+</item>
+<item historyLabel="lcd.c" index="1">
+<position info="not_deleted" x="503" y="15"/>
+</item>
+<item historyLabel="core_uart_apb.h" index="0">
+<position info="not_deleted" x="8052" y="30"/>
+</item>
+<item historyLabel="lcd.c" index="1">
+<position info="not_deleted" x="503" y="15"/>
+</item>
+<item historyLabel="lcd.c" index="1">
+<position info="not_deleted" x="286" y="0"/>
+</item>
+<item historyLabel="core_uart_apb.h" index="0">
+<position info="not_deleted" x="7319" y="29"/>
+</item>
+<item historyLabel="lcd.c" index="1">
+<position info="not_deleted" x="257" y="30"/>
+</item>
+<item historyLabel="controller.h" index="2">
+<position info="not_deleted" x="233" y="16"/>
+</item>
+<item historyLabel="lcd.c" index="1">
+<position info="not_deleted" x="257" y="30"/>
+</item>
+<item historyLabel="core_uart_apb.h" index="0">
+<position info="not_deleted" x="7319" y="29"/>
+</item>
+<item historyLabel="lcd.c" index="1">
+<position info="not_deleted" x="535" y="9"/>
+</item>
+<item historyLabel="controller.h" index="2">
+<position info="not_deleted" x="233" y="16"/>
+</item>
+<item historyLabel="core_uart_apb.h" index="0">
+<position info="not_deleted" x="4913" y="11"/>
+</item>
+<item historyLabel="controller.h" index="2">
+<position info="not_deleted" x="233" y="16"/>
+</item>
+<item historyLabel="lcd.c" index="1">
+<position info="not_deleted" x="535" y="9"/>
+</item>
+<item historyLabel="controller.h" index="2">
+<position info="not_deleted" x="233" y="16"/>
+</item>
+<item historyLabel="core_uart_apb.h" index="0">
+<position info="not_deleted" x="5050" y="9"/>
+</item>
+<item historyLabel="controller.h" index="2">
+<position info="not_deleted" x="233" y="16"/>
+</item>
+<item historyLabel="lcd.c" index="1">
+<position info="not_deleted" x="419" y="0"/>
+</item>
+<item historyLabel="controller.h" index="2">
+<position info="not_deleted" x="233" y="16"/>
+</item>
+<item historyLabel="core_uart_apb.h" index="0">
+<position info="not_deleted" x="5094" y="0"/>
+</item>
+<item historyLabel="lcd.c" index="1">
+<position info="not_deleted" x="552" y="0"/>
+</item>
+<item historyLabel="controller.h" index="2">
+<position info="not_deleted" x="233" y="16"/>
+</item>
+<item historyLabel="core_uart_apb.h" index="0">
+<position info="not_deleted" x="9998" y="9"/>
+</item>
+<item historyLabel="controller.h" index="2">
+<position info="not_deleted" x="233" y="16"/>
+</item>
+<item historyLabel="lcd.c" index="1">
+<position info="not_deleted" x="751" y="0"/>
+</item>
+<item historyLabel="core_uart_apb.h" index="0">
+<position info="not_deleted" x="9909" y="63"/>
+</item>
+<item historyLabel="lcd.c" index="1">
+<position info="not_deleted" x="734" y="1"/>
+</item>
+<item historyLabel="core_uart_apb.h" index="0">
+<position info="not_deleted" x="9909" y="63"/>
+</item>
+<item historyLabel="lcd.c" index="1">
+<position info="not_deleted" x="754" y="0"/>
+</item>
+<item historyLabel="controller.h" index="2">
+<position info="not_deleted" x="233" y="16"/>
+</item>
+<item historyLabel="core_uart_apb.h" index="0">
+<position info="not_deleted" x="15958" y="58"/>
+</item>
+<item historyLabel="controller.h" index="2">
+<position info="not_deleted" x="233" y="16"/>
+</item>
+<item historyLabel="lcd.c" index="1">
+<position info="not_deleted" x="754" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="2647" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="2295" y="0"/>
+</item>
+<item historyLabel="core_uart_apb.h" index="0">
+<position info="not_deleted" x="15910" y="0"/>
+</item>
+<item historyLabel="lcd.c" index="1">
+<position info="not_deleted" x="262" y="0"/>
+</item>
+<item historyLabel="core_uart_apb.h" index="0">
+<position info="not_deleted" x="15967" y="0"/>
+</item>
+<item historyLabel="lcd.c" index="1">
+<position info="not_deleted" x="651" y="0"/>
+</item>
+<item historyLabel="core_uart_apb.h" index="0">
+<position info="not_deleted" x="16050" y="0"/>
+</item>
+<item historyLabel="lcd.h" index="4">
+<position info="not_deleted" x="159" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="2675" y="0"/>
+</item>
+<item active="true" historyLabel="main.c" index="3">
+<position info="not_deleted" x="2295" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -356,6 +520,21 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="lcd.h" tooltip="gc_MSS_MSS_CM3_0_app/lcd.h">
+<persistable path="/gc_MSS_MSS_CM3_0_app/lcd.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="controller.h" tooltip="gc_MSS_MSS_CM3_0_app/controller.h">
+<persistable path="/gc_MSS_MSS_CM3_0_app/controller.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="coreuartapb_regs.h" tooltip="gc_MSS_MSS_CM3_0_hw_platform/drivers/CoreUARTapb/coreuartapb_regs.h">
+<persistable path="/gc_MSS_MSS_CM3_0_hw_platform/drivers/CoreUARTapb/coreuartapb_regs.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="lcd.c" tooltip="gc_MSS_MSS_CM3_0_app/lcd.c">
+<persistable path="/gc_MSS_MSS_CM3_0_app/lcd.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="core_uart_apb.h" tooltip="gc_MSS_MSS_CM3_0_hw_platform/drivers/CoreUARTapb/core_uart_apb.h">
+<persistable path="/gc_MSS_MSS_CM3_0_hw_platform/drivers/CoreUARTapb/core_uart_apb.h"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="mytimer.h" tooltip="gc_MSS_MSS_CM3_0_app/mytimer.h">
 <persistable path="/gc_MSS_MSS_CM3_0_app/mytimer.h"/>
 </file>

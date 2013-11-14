@@ -11,31 +11,37 @@
     <hdl-type>Verilog</hdl-type>
     <project-description>
     </project-description>
-    <location>C:/Users/mikechri/Downloads/gc/gc/component/work/gc</location>
-    <state>GENERATED ( Wed Nov 13 21:25:00 2013 )</state>
-    <swide-toolchain>SoftConsole workspace generated to C:\Users\mikechri\Downloads\gc\gc\SoftConsole</swide-toolchain>
+    <location>C:/Users/knekritz/UMKarts/gc/component/work/gc</location>
+    <state>GENERATED ( Thu Nov 14 13:21:58 2013 )</state>
+    <swide-toolchain>SoftConsole workspace generated to C:\Users\knekritz\UMKarts\gc\SoftConsole</swide-toolchain>
   </project-settings>
   <site-map>
   </site-map>
   <fileset>
     <name>HDL File(s)</name>
-    <file>C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\component\work\gc\gc.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\gc_MSS.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\mss_tshell.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\hdl\motor.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\hdl\motorWrapper.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\hdl\pulser.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\hdl\query.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Clock_gen.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUARTapb.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\fifo_256x8_smartfusion.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Rx_async.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Tx_async.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\work\gc\gc.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\gc_MSS.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\mss_tshell.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\hdl\motor.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\hdl\motorWrapper.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\hdl\pulser.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\hdl\query.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\hdl\receive.v</file>
   </fileset>
   <fileset>
     <name>Flash Memory File(s)</name>
-    <file>C:\Users\mikechri\Downloads\gc\gc\component\work\./MSS_ENVM_0/MSS_ENVM_0.efc</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\work\./MSS_ENVM_0/MSS_ENVM_0.efc</file>
   </fileset>
   <io>
     <port-name>PWM1</port-name>
@@ -51,6 +57,12 @@
   </io>
   <io>
     <port-name>LSERVO</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>TX</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
@@ -145,9 +157,9 @@ There is one APB3 Master interface.
     </core-param>
     <core-param>
       <param-name>Slot 2:</param-name>
-      <param-value>false</param-value>
+      <param-value>true</param-value>
       <param-hdlname>APBSLOT2ENABLE</param-hdlname>
-      <param-hdlvalue>0</param-hdlvalue>
+      <param-hdlvalue>1</param-hdlvalue>
       <param-tag>spirit:hwParameter</param-tag>
     </core-param>
     <core-param>
@@ -376,10 +388,90 @@ There is one APB3 Master interface.
     </core-param>
     <core-name>CoreAPB3_0</core-name>
   </core>
+  <core type="SpiritModule">
+    <core-exttype>IP</core-exttype>
+    <core-type>SpiritModule</core-type>
+    <core-vendor>Actel</core-vendor>
+    <core-lib>DirectCore</core-lib>
+    <core-intname>CoreUARTapb</core-intname>
+    <core-ver>5.2.2</core-ver>
+    <core-desc>CoreUARTapb is a serial communication controller with a flexible serial data interface that is intended primarily for embedded systems. The controller operates as an asynchronous (UART) with a control register interface and APB wrapper.</core-desc>
+    <core-param>
+      <param-name>Fractional Part of Baud Value:</param-name>
+      <param-value>+0.0</param-value>
+      <param-hdlname>BAUD_VAL_FRCTN</param-hdlname>
+      <param-hdlvalue>0</param-hdlvalue>
+      <param-tag>spirit:hwParameter</param-tag>
+    </core-param>
+    <core-param>
+      <param-name>Enable Extra Precision:</param-name>
+      <param-value>false</param-value>
+      <param-hdlname>BAUD_VAL_FRCTN_EN</param-hdlname>
+      <param-hdlvalue>0</param-hdlvalue>
+      <param-tag>spirit:hwParameter</param-tag>
+    </core-param>
+    <core-param>
+      <param-name>Baud Value:</param-name>
+      <param-value>1</param-value>
+      <param-hdlname>BAUD_VALUE</param-hdlname>
+      <param-hdlvalue>1</param-hdlvalue>
+      <param-tag>spirit:hwParameter</param-tag>
+    </core-param>
+    <core-param>
+      <param-name>FPGA Family:</param-name>
+      <param-value>SmartFusion</param-value>
+      <param-hdlname>FAMILY</param-hdlname>
+      <param-hdlvalue>18</param-hdlvalue>
+      <param-tag>spirit:hwParameter</param-tag>
+    </core-param>
+    <core-param>
+      <param-name>Configuration:</param-name>
+      <param-value>Programmable</param-value>
+      <param-hdlname>FIXEDMODE</param-hdlname>
+      <param-hdlvalue>0</param-hdlvalue>
+      <param-tag>spirit:hwParameter</param-tag>
+    </core-param>
+    <core-param>
+      <param-name>Character Size:</param-name>
+      <param-value>7 bits</param-value>
+      <param-hdlname>PRG_BIT8</param-hdlname>
+      <param-hdlvalue>0</param-hdlvalue>
+      <param-tag>spirit:hwParameter</param-tag>
+    </core-param>
+    <core-param>
+      <param-name>Parity:</param-name>
+      <param-value>Parity Disabled</param-value>
+      <param-hdlname>PRG_PARITY</param-hdlname>
+      <param-hdlvalue>0</param-hdlvalue>
+      <param-tag>spirit:hwParameter</param-tag>
+    </core-param>
+    <core-param>
+      <param-name>RX FIFO:</param-name>
+      <param-value>Disable RX FIFO</param-value>
+      <param-hdlname>RX_FIFO</param-hdlname>
+      <param-hdlvalue>0</param-hdlvalue>
+      <param-tag>spirit:hwParameter</param-tag>
+    </core-param>
+    <core-param>
+      <param-name>RX Legacy Mode:</param-name>
+      <param-value>Disabled</param-value>
+      <param-hdlname>RX_LEGACY_MODE</param-hdlname>
+      <param-hdlvalue>0</param-hdlvalue>
+      <param-tag>spirit:hwParameter</param-tag>
+    </core-param>
+    <core-param>
+      <param-name>TX FIFO:</param-name>
+      <param-value>Disable TX FIFO</param-value>
+      <param-hdlname>TX_FIFO</param-hdlname>
+      <param-hdlvalue>0</param-hdlvalue>
+      <param-tag>spirit:hwParameter</param-tag>
+    </core-param>
+    <core-name>CoreUARTapb_0</core-name>
+  </core>
   <core type="ComponentModule">
     <core-type>ComponentModule</core-type>
     <core-exttype>HierSpiritDesign</core-exttype>
-    <core-location>C:/Users/mikechri/Downloads/gc/gc/component/work/gc_MSS</core-location>
+    <core-location>C:/Users/knekritz/UMKarts/gc/component/work/gc_MSS</core-location>
     <core-name>gc_MSS_0</core-name>
   </core>
   <core type="HdlModule">
@@ -406,6 +498,17 @@ There is one APB3 Master interface.
     <core-location>hdl\query.v</core-location>
     <core-name>send_query_0</core-name>
   </core>
+  <firmware_core type="FirmWareModule">
+    <core-exttype>IP</core-exttype>
+    <core-type>FirmWareModule</core-type>
+    <core-vendor>Actel</core-vendor>
+    <core-lib>Firmware</core-lib>
+    <core-intname>CoreUARTapb_Driver</core-intname>
+    <core-ver>3.0.105</core-ver>
+    <core-desc>Bare metal software driver for CoreUARTapb IP.
+</core-desc>
+    <core-name>CoreUARTapb_Driver_0</core-name>
+  </firmware_core>
   <firmware_core type="FirmWareModule">
     <core-exttype>IP</core-exttype>
     <core-type>FirmWareModule</core-type>
@@ -2455,6 +2558,13 @@ These files are required by the SmartFusion bare metal peripheral drivers to bui
           <fullPinName>motorWrapper_0:BIF_1</fullPinName>
           <remapAddress>0x40050100</remapAddress>
           <fullAddressSpace>0x40050100 - 0x400501FF</fullAddressSpace>
+          <range>0x00000100</range>
+        </slave>
+        <slave>
+          <name>CoreUARTapb_0</name>
+          <fullPinName>CoreUARTapb_0:APB_bif</fullPinName>
+          <remapAddress>0x40050200</remapAddress>
+          <fullAddressSpace>0x40050200 - 0x400502FF</fullAddressSpace>
           <range>0x00000100</range>
         </slave>
         <slave>

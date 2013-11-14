@@ -22,6 +22,10 @@ always @(posedge clk) begin
 	data1 <= data;
 	data2 <= data1;
 	data3 <= data2;
+
+	if (controller_init)
+		response[63:0] <= 64'h8080808080800000;
+
 	if (count == 0 && ~send && ~data2 && data3) begin
 		count <= 1;
 	end else if (count == 200) begin

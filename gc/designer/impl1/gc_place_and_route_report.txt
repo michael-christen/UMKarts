@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Wed Nov 13 21:27:46 2013 ***************************************************************************
+                          Thu Nov 14 13:23:52 2013 ***************************************************************************
 
 Product: Designer
 Release: v11.0
 Version: 11.0.0.23
-File Name: C:\Users\mikechri\Downloads\gc\gc\designer\impl1\gc.adb
+File Name: C:\Users\knekritz\UMKarts\gc\designer\impl1\gc.adb
 Design Name: gc  Design State: layout
-Last Saved: Wed Nov 13 21:26:36 2013
+Last Saved: Thu Nov 14 13:22:34 2013
 
 ***** Device Data **************************************************
 
@@ -22,9 +22,9 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Wed Nov 13 21:26:18 2013:
-        C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.edn
-        C:\Users\mikechri\Downloads\gc\gc\component\work\gc\gc.pdc
+Source File(s) Imported on Thu Nov 14 13:22:17 2013:
+        C:\Users\knekritz\UMKarts\gc\synthesis\gc.edn
+        C:\Users\knekritz\UMKarts\gc\component\work\gc\gc.pdc
 
 
 ***** CAE Variables ************************************************
@@ -50,8 +50,8 @@ Parameters used to run compile:
 Family      : SmartFusion
 Device      : A2F200M3F
 Package     : 484 FBGA
-Source      : C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.edn
-              C:\Users\mikechri\Downloads\gc\gc\component\work\gc\gc.pdc
+Source      : C:\Users\knekritz\UMKarts\gc\synthesis\gc.edn
+              C:\Users\knekritz\UMKarts\gc\component\work\gc\gc.pdc
 Format      : EDIF
 Topcell     : gc
 Speed grade : -1
@@ -377,9 +377,9 @@ Optimized macros:
   - Buffers:                0
   - Inverters:              0
   - Tieoff:                 0
-  - Logic combining:        15
+  - Logic combining:        27
 
-    Total macros optimized  15
+    Total macros optimized  27
 
 Warning: CMP503: Remapped 65 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
          pin on the enable flip-flop is not being driven by a global net.
@@ -404,8 +404,8 @@ Compile report:
 ===============
 
     Microcontroller Subsystem  Used:      1  Total:      1   (100.00%)
-    Fabric                     Used:   1709  Total:   4608   (37.09%)
-    Fabric IO (W/ clocks)      Used:      7  Total:     94   (7.45%)
+    Fabric                     Used:   2182  Total:   4608   (47.35%)
+    Fabric IO (W/ clocks)      Used:      8  Total:     94   (8.51%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
     Dedicated MSS IO           Used:      5  Total:     43   (11.63%)
@@ -433,15 +433,15 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 1180         | 1180
-    SEQ     | 529          | 529
+    COMB    | 1538         | 1538
+    SEQ     | 644          | 644
 
 I/O Function:
 
     Type                          | w/o register  | w/ register  | w/ DDR register
     ------------------------------|---------------|--------------|----------------
     Input I/O                     | 1             | 0            | 0
-    Output I/O                    | 5             | 0            | 0
+    Output I/O                    | 6             | 0            | 0
     Bidirectional I/O             | 1             | 0            | 0
     Differential Input I/O Pairs  | 0             | 0            | 0
     Differential Output I/O Pairs | 0             | 0            | 0
@@ -452,11 +452,11 @@ I/O Technology:
     --------------------------------|-------|-------|-------|--------|--------------
     I/O Standard(s)                 | Vcci  | Vref  | Input | Output | Bidirectional
     --------------------------------|-------|-------|-------|--------|--------------
-    LVTTL                           | 3.30v | N/A   | 1     | 5      | 1
+    LVTTL                           | 3.30v | N/A   | 1     | 6      | 1
 
 I/O Placement:
 
-    Locked  :   7 ( 100.00% )
+    Locked  :   8 ( 100.00% )
     Placed  :   0
     UnPlaced:   0
 
@@ -478,66 +478,66 @@ The following nets drive enable flip-flops that have been remapped to a 2-tile i
 The following nets have been assigned to a chip global resource:
     Fanout  Type          Name
     --------------------------
-    497     CLK_NET       Net   : FAB_CLK
+    612     CLK_NET       Net   : FAB_CLK
                           Driver: gc_MSS_0/MSS_CCC_0/I_MSSCCC
                           Source: ESSENTIAL
-    144     INT_NET       Net   : gc_MSS_0_M2F_RESET_N
+    256     INT_NET       Net   : gc_MSS_0_M2F_RESET_N
                           Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3/U_CLKSRC
                           Source: NETLIST
-    133     INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[4]
+    139     INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[4]
                           Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_1/U_CLKSRC
                           Source: NETLIST
-    103     INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[3]
+    116     INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[3]
                           Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_0/U_CLKSRC
                           Source: NETLIST
 
 High fanout nets in the post compile netlist:
     Fanout  Type          Name
     --------------------------
-    24      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR_0[2]
-                          Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_4
-    24      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR_1[2]
-                          Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_2
-    23      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR_2[2]
-                          Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_3
-    23      INT_NET       Net   : gc_receive_0/N_36_1
+    24      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[2]
+                          Driver: gc_MSS_0/MSS_ADLIB_INST
+    23      INT_NET       Net   : CoreAPB3_0_APBmslave1_PSELx_1
+                          Driver: CoreAPB3_0/CAPB3O0OI_1[0]
+    23      INT_NET       Net   : CoreAPB3_0_APBmslave1_PSELx_1_0
+                          Driver: CoreAPB3_0/CAPB3O0OI_1_0[0]
+    23      INT_NET       Net   : gc_receive_0/N_181
+                          Driver: gc_receive_0/count_RNICJH81_2[7]
+    23      INT_NET       Net   : gc_receive_0/N_181_1
                           Driver: gc_receive_0/count_RNICJH81_0[7]
-    23      INT_NET       Net   : gc_receive_0/N_36_0
-                          Driver: gc_receive_0/count_RNICJH81[7]
-    22      INT_NET       Net   : gc_receive_0/response_0_sqmuxa_1
-                          Driver: gc_receive_0/next_response_count_RNITLLJ3[5]
-    22      INT_NET       Net   : gc_receive_0/response_0_sqmuxa_0
-                          Driver: gc_receive_0/next_response_count_RNITLLJ3_0[5]
-    22      INT_NET       Net   : gc_receive_0/N_36
+    23      INT_NET       Net   : gc_receive_0/N_181_0
                           Driver: gc_receive_0/count_RNICJH81_1[7]
-    21      INT_NET       Net   : gc_receive_0/response_0_sqmuxa
-                          Driver: gc_receive_0/next_response_count_RNITLLJ3_1[5]
-    19      CLK_NET       Net   : CAPTURE_SWITCH_c
-                          Driver: CAPTURE_SWITCH_pad
+    22      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR_0[2]
+                          Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_3
+    22      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR_1[2]
+                          Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_4
+    22      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR_2[2]
+                          Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_2
+    21      INT_NET       Net   : gc_receive_0/response_0_sqmuxa_0
+                          Driver: gc_receive_0/next_response_count_RNICL693_0[5]
 
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
     --------------------------
-    71      INT_NET       Net   : gc_MSS_0/CoreAPB3_0_APBmslave0_PADDR[2]
+    87      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[2]
                           Driver: gc_MSS_0/MSS_ADLIB_INST
     36      CLK_NET       Net   : CAPTURE_SWITCH_c
                           Driver: CAPTURE_SWITCH_pad
-    35      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[8]
-                          Driver: gc_MSS_0/MSS_ADLIB_INST
-    23      INT_NET       Net   : gc_receive_0/N_36_1
+    23      INT_NET       Net   : CoreAPB3_0_APBmslave1_PSELx_1
+                          Driver: CoreAPB3_0/CAPB3O0OI_1[0]
+    23      INT_NET       Net   : CoreAPB3_0_APBmslave1_PSELx_1_0
+                          Driver: CoreAPB3_0/CAPB3O0OI_1_0[0]
+    23      INT_NET       Net   : gc_receive_0/N_181
+                          Driver: gc_receive_0/count_RNICJH81_2[7]
+    23      INT_NET       Net   : gc_receive_0/N_181_1
                           Driver: gc_receive_0/count_RNICJH81_0[7]
-    23      INT_NET       Net   : gc_receive_0/N_36_0
-                          Driver: gc_receive_0/count_RNICJH81[7]
-    22      INT_NET       Net   : gc_receive_0/response_0_sqmuxa_1
-                          Driver: gc_receive_0/next_response_count_RNITLLJ3[5]
-    22      INT_NET       Net   : gc_receive_0/response_0_sqmuxa_0
-                          Driver: gc_receive_0/next_response_count_RNITLLJ3_0[5]
-    22      INT_NET       Net   : gc_receive_0/N_36
+    23      INT_NET       Net   : gc_receive_0/N_181_0
                           Driver: gc_receive_0/count_RNICJH81_1[7]
-    21      INT_NET       Net   : gc_receive_0/response_0_sqmuxa
-                          Driver: gc_receive_0/next_response_count_RNITLLJ3_1[5]
-    18      INT_NET       Net   : N_142
-                          Driver: motorWrapper_0/BUS_WRITE_EN_0_a2_0
+    21      INT_NET       Net   : gc_receive_0/response_0_sqmuxa_0
+                          Driver: gc_receive_0/next_response_count_RNICL693_0[5]
+    20      INT_NET       Net   : gc_receive_0/response_0_sqmuxa
+                          Driver: gc_receive_0/next_response_count_RNICL693[5]
+    19      INT_NET       Net   : controller_init_0
+                          Driver: gc_state_0/controller_init_0
 
 
 Layout Output:
@@ -563,16 +563,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Wed Nov 13 21:26:44 2013
+Timing-driven Placer Started: Thu Nov 14 13:22:40 2013
 
-Placer Finished: Wed Nov 13 21:27:09 2013
-Total Placer CPU Time:     00:00:25
+Placer Finished: Thu Nov 14 13:23:15 2013
+Total Placer CPU Time:     00:00:35
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: gc                              Started: Wed Nov 13 21:27:15 2013
+Design: gc                              Started: Thu Nov 14 13:23:20 2013
 
  
 Iterative improvement...
@@ -580,9 +580,9 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: gc                              
-Finished: Wed Nov 13 21:27:38 2013
-Total CPU Time:     00:00:23            Total Elapsed Time: 00:00:23
-Total Memory Usage: 168.6 Mbytes
+Finished: Thu Nov 14 13:23:45 2013
+Total CPU Time:     00:00:24            Total Elapsed Time: 00:00:25
+Total Memory Usage: 174.0 Mbytes
                         o - o - o - o - o - o
 
 

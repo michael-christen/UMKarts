@@ -12,7 +12,7 @@
  * LCD display connections:
  * VDD - 5v
  * GND - ground
- * RX - TXD1 on board (UART1)
+ * RX - F5
  *
  * Example usage:
  *

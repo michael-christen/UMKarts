@@ -1,13 +1,13 @@
 # Synospys Constraint Checker(syntax only), version mapact, Build 904R, built Feb 15 2013
 # Copyright (C) 1994-2012, Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
 
-# Written on Wed Nov 13 21:26:09 2013
+# Written on Thu Nov 14 13:27:14 2013
 
 
 ##### DESIGN INFO #######################################################
 
 Top View:                "gc"
-Constraint File(s):      "C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\mss_tshell_syn.sdc"
+Constraint File(s):      "C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\mss_tshell_syn.sdc"
 
 #Run constraint checker to find more issues with constraints.
 #########################################################################

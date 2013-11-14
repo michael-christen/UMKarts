@@ -3,7 +3,7 @@
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
 Clock optimization not enabled
-2 non-gated/non-generated clock tree(s) driving 529 clock pin(s) of sequential element(s)
+2 non-gated/non-generated clock tree(s) driving 644 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
 0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
@@ -11,7 +11,7 @@ Clock optimization not enabled
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                            
 -------------------------------------------------------------------------------------------------------------------
 @K:CKID0001       CAPTURE_SWITCH      port                   33         motorWrapper_0.motor_0.capture_status_async
-@K:CKID0002       gc_MSS_0            hierarchy              496        send_query_0.wavebird_id_sent              
+@K:CKID0002       gc_MSS_0            hierarchy              611        send_query_0.wavebird_id_sent              
 ===================================================================================================================
 ===== Gated/Generated Clocks =====
 ************** None **************

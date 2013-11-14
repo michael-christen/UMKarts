@@ -1,5 +1,5 @@
 #===========================================================
-# Created by Actel SmartDesign Wed Nov 13 21:24:58 2013
+# Created by Actel SmartDesign Thu Nov 14 13:21:54 2013
 #
 # Syntax: 
 # ------- 
@@ -19,3 +19,4 @@
 
 memmap gc_response_apb_0 0x40050000;
 memmap motorWrapper_0 0x40050100;
+memmap CoreUARTapb_0 0x40050200;

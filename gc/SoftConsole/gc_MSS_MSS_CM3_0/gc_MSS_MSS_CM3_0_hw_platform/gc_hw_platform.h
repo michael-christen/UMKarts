@@ -2,7 +2,7 @@
 #define gc_HW_PLATFORM_H_
 /*****************************************************************************
 *
-*Created by Actel SmartDesign  Wed Nov 13 21:25:00 2013
+*Created by Actel SmartDesign  Thu Nov 14 13:21:58 2013
 *
 *Memory map specification for peripherals in gc
 */
@@ -13,6 +13,7 @@
 *---------------------------------------------------------------------------*/
 #define GC_RESPONSE_APB_0               0x40050000U
 #define MOTORWRAPPER_0                  0x40050100U
+#define COREUARTAPB_0                   0x40050200U
 
 
 #endif /* gc_HW_PLATFORM_H_*/
