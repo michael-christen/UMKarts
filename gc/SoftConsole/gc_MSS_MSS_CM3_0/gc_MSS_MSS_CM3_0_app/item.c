@@ -40,8 +40,12 @@ void useCurrentItem()
     if(CURRENT_ITEM == MAX_NUM_ITEMS) {
 	return;
     }
-    (*ITEM_FUNCTIONS[CURRENT_ITEM])();
+    (*ITEM_USE_FUNCTIONS[CURRENT_ITEM])();
     CURRENT_ITEM = MAX_NUM_ITEMS;
+}
+
+void hitByItem(item i) {
+    (*ITEM_HIT_FUNCTIONS[i])();
 }
 
 void use_green_shell() {
@@ -49,4 +53,11 @@ void use_green_shell() {
 void use_mushroom() {
 }
 void use_lightning() {
+}
+
+void hit_green_shell() {
+}
+void hit_mushroom() {
+}
+void hit_lightning() {
 }
