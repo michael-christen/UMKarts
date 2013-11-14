@@ -4,9 +4,9 @@ Product Version G-2012.09M-SP1
 
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 92MB)
 
-Reading constraint file: C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\mss_tshell_syn.sdc
-@L: C:\Users\knekritz\UMKarts\gc\synthesis\gc_scck.rpt 
-Printing clock  summary report in "C:\Users\knekritz\UMKarts\gc\synthesis\gc_scck.rpt" file 
+Reading constraint file: C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\mss_tshell_syn.sdc
+@L: C:\Users\mikechri\Downloads\gc\gc\synthesis\gc_scck.rpt 
+Printing clock  summary report in "C:\Users\mikechri\Downloads\gc\gc\synthesis\gc_scck.rpt" file 
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled 
 
@@ -16,12 +16,12 @@ Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s
 Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 94MB peak: 95MB)
 
 @W: BN522 |Property syn_clock_priority is not supported for this target technology
-Finished Pre Mapping Phase.@N: BN225 |Writing default property annotation file C:\Users\knekritz\UMKarts\gc\synthesis\gc.sap.
+Finished Pre Mapping Phase.@N: BN225 |Writing default property annotation file C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.sap.
 Pre-mapping successful!
 
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 41MB peak: 105MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Nov 12 17:12:18 2013
+# Wed Nov 13 21:26:10 2013
 
 ###########################################################]

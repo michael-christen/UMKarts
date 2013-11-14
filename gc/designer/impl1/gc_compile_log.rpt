@@ -9,15 +9,15 @@ Opened an existing Libero design gc.adb.
 'IDE_DESIGNERVIEW_COUNT' set to '1'
 'IDE_DESIGNERVIEW_REV0' set to 'Impl1'
 'IDE_DESIGNERVIEW_REVNUM0' set to '1'
-'IDE_DESIGNERVIEW_ROOTDIR' set to 'C:\Users\knekritz\UMKarts\gc\designer'
+'IDE_DESIGNERVIEW_ROOTDIR' set to 'C:\Users\mikechri\Downloads\gc\gc\designer'
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
 
- Netlist Reading Time = 0.0 seconds
+ Netlist Reading Time = 1.0 seconds
 Imported the files:
-   C:\Users\knekritz\UMKarts\gc\synthesis\gc.edn
-   C:\Users\knekritz\UMKarts\gc\component\work\gc\gc.pdc
+   C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.edn
+   C:\Users\mikechri\Downloads\gc\gc\component\work\gc\gc.pdc
 
-The Import command succeeded ( 00:00:08 )
+The Import command succeeded ( 00:00:10 )
 =====================================================================
 Parameters used to run compile:
 ===============================
@@ -25,8 +25,8 @@ Parameters used to run compile:
 Family      : SmartFusion
 Device      : A2F200M3F
 Package     : 484 FBGA
-Source      : C:\Users\knekritz\UMKarts\gc\synthesis\gc.edn
-              C:\Users\knekritz\UMKarts\gc\component\work\gc\gc.pdc
+Source      : C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.edn
+              C:\Users\mikechri\Downloads\gc\gc\component\work\gc\gc.pdc
 Format      : EDIF
 Topcell     : gc
 Speed grade : -1
@@ -514,12 +514,12 @@ Nets that are candidates for clock assignment and the resulting fanout:
     18      INT_NET       Net   : N_142
                           Driver: motorWrapper_0/BUS_WRITE_EN_0_a2_0
 
-The Compile command succeeded ( 00:00:04 )
+The Compile command succeeded ( 00:00:07 )
 Wrote status report to file: gc_compile_report.txt
 
 The Report command succeeded ( 00:00:00 )
-Design saved to file C:\Users\knekritz\UMKarts\gc\designer\impl1\gc.adb.
+Design saved to file C:\Users\mikechri\Downloads\gc\gc\designer\impl1\gc.adb.
 
-The Execute Script command succeeded ( 00:00:17 )
+The Execute Script command succeeded ( 00:00:19 )
 Design closed.
 

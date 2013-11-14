@@ -22,7 +22,7 @@ void setPWM(double percentage) {
                 percentage *= -1;
                 MYTIMER_set_motor_direction(-1);
         }
-        else {
+        else if(percentage >= 0.125){
                 MYTIMER_set_motor_direction(1);
         }
         if(percentage < 0.125) {
@@ -59,14 +59,14 @@ __attribute__ ((interrupt)) void Fabric_IRQHandler( void )
         printf("%d Prev \n\r", prevClock);
         printf("%d Cur \n\r", curClock);
     printf("%d Inches \n\r", diff);
-    */
+
     printf("%d Count \n\r", (int)count);
     if(status & 0x01 && count > 1000)
     {
         setPWM(.5);
         count = 0;
     }
-    /*
+
     if(status & 0x02)
     {
         printf("Compare latency %ld\n\r", (1<<27) - time);
@@ -83,8 +83,8 @@ __attribute__ ((interrupt)) void Fabric_IRQHandler( void )
 int main()
 {
         volatile int d = 0;
-        cmpVal = 200000;
-        period = 2000000;
+        cmpVal = 2000000;
+        period = 20000000;
         curClock = prevClock = 0;
    /* Setup MYTIMER */
         MYTIMER_init();
@@ -124,13 +124,13 @@ int main()
         while( 1 )
         {
 
-				//CONTROLLER_print();
+        	//CONTROLLER_print();
         	CONTROLLER_load();
                 if(CONTROLLER->a) {
-                        setPWM(0.5);
+                        setPWM(1);
                 }
                 else if(CONTROLLER->b) {
-                        setPWM(-0.5);
+                        setPWM(-1);
                 }
                 else {
                         setPWM(0);

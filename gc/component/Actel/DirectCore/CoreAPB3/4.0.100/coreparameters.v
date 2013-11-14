@@ -1,5 +1,5 @@
 //--------------------------------------------------------------------
-// Created by Actel SmartDesign Tue Nov 12 17:12:00 2013
+// Created by Actel SmartDesign Wed Nov 13 21:24:57 2013
 // Parameters for CoreAPB3
 //--------------------------------------------------------------------
 

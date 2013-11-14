@@ -1,22 +1,22 @@
 <project name="gc" version="1.1">
     <ProjectDirectory>
-        C:/Users/knekritz/UMKarts/gc/designer/impl1/gc_fp
+        C:/Users/mikechri/Downloads/gc/gc/designer/impl1/gc_fp
     </ProjectDirectory>
     <View>
         SingleSTAPLView
     </View>
     <LogFile>
-        C:/Users/knekritz/UMKarts/gc/designer/impl1/gc_fp/gc.log
+        C:/Users/mikechri/Downloads/gc/gc/designer/impl1/gc_fp/gc.log
     </LogFile>
     <SerializationOption>
         Skip
     </SerializationOption>
     <programmer status="enable" type="FlashPro3" revision="UndefRev" connection="usb2.0">
         <name>
-            69655
+            78125
         </name>
         <id>
-            69655
+            78125
         </id>
     </programmer>
     <configuration>
@@ -59,7 +59,7 @@
         </Hardware>
         <Algo type="PDB">
             <filename>
-                C:\Users\knekritz\UMKarts\gc\designer\impl1\gc_fp\gc.pdb
+                C:\Users\mikechri\Downloads\gc\gc\designer\impl1\gc_fp\gc.pdb
             </filename>
             <local>
                 projectData\gc.pdb
