@@ -7,7 +7,7 @@ typedef enum {
     GREEN_SHELL,
     MUSHROOM,
     LIGHTNING,
-    MAX_NUM_ITEMS 
+    MAX_NUM_ITEMS
 } item;
 
 
@@ -24,34 +24,18 @@ void hit_green_shell();
 void hit_mushroom();
 void hit_lightning();
 
-char *ITEM_NAMES [MAX_NUM_ITEMS] = {
-    "Green Shell",
-    "Mushroom",
-    "Lightning"
-};
+extern char *ITEM_NAMES [MAX_NUM_ITEMS];
 
-double ITEM_PROB [MAX_NUM_ITEMS] = {
-  0.50, //GREEN_SHELL
-  0.40, //MUSHROOM
-  0.10  //Lighting
-};
+extern double ITEM_PROB [MAX_NUM_ITEMS];
 
-int ITEM_WEIGHT [MAX_NUM_ITEMS];
+extern int ITEM_WEIGHT [MAX_NUM_ITEMS];
 
-int TOTAL_WEIGHT = 1000000;
+extern int TOTAL_WEIGHT;
 
-void (*ITEM_USE_FUNCTIONS[MAX_NUM_ITEMS])(void) = {
-    &use_green_shell,
-    &use_mushroom,
-    &use_lightning
-};
+extern void (*ITEM_USE_FUNCTIONS[MAX_NUM_ITEMS])(void);
 
-void (*ITEM_HIT_FUNCTIONS[MAX_NUM_ITEMS])(void) = {
-    &hit_green_shell,
-    &hit_mushroom,
-    &hit_lightning
-};
+extern void (*ITEM_HIT_FUNCTIONS[MAX_NUM_ITEMS])(void);
 
-item CURRENT_ITEM;
+extern item CURRENT_ITEM;
 
 #endif
