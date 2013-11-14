@@ -1,21 +1,27 @@
 #--  Synopsys, Inc.
 #--  Version G-2012.09M-SP1 
-#--  Project file C:\Users\knekritz\UMKarts\gc\synthesis\gc_syn.prj
+#--  Project file C:\Users\mikechri\Projects\UMKARTS\gc\synthesis\gc_syn.prj
 
 #project files
-add_file -verilog "C:/Users/knekritz/UMKarts/gc/component/work/gc_MSS/mss_tshell.v"
-add_file -verilog "C:/Users/knekritz/UMKarts/gc/component/Actel/SmartFusionMSS/MSS/2.5.106/mss_comps.v"
-add_file -verilog "C:/Users/knekritz/UMKarts/gc/component/work/gc_MSS/MSS_CCC_0/gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v"
-add_file -verilog "C:/Users/knekritz/UMKarts/gc/component/work/gc_MSS/gc_MSS.v"
-add_file -verilog "C:/Users/knekritz/UMKarts/gc/hdl/receive.v"
-add_file -verilog "C:/Users/knekritz/UMKarts/gc/hdl/query.v"
-add_file -verilog "C:/Users/knekritz/UMKarts/gc/hdl/motor.v"
-add_file -verilog "C:/Users/knekritz/UMKarts/gc/hdl/motorWrapper.v"
-add_file -verilog -lib COREAPB3_LIB "C:/Users/knekritz/UMKarts/gc/component/Actel/DirectCore/CoreAPB3/4.0.100/rtl/vlog/core_obfuscated/coreapb3_muxptob3.v"
-add_file -verilog -lib COREAPB3_LIB "C:/Users/knekritz/UMKarts/gc/component/Actel/DirectCore/CoreAPB3/4.0.100/rtl/vlog/core_obfuscated/coreapb3_iaddr_reg.v"
-add_file -verilog -lib COREAPB3_LIB "C:/Users/knekritz/UMKarts/gc/component/Actel/DirectCore/CoreAPB3/4.0.100/rtl/vlog/core_obfuscated/coreapb3.v"
-add_file -verilog "C:/Users/knekritz/UMKarts/gc/component/work/gc/gc.v"
-add_file -constraint "C:/Users/knekritz/UMKarts/gc/component/work/gc_MSS/mss_tshell_syn.sdc"
+add_file -verilog "C:/Users/mikechri/Projects/UMKARTS/gc/component/work/gc/CoreUARTapb_0/rtl/vlog/core_obfuscated/Clock_gen.v"
+add_file -verilog "C:/Users/mikechri/Projects/UMKARTS/gc/component/work/gc/CoreUARTapb_0/rtl/vlog/core_obfuscated/Tx_async.v"
+add_file -verilog "C:/Users/mikechri/Projects/UMKARTS/gc/component/work/gc/CoreUARTapb_0/rtl/vlog/core_obfuscated/Rx_async.v"
+add_file -verilog "C:/Users/mikechri/Projects/UMKARTS/gc/component/work/gc/CoreUARTapb_0/rtl/vlog/core_obfuscated/fifo_256x8_smartfusion.v"
+add_file -verilog "C:/Users/mikechri/Projects/UMKARTS/gc/component/work/gc/CoreUARTapb_0/rtl/vlog/core_obfuscated/CoreUART.v"
+add_file -verilog "C:/Users/mikechri/Projects/UMKARTS/gc/component/work/gc/CoreUARTapb_0/rtl/vlog/core_obfuscated/CoreUARTapb.v"
+add_file -verilog "C:/Users/mikechri/Projects/UMKARTS/gc/component/work/gc_MSS/mss_tshell.v"
+add_file -verilog "C:/Users/mikechri/Projects/UMKARTS/gc/component/Actel/SmartFusionMSS/MSS/2.5.106/mss_comps.v"
+add_file -verilog "C:/Users/mikechri/Projects/UMKARTS/gc/component/work/gc_MSS/MSS_CCC_0/gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v"
+add_file -verilog "C:/Users/mikechri/Projects/UMKARTS/gc/component/work/gc_MSS/gc_MSS.v"
+add_file -verilog "C:/Users/mikechri/Projects/UMKARTS/gc/hdl/query.v"
+add_file -verilog "C:/Users/mikechri/Projects/UMKARTS/gc/hdl/motor.v"
+add_file -verilog "C:/Users/mikechri/Projects/UMKARTS/gc/hdl/motorWrapper.v"
+add_file -verilog -lib COREAPB3_LIB "C:/Users/mikechri/Projects/UMKARTS/gc/component/Actel/DirectCore/CoreAPB3/4.0.100/rtl/vlog/core_obfuscated/coreapb3_muxptob3.v"
+add_file -verilog -lib COREAPB3_LIB "C:/Users/mikechri/Projects/UMKARTS/gc/component/Actel/DirectCore/CoreAPB3/4.0.100/rtl/vlog/core_obfuscated/coreapb3_iaddr_reg.v"
+add_file -verilog -lib COREAPB3_LIB "C:/Users/mikechri/Projects/UMKARTS/gc/component/Actel/DirectCore/CoreAPB3/4.0.100/rtl/vlog/core_obfuscated/coreapb3.v"
+add_file -verilog "C:/Users/mikechri/Projects/UMKARTS/gc/hdl/receive.v"
+add_file -verilog "C:/Users/mikechri/Projects/UMKARTS/gc/component/work/gc/gc.v"
+add_file -constraint "C:/Users/mikechri/Projects/UMKARTS/gc/component/work/gc_MSS/mss_tshell_syn.sdc"
 
 
 #implementation: "synthesis"

@@ -4,6 +4,7 @@
 #include "drivers/mss_uart/mss_uart.h"
 #include "controller.h"
 #include "lcd.h"
+#include "item.h"
 
 
 volatile uint32_t count;

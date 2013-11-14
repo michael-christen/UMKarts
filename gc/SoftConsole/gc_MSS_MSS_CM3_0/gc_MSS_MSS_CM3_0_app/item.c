@@ -16,6 +16,7 @@ void initItemWeights() {
 }
 
 item getNewItem() {
+	srand(time(NULL));
     int rChoice = rand() % TOTAL_WEIGHT;
     int i;
     for(i=0; i < MAX_NUM_ITEMS; ++i) {
@@ -31,12 +32,12 @@ item getNewItem() {
 void handleItemGrab() {
     //Can't get item if already have one
     if(CURRENT_ITEM != MAX_NUM_ITEMS) {
-	return;
+    	return;
     }
     CURRENT_ITEM = getNewItem();
 }
 
-void useCurrentItem() 
+void useCurrentItem() {
     if(CURRENT_ITEM == MAX_NUM_ITEMS) {
 	return;
     }

@@ -1,11 +1,14 @@
 #ifndef __ITEM__H__
 #define __ITEM__H__
-enum item {
+#include <stdlib.h>
+#include <time.h>
+
+typedef enum {
     GREEN_SHELL,
     MUSHROOM,
     LIGHTNING,
     MAX_NUM_ITEMS 
-};
+} item;
 
 
 item getNewItem();
@@ -24,8 +27,7 @@ void hit_lightning();
 char *ITEM_NAMES [MAX_NUM_ITEMS] = {
     "Green Shell",
     "Mushroom",
-    "Lightning",
-    "End of Items Sentinel"
+    "Lightning"
 };
 
 double ITEM_PROB [MAX_NUM_ITEMS] = {
@@ -38,13 +40,13 @@ int ITEM_WEIGHT [MAX_NUM_ITEMS];
 
 int TOTAL_WEIGHT = 1000000;
 
-void (*ITEM_USE_FUNCTIONS(void))[MAX_NUM_ITEMS] = {
+void (*ITEM_USE_FUNCTIONS[MAX_NUM_ITEMS])(void) = {
     &use_green_shell,
     &use_mushroom,
     &use_lightning
 };
 
-void (*ITEM_HIT_FUNCTIONS(void))[MAX_NUM_ITEMS] = {
+void (*ITEM_HIT_FUNCTIONS[MAX_NUM_ITEMS])(void) = {
     &hit_green_shell,
     &hit_mushroom,
     &hit_lightning
