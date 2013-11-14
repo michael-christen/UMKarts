@@ -1,4 +1,4 @@
-#OPTIONS:"|-top|gc|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|C:\\Users\\knekritz\\UMKarts\\gc\\synthesis\\|-I|C:\\Microsemi\\Libero_v11.0\\Synopsys\\synplify_G201209MSP1\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_v11.0\\Synopsys\\synplify_G201209MSP1\\lib\\proasic\\smartfusion.v|-encrypt|-pro|-ll|2000|-ui|-fid2|-ram|-sharing|on|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|work|-lib|work"
+#OPTIONS:"|-top|gc|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|C:\\Users\\knekritz\\UMKarts\\gc\\synthesis\\|-I|C:\\Microsemi\\Libero_v11.0\\Synopsys\\synplify_G201209MSP1\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_v11.0\\Synopsys\\synplify_G201209MSP1\\lib\\proasic\\smartfusion.v|-encrypt|-pro|-ll|2000|-ui|-fid2|-ram|-sharing|on|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|work"
 #CUR:"C:\\Microsemi\\Libero_v11.0\\Synopsys\\synplify_G201209MSP1\\bin64\\c_ver.exe":1361373522
 #CUR:"C:\\Microsemi\\Libero_v11.0\\Synopsys\\synplify_G201209MSP1\\lib\\proasic\\smartfusion.v":1360942192
 #CUR:"C:\\Microsemi\\Libero_v11.0\\Synopsys\\synplify_G201209MSP1\\lib\\vlog\\umr_capim.v":1360942352
@@ -15,13 +15,13 @@
 #CUR:"C:\\Users\\knekritz\\UMKarts\\gc\\component\\Actel\\SmartFusionMSS\\MSS\\2.5.106\\mss_comps.v":1384449951
 #CUR:"C:\\Users\\knekritz\\UMKarts\\gc\\component\\work\\gc_MSS\\MSS_CCC_0\\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":1384449957
 #CUR:"C:\\Users\\knekritz\\UMKarts\\gc\\component\\work\\gc_MSS\\gc_MSS.v":1384449957
+#CUR:"C:\\Users\\knekritz\\UMKarts\\gc\\hdl\\receive.v":1384453307
 #CUR:"C:\\Users\\knekritz\\UMKarts\\gc\\hdl\\query.v":1384449957
 #CUR:"C:\\Users\\knekritz\\UMKarts\\gc\\hdl\\motor.v":1384449957
 #CUR:"C:\\Users\\knekritz\\UMKarts\\gc\\hdl\\motorWrapper.v":1384449957
 #CUR:"C:\\Users\\knekritz\\UMKarts\\gc\\component\\Actel\\DirectCore\\CoreAPB3\\4.0.100\\rtl\\vlog\\core_obfuscated\\coreapb3_muxptob3.v":1365462977
 #CUR:"C:\\Users\\knekritz\\UMKarts\\gc\\component\\Actel\\DirectCore\\CoreAPB3\\4.0.100\\rtl\\vlog\\core_obfuscated\\coreapb3_iaddr_reg.v":1365462977
 #CUR:"C:\\Users\\knekritz\\UMKarts\\gc\\component\\Actel\\DirectCore\\CoreAPB3\\4.0.100\\rtl\\vlog\\core_obfuscated\\coreapb3.v":1365462977
-#CUR:"C:\\Users\\knekritz\\UMKarts\\gc\\hdl\\receive.v":1384453307
 #CUR:"C:\\Users\\knekritz\\UMKarts\\gc\\component\\work\\gc\\gc.v":1384453314
 #numinternalfiles:5
 #defaultlanguage:verilog
@@ -35,13 +35,13 @@
 7			"C:\Users\knekritz\UMKarts\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v" verilog
 8			"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v" verilog
 9			"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\gc_MSS.v" verilog
-10			"C:\Users\knekritz\UMKarts\gc\hdl\query.v" verilog
-11			"C:\Users\knekritz\UMKarts\gc\hdl\motor.v" verilog
-12			"C:\Users\knekritz\UMKarts\gc\hdl\motorWrapper.v" verilog
-13			"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v" verilog
-14			"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v" verilog
-15			"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v" verilog
-16			"C:\Users\knekritz\UMKarts\gc\hdl\receive.v" verilog
+10			"C:\Users\knekritz\UMKarts\gc\hdl\receive.v" verilog
+11			"C:\Users\knekritz\UMKarts\gc\hdl\query.v" verilog
+12			"C:\Users\knekritz\UMKarts\gc\hdl\motor.v" verilog
+13			"C:\Users\knekritz\UMKarts\gc\hdl\motorWrapper.v" verilog
+14			"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v" verilog
+15			"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v" verilog
+16			"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v" verilog
 17			"C:\Users\knekritz\UMKarts\gc\component\work\gc\gc.v" verilog
 #Dependency Lists(Uses List)
 0 -1
@@ -56,12 +56,12 @@
 9 8
 10 -1
 11 -1
-12 11
-13 -1
+12 -1
+13 12
 14 -1
-15 13 14
-16 -1
-17 15 5 9 16 10 12
+15 -1
+16 14 15
+17 16 5 9 10 11 13
 #Dependency Lists(Users Of)
 0 4
 1 4
@@ -74,11 +74,11 @@
 8 9
 9 17
 10 17
-11 12
-12 17
-13 15
-14 15
-15 17
+11 17
+12 13
+13 17
+14 16
+15 16
 16 17
 17 -1
 #Design Unit to File Association
@@ -105,13 +105,13 @@ module work MSS_CCC 7
 module work MSS_ALL 7
 module work gc_MSS_tmp_MSS_CCC_0_MSS_CCC 8
 module work gc_MSS 9
-module work gc_state 10
-module work send_query 10
-module work motor 11
-module work motorWrapper 12
-module work gc_receive 16
-module work gc_response_apb 16
+module work gc_receive 10
+module work gc_response_apb 10
+module work gc_state 11
+module work send_query 11
+module work motor 12
+module work motorWrapper 13
 module work gc 17
-module COREAPB3_LIB CAPB3l 13
-module COREAPB3_LIB CAPB3O 14
-module COREAPB3_LIB CoreAPB3 15
+module COREAPB3_LIB CAPB3l 14
+module COREAPB3_LIB CAPB3O 15
+module COREAPB3_LIB CoreAPB3 16
