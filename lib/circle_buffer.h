@@ -4,8 +4,10 @@
 #define EBUFEMPTY 1
 #define EBUFFULL  2
 
+#include <stddef.h>
+
 typedef struct {
-  void * volatile buffer[];
+  void ** volatile buffer;
   size_t len;
   size_t read;
   size_t write;
