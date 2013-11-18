@@ -40,6 +40,8 @@ int CircularBufferRead(CircularBuffer *cb, void **item) {
     return -EBUFEMPTY;
   }
 
+  cb->buffer[cb->read] = NULL;
+
   cb->read = cb->read + 1;
   if (cb->read >= cb->len) cb->read = 0;
 
