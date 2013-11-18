@@ -2,6 +2,7 @@
 #define __ITEM__H__
 #include <stdlib.h>
 #include <time.h>
+#include "lcd.h"
 
 typedef enum {
     GREEN_SHELL,

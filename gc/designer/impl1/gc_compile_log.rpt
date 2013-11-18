@@ -9,15 +9,15 @@ Opened an existing Libero design gc.adb.
 'IDE_DESIGNERVIEW_COUNT' set to '1'
 'IDE_DESIGNERVIEW_REV0' set to 'Impl1'
 'IDE_DESIGNERVIEW_REVNUM0' set to '1'
-'IDE_DESIGNERVIEW_ROOTDIR' set to 'C:\Users\knekritz\UMKarts\gc\designer'
+'IDE_DESIGNERVIEW_ROOTDIR' set to 'C:\Users\mikechri\Downloads\gc\gc\designer'
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
 
  Netlist Reading Time = 0.0 seconds
 Imported the files:
-   C:\Users\knekritz\UMKarts\gc\synthesis\gc.edn
-   C:\Users\knekritz\UMKarts\gc\component\work\gc\gc.pdc
+   C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.edn
+   C:\Users\mikechri\Downloads\gc\gc\component\work\gc\gc.pdc
 
-The Import command succeeded ( 00:00:09 )
+The Import command succeeded ( 00:00:10 )
 =====================================================================
 Parameters used to run compile:
 ===============================
@@ -25,8 +25,8 @@ Parameters used to run compile:
 Family      : SmartFusion
 Device      : A2F200M3F
 Package     : 484 FBGA
-Source      : C:\Users\knekritz\UMKarts\gc\synthesis\gc.edn
-              C:\Users\knekritz\UMKarts\gc\component\work\gc\gc.pdc
+Source      : C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.edn
+              C:\Users\mikechri\Downloads\gc\gc\component\work\gc\gc.pdc
 Format      : EDIF
 Topcell     : gc
 Speed grade : -1
@@ -203,38 +203,38 @@ Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPOE[28] drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPOE[29] drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPOE[30] drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPOE[31] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[0] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[1] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[2] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[3] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[4] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[5] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[6] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[7] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[8] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[9] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[10] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[11] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[12] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[13] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[14] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[15] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[16] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[17] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[18] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[19] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[20] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[21] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[22] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[23] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[24] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[25] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[26] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[27] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[28] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[29] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[30] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[31] drives no load.
+Warning: CMP201: Net gc_MSS_0/GPO_net_0[0] drives no load.
+Warning: CMP201: Net gc_MSS_0/GPO_net_0[1] drives no load.
+Warning: CMP201: Net gc_MSS_0/GPO_net_0[2] drives no load.
+Warning: CMP201: Net gc_MSS_0/GPO_net_0[3] drives no load.
+Warning: CMP201: Net gc_MSS_0/GPO_net_0[4] drives no load.
+Warning: CMP201: Net gc_MSS_0/GPO_net_0[5] drives no load.
+Warning: CMP201: Net gc_MSS_0/GPO_net_0[6] drives no load.
+Warning: CMP201: Net gc_MSS_0/GPO_net_0[7] drives no load.
+Warning: CMP201: Net gc_MSS_0/GPO_net_0[8] drives no load.
+Warning: CMP201: Net gc_MSS_0/GPO_net_0[9] drives no load.
+Warning: CMP201: Net gc_MSS_0/GPO_net_0[10] drives no load.
+Warning: CMP201: Net gc_MSS_0/GPO_net_0[11] drives no load.
+Warning: CMP201: Net gc_MSS_0/GPO_net_0[12] drives no load.
+Warning: CMP201: Net gc_MSS_0/GPO_net_0[13] drives no load.
+Warning: CMP201: Net gc_MSS_0/GPO_net_0[14] drives no load.
+Warning: CMP201: Net gc_MSS_0/GPO_net_0[15] drives no load.
+Warning: CMP201: Net gc_MSS_0/GPO_net_0[16] drives no load.
+Warning: CMP201: Net gc_MSS_0/GPO_net_0[17] drives no load.
+Warning: CMP201: Net gc_MSS_0/GPO_net_0[18] drives no load.
+Warning: CMP201: Net gc_MSS_0/GPO_net_0[19] drives no load.
+Warning: CMP201: Net gc_MSS_0/GPO_net_0[20] drives no load.
+Warning: CMP201: Net gc_MSS_0/GPO_net_0[21] drives no load.
+Warning: CMP201: Net gc_MSS_0/GPO_net_0[22] drives no load.
+Warning: CMP201: Net gc_MSS_0/GPO_net_0[23] drives no load.
+Warning: CMP201: Net gc_MSS_0/GPO_net_0[24] drives no load.
+Warning: CMP201: Net gc_MSS_0/GPO_net_0[25] drives no load.
+Warning: CMP201: Net gc_MSS_0/GPO_net_0[26] drives no load.
+Warning: CMP201: Net gc_MSS_0/GPO_net_0[27] drives no load.
+Warning: CMP201: Net gc_MSS_0/GPO_net_0[28] drives no load.
+Warning: CMP201: Net gc_MSS_0/GPO_net_0[29] drives no load.
+Warning: CMP201: Net gc_MSS_0/GPO_net_0[30] drives no load.
+Warning: CMP201: Net gc_MSS_0/GPO_net_0[31] drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_MSSINT[0] drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_MSSINT[1] drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_MSSINT[2] drives no load.
@@ -349,12 +349,12 @@ Netlist Optimization Report
 
 Optimized macros:
   - Dangling net drivers:   0
-  - Buffers:                0
+  - Buffers:                2
   - Inverters:              0
   - Tieoff:                 0
   - Logic combining:        27
 
-    Total macros optimized  27
+    Total macros optimized  29
 
 Warning: CMP503: Remapped 65 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
          pin on the enable flip-flop is not being driven by a global net.
@@ -380,7 +380,7 @@ Compile report:
 
     Microcontroller Subsystem  Used:      1  Total:      1   (100.00%)
     Fabric                     Used:   2182  Total:   4608   (47.35%)
-    Fabric IO (W/ clocks)      Used:      8  Total:     94   (8.51%)
+    Fabric IO (W/ clocks)      Used:     10  Total:     94   (10.64%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
     Dedicated MSS IO           Used:      5  Total:     43   (11.63%)
@@ -415,7 +415,7 @@ I/O Function:
 
     Type                          | w/o register  | w/ register  | w/ DDR register
     ------------------------------|---------------|--------------|----------------
-    Input I/O                     | 1             | 0            | 0
+    Input I/O                     | 3             | 0            | 0
     Output I/O                    | 6             | 0            | 0
     Bidirectional I/O             | 1             | 0            | 0
     Differential Input I/O Pairs  | 0             | 0            | 0
@@ -427,13 +427,15 @@ I/O Technology:
     --------------------------------|-------|-------|-------|--------|--------------
     I/O Standard(s)                 | Vcci  | Vref  | Input | Output | Bidirectional
     --------------------------------|-------|-------|-------|--------|--------------
-    LVTTL                           | 3.30v | N/A   | 1     | 6      | 1
+    LVTTL                           | 3.30v | N/A   | 3     | 6      | 1
 
 I/O Placement:
 
-    Locked  :   8 ( 100.00% )
+    Locked  :   8 ( 80.00% )
     Placed  :   0
-    UnPlaced:   0
+    UnPlaced:   2 ( 20.00% )
+
+Warning: Only some I/Os are locked
 
 Net information report:
 =======================
@@ -518,7 +520,7 @@ The Compile command succeeded ( 00:00:06 )
 Wrote status report to file: gc_compile_report.txt
 
 The Report command succeeded ( 00:00:00 )
-Design saved to file C:\Users\knekritz\UMKarts\gc\designer\impl1\gc.adb.
+Design saved to file C:\Users\mikechri\Downloads\gc\gc\designer\impl1\gc.adb.
 
 The Execute Script command succeeded ( 00:00:20 )
 Design closed.

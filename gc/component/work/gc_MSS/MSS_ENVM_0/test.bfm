@@ -1,5 +1,5 @@
 #===========================================================
-# Created by Actel SmartDesign Tue Nov 12 17:11:44 2013
+# Created by Actel SmartDesign Mon Nov 18 12:26:28 2013
 # 
 # 
 # Warning:  Do not modify this file, it may lead to unexpected 
@@ -64,7 +64,7 @@ procedure init;
   write w SYSREG 0x24 0x4;
   write w SYSREG 0x28 0x0;
   write w SYSREG 0x2c 0x0;
-  write w SYSREG 0x30 0x8dff8;
+  write w SYSREG 0x30 0x89ff8;
   write w SYSREG 0x34 0x0;
   write w SYSREG 0x38 0x32000000;
   write w SYSREG 0x3c 0x0;
@@ -94,10 +94,10 @@ procedure init;
   write w SYSREG 0x9c 0x7;
   write w GPIO 0x0 0x0;
   write w GPIO 0x4 0x0;
-  write w GPIO 0x8 0x0;
-  write w GPIO 0xc 0x0;
-  write w GPIO 0x10 0x0;
-  write w GPIO 0x14 0x0;
+  write w GPIO 0x8 0x2;
+  write w GPIO 0xc 0x5;
+  write w GPIO 0x10 0x2;
+  write w GPIO 0x14 0x5;
   write w GPIO 0x18 0x0;
   write w GPIO 0x1c 0x0;
   write w GPIO 0x20 0x0;
@@ -162,8 +162,9 @@ procedure scriplets;
   // DSS - Embedded I2C1 read check for DISABLED peripheral.;
   write w     I2C1 0x00 0x78 ;
   
-  // DSS - Embedded GPIO read check for DISABLED peripheral.;
+  // DSS - Embedded GPIO read check for ENABLED peripheral.;
   write w     GPIO 0x88 0xffffffff ;
+  readcheck w GPIO 0x88 0xffffffff;
   
   // DSS - Extermal Memory Write
   write w EMC 0x0000 0x9abcdef0;
