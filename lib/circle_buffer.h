@@ -52,11 +52,9 @@ int CircularBufferWrite(CircularBuffer * cb, void *item);
  * buffer is empty.
  *
  * @cb   - Initilalized circular buffer
- * @item - Pointer to void * where we can store the item. Will be null if there
- *         is an error
  * 
- * @ret  - 0 if @item is valid, -EBUFEMPTY if the buffer is empty
+ * @ret  - Pointer to item read from buffer, null if empty
  */
-int CircularBufferRead(CircularBuffer * cb, void **item);
+void * CircularBufferRead(CircularBuffer * cb);
 
 #endif

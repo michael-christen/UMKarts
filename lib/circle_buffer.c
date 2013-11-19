@@ -27,17 +27,17 @@ int CircularBufferWrite(CircularBuffer *cb, void *item) {
   return 0;
 }
 
-int CircularBufferRead(CircularBuffer *cb, void **item) {
+void * CircularBufferRead(CircularBuffer *cb) {
+  void *item;
   if (cb->read == cb->write) {
-    *item = NULL;
-    return -EBUFEMPTY;
+    return NULL;
   }
   item = cb->buffer[cb->read];
   /* Can occur if we interrupt the write functionality before the item was copied
    * into the buffer. Race condition, so safe call is to return empty buffer
    */
   if (item == NULL) {
-    return -EBUFEMPTY;
+    return NULL;
   }
 
   cb->buffer[cb->read] = NULL;
@@ -45,5 +45,5 @@ int CircularBufferRead(CircularBuffer *cb, void **item) {
   cb->read = cb->read + 1;
   if (cb->read >= cb->len) cb->read = 0;
 
-  return 0;
+  return item;
 }

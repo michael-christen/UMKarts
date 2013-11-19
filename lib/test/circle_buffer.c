@@ -6,12 +6,12 @@ void *void_ptr_buf[10];
 
 int main(int argc, char **argv) {
   int a;
-  int * a_ptr, *z_ptr;
+  int * a_ptr;
   size_t i;
   CircularBuffer cb;
   CircularBufferInit(&cb, void_ptr_buf, sizeof(void_ptr_buf) / sizeof(void *));
   a = 1;
-  if (CircularBufferRead(&cb, (void **) &z_ptr) == -EBUFEMPTY) {
+  if (CircularBufferRead(&cb) == NULL) {
     printf("Success: Returns error when reading from empty buffer\n");
   }
   else {
@@ -24,7 +24,7 @@ int main(int argc, char **argv) {
     printf("ERROR: Can't write to empty buffer\n");
   }
 
-  if (CircularBufferRead(&cb, (void **) &a_ptr) == 0) {
+  if ((a_ptr = CircularBufferRead(&cb)) != NULL) {
     printf("Success: Can read back value from buffer\n");
     if (*a_ptr == a) {
       printf("Success: Read back correct value\n");
