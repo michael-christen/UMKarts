@@ -7,7 +7,7 @@
 
 static uint8_t payload1[] = {0x23, 0x11}; /* Simple test found in digi documentation */
 static uint8_t payload2[] = {0x7D, 0x7E, 0x11, 0x13}; /* Test escaping of data */
-static uint8_t payload3[] = {0x7D}; /* Test to make sure escaping of checksum works */
+static uint8_t payload3[] = {0xFF - 0x7D}; /* Test to make sure escaping of checksum works */
 static uint8_t payload4[] = {0x1, 0x1, 0x11, 0x00, 0x00};
 
 void test_payload(uint8_t * payload, uint16_t len); 
