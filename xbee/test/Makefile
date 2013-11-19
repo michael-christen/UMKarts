@@ -4,6 +4,8 @@ TARGET = test_reader_writer
 SRCS = ../xbee_writer.c ../xbee_reader.c test_xbee_reader_writer.c
 OBJS = $(SRCS:.c=.o)
 
+.PHONY: clean
+
 all: $(TARGET)
 
 $(TARGET): $(OBJS)
@@ -13,4 +15,4 @@ $(TARGET): $(OBJS)
 	$(CC) $(CFLAGS) -o $@ -c $^
 
 clean:
-	rm *.o $(TARGETS)
+	rm *.o $(TARGET)
