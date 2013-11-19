@@ -3,7 +3,7 @@
 #include "xbee.h"
 
 struct xbee_writer {
-  struct xbee_packet * xp;
+  const struct xbee_packet * xp;
   enum {
     XBEE_WRITE_START_BYTE,
     XBEE_WRITE_FIRST_LEN,
@@ -33,7 +33,7 @@ struct xbee_writer {
  *       uinitialized AND have len > 0. This code will break if len == 0.
  * @ret - (void) No possible errors
  */
-void XBeeWriterInit(struct xbee_writer * xw, struct xbee_packet * xp);
+void XBeeWriterInit(struct xbee_writer * xw, const struct xbee_packet * xp);
 
 /**
  * Makes the XBeeWriter try to fill start to end with bytes from the packet.

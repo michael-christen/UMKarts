@@ -2,7 +2,7 @@
 
 static uint8_t _check_escape(uint8_t data); 
 
-void XBeeWriterInit(struct xbee_writer * xw, struct xbee_packet * xp) {
+void XBeeWriterInit(struct xbee_writer * xw, const struct xbee_packet * xp) {
   xw->xp = xp;
   xw->state = XBEE_WRITE_START_BYTE;
   xw->pos = 0;
