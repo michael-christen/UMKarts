@@ -2,6 +2,7 @@
 #include <stdint.h>
 #include "mytimer.h"
 #include "drivers/mss_uart/mss_uart.h"
+#include "drivers/mss_gpio/mss_gpio.h"
 #include "controller.h"
 #include "lcd.h"
 #include "item.h"
@@ -34,7 +35,11 @@ void setPWM(double percentage) {
                 MYTIMER_setCompareVal(lengthOfLow);
         }
 }
-
+__attribute__ ((interrupt)) void GPIO2_IRQHandler( void ){
+	printf("Reflective sensor sees something\n\r");
+	handleItemGrab();
+	MSS_GPIO_clear_irq( MSS_GPIO_2 );
+}
 __attribute__ ((interrupt)) void Fabric_IRQHandler( void )
 {
 
@@ -112,8 +117,15 @@ int main()
 
         CONTROLLER_setup_mem();
 
+        MSS_GPIO_init();
+        MSS_GPIO_config(MSS_GPIO_2, MSS_GPIO_INPUT_MODE | MSS_GPIO_IRQ_EDGE_NEGATIVE);
+        MSS_GPIO_enable_irq(MSS_GPIO_2);
+        initItemWeights();
+
         int x = 1;
         LCD_init();
+        LCD_printf("%s %s", "Hello", "World");
+        /*
         while(1) {
         	LCD_printf("Hi! %d", x++);
         	CONTROLLER_print();
@@ -123,6 +135,7 @@ int main()
         	for (d = 0; d < 5000000; d++);
 
         }
+        */
 
         while( 1 )
         {

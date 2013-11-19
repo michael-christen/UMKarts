@@ -26,6 +26,7 @@ Report for cell gc.verilog
                GND    16      0.0        0.0
                INV     2      1.0        2.0
               MIN3     1      1.0        1.0
+            MSSINT     2      0.0        0.0
            MSS_APB     1      0.0        0.0
            MSS_CCC     1      0.0        0.0
                MX2   409      1.0      409.0
@@ -73,22 +74,22 @@ Report for cell gc.verilog
           DFN1E1P0     1      1.0        1.0
             DFN1P0     3      1.0        3.0
                    -----          ----------
-             TOTAL  2182              2144.0
+             TOTAL  2184              2144.0
 
 
   IO Cell usage:
               cell count
              BIBUF     1
-             INBUF     1
+             INBUF     3
          INBUF_MSS     3
             OUTBUF     6
         OUTBUF_MSS     2
                    -----
-             TOTAL    13
+             TOTAL    15
 
 
 Core Cells         : 2144 of 4608 (47%)
-IO Cells           : 13
+IO Cells           : 15
 
   RAM/ROM Usage Summary
 Block Rams : 0 of 8 (0%)

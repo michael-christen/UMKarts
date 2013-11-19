@@ -41,6 +41,20 @@
     <status>C:\Microsemi\Libero_v11.0\Designer/data/drcreport\warn.png</status>
     <StatusMessage>Warning</StatusMessage>
     <message>Floating Driver</message>
+    <detail>Floating output pin gc_MSS_0:M2F_GPO_5</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/gc/pins/gc_MSS_0:M2F_GPO_5</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_v11.0\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin gc_MSS_0:M2F_GPO_3</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/gc/pins/gc_MSS_0:M2F_GPO_3</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_v11.0\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
     <detail>Floating output pin gc_receive_0:count</detail>
     <crossprobe>liberoaction://cross_probe/smartdesign/gc/pins/gc_receive_0:count</crossprobe>
   </drc>

@@ -1,7 +1,7 @@
 #include "item.h"
 
 int ITEM_WEIGHT [MAX_NUM_ITEMS];
-item CURRENT_ITEM;
+item CURRENT_ITEM = MAX_NUM_ITEMS;
 
 void (*ITEM_USE_FUNCTIONS[MAX_NUM_ITEMS])(void) = {
     &use_green_shell,
@@ -46,7 +46,7 @@ void initItemWeights() {
 }
 
 item getNewItem() {
-	srand(time(NULL));
+	//srand(time(NULL));
     int rChoice = rand() % TOTAL_WEIGHT;
     int i;
     for(i=0; i < MAX_NUM_ITEMS; ++i) {
@@ -65,6 +65,7 @@ void handleItemGrab() {
     	return;
     }
     CURRENT_ITEM = getNewItem();
+    LCD_printf("Picked up %s", ITEM_NAMES[CURRENT_ITEM]);
 }
 
 void useCurrentItem() {

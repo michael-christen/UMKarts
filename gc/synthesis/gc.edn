@@ -4,7 +4,7 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timeStamp 2013 11 14 16 43 46)
+      (timeStamp 2013 11 18 12 27 3)
       (author "Synopsys, Inc.")
       (program "Synplify Pro" (version "G-2012.09M-SP1 , mapper mapact, Build 904R"))
      )
@@ -5059,8 +5059,6 @@
           (instance overflowReset_RNIIDUSG_0 (viewRef prim (cellRef OR2A (libraryRef smartfusion)))          )
           (instance compareReg_1_sqmuxa_0_a2_0 (viewRef prim (cellRef NOR2B (libraryRef smartfusion)))          )
           (instance (rename switch_syncer_RNO_2 "switch_syncer_RNO[2]") (viewRef prim (cellRef INV (libraryRef smartfusion)))          )
-          (instance reset_capture_async_1_sqmuxa_0_a2 (viewRef prim (cellRef AND2 (libraryRef smartfusion)))          )
-          (instance un1_compareReg_11_0_x2 (viewRef prim (cellRef XOR2 (libraryRef smartfusion)))          )
           (instance un1_compareReg_10_0_x2 (viewRef prim (cellRef XOR2 (libraryRef smartfusion)))          )
           (instance un1_compareReg_21_0_x2 (viewRef prim (cellRef XOR2 (libraryRef smartfusion)))          )
           (instance un1_compareReg_6_0_x2 (viewRef prim (cellRef XOR2 (libraryRef smartfusion)))          )
@@ -5075,6 +5073,8 @@
           (instance reset_interrupt_1_sqmuxa_0_a2 (viewRef prim (cellRef AND2 (libraryRef smartfusion)))          )
           (instance reset_interrupt_1_sqmuxa_0_a2_0 (viewRef prim (cellRef NOR2 (libraryRef smartfusion)))          )
           (instance reset_capture_async_1_sqmuxa_0_a2_0 (viewRef prim (cellRef AND2 (libraryRef smartfusion)))          )
+          (instance reset_capture_async_1_sqmuxa_0_a2 (viewRef prim (cellRef AND2 (libraryRef smartfusion)))          )
+          (instance un1_compareReg_11_0_x2 (viewRef prim (cellRef XOR2 (libraryRef smartfusion)))          )
           (instance counterReg7_NE_9 (viewRef prim (cellRef OR2 (libraryRef smartfusion)))          )
           (instance counterReg7_NE_1 (viewRef prim (cellRef OR2 (libraryRef smartfusion)))          )
           (instance un1_compareReg_NE_12 (viewRef prim (cellRef OR2 (libraryRef smartfusion)))          )
@@ -6823,40 +6823,6 @@
            (portRef B (instanceRef switch_syncer_RNIN337_2))
            (portRef A (instanceRef switch_syncer_RNO_2))
           ))
-          (net reset_capture_async_1_sqmuxa (joined
-           (portRef Y (instanceRef reset_capture_async_1_sqmuxa_0_a2))
-           (portRef A (instanceRef reset_capture_async_RNO_0))
-          ))
-          (net N_201 (joined
-           (portRef Y (instanceRef reset_capture_async_1_sqmuxa_0_a2_0))
-           (portRef A (instanceRef reset_interrupt_1_sqmuxa_0_a2))
-           (portRef A (instanceRef reset_capture_async_1_sqmuxa_0_a2))
-          ))
-          (net N_87 (joined
-           (portRef N_87)
-           (portRef B (instanceRef reset_capture_async_1_sqmuxa_0_a2))
-          ))
-          (net N_1185 (joined
-           (portRef Y (instanceRef un1_compareReg_11_0_x2))
-           (portRef A (instanceRef un1_compareReg_NE_9))
-          ))
-          (net (rename counterRegZ0Z_11 "counterReg[11]") (joined
-           (portRef Q (instanceRef counterReg_11))
-           (portRef D (instanceRef captureAsyncReg_11))
-           (portRef A (instanceRef bus_read_data_RNO_4_11))
-           (portRef A (instanceRef captureSyncReg_RNO_11))
-           (portRef A (instanceRef counterReg_RNO_11))
-           (portRef A (instanceRef counterReg_RNO_0_12))
-           (portRef A (instanceRef counterReg_RNIVQM41_12))
-           (portRef A (instanceRef counterReg7_11_0_x2))
-           (portRef A (instanceRef un1_compareReg_11_0_x2))
-          ))
-          (net (rename compareRegZ0Z_11 "compareReg[11]") (joined
-           (portRef Q (instanceRef compareReg_11))
-           (portRef A (instanceRef bus_read_data_RNO_5_11))
-           (portRef A (instanceRef compareReg_RNO_0_11))
-           (portRef B (instanceRef un1_compareReg_11_0_x2))
-          ))
           (net N_1183 (joined
            (portRef Y (instanceRef un1_compareReg_10_0_x2))
            (portRef B (instanceRef un1_compareReg_NE_12))
@@ -7018,6 +6984,17 @@
            (portRef Y (instanceRef counterReg7_11_0_x2))
            (portRef A (instanceRef counterReg7_NE_9))
           ))
+          (net (rename counterRegZ0Z_11 "counterReg[11]") (joined
+           (portRef Q (instanceRef counterReg_11))
+           (portRef D (instanceRef captureAsyncReg_11))
+           (portRef A (instanceRef bus_read_data_RNO_4_11))
+           (portRef A (instanceRef captureSyncReg_RNO_11))
+           (portRef A (instanceRef counterReg_RNO_11))
+           (portRef A (instanceRef counterReg_RNO_0_12))
+           (portRef A (instanceRef counterReg_RNIVQM41_12))
+           (portRef A (instanceRef un1_compareReg_11_0_x2))
+           (portRef A (instanceRef counterReg7_11_0_x2))
+          ))
           (net (rename overflowRegZ0Z_11 "overflowReg[11]") (joined
            (portRef Q (instanceRef overflowReg_11))
            (portRef A (instanceRef overflowReg_RNO_0_11))
@@ -7069,6 +7046,11 @@
            (portRef Y (instanceRef reset_interrupt_1_sqmuxa_0_a2))
            (portRef A (instanceRef reset_interrupt_RNO_0))
           ))
+          (net N_201 (joined
+           (portRef Y (instanceRef reset_capture_async_1_sqmuxa_0_a2_0))
+           (portRef A (instanceRef reset_capture_async_1_sqmuxa_0_a2))
+           (portRef A (instanceRef reset_interrupt_1_sqmuxa_0_a2))
+          ))
           (net N_199 (joined
            (portRef Y (instanceRef reset_interrupt_1_sqmuxa_0_a2_0))
            (portRef B (instanceRef reset_interrupt_1_sqmuxa_0_a2))
@@ -7080,6 +7062,24 @@
            (portRef B (instanceRef reset_capture_sync_1_sqmuxa_0_a2_1))
            (portRef B (instanceRef reset_capture_async_1_sqmuxa_0_a2_0))
            (portRef A (instanceRef un1_fabint9_i_a2_0))
+          ))
+          (net reset_capture_async_1_sqmuxa (joined
+           (portRef Y (instanceRef reset_capture_async_1_sqmuxa_0_a2))
+           (portRef A (instanceRef reset_capture_async_RNO_0))
+          ))
+          (net N_87 (joined
+           (portRef N_87)
+           (portRef B (instanceRef reset_capture_async_1_sqmuxa_0_a2))
+          ))
+          (net N_1185 (joined
+           (portRef Y (instanceRef un1_compareReg_11_0_x2))
+           (portRef A (instanceRef un1_compareReg_NE_9))
+          ))
+          (net (rename compareRegZ0Z_11 "compareReg[11]") (joined
+           (portRef Q (instanceRef compareReg_11))
+           (portRef A (instanceRef bus_read_data_RNO_5_11))
+           (portRef A (instanceRef compareReg_RNO_0_11))
+           (portRef B (instanceRef un1_compareReg_11_0_x2))
           ))
           (net (rename counterReg7_NEZ0Z_9 "counterReg7_NE_9") (joined
            (portRef Y (instanceRef counterReg7_NE_9))
@@ -12036,6 +12036,15 @@
           ))
          )
         (property orig_inst_of (string "gc_MSS_tmp_MSS_CCC_0_MSS_CCC"))
+       )
+    )
+    (cell MSSINT (cellType GENERIC)
+       (view verilog (viewType NETLIST)
+         (interface
+           (port Y (direction OUTPUT))
+           (port A (direction INPUT))
+         )
+        (property orig_inst_of (string "MSSINT"))
        )
     )
     (cell gc_CoreUARTapb_0_COREUART_0s_0s_0s_15s_0s (cellType GENERIC)
@@ -18902,6 +18911,8 @@
            (port UART_0_TXD (direction OUTPUT))
            (port UART_1_RXD (direction INPUT))
            (port UART_1_TXD (direction OUTPUT))
+           (port F2M_GPI_2_c (direction INPUT))
+           (port F2M_GPI_4_c (direction INPUT))
            (port gc_MSS_0_M2F_RESET_N (direction OUTPUT))
          )
          (contents
@@ -18916,6 +18927,10 @@
           (instance MSS_ADLIB_INST_RNI49L3_1 (viewRef prim (cellRef CLKINT (libraryRef smartfusion)))
           )
           (instance MSS_ADLIB_INST_RNI49L3 (viewRef prim (cellRef CLKINT (libraryRef smartfusion)))
+          )
+          (instance MSSINT_GPI_4 (viewRef verilog (cellRef MSSINT))
+          )
+          (instance MSSINT_GPI_2 (viewRef verilog (cellRef MSSINT))
           )
           (instance MSS_UART_1_TXD (viewRef prim (cellRef OUTBUF_MSS (libraryRef smartfusion)))
            (property is_instantiated (integer 1))
@@ -18995,6 +19010,22 @@
           (net MSS_ADLIB_INST_M2FRESETn (joined
            (portRef M2FRESETn (instanceRef MSS_ADLIB_INST))
            (portRef A (instanceRef MSS_ADLIB_INST_RNI49L3))
+          ))
+          (net MSSINT_GPI_4_Y (joined
+           (portRef Y (instanceRef MSSINT_GPI_4))
+           (portRef (member gpi 27) (instanceRef MSS_ADLIB_INST))
+          ))
+          (net F2M_GPI_4_c (joined
+           (portRef F2M_GPI_4_c)
+           (portRef A (instanceRef MSSINT_GPI_4))
+          ))
+          (net MSSINT_GPI_2_Y (joined
+           (portRef Y (instanceRef MSSINT_GPI_2))
+           (portRef (member gpi 29) (instanceRef MSS_ADLIB_INST))
+          ))
+          (net F2M_GPI_2_c (joined
+           (portRef F2M_GPI_2_c)
+           (portRef A (instanceRef MSSINT_GPI_2))
           ))
           (net UART_1_TXD (joined
            (portRef PAD (instanceRef MSS_UART_1_TXD))
@@ -19146,9 +19177,7 @@
            (portRef (member gpi 24) (instanceRef MSS_ADLIB_INST))
            (portRef (member gpi 25) (instanceRef MSS_ADLIB_INST))
            (portRef (member gpi 26) (instanceRef MSS_ADLIB_INST))
-           (portRef (member gpi 27) (instanceRef MSS_ADLIB_INST))
            (portRef (member gpi 28) (instanceRef MSS_ADLIB_INST))
-           (portRef (member gpi 29) (instanceRef MSS_ADLIB_INST))
            (portRef (member gpi 30) (instanceRef MSS_ADLIB_INST))
            (portRef (member gpi 31) (instanceRef MSS_ADLIB_INST))
            (portRef (member emcrdb 0) (instanceRef MSS_ADLIB_INST))
@@ -19737,100 +19766,100 @@
           (net (rename MSS_ADLIB_INST_GPOE_31 "MSS_ADLIB_INST_GPOE[31]") (joined
            (portRef (member gpoe 0) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_0 "MSS_ADLIB_INST_GPO[0]") (joined
+          (net (rename GPO_net_0_0 "GPO_net_0[0]") (joined
            (portRef (member gpo 31) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_1 "MSS_ADLIB_INST_GPO[1]") (joined
+          (net (rename GPO_net_0_1 "GPO_net_0[1]") (joined
            (portRef (member gpo 30) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_2 "MSS_ADLIB_INST_GPO[2]") (joined
+          (net (rename GPO_net_0_2 "GPO_net_0[2]") (joined
            (portRef (member gpo 29) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_3 "MSS_ADLIB_INST_GPO[3]") (joined
+          (net (rename GPO_net_0_3 "GPO_net_0[3]") (joined
            (portRef (member gpo 28) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_4 "MSS_ADLIB_INST_GPO[4]") (joined
+          (net (rename GPO_net_0_4 "GPO_net_0[4]") (joined
            (portRef (member gpo 27) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_5 "MSS_ADLIB_INST_GPO[5]") (joined
+          (net (rename GPO_net_0_5 "GPO_net_0[5]") (joined
            (portRef (member gpo 26) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_6 "MSS_ADLIB_INST_GPO[6]") (joined
+          (net (rename GPO_net_0_6 "GPO_net_0[6]") (joined
            (portRef (member gpo 25) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_7 "MSS_ADLIB_INST_GPO[7]") (joined
+          (net (rename GPO_net_0_7 "GPO_net_0[7]") (joined
            (portRef (member gpo 24) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_8 "MSS_ADLIB_INST_GPO[8]") (joined
+          (net (rename GPO_net_0_8 "GPO_net_0[8]") (joined
            (portRef (member gpo 23) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_9 "MSS_ADLIB_INST_GPO[9]") (joined
+          (net (rename GPO_net_0_9 "GPO_net_0[9]") (joined
            (portRef (member gpo 22) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_10 "MSS_ADLIB_INST_GPO[10]") (joined
+          (net (rename GPO_net_0_10 "GPO_net_0[10]") (joined
            (portRef (member gpo 21) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_11 "MSS_ADLIB_INST_GPO[11]") (joined
+          (net (rename GPO_net_0_11 "GPO_net_0[11]") (joined
            (portRef (member gpo 20) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_12 "MSS_ADLIB_INST_GPO[12]") (joined
+          (net (rename GPO_net_0_12 "GPO_net_0[12]") (joined
            (portRef (member gpo 19) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_13 "MSS_ADLIB_INST_GPO[13]") (joined
+          (net (rename GPO_net_0_13 "GPO_net_0[13]") (joined
            (portRef (member gpo 18) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_14 "MSS_ADLIB_INST_GPO[14]") (joined
+          (net (rename GPO_net_0_14 "GPO_net_0[14]") (joined
            (portRef (member gpo 17) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_15 "MSS_ADLIB_INST_GPO[15]") (joined
+          (net (rename GPO_net_0_15 "GPO_net_0[15]") (joined
            (portRef (member gpo 16) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_16 "MSS_ADLIB_INST_GPO[16]") (joined
+          (net (rename GPO_net_0_16 "GPO_net_0[16]") (joined
            (portRef (member gpo 15) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_17 "MSS_ADLIB_INST_GPO[17]") (joined
+          (net (rename GPO_net_0_17 "GPO_net_0[17]") (joined
            (portRef (member gpo 14) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_18 "MSS_ADLIB_INST_GPO[18]") (joined
+          (net (rename GPO_net_0_18 "GPO_net_0[18]") (joined
            (portRef (member gpo 13) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_19 "MSS_ADLIB_INST_GPO[19]") (joined
+          (net (rename GPO_net_0_19 "GPO_net_0[19]") (joined
            (portRef (member gpo 12) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_20 "MSS_ADLIB_INST_GPO[20]") (joined
+          (net (rename GPO_net_0_20 "GPO_net_0[20]") (joined
            (portRef (member gpo 11) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_21 "MSS_ADLIB_INST_GPO[21]") (joined
+          (net (rename GPO_net_0_21 "GPO_net_0[21]") (joined
            (portRef (member gpo 10) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_22 "MSS_ADLIB_INST_GPO[22]") (joined
+          (net (rename GPO_net_0_22 "GPO_net_0[22]") (joined
            (portRef (member gpo 9) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_23 "MSS_ADLIB_INST_GPO[23]") (joined
+          (net (rename GPO_net_0_23 "GPO_net_0[23]") (joined
            (portRef (member gpo 8) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_24 "MSS_ADLIB_INST_GPO[24]") (joined
+          (net (rename GPO_net_0_24 "GPO_net_0[24]") (joined
            (portRef (member gpo 7) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_25 "MSS_ADLIB_INST_GPO[25]") (joined
+          (net (rename GPO_net_0_25 "GPO_net_0[25]") (joined
            (portRef (member gpo 6) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_26 "MSS_ADLIB_INST_GPO[26]") (joined
+          (net (rename GPO_net_0_26 "GPO_net_0[26]") (joined
            (portRef (member gpo 5) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_27 "MSS_ADLIB_INST_GPO[27]") (joined
+          (net (rename GPO_net_0_27 "GPO_net_0[27]") (joined
            (portRef (member gpo 4) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_28 "MSS_ADLIB_INST_GPO[28]") (joined
+          (net (rename GPO_net_0_28 "GPO_net_0[28]") (joined
            (portRef (member gpo 3) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_29 "MSS_ADLIB_INST_GPO[29]") (joined
+          (net (rename GPO_net_0_29 "GPO_net_0[29]") (joined
            (portRef (member gpo 2) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_30 "MSS_ADLIB_INST_GPO[30]") (joined
+          (net (rename GPO_net_0_30 "GPO_net_0[30]") (joined
            (portRef (member gpo 1) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_31 "MSS_ADLIB_INST_GPO[31]") (joined
+          (net (rename GPO_net_0_31 "GPO_net_0[31]") (joined
            (portRef (member gpo 0) (instanceRef MSS_ADLIB_INST))
           ))
           (net (rename MSS_ADLIB_INST_MSSINT_0 "MSS_ADLIB_INST_MSSINT[0]") (joined
@@ -20846,6 +20875,8 @@
        (view verilog (viewType NETLIST)
          (interface
            (port CAPTURE_SWITCH (direction INPUT))
+           (port F2M_GPI_2 (direction INPUT))
+           (port F2M_GPI_4 (direction INPUT))
            (port MSS_RESET_N (direction INPUT))
            (port UART_0_RXD (direction INPUT))
            (port UART_1_RXD (direction INPUT))
@@ -20873,6 +20904,10 @@
           (instance LSERVO_pad (viewRef prim (cellRef OUTBUF (libraryRef smartfusion)))
           )
           (instance LMOTOR_pad (viewRef prim (cellRef OUTBUF (libraryRef smartfusion)))
+          )
+          (instance F2M_GPI_4_pad (viewRef prim (cellRef INBUF (libraryRef smartfusion)))
+          )
+          (instance F2M_GPI_2_pad (viewRef prim (cellRef INBUF (libraryRef smartfusion)))
           )
           (instance CAPTURE_SWITCH_pad (viewRef prim (cellRef INBUF (libraryRef smartfusion)))
           )
@@ -22009,6 +22044,22 @@
           (net CAPTURE_SWITCH (joined
            (portRef CAPTURE_SWITCH)
            (portRef PAD (instanceRef CAPTURE_SWITCH_pad))
+          ))
+          (net F2M_GPI_2_c (joined
+           (portRef Y (instanceRef F2M_GPI_2_pad))
+           (portRef F2M_GPI_2_c (instanceRef gc_MSS_0))
+          ))
+          (net F2M_GPI_2 (joined
+           (portRef F2M_GPI_2)
+           (portRef PAD (instanceRef F2M_GPI_2_pad))
+          ))
+          (net F2M_GPI_4_c (joined
+           (portRef Y (instanceRef F2M_GPI_4_pad))
+           (portRef F2M_GPI_4_c (instanceRef gc_MSS_0))
+          ))
+          (net F2M_GPI_4 (joined
+           (portRef F2M_GPI_4)
+           (portRef PAD (instanceRef F2M_GPI_4_pad))
           ))
           (net LMOTOR_c (joined
            (portRef LMOTOR_c (instanceRef motorWrapper_0))
