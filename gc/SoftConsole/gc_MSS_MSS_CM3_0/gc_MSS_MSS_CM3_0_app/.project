@@ -3,7 +3,8 @@
 	<name>gc_MSS_MSS_CM3_0_app</name>
 	<comment></comment>
 	<projects>
-        <project> gc_MSS_MSS_CM3_0_hw_platform </project>
+		<project>gc_MSS_MSS_CM3_0_hw_platform</project>
+		<project>lib</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
