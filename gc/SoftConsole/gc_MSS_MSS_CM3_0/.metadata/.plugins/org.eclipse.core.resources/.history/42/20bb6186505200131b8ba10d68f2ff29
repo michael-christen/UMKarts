@@ -1,0 +1,16 @@
+/*
+ * flashmem.h
+ *
+ *  Created on: Nov 20, 2013
+ *      Author: knekritz
+ */
+
+#ifndef FLASHMEM_H_
+#define FLASHMEM_H_
+
+
+void flash_init(int write);
+
+void flash_read();
+
+#endif /* FLASHMEM_H_ */
