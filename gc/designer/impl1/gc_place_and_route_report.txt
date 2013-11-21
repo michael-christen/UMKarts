@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Mon Nov 18 12:32:45 2013 ***************************************************************************
+                          Wed Nov 20 19:27:14 2013 ***************************************************************************
 
 Product: Designer
 Release: v11.0
 Version: 11.0.0.23
-File Name: C:\Users\mikechri\Downloads\gc\gc\designer\impl1\gc.adb
+File Name: C:\Users\knekritz\UMKarts\gc\designer\impl1\gc.adb
 Design Name: gc  Design State: layout
-Last Saved: Mon Nov 18 12:29:11 2013
+Last Saved: Wed Nov 20 19:25:55 2013
 
 ***** Device Data **************************************************
 
@@ -22,9 +22,9 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Mon Nov 18 12:27:08 2013:
-        C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.edn
-        C:\Users\mikechri\Downloads\gc\gc\component\work\gc\gc.pdc
+Source File(s) Imported on Wed Nov 20 19:25:34 2013:
+        C:\Users\knekritz\UMKarts\gc\synthesis\gc.edn
+        C:\Users\knekritz\UMKarts\gc\component\work\gc\gc.pdc
 
 
 ***** CAE Variables ************************************************
@@ -50,8 +50,8 @@ Parameters used to run compile:
 Family      : SmartFusion
 Device      : A2F200M3F
 Package     : 484 FBGA
-Source      : C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.edn
-              C:\Users\mikechri\Downloads\gc\gc\component\work\gc\gc.pdc
+Source      : C:\Users\knekritz\UMKarts\gc\synthesis\gc.edn
+              C:\Users\knekritz\UMKarts\gc\component\work\gc\gc.pdc
 Format      : EDIF
 Topcell     : gc
 Speed grade : -1
@@ -93,10 +93,6 @@ Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_I2C0SMBUSNO drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_I2C1SMBUSNO drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_I2C0SMBALERTNO drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_I2C1SMBALERTNO drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_SPI0DO drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_SPI0DOE drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_SPI0CLKO drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_SPI0MODE drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_I2C0SDAO drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_I2C0SCLO drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_SPI1DO drives no load.
@@ -125,7 +121,6 @@ Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_LVTTL9 drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_LVTTL2 drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_SDD1 drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_LVTTL5 drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_SDD0 drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_LVTTL10 drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_LVTTL8 drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_LVTTL0 drives no load.
@@ -268,14 +263,13 @@ Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_MSSINT[4] drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_MSSINT[5] drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_MSSINT[6] drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_MSSINT[7] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_SPI0SSO[0] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_SPI0SSO[1] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_SPI0SSO[2] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_SPI0SSO[3] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_SPI0SSO[4] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_SPI0SSO[5] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_SPI0SSO[6] drives no load.
-Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_SPI0SSO[7] drives no load.
+Warning: CMP201: Net gc_MSS_0/SPI0SSO_net_0[1] drives no load.
+Warning: CMP201: Net gc_MSS_0/SPI0SSO_net_0[2] drives no load.
+Warning: CMP201: Net gc_MSS_0/SPI0SSO_net_0[3] drives no load.
+Warning: CMP201: Net gc_MSS_0/SPI0SSO_net_0[4] drives no load.
+Warning: CMP201: Net gc_MSS_0/SPI0SSO_net_0[5] drives no load.
+Warning: CMP201: Net gc_MSS_0/SPI0SSO_net_0[6] drives no load.
+Warning: CMP201: Net gc_MSS_0/SPI0SSO_net_0[7] drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_SPI1SSO[0] drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_SPI1SSO[1] drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_SPI1SSO[2] drives no load.
@@ -384,7 +378,7 @@ Optimized macros:
 Warning: CMP503: Remapped 65 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
          pin on the enable flip-flop is not being driven by a global net.
 
-There were 0 error(s) and 291 warning(s) in this design.
+There were 0 error(s) and 285 warning(s) in this design.
 =====================================================================
 
 Reading previous post-compile physical placement constraints.
@@ -407,8 +401,8 @@ Compile report:
     Fabric                     Used:   2182  Total:   4608   (47.35%)
     Fabric IO (W/ clocks)      Used:     10  Total:     94   (10.64%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
-    Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
-    Dedicated MSS IO           Used:      5  Total:     43   (11.63%)
+    Dedicated Analog IO        Used:      2  Total:     32   (6.25%)
+    Dedicated MSS IO           Used:      9  Total:     43   (20.93%)
     GLOBAL (Chip+Quadrant)     Used:      3  Total:     15   (20.00%)
     MSS GLOBAL                 Used:      3  Total:      3   (100.00%)
     On-chip RC oscillator      Used:      1  Total:      1   (100.00%)
@@ -456,11 +450,9 @@ I/O Technology:
 
 I/O Placement:
 
-    Locked  :   8 ( 80.00% )
+    Locked  :  10 ( 100.00% )
     Placed  :   0
-    UnPlaced:   2 ( 20.00% )
-
-Warning: Only some I/Os are locked
+    UnPlaced:   0
 
 Net information report:
 =======================
@@ -565,16 +557,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Mon Nov 18 12:31:31 2013
+Timing-driven Placer Started: Wed Nov 20 19:26:02 2013
 
-Placer Finished: Mon Nov 18 12:32:06 2013
-Total Placer CPU Time:     00:00:35
+Placer Finished: Wed Nov 20 19:26:36 2013
+Total Placer CPU Time:     00:00:34
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: gc                              Started: Mon Nov 18 12:32:14 2013
+Design: gc                              Started: Wed Nov 20 19:26:42 2013
 
  
 Iterative improvement...
@@ -582,9 +574,9 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: gc                              
-Finished: Mon Nov 18 12:32:36 2013
-Total CPU Time:     00:00:22            Total Elapsed Time: 00:00:22
-Total Memory Usage: 174.0 Mbytes
+Finished: Wed Nov 20 19:27:07 2013
+Total CPU Time:     00:00:25            Total Elapsed Time: 00:00:25
+Total Memory Usage: 174.1 Mbytes
                         o - o - o - o - o - o
 
 

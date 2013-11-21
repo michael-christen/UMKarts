@@ -11,38 +11,44 @@
     <hdl-type>Verilog</hdl-type>
     <project-description>
     </project-description>
-    <location>C:/Users/mikechri/Downloads/gc/gc/component/work/gc</location>
-    <state>GENERATED ( Mon Nov 18 12:26:52 2013 )</state>
-    <swide-toolchain>SoftConsole workspace generated to C:\Users\mikechri\Downloads\gc\gc\SoftConsole</swide-toolchain>
+    <location>C:/Users/knekritz/UMKarts/gc/component/work/gc</location>
+    <state>GENERATED ( Wed Nov 20 19:24:50 2013 )</state>
+    <swide-toolchain>SoftConsole workspace generated to C:\Users\knekritz\UMKarts\gc\SoftConsole</swide-toolchain>
   </project-settings>
   <site-map>
   </site-map>
   <fileset>
     <name>HDL File(s)</name>
-    <file>C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Clock_gen.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUARTapb.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\fifo_256x8_smartfusion.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Rx_async.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Tx_async.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\component\work\gc\gc.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\gc_MSS.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\mss_tshell.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\hdl\motor.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\hdl\motorWrapper.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\hdl\pulser.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\hdl\query.v</file>
-    <file>C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Clock_gen.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUARTapb.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\fifo_256x8_smartfusion.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Rx_async.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Tx_async.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\work\gc\gc.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\gc_MSS.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\mss_tshell.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\hdl\motor.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\hdl\motorWrapper.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\hdl\pulser.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\hdl\query.v</file>
+    <file>C:\Users\knekritz\UMKarts\gc\hdl\receive.v</file>
   </fileset>
   <fileset>
     <name>Flash Memory File(s)</name>
-    <file>C:\Users\mikechri\Downloads\gc\gc\component\work\C:/Users/mikechri/Downloads/gc/gc/component/work/gc_MSS/MSS_ENVM_0/MSS_ENVM_0.efc</file>
+    <file>C:\Users\knekritz\UMKarts\gc\component\work\C:/Users/knekritz/UMKarts/gc/component/work/gc_MSS/MSS_ENVM_0/MSS_ENVM_0.efc</file>
   </fileset>
+  <io>
+    <port-name>SPI_0_DO</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
   <io>
     <port-name>LMOTOR</port-name>
     <direction>OUT</direction>
@@ -58,6 +64,12 @@
   <io>
     <port-name>UART_1_RXD</port-name>
     <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>SPEAKER_DAC</port-name>
+    <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
@@ -86,13 +98,31 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
+    <port-name>VAREF0</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
     <port-name>UART_0_TXD</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
+    <port-name>SPI_0_SS</port-name>
+    <direction>INOUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
     <port-name>UART_0_RXD</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>SPI_0_DI</port-name>
     <direction>IN</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
@@ -118,6 +148,12 @@
   <io>
     <port-name>TX</port-name>
     <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>SPI_0_CLK</port-name>
+    <direction>INOUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
@@ -483,7 +519,7 @@ There is one APB3 Master interface.
   <core type="ComponentModule">
     <core-type>ComponentModule</core-type>
     <core-exttype>HierSpiritDesign</core-exttype>
-    <core-location>C:/Users/mikechri/Downloads/gc/gc/component/work/gc_MSS</core-location>
+    <core-location>C:/Users/knekritz/UMKarts/gc/component/work/gc_MSS</core-location>
     <core-name>gc_MSS_0</core-name>
   </core>
   <core type="HdlModule">
@@ -612,6 +648,18 @@ This driver requires the SmartFusion CMSIS-PAL to build correctly.</core-desc>
 
 This driver requires the SmartFusion CMSIS-PAL to build correctly.</core-desc>
     <core-name>MSS_RTC_Driver_0</core-name>
+  </firmware_core>
+  <firmware_core type="FirmWareModule">
+    <core-exttype>IP</core-exttype>
+    <core-type>FirmWareModule</core-type>
+    <core-vendor>Actel</core-vendor>
+    <core-lib>Firmware</core-lib>
+    <core-intname>MSS_SPI_Driver</core-intname>
+    <core-ver>2.1.100</core-ver>
+    <core-desc>SmartFusion microcontroller subsystem (MSS) SPI bare metal software driver.
+
+This driver requires the SmartFusion CMSIS-PAL to build correctly.</core-desc>
+    <core-name>MSS_SPI_Driver_0</core-name>
   </firmware_core>
   <firmware_core type="FirmWareModule">
     <core-exttype>IP</core-exttype>
@@ -7615,6 +7663,375 @@ These files are required by the SmartFusion bare metal peripheral drivers to bui
                 <field>
                   <name>ch7BufBTransferCount</name>
                   <bitNumber>15:0</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+              </register>
+            </addressBlock>
+          </memoryMap>
+        </slave>
+        <slave>
+          <name>SPI_0</name>
+          <fullPinName>
+          </fullPinName>
+          <remapAddress>0x40001000</remapAddress>
+          <fullAddressSpace>0x40001000 - 0x40001FFF</fullAddressSpace>
+          <range>0x1000</range>
+          <memoryMap>
+            <name>RegisterMap</name>
+            <addressBlock>
+              <baseAddress>0x0</baseAddress>
+              <range format="long">0x1000</range>
+              <width format="long" id="width">32</width>
+              <register>
+                <name>CONTROL</name>
+                <addressOffset>0x0</addressOffset>
+                <absoluteAddress>0x40000000</absoluteAddress>
+                <size>32</size>
+                <access>R/W</access>
+                <resetValue>0x0</resetValue>
+                <field>
+                  <name>SPH</name>
+                  <bitNumber>25</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>SPO</name>
+                  <bitNumber>24</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>TXRXDFCOUNT</name>
+                  <bitNumber>23:8</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>TX_UNDERRUN_INTERRUPT</name>
+                  <bitNumber>7</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>RX_OVERFLOW_INTERRUPT</name>
+                  <bitNumber>6</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>TX_INTERRUPT</name>
+                  <bitNumber>5</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>RX_INTERRUPT</name>
+                  <bitNumber>4</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>TRANSFER_PROTOCOL</name>
+                  <bitNumber>3:2</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>MODE</name>
+                  <bitNumber>1</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>ENABLE</name>
+                  <bitNumber>0</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+              </register>
+              <register>
+                <name>TXRXDFSIZE</name>
+                <addressOffset>0x4</addressOffset>
+                <absoluteAddress>0x40000004</absoluteAddress>
+                <size>8</size>
+                <access>R/W</access>
+                <resetValue>0x0</resetValue>
+                <field>
+                  <name>TXRXDFSIZE</name>
+                  <bitNumber>5:0</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+              </register>
+              <register>
+                <name>STATUS</name>
+                <addressOffset>0x8</addressOffset>
+                <absoluteAddress>0x40000008</absoluteAddress>
+                <size>16</size>
+                <access>R/W</access>
+                <resetValue>0x0</resetValue>
+                <field>
+                  <name>TX_FIFO_EMPTY_NEXT</name>
+                  <bitNumber>11</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>TX_FIFO_EMPTY</name>
+                  <bitNumber>10</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>TX_FIFO_FULL_NEXT</name>
+                  <bitNumber>9</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>TX_FIFO_FULL</name>
+                  <bitNumber>8</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>RX_FIFO_EMPTY_NEXT</name>
+                  <bitNumber>7</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>RX_FIFO_EMPTY</name>
+                  <bitNumber>6</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>RX_FIFO_FULL_NEXT</name>
+                  <bitNumber>5</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>RX_FIFO_FULL</name>
+                  <bitNumber>4</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>TX_UNDERRUN</name>
+                  <bitNumber>3</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>RX_OVERFLOW</name>
+                  <bitNumber>2</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>RX_DATA_RECEIVED</name>
+                  <bitNumber>1</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>TX_DATA_SENT</name>
+                  <bitNumber>0</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+              </register>
+              <register>
+                <name>INTERRUPT_CLEAR</name>
+                <addressOffset>0xC</addressOffset>
+                <absoluteAddress>0x4000000C</absoluteAddress>
+                <size>8</size>
+                <access>R/W</access>
+                <resetValue>0x0</resetValue>
+                <field>
+                  <name>TX_UNDERRUN</name>
+                  <bitNumber>3</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>RX_OVERFLOW</name>
+                  <bitNumber>2</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>RX_RDY</name>
+                  <bitNumber>1</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>TX_DONE</name>
+                  <bitNumber>0</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+              </register>
+              <register>
+                <name>RXDATA</name>
+                <addressOffset>0x10</addressOffset>
+                <absoluteAddress>0x40000010</absoluteAddress>
+                <size>32</size>
+                <access>R/W</access>
+                <resetValue>0x0</resetValue>
+                <field>
+                  <name>RXDATA</name>
+                  <bitNumber>31:0</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+              </register>
+              <register>
+                <name>TXDATA</name>
+                <addressOffset>0x14</addressOffset>
+                <absoluteAddress>0x40000014</absoluteAddress>
+                <size>32</size>
+                <access>R/W</access>
+                <resetValue>0x0</resetValue>
+                <field>
+                  <name>TXDATA</name>
+                  <bitNumber>31:0</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+              </register>
+              <register>
+                <name>SCLKO_GEN</name>
+                <addressOffset>0x18</addressOffset>
+                <absoluteAddress>0x40000018</absoluteAddress>
+                <size>8</size>
+                <access>R/W</access>
+                <resetValue>0x0</resetValue>
+                <field>
+                  <name>SCLKO_GEN</name>
+                  <bitNumber>3:0</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+              </register>
+              <register>
+                <name>SLAVE_SELECT</name>
+                <addressOffset>0x1C</addressOffset>
+                <absoluteAddress>0x4000001C</absoluteAddress>
+                <size>8</size>
+                <access>R/W</access>
+                <resetValue>0x0</resetValue>
+                <field>
+                  <name>SLAVE_SELECT</name>
+                  <bitNumber>7:0</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+              </register>
+              <register>
+                <name>MASKED_INTERRUPT_STATUS</name>
+                <addressOffset>0x20</addressOffset>
+                <absoluteAddress>0x40000020</absoluteAddress>
+                <size>8</size>
+                <access>R/W</access>
+                <resetValue>0x0</resetValue>
+                <field>
+                  <name>TX_UNDERRUN</name>
+                  <bitNumber>3</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>RX_OVERFLOW</name>
+                  <bitNumber>2</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>RX_RDY</name>
+                  <bitNumber>1</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>TX_DONE</name>
+                  <bitNumber>0</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+              </register>
+              <register>
+                <name>RAW_INTERRUPT_STATUS</name>
+                <addressOffset>0x24</addressOffset>
+                <absoluteAddress>0x40000024</absoluteAddress>
+                <size>8</size>
+                <access>R/W</access>
+                <resetValue>0x0</resetValue>
+                <field>
+                  <name>TX_UNDERRUN</name>
+                  <bitNumber>3</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>RX_OVERFLOW</name>
+                  <bitNumber>2</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>RX_RDY</name>
+                  <bitNumber>1</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>TX_DONE</name>
+                  <bitNumber>0</bitNumber>
                   <access>R/W</access>
                   <description>
                   </description>

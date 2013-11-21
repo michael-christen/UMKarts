@@ -4,7 +4,7 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timeStamp 2013 11 18 12 27 3)
+      (timeStamp 2013 11 20 19 25 28)
       (author "Synopsys, Inc.")
       (program "Synplify Pro" (version "G-2012.09M-SP1 , mapper mapact, Build 904R"))
      )
@@ -282,6 +282,27 @@
          )
        )
     )
+    (cell BIBUF_MSS (cellType GENERIC)
+      (property ACT_CONFIG (integer 0))
+      (property ACT_PIN (string ""))
+      (property preferred (string "true"))
+      (property pad_cell (string "true"))
+      (property dont_touch (string "false"))
+       (view prim (viewType NETLIST)
+         (interface
+           (port PAD (direction INOUT)
+           (property three_state (string "E'"))
+           (property function (string "D"))
+           (property is_pad (string "true"))
+ )
+           (port Y (direction OUTPUT)
+           (property function (string "PAD"))
+ )
+           (port D (direction INPUT))
+           (port E (direction INPUT))
+         )
+       )
+    )
     (cell OUTBUF_MSS (cellType GENERIC)
       (property ACT_CONFIG (integer 0))
       (property ACT_PIN (string ""))
@@ -453,6 +474,19 @@
          (interface
            (port PAD (direction OUTPUT)
            (property function (string "D"))
+           (property is_pad (string "true"))
+ )
+           (port D (direction INPUT))
+         )
+       )
+    )
+    (cell OUTBUF_A (cellType GENERIC)
+      (property pad_cell (string "true"))
+      (property dont_use (integer 1))
+      (property dont_touch (string "true"))
+       (view prim (viewType NETLIST)
+         (interface
+           (port PAD (direction OUTPUT)
            (property is_pad (string "true"))
  )
            (port D (direction INPUT))
@@ -796,6 +830,19 @@
            (port Y (direction OUTPUT)
            (property function (string "PAD"))
  )
+           (port PAD (direction INPUT)
+           (property is_pad (string "true"))
+ )
+         )
+       )
+    )
+    (cell INBUF_A (cellType GENERIC)
+      (property pad_cell (string "true"))
+      (property dont_use (integer 1))
+      (property dont_touch (string "true"))
+       (view prim (viewType NETLIST)
+         (interface
+           (port Y (direction OUTPUT))
            (port PAD (direction INPUT)
            (property is_pad (string "true"))
  )
@@ -5059,15 +5106,6 @@
           (instance overflowReset_RNIIDUSG_0 (viewRef prim (cellRef OR2A (libraryRef smartfusion)))          )
           (instance compareReg_1_sqmuxa_0_a2_0 (viewRef prim (cellRef NOR2B (libraryRef smartfusion)))          )
           (instance (rename switch_syncer_RNO_2 "switch_syncer_RNO[2]") (viewRef prim (cellRef INV (libraryRef smartfusion)))          )
-          (instance un1_compareReg_10_0_x2 (viewRef prim (cellRef XOR2 (libraryRef smartfusion)))          )
-          (instance un1_compareReg_21_0_x2 (viewRef prim (cellRef XOR2 (libraryRef smartfusion)))          )
-          (instance un1_compareReg_6_0_x2 (viewRef prim (cellRef XOR2 (libraryRef smartfusion)))          )
-          (instance un1_compareReg_5_0_x2 (viewRef prim (cellRef XOR2 (libraryRef smartfusion)))          )
-          (instance un1_compareReg_4_0_x2 (viewRef prim (cellRef XOR2 (libraryRef smartfusion)))          )
-          (instance counterReg7_9_0_x2 (viewRef prim (cellRef XOR2 (libraryRef smartfusion)))          )
-          (instance un1_compareReg_29_0_x2 (viewRef prim (cellRef XOR2 (libraryRef smartfusion)))          )
-          (instance counterReg7_29_0_x2 (viewRef prim (cellRef XOR2 (libraryRef smartfusion)))          )
-          (instance counterReg7_11_0_x2 (viewRef prim (cellRef XOR2 (libraryRef smartfusion)))          )
           (instance counterReg7_12_0_x2 (viewRef prim (cellRef XOR2 (libraryRef smartfusion)))          )
           (instance un1_compareReg_15_0_x2 (viewRef prim (cellRef XOR2 (libraryRef smartfusion)))          )
           (instance reset_interrupt_1_sqmuxa_0_a2 (viewRef prim (cellRef AND2 (libraryRef smartfusion)))          )
@@ -5075,12 +5113,21 @@
           (instance reset_capture_async_1_sqmuxa_0_a2_0 (viewRef prim (cellRef AND2 (libraryRef smartfusion)))          )
           (instance reset_capture_async_1_sqmuxa_0_a2 (viewRef prim (cellRef AND2 (libraryRef smartfusion)))          )
           (instance un1_compareReg_11_0_x2 (viewRef prim (cellRef XOR2 (libraryRef smartfusion)))          )
-          (instance counterReg7_NE_9 (viewRef prim (cellRef OR2 (libraryRef smartfusion)))          )
-          (instance counterReg7_NE_1 (viewRef prim (cellRef OR2 (libraryRef smartfusion)))          )
-          (instance un1_compareReg_NE_12 (viewRef prim (cellRef OR2 (libraryRef smartfusion)))          )
+          (instance un1_compareReg_10_0_x2 (viewRef prim (cellRef XOR2 (libraryRef smartfusion)))          )
+          (instance un1_compareReg_21_0_x2 (viewRef prim (cellRef XOR2 (libraryRef smartfusion)))          )
+          (instance un1_compareReg_6_0_x2 (viewRef prim (cellRef XOR2 (libraryRef smartfusion)))          )
+          (instance un1_compareReg_5_0_x2 (viewRef prim (cellRef XOR2 (libraryRef smartfusion)))          )
           (instance un1_compareReg_NE_9 (viewRef prim (cellRef OR2 (libraryRef smartfusion)))          )
           (instance un1_compareReg_NE_6 (viewRef prim (cellRef OR2 (libraryRef smartfusion)))          )
           (instance un1_compareReg_NE_5 (viewRef prim (cellRef OR2 (libraryRef smartfusion)))          )
+          (instance un1_compareReg_4_0_x2 (viewRef prim (cellRef XOR2 (libraryRef smartfusion)))          )
+          (instance counterReg7_9_0_x2 (viewRef prim (cellRef XOR2 (libraryRef smartfusion)))          )
+          (instance un1_compareReg_29_0_x2 (viewRef prim (cellRef XOR2 (libraryRef smartfusion)))          )
+          (instance counterReg7_29_0_x2 (viewRef prim (cellRef XOR2 (libraryRef smartfusion)))          )
+          (instance counterReg7_11_0_x2 (viewRef prim (cellRef XOR2 (libraryRef smartfusion)))          )
+          (instance counterReg7_NE_9 (viewRef prim (cellRef OR2 (libraryRef smartfusion)))          )
+          (instance counterReg7_NE_1 (viewRef prim (cellRef OR2 (libraryRef smartfusion)))          )
+          (instance un1_compareReg_NE_12 (viewRef prim (cellRef OR2 (libraryRef smartfusion)))          )
           (instance (rename counterReg_RNO_0_9 "counterReg_RNO_0[9]") (viewRef prim (cellRef OR2 (libraryRef smartfusion)))          )
           (instance (rename counterReg_RNO_2_22 "counterReg_RNO_2[22]") (viewRef prim (cellRef NOR3C (libraryRef smartfusion)))          )
           (instance (rename counterReg_RNO_3_22 "counterReg_RNO_3[22]") (viewRef prim (cellRef NOR2B (libraryRef smartfusion)))          )
@@ -6740,7 +6787,7 @@
            (portRef S (instanceRef bus_read_data_RNO_0_1))
            (portRef S (instanceRef bus_read_data_RNO_0_0))
            (portRef C (instanceRef reset_capture_sync_1_sqmuxa_0_a2_1))
-           (portRef A (instanceRef reset_interrupt_1_sqmuxa_0_a2_0))
+           (portRef B (instanceRef reset_interrupt_1_sqmuxa_0_a2_0))
            (portRef A (instanceRef controlReg_1_sqmuxa_0_a2_0))
            (portRef B (instanceRef overflowReset_0_sqmuxa_0_a2_0))
           ))
@@ -6822,6 +6869,97 @@
            (portRef Q (instanceRef switch_syncer_1))
            (portRef B (instanceRef switch_syncer_RNIN337_2))
            (portRef A (instanceRef switch_syncer_RNO_2))
+          ))
+          (net N_1188 (joined
+           (portRef Y (instanceRef counterReg7_12_0_x2))
+           (portRef A (instanceRef counterReg7_NE_1))
+          ))
+          (net (rename counterRegZ0Z_12 "counterReg[12]") (joined
+           (portRef Q (instanceRef counterReg_12))
+           (portRef D (instanceRef captureAsyncReg_12))
+           (portRef B (instanceRef compareReg_RNIJ6PN_12))
+           (portRef A (instanceRef counterReg_RNO_12))
+           (portRef A (instanceRef captureSyncReg_RNO_12))
+           (portRef A (instanceRef bus_read_data_RNO_4_12))
+           (portRef B (instanceRef counterReg_RNIVQM41_12))
+           (portRef A (instanceRef counterReg7_12_0_x2))
+          ))
+          (net (rename overflowRegZ0Z_12 "overflowReg[12]") (joined
+           (portRef Q (instanceRef overflowReg_12))
+           (portRef A (instanceRef bus_read_data_RNO_2_12))
+           (portRef A (instanceRef overflowReg_RNO_0_12))
+           (portRef B (instanceRef counterReg7_12_0_x2))
+          ))
+          (net N_156_i (joined
+           (portRef Y (instanceRef un1_compareReg_15_0_x2))
+           (portRef A (instanceRef un1_compareReg_NE_12))
+          ))
+          (net (rename counterRegZ0Z_15 "counterReg[15]") (joined
+           (portRef Q (instanceRef counterReg_15))
+           (portRef D (instanceRef captureAsyncReg_15))
+           (portRef C (instanceRef counterReg_RNO_0_15))
+           (portRef B (instanceRef counterReg_RNII83G6_15))
+           (portRef B (instanceRef overflowReg_RNI6RTI_15))
+           (portRef A (instanceRef captureSyncReg_RNO_15))
+           (portRef A (instanceRef bus_read_data_RNO_4_15))
+           (portRef B (instanceRef counterReg_RNIHEFO_15))
+           (portRef A (instanceRef un1_compareReg_15_0_x2))
+          ))
+          (net (rename compareRegZ0Z_15 "compareReg[15]") (joined
+           (portRef Q (instanceRef compareReg_15))
+           (portRef A (instanceRef compareReg_RNO_0_15))
+           (portRef A (instanceRef bus_read_data_RNO_5_15))
+           (portRef B (instanceRef un1_compareReg_15_0_x2))
+          ))
+          (net reset_interrupt_1_sqmuxa (joined
+           (portRef Y (instanceRef reset_interrupt_1_sqmuxa_0_a2))
+           (portRef A (instanceRef reset_interrupt_RNO_0))
+          ))
+          (net N_201 (joined
+           (portRef Y (instanceRef reset_capture_async_1_sqmuxa_0_a2_0))
+           (portRef A (instanceRef reset_capture_async_1_sqmuxa_0_a2))
+           (portRef A (instanceRef reset_interrupt_1_sqmuxa_0_a2))
+          ))
+          (net N_199 (joined
+           (portRef Y (instanceRef reset_interrupt_1_sqmuxa_0_a2_0))
+           (portRef B (instanceRef reset_interrupt_1_sqmuxa_0_a2))
+          ))
+          (net N_192 (joined
+           (portRef N_192)
+           (portRef C (instanceRef un1_bus_write_en_1_0_a2))
+           (portRef A (instanceRef un1_fabint9_i_a2))
+           (portRef B (instanceRef reset_capture_sync_1_sqmuxa_0_a2_1))
+           (portRef B (instanceRef reset_capture_async_1_sqmuxa_0_a2_0))
+           (portRef A (instanceRef un1_fabint9_i_a2_0))
+          ))
+          (net reset_capture_async_1_sqmuxa (joined
+           (portRef Y (instanceRef reset_capture_async_1_sqmuxa_0_a2))
+           (portRef A (instanceRef reset_capture_async_RNO_0))
+          ))
+          (net N_87 (joined
+           (portRef N_87)
+           (portRef B (instanceRef reset_capture_async_1_sqmuxa_0_a2))
+          ))
+          (net N_1185 (joined
+           (portRef Y (instanceRef un1_compareReg_11_0_x2))
+           (portRef A (instanceRef un1_compareReg_NE_9))
+          ))
+          (net (rename counterRegZ0Z_11 "counterReg[11]") (joined
+           (portRef Q (instanceRef counterReg_11))
+           (portRef D (instanceRef captureAsyncReg_11))
+           (portRef A (instanceRef bus_read_data_RNO_4_11))
+           (portRef A (instanceRef captureSyncReg_RNO_11))
+           (portRef A (instanceRef counterReg_RNO_11))
+           (portRef A (instanceRef counterReg_RNO_0_12))
+           (portRef A (instanceRef counterReg_RNIVQM41_12))
+           (portRef A (instanceRef counterReg7_11_0_x2))
+           (portRef A (instanceRef un1_compareReg_11_0_x2))
+          ))
+          (net (rename compareRegZ0Z_11 "compareReg[11]") (joined
+           (portRef Q (instanceRef compareReg_11))
+           (portRef A (instanceRef bus_read_data_RNO_5_11))
+           (portRef A (instanceRef compareReg_RNO_0_11))
+           (portRef B (instanceRef un1_compareReg_11_0_x2))
           ))
           (net N_1183 (joined
            (portRef Y (instanceRef un1_compareReg_10_0_x2))
@@ -6908,6 +7046,22 @@
            (portRef A (instanceRef compareReg_RNO_0_5))
            (portRef B (instanceRef un1_compareReg_5_0_x2))
           ))
+          (net (rename un1_compareReg_NEZ0Z_9 "un1_compareReg_NE_9") (joined
+           (portRef Y (instanceRef un1_compareReg_NE_9))
+           (portRef C (instanceRef un1_compareReg_NE_9_RNI7T3U1))
+          ))
+          (net N_146_i (joined
+           (portRef Y (instanceRef un1_compareReg_29_0_x2))
+           (portRef B (instanceRef un1_compareReg_NE_9))
+          ))
+          (net (rename un1_compareReg_NEZ0Z_6 "un1_compareReg_NE_6") (joined
+           (portRef Y (instanceRef un1_compareReg_NE_6))
+           (portRef B (instanceRef un1_compareReg_NE_6_RNI5G0N3))
+          ))
+          (net (rename un1_compareReg_NEZ0Z_5 "un1_compareReg_NE_5") (joined
+           (portRef Y (instanceRef un1_compareReg_NE_5))
+           (portRef C (instanceRef un1_compareReg_NE_5_RNI5BGR1))
+          ))
           (net N_131_i (joined
            (portRef Y (instanceRef un1_compareReg_4_0_x2))
            (portRef A (instanceRef un1_compareReg_NE_5))
@@ -6949,10 +7103,6 @@
            (portRef A (instanceRef overflowReg_RNO_0_9))
            (portRef B (instanceRef counterReg7_9_0_x2))
           ))
-          (net N_146_i (joined
-           (portRef Y (instanceRef un1_compareReg_29_0_x2))
-           (portRef B (instanceRef un1_compareReg_NE_9))
-          ))
           (net (rename counterRegZ0Z_29 "counterReg[29]") (joined
            (portRef Q (instanceRef counterReg_29))
            (portRef D (instanceRef captureAsyncReg_29))
@@ -6984,102 +7134,11 @@
            (portRef Y (instanceRef counterReg7_11_0_x2))
            (portRef A (instanceRef counterReg7_NE_9))
           ))
-          (net (rename counterRegZ0Z_11 "counterReg[11]") (joined
-           (portRef Q (instanceRef counterReg_11))
-           (portRef D (instanceRef captureAsyncReg_11))
-           (portRef A (instanceRef bus_read_data_RNO_4_11))
-           (portRef A (instanceRef captureSyncReg_RNO_11))
-           (portRef A (instanceRef counterReg_RNO_11))
-           (portRef A (instanceRef counterReg_RNO_0_12))
-           (portRef A (instanceRef counterReg_RNIVQM41_12))
-           (portRef A (instanceRef un1_compareReg_11_0_x2))
-           (portRef A (instanceRef counterReg7_11_0_x2))
-          ))
           (net (rename overflowRegZ0Z_11 "overflowReg[11]") (joined
            (portRef Q (instanceRef overflowReg_11))
            (portRef A (instanceRef overflowReg_RNO_0_11))
            (portRef A (instanceRef bus_read_data_RNO_2_11))
            (portRef B (instanceRef counterReg7_11_0_x2))
-          ))
-          (net N_1188 (joined
-           (portRef Y (instanceRef counterReg7_12_0_x2))
-           (portRef A (instanceRef counterReg7_NE_1))
-          ))
-          (net (rename counterRegZ0Z_12 "counterReg[12]") (joined
-           (portRef Q (instanceRef counterReg_12))
-           (portRef D (instanceRef captureAsyncReg_12))
-           (portRef B (instanceRef compareReg_RNIJ6PN_12))
-           (portRef A (instanceRef counterReg_RNO_12))
-           (portRef A (instanceRef captureSyncReg_RNO_12))
-           (portRef A (instanceRef bus_read_data_RNO_4_12))
-           (portRef B (instanceRef counterReg_RNIVQM41_12))
-           (portRef A (instanceRef counterReg7_12_0_x2))
-          ))
-          (net (rename overflowRegZ0Z_12 "overflowReg[12]") (joined
-           (portRef Q (instanceRef overflowReg_12))
-           (portRef A (instanceRef bus_read_data_RNO_2_12))
-           (portRef A (instanceRef overflowReg_RNO_0_12))
-           (portRef B (instanceRef counterReg7_12_0_x2))
-          ))
-          (net N_156_i (joined
-           (portRef Y (instanceRef un1_compareReg_15_0_x2))
-           (portRef A (instanceRef un1_compareReg_NE_12))
-          ))
-          (net (rename counterRegZ0Z_15 "counterReg[15]") (joined
-           (portRef Q (instanceRef counterReg_15))
-           (portRef D (instanceRef captureAsyncReg_15))
-           (portRef C (instanceRef counterReg_RNO_0_15))
-           (portRef B (instanceRef counterReg_RNII83G6_15))
-           (portRef B (instanceRef overflowReg_RNI6RTI_15))
-           (portRef A (instanceRef captureSyncReg_RNO_15))
-           (portRef A (instanceRef bus_read_data_RNO_4_15))
-           (portRef B (instanceRef counterReg_RNIHEFO_15))
-           (portRef A (instanceRef un1_compareReg_15_0_x2))
-          ))
-          (net (rename compareRegZ0Z_15 "compareReg[15]") (joined
-           (portRef Q (instanceRef compareReg_15))
-           (portRef A (instanceRef compareReg_RNO_0_15))
-           (portRef A (instanceRef bus_read_data_RNO_5_15))
-           (portRef B (instanceRef un1_compareReg_15_0_x2))
-          ))
-          (net reset_interrupt_1_sqmuxa (joined
-           (portRef Y (instanceRef reset_interrupt_1_sqmuxa_0_a2))
-           (portRef A (instanceRef reset_interrupt_RNO_0))
-          ))
-          (net N_201 (joined
-           (portRef Y (instanceRef reset_capture_async_1_sqmuxa_0_a2_0))
-           (portRef A (instanceRef reset_capture_async_1_sqmuxa_0_a2))
-           (portRef A (instanceRef reset_interrupt_1_sqmuxa_0_a2))
-          ))
-          (net N_199 (joined
-           (portRef Y (instanceRef reset_interrupt_1_sqmuxa_0_a2_0))
-           (portRef B (instanceRef reset_interrupt_1_sqmuxa_0_a2))
-          ))
-          (net N_192 (joined
-           (portRef N_192)
-           (portRef C (instanceRef un1_bus_write_en_1_0_a2))
-           (portRef A (instanceRef un1_fabint9_i_a2))
-           (portRef B (instanceRef reset_capture_sync_1_sqmuxa_0_a2_1))
-           (portRef B (instanceRef reset_capture_async_1_sqmuxa_0_a2_0))
-           (portRef A (instanceRef un1_fabint9_i_a2_0))
-          ))
-          (net reset_capture_async_1_sqmuxa (joined
-           (portRef Y (instanceRef reset_capture_async_1_sqmuxa_0_a2))
-           (portRef A (instanceRef reset_capture_async_RNO_0))
-          ))
-          (net N_87 (joined
-           (portRef N_87)
-           (portRef B (instanceRef reset_capture_async_1_sqmuxa_0_a2))
-          ))
-          (net N_1185 (joined
-           (portRef Y (instanceRef un1_compareReg_11_0_x2))
-           (portRef A (instanceRef un1_compareReg_NE_9))
-          ))
-          (net (rename compareRegZ0Z_11 "compareReg[11]") (joined
-           (portRef Q (instanceRef compareReg_11))
-           (portRef A (instanceRef bus_read_data_RNO_5_11))
-           (portRef A (instanceRef compareReg_RNO_0_11))
-           (portRef B (instanceRef un1_compareReg_11_0_x2))
           ))
           (net (rename counterReg7_NEZ0Z_9 "counterReg7_NE_9") (joined
            (portRef Y (instanceRef counterReg7_NE_9))
@@ -7092,18 +7151,6 @@
           (net (rename un1_compareReg_NEZ0Z_12 "un1_compareReg_NE_12") (joined
            (portRef Y (instanceRef un1_compareReg_NE_12))
            (portRef B (instanceRef un1_compareReg_NE_12_RNIJ7KQ4))
-          ))
-          (net (rename un1_compareReg_NEZ0Z_9 "un1_compareReg_NE_9") (joined
-           (portRef Y (instanceRef un1_compareReg_NE_9))
-           (portRef C (instanceRef un1_compareReg_NE_9_RNI7T3U1))
-          ))
-          (net (rename un1_compareReg_NEZ0Z_6 "un1_compareReg_NE_6") (joined
-           (portRef Y (instanceRef un1_compareReg_NE_6))
-           (portRef B (instanceRef un1_compareReg_NE_6_RNI5G0N3))
-          ))
-          (net (rename un1_compareReg_NEZ0Z_5 "un1_compareReg_NE_5") (joined
-           (portRef Y (instanceRef un1_compareReg_NE_5))
-           (portRef C (instanceRef un1_compareReg_NE_5_RNI5BGR1))
           ))
           (net counterReg_n9_i_0 (joined
            (portRef Y (instanceRef counterReg_RNO_0_9))
@@ -8026,7 +8073,7 @@
           (net (rename CoreAPB3_0_APBmslave0_PADDR_2 "CoreAPB3_0_APBmslave0_PADDR[2]") (joined
            (portRef (member coreapb3_0_apbmslave0_paddr 2))
            (portRef A (instanceRef reset_capture_sync_1_sqmuxa_0_a2))
-           (portRef B (instanceRef reset_interrupt_1_sqmuxa_0_a2_0))
+           (portRef A (instanceRef reset_interrupt_1_sqmuxa_0_a2_0))
           ))
           (net reset_capture_sync_1_sqmuxa_1 (joined
            (portRef Y (instanceRef reset_capture_sync_1_sqmuxa_0_a2_1))
@@ -12038,6 +12085,20 @@
         (property orig_inst_of (string "gc_MSS_tmp_MSS_CCC_0_MSS_CCC"))
        )
     )
+    (cell TRIBUFF_MSS (cellType GENERIC)
+       (view verilog (viewType NETLIST)
+         (interface
+           (port D (direction INPUT))
+           (port E (direction INPUT))
+           (port PAD (direction OUTPUT))
+         )
+        (property langParams (string "ACT_PIN ACT_CONFIG"))
+        (property black_box_pad_pin (string "PAD"))
+        (property ACT_CONFIG (integer 0))
+        (property ACT_PIN (string "U17"))
+        (property orig_inst_of (string "TRIBUFF_MSS"))
+       )
+    )
     (cell MSSINT (cellType GENERIC)
        (view verilog (viewType NETLIST)
          (interface
@@ -14044,9 +14105,9 @@
           (instance (rename last_response_RNIHACA5_24 "last_response_RNIHACA5[24]") (viewRef prim (cellRef OR2A (libraryRef smartfusion)))          )
           (instance (rename last_response_RNIPCLC5_25 "last_response_RNIPCLC5[25]") (viewRef prim (cellRef OR2A (libraryRef smartfusion)))          )
           (instance (rename last_response_RNO_0_27 "last_response_RNO_0[27]") (viewRef prim (cellRef OR2A (libraryRef smartfusion)))          )
-          (instance controller_init_0_i_0_o3 (viewRef prim (cellRef NOR2A (libraryRef smartfusion)))          )
           (instance controller_init_0_i_0_a3_1 (viewRef prim (cellRef AND2 (libraryRef smartfusion)))          )
           (instance controller_init_0_i_0_a3_0 (viewRef prim (cellRef NOR2A (libraryRef smartfusion)))          )
+          (instance controller_init_0_i_0_o3 (viewRef prim (cellRef NOR2A (libraryRef smartfusion)))          )
           (instance (rename last_response_RNO_1_19 "last_response_RNO_1[19]") (viewRef prim (cellRef OR2 (libraryRef smartfusion)))          )
           (instance (rename last_response_RNO_1_27 "last_response_RNO_1[27]") (viewRef prim (cellRef OR2 (libraryRef smartfusion)))          )
           (instance (rename last_response_RNO_1_7 "last_response_RNO_1[7]") (viewRef prim (cellRef OR2 (libraryRef smartfusion)))          )
@@ -14648,13 +14709,13 @@
            (portRef B (instanceRef last_response_RNIK58I_25))
            (portRef A (instanceRef last_response_RNIPCLC5_25))
           ))
-          (net N_133_i (joined
-           (portRef Y (instanceRef controller_init_0_i_0_o3))
-           (portRef A (instanceRef controller_init_0_i_0_a3_1))
-          ))
           (net (rename controller_init_0_i_0_a3Z0Z_1 "controller_init_0_i_0_a3_1") (joined
            (portRef Y (instanceRef controller_init_0_i_0_a3_1))
            (portRef A (instanceRef controller_init_0_i_0_a3_1_RNIDOC7))
+          ))
+          (net N_133_i (joined
+           (portRef Y (instanceRef controller_init_0_i_0_o3))
+           (portRef A (instanceRef controller_init_0_i_0_a3_1))
           ))
           (net (rename controller_init_0_i_0_a3Z0Z_0 "controller_init_0_i_0_a3_0") (joined
            (portRef Y (instanceRef controller_init_0_i_0_a3_0))
@@ -18902,11 +18963,17 @@
            (port CoreAPB3_0_APBmslave0_PADDR_3 (direction OUTPUT))
            (port CoreAPB3_0_APBmslave0_PADDR_2_d0 (direction OUTPUT))
            (port (array (rename coreapb3_0_apbmslave0_paddr_2 "CoreAPB3_0_APBmslave0_PADDR_2[2:2]") 1) (direction OUTPUT))
+           (port SPEAKER_DAC (direction OUTPUT))
+           (port VAREF0 (direction INPUT))
            (port CoreAPB3_0_APBmslave0_PWRITE (direction OUTPUT))
            (port CoreAPB3_0_APBmslave0_PENABLE (direction OUTPUT))
            (port gc_MSS_0_MSS_MASTER_APB_PSELx (direction OUTPUT))
            (port FAB_CLK (direction OUTPUT))
            (port MSS_RESET_N (direction INPUT))
+           (port SPI_0_CLK (direction INOUT))
+           (port SPI_0_DI (direction INPUT))
+           (port SPI_0_DO (direction OUTPUT))
+           (port SPI_0_SS (direction INOUT))
            (port UART_0_RXD (direction INPUT))
            (port UART_0_TXD (direction OUTPUT))
            (port UART_1_RXD (direction INPUT))
@@ -18952,6 +19019,25 @@
            (property ACT_CONFIG (integer 0))
            (property ACT_PIN (string "U18"))
           )
+          (instance MSS_SPI_0_SS (viewRef prim (cellRef BIBUF_MSS (libraryRef smartfusion)))
+           (property is_instantiated (integer 1))
+           (property ACT_CONFIG (integer 0))
+           (property ACT_PIN (string "Y20"))
+          )
+          (instance MSS_SPI_0_DO (viewRef verilog (cellRef TRIBUFF_MSS))
+           (property ACT_CONFIG (integer 0))
+           (property ACT_PIN (string "U17"))
+          )
+          (instance MSS_SPI_0_DI (viewRef prim (cellRef INBUF_MSS (libraryRef smartfusion)))
+           (property is_instantiated (integer 1))
+           (property ACT_CONFIG (integer 0))
+           (property ACT_PIN (string "V18"))
+          )
+          (instance MSS_SPI_0_CLK (viewRef prim (cellRef BIBUF_MSS (libraryRef smartfusion)))
+           (property is_instantiated (integer 1))
+           (property ACT_CONFIG (integer 0))
+           (property ACT_PIN (string "W19"))
+          )
           (instance MSS_RESET_0_MSS_RESET_N (viewRef prim (cellRef INBUF_MSS (libraryRef smartfusion)))
            (property is_instantiated (integer 1))
            (property ACT_CONFIG (integer 0))
@@ -18963,6 +19049,12 @@
            (property ACT_DIE (string "IP4X3M1"))
            (property ACT_FCLK (integer 100000000))
            (property ACT_PKG (string "fg484"))
+          )
+          (instance MSS_ACE_0_VAREF0 (viewRef prim (cellRef INBUF_A (libraryRef smartfusion)))
+           (property is_instantiated (integer 1))
+          )
+          (instance MSS_ACE_0_SDD0 (viewRef prim (cellRef OUTBUF_A (libraryRef smartfusion)))
+           (property is_instantiated (integer 1))
           )
           (instance MSS_CCC_0 (viewRef netlist (cellRef gc_MSS_tmp_MSS_CCC_0_MSS_CCC))
           )
@@ -19058,6 +19150,55 @@
           (net UART_0_RXD (joined
            (portRef UART_0_RXD)
            (portRef PAD (instanceRef MSS_UART_0_RXD))
+          ))
+          (net SPI_0_SS (joined
+           (portRef PAD (instanceRef MSS_SPI_0_SS))
+           (portRef SPI_0_SS)
+          ))
+          (net MSS_SPI_0_SS_Y (joined
+           (portRef Y (instanceRef MSS_SPI_0_SS))
+           (portRef SPI0SSI (instanceRef MSS_ADLIB_INST))
+          ))
+          (net (rename SPI0SSO_net_0_0 "SPI0SSO_net_0[0]") (joined
+           (portRef (member spi0sso 7) (instanceRef MSS_ADLIB_INST))
+           (portRef D (instanceRef MSS_SPI_0_SS))
+          ))
+          (net MSS_SPI_0_SS_E (joined
+           (portRef SPI0MODE (instanceRef MSS_ADLIB_INST))
+           (portRef E (instanceRef MSS_SPI_0_CLK))
+           (portRef E (instanceRef MSS_SPI_0_SS))
+          ))
+          (net MSS_SPI_0_DO_D (joined
+           (portRef SPI0DO (instanceRef MSS_ADLIB_INST))
+           (portRef D (instanceRef MSS_SPI_0_DO))
+          ))
+          (net MSS_SPI_0_DO_E (joined
+           (portRef SPI0DOE (instanceRef MSS_ADLIB_INST))
+           (portRef E (instanceRef MSS_SPI_0_DO))
+          ))
+          (net SPI_0_DO (joined
+           (portRef PAD (instanceRef MSS_SPI_0_DO))
+           (portRef SPI_0_DO)
+          ))
+          (net MSS_SPI_0_DI_Y (joined
+           (portRef Y (instanceRef MSS_SPI_0_DI))
+           (portRef SPI0DI (instanceRef MSS_ADLIB_INST))
+          ))
+          (net SPI_0_DI (joined
+           (portRef SPI_0_DI)
+           (portRef PAD (instanceRef MSS_SPI_0_DI))
+          ))
+          (net SPI_0_CLK (joined
+           (portRef PAD (instanceRef MSS_SPI_0_CLK))
+           (portRef SPI_0_CLK)
+          ))
+          (net MSS_SPI_0_CLK_Y (joined
+           (portRef Y (instanceRef MSS_SPI_0_CLK))
+           (portRef SPI0CLKI (instanceRef MSS_ADLIB_INST))
+          ))
+          (net MSS_SPI_0_CLK_D (joined
+           (portRef SPI0CLKO (instanceRef MSS_ADLIB_INST))
+           (portRef D (instanceRef MSS_SPI_0_CLK))
           ))
           (net MSS_RESET_0_MSS_RESET_N_Y (joined
            (portRef Y (instanceRef MSS_RESET_0_MSS_RESET_N))
@@ -19247,7 +19388,6 @@
            (portRef ADC7 (instanceRef MSS_ADLIB_INST))
            (portRef TM4 (instanceRef MSS_ADLIB_INST))
            (portRef ABPS2 (instanceRef MSS_ADLIB_INST))
-           (portRef VAREF0 (instanceRef MSS_ADLIB_INST))
            (portRef LVTTL6EN (instanceRef MSS_ADLIB_INST))
            (portRef ABPS8 (instanceRef MSS_ADLIB_INST))
            (portRef ADC2 (instanceRef MSS_ADLIB_INST))
@@ -19278,9 +19418,6 @@
            (portRef SPI1DI (instanceRef MSS_ADLIB_INST))
            (portRef I2C0SCLI (instanceRef MSS_ADLIB_INST))
            (portRef I2C0SDAI (instanceRef MSS_ADLIB_INST))
-           (portRef SPI0SSI (instanceRef MSS_ADLIB_INST))
-           (portRef SPI0CLKI (instanceRef MSS_ADLIB_INST))
-           (portRef SPI0DI (instanceRef MSS_ADLIB_INST))
            (portRef PLLLOCK (instanceRef MSS_ADLIB_INST))
            (portRef MACCLK (instanceRef MSS_ADLIB_INST))
            (portRef RCOSC (instanceRef MSS_ADLIB_INST))
@@ -19343,18 +19480,6 @@
           (net GLA0 (joined
            (portRef GLA0 (instanceRef MSS_CCC_0))
            (portRef FCLK (instanceRef MSS_ADLIB_INST))
-          ))
-          (net MSS_ADLIB_INST_SPI0DO (joined
-           (portRef SPI0DO (instanceRef MSS_ADLIB_INST))
-          ))
-          (net MSS_ADLIB_INST_SPI0DOE (joined
-           (portRef SPI0DOE (instanceRef MSS_ADLIB_INST))
-          ))
-          (net MSS_ADLIB_INST_SPI0CLKO (joined
-           (portRef SPI0CLKO (instanceRef MSS_ADLIB_INST))
-          ))
-          (net MSS_ADLIB_INST_SPI0MODE (joined
-           (portRef SPI0MODE (instanceRef MSS_ADLIB_INST))
           ))
           (net MSS_ADLIB_INST_I2C0SDAO (joined
            (portRef I2C0SDAO (instanceRef MSS_ADLIB_INST))
@@ -19440,8 +19565,9 @@
           (net MSS_ADLIB_INST_LVTTL5 (joined
            (portRef LVTTL5 (instanceRef MSS_ADLIB_INST))
           ))
-          (net MSS_ADLIB_INST_SDD0 (joined
+          (net MSS_ACE_0_SDD0_D (joined
            (portRef SDD0 (instanceRef MSS_ADLIB_INST))
+           (portRef D (instanceRef MSS_ACE_0_SDD0))
           ))
           (net MSS_ADLIB_INST_LVTTL10 (joined
            (portRef LVTTL10 (instanceRef MSS_ADLIB_INST))
@@ -19460,6 +19586,10 @@
           ))
           (net MSS_ADLIB_INST_LVTTL11 (joined
            (portRef LVTTL11 (instanceRef MSS_ADLIB_INST))
+          ))
+          (net MSS_ACE_0_VAREF0_Y (joined
+           (portRef Y (instanceRef MSS_ACE_0_VAREF0))
+           (portRef VAREF0 (instanceRef MSS_ADLIB_INST))
           ))
           (net MSS_ADLIB_INST_CMP0 (joined
            (portRef CMP0 (instanceRef MSS_ADLIB_INST))
@@ -19886,28 +20016,25 @@
           (net (rename MSS_ADLIB_INST_MSSINT_7 "MSS_ADLIB_INST_MSSINT[7]") (joined
            (portRef (member mssint 0) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_SPI0SSO_0 "MSS_ADLIB_INST_SPI0SSO[0]") (joined
-           (portRef (member spi0sso 7) (instanceRef MSS_ADLIB_INST))
-          ))
-          (net (rename MSS_ADLIB_INST_SPI0SSO_1 "MSS_ADLIB_INST_SPI0SSO[1]") (joined
+          (net (rename SPI0SSO_net_0_1 "SPI0SSO_net_0[1]") (joined
            (portRef (member spi0sso 6) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_SPI0SSO_2 "MSS_ADLIB_INST_SPI0SSO[2]") (joined
+          (net (rename SPI0SSO_net_0_2 "SPI0SSO_net_0[2]") (joined
            (portRef (member spi0sso 5) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_SPI0SSO_3 "MSS_ADLIB_INST_SPI0SSO[3]") (joined
+          (net (rename SPI0SSO_net_0_3 "SPI0SSO_net_0[3]") (joined
            (portRef (member spi0sso 4) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_SPI0SSO_4 "MSS_ADLIB_INST_SPI0SSO[4]") (joined
+          (net (rename SPI0SSO_net_0_4 "SPI0SSO_net_0[4]") (joined
            (portRef (member spi0sso 3) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_SPI0SSO_5 "MSS_ADLIB_INST_SPI0SSO[5]") (joined
+          (net (rename SPI0SSO_net_0_5 "SPI0SSO_net_0[5]") (joined
            (portRef (member spi0sso 2) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_SPI0SSO_6 "MSS_ADLIB_INST_SPI0SSO[6]") (joined
+          (net (rename SPI0SSO_net_0_6 "SPI0SSO_net_0[6]") (joined
            (portRef (member spi0sso 1) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_SPI0SSO_7 "MSS_ADLIB_INST_SPI0SSO[7]") (joined
+          (net (rename SPI0SSO_net_0_7 "SPI0SSO_net_0[7]") (joined
            (portRef (member spi0sso 0) (instanceRef MSS_ADLIB_INST))
           ))
           (net (rename MSS_ADLIB_INST_SPI1SSO_0 "MSS_ADLIB_INST_SPI1SSO[0]") (joined
@@ -20443,6 +20570,14 @@
            (portRef (member gc_mss_0_mss_master_apb_prdata 0))
            (portRef (member mssprdata 0) (instanceRef MSS_ADLIB_INST))
           ))
+          (net VAREF0 (joined
+           (portRef VAREF0)
+           (portRef PAD (instanceRef MSS_ACE_0_VAREF0))
+          ))
+          (net SPEAKER_DAC (joined
+           (portRef PAD (instanceRef MSS_ACE_0_SDD0))
+           (portRef SPEAKER_DAC)
+          ))
           (net FAB_CLK (joined
            (portRef FAB_CLK (instanceRef MSS_CCC_0))
            (portRef SYNCCLKFDBK (instanceRef MSS_ADLIB_INST))
@@ -20878,16 +21013,22 @@
            (port F2M_GPI_2 (direction INPUT))
            (port F2M_GPI_4 (direction INPUT))
            (port MSS_RESET_N (direction INPUT))
+           (port SPI_0_DI (direction INPUT))
            (port UART_0_RXD (direction INPUT))
            (port UART_1_RXD (direction INPUT))
+           (port VAREF0 (direction INPUT))
            (port LMOTOR (direction OUTPUT))
            (port LSERVO (direction OUTPUT))
            (port PWM1 (direction OUTPUT))
            (port RMOTOR (direction OUTPUT))
            (port RSERVO (direction OUTPUT))
+           (port SPEAKER_DAC (direction OUTPUT))
+           (port SPI_0_DO (direction OUTPUT))
            (port TX (direction OUTPUT))
            (port UART_0_TXD (direction OUTPUT))
            (port UART_1_TXD (direction OUTPUT))
+           (port SPI_0_CLK (direction INOUT))
+           (port SPI_0_SS (direction INOUT))
            (port data (direction INOUT))
          )
          (contents
@@ -20981,6 +21122,10 @@
            (portRef MSS_RESET_N)
            (portRef MSS_RESET_N (instanceRef gc_MSS_0))
           ))
+          (net SPI_0_DI (joined
+           (portRef SPI_0_DI)
+           (portRef SPI_0_DI (instanceRef gc_MSS_0))
+          ))
           (net UART_0_RXD (joined
            (portRef UART_0_RXD)
            (portRef UART_0_RXD (instanceRef gc_MSS_0))
@@ -20988,6 +21133,18 @@
           (net UART_1_RXD (joined
            (portRef UART_1_RXD)
            (portRef UART_1_RXD (instanceRef gc_MSS_0))
+          ))
+          (net VAREF0 (joined
+           (portRef VAREF0)
+           (portRef VAREF0 (instanceRef gc_MSS_0))
+          ))
+          (net SPEAKER_DAC (joined
+           (portRef SPEAKER_DAC (instanceRef gc_MSS_0))
+           (portRef SPEAKER_DAC)
+          ))
+          (net SPI_0_DO (joined
+           (portRef SPI_0_DO (instanceRef gc_MSS_0))
+           (portRef SPI_0_DO)
           ))
           (net UART_0_TXD (joined
            (portRef UART_0_TXD (instanceRef gc_MSS_0))
@@ -22020,6 +22177,14 @@
           (net send_query_0_wavebird_id_sent (joined
            (portRef send_query_0_wavebird_id_sent (instanceRef send_query_0))
            (portRef send_query_0_wavebird_id_sent (instanceRef gc_state_0))
+          ))
+          (net SPI_0_CLK (joined
+           (portRef SPI_0_CLK (instanceRef gc_MSS_0))
+           (portRef SPI_0_CLK)
+          ))
+          (net SPI_0_SS (joined
+           (portRef SPI_0_SS (instanceRef gc_MSS_0))
+           (portRef SPI_0_SS)
           ))
           (net VCC (joined
            (portRef Y (instanceRef VCC_i))

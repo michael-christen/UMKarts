@@ -2,7 +2,7 @@
 * (c) Copyright  Actel Corporation. All rights reserved.
 *
 *ACE configuration .c file
-*Created by Actel MSS_ACE Configurator Mon Nov 18 12:26:27 2013
+*Created by Actel MSS_ACE Configurator Wed Nov 20 20:43:12 2013
 *
 */
 
@@ -56,14 +56,23 @@ const uint8_t g_ace_external_varef_used[ACE_NB_OF_ADC] =
 *Analog Channels
 *---------------------------------------------------------------------------*/
 /* Names*/
+const uint8_t g_ace_channel_0_name[] = "SPEAKER_DAC";
 
 /* Number of Flags per Channel*/
+#define CHANNEL_0_NB_OF_FLAGS           0
 
 /* Input Channel to Flag Array Association*/
 
 /* Channel Table*/
 ace_channel_desc_t g_ace_channel_desc_table[ACE_NB_OF_INPUT_CHANNELS] = 
 {
+	{
+        g_ace_channel_0_name,      /* const uint8_t * p_sz_channel_name */
+        SDD0_IN,                   /* adc_channel_id_t signal_id; */
+        16,                        /* uint16_t signal_ppe_offset */
+        CHANNEL_0_NB_OF_FLAGS,     /* uint16_t nb_of_flags */
+        0                          /* uint16_t * p_flags_array */
+	}
 };
 
 /*-----------------------------------------------------------------------------
@@ -78,6 +87,12 @@ ace_channel_desc_t g_ace_channel_desc_table[ACE_NB_OF_INPUT_CHANNELS] =
 *---------------------------------------------------------------------------*/
 const ppe_transforms_desc_t g_ace_ppe_transforms_desc_table[ACE_NB_OF_INPUT_CHANNELS] = 
 {
+	{
+        18,                        /* uint16_t    m_ppe_offset */
+        19,                        /* uint16_t    c_ppe_offset */
+        0x4000,                    /* int16_t     default_m2 */
+        0x0000                     /* int16_t     default_c2 */
+	}
 };
 
 /*-----------------------------------------------------------------------------
@@ -87,13 +102,14 @@ const ppe_transforms_desc_t g_ace_ppe_transforms_desc_table[ACE_NB_OF_INPUT_CHAN
 const uint8_t g_ace_sse_proc_0_name[] = "ADC0_MAIN";
 const uint16_t g_ace_sse_proc_0_sequence[] = 
 {
-
+	0x1704, 0x1602, 0x1822, 0x1551, 
+	0x14cf, 0x0000, 0x1003 
 };
 
 const uint8_t g_ace_sse_proc_1_name[] = "ADC1_MAIN";
 const uint16_t g_ace_sse_proc_1_sequence[] = 
 {
-
+	0x2704, 0x2602, 0x2200 
 };
 
 
@@ -103,16 +119,16 @@ ace_procedure_desc_t g_sse_sequences_desc_table[ACE_NB_OF_SSE_PROCEDURES] =
 {
 	{
         g_ace_sse_proc_0_name,                              /* const uint8_t * p_sz_proc_name */
-        -1,                                                 /* uint16_t sse_loop_pc */
-        -1,                                                 /* uint16_t sse_load_offset */
+        3,                                                  /* uint16_t sse_loop_pc */
+        0,                                                  /* uint16_t sse_load_offset */
         sizeof(g_ace_sse_proc_0_sequence) / sizeof(uint16_t), /* uint16_t sse_ucode_length */
         g_ace_sse_proc_0_sequence,                          /* const uint16_t * sse_ucode */
         0                                                   /* uint8_t sse_pc_id */
 	},
 	{
         g_ace_sse_proc_1_name,                              /* const uint8_t * p_sz_proc_name */
-        -1,                                                 /* uint16_t sse_loop_pc */
-        -1,                                                 /* uint16_t sse_load_offset */
+        9,                                                  /* uint16_t sse_loop_pc */
+        7,                                                  /* uint16_t sse_load_offset */
         sizeof(g_ace_sse_proc_1_sequence) / sizeof(uint16_t), /* uint16_t sse_ucode_length */
         g_ace_sse_proc_1_sequence,                          /* const uint16_t * sse_ucode */
         1                                                   /* uint8_t sse_pc_id */
