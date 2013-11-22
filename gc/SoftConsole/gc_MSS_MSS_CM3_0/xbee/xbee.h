@@ -15,9 +15,15 @@
 #define  LOWBYTE(v)         ((uint8_t) (v))
 #define  HIGHBYTE(v)        ((uint8_t) (((uint16_t) (v)) >> 8))
 
-#define XBEE_API_MODEM      ((uint8_t) 0x8A)
 #define XBEE_API_AT_COMMAND ((uint8_t) 0x08)
 #define XBEE_API_AT_QUEUE_COMMAND ((uint8_t) 0x09)
+#define XBEE_API_TX_REQUEST ((uint8_t) 0x10)
+/* #define XBEE_API_EX_TX_REQUEST ((uint8_t) 0x11) */ // Not implemented!!
+// #define XBEE_API_REMOTE_AT_REQUEST ((uint8_t) 0x17) // Not implemented!!
+
+
+#define XBEE_API_AT_RESPONSE ((uint8_t) 0x88)
+#define XBEE_API_MODEM      ((uint8_t) 0x8A)
 
 enum XBeeModemStatus {
   EXBeeModemStatus_HardwareReset,
@@ -34,16 +40,21 @@ struct xbee_packet {
   uint8_t payload[MAX_XBEE_PAYLOAD_SIZE];
 };
 
-struct xp_at_command {
-  uint8_t cmdId[2]; /* Commands are two bytes always */
+
+struct xp_tx_request {
+  uint64_t dest_addres;
   uint8_t frameId;
-  uint8_t *param;
-  uint16_t param_len;
+  uint8_t broadcast_radius; /* Maximum hops in transmit. 0 means maximum hops */
+  uint8_t txoptions; /* bit 0: Disable ACK. bit 1: Don't attempt route discovery */
+  uint8_t *rfdata;
+  uint16_t data_len;
 };
 
 uint8_t xbee_packet_api_id(struct xbee_packet * xp);
+uint8_t xbee_packet_frame_id(struct xbee_packet * xp);
 enum XBeeModemStatus xbee_packet_modem_status(struct xbee_packet * xp); 
-void xbee_packet_at_command(struct xp_at_command * xpac, struct xbee_packet * xp); 
-void xbee_packet_at_command_queue(struct xp_at_command * xpac, struct xbee_packet * xp); 
+
+
+void xbpt_create_tx_request(const struct xp_tx_request * xptx, struct xbee_packet * xp);
 
 #endif
