@@ -1,0 +1,15 @@
+	.text
+	.syntax unified
+	.thumb
+
+	.global __my_sync_bool_compare_and_swap_4
+	.type   __my_sync_bool_compare_and_swap_4, %function
+
+__my_sync_bool_compare_and_swap_4:
+	push lr
+	ldrex 
+	
+	
+	
+	pop lr
+	bx lr

@@ -1,0 +1,19 @@
+#ifndef __ATOMICS_H_
+#define __ATOMICS_H_
+
+static inline int ldrex(int *mem) {
+	int result;
+	asm("ldrex %0, [%1]"
+	                      : "=X" (result)
+	                      : "X" (mem)
+	                      : memory);
+	return result;
+}
+
+static inline int strex(int *mem, int val) {
+	int old_value;
+	asm("strex %[old_value], %[new_value], %[addr]" : [old_value] "=X" (old_value), [new_value] "=X" (val) : [addr] "X" (mem) : memory);
+	return old_value;
+}
+
+#endif

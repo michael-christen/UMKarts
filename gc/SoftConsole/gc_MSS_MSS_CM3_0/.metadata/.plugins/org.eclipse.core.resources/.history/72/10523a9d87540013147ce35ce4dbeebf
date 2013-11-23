@@ -1,0 +1,21 @@
+#ifndef __ATOMICS_H_
+#define __ATOMICS_H_
+
+static inline int atomic_cmpxchg(int * mem, int old_val, int new_val) {
+
+}
+
+static inline int ldrex(int *mem) {
+	int result;
+	asm(ldrex %[result], [%[mem]]
+	                      :[result] "=r" (result)
+	                      : [mem] "r" (mem)
+	                      :);
+	return result;
+}
+
+static inline int strex(int *mem, int val) {
+
+}
+
+#endif

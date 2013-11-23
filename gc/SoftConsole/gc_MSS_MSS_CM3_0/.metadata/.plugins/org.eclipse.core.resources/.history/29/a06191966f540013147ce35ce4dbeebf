@@ -1,0 +1,33 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../xbee_interface.c \
+../xbee_interface_allocator.c \
+../xbee_interface_rx.c \
+../xbee_interface_tx.c 
+
+OBJS += \
+./xbee_interface.o \
+./xbee_interface_allocator.o \
+./xbee_interface_rx.o \
+./xbee_interface_tx.o 
+
+C_DEPS += \
+./xbee_interface.d \
+./xbee_interface_allocator.d \
+./xbee_interface_rx.d \
+./xbee_interface_tx.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+%.o: ../%.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: GNU C Compiler'
+	arm-none-eabi-gcc -mthumb -mcpu=cortex-m3 -I"C:\Users\mjschul\Documents\UMKarts\gc\SoftConsole\gc_MSS_MSS_CM3_0\gc_MSS_MSS_CM3_0_hw_platform\CMSIS" -I"C:\Users\mjschul\Documents\UMKarts\gc\SoftConsole\gc_MSS_MSS_CM3_0\circle_buffer" -I"C:\Users\mjschul\Documents\UMKarts\gc\SoftConsole\gc_MSS_MSS_CM3_0\xbee" -I"C:\Users\mjschul\Documents\UMKarts\gc\SoftConsole\gc_MSS_MSS_CM3_0\simple_allocator" -I"C:\Users\mjschul\Documents\UMKarts\gc\SoftConsole\gc_MSS_MSS_CM3_0\gc_MSS_MSS_CM3_0_hw_platform\CMSIS\startup_gcc" -I"C:\Users\mjschul\Documents\UMKarts\gc\SoftConsole\gc_MSS_MSS_CM3_0\gc_MSS_MSS_CM3_0_hw_platform\drivers" -I"C:\Users\mjschul\Documents\UMKarts\gc\SoftConsole\gc_MSS_MSS_CM3_0\gc_MSS_MSS_CM3_0_hw_platform\drivers\CoreUARTapb" -I"C:\Users\mjschul\Documents\UMKarts\gc\SoftConsole\gc_MSS_MSS_CM3_0\gc_MSS_MSS_CM3_0_hw_platform\drivers\mss_ace" -I"C:\Users\mjschul\Documents\UMKarts\gc\SoftConsole\gc_MSS_MSS_CM3_0\gc_MSS_MSS_CM3_0_hw_platform\drivers\mss_gpio" -I"C:\Users\mjschul\Documents\UMKarts\gc\SoftConsole\gc_MSS_MSS_CM3_0\gc_MSS_MSS_CM3_0_hw_platform\drivers\mss_nvm" -I"C:\Users\mjschul\Documents\UMKarts\gc\SoftConsole\gc_MSS_MSS_CM3_0\gc_MSS_MSS_CM3_0_hw_platform\drivers\mss_pdma" -I"C:\Users\mjschul\Documents\UMKarts\gc\SoftConsole\gc_MSS_MSS_CM3_0\gc_MSS_MSS_CM3_0_hw_platform\drivers\mss_rtc" -I"C:\Users\mjschul\Documents\UMKarts\gc\SoftConsole\gc_MSS_MSS_CM3_0\gc_MSS_MSS_CM3_0_hw_platform\drivers\mss_spi" -I"C:\Users\mjschul\Documents\UMKarts\gc\SoftConsole\gc_MSS_MSS_CM3_0\gc_MSS_MSS_CM3_0_hw_platform\drivers\mss_timer" -I"C:\Users\mjschul\Documents\UMKarts\gc\SoftConsole\gc_MSS_MSS_CM3_0\gc_MSS_MSS_CM3_0_hw_platform\drivers\mss_uart" -I"C:\Users\mjschul\Documents\UMKarts\gc\SoftConsole\gc_MSS_MSS_CM3_0\gc_MSS_MSS_CM3_0_hw_platform\drivers_config" -I"C:\Users\mjschul\Documents\UMKarts\gc\SoftConsole\gc_MSS_MSS_CM3_0\gc_MSS_MSS_CM3_0_hw_platform\drivers_config\mss_ace" -I"C:\Users\mjschul\Documents\UMKarts\gc\SoftConsole\gc_MSS_MSS_CM3_0\gc_MSS_MSS_CM3_0_hw_platform\hal" -I"C:\Users\mjschul\Documents\UMKarts\gc\SoftConsole\gc_MSS_MSS_CM3_0\gc_MSS_MSS_CM3_0_hw_platform\hal\CortexM3" -I"C:\Users\mjschul\Documents\UMKarts\gc\SoftConsole\gc_MSS_MSS_CM3_0\gc_MSS_MSS_CM3_0_hw_platform\hal\CortexM3\GNU" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

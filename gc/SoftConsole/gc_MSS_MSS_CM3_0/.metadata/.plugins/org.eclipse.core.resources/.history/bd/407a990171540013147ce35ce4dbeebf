@@ -1,0 +1,7 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+USER_OBJS :=
+
+LIBS := -lcircle_buffer -lxbee -lsimple_allocator -lxbee_interface
