@@ -16,9 +16,9 @@ void (*ITEM_HIT_FUNCTIONS[MAX_NUM_ITEMS])(void) = {
 };
 
 char *ITEM_NAMES [MAX_NUM_ITEMS] = {
-    "Green Shell",
-    "Mushroom",
-    "Lightning"
+    "GREEN_SHELL",
+    "MUSHROOM",
+    "LIGHTNING"
 };
 
 double ITEM_PROB [MAX_NUM_ITEMS] = {
@@ -66,6 +66,7 @@ void handleItemGrab() {
     }
     CURRENT_ITEM = getNewItem();
     LCD_printf("Picked up %s", ITEM_NAMES[CURRENT_ITEM]);
+    printf("player1, picked up, %S",ITEM_NAMES[CURRENT_ITEM]);
 }
 
 void useCurrentItem() {
@@ -74,6 +75,7 @@ void useCurrentItem() {
     }
     (*ITEM_USE_FUNCTIONS[CURRENT_ITEM])();
     CURRENT_ITEM = MAX_NUM_ITEMS;
+    printf("player1, used, %S",ITEM_NAMES[CURRENT_ITEM]);
 }
 
 void hitByItem(item i) {
