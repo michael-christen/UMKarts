@@ -1,10 +1,10 @@
-#ifndef MYTIMER_H_  // Only define once
-#define MYTIMER_H_  // Only define once
+#ifndef MOTOR_H_  // Only define once
+#define MOTOR_H_  // Only define once
 
 #include "CMSIS/a2fxxxm3.h"
 
-#define MYTIMER_BASE (FPGA_FABRIC_BASE + 0x100)
-
+#define MOTOR_BASE (FPGA_FABRIC_BASE + 0x100)
+volatile uint32_t MOTOR_period, MOTOR_cmpVal;
 // The technique of using a structure declaration
 // to describe the device register layout and names is
 // very common practice. Notice that there aren't actually
@@ -21,9 +21,9 @@ typedef struct
     uint32_t captureSync; //Offset 0x14
     uint32_t captureAsync; //Offset 0x18
     uint32_t direction; //offset 0x1c
-} mytimer_t;
+} motor_t;
 
-#define MYTIMER_ENABLE_MASK 0x00000001UL
+#define MOTOR_ENABLE_MASK 0x00000001UL
 
 // Using the mytimer_t structure we can make the
 // compiler do the offset mapping for us.
@@ -34,103 +34,81 @@ typedef struct
 // Look at the the functions's disassembly
 // in .lst file under the Debug folder
 
-#define MYTIMER ((mytimer_t *) MYTIMER_BASE)
+#define MOTOR ((motor_t *) MOTOR_BASE)
 
 /**
  * Initialize the MYTIMER
 */
-void MYTIMER_init();
+void MOTOR_init();
 
 /**
  * Start MYTIMER
 */
 
-void MYTIMER_enable();
+void MOTOR_enable();
 /**
  * Stop MYTIMER
 */
 
-void MYTIMER_disable();
+void MOTOR_disable();
 
 /**
  * Set the limit to which the timer counts.
 */
 
-void MYTIMER_setOverflowVal(uint32_t value);
-/**
- * Read the counter value of the timer.
-*/
-
-uint32_t MYTIMER_getCounterVal();
+void MOTOR_setOverflowVal(uint32_t value);
 
 /**
  * Enable all interrupts
  */
-void MYTIMER_enable_allInterrupts();
+void MOTOR_enable_allInterrupts();
 /**
  * Disable all interrupts
  */
 
-void MYTIMER_disable_allInterrupts();
+void MOTOR_disable_allInterrupts();
 /**
  * Enable compare interrupt
  */
 
-void MYTIMER_enable_compareInt();
+void MOTOR_enable_compareInt();
 /**
  * Disable compare interrupt
  */
 
-void MYTIMER_disable_compareInt();
+void MOTOR_disable_compareInt();
 /**
  * Set Compare value
  */
 
-void MYTIMER_setCompareVal(uint32_t compare);
+void MOTOR_setCompareVal(uint32_t compare);
 /**
  * Enable overflow interrupt
  */
 
-void MYTIMER_enable_overflowInt();
+void MOTOR_enable_overflowInt();
 /**
  * Disable overflow interrupt
  */
 
-void MYTIMER_disable_overflowInt();
+void MOTOR_disable_overflowInt();
 /**
   * Interrupt status
 */
 
-uint32_t MYTIMER_getInterrupt_status();
+uint32_t MOTOR_getInterrupt_status();
 
-void MYTIMER_enable_pwm();
+void MOTOR_enable_pwm();
 
-void MYTIMER_disable_pwm();
-
-/**
- * Enable Capture
- */
-void MYTIMER_enable_capture();
-/**
- * Disable Capture
- */
-void MYTIMER_disable_capture();
-
-/**
- * Read the synchronous capture value
-*/
-
-uint32_t MYTIMER_get_sync_capture();
-/**
- * Read the asynchronous capture value
-*/
-
-uint32_t MYTIMER_get_async_capture();
+void MOTOR_disable_pwm();
 
 // < 0 is rev, == 0 is brake, > 0 is fwd
-void MYTIMER_set_motor_direction(int dir);
+void MOTOR_set_motor_direction(int dir);
+
+//-1 -> 1 sets speed and direction of motors
+void MOTOR_set_speed(double percentage);
 
 // < 0 is rev, == 0 is brake, > 0 is fwd
-void MYTIMER_set_servo_direction(int dir);
+void MOTOR_set_servo_direction(int dir);
 
 #endif /* MYTIMER_H_ */
