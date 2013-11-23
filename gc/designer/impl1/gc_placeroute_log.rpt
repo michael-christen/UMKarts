@@ -9,7 +9,7 @@ Opened an existing Libero design gc.adb.
 'IDE_DESIGNERVIEW_COUNT' set to '1'
 'IDE_DESIGNERVIEW_REV0' set to 'Impl1'
 'IDE_DESIGNERVIEW_REVNUM0' set to '1'
-'IDE_DESIGNERVIEW_ROOTDIR' set to 'C:\Users\mikechri\Downloads\gc\gc\designer'
+'IDE_DESIGNERVIEW_ROOTDIR' set to 'C:\Users\knekritz\UMKarts\gc\designer'
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
 ***** Layout Variables *********************************************
 
@@ -33,16 +33,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Mon Nov 18 12:31:31 2013
+Timing-driven Placer Started: Wed Nov 20 19:26:02 2013
 
-Placer Finished: Mon Nov 18 12:32:06 2013
-Total Placer CPU Time:     00:00:35
+Placer Finished: Wed Nov 20 19:26:36 2013
+Total Placer CPU Time:     00:00:34
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: gc                              Started: Mon Nov 18 12:32:14 2013
+Design: gc                              Started: Wed Nov 20 19:26:42 2013
 
  
 Iterative improvement...
@@ -50,9 +50,9 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: gc                              
-Finished: Mon Nov 18 12:32:36 2013
-Total CPU Time:     00:00:22            Total Elapsed Time: 00:00:22
-Total Memory Usage: 174.0 Mbytes
+Finished: Wed Nov 20 19:27:07 2013
+Total CPU Time:     00:00:25            Total Elapsed Time: 00:00:25
+Total Memory Usage: 174.1 Mbytes
                         o - o - o - o - o - o
 
 Loading the Timing data for the design.
@@ -60,7 +60,7 @@ Finished loading the Timing data.
 TIMER: Max delay timing requirements have NOT been met.
 TIMER: Min delay timing requirements have been met.
 
-The Layout command succeeded ( 00:01:17 )
+The Layout command succeeded ( 00:01:15 )
 Wrote status report to file: gc_place_and_route_report.txt
 
 The Report command succeeded ( 00:00:00 )
@@ -69,12 +69,12 @@ Wrote globalnet report to file: gc_globalnet_report.txt
 The Report command succeeded ( 00:00:00 )
 Wrote globalusage report to file: gc_globalusage_report.txt
 
-The Report command succeeded ( 00:00:00 )
+The Report command succeeded ( 00:00:01 )
 Wrote iobank report to file: gc_iobank_report.txt
 
 The Report command succeeded ( 00:00:00 )
-Design saved to file C:\Users\mikechri\Downloads\gc\gc\designer\impl1\gc.adb.
+Design saved to file C:\Users\knekritz\UMKarts\gc\designer\impl1\gc.adb.
 
-The Execute Script command succeeded ( 00:01:23 )
+The Execute Script command succeeded ( 00:01:20 )
 Design closed.
 

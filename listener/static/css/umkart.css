@@ -1,0 +1,29 @@
+.playerstatus {
+    border: 2px black solid;
+    margin-bottom: 10px;
+}
+
+.newsEvent {
+    border: 2px black solid;
+    margin-bottom: 10px;
+}
+
+.lives {
+    text-align:right;
+}
+.center {
+    text-align:center;
+}
+/*
+.side-strip {
+    height:450px;
+}
+*/
+
+#newsfeed {
+    height: 370px;
+    overflow:auto;
+}
+.newsEvent {
+    width: 99%;
+}

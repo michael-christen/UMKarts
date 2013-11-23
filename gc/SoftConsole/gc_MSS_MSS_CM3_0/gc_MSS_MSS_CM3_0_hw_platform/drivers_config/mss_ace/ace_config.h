@@ -2,7 +2,7 @@
 * (c) Copyright  Actel Corporation. All rights reserved.
 *
 *ACE configuration .h file
-*Created by Actel MSS_ACE Configurator Tue Nov 12 17:11:43 2013
+*Created by Actel MSS_ACE Configurator Wed Nov 20 19:24:35 2013
 *
 */
 
@@ -33,8 +33,8 @@ extern "C" {
 *---------------------------------------------------------------------------*/
 #define ACE_NB_OF_ADC                   2
 #define ACE_NB_OF_CURRENT_MONITORS      4
-#define MAX_CHANNEL_NAME_LENGTH         0
-#define ACE_NB_OF_INPUT_CHANNELS        0
+#define MAX_CHANNEL_NAME_LENGTH         11
+#define ACE_NB_OF_INPUT_CHANNELS        1
 
 /*-----------------------------------------------------------------------------
 *SSE VALUES

@@ -1,0 +1,73 @@
+<html>
+<head>
+    <script src="/static/jQuery/jquery-1.10.1.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/static/js/umkart.js"></script>
+    <script src="/static/bootstrap/js/bootstrap-modal.js"></script>
+    <link href="/static/bootstrap/css/bootstrap.min.css"rel="stylesheet" media="screen">
+    <link href="/static/css/umkart.css"rel="stylesheet" media="screen">
+</head>
+<body>
+Incoming Chat:&nbsp;<ul id="incomingChatMessages"></ul>
+<input type="text" id="outgoingChatMessage">
+
+<div class="container">
+    <h1 class="center"> UM Karts</h1>
+    <div class="row show-grid">
+        <div id="newsfeedCon" class="span6 hero-unit">
+	    <h2 class="center">Game Events</h2>
+	    <div id="newsfeed" class="side-strip">
+	    </div>
+	</div>
+        <div id="allplayerstatus" class="span3 hero-unit side-strip">
+	    <h2 class="center">Player Status</h2>
+	</div>
+    </div>
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog"
+aria-labelledby="myModalLabel" aria-hidden="true" style="display:
+none;">
+    <div class="modal-header">
+	 <h3>Player Select</h3>
+      </div>
+      <div class="modal-body">
+	   <table class="table">
+		  <tr>
+		      <td>
+		      	<img id="MARIO" class="btn pselect" src="/static/media/Mario_inactive.png">
+		      </td>
+		      <td>
+		      	<img id="LUIGI" class="btn pselect" src="/static/media/Luigi_inactive.png">
+		      </td>
+		      <td>
+		      	<img id="PEACH" class="btn pselect" src="/static/media/Peach_inactive.png">
+		      </td>
+		      <td>
+		      	<img id="TOAD" class="btn pselect" src="/static/media/Toad_inactive.png">
+		      </td>
+		  </tr>
+		  <tr>
+		      <td>
+		      	<img id="YOSHI" class="btn pselect" src="/static/media/Yoshi_inactive.png">
+		      </td>
+		      <td>
+		      	<img id="DK" class="btn pselect" src="/static/media/DK_inactive.png">
+		      </td>
+		      <td>
+		      	<img id="WARIO" class="btn pselect" src="/static/media/Wario_inactive.png">
+		      </td>
+		      <td>
+		      	<img id="BOWSER" class="btn pselect" src="/static/media/Bowser_inactive.png">
+		      </td>
+		  </tr>
+	      </table>
+
+	    </div>
+	    <div class="modal-footer">
+		<button class="btn" data-dismiss="modal"
+		     aria-hidden="true">Close</button>
+	     </div>
+	 </div>
+</div>
+
+</body>
+</html>

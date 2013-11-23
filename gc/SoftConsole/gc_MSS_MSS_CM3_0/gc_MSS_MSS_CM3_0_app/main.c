@@ -6,6 +6,8 @@
 #include "controller.h"
 #include "lcd.h"
 #include "item.h"
+#include "drivers/mss_ace/mss_ace.h"
+#include "sound.h"
 
 
 volatile uint32_t count;
@@ -88,6 +90,7 @@ __attribute__ ((interrupt)) void Fabric_IRQHandler( void )
 
 int main()
 {
+
         volatile int d = 0;
         cmpVal = 2000000;
         period = 20000000;
