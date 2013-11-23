@@ -1,4 +1,5 @@
 #include "circle_buffer.h"
+#include "atomics.h"
 
 void CircularBufferInit(CircularBuffer * cb, void ** buffer, size_t capacity) {
   size_t i;
@@ -13,14 +14,14 @@ void CircularBufferInit(CircularBuffer * cb, void ** buffer, size_t capacity) {
 int CircularBufferWrite(CircularBuffer *cb, void *item) {
   size_t write, new_write;
   do {
-    write = (*((volatile size_t *) (&(cb->write))));
+    write = (size_t) ldrex((int *) &(cb->write));
     new_write = write + 1;
     if (new_write >= cb->len) new_write = 0;
     /* If were at new_write == cb->read, then we're out of room */
     if (new_write == cb->read) {
       return -EBUFFULL;
     }
-  }while(!(__sync_bool_compare_and_swap(&(cb->write), write, new_write)));
+  }while(strex((int *) &(cb->write), (int) new_write) != write);
 
   cb->buffer[write] = item;
 

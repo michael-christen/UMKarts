@@ -1,5 +1,5 @@
 #include "xbee_interface.h"
-#include "lib/simple_allocator.h"
+#include "simple_allocator.h"
 
 /* Allocator */
 static struct {
@@ -8,7 +8,7 @@ static struct {
 } _xbee_alloc;
 
 int _xbee_interface_alloc_init() {
-  int check
+  int check;
   check = SimpleAllocatorInit(&(_xbee_alloc.alloc),
                               _xbee_alloc.mem,
                               XBEE_PACKET_BUF_SIZE,
@@ -20,6 +20,6 @@ struct xbee_packet * xbee_interface_create_packet() {
   return SimpleAllocatorAlloc(&(_xbee_alloc.alloc));
 }
 
-void xbee_interface_free_packet(struct xbee_packet *xp) {
+void xbee_interface_free_packet(const struct xbee_packet *xp) {
   SimpleAllocatorFree(&(_xbee_alloc.alloc), xp);
 }

@@ -1,4 +1,5 @@
 #include "xbee_interface.h"
+#include "mss_uart.h"
 
 /* 
  * Declare initialization functions so we can call them. No in xbee_interface.h

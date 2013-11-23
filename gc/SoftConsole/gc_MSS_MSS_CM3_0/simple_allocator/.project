@@ -3,6 +3,7 @@
 	<name>simple_allocator</name>
 	<comment></comment>
 	<projects>
+		<project>atomics</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

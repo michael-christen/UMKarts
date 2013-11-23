@@ -21,7 +21,7 @@ int xbee_interface_init();
 
 /* Allocator for XBee packets */
 struct xbee_packet * xbee_interface_create_packet(); 
-void xbee_interface_free_packet(struct xbee_packet *xp); 
+void xbee_interface_free_packet(const struct xbee_packet *xp);
 
 /* XBee send and receive functions */
 

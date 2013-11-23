@@ -3,6 +3,9 @@
 	<name>xbee_interface</name>
 	<comment></comment>
 	<projects>
+		<project>atomics</project>
+		<project>circle_buffer</project>
+		<project>simple_allocator</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

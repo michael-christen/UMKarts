@@ -16,6 +16,6 @@ typedef struct {
 int SimpleAllocatorInit(SimpleAllocator * sa, void *buf, size_t num_items, size_t item_sz);
 
 void * SimpleAllocatorAlloc(SimpleAllocator * sa);
-void SimpleAllocatorFree(SimpleAllocator * sa, void *);
+void SimpleAllocatorFree(SimpleAllocator * sa, const void *);
 
 #endif

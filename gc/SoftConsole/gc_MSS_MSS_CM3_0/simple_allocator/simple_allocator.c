@@ -1,4 +1,5 @@
 #include "simple_allocator.h"
+#include "atomics.h"
 
 
 int SimpleAllocatorInit(SimpleAllocator * sa, void *buf, size_t num_items, size_t item_sz) {
@@ -16,10 +17,10 @@ void * SimpleAllocatorAlloc(SimpleAllocator * sa) {
   size_t i;
   uint32_t old_empty, new_empty;
   for (i = 0; i < sa->num_items; i++) {
-    old_empty = sa->empty_mask;
+    old_empty = (uint32_t) ldrex((int *) &(sa->empty_mask));
     if (!(old_empty & (0x1 << i))) {
       new_empty = old_empty | (0x1 << i);
-      if (__sync_bool_compare_and_swap(&(sa->empty_mask), old_empty, new_empty)) {
+      if (strex((int *) &(sa->empty_mask), new_empty) == (int) old_empty) {
         return sa->buf + i*sa->item_sz;
       }
     }
@@ -27,11 +28,15 @@ void * SimpleAllocatorAlloc(SimpleAllocator * sa) {
   return NULL;
 }
 
-void SimpleAllocatorFree(SimpleAllocator * sa, void *data) {
+void SimpleAllocatorFree(SimpleAllocator * sa, const void *data) {
   size_t i;
+  uint32_t old_mask, new_mask;
   for (i = 0; i < sa->num_items; i++) {
     if (sa->buf + i*sa->item_sz == data) {
-      __sync_fetch_and_and(&(sa->empty_mask), ~(0x1 << i));
+    	do {
+    		old_mask = ldrex((int *) &(sa->empty_mask));
+    		new_mask &= ~(0x1 << i);
+    	} while (strex((int *) &(sa->empty_mask), (int) new_mask) != (int) old_mask);
       return;
     }
   }
