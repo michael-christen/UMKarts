@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="16" version="2.0">
 <workbenchAdvisor/>
-<window height="1084" width="1469" x="284" y="76">
+<window height="1084" maximized="true" width="1469" x="284" y="76">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="290"/>
@@ -16,7 +16,7 @@
 <coolItem id="org.eclipse.cdt.ui.buildConfigActionSet" itemType="typeToolBarContribution" x="89" y="22"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="129" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="84" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
@@ -25,7 +25,7 @@
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
-<page aggregateWorkingSetId="Aggregate for window 1383084683374" focus="true" label="Workspace - Debug">
+<page aggregateWorkingSetId="Aggregate for window 1383084683374" focus="true" label="Workspace - C/C++">
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
@@ -40,60 +40,48 @@
 <part id="6"/>
 <part id="7"/>
 <part id="8"/>
-<part id="9"/>
-<part id="10"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="controller.c" partName="controller.c" path="C:/Users/mikechri/Downloads/gc/gc/SoftConsole/gc_MSS_MSS_CM3_0/gc_MSS_MSS_CM3_0_app/controller.c" title="controller.c" tooltip="gc_MSS_MSS_CM3_0_app/controller.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/gc_MSS_MSS_CM3_0_app/controller.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="18" selectionOffset="193" selectionTopPixel="0"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="spi_flash.h" partName="spi_flash.h" path="C:/Users/knekritz/UMKarts/gc/SoftConsole/gc_MSS_MSS_CM3_0/gc_MSS_MSS_CM3_0_app/spi_flash.h" title="spi_flash.h" tooltip="gc_MSS_MSS_CM3_0_app/spi_flash.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/gc_MSS_MSS_CM3_0_app/spi_flash.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="11002" selectionTopPixel="3389"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="a2fxxxm3.h" partName="a2fxxxm3.h" path="C:/Users/knekritz/UMKarts/gc/SoftConsole/gc_MSS_MSS_CM3_0/gc_MSS_MSS_CM3_0_hw_platform/CMSIS/a2fxxxm3.h" title="a2fxxxm3.h" tooltip="gc_MSS_MSS_CM3_0_hw_platform/CMSIS/a2fxxxm3.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/gc_MSS_MSS_CM3_0_hw_platform/CMSIS/a2fxxxm3.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="16" selectionOffset="46036" selectionTopPixel="17731"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="mytimer.c" partName="mytimer.c" path="C:/Users/mikechri/Downloads/gc/gc/SoftConsole/gc_MSS_MSS_CM3_0/gc_MSS_MSS_CM3_0_app/mytimer.c" title="mytimer.c" tooltip="gc_MSS_MSS_CM3_0_app/mytimer.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/gc_MSS_MSS_CM3_0_app/mytimer.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2104" selectionTopPixel="1895"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="mytimer.h" partName="mytimer.h" path="C:/Users/mikechri/Downloads/gc/gc/SoftConsole/gc_MSS_MSS_CM3_0/gc_MSS_MSS_CM3_0_app/mytimer.h" title="mytimer.h" tooltip="gc_MSS_MSS_CM3_0_app/mytimer.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/gc_MSS_MSS_CM3_0_app/mytimer.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="1521"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="core_uart_apb.h" partName="core_uart_apb.h" path="C:/Users/knekritz/UMKarts/gc/SoftConsole/gc_MSS_MSS_CM3_0/gc_MSS_MSS_CM3_0_hw_platform/drivers/CoreUARTapb/core_uart_apb.h" title="core_uart_apb.h" tooltip="gc_MSS_MSS_CM3_0_hw_platform/drivers/CoreUARTapb/core_uart_apb.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/gc_MSS_MSS_CM3_0_hw_platform/drivers/CoreUARTapb/core_uart_apb.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="16050" selectionTopPixel="1419"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="controller.h" partName="controller.h" path="C:/Users/knekritz/UMKarts/gc/SoftConsole/gc_MSS_MSS_CM3_0/gc_MSS_MSS_CM3_0_app/controller.h" title="controller.h" tooltip="gc_MSS_MSS_CM3_0_app/controller.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/gc_MSS_MSS_CM3_0_app/controller.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="16" selectionOffset="233" selectionTopPixel="0"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Users/mikechri/Downloads/gc/gc/SoftConsole/gc_MSS_MSS_CM3_0/gc_MSS_MSS_CM3_0_app/main.c" title="main.c" tooltip="gc_MSS_MSS_CM3_0_app/main.c" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Users/knekritz/UMKarts/gc/SoftConsole/gc_MSS_MSS_CM3_0/gc_MSS_MSS_CM3_0_app/main.c" title="main.c" tooltip="gc_MSS_MSS_CM3_0_app/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/gc_MSS_MSS_CM3_0_app/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2521" selectionTopPixel="1360"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2579" selectionTopPixel="2114"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="mss_gpio.h" partName="mss_gpio.h" path="C:/Users/mikechri/Downloads/gc/gc/SoftConsole/gc_MSS_MSS_CM3_0/gc_MSS_MSS_CM3_0_hw_platform/drivers/mss_gpio/mss_gpio.h" title="mss_gpio.h" tooltip="gc_MSS_MSS_CM3_0_hw_platform/drivers/mss_gpio/mss_gpio.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/gc_MSS_MSS_CM3_0_hw_platform/drivers/mss_gpio/mss_gpio.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="33" selectionOffset="17525" selectionTopPixel="7428"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="mss_uart.h" partName="mss_uart.h" path="C:/Users/knekritz/UMKarts/gc/SoftConsole/gc_MSS_MSS_CM3_0/gc_MSS_MSS_CM3_0_hw_platform/drivers/mss_uart/mss_uart.h" title="mss_uart.h" tooltip="gc_MSS_MSS_CM3_0_hw_platform/drivers/mss_uart/mss_uart.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/gc_MSS_MSS_CM3_0_hw_platform/drivers/mss_uart/mss_uart.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="19066" selectionTopPixel="5918"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="item.h" partName="item.h" path="C:/Users/mikechri/Downloads/gc/gc/SoftConsole/gc_MSS_MSS_CM3_0/gc_MSS_MSS_CM3_0_app/item.h" title="item.h" tooltip="gc_MSS_MSS_CM3_0_app/item.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/gc_MSS_MSS_CM3_0_app/item.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="97" selectionTopPixel="0"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="mss_ace.h" partName="mss_ace.h" path="C:/Users/knekritz/UMKarts/gc/SoftConsole/gc_MSS_MSS_CM3_0/gc_MSS_MSS_CM3_0_hw_platform/drivers/mss_ace/mss_ace.h" title="mss_ace.h" tooltip="gc_MSS_MSS_CM3_0_hw_platform/drivers/mss_ace/mss_ace.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/gc_MSS_MSS_CM3_0_hw_platform/drivers/mss_ace/mss_ace.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="22097" selectionTopPixel="9129"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="item.c" partName="item.c" path="C:/Users/mikechri/Downloads/gc/gc/SoftConsole/gc_MSS_MSS_CM3_0/gc_MSS_MSS_CM3_0_app/item.c" title="item.c" tooltip="gc_MSS_MSS_CM3_0_app/item.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/gc_MSS_MSS_CM3_0_app/item.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1474" selectionTopPixel="918"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="mss_timer.h" partName="mss_timer.h" path="C:/Users/knekritz/UMKarts/gc/SoftConsole/gc_MSS_MSS_CM3_0/gc_MSS_MSS_CM3_0_hw_platform/drivers/mss_timer/mss_timer.h" title="mss_timer.h" tooltip="gc_MSS_MSS_CM3_0_hw_platform/drivers/mss_timer/mss_timer.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/gc_MSS_MSS_CM3_0_hw_platform/drivers/mss_timer/mss_timer.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="18" selectionOffset="11662" selectionTopPixel="4233"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="sound.h" partName="sound.h" path="C:/Users/knekritz/UMKarts/gc/SoftConsole/gc_MSS_MSS_CM3_0/gc_MSS_MSS_CM3_0_app/sound.h" title="sound.h" tooltip="gc_MSS_MSS_CM3_0_app/sound.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/gc_MSS_MSS_CM3_0_app/sound.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="74" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="sound.c" partName="sound.c" path="C:/Users/knekritz/UMKarts/gc/SoftConsole/gc_MSS_MSS_CM3_0/gc_MSS_MSS_CM3_0_app/sound.c" title="sound.c" tooltip="gc_MSS_MSS_CM3_0_app/sound.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/gc_MSS_MSS_CM3_0_app/sound.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="513" selectionTopPixel="312"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="mss_gpio.c" partName="mss_gpio.c" path="C:/Users/knekritz/UMKarts/gc/SoftConsole/gc_MSS_MSS_CM3_0/gc_MSS_MSS_CM3_0_hw_platform/drivers/mss_gpio/mss_gpio.c" title="mss_gpio.c" tooltip="gc_MSS_MSS_CM3_0_hw_platform/drivers/mss_gpio/mss_gpio.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/gc_MSS_MSS_CM3_0_hw_platform/drivers/mss_gpio/mss_gpio.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="18" selectionOffset="7120" selectionTopPixel="4052"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="core_cm3.h" partName="core_cm3.h" path="C:/Users/knekritz/UMKarts/gc/SoftConsole/gc_MSS_MSS_CM3_0/gc_MSS_MSS_CM3_0_hw_platform/CMSIS/core_cm3.h" title="core_cm3.h" tooltip="gc_MSS_MSS_CM3_0_hw_platform/CMSIS/core_cm3.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/gc_MSS_MSS_CM3_0_hw_platform/CMSIS/core_cm3.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="78213" selectionTopPixel="28747"/>
 </editor>
 </editors>
 <views>
-<view id="org.eclipse.debug.ui.ModuleView" partName="Modules">
-<viewState/>
-</view>
-<view id="org.eclipse.debug.ui.MemoryView" partName="Memory">
-<viewState/>
-</view>
 <view id="org.eclipse.debug.ui.DebugView" partName="Debug">
 <viewState/>
 </view>
@@ -114,9 +102,6 @@
 <viewState CommonNavigator.LINKING_ENABLED="0" CommonNavigator.LINKING_ENABLED.delayed="0" org.eclipse.cdt.ui.cview.groupincludes="false" org.eclipse.cdt.ui.editor.CUChildren="true" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
 </view>
 <view id="org.eclipse.ui.views.PropertySheet" partName="Properties"/>
-<view id="org.eclipse.debug.ui.RegisterView" partName="Registers">
-<viewState/>
-</view>
 <view id="org.eclipse.cdt.debug.ui.DisassemblyView" partName="Disassembly">
 <viewState/>
 </view>
@@ -127,7 +112,7 @@
 <category IMemento.internal.id="Errors"/>
 <category IMemento.internal.id="Warnings"/>
 </expanded>
-<columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
+<columnWidths org.eclipse.ui.ide.locationField="64" org.eclipse.ui.ide.markerType="94" org.eclipse.ui.ide.pathField="124" org.eclipse.ui.ide.resourceField="94" org.eclipse.ui.ide.severityAndDescriptionField="509"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
@@ -139,7 +124,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.debug.ui.DebugView" activePerspective="org.eclipse.debug.ui.DebugPerspective">
+<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.eclipse.cdt.ui.CPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.cdt.internal.ui.CPerspectiveFactory" id="org.eclipse.cdt.ui.CPerspective" label="C/C++"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -217,13 +202,14 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.21464393" ratioLeft="214" ratioRight="783" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottom" ratio="0.565625" ratioLeft="543" ratioRight="417" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<info folder="true" part="bottom" ratio="0.7813688" ratioLeft="822" ratioRight="230" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
 <page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
@@ -233,7 +219,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="topRight" ratio="0.86410254" ratioLeft="674" ratioRight="106" relationship="2" relative="org.eclipse.ui.editorss">
+<info folder="true" part="topRight" ratio="0.7245863" ratioLeft="1226" ratioRight="466" relationship="2" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.cdt.make.ui.views.MakeView" label="Make Targets"/>
@@ -283,12 +269,9 @@
 <view id="org.eclipse.ui.views.TaskList"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.cdt.debug.ui.executablesView"/>
-<view id="org.eclipse.debug.ui.MemoryView"/>
 <view id="org.eclipse.debug.ui.DebugView"/>
 <view id="org.eclipse.debug.ui.VariableView"/>
 <view id="org.eclipse.debug.ui.BreakpointView"/>
-<view id="org.eclipse.debug.ui.RegisterView"/>
-<view id="org.eclipse.debug.ui.ModuleView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.cdt.debug.ui.DisassemblyView"/>
 <fastViewBars/>
@@ -316,7 +299,7 @@
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.cdt.debug.ui.executablesView" label="Executables"/>
-<page content="org.eclipse.debug.ui.MemoryView" label="Memory"/>
+<page content="org.eclipse.debug.ui.MemoryView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -324,7 +307,6 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
-<part id="4"/>
 </presentation>
 </folder>
 </info>
@@ -344,15 +326,13 @@
 <folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
 <page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
-<page content="org.eclipse.debug.ui.RegisterView" label="Registers"/>
-<page content="org.eclipse.debug.ui.ModuleView" label="Modules"/>
+<page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.ModuleView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.debug.ui.SignalsView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
-<part id="2"/>
-<part id="3"/>
 </presentation>
 </folder>
 </info>
@@ -364,140 +344,152 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gc_MSS_MSS_CM3_0_app/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gc_MSS_MSS_CM3_0_hw_platform/drivers/mss_gpio/mss_gpio.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gc_MSS_MSS_CM3_0_app/item.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gc_MSS_MSS_CM3_0_app/item.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gc_MSS_MSS_CM3_0_app/lcd.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gc_MSS_MSS_CM3_0_app/lcd.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gc_MSS_MSS_CM3_0_app/sound.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gc_MSS_MSS_CM3_0_hw_platform/drivers/mss_uart/mss_uart.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gc_MSS_MSS_CM3_0_hw_platform/drivers/mss_timer/mss_timer.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gc_MSS_MSS_CM3_0_app/sound.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gc_MSS_MSS_CM3_0_hw_platform/CMSIS/core_cm3.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gc_MSS_MSS_CM3_0_hw_platform/drivers/mss_gpio/mss_gpio.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gc_MSS_MSS_CM3_0_hw_platform/hal/CortexM3/cortex_nvic.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gc_MSS_MSS_CM3_0_hw_platform/CMSIS/a2fxxxm3.h"/>
 </editors>
-<item historyLabel="item.c" index="3">
-<position info="not_deleted" x="1108" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1209" y="0"/>
 </item>
-<item historyLabel="item.c" index="3">
-<position info="not_deleted" x="1168" y="0"/>
+<item historyLabel="mss_gpio.c" index="6">
+<position info="not_deleted" x="7120" y="18"/>
 </item>
-<item historyLabel="item.c" index="3">
-<position info="not_deleted" x="1068" y="0"/>
+<item historyLabel="sound.c" index="1">
+<position/>
 </item>
-<item historyLabel="item.c" index="3">
-<position info="not_deleted" x="1224" y="0"/>
+<item historyLabel="core_cm3.h" index="5">
+<position info="not_deleted" x="76516" y="0"/>
+</item>
+<item historyLabel="cortex_nvic.h" index="7">
+<position info="not_deleted" x="658" y="0"/>
+</item>
+<item historyLabel="core_cm3.h" index="5">
+<position info="not_deleted" x="78213" y="0"/>
+</item>
+<item historyLabel="mss_gpio.c" index="6">
+<position info="not_deleted" x="7120" y="18"/>
+</item>
+<item historyLabel="sound.c" index="1">
+<position/>
+</item>
+<item historyLabel="a2fxxxm3.h" index="8">
+<position info="not_deleted" x="22469" y="0"/>
+</item>
+<item historyLabel="sound.c" index="1">
+<position info="not_deleted" x="600" y="17"/>
+</item>
+<item historyLabel="mss_timer.h" index="3">
+<position info="not_deleted" x="11662" y="18"/>
+</item>
+<item historyLabel="core_cm3.h" index="5">
+<position info="not_deleted" x="78213" y="0"/>
+</item>
+<item historyLabel="mss_gpio.c" index="6">
+<position info="not_deleted" x="7120" y="18"/>
+</item>
+<item historyLabel="sound.c" index="1">
+<position info="not_deleted" x="600" y="17"/>
+</item>
+<item historyLabel="sound.c" index="1">
+<position info="not_deleted" x="513" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3470" y="0"/>
+<position info="not_deleted" x="2579" y="0"/>
 </item>
-<item historyLabel="item.h" index="2">
-<position info="not_deleted" x="249" y="16"/>
+<item historyLabel="core_cm3.h" index="5">
+<position info="not_deleted" x="78213" y="0"/>
 </item>
-<item historyLabel="mss_gpio.h" index="1">
-<position info="not_deleted" x="17525" y="33"/>
+<item historyLabel="mss_gpio.c" index="6">
+<position info="not_deleted" x="7120" y="18"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3470" y="0"/>
-</item>
-<item historyLabel="item.h" index="2">
-<position info="not_deleted" x="249" y="16"/>
+<item historyLabel="sound.c" index="1">
+<position info="not_deleted" x="509" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3470" y="0"/>
+<position info="not_deleted" x="2400" y="0"/>
+</item>
+<item historyLabel="mss_uart.h" index="2">
+<position info="not_deleted" x="19066" y="0"/>
+</item>
+<item historyLabel="sound.c" index="1">
+<position info="not_deleted" x="614" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3470" y="0"/>
+<position info="not_deleted" x="2663" y="0"/>
+</item>
+<item historyLabel="core_cm3.h" index="5">
+<position info="not_deleted" x="78213" y="0"/>
+</item>
+<item historyLabel="mss_gpio.c" index="6">
+<position info="not_deleted" x="7120" y="18"/>
+</item>
+<item historyLabel="sound.c" index="1">
+<position info="not_deleted" x="821" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="2521" y="0"/>
-</item>
-<item historyLabel="item.c" index="3">
-<position info="not_deleted" x="1323" y="0"/>
-</item>
-<item historyLabel="item.c" index="3">
-<position info="not_deleted" x="1385" y="0"/>
-</item>
-<item historyLabel="item.c" index="3">
-<position info="not_deleted" x="1014" y="0"/>
-</item>
-<item historyLabel="item.c" index="3">
-<position info="not_deleted" x="1068" y="0"/>
-</item>
-<item historyLabel="item.c" index="3">
-<position info="not_deleted" x="1108" y="0"/>
-</item>
-<item historyLabel="item.c" index="3">
-<position info="not_deleted" x="1168" y="0"/>
-</item>
-<item historyLabel="item.c" index="3">
-<position info="not_deleted" x="1068" y="0"/>
-</item>
-<item historyLabel="item.c" index="3">
-<position info="not_deleted" x="1108" y="0"/>
-</item>
-<item historyLabel="item.c" index="3">
-<position info="not_deleted" x="1141" y="0"/>
-</item>
-<item historyLabel="item.c" index="3">
-<position info="not_deleted" x="1251" y="0"/>
-</item>
-<item historyLabel="item.c" index="3">
-<position info="not_deleted" x="1323" y="0"/>
+<position info="not_deleted" x="2579" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="2521" y="0"/>
-</item>
-<item historyLabel="item.c" index="3">
-<position info="not_deleted" x="1162" y="0"/>
+<position info="not_deleted" x="2560" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="2521" y="0"/>
+<position/>
 </item>
-<item historyLabel="lcd.h" index="4">
-<position info="not_deleted" x="159" y="0"/>
+<item historyLabel="sound.c" index="1">
+<position info="not_deleted" x="821" y="0"/>
 </item>
-<item historyLabel="lcd.c" index="5">
-<position info="not_deleted" x="651" y="0"/>
+<item historyLabel="sound.c" index="1">
+<position info="not_deleted" x="706" y="0"/>
 </item>
-<item historyLabel="lcd.h" index="4">
-<position info="not_deleted" x="159" y="0"/>
+<item historyLabel="mss_timer.h" index="3">
+<position info="not_deleted" x="11662" y="18"/>
 </item>
-<item historyLabel="lcd.c" index="5">
-<position info="not_deleted" x="651" y="0"/>
+<item historyLabel="sound.c" index="1">
+<position info="not_deleted" x="706" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3559" y="0"/>
+<item historyLabel="mss_gpio.c" index="6">
+<position info="not_deleted" x="7120" y="18"/>
 </item>
-<item historyLabel="item.c" index="3">
-<position info="not_deleted" x="1476" y="0"/>
+<item historyLabel="sound.h" index="4">
+<position info="not_deleted" x="74" y="0"/>
 </item>
-<item historyLabel="item.h" index="2">
-<position info="not_deleted" x="249" y="16"/>
-</item>
-<item historyLabel="item.c" index="3">
-<position info="not_deleted" x="1474" y="0"/>
-</item>
-<item historyLabel="item.h" index="2">
-<position info="not_deleted" x="249" y="16"/>
-</item>
-<item historyLabel="item.c" index="3">
-<position info="not_deleted" x="1474" y="0"/>
-</item>
-<item historyLabel="item.c" index="3">
-<position info="not_deleted" x="1445" y="0"/>
-</item>
-<item historyLabel="item.h" index="2">
-<position info="not_deleted" x="97" y="0"/>
-</item>
-<item historyLabel="item.c" index="3">
-<position info="not_deleted" x="1474" y="0"/>
+<item historyLabel="mss_timer.h" index="3">
+<position info="not_deleted" x="11662" y="18"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="2516" y="0"/>
+<position/>
+</item>
+<item historyLabel="core_cm3.h" index="5">
+<position info="not_deleted" x="78213" y="0"/>
+</item>
+<item historyLabel="mss_gpio.c" index="6">
+<position info="not_deleted" x="7120" y="18"/>
+</item>
+<item historyLabel="sound.c" index="1">
+<position info="not_deleted" x="162" y="0"/>
+</item>
+<item historyLabel="sound.c" index="1">
+<position info="not_deleted" x="455" y="0"/>
+</item>
+<item historyLabel="mss_gpio.c" index="6">
+<position info="not_deleted" x="7120" y="18"/>
+</item>
+<item historyLabel="sound.c" index="1">
+<position info="not_deleted" x="700" y="0"/>
+</item>
+<item historyLabel="sound.c" index="1">
+<position info="not_deleted" x="644" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="2521" y="0"/>
+<position info="not_deleted" x="2579" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="2521" y="0"/>
-</item>
-<item active="true" historyLabel="main.c" index="0">
-<position info="not_deleted" x="2521" y="0"/>
+<item active="true" historyLabel="sound.c" index="1">
+<position info="not_deleted" x="644" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -505,6 +497,12 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="topLeft"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="topRight"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -512,27 +510,22 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="bottom"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="item.c" tooltip="gc_MSS_MSS_CM3_0_app/item.c">
-<persistable path="/gc_MSS_MSS_CM3_0_app/item.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="a2fxxxm3.h" tooltip="gc_MSS_MSS_CM3_0_hw_platform/CMSIS/a2fxxxm3.h">
+<persistable path="/gc_MSS_MSS_CM3_0_hw_platform/CMSIS/a2fxxxm3.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="item.h" tooltip="gc_MSS_MSS_CM3_0_app/item.h">
-<persistable path="/gc_MSS_MSS_CM3_0_app/item.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="cortex_nvic.h" tooltip="gc_MSS_MSS_CM3_0_hw_platform/hal/CortexM3/cortex_nvic.h">
+<persistable path="/gc_MSS_MSS_CM3_0_hw_platform/hal/CortexM3/cortex_nvic.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="mss_gpio.h" tooltip="gc_MSS_MSS_CM3_0_hw_platform/drivers/mss_gpio/mss_gpio.h">
-<persistable path="/gc_MSS_MSS_CM3_0_hw_platform/drivers/mss_gpio/mss_gpio.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="core_cm3.h" tooltip="gc_MSS_MSS_CM3_0_hw_platform/CMSIS/core_cm3.h">
+<persistable path="/gc_MSS_MSS_CM3_0_hw_platform/CMSIS/core_cm3.h"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="mss_gpio.c" tooltip="gc_MSS_MSS_CM3_0_hw_platform/drivers/mss_gpio/mss_gpio.c">
 <persistable path="/gc_MSS_MSS_CM3_0_hw_platform/drivers/mss_gpio/mss_gpio.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="gc_MSS_MSS_CM3_0_app/main.c">
-<persistable path="/gc_MSS_MSS_CM3_0_app/main.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="lcd.h" tooltip="gc_MSS_MSS_CM3_0_app/lcd.h">
-<persistable path="/gc_MSS_MSS_CM3_0_app/lcd.h"/>
 </file>
 </mruList>
 </workbench>

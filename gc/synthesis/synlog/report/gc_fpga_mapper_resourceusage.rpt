@@ -80,16 +80,20 @@ Report for cell gc.verilog
   IO Cell usage:
               cell count
              BIBUF     1
+         BIBUF_MSS     2
              INBUF     3
-         INBUF_MSS     3
+           INBUF_A     1
+         INBUF_MSS     4
             OUTBUF     6
+          OUTBUF_A     1
         OUTBUF_MSS     2
+       TRIBUFF_MSS     1
                    -----
-             TOTAL    15
+             TOTAL    21
 
 
 Core Cells         : 2144 of 4608 (47%)
-IO Cells           : 15
+IO Cells           : 21
 
   RAM/ROM Usage Summary
 Block Rams : 0 of 8 (0%)

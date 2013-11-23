@@ -2,17 +2,17 @@ Actel Designer Software
 Version: 11.0.0.23
 Release: v11.0
 
-Info: The design C:/Users/mikechri/Downloads/gc/gc/designer/impl1/gc.adb was last modified by
+Info: The design C:/Users/knekritz/UMKarts/gc/designer/impl1/gc.adb was last modified by
       software version 11.0.0.23.
-Opened an existing Libero design C:/Users/mikechri/Downloads/gc/gc/designer/impl1/gc.adb.
+Opened an existing Libero design C:/Users/knekritz/UMKarts/gc/designer/impl1/gc.adb.
 
-The Export-map command succeeded ( 00:00:11 )
-CHECKSUM: B7FA
-Wrote to the file: C:\Users\mikechri\Downloads\gc\gc\designer\impl1\gc.fdb
+The Export-map command succeeded ( 00:00:10 )
+CHECKSUM: E3FA
+Wrote to the file: C:\Users\knekritz\UMKarts\gc\designer\impl1\gc.fdb
 
 The Export command succeeded ( 00:00:13 )
-Design saved to file C:/Users/mikechri/Downloads/gc/gc/designer/impl1/gc.adb.
+Design saved to file C:/Users/knekritz/UMKarts/gc/designer/impl1/gc.adb.
 
-The Execute Script command succeeded ( 00:00:16 )
+The Execute Script command succeeded ( 00:00:15 )
 Design closed.
 
