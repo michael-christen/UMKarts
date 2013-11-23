@@ -129,7 +129,7 @@ void MYTIMER_set_motor_direction(int dir)
 		MYTIMER->direction &= 12;
 		MYTIMER->direction |= 2;
 	}
-	printf("Direction %d\n\r",(int)MYTIMER->direction);
+	//printf("Direction %d\n\r",(int)MYTIMER->direction);
 }
 
 void MYTIMER_set_servo_direction(int dir)
@@ -145,5 +145,5 @@ void MYTIMER_set_servo_direction(int dir)
 		MYTIMER->direction &= 3;
 		MYTIMER->direction |= 8;
 	}
-	printf("Direction %d\n\r",(int)MYTIMER->direction);
+	//printf("Direction %d\n\r",(int)MYTIMER->direction);
 }

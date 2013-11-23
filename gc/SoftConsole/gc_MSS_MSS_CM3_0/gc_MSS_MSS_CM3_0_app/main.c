@@ -161,6 +161,8 @@ int main()
                 else {
                         MYTIMER_set_servo_direction(0);
                 }
+            	printf("Player1 hit\n\r",(int)MYTIMER->direction);
+
                 //for (d = 0; d < 1000000; d++);
         }
 }
