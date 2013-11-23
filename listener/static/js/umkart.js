@@ -4,7 +4,9 @@ $(function(){
     iosocket.on('connect', function () {
 	$('#incomingChatMessages').append($('<li>Connected</li>'));
 	iosocket.on('message', function(message) {
-	    $('#incomingChatMessages').append($('<li></li>').text(message));
+	    //$('#incomingChatMessages').append($('<li></li>').text(message));
+	    var obj = JSON.parse(message);
+	    insertEvent(obj.subject,obj.object,obj.item,obj.action);
 	});
 	iosocket.on('disconnect', function() {
 	    $('#incomingChatMessages').append('<li>Disconnected</li>');
@@ -140,6 +142,9 @@ $(function(){
 	    origStr = origStr.substr(0,origStr.length-1);
 	    $('#'+object).find('.lives').text(origStr);
 	}
+	else if(action =='joined') {
+	    insertPlayer();
+	}
 	if(action == 'start') {
 	    newsBody = "\
 		<p>The Game has Started</p>\
@@ -174,12 +179,13 @@ $(function(){
 	return newsStr;
     }
     function insertEvent(subj,obj,item,act) {
-	$('#newsfeed').append(generateEvent(subj,obj,item,act));
+	$('#newsfeed').prepend(generateEvent(subj,obj,item,act));
     }
     insertPlayer();
     insertPlayer();
     insertPlayer();
     insertPlayer();
+    insertEvent("", "", "", "start");
     insertEvent("player0", "", "GREEN_SHELL", "picked up");
     insertEvent("MARIO", "LUIGI", "GREEN_SHELL", "hit");
     insertEvent("MARIO", "LUIGI", "GREEN_SHELL", "hit");

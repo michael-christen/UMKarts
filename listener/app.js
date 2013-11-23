@@ -79,7 +79,6 @@ server.listen(8080, function() {
 app.use(express.static(__dirname+"/jQuery"));
 app.use(express.static(__dirname+"/bootstrap"));
 */
-/*
 var SerialPort = serialport.SerialPort;
 var serialPort = new SerialPort("/dev/ttyUSB0", {
     baudrate: 57600,
@@ -88,7 +87,6 @@ var serialPort = new SerialPort("/dev/ttyUSB0", {
     parity: 'none',
     parser: serialport.parsers.readline("\n")
 });
-*/
 var socket = socketio.listen(server);
 var numConnections = 0;
 var clients = new Object();
@@ -116,7 +114,6 @@ socketio.listen(server).on('connection', function (socketA) {
 
 });
 */
-/*
     serialPort.on("open", function() {
 	console.log('open serial');
 	serialPort.on('data', function(data) {
@@ -130,11 +127,21 @@ socketio.listen(server).on('connection', function (socketA) {
 		    console.log('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@');
 		    console.log('length = ' + data.length);
 		    console.log('msg = ' + data);
-		    clients[c].broadcast.emit('message', ' ' + data);
+		    var dObj = parseData(data);
+		    clients[c].broadcast.emit('message',
+			JSON.stringify(dObj));
 		    //Only go through once
 		    break;
 		}
 	    }
 	});
     });
-*/
+function parseData(data) {
+    var returnObj = {
+	subject:'player1',
+        object:'player1',
+	item: 'GREEN_SHELL',
+	action:'hit'
+    };
+    return returnObj;
+}
