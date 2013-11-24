@@ -1,14 +1,14 @@
 C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin64\c_ver.exe  -osyn  C:\Users\mttschlt\UMKarts\gc\synthesis\synwork\gc_compiler.srs  -top  gc  -prodtype  synplify_pro  -nram -fixsmult   -divnmod -I C:\Users\mttschlt\UMKarts\gc\synthesis\  -I C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib  -v2001  -devicelib  C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v  -encrypt  -pro  -dmgen  C:\Users\mttschlt\UMKarts\gc\synthesis\dm  -ll 2000   -ui -fid2 -ram -sharing on  -autosm -lib work C:\Users\mttschlt\UMKarts\gc\hdl\APB_IR.v -lib work C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Clock_gen.v -lib work C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Tx_async.v -lib work C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Rx_async.v -lib work C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\fifo_256x8_smartfusion.v -lib work C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v -lib work C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUARTapb.v -lib work C:\Users\mttschlt\UMKarts\gc\component\work\gc_MSS\mss_tshell.v -lib work C:\Users\mttschlt\UMKarts\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v -lib work C:\Users\mttschlt\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v -lib work C:\Users\mttschlt\UMKarts\gc\component\work\gc_MSS\gc_MSS.v -lib work C:\Users\mttschlt\UMKarts\gc\hdl\receive.v -lib work C:\Users\mttschlt\UMKarts\gc\hdl\query.v -lib work C:\Users\mttschlt\UMKarts\gc\hdl\clockdivider.v -lib work C:\Users\mttschlt\UMKarts\gc\hdl\IR_LED.v -lib work C:\Users\mttschlt\UMKarts\gc\smartgen\IR_QUEUE\IR_QUEUE.v -lib work C:\Users\mttschlt\UMKarts\gc\hdl\LED_PULSE.v -lib work C:\Users\mttschlt\UMKarts\gc\hdl\IR_RECV.v -lib work C:\Users\mttschlt\UMKarts\gc\hdl\motor.v -lib work C:\Users\mttschlt\UMKarts\gc\hdl\motorWrapper.v -lib COREAPB3_LIB C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v -lib COREAPB3_LIB C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v -lib COREAPB3_LIB C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v -lib work C:\Users\mttschlt\UMKarts\gc\component\work\gc\gc.v -loga  C:\Users\mttschlt\UMKarts\gc\synthesis\gc.srr 
 rc:1 success:1
-C:\Users\mttschlt\UMKarts\gc\synthesis\synwork\gc_compiler.srs|o|1385324503|112098
+C:\Users\mttschlt\UMKarts\gc\synthesis\synwork\gc_compiler.srs|o|1385324848|112097
 C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v|i|1360942192|72817
 C:\Users\mttschlt\UMKarts\gc\hdl\APB_IR.v|i|1385321920|830
-C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Clock_gen.v|i|1385322216|6121
-C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Tx_async.v|i|1385322216|5218
-C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Rx_async.v|i|1385322216|9457
-C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\fifo_256x8_smartfusion.v|i|1385322216|4444
-C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v|i|1385322216|9009
-C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUARTapb.v|i|1385322216|6573
+C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Clock_gen.v|i|1385324822|6121
+C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Tx_async.v|i|1385324822|5218
+C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Rx_async.v|i|1385324822|9457
+C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\fifo_256x8_smartfusion.v|i|1385324822|4444
+C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v|i|1385324822|9009
+C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUARTapb.v|i|1385324822|6573
 C:\Users\mttschlt\UMKarts\gc\component\work\gc_MSS\mss_tshell.v|i|1385321920|12226
 C:\Users\mttschlt\UMKarts\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v|i|1359492172|11243
 C:\Users\mttschlt\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v|i|1385259289|2880
@@ -25,7 +25,7 @@ C:\Users\mttschlt\UMKarts\gc\hdl\motorWrapper.v|i|1385258674|1416
 C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v|i|1366759807|6738
 C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v|i|1366759807|3312
 C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v|i|1366759807|32421
-C:\Users\mttschlt\UMKarts\gc\component\work\gc\gc.v|i|1385322216|24470
-C:\Users\mttschlt\UMKarts\gc\synthesis\gc.srr|o|1385324503|37912
+C:\Users\mttschlt\UMKarts\gc\component\work\gc\gc.v|i|1385324822|24470
+C:\Users\mttschlt\UMKarts\gc\synthesis\gc.srr|o|1385324848|37912
 C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin64\c_ver.exe|i|1361373522|5587456
 C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin\c_ver.exe|i|1361373516|2088448
