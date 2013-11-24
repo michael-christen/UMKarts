@@ -6,7 +6,7 @@
 #Implementation: synthesis
 
 $ Start of Compile
-#Sun Nov 24 14:28:44 2013
+#Sun Nov 24 14:43:51 2013
 
 Synopsys Verilog Compiler, version comp201209rcp1, Build 245R, built Feb 20 2013
 @N|Running in 64-bit mode
@@ -504,7 +504,7 @@ State machine has 6 reachable states with original encodings of:
 @W: CL159 :"C:\Users\mttschlt\UMKarts\gc\hdl\APB_IR.v":11:14:11:18|Input PADDR is unused
 @END
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Nov 24 14:28:45 2013
+# Sun Nov 24 14:43:52 2013
 
 ###########################################################]
 Premap Report
@@ -533,7 +533,7 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 42MB peak: 107MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Nov 24 14:28:47 2013
+# Sun Nov 24 14:43:54 2013
 
 ###########################################################]
 Map & Optimize Report
@@ -765,7 +765,7 @@ Found clock FCLK with period 10.00ns
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Sun Nov 24 14:28:56 2013
+# Timing Report written on Sun Nov 24 14:44:04 2013
 #
 
 
@@ -2077,6 +2077,6 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 44MB peak: 137MB)
 
 Process took 0h:00m:09s realtime, 0h:00m:09s cputime
-# Sun Nov 24 14:28:57 2013
+# Sun Nov 24 14:44:04 2013
 
 ###########################################################]

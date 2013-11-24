@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version G-2012.09M-SP1 
 #--  Project file C:\Users\mttschlt\UMKarts\gc\synthesis\run_options.txt
-#--  Written on Sun Nov 24 14:28:44 2013
+#--  Written on Sun Nov 24 14:43:51 2013
 
 
 #project files

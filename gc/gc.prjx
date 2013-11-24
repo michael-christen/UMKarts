@@ -49,7 +49,7 @@ PARENT="<project>\component\work\gc\gc.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\coreparameters.v,tb_hdl"
 STATE="utd"
-TIME="1385321295"
+TIME="1385321920"
 SIZE="1256"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
@@ -347,7 +347,7 @@ SIZE="413"
 ENDFILE
 VALUE "<project>\component\work\gc\CoreUARTapb_0\coreparameters.v,tb_hdl"
 STATE="utd"
-TIME="1385321295"
+TIME="1385321920"
 SIZE="601"
 PARENT="<project>\component\work\gc\CoreUARTapb_0\gc_CoreUARTapb_0_CoreUARTapb.cxf"
 IS_READONLY="TRUE"
@@ -426,12 +426,12 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\gc\gc.cxf,actgen_cxf"
 STATE="utd"
-TIME="1385321304"
+TIME="1385321920"
 SIZE="9920"
 ENDFILE
 VALUE "<project>\component\work\gc\gc.pdc,pdc"
 STATE="utd"
-TIME="1385321295"
+TIME="1385321920"
 SIZE="3473"
 PARENT="<project>\component\work\gc\gc.cxf"
 BEGIN_USE_CONSTRAINT
@@ -442,26 +442,26 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\gc\gc.v,hdl"
 STATE="utd"
-TIME="1385321295"
+TIME="1385321920"
 SIZE="24470"
 PARENT="<project>\component\work\gc\gc.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\gc\testbench.v,tb_hdl"
 STATE="utd"
-TIME="1385321299"
+TIME="1385321920"
 SIZE="1889"
 PARENT="<project>\component\work\gc\gc.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\gc_MSS\gc_MSS.cxf,actgen_cxf"
 STATE="utd"
-TIME="1385321266"
+TIME="1385321920"
 SIZE="15677"
 ENDFILE
 VALUE "<project>\component\work\gc_MSS\gc_MSS.pdc,pdc"
 STATE="utd"
-TIME="1385321266"
+TIME="1385321920"
 SIZE="2695"
 PARENT="<project>\component\work\gc_MSS\gc_MSS.cxf"
 BEGIN_USE_CONSTRAINT
@@ -472,13 +472,13 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\gc_MSS\gc_MSS.v,hdl"
 STATE="utd"
-TIME="1385321266"
+TIME="1385321920"
 SIZE="23401"
 PARENT="<project>\component\work\gc_MSS\gc_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\work\gc_MSS\MSS_ACE_0\MSS_ACE_0.log,???"
 STATE="utd"
-TIME="1385321266"
+TIME="1385321920"
 SIZE="31587"
 PARENT="<project>\component\work\gc_MSS\gc_MSS.cxf"
 ENDFILE
@@ -496,13 +496,13 @@ PARENT="<project>\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.c
 ENDFILE
 VALUE "<project>\component\work\gc_MSS\MSS_ENVM_0\MSS_ENVM_0.efc,efc"
 STATE="utd"
-TIME="1385321266"
+TIME="1385321920"
 SIZE="17361"
 PARENT="<project>\component\work\gc_MSS\gc_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\work\gc_MSS\mss_tshell.v,hdl"
 STATE="utd"
-TIME="1385321266"
+TIME="1385321920"
 SIZE="12226"
 PARENT="<project>\component\work\gc_MSS\gc_MSS.cxf"
 BEGIN_USE_CONSTRAINT
@@ -513,7 +513,7 @@ USE_FOR_ANY_TOOL="FALSE"
 ENDFILE
 VALUE "<project>\component\work\gc_MSS\mss_tshell_syn.sdc,sdc"
 STATE="utd"
-TIME="1385321266"
+TIME="1385321920"
 SIZE="184"
 PARENT="<project>\component\work\gc_MSS\gc_MSS.cxf"
 BEGIN_USE_CONSTRAINT
@@ -524,83 +524,83 @@ USE_FOR_ANY_TOOL="FALSE"
 ENDFILE
 VALUE "<project>\component\work\gc_MSS\testbench.v,tb_hdl"
 STATE="utd"
-TIME="1385321266"
+TIME="1385321920"
 SIZE="1969"
 PARENT="<project>\component\work\gc_MSS\gc_MSS.cxf"
 ENDFILE
 VALUE "<project>\designer\impl1\gc.adb,adb"
 STATE="utd"
-TIME="1385260746"
-SIZE="2398208"
+TIME="1385321920"
+SIZE="2614784"
 ENDFILE
 VALUE "<project>\designer\impl1\gc.fdb,fdb"
 STATE="utd"
-TIME="1385321490"
+TIME="1385321920"
 SIZE="102526"
 ENDFILE
 VALUE "<project>\designer\impl1\gc.ide_des,ide_des"
 STATE="utd"
-TIME="1385260746"
+TIME="1385321920"
 SIZE="998"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_compile_log.rpt,log"
 STATE="utd"
-TIME="1385321365"
+TIME="1385321920"
 SIZE="31377"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_fp\gc.pdb,pdb"
 STATE="utd"
-TIME="1385260746"
-SIZE="110592"
+TIME="1385321920"
+SIZE="112128"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_fp\gc.pro,pro"
 STATE="utd"
-TIME="1385260746"
+TIME="1385321920"
 SIZE="1915"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_fp\projectData\gc.pdb,pdb"
 STATE="utd"
-TIME="1385321549"
+TIME="1385321920"
 SIZE="112128"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1385321464"
+TIME="1385321920"
 SIZE="2367"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_prgdata_log.rpt,log"
 STATE="utd"
-TIME="1385321491"
+TIME="1385321920"
 SIZE="600"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_verifytiming_log.rpt,log"
 STATE="utd"
-TIME="1385321475"
+TIME="1385321920"
 SIZE="1082"
 ENDFILE
 VALUE "<project>\hdl\APB_IR.v,hdl"
 STATE="utd"
-TIME="1385321269"
+TIME="1385321920"
 SIZE="830"
 ENDFILE
 VALUE "<project>\hdl\clockdivider.v,hdl"
 STATE="utd"
-TIME="1385321269"
+TIME="1385321920"
 SIZE="453"
 ENDFILE
 VALUE "<project>\hdl\IR_LED.v,hdl"
 STATE="utd"
-TIME="1385321269"
+TIME="1385321920"
 SIZE="3594"
 ENDFILE
 VALUE "<project>\hdl\IR_RECV.v,hdl"
 STATE="utd"
-TIME="1385321269"
+TIME="1385321920"
 SIZE="2039"
 ENDFILE
 VALUE "<project>\hdl\LED_PULSE.v,hdl"
 STATE="utd"
-TIME="1385321269"
+TIME="1385321920"
 SIZE="265"
 ENDFILE
 VALUE "<project>\hdl\motor.v,hdl"
@@ -660,13 +660,13 @@ PARENT="<project>\component\work\gc\CoreUARTapb_0\gc_CoreUARTapb_0_CoreUARTapb.c
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1385321296"
+TIME="1385321920"
 SIZE="734"
 PARENT="<project>\component\work\gc\gc.cxf"
 ENDFILE
 VALUE "<project>\simulation\test.bfm,sim"
 STATE="utd"
-TIME="1385260746"
+TIME="1385321920"
 SIZE="9564"
 PARENT="<project>\component\work\gc_MSS\gc_MSS.cxf"
 ENDFILE
@@ -678,50 +678,50 @@ PARENT="<project>\component\work\gc_MSS\gc_MSS.cxf"
 ENDFILE
 VALUE "<project>\smartgen\IR_QUEUE\IR_QUEUE.cxf,actgen_cxf"
 STATE="utd"
-TIME="1385321269"
+TIME="1385321920"
 SIZE="2444"
 ENDFILE
 VALUE "<project>\smartgen\IR_QUEUE\IR_QUEUE.gen,gen"
 STATE="utd"
-TIME="1385321269"
+TIME="1385321920"
 SIZE="956"
 PARENT="<project>\smartgen\IR_QUEUE\IR_QUEUE.cxf"
 ENDFILE
 VALUE "<project>\smartgen\IR_QUEUE\IR_QUEUE.log,log"
 STATE="utd"
-TIME="1385321269"
+TIME="1385321920"
 SIZE="3835"
 PARENT="<project>\smartgen\IR_QUEUE\IR_QUEUE.cxf"
 ENDFILE
 VALUE "<project>\smartgen\IR_QUEUE\IR_QUEUE.v,hdl"
 STATE="utd"
-TIME="1385321269"
+TIME="1385321920"
 SIZE="27400"
 PARENT="<project>\smartgen\IR_QUEUE\IR_QUEUE.cxf"
 ENDFILE
 VALUE "<project>\synthesis\gc.edn,syn_edn"
 STATE="utd"
-TIME="1385260747"
-SIZE="1616054"
+TIME="1385321920"
+SIZE="1668418"
 ENDFILE
 VALUE "<project>\synthesis\gc.so,so"
 STATE="utd"
-TIME="1385260747"
+TIME="1385321920"
 SIZE="202"
 ENDFILE
 VALUE "<project>\synthesis\gc_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1385260747"
-SIZE="413"
+TIME="1385321336"
+SIZE="633"
 ENDFILE
 VALUE "<project>\synthesis\gc_syn.prj,prj"
 STATE="utd"
-TIME="1385260747"
-SIZE="3669"
+TIME="1385321920"
+SIZE="3763"
 ENDFILE
 VALUE "<project>\synthesis\synwork\gc_compiler.so,so"
 STATE="utd"
-TIME="1385258675"
+TIME="1385320096"
 SIZE="159"
 ENDFILE
 ENDLIST
@@ -975,8 +975,8 @@ NAME="Synplify Pro AE"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro AE"
 LOCATION="C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 EndProfile
 NAME="ModelSim AE"
 FUNCTION="Simulation"
@@ -1043,10 +1043,7 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 StartPage;StartPage
-Reports;Reports
-SmartDesign;gc
-HDL;hdl\IR_RECV.v
-ACTIVEVIEW;Reports
+ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
 LIST "APB_IR::work","hdl\APB_IR.v","FALSE","FALSE"

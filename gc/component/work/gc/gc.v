@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Sun Nov 24 14:28:15 2013
+// Created by SmartDesign Sun Nov 24 14:43:36 2013
 // Version: v11.0 11.0.0.23
 //////////////////////////////////////////////////////////////////////
 
@@ -572,8 +572,8 @@ LED_RECV LED_RECV_0(
         .RECV_IN   ( RECV_IN ),
         .CLK       ( gc_MSS_0_FAB_CLK ),
         // Outputs
-        .DATA      ( LED_RECV_0_DATA ),
-        .INTERRUPT ( LED_RECV_0_INTERRUPT ) 
+        .INTERRUPT ( LED_RECV_0_INTERRUPT ),
+        .DATA      ( LED_RECV_0_DATA ) 
         );
 
 //--------motorWrapper

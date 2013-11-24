@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Sun Nov 24 14:31:03 2013 ***************************************************************************
+                          Sun Nov 24 14:46:04 2013 ***************************************************************************
 
 Product: Designer
 Release: v11.0
 Version: 11.0.0.23
 File Name: C:\Users\mttschlt\UMKarts\gc\designer\impl1\gc.adb
 Design Name: gc  Design State: layout
-Last Saved: Sun Nov 24 14:29:25 2013
+Last Saved: Sun Nov 24 14:44:30 2013
 
 ***** Device Data **************************************************
 
@@ -22,7 +22,7 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Sun Nov 24 14:29:01 2013:
+Source File(s) Imported on Sun Nov 24 14:44:08 2013:
         C:\Users\mttschlt\UMKarts\gc\synthesis\gc.edn
         C:\Users\mttschlt\UMKarts\gc\component\work\gc\gc.pdc
 
@@ -569,16 +569,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Sun Nov 24 14:29:33 2013
+Timing-driven Placer Started: Sun Nov 24 14:44:37 2013
 
-Placer Finished: Sun Nov 24 14:30:20 2013
-Total Placer CPU Time:     00:00:47
+Placer Finished: Sun Nov 24 14:45:25 2013
+Total Placer CPU Time:     00:00:48
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: gc                              Started: Sun Nov 24 14:30:29 2013
+Design: gc                              Started: Sun Nov 24 14:45:32 2013
 
  
 Iterative improvement...
@@ -586,9 +586,9 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: gc                              
-Finished: Sun Nov 24 14:30:53 2013
-Total CPU Time:     00:00:24            Total Elapsed Time: 00:00:24
-Total Memory Usage: 183.9 Mbytes
+Finished: Sun Nov 24 14:45:55 2013
+Total CPU Time:     00:00:23            Total Elapsed Time: 00:00:23
+Total Memory Usage: 183.8 Mbytes
                         o - o - o - o - o - o
 
 

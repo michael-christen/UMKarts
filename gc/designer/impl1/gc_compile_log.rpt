@@ -17,7 +17,7 @@ Imported the files:
    C:\Users\mttschlt\UMKarts\gc\synthesis\gc.edn
    C:\Users\mttschlt\UMKarts\gc\component\work\gc\gc.pdc
 
-The Import command succeeded ( 00:00:13 )
+The Import command succeeded ( 00:00:12 )
 =====================================================================
 Parameters used to run compile:
 ===============================
@@ -520,12 +520,12 @@ Nets that are candidates for clock assignment and the resulting fanout:
     20      SET/RESET_NET Net   : IR_QUEUE_0/READ_RESET_P_0
                           Driver: IR_QUEUE_0/DFN1C0_READ_RESET_P_0
 
-The Compile command succeeded ( 00:00:09 )
+The Compile command succeeded ( 00:00:07 )
 Wrote status report to file: gc_compile_report.txt
 
 The Report command succeeded ( 00:00:00 )
 Design saved to file C:\Users\mttschlt\UMKarts\gc\designer\impl1\gc.adb.
 
-The Execute Script command succeeded ( 00:00:25 )
+The Execute Script command succeeded ( 00:00:24 )
 Design closed.
 

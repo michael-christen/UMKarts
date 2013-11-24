@@ -35,7 +35,7 @@ programmer '80078' : Verifying FPGA Array
 programmer '80078' :         Verifying FPGA Array -- pass
 programmer '80078' : Program System Init and Boot Clients...
 programmer '80078' : Verify System Init and Boot Clients...
-programmer '80078' : Finished: Sun Nov 24 14:32:27 2013 (Elapsed time 00:00:39)
+programmer '80078' : Finished: Sun Nov 24 14:47:30 2013 (Elapsed time 00:00:39)
 programmer '80078' : Executing action PROGRAM PASSED.
 
                         o - o - o - o - o - o

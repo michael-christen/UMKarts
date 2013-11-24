@@ -225,7 +225,7 @@ Found clock FCLK with period 10.00ns
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Sun Nov 24 14:28:56 2013
+# Timing Report written on Sun Nov 24 14:44:04 2013
 #
 
 
@@ -1537,6 +1537,6 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 44MB peak: 137MB)
 
 Process took 0h:00m:09s realtime, 0h:00m:09s cputime
-# Sun Nov 24 14:28:57 2013
+# Sun Nov 24 14:44:04 2013
 
 ###########################################################]

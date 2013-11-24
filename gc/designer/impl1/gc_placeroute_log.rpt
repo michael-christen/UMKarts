@@ -33,16 +33,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Sun Nov 24 14:29:33 2013
+Timing-driven Placer Started: Sun Nov 24 14:44:37 2013
 
-Placer Finished: Sun Nov 24 14:30:20 2013
-Total Placer CPU Time:     00:00:47
+Placer Finished: Sun Nov 24 14:45:25 2013
+Total Placer CPU Time:     00:00:48
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: gc                              Started: Sun Nov 24 14:30:29 2013
+Design: gc                              Started: Sun Nov 24 14:45:32 2013
 
  
 Iterative improvement...
@@ -50,9 +50,9 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: gc                              
-Finished: Sun Nov 24 14:30:53 2013
-Total CPU Time:     00:00:24            Total Elapsed Time: 00:00:24
-Total Memory Usage: 183.9 Mbytes
+Finished: Sun Nov 24 14:45:55 2013
+Total CPU Time:     00:00:23            Total Elapsed Time: 00:00:23
+Total Memory Usage: 183.8 Mbytes
                         o - o - o - o - o - o
 
 Loading the Timing data for the design.
@@ -60,7 +60,7 @@ Finished loading the Timing data.
 TIMER: Max delay timing requirements have NOT been met.
 TIMER: Min delay timing requirements have been met.
 
-The Layout command succeeded ( 00:01:33 )
+The Layout command succeeded ( 00:01:30 )
 Wrote status report to file: gc_place_and_route_report.txt
 
 The Report command succeeded ( 00:00:00 )
@@ -69,12 +69,12 @@ Wrote globalnet report to file: gc_globalnet_report.txt
 The Report command succeeded ( 00:00:00 )
 Wrote globalusage report to file: gc_globalusage_report.txt
 
-The Report command succeeded ( 00:00:00 )
+The Report command succeeded ( 00:00:01 )
 Wrote iobank report to file: gc_iobank_report.txt
 
 The Report command succeeded ( 00:00:00 )
 Design saved to file C:\Users\mttschlt\UMKarts\gc\designer\impl1\gc.adb.
 
-The Execute Script command succeeded ( 00:01:38 )
+The Execute Script command succeeded ( 00:01:36 )
 Design closed.
 
