@@ -13,7 +13,7 @@ Opened an existing Libero design gc.adb.
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
 Wrote timing report to file: gc_maxdelay_timing_report.txt
 
-The Report command succeeded ( 00:00:05 )
+The Report command succeeded ( 00:00:06 )
 Wrote timing report to file: gc_mindelay_timing_report.txt
 
 The Report command succeeded ( 00:00:01 )

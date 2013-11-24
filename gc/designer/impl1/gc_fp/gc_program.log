@@ -5,7 +5,7 @@ Release: v11.0
 Software Version: 11.0.0.23
 PDB file 'C:\Users\mttschlt\UMKarts\gc\designer\impl1\gc_fp\gc.pdb' has been loaded
 successfully.
-DESIGN : gc;  CHECKSUM : 8443;  PDB_VERSION : 1.8
+DESIGN : gc;  CHECKSUM : 93FC;  PDB_VERSION : 1.8
 Driver : 3.0.0 build 1
 programmer '80078' : FlashPro3
 Opened 'C:/Users/mttschlt/UMKarts/gc/designer/impl1/gc_fp/gc.pro'
@@ -35,7 +35,7 @@ programmer '80078' : Verifying FPGA Array
 programmer '80078' :         Verifying FPGA Array -- pass
 programmer '80078' : Program System Init and Boot Clients...
 programmer '80078' : Verify System Init and Boot Clients...
-programmer '80078' : Finished: Sun Nov 24 14:16:58 2013 (Elapsed time 00:00:39)
+programmer '80078' : Finished: Sun Nov 24 14:32:27 2013 (Elapsed time 00:00:39)
 programmer '80078' : Executing action PROGRAM PASSED.
 
                         o - o - o - o - o - o
