@@ -66,6 +66,7 @@ SECTIONS
     CREATE_OBJECT_SYMBOLS
     __text_load = LOADADDR(.text);
     __text_start = .;
+    __vector_table_vma_base_address = .;
     
     *(.text .text.* .gnu.linkonce.t.*)
     *(.plt)

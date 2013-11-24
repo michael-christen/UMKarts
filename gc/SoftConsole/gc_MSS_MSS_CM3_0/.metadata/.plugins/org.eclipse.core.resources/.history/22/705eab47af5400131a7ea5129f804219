@@ -1,0 +1,56 @@
+#ifndef __ATOMICS_H_
+#define __ATOMICS_H_
+
+static inline unsigned char atomic_cmpxchg(size_t * mem, size_t old, size_t new) {
+	unsigned char res;
+	size_t old_mem_val;
+	do {
+		asm(
+			"ldrex %[old_mem_val], [%mem]\n"
+			"teq   %[old_mem_val],  %[old_val]\n"
+			"strexeq %[res], %[new_val], %[mem]"
+			: [res] "=&l" (res), [old_mem_val] "=&l" (old_mem_val)
+			: [mem] "l" (mem), [new_val] "l" (new), [old_val] "l" (old)
+			: "memory"
+		);
+	}while(res);
+}
+
+static inline int ldrex(int *mem) {
+	int result;
+	asm volatile("ldrex %0, [%1]"
+	                      :"=&r"(result)
+	                      :"r"(mem)
+	                      :"memory");
+	return result;
+}
+
+static inline unsigned char strex(int *mem, int val) {
+	unsigned char failure;
+	asm volatile("strex %0, %1, [%2]"
+			              :"=&r"(failure) :"r"(val), "r"(mem) :"memory");
+	return failure;
+}
+
+static inline unsigned char ldrexb(unsigned char *mem) {
+	unsigned char result;
+	asm volatile("ldrexb %0, [%1]"
+	                      :"=&r"(result)
+	                      :"r"(mem)
+	                      :"memory");
+	return result;
+}
+
+static inline unsigned char strexb(unsigned char *mem, unsigned char val) {
+	unsigned char failure;
+	asm volatile ("strexb %0, %1, [%2]" : "=r"(failure), "=r"(val) : "r"(mem) : "memory");
+	return failure;
+}
+
+static inline unsigned char atomic_lock_test_and_set_1(unsigned char *mem, unsigned char val) {
+	unsigned char failure;
+	failure = strexb(mem, val);
+	return  (failure == 0);
+}
+
+#endif

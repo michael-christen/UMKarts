@@ -13,7 +13,7 @@ int main() {
 	err = xbee_interface_init();
 	if (err != 0) {
 		printf("Unable to successfully initialize xbee interface. Error: %d\r\n", err);
-		while (1) ;
+		return 0;
 	}
 
 	while (1) {
