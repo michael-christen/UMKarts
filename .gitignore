@@ -18,7 +18,7 @@ gc/designer/impl1/gc_compile_log.rpt
 gc/designer/impl1/gc_compile_report.txt
 
 # Place and route files
- 
+gc/designer/impl1/gc_placeroute_log.rpt
 gc/designer/impl1/gc_place_and_route_report.txt
 gc/designer/impl1/gc_globalnet_report.txt
 gc/designer/impl1/gc_globalusage_report.txt
