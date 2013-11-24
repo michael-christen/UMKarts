@@ -6,6 +6,7 @@
 #include "controller.h"
 #include "lcd.h"
 #include "item.h"
+#include "ir_led.h"
 #include "drivers/mss_ace/mss_ace.h"
 #include "sound.h"
 
@@ -74,7 +75,11 @@ int main()
         MSS_GPIO_init();
         MSS_GPIO_config(MSS_GPIO_2, MSS_GPIO_INPUT_MODE | MSS_GPIO_IRQ_EDGE_NEGATIVE);
         MSS_GPIO_enable_irq(MSS_GPIO_2);
+        MSS_GPIO_config(MSS_GPIO_0, MSS_GPIO_INPUT_MODE | MSS_GPIO_IRQ_EDGE_POSITIVE);
+        MSS_GPIO_enable_irq(MSS_GPIO_0);
         initItemWeights();
+
+        IR_LED_write(0xAB);
 
         int x = 1;
         LCD_init();
