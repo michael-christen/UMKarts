@@ -5,4 +5,35 @@
 **/.history
 **/.metadata
 
+# Synthesis Files
 gc/synthesis/gc.srr
+gc/synthesis/gc.edn
+gc/synthesis/synplify.log
+gc/synthesis/gc.areasrr
+gc/synthesis/run_options.txt
+
+# Compile Files
+gc/designer/impl1/gc.adb
+gc/designer/impl1/gc_compile_log.rpt
+gc/designer/impl1/gc_compile_report.txt
+
+# Place and route files
+gc/designer/impl1/gc_placeroute_log.rpt
+gc/designer/impl1/gc_place_and_route_report.txt
+gc/designer/impl1/gc_globalnet_report.txt
+gc/designer/impl1/gc_globalusage_report.txt
+gc/designer/impl1/gc_iobank_report.txt
+
+# Verified Timing Files
+gc/designer/impl1/gc_verifytiming_log.rpt
+gc/designer/impl1/gc_maxdelay_timing_report.txt
+gc/designer/impl1/gc_mindelay_timing_report.txt
+gc/designer/impl1/gc_maxdelay_timingviolations_report.txt
+gc/designer/impl1/gc_mindelay_timingviolations_report.txt
+
+#Program Device
+gc/designer/impl1/gc_fp/$$FlashPro_80078.L$$
+gc/designer/impl1/gc_fp/gc.tcl
+gc/designer/impl1/gc_fp/projectData/gc.pdb
+gc/designer/impl1/gc_fp/projectData
+gc/designer/impl1/gc_fp/gc_program.log
