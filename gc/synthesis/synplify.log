@@ -1,7 +1,7 @@
 
 Starting:    C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\win64\mbin\synbatch.exe
 Install:     C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1
-Date:        Wed Nov 20 19:25:21 2013
+Date:        Sat Nov 23 21:15:13 2013
 Version:     G-2012.09M-SP1 
 
 Arguments:   -product synplify_pro  -licensetype synplifypro_actel -batch -log synplify.log gc_syn.tcl
@@ -16,7 +16,7 @@ Running in Vendor Mode
 
 
 
-log file: "C:\Users\knekritz\UMKarts\gc\synthesis\gc.srr"
+log file: "C:\Users\mttschlt\UMKarts\gc\synthesis\gc.srr"
 
 
 Running gc_syn|synthesis
@@ -27,20 +27,22 @@ Running Compile Process on gc_syn|synthesis
 
 Running Compile Input on gc_syn|synthesis
 
-Copied C:\Users\knekritz\UMKarts\gc\synthesis\synwork\gc_compiler.srs to C:\Users\knekritz\UMKarts\gc\synthesis\gc.srs
+Copied C:\Users\mttschlt\UMKarts\gc\synthesis\synwork\gc_compiler.srs to C:\Users\mttschlt\UMKarts\gc\synthesis\gc.srs
+
+Copied C:\Users\mttschlt\UMKarts\gc\synthesis\synwork\gc_compiler.so to C:\Users\mttschlt\UMKarts\gc\synthesis\gc.so
 
 compiler Completed with warnings
 Return Code: 1
-Run Time:0h:00m:03s
+Run Time:0h:00m:02s
 
 
 Job Compile Process completed on gc_syn|synthesis
 
 Running Premap on gc_syn|synthesis
 
-premap Completed with warnings
-Return Code: 1
-Run Time:0h:00m:00s
+premap Completed
+Return Code: 0
+Run Time:0h:00m:01s
 
 
 Job Compile completed on gc_syn|synthesis
@@ -51,7 +53,7 @@ Running Map & Optimize on gc_syn|synthesis
 
 fpga_mapper Completed with warnings
 Return Code: 1
-Run Time:0h:00m:05s
+Run Time:0h:00m:04s
 
 
 Job Map completed on gc_syn|synthesis

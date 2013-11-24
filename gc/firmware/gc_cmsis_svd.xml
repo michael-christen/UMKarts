@@ -2,7 +2,7 @@
 <device>
   <name>gc</name>
   <version>1.0</version>
-  <description>CMSIS description for gc.  Created by Actel SmartDesign on Wed Nov 20 19:24:49 2013</description>
+  <description>CMSIS description for gc.  Created by Actel SmartDesign on Sat Nov 23 21:14:59 2013</description>
   <addressUnitBits>8</addressUnitBits>
   <width>32</width>
   <peripherals>
@@ -1861,6 +1861,10 @@
     <peripheral>
       <name>CoreUARTapb_0</name>
       <baseAddress>0x40050200</baseAddress>
+    </peripheral>
+    <peripheral>
+      <name>APB_IR_0</name>
+      <baseAddress>0x40050300</baseAddress>
     </peripheral>
     <peripheral>
       <name>FPGA_FABRIC_BACKDOOR</name>

@@ -1,4 +1,4 @@
-KEY IDE_DES_TOOL "Ide"
+KEY IDE_DES_TOOL "Designer"
 KEY IDE_DES_FAMILY "SmartFusion"
 KEY IDE_DES_DIE "IP4X3M1"
 KEY IDE_DES_PACKAGE "fg484"
@@ -23,6 +23,7 @@ KEY IDE_DES_ERROR_FOUND "FALSE"
 KEY IDE_DES_ADB_PATH "C:\Users\mttschlt\UMKarts\gc\designer\impl1\gc.adb"
 LIST SOURCE_FILES
 VALUE "C:\Users\mttschlt\UMKarts\gc\synthesis\gc.edn;edn"
+VALUE "C:\Users\mttschlt\UMKarts\gc\component\work\gc\gc.pdc;pdc"
 ENDLIST
 LIST OPTIONAL_FILES
 ENDLIST

@@ -1,107 +1,150 @@
-@W: CG775 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Found Component CoreAPB3 in library COREAPB3_LIB
-@W: CG775 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Found Component CoreAPB3 in library COREAPB3_LIB
-@W: CG360 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":1477:0:1477:8|No assignment to wire CAPB3lIOI
-@W: CL190 :"C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Tx_async.v":253:0:253:5|Optimizing register bit CUARTlO0l to a constant 1
-@W: CL169 :"C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Tx_async.v":253:0:253:5|Pruning register CUARTlO0l 
-@W: CG360 :"C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":234:0:234:7|No assignment to wire CUARTl0I
-@W: CG360 :"C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":242:0:242:7|No assignment to wire CUARTO1I
-@W: CG360 :"C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":272:0:272:7|No assignment to wire CUARTlOl
-@W: CG360 :"C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":275:0:275:7|No assignment to wire CUARTOIl
-@W: CG360 :"C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":287:0:287:7|No assignment to wire CUARTIll
-@W: CG360 :"C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":290:0:290:7|No assignment to wire CUARTlll
-@W: CG133 :"C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":320:0:320:7|No assignment to CUARTOI0
-@W: CL169 :"C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":1143:0:1143:5|Pruning register CUARTI00 
-@W: CL169 :"C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":1062:0:1062:5|Pruning register CUARTII0 
-@W: CL169 :"C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":1062:0:1062:5|Pruning register CUARTlI0 
-@W: CL169 :"C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":1013:0:1013:5|Pruning register CUARTl1I[7:0] 
-@W: CL169 :"C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":895:0:895:5|Pruning register CUARTOl0[1:0] 
-@W: CL169 :"C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":851:0:851:5|Pruning register CUARTIO0 
-@W: CL169 :"C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":851:0:851:5|Pruning register CUARTOO0 
-@W: CL169 :"C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":807:0:807:5|Pruning register CUARTI1l 
-@W: CL169 :"C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":807:0:807:5|Pruning register CUARTO1l 
-@W: CL169 :"C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":356:0:356:5|Pruning register CUARTlIl 
-@W: CG133 :"C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUARTapb.v":270:0:270:8|No assignment to CUARTl0OI
-@W: CL265 :"C:\Users\knekritz\UMKarts\gc\hdl\receive.v":19:0:19:5|Pruning bit 63 of next_response_5[63:0] -- not in use ...
-@W: CG360 :"C:\Users\knekritz\UMKarts\gc\hdl\query.v":69:5:69:7|No assignment to wire clk
-@W: CL169 :"C:\Users\knekritz\UMKarts\gc\hdl\query.v":87:0:87:5|Pruning register data_cl 
-@W: CL246 :"C:\Users\knekritz\UMKarts\gc\hdl\query.v":55:76:55:86|Input port bits 23 to 16 of wavebird_id[23:0] are unused
-@W: CL157 :"C:\Users\knekritz\UMKarts\gc\hdl\motorWrapper.v":36:13:36:15|*Output TPS has undriven bits -- simulation mismatch possible.
-@W: CL246 :"C:\Users\knekritz\UMKarts\gc\hdl\motor.v":20:12:20:19|Input port bits 7 to 5 of bus_addr[7:0] are unused
-@W: CL246 :"C:\Users\knekritz\UMKarts\gc\hdl\motor.v":20:12:20:19|Input port bits 1 to 0 of bus_addr[7:0] are unused
-@W: CL246 :"C:\Users\knekritz\UMKarts\gc\hdl\query.v":1:50:1:60|Input port bits 15 to 0 of wavebird_id[23:0] are unused
-@W: CL246 :"C:\Users\knekritz\UMKarts\gc\hdl\receive.v":74:13:74:17|Input port bits 31 to 4 of PADDR[31:0] are unused
-@W: CL246 :"C:\Users\knekritz\UMKarts\gc\hdl\receive.v":74:13:74:17|Input port bits 1 to 0 of PADDR[31:0] are unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\hdl\receive.v":68:6:68:12|Input PRESERN is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\hdl\receive.v":75:18:75:23|Input PWDATA is unused
-@W: CL189 :"C:\Users\knekritz\UMKarts\gc\hdl\receive.v":19:0:19:5|Register bit next_response_count[6] is always 0, optimizing ...
-@W: CL189 :"C:\Users\knekritz\UMKarts\gc\hdl\receive.v":19:0:19:5|Register bit next_response_count[7] is always 0, optimizing ...
-@W: CL279 :"C:\Users\knekritz\UMKarts\gc\hdl\receive.v":19:0:19:5|Pruning register bits 7 to 6 of next_response_count[7:0] 
-@W: CL157 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":62:7:62:18|*Output RCOSC_CLKOUT has undriven bits -- simulation mismatch possible.
-@W: CL157 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":63:7:63:20|*Output MAINXIN_CLKOUT has undriven bits -- simulation mismatch possible.
-@W: CL157 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":64:7:64:18|*Output LPXIN_CLKOUT has undriven bits -- simulation mismatch possible.
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":36:7:36:10|Input CLKA is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":37:7:37:14|Input CLKA_PAD is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":38:7:38:15|Input CLKA_PADP is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":39:7:39:15|Input CLKA_PADN is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":40:7:40:10|Input CLKB is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":41:7:41:14|Input CLKB_PAD is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":42:7:42:15|Input CLKB_PADP is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":43:7:43:15|Input CLKB_PADN is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":44:7:44:10|Input CLKC is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":45:7:45:14|Input CLKC_PAD is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":46:7:46:15|Input CLKC_PADP is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":47:7:47:15|Input CLKC_PADN is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":48:7:48:13|Input MAINXIN is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":49:7:49:11|Input LPXIN is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":50:7:50:13|Input MAC_CLK is unused
-@W: CL246 :"C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUARTapb.v":113:0:113:4|Input port bits 1 to 0 of PADDR[4:0] are unused
-@W: CL156 :"C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":234:0:234:7|*Input CUARTl0I[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
-@W: CL156 :"C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":272:0:272:7|*Input CUARTlOl to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
-@W: CL156 :"C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":287:0:287:7|*Input CUARTIll to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Tx_async.v":76:0:76:7|Input CUARTl0I is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Tx_async.v":79:0:79:7|Input CUARTOO1 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Tx_async.v":82:0:82:7|Input CUARTIO1 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Clock_gen.v":70:0:70:16|Input BAUD_VAL_FRACTION is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":378:0:378:4|Input IADDR is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":380:0:380:6|Input PRESETN is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":382:0:382:3|Input PCLK is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":517:0:517:7|Input PRDATAS3 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":524:0:524:7|Input PRDATAS4 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":531:0:531:7|Input PRDATAS5 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":538:0:538:7|Input PRDATAS6 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":545:0:545:7|Input PRDATAS7 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":552:0:552:7|Input PRDATAS8 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":559:0:559:7|Input PRDATAS9 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":566:0:566:8|Input PRDATAS10 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":573:0:573:8|Input PRDATAS11 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":580:0:580:8|Input PRDATAS12 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":587:0:587:8|Input PRDATAS13 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":594:0:594:8|Input PRDATAS14 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":601:0:601:8|Input PRDATAS15 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":616:0:616:7|Input PREADYS3 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":618:0:618:7|Input PREADYS4 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":620:0:620:7|Input PREADYS5 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":622:0:622:7|Input PREADYS6 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":624:0:624:7|Input PREADYS7 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":626:0:626:7|Input PREADYS8 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":628:0:628:7|Input PREADYS9 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":630:0:630:8|Input PREADYS10 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":632:0:632:8|Input PREADYS11 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":634:0:634:8|Input PREADYS12 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":636:0:636:8|Input PREADYS13 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":638:0:638:8|Input PREADYS14 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":640:0:640:8|Input PREADYS15 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":650:0:650:8|Input PSLVERRS3 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":652:0:652:8|Input PSLVERRS4 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":654:0:654:8|Input PSLVERRS5 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":656:0:656:8|Input PSLVERRS6 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":658:0:658:8|Input PSLVERRS7 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":660:0:660:8|Input PSLVERRS8 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":662:0:662:8|Input PSLVERRS9 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":664:0:664:9|Input PSLVERRS10 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":666:0:666:9|Input PSLVERRS11 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":668:0:668:9|Input PSLVERRS12 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":670:0:670:9|Input PSLVERRS13 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":672:0:672:9|Input PSLVERRS14 is unused
-@W: CL159 :"C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":674:0:674:9|Input PSLVERRS15 is unused
+@W: CG775 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Found Component CoreAPB3 in library COREAPB3_LIB
+@W: CL189 :"C:\Users\mttschlt\UMKarts\gc\hdl\APB_IR.v":38:1:38:6|Register bit PRDATA[31] is always 0, optimizing ...
+@W: CL189 :"C:\Users\mttschlt\UMKarts\gc\hdl\APB_IR.v":38:1:38:6|Register bit PRDATA[30] is always 0, optimizing ...
+@W: CL189 :"C:\Users\mttschlt\UMKarts\gc\hdl\APB_IR.v":38:1:38:6|Register bit PRDATA[29] is always 0, optimizing ...
+@W: CL189 :"C:\Users\mttschlt\UMKarts\gc\hdl\APB_IR.v":38:1:38:6|Register bit PRDATA[28] is always 0, optimizing ...
+@W: CL189 :"C:\Users\mttschlt\UMKarts\gc\hdl\APB_IR.v":38:1:38:6|Register bit PRDATA[27] is always 0, optimizing ...
+@W: CL189 :"C:\Users\mttschlt\UMKarts\gc\hdl\APB_IR.v":38:1:38:6|Register bit PRDATA[26] is always 0, optimizing ...
+@W: CL189 :"C:\Users\mttschlt\UMKarts\gc\hdl\APB_IR.v":38:1:38:6|Register bit PRDATA[25] is always 0, optimizing ...
+@W: CL189 :"C:\Users\mttschlt\UMKarts\gc\hdl\APB_IR.v":38:1:38:6|Register bit PRDATA[24] is always 0, optimizing ...
+@W: CL189 :"C:\Users\mttschlt\UMKarts\gc\hdl\APB_IR.v":38:1:38:6|Register bit PRDATA[23] is always 0, optimizing ...
+@W: CL189 :"C:\Users\mttschlt\UMKarts\gc\hdl\APB_IR.v":38:1:38:6|Register bit PRDATA[22] is always 0, optimizing ...
+@W: CL189 :"C:\Users\mttschlt\UMKarts\gc\hdl\APB_IR.v":38:1:38:6|Register bit PRDATA[21] is always 0, optimizing ...
+@W: CL189 :"C:\Users\mttschlt\UMKarts\gc\hdl\APB_IR.v":38:1:38:6|Register bit PRDATA[20] is always 0, optimizing ...
+@W: CL189 :"C:\Users\mttschlt\UMKarts\gc\hdl\APB_IR.v":38:1:38:6|Register bit PRDATA[19] is always 0, optimizing ...
+@W: CL189 :"C:\Users\mttschlt\UMKarts\gc\hdl\APB_IR.v":38:1:38:6|Register bit PRDATA[18] is always 0, optimizing ...
+@W: CL189 :"C:\Users\mttschlt\UMKarts\gc\hdl\APB_IR.v":38:1:38:6|Register bit PRDATA[17] is always 0, optimizing ...
+@W: CL189 :"C:\Users\mttschlt\UMKarts\gc\hdl\APB_IR.v":38:1:38:6|Register bit PRDATA[16] is always 0, optimizing ...
+@W: CL189 :"C:\Users\mttschlt\UMKarts\gc\hdl\APB_IR.v":38:1:38:6|Register bit PRDATA[15] is always 0, optimizing ...
+@W: CL189 :"C:\Users\mttschlt\UMKarts\gc\hdl\APB_IR.v":38:1:38:6|Register bit PRDATA[14] is always 0, optimizing ...
+@W: CL189 :"C:\Users\mttschlt\UMKarts\gc\hdl\APB_IR.v":38:1:38:6|Register bit PRDATA[13] is always 0, optimizing ...
+@W: CL189 :"C:\Users\mttschlt\UMKarts\gc\hdl\APB_IR.v":38:1:38:6|Register bit PRDATA[12] is always 0, optimizing ...
+@W: CL189 :"C:\Users\mttschlt\UMKarts\gc\hdl\APB_IR.v":38:1:38:6|Register bit PRDATA[11] is always 0, optimizing ...
+@W: CL189 :"C:\Users\mttschlt\UMKarts\gc\hdl\APB_IR.v":38:1:38:6|Register bit PRDATA[10] is always 0, optimizing ...
+@W: CL189 :"C:\Users\mttschlt\UMKarts\gc\hdl\APB_IR.v":38:1:38:6|Register bit PRDATA[9] is always 0, optimizing ...
+@W: CL279 :"C:\Users\mttschlt\UMKarts\gc\hdl\APB_IR.v":38:1:38:6|Pruning register bits 31 to 9 of PRDATA[31:0] 
+@W: CG775 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Found Component CoreAPB3 in library COREAPB3_LIB
+@W: CG360 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":1477:0:1477:8|No assignment to wire CAPB3lIOI
+@W: CL190 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Tx_async.v":253:0:253:5|Optimizing register bit CUARTlO0l to a constant 1
+@W: CL169 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Tx_async.v":253:0:253:5|Pruning register CUARTlO0l 
+@W: CG360 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":234:0:234:7|No assignment to wire CUARTl0I
+@W: CG360 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":242:0:242:7|No assignment to wire CUARTO1I
+@W: CG360 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":272:0:272:7|No assignment to wire CUARTlOl
+@W: CG360 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":275:0:275:7|No assignment to wire CUARTOIl
+@W: CG360 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":287:0:287:7|No assignment to wire CUARTIll
+@W: CG360 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":290:0:290:7|No assignment to wire CUARTlll
+@W: CG133 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":320:0:320:7|No assignment to CUARTOI0
+@W: CL169 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":1143:0:1143:5|Pruning register CUARTI00 
+@W: CL169 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":1062:0:1062:5|Pruning register CUARTII0 
+@W: CL169 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":1062:0:1062:5|Pruning register CUARTlI0 
+@W: CL169 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":1013:0:1013:5|Pruning register CUARTl1I[7:0] 
+@W: CL169 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":895:0:895:5|Pruning register CUARTOl0[1:0] 
+@W: CL169 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":851:0:851:5|Pruning register CUARTIO0 
+@W: CL169 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":851:0:851:5|Pruning register CUARTOO0 
+@W: CL169 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":807:0:807:5|Pruning register CUARTI1l 
+@W: CL169 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":807:0:807:5|Pruning register CUARTO1l 
+@W: CL169 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":356:0:356:5|Pruning register CUARTlIl 
+@W: CG133 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUARTapb.v":270:0:270:8|No assignment to CUARTl0OI
+@W: CL265 :"C:\Users\mttschlt\UMKarts\gc\hdl\receive.v":19:0:19:5|Pruning bit 63 of next_response_5[63:0] -- not in use ...
+@W: CL168 :"C:\Users\mttschlt\UMKarts\gc\smartgen\IR_QUEUE\IR_QUEUE.v":481:9:481:15|Pruning instance AND2_25 -- not in use ...
+@W: CL168 :"C:\Users\mttschlt\UMKarts\gc\smartgen\IR_QUEUE\IR_QUEUE.v":465:9:465:14|Pruning instance XOR2_0 -- not in use ...
+@W: CL168 :"C:\Users\mttschlt\UMKarts\gc\smartgen\IR_QUEUE\IR_QUEUE.v":400:8:400:13|Pruning instance AO1_13 -- not in use ...
+@W: CL168 :"C:\Users\mttschlt\UMKarts\gc\smartgen\IR_QUEUE\IR_QUEUE.v":394:9:394:14|Pruning instance AND2_0 -- not in use ...
+@W: CL168 :"C:\Users\mttschlt\UMKarts\gc\smartgen\IR_QUEUE\IR_QUEUE.v":362:9:362:15|Pruning instance XOR2_29 -- not in use ...
+@W: CL168 :"C:\Users\mttschlt\UMKarts\gc\smartgen\IR_QUEUE\IR_QUEUE.v":350:9:350:15|Pruning instance AND2_27 -- not in use ...
+@W: CL168 :"C:\Users\mttschlt\UMKarts\gc\smartgen\IR_QUEUE\IR_QUEUE.v":344:8:344:12|Pruning instance AO1_9 -- not in use ...
+@W: CL168 :"C:\Users\mttschlt\UMKarts\gc\smartgen\IR_QUEUE\IR_QUEUE.v":338:9:338:15|Pruning instance XOR2_32 -- not in use ...
+@W: CL168 :"C:\Users\mttschlt\UMKarts\gc\smartgen\IR_QUEUE\IR_QUEUE.v":296:9:296:15|Pruning instance AND2_13 -- not in use ...
+@W: CL168 :"C:\Users\mttschlt\UMKarts\gc\smartgen\IR_QUEUE\IR_QUEUE.v":295:9:295:15|Pruning instance AND2_16 -- not in use ...
+@W: CL168 :"C:\Users\mttschlt\UMKarts\gc\smartgen\IR_QUEUE\IR_QUEUE.v":265:9:265:15|Pruning instance AND2_23 -- not in use ...
+@W: CL168 :"C:\Users\mttschlt\UMKarts\gc\smartgen\IR_QUEUE\IR_QUEUE.v":234:9:234:15|Pruning instance AND2_26 -- not in use ...
+@W: CL168 :"C:\Users\mttschlt\UMKarts\gc\smartgen\IR_QUEUE\IR_QUEUE.v":218:9:218:14|Pruning instance AND2_3 -- not in use ...
+@W: CL168 :"C:\Users\mttschlt\UMKarts\gc\smartgen\IR_QUEUE\IR_QUEUE.v":189:9:189:15|Pruning instance AND2_31 -- not in use ...
+@W: CL168 :"C:\Users\mttschlt\UMKarts\gc\smartgen\IR_QUEUE\IR_QUEUE.v":186:9:186:15|Pruning instance AND2_24 -- not in use ...
+@W: CL168 :"C:\Users\mttschlt\UMKarts\gc\smartgen\IR_QUEUE\IR_QUEUE.v":170:9:170:14|Pruning instance AND2_6 -- not in use ...
+@W: CL168 :"C:\Users\mttschlt\UMKarts\gc\smartgen\IR_QUEUE\IR_QUEUE.v":144:9:144:15|Pruning instance AND2_12 -- not in use ...
+@W: CL168 :"C:\Users\mttschlt\UMKarts\gc\smartgen\IR_QUEUE\IR_QUEUE.v":139:9:139:15|Pruning instance AND2_10 -- not in use ...
+@W: CL168 :"C:\Users\mttschlt\UMKarts\gc\smartgen\IR_QUEUE\IR_QUEUE.v":102:9:102:15|Pruning instance XOR2_19 -- not in use ...
+@W: CL168 :"C:\Users\mttschlt\UMKarts\gc\smartgen\IR_QUEUE\IR_QUEUE.v":94:9:94:15|Pruning instance AND2_11 -- not in use ...
+@W: CG360 :"C:\Users\mttschlt\UMKarts\gc\hdl\query.v":69:5:69:7|No assignment to wire clk
+@W: CL169 :"C:\Users\mttschlt\UMKarts\gc\hdl\query.v":87:0:87:5|Pruning register data_cl 
+@W: CL246 :"C:\Users\mttschlt\UMKarts\gc\hdl\query.v":55:76:55:86|Input port bits 23 to 16 of wavebird_id[23:0] are unused
+@W: CL157 :"C:\Users\mttschlt\UMKarts\gc\hdl\motorWrapper.v":36:13:36:15|*Output TPS has undriven bits -- simulation mismatch possible.
+@W: CL246 :"C:\Users\mttschlt\UMKarts\gc\hdl\motor.v":20:12:20:19|Input port bits 7 to 5 of bus_addr[7:0] are unused
+@W: CL246 :"C:\Users\mttschlt\UMKarts\gc\hdl\motor.v":20:12:20:19|Input port bits 1 to 0 of bus_addr[7:0] are unused
+@W: CL246 :"C:\Users\mttschlt\UMKarts\gc\hdl\query.v":1:50:1:60|Input port bits 15 to 0 of wavebird_id[23:0] are unused
+@W: CL246 :"C:\Users\mttschlt\UMKarts\gc\hdl\receive.v":74:13:74:17|Input port bits 31 to 4 of PADDR[31:0] are unused
+@W: CL246 :"C:\Users\mttschlt\UMKarts\gc\hdl\receive.v":74:13:74:17|Input port bits 1 to 0 of PADDR[31:0] are unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\hdl\receive.v":68:6:68:12|Input PRESERN is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\hdl\receive.v":75:18:75:23|Input PWDATA is unused
+@W: CL189 :"C:\Users\mttschlt\UMKarts\gc\hdl\receive.v":19:0:19:5|Register bit next_response_count[6] is always 0, optimizing ...
+@W: CL189 :"C:\Users\mttschlt\UMKarts\gc\hdl\receive.v":19:0:19:5|Register bit next_response_count[7] is always 0, optimizing ...
+@W: CL279 :"C:\Users\mttschlt\UMKarts\gc\hdl\receive.v":19:0:19:5|Pruning register bits 7 to 6 of next_response_count[7:0] 
+@W: CL157 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":62:7:62:18|*Output RCOSC_CLKOUT has undriven bits -- simulation mismatch possible.
+@W: CL157 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":63:7:63:20|*Output MAINXIN_CLKOUT has undriven bits -- simulation mismatch possible.
+@W: CL157 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":64:7:64:18|*Output LPXIN_CLKOUT has undriven bits -- simulation mismatch possible.
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":36:7:36:10|Input CLKA is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":37:7:37:14|Input CLKA_PAD is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":38:7:38:15|Input CLKA_PADP is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":39:7:39:15|Input CLKA_PADN is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":40:7:40:10|Input CLKB is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":41:7:41:14|Input CLKB_PAD is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":42:7:42:15|Input CLKB_PADP is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":43:7:43:15|Input CLKB_PADN is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":44:7:44:10|Input CLKC is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":45:7:45:14|Input CLKC_PAD is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":46:7:46:15|Input CLKC_PADP is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":47:7:47:15|Input CLKC_PADN is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":48:7:48:13|Input MAINXIN is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":49:7:49:11|Input LPXIN is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":50:7:50:13|Input MAC_CLK is unused
+@W: CL246 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUARTapb.v":113:0:113:4|Input port bits 1 to 0 of PADDR[4:0] are unused
+@W: CL156 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":234:0:234:7|*Input CUARTl0I[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":272:0:272:7|*Input CUARTlOl to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":287:0:287:7|*Input CUARTIll to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Tx_async.v":76:0:76:7|Input CUARTl0I is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Tx_async.v":79:0:79:7|Input CUARTOO1 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Tx_async.v":82:0:82:7|Input CUARTIO1 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Clock_gen.v":70:0:70:16|Input BAUD_VAL_FRACTION is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":378:0:378:4|Input IADDR is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":380:0:380:6|Input PRESETN is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":382:0:382:3|Input PCLK is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":524:0:524:7|Input PRDATAS4 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":531:0:531:7|Input PRDATAS5 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":538:0:538:7|Input PRDATAS6 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":545:0:545:7|Input PRDATAS7 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":552:0:552:7|Input PRDATAS8 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":559:0:559:7|Input PRDATAS9 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":566:0:566:8|Input PRDATAS10 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":573:0:573:8|Input PRDATAS11 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":580:0:580:8|Input PRDATAS12 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":587:0:587:8|Input PRDATAS13 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":594:0:594:8|Input PRDATAS14 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":601:0:601:8|Input PRDATAS15 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":618:0:618:7|Input PREADYS4 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":620:0:620:7|Input PREADYS5 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":622:0:622:7|Input PREADYS6 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":624:0:624:7|Input PREADYS7 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":626:0:626:7|Input PREADYS8 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":628:0:628:7|Input PREADYS9 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":630:0:630:8|Input PREADYS10 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":632:0:632:8|Input PREADYS11 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":634:0:634:8|Input PREADYS12 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":636:0:636:8|Input PREADYS13 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":638:0:638:8|Input PREADYS14 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":640:0:640:8|Input PREADYS15 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":652:0:652:8|Input PSLVERRS4 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":654:0:654:8|Input PSLVERRS5 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":656:0:656:8|Input PSLVERRS6 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":658:0:658:8|Input PSLVERRS7 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":660:0:660:8|Input PSLVERRS8 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":662:0:662:8|Input PSLVERRS9 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":664:0:664:9|Input PSLVERRS10 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":666:0:666:9|Input PSLVERRS11 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":668:0:668:9|Input PSLVERRS12 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":670:0:670:9|Input PSLVERRS13 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":672:0:672:9|Input PSLVERRS14 is unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":674:0:674:9|Input PSLVERRS15 is unused
+@W: CL246 :"C:\Users\mttschlt\UMKarts\gc\hdl\APB_IR.v":12:19:12:24|Input port bits 31 to 8 of PWDATA[31:0] are unused
+@W: CL159 :"C:\Users\mttschlt\UMKarts\gc\hdl\APB_IR.v":11:14:11:18|Input PADDR is unused
 

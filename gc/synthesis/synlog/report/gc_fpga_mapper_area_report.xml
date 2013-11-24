@@ -5,15 +5,15 @@ The file contains the area information from mapper to be displayed as part of th
 *******************************************************************************************-->
 <report_table display_priority="1" name="Area Summary">
 <report_link name="Detailed report">
-<data>C:\Users\knekritz\UMKarts\gc\synthesis\synlog\report\gc_fpga_mapper_resourceusage.rpt</data>
+<data>C:\Users\mttschlt\UMKarts\gc\synthesis\synlog\report\gc_fpga_mapper_resourceusage.rpt</data>
 </report_link>
 <parameter tooltip="Total Core Cells used" name="Core Cells">
-<data>2144</data>
+<data>2886</data>
 </parameter>
 <parameter tooltip="Total IO Cells used" name="IO Cells">
-<data>21</data>
+<data>23</data>
 </parameter>
 <parameter tooltip="Total Block RAMs used" name="Block RAMs">
-<data>0</data>
+<data>1</data>
 </parameter>
 </report_table>

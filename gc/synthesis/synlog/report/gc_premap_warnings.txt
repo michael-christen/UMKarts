@@ -1,1 +1,0 @@
-@W: BN522 |Property syn_clock_priority is not supported for this target technology

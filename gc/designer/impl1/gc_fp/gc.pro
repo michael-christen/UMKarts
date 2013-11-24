@@ -1,12 +1,12 @@
 <project name="gc" version="1.1">
     <ProjectDirectory>
-        C:\Users\mttschlt\UMKarts\gc\designer\impl1\gc_fp
+        C:/Users/mttschlt/UMKarts/gc/designer/impl1/gc_fp
     </ProjectDirectory>
     <View>
         SingleSTAPLView
     </View>
     <LogFile>
-        C:\Users\mttschlt\UMKarts\gc\designer\impl1\gc_fp\gc.log
+        C:/Users/mttschlt/UMKarts/gc/designer/impl1/gc_fp/gc.log
     </LogFile>
     <SerializationOption>
         Skip

@@ -1,26 +1,54 @@
 
-fsm_encoding {625302532} onehot
+fsm_encoding {725302533} onehot
 
-fsm_state_encoding {625302532} CUARTlIll {000001}
+fsm_state_encoding {725302533} CUARTlIll {000001}
 
-fsm_state_encoding {625302532} CUARTOlll {000010}
+fsm_state_encoding {725302533} CUARTOlll {000010}
 
-fsm_state_encoding {625302532} CUARTIlll {000100}
+fsm_state_encoding {725302533} CUARTIlll {000100}
 
-fsm_state_encoding {625302532} CUARTllll {001000}
+fsm_state_encoding {725302533} CUARTllll {001000}
 
-fsm_state_encoding {625302532} CUARTO0ll {010000}
+fsm_state_encoding {725302533} CUARTO0ll {010000}
 
-fsm_state_encoding {625302532} CUARTI0ll {100000}
+fsm_state_encoding {725302533} CUARTI0ll {100000}
 
-fsm_registers {625302532} {CUARTO1ll[5]}  {CUARTO1ll[4]}  {CUARTO1ll[3]}  {CUARTO1ll[2]}  {CUARTO1ll[1]}  {CUARTO1ll[0]} 
+fsm_registers {725302533} {CUARTO1ll[5]}  {CUARTO1ll[4]}  {CUARTO1ll[3]}  {CUARTO1ll[2]}  {CUARTO1ll[1]}  {CUARTO1ll[0]} 
 
-fsm_encoding {772307231} sequential
+fsm_encoding {872307232} sequential
 
-fsm_state_encoding {772307231} 00 {00}
+fsm_state_encoding {872307232} 00 {00}
 
-fsm_state_encoding {772307231} 01 {01}
+fsm_state_encoding {872307232} 01 {01}
 
-fsm_state_encoding {772307231} 10 {10}
+fsm_state_encoding {872307232} 10 {10}
 
-fsm_registers {772307231} {CUARTOl0[1]}  {CUARTOl0[0]} 
+fsm_registers {872307232} {CUARTOl0[1]}  {CUARTOl0[0]} 
+
+fsm_encoding {19571571} onehot
+
+fsm_state_encoding {19571571} STATE_RESET {000000000000}
+
+fsm_state_encoding {19571571} STATE_IDLE {000000000011}
+
+fsm_state_encoding {19571571} STATE_LED_ON {000000000101}
+
+fsm_state_encoding {19571571} STATE_SEND_0_1 {000000001001}
+
+fsm_state_encoding {19571571} STATE_SEND_1_1 {000000010001}
+
+fsm_state_encoding {19571571} STATE_LED_OFF {000000100001}
+
+fsm_state_encoding {19571571} STATE_SEND_0_2 {000001000001}
+
+fsm_state_encoding {19571571} STATE_SEND_1_2 {000010000001}
+
+fsm_state_encoding {19571571} STATE_STALL_1 {000100000001}
+
+fsm_state_encoding {19571571} STATE_STALL_2 {001000000001}
+
+fsm_state_encoding {19571571} STATE_STALL_3 {010000000001}
+
+fsm_state_encoding {19571571} STATE_SYNC_IN {100000000001}
+
+fsm_registers {19571571} {state[11]}  {state[10]}  {state[9]}  {state[8]}  {state[7]}  {state[6]}  {state[5]}  {state[4]}  {state[3]}  {state[2]}  {state[1]}  {state_i_0[0]} 
