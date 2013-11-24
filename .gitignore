@@ -18,7 +18,7 @@ gc/designer/impl1/gc_compile_log.rpt
 gc/designer/impl1/gc_compile_report.txt
 
 # Place and route files
-gc/designer/impl1/gc_placeroute_log.rpt
+ 
 gc/designer/impl1/gc_place_and_route_report.txt
 gc/designer/impl1/gc_globalnet_report.txt
 gc/designer/impl1/gc_globalusage_report.txt
@@ -37,3 +37,14 @@ gc/designer/impl1/gc_fp/gc.tcl
 gc/designer/impl1/gc_fp/projectData/gc.pdb
 gc/designer/impl1/gc_fp/projectData
 gc/designer/impl1/gc_fp/gc_program.log
+
+#Synplify Pro
+gc/synthesis/gc.htm
+gc/synthesis/stdout.log
+gc/synthesis/synlog.tcl
+gc/synthesis/syntmp/closed.png
+gc/synthesis/syntmp/gc.msg
+gc/synthesis/syntmp/gc_flink.htm
+gc/synthesis/syntmp/gc_srr.htm
+gc/synthesis/syntmp/gc_toc.htm
+gc/synthesis/syntmp/open.png
