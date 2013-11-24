@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Wed Nov 20 19:24:45 2013
+// Created by SmartDesign Sun Nov 24 14:28:15 2013
 // Version: v11.0 11.0.0.23
 //////////////////////////////////////////////////////////////////////
 
@@ -12,11 +12,13 @@ module gc(
     F2M_GPI_2,
     F2M_GPI_4,
     MSS_RESET_N,
+    RECV_IN,
     SPI_0_DI,
     UART_0_RXD,
     UART_1_RXD,
     VAREF0,
     // Outputs
+    LED,
     LMOTOR,
     LSERVO,
     PWM1,
@@ -40,6 +42,7 @@ input  CAPTURE_SWITCH;
 input  F2M_GPI_2;
 input  F2M_GPI_4;
 input  MSS_RESET_N;
+input  RECV_IN;
 input  SPI_0_DI;
 input  UART_0_RXD;
 input  UART_1_RXD;
@@ -47,6 +50,7 @@ input  VAREF0;
 //--------------------------------------------------------------------
 // Output
 //--------------------------------------------------------------------
+output LED;
 output LMOTOR;
 output LSERVO;
 output PWM1;
@@ -66,6 +70,8 @@ inout  data;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
+wire          APB_IR_0_ENQUEUE;
+wire   [7:0]  APB_IR_0_MSG;
 wire          button_data_ready;
 wire          CAPTURE_SWITCH;
 wire          controller_init;
@@ -82,6 +88,10 @@ wire          CoreAPB3_0_APBmslave1_PSLVERR;
 wire          CoreAPB3_0_APBmslave2_PREADY;
 wire          CoreAPB3_0_APBmslave2_PSELx;
 wire          CoreAPB3_0_APBmslave2_PSLVERR;
+wire   [31:0] CoreAPB3_0_APBmslave3_PRDATA;
+wire          CoreAPB3_0_APBmslave3_PREADY;
+wire          CoreAPB3_0_APBmslave3_PSELx;
+wire          CoreAPB3_0_APBmslave3_PSLVERR;
 wire   [7:0]  count;
 wire          data_net_0;
 wire          F2M_GPI_2;
@@ -97,10 +107,21 @@ wire   [31:0] gc_MSS_0_MSS_MASTER_APB_PWDATA;
 wire          gc_MSS_0_MSS_MASTER_APB_PWRITE;
 wire   [63:0] gc_receive_0_response;
 wire          gc_response_apb_0_start_init;
+wire          IR_LED_0_DIVCLK;
+wire          IR_LED_0_IR_READY;
+wire          IR_LED_0_LEDOUT;
+wire          IR_QUEUE_0_DVLD;
+wire          IR_QUEUE_0_EMPTY;
+wire          IR_QUEUE_0_FULL;
+wire   [7:0]  IR_QUEUE_0_Q;
+wire          LED_net_0;
+wire   [7:0]  LED_RECV_0_DATA;
+wire          LED_RECV_0_INTERRUPT;
 wire          LMOTOR_net_0;
 wire          LSERVO_net_0;
 wire          MSS_RESET_N;
 wire          PWM1_net_0;
+wire          RECV_IN;
 wire          RMOTOR_net_0;
 wire          RSERVO_net_0;
 wire          send;
@@ -108,35 +129,35 @@ wire          send_query_0_wavebird_id_sent;
 wire          SPEAKER_DAC_net_0;
 wire          SPI_0_CLK;
 wire          SPI_0_DI;
-wire          SPI_0_DO_1;
+wire          SPI_0_DO_0;
 wire          SPI_0_SS;
 wire          TX_net_0;
 wire          UART_0_RXD;
-wire          UART_0_TXD_0;
+wire          UART_0_TXD_1;
 wire          UART_1_RXD;
-wire          UART_1_TXD_0;
+wire          UART_1_TXD_1;
 wire          VAREF0;
 wire   [23:0] wavebird_id;
 wire          wavebird_id_ready;
 wire          wavebird_id_send;
-wire          UART_0_TXD_0_net_0;
+wire          UART_0_TXD_1_net_0;
 wire          data_net_1;
 wire          PWM1_net_1;
 wire          LMOTOR_net_1;
 wire          RMOTOR_net_1;
 wire          LSERVO_net_1;
 wire          RSERVO_net_1;
-wire          UART_1_TXD_0_net_0;
+wire          UART_1_TXD_1_net_0;
 wire          TX_net_1;
-wire          SPI_0_DO_1_net_0;
+wire          SPI_0_DO_0_net_0;
 wire          SPEAKER_DAC_net_1;
+wire          LED_net_1;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
 wire          VCC_net;
 wire          GND_net;
 wire   [31:0] IADDR_const_net_0;
-wire   [31:0] PRDATAS3_const_net_0;
 wire   [31:0] PRDATAS4_const_net_0;
 wire   [31:0] PRDATAS5_const_net_0;
 wire   [31:0] PRDATAS6_const_net_0;
@@ -151,13 +172,17 @@ wire   [31:0] PRDATAS14_const_net_0;
 wire   [31:0] PRDATAS15_const_net_0;
 wire   [31:0] PRDATAS16_const_net_0;
 //--------------------------------------------------------------------
+// Inverted Nets
+//--------------------------------------------------------------------
+wire          EMPTY_OUT_PRE_INV0_0;
+//--------------------------------------------------------------------
 // Bus Interface Nets Declarations - Unequal Pin Widths
 //--------------------------------------------------------------------
 wire   [31:0] CoreAPB3_0_APBmslave0_PADDR;
-wire   [4:0]  CoreAPB3_0_APBmslave0_PADDR_1_4to0;
-wire   [4:0]  CoreAPB3_0_APBmslave0_PADDR_1;
 wire   [7:0]  CoreAPB3_0_APBmslave0_PADDR_0_7to0;
 wire   [7:0]  CoreAPB3_0_APBmslave0_PADDR_0;
+wire   [4:0]  CoreAPB3_0_APBmslave0_PADDR_1_4to0;
+wire   [4:0]  CoreAPB3_0_APBmslave0_PADDR_1;
 wire   [31:0] CoreAPB3_0_APBmslave0_PWDATA;
 wire   [7:0]  CoreAPB3_0_APBmslave0_PWDATA_0_7to0;
 wire   [7:0]  CoreAPB3_0_APBmslave0_PWDATA_0;
@@ -175,7 +200,6 @@ wire   [19:0] gc_MSS_0_MSS_MASTER_APB_PADDR;
 assign VCC_net               = 1'b1;
 assign GND_net               = 1'b0;
 assign IADDR_const_net_0     = 32'h00000000;
-assign PRDATAS3_const_net_0  = 32'h00000000;
 assign PRDATAS4_const_net_0  = 32'h00000000;
 assign PRDATAS5_const_net_0  = 32'h00000000;
 assign PRDATAS6_const_net_0  = 32'h00000000;
@@ -190,10 +214,14 @@ assign PRDATAS14_const_net_0 = 32'h00000000;
 assign PRDATAS15_const_net_0 = 32'h00000000;
 assign PRDATAS16_const_net_0 = 32'h00000000;
 //--------------------------------------------------------------------
+// Inversions
+//--------------------------------------------------------------------
+assign IR_QUEUE_0_EMPTY = ~ EMPTY_OUT_PRE_INV0_0;
+//--------------------------------------------------------------------
 // Top level output port assignments
 //--------------------------------------------------------------------
-assign UART_0_TXD_0_net_0 = UART_0_TXD_0;
-assign UART_0_TXD         = UART_0_TXD_0_net_0;
+assign UART_0_TXD_1_net_0 = UART_0_TXD_1;
+assign UART_0_TXD         = UART_0_TXD_1_net_0;
 assign data_net_1         = data_net_0;
 assign data               = data_net_1;
 assign PWM1_net_1         = PWM1_net_0;
@@ -206,21 +234,23 @@ assign LSERVO_net_1       = LSERVO_net_0;
 assign LSERVO             = LSERVO_net_1;
 assign RSERVO_net_1       = RSERVO_net_0;
 assign RSERVO             = RSERVO_net_1;
-assign UART_1_TXD_0_net_0 = UART_1_TXD_0;
-assign UART_1_TXD         = UART_1_TXD_0_net_0;
+assign UART_1_TXD_1_net_0 = UART_1_TXD_1;
+assign UART_1_TXD         = UART_1_TXD_1_net_0;
 assign TX_net_1           = TX_net_0;
 assign TX                 = TX_net_1;
-assign SPI_0_DO_1_net_0   = SPI_0_DO_1;
-assign SPI_0_DO           = SPI_0_DO_1_net_0;
+assign SPI_0_DO_0_net_0   = SPI_0_DO_0;
+assign SPI_0_DO           = SPI_0_DO_0_net_0;
 assign SPEAKER_DAC_net_1  = SPEAKER_DAC_net_0;
 assign SPEAKER_DAC        = SPEAKER_DAC_net_1;
+assign LED_net_1          = LED_net_0;
+assign LED                = LED_net_1;
 //--------------------------------------------------------------------
 // Bus Interface Nets Assignments - Unequal Pin Widths
 //--------------------------------------------------------------------
-assign CoreAPB3_0_APBmslave0_PADDR_1_4to0 = CoreAPB3_0_APBmslave0_PADDR[4:0];
-assign CoreAPB3_0_APBmslave0_PADDR_1 = { CoreAPB3_0_APBmslave0_PADDR_1_4to0 };
 assign CoreAPB3_0_APBmslave0_PADDR_0_7to0 = CoreAPB3_0_APBmslave0_PADDR[7:0];
 assign CoreAPB3_0_APBmslave0_PADDR_0 = { CoreAPB3_0_APBmslave0_PADDR_0_7to0 };
+assign CoreAPB3_0_APBmslave0_PADDR_1_4to0 = CoreAPB3_0_APBmslave0_PADDR[4:0];
+assign CoreAPB3_0_APBmslave0_PADDR_1 = { CoreAPB3_0_APBmslave0_PADDR_1_4to0 };
 
 assign CoreAPB3_0_APBmslave0_PWDATA_0_7to0 = CoreAPB3_0_APBmslave0_PWDATA[7:0];
 assign CoreAPB3_0_APBmslave0_PWDATA_0 = { CoreAPB3_0_APBmslave0_PWDATA_0_7to0 };
@@ -236,13 +266,33 @@ assign gc_MSS_0_MSS_MASTER_APB_PADDR_0 = { gc_MSS_0_MSS_MASTER_APB_PADDR_0_31to2
 //--------------------------------------------------------------------
 // Component instances
 //--------------------------------------------------------------------
+//--------APB_IR
+APB_IR APB_IR_0(
+        // Inputs
+        .PCLK     ( gc_MSS_0_FAB_CLK ),
+        .PRESERN  ( gc_MSS_0_M2F_RESET_N ),
+        .PSEL     ( CoreAPB3_0_APBmslave3_PSELx ),
+        .PENABLE  ( CoreAPB3_0_APBmslave0_PENABLE ),
+        .PWRITE   ( CoreAPB3_0_APBmslave0_PWRITE ),
+        .BUF_FULL ( IR_QUEUE_0_FULL ),
+        .PADDR    ( CoreAPB3_0_APBmslave0_PADDR ),
+        .PWDATA   ( CoreAPB3_0_APBmslave0_PWDATA ),
+        .IR_DATA  ( LED_RECV_0_DATA ),
+        // Outputs
+        .PREADY   ( CoreAPB3_0_APBmslave3_PREADY ),
+        .PSLVERR  ( CoreAPB3_0_APBmslave3_PSLVERR ),
+        .ENQUEUE  ( APB_IR_0_ENQUEUE ),
+        .PRDATA   ( CoreAPB3_0_APBmslave3_PRDATA ),
+        .MSG      ( APB_IR_0_MSG ) 
+        );
+
 //--------CoreAPB3   -   Actel:DirectCore:CoreAPB3:4.0.100
 CoreAPB3 #( 
         .APB_DWIDTH      ( 32 ),
         .APBSLOT0ENABLE  ( 1 ),
         .APBSLOT1ENABLE  ( 1 ),
         .APBSLOT2ENABLE  ( 1 ),
-        .APBSLOT3ENABLE  ( 0 ),
+        .APBSLOT3ENABLE  ( 1 ),
         .APBSLOT4ENABLE  ( 0 ),
         .APBSLOT5ENABLE  ( 0 ),
         .APBSLOT6ENABLE  ( 0 ),
@@ -287,8 +337,8 @@ CoreAPB3_0(
         .PSLVERRS1  ( CoreAPB3_0_APBmslave1_PSLVERR ),
         .PREADYS2   ( CoreAPB3_0_APBmslave2_PREADY ),
         .PSLVERRS2  ( CoreAPB3_0_APBmslave2_PSLVERR ),
-        .PREADYS3   ( VCC_net ), // tied to 1'b1 from definition
-        .PSLVERRS3  ( GND_net ), // tied to 1'b0 from definition
+        .PREADYS3   ( CoreAPB3_0_APBmslave3_PREADY ),
+        .PSLVERRS3  ( CoreAPB3_0_APBmslave3_PSLVERR ),
         .PREADYS4   ( VCC_net ), // tied to 1'b1 from definition
         .PSLVERRS4  ( GND_net ), // tied to 1'b0 from definition
         .PREADYS5   ( VCC_net ), // tied to 1'b1 from definition
@@ -320,7 +370,7 @@ CoreAPB3_0(
         .PRDATAS0   ( CoreAPB3_0_APBmslave0_PRDATA ),
         .PRDATAS1   ( CoreAPB3_0_APBmslave1_PRDATA ),
         .PRDATAS2   ( CoreAPB3_0_APBmslave2_PRDATA_0 ),
-        .PRDATAS3   ( PRDATAS3_const_net_0 ), // tied to 32'h00000000 from definition
+        .PRDATAS3   ( CoreAPB3_0_APBmslave3_PRDATA ),
         .PRDATAS4   ( PRDATAS4_const_net_0 ), // tied to 32'h00000000 from definition
         .PRDATAS5   ( PRDATAS5_const_net_0 ), // tied to 32'h00000000 from definition
         .PRDATAS6   ( PRDATAS6_const_net_0 ), // tied to 32'h00000000 from definition
@@ -343,7 +393,7 @@ CoreAPB3_0(
         .PSELS0     ( CoreAPB3_0_APBmslave0_PSELx ),
         .PSELS1     ( CoreAPB3_0_APBmslave1_PSELx ),
         .PSELS2     ( CoreAPB3_0_APBmslave2_PSELx ),
-        .PSELS3     (  ),
+        .PSELS3     ( CoreAPB3_0_APBmslave3_PSELx ),
         .PSELS4     (  ),
         .PSELS5     (  ),
         .PSELS6     (  ),
@@ -406,23 +456,22 @@ gc_MSS gc_MSS_0(
         .UART_1_RXD  ( UART_1_RXD ),
         .F2M_GPI_4   ( F2M_GPI_4 ),
         .F2M_GPI_2   ( F2M_GPI_2 ),
-        .MSSPRDATA   ( gc_MSS_0_MSS_MASTER_APB_PRDATA ),
         .SPI_0_DI    ( SPI_0_DI ),
         .VAREF0      ( VAREF0 ),
+        .F2M_GPI_0   ( LED_RECV_0_INTERRUPT ),
+        .MSSPRDATA   ( gc_MSS_0_MSS_MASTER_APB_PRDATA ),
         // Outputs
         .FAB_CLK     ( gc_MSS_0_FAB_CLK ),
         .M2F_RESET_N ( gc_MSS_0_M2F_RESET_N ),
         .MSSPSEL     ( gc_MSS_0_MSS_MASTER_APB_PSELx ),
         .MSSPENABLE  ( gc_MSS_0_MSS_MASTER_APB_PENABLE ),
         .MSSPWRITE   ( gc_MSS_0_MSS_MASTER_APB_PWRITE ),
-        .UART_0_TXD  ( UART_0_TXD_0 ),
-        .UART_1_TXD  ( UART_1_TXD_0 ),
-        .M2F_GPO_5   (  ),
-        .M2F_GPO_3   (  ),
+        .UART_0_TXD  ( UART_0_TXD_1 ),
+        .UART_1_TXD  ( UART_1_TXD_1 ),
+        .SPI_0_DO    ( SPI_0_DO_0 ),
+        .SPEAKER_DAC ( SPEAKER_DAC_net_0 ),
         .MSSPADDR    ( gc_MSS_0_MSS_MASTER_APB_PADDR ),
         .MSSPWDATA   ( gc_MSS_0_MSS_MASTER_APB_PWDATA ),
-        .SPI_0_DO    ( SPI_0_DO_1 ),
-        .SPEAKER_DAC ( SPEAKER_DAC_net_0 ),
         // Inouts
         .SPI_0_CLK   ( SPI_0_CLK ),
         .SPI_0_SS    ( SPI_0_SS ) 
@@ -474,6 +523,57 @@ gc_state gc_state_0(
         // Outputs
         .controller_init   ( controller_init ),
         .wavebird_id_send  ( wavebird_id_send ) 
+        );
+
+//--------IR_LED
+IR_LED IR_LED_0(
+        // Inputs
+        .CLK       ( gc_MSS_0_FAB_CLK ),
+        .INV_RESET ( gc_MSS_0_M2F_RESET_N ),
+        .MSG_VALID ( IR_QUEUE_0_DVLD ),
+        .SEND      ( IR_QUEUE_0_EMPTY ),
+        .MSG       ( IR_QUEUE_0_Q ),
+        // Outputs
+        .DIVCLK    ( IR_LED_0_DIVCLK ),
+        .LEDOUT    ( IR_LED_0_LEDOUT ),
+        .IR_READY  ( IR_LED_0_IR_READY ) 
+        );
+
+//--------IR_QUEUE
+IR_QUEUE IR_QUEUE_0(
+        // Inputs
+        .WE     ( APB_IR_0_ENQUEUE ),
+        .RE     ( IR_LED_0_IR_READY ),
+        .WCLOCK ( gc_MSS_0_FAB_CLK ),
+        .RCLOCK ( IR_LED_0_DIVCLK ),
+        .RESET  ( gc_MSS_0_M2F_RESET_N ),
+        .DATA   ( APB_IR_0_MSG ),
+        // Outputs
+        .FULL   ( IR_QUEUE_0_FULL ),
+        .EMPTY  ( EMPTY_OUT_PRE_INV0_0 ),
+        .DVLD   ( IR_QUEUE_0_DVLD ),
+        .Q      ( IR_QUEUE_0_Q ) 
+        );
+
+//--------LED_PULSE
+LED_PULSE LED_PULSE_0(
+        // Inputs
+        .INV_RESET ( gc_MSS_0_M2F_RESET_N ),
+        .PCLK      ( gc_MSS_0_FAB_CLK ),
+        .LED_ON    ( IR_LED_0_LEDOUT ),
+        // Outputs
+        .LED       ( LED_net_0 ) 
+        );
+
+//--------LED_RECV
+LED_RECV LED_RECV_0(
+        // Inputs
+        .INV_RESET ( gc_MSS_0_M2F_RESET_N ),
+        .RECV_IN   ( RECV_IN ),
+        .CLK       ( gc_MSS_0_FAB_CLK ),
+        // Outputs
+        .DATA      ( LED_RECV_0_DATA ),
+        .INTERRUPT ( LED_RECV_0_INTERRUPT ) 
         );
 
 //--------motorWrapper

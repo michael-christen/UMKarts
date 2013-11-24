@@ -1,0 +1,97 @@
+ ** Message System Log
+ ** Database: 
+ ** Date:   Sat Nov 23 21:10:34 2013
+
+
+****************
+Macro Parameters
+****************
+
+Name                            : IR_QUEUE
+Family                          : PA3SOC2
+Output Format                   : VERILOG
+Type                            : SOFTFIFO
+Write Enable                    : Active High
+Read Clock                      : Rising
+Write Clock                     : Rising
+Reset                           : Active Low
+Read Enable                     : Active High
+Write Depth                     : 64
+Write Width                     : 8
+Read Depth                      : 64
+Read Width                      : 8
+Almost Full                     : 65536
+Almost Empty                    : 65536
+Clocks                          : Independent Read and Write Clocks
+AEFlag                          : None
+AFFlag                          : None
+Read Pipe Mode1                 : No Pipe
+Optimized for                   : Power
+Prevent Read When Empty         : Yes
+Prevent Write When Full         : Yes
+Write Acknowledge               : No
+Data Valid                      : Yes
+Overflow                        : No
+Underflow                       : No
+Read Data Count                 : No
+Write Data Count                : No
+Standalone Controller           : False
+Initialize RAM                  : False
+Portname DataIn                 : DATA
+Portname DataOut                : Q
+Portname AE Port                : AEVAL
+Portname AF Port                : AFVAL
+Portname Write En               : WE
+Portname Read En                : RE
+Portname WClock                 : WCLOCK
+Portname RClock                 : RCLOCK
+Portname AE Flag                : AEMPTY
+Portname AF Flag                : AFULL
+Portname Full Flag              : FULL
+Portname Empty Flag             : EMPTY
+Portname Reset                  : RESET
+Portname Write Acknowledge      : WACK
+Portname Data Valid             : DVLD
+Portname Overflow               : OVERFLOW
+Portname Underflow              : UNDERFLOW
+Portname Read Count             : RDCNT
+Portname Write Count            : WRCNT
+Portname Memory Write Address   :
+Portname Memory Read Address    :
+Portname Memory Write Enable    :
+Portname Memory Read Enable     :
+Portname Clock                  :
+
+Cascade Configuration:
+     Port A configuration       : 512x8
+     Port B configuration       : 512x8
+     Number of blocks depth wise: 1
+     Number of blocks width wise: 1
+
+**************
+Compile Report
+**************
+
+Warning:  CMP503: Remapped 8 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE pin on the enable flip-flop is not being driven by a global net.
+
+Netlist Resource Report
+=======================
+
+    Microcontroller Subsystem  Used:      0  Total:      1   (0.00%)
+    Fabric                     Used:    181  Total:   4608   (3.93%)
+    Fabric IO (W/ clocks)      Used:      0  Total:     94   (0.00%)
+    Fabric Differential IO     Used:      0  Total:     47   (0.00%)
+    Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
+    Dedicated MSS IO           Used:      0  Total:     43   (0.00%)
+    GLOBAL (Chip+Quadrant)     Used:      0  Total:     15   (0.00%)
+    MSS GLOBAL                 Used:      0  Total:      3   (0.00%)
+    On-chip RC oscillator      Used:      0  Total:      1   (0.00%)
+    Main Crystal oscillator    Used:      0  Total:      1   (0.00%)
+    32 KHz Crystal oscillator  Used:      0  Total:      1   (0.00%)
+    RAM/FIFO                   Used:      1  Total:      8   (12.50%)
+    User JTAG                  Used:      0  Total:      1   (0.00%)
+
+Wrote Verilog netlist to C:/Users/mttschlt/UMKarts/gc/smartgen\IR_QUEUE\IR_QUEUE.v.
+
+ ** Log Ended:   Sat Nov 23 21:10:36 2013
+

@@ -1,7 +1,0 @@
-#include "xbee_interface.h"
-
-int main() {
-	int err;
-
-	err = xbee_interface_init();
-}

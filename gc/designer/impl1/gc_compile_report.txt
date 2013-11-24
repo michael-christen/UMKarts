@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Wed Nov 20 19:25:54 2013 ***************************************************************************
+                          Sun Nov 24 14:29:25 2013 ***************************************************************************
 
 Product: Designer
 Release: v11.0
 Version: 11.0.0.23
-File Name: C:\Users\knekritz\UMKarts\gc\designer\impl1\gc.adb
+File Name: C:\Users\mttschlt\UMKarts\gc\designer\impl1\gc.adb
 Design Name: gc  Design State: compile
-Last Saved: Wed Nov 20 18:30:46 2013
+Last Saved: Sun Nov 24 14:27:46 2013
 
 ***** Device Data **************************************************
 
@@ -22,9 +22,9 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Wed Nov 20 19:25:34 2013:
-        C:\Users\knekritz\UMKarts\gc\synthesis\gc.edn
-        C:\Users\knekritz\UMKarts\gc\component\work\gc\gc.pdc
+Source File(s) Imported on Sun Nov 24 14:29:01 2013:
+        C:\Users\mttschlt\UMKarts\gc\synthesis\gc.edn
+        C:\Users\mttschlt\UMKarts\gc\component\work\gc\gc.pdc
 
 
 ***** CAE Variables ************************************************
@@ -50,8 +50,8 @@ Parameters used to run compile:
 Family      : SmartFusion
 Device      : A2F200M3F
 Package     : 484 FBGA
-Source      : C:\Users\knekritz\UMKarts\gc\synthesis\gc.edn
-              C:\Users\knekritz\UMKarts\gc\component\work\gc\gc.pdc
+Source      : C:\Users\mttschlt\UMKarts\gc\synthesis\gc.edn
+              C:\Users\mttschlt\UMKarts\gc\component\work\gc\gc.pdc
 Format      : EDIF
 Topcell     : gc
 Speed grade : -1
@@ -223,38 +223,38 @@ Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPOE[28] drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPOE[29] drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPOE[30] drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPOE[31] drives no load.
-Warning: CMP201: Net gc_MSS_0/GPO_net_0[0] drives no load.
-Warning: CMP201: Net gc_MSS_0/GPO_net_0[1] drives no load.
-Warning: CMP201: Net gc_MSS_0/GPO_net_0[2] drives no load.
-Warning: CMP201: Net gc_MSS_0/GPO_net_0[3] drives no load.
-Warning: CMP201: Net gc_MSS_0/GPO_net_0[4] drives no load.
-Warning: CMP201: Net gc_MSS_0/GPO_net_0[5] drives no load.
-Warning: CMP201: Net gc_MSS_0/GPO_net_0[6] drives no load.
-Warning: CMP201: Net gc_MSS_0/GPO_net_0[7] drives no load.
-Warning: CMP201: Net gc_MSS_0/GPO_net_0[8] drives no load.
-Warning: CMP201: Net gc_MSS_0/GPO_net_0[9] drives no load.
-Warning: CMP201: Net gc_MSS_0/GPO_net_0[10] drives no load.
-Warning: CMP201: Net gc_MSS_0/GPO_net_0[11] drives no load.
-Warning: CMP201: Net gc_MSS_0/GPO_net_0[12] drives no load.
-Warning: CMP201: Net gc_MSS_0/GPO_net_0[13] drives no load.
-Warning: CMP201: Net gc_MSS_0/GPO_net_0[14] drives no load.
-Warning: CMP201: Net gc_MSS_0/GPO_net_0[15] drives no load.
-Warning: CMP201: Net gc_MSS_0/GPO_net_0[16] drives no load.
-Warning: CMP201: Net gc_MSS_0/GPO_net_0[17] drives no load.
-Warning: CMP201: Net gc_MSS_0/GPO_net_0[18] drives no load.
-Warning: CMP201: Net gc_MSS_0/GPO_net_0[19] drives no load.
-Warning: CMP201: Net gc_MSS_0/GPO_net_0[20] drives no load.
-Warning: CMP201: Net gc_MSS_0/GPO_net_0[21] drives no load.
-Warning: CMP201: Net gc_MSS_0/GPO_net_0[22] drives no load.
-Warning: CMP201: Net gc_MSS_0/GPO_net_0[23] drives no load.
-Warning: CMP201: Net gc_MSS_0/GPO_net_0[24] drives no load.
-Warning: CMP201: Net gc_MSS_0/GPO_net_0[25] drives no load.
-Warning: CMP201: Net gc_MSS_0/GPO_net_0[26] drives no load.
-Warning: CMP201: Net gc_MSS_0/GPO_net_0[27] drives no load.
-Warning: CMP201: Net gc_MSS_0/GPO_net_0[28] drives no load.
-Warning: CMP201: Net gc_MSS_0/GPO_net_0[29] drives no load.
-Warning: CMP201: Net gc_MSS_0/GPO_net_0[30] drives no load.
-Warning: CMP201: Net gc_MSS_0/GPO_net_0[31] drives no load.
+Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[0] drives no load.
+Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[1] drives no load.
+Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[2] drives no load.
+Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[3] drives no load.
+Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[4] drives no load.
+Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[5] drives no load.
+Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[6] drives no load.
+Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[7] drives no load.
+Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[8] drives no load.
+Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[9] drives no load.
+Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[10] drives no load.
+Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[11] drives no load.
+Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[12] drives no load.
+Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[13] drives no load.
+Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[14] drives no load.
+Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[15] drives no load.
+Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[16] drives no load.
+Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[17] drives no load.
+Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[18] drives no load.
+Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[19] drives no load.
+Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[20] drives no load.
+Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[21] drives no load.
+Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[22] drives no load.
+Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[23] drives no load.
+Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[24] drives no load.
+Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[25] drives no load.
+Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[26] drives no load.
+Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[27] drives no load.
+Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[28] drives no load.
+Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[29] drives no load.
+Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[30] drives no load.
+Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_GPO[31] drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_MSSINT[0] drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_MSSINT[1] drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_ADLIB_INST_MSSINT[2] drives no load.
@@ -362,23 +362,33 @@ Warning: CMP201: Net gc_MSS_0/MSS_CCC_0/I_MSSCCC_GLC drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_CCC_0/I_MSSCCC_LOCK drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_CCC_0/I_MSSCCC_YB drives no load.
 Warning: CMP201: Net gc_MSS_0/MSS_CCC_0/I_MSSCCC_YC drives no load.
+Warning: CMP201: Net IR_QUEUE_0/RAM4K9_QXI[7]_DOUTA0 drives no load.
+Warning: CMP201: Net IR_QUEUE_0/RAM4K9_QXI[7]_DOUTA1 drives no load.
+Warning: CMP201: Net IR_QUEUE_0/RAM4K9_QXI[7]_DOUTA2 drives no load.
+Warning: CMP201: Net IR_QUEUE_0/RAM4K9_QXI[7]_DOUTA3 drives no load.
+Warning: CMP201: Net IR_QUEUE_0/RAM4K9_QXI[7]_DOUTA4 drives no load.
+Warning: CMP201: Net IR_QUEUE_0/RAM4K9_QXI[7]_DOUTA5 drives no load.
+Warning: CMP201: Net IR_QUEUE_0/RAM4K9_QXI[7]_DOUTA6 drives no load.
+Warning: CMP201: Net IR_QUEUE_0/RAM4K9_QXI[7]_DOUTA7 drives no load.
+Warning: CMP201: Net IR_QUEUE_0/RAM4K9_QXI[7]_DOUTA8 drives no load.
+Warning: CMP201: Net IR_QUEUE_0/RAM4K9_QXI[7]_DOUTB8 drives no load.
 
 Netlist Optimization Report
 ===========================
 
 Optimized macros:
   - Dangling net drivers:   0
-  - Buffers:                2
+  - Buffers:                3
   - Inverters:              0
-  - Tieoff:                 0
-  - Logic combining:        27
+  - Tieoff:                 14
+  - Logic combining:        56
 
-    Total macros optimized  29
+    Total macros optimized  73
 
-Warning: CMP503: Remapped 65 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
+Warning: CMP503: Remapped 73 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
          pin on the enable flip-flop is not being driven by a global net.
 
-There were 0 error(s) and 285 warning(s) in this design.
+There were 0 error(s) and 295 warning(s) in this design.
 =====================================================================
 
 Reading previous post-compile physical placement constraints.
@@ -398,8 +408,8 @@ Compile report:
 ===============
 
     Microcontroller Subsystem  Used:      1  Total:      1   (100.00%)
-    Fabric                     Used:   2182  Total:   4608   (47.35%)
-    Fabric IO (W/ clocks)      Used:     10  Total:     94   (10.64%)
+    Fabric                     Used:   3008  Total:   4608   (65.28%)
+    Fabric IO (W/ clocks)      Used:     12  Total:     94   (12.77%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      2  Total:     32   (6.25%)
     Dedicated MSS IO           Used:      9  Total:     43   (20.93%)
@@ -408,7 +418,7 @@ Compile report:
     On-chip RC oscillator      Used:      1  Total:      1   (100.00%)
     Main Crystal oscillator    Used:      0  Total:      1   (0.00%)
     32 KHz Crystal oscillator  Used:      0  Total:      1   (0.00%)
-    RAM/FIFO                   Used:      0  Total:      8   (0.00%)
+    RAM/FIFO                   Used:      1  Total:      8   (12.50%)
     User JTAG                  Used:      0  Total:      1   (0.00%)
 
 Global Information:
@@ -427,15 +437,15 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 1538         | 1538
-    SEQ     | 644          | 644
+    COMB    | 2128         | 2128
+    SEQ     | 880          | 880
 
 I/O Function:
 
     Type                          | w/o register  | w/ register  | w/ DDR register
     ------------------------------|---------------|--------------|----------------
-    Input I/O                     | 3             | 0            | 0
-    Output I/O                    | 6             | 0            | 0
+    Input I/O                     | 4             | 0            | 0
+    Output I/O                    | 7             | 0            | 0
     Bidirectional I/O             | 1             | 0            | 0
     Differential Input I/O Pairs  | 0             | 0            | 0
     Differential Output I/O Pairs | 0             | 0            | 0
@@ -446,11 +456,11 @@ I/O Technology:
     --------------------------------|-------|-------|-------|--------|--------------
     I/O Standard(s)                 | Vcci  | Vref  | Input | Output | Bidirectional
     --------------------------------|-------|-------|-------|--------|--------------
-    LVTTL                           | 3.30v | N/A   | 3     | 6      | 1
+    LVTTL                           | 3.30v | N/A   | 4     | 7      | 1
 
 I/O Placement:
 
-    Locked  :  10 ( 100.00% )
+    Locked  :  12 ( 100.00% )
     Placed  :   0
     UnPlaced:   0
 
@@ -468,69 +478,71 @@ The following nets drive enable flip-flops that have been remapped to a 2-tile i
                           Driver: motorWrapper_0/motor_0/reset_capture_sync
     15      SET/RESET_NET Net   : motorWrapper_0/motor_0/reset_capture_async_RNIKK9A
                           Driver: motorWrapper_0/motor_0/reset_capture_async_RNIKK9A
+    8       SET/RESET_NET Net   : IR_QUEUE_0/READ_RESET_P_0
+                          Driver: IR_QUEUE_0/DFN1C0_READ_RESET_P_0
 
 The following nets have been assigned to a chip global resource:
     Fanout  Type          Name
     --------------------------
-    612     CLK_NET       Net   : FAB_CLK
+    778     CLK_NET       Net   : FAB_CLK
                           Driver: gc_MSS_0/MSS_CCC_0/I_MSSCCC
                           Source: ESSENTIAL
-    256     INT_NET       Net   : gc_MSS_0_M2F_RESET_N
+    292     INT_NET       Net   : gc_MSS_0_M2F_RESET_N
                           Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3/U_CLKSRC
                           Source: NETLIST
-    139     INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[4]
+    137     INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[4]
                           Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_1/U_CLKSRC
                           Source: NETLIST
-    116     INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[3]
+    117     INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[3]
                           Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_0/U_CLKSRC
                           Source: NETLIST
 
 High fanout nets in the post compile netlist:
     Fanout  Type          Name
     --------------------------
+    72      CLK_NET       Net   : clkOut
+                          Driver: IR_LED_0/div/clkOut
     24      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[2]
                           Driver: gc_MSS_0/MSS_ADLIB_INST
-    23      INT_NET       Net   : CoreAPB3_0_APBmslave1_PSELx_1
-                          Driver: CoreAPB3_0/CAPB3O0OI_1[0]
-    23      INT_NET       Net   : CoreAPB3_0_APBmslave1_PSELx_1_0
-                          Driver: CoreAPB3_0/CAPB3O0OI_1_0[0]
     23      INT_NET       Net   : gc_receive_0/N_181
                           Driver: gc_receive_0/count_RNICJH81_2[7]
     23      INT_NET       Net   : gc_receive_0/N_181_1
                           Driver: gc_receive_0/count_RNICJH81_0[7]
     23      INT_NET       Net   : gc_receive_0/N_181_0
                           Driver: gc_receive_0/count_RNICJH81_1[7]
-    22      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR_0[2]
-                          Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_3
-    22      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR_1[2]
-                          Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_4
-    22      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR_2[2]
-                          Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_2
-    21      INT_NET       Net   : gc_receive_0/response_0_sqmuxa_0
+    23      INT_NET       Net   : IR_LED_0/LATCHED_RESET
+                          Driver: IR_LED_0/LATCHED_RESET
+    22      INT_NET       Net   : gc_receive_0/response_0_sqmuxa_0
                           Driver: gc_receive_0/next_response_count_RNICL693_0[5]
+    22      INT_NET       Net   : gc_receive_0/response_0_sqmuxa
+                          Driver: gc_receive_0/next_response_count_RNICL693[5]
+    21      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR_0[2]
+                          Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_3
+    21      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR_1[2]
+                          Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_4
 
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
     --------------------------
-    87      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[2]
+    84      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[2]
                           Driver: gc_MSS_0/MSS_ADLIB_INST
+    72      CLK_NET       Net   : clkOut
+                          Driver: IR_LED_0/div/clkOut
     36      CLK_NET       Net   : CAPTURE_SWITCH_c
                           Driver: CAPTURE_SWITCH_pad
-    23      INT_NET       Net   : CoreAPB3_0_APBmslave1_PSELx_1
-                          Driver: CoreAPB3_0/CAPB3O0OI_1[0]
-    23      INT_NET       Net   : CoreAPB3_0_APBmslave1_PSELx_1_0
-                          Driver: CoreAPB3_0/CAPB3O0OI_1_0[0]
     23      INT_NET       Net   : gc_receive_0/N_181
                           Driver: gc_receive_0/count_RNICJH81_2[7]
     23      INT_NET       Net   : gc_receive_0/N_181_1
                           Driver: gc_receive_0/count_RNICJH81_0[7]
     23      INT_NET       Net   : gc_receive_0/N_181_0
                           Driver: gc_receive_0/count_RNICJH81_1[7]
-    21      INT_NET       Net   : gc_receive_0/response_0_sqmuxa_0
+    23      INT_NET       Net   : IR_LED_0/LATCHED_RESET
+                          Driver: IR_LED_0/LATCHED_RESET
+    22      INT_NET       Net   : gc_receive_0/response_0_sqmuxa_0
                           Driver: gc_receive_0/next_response_count_RNICL693_0[5]
-    20      INT_NET       Net   : gc_receive_0/response_0_sqmuxa
+    22      INT_NET       Net   : gc_receive_0/response_0_sqmuxa
                           Driver: gc_receive_0/next_response_count_RNICL693[5]
-    19      INT_NET       Net   : controller_init_0
-                          Driver: gc_state_0/controller_init_0
+    20      SET/RESET_NET Net   : IR_QUEUE_0/READ_RESET_P_0
+                          Driver: IR_QUEUE_0/DFN1C0_READ_RESET_P_0
 
 

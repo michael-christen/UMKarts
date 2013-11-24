@@ -1,0 +1,46 @@
+FlashPro
+Version: 11.0.0.23
+Release: v11.0
+
+Software Version: 11.0.0.23
+PDB file 'C:\Users\mttschlt\UMKarts\gc\designer\impl1\gc_fp\gc.pdb' has been loaded
+successfully.
+DESIGN : gc;  CHECKSUM : 93FC;  PDB_VERSION : 1.8
+Driver : 3.0.0 build 1
+programmer '80078' : FlashPro3
+Opened 'C:/Users/mttschlt/UMKarts/gc/designer/impl1/gc_fp/gc.pro'
+The 'open_project' command succeeded.
+The 'set_programming_file' command succeeded.
+The 'set_device_type' command succeeded.
+The 'set_device_package' command succeeded.
+Info: Adding Flash Memory data from file
+      C:\Users\mttschlt\UMKarts\gc\component\work\gc_MSS\MSS_ENVM_0\MSS_ENVM_0.efc.
+Info: Adding FPGA Array data from file C:\Users\mttschlt\UMKarts\gc\designer\impl1\gc.fdb.
+PDB file 'C:\Users\mttschlt\UMKarts\gc\designer\impl1\gc_fp\gc.pdb' has been loaded
+successfully.
+DESIGN : gc;  CHECKSUM : 93FC;  PDB_VERSION : 1.8
+The 'update_programming_file' command succeeded.
+The 'set_programming_action' command succeeded.
+programmer '80078' : Scan Chain...
+Warning: programmer '80078' : Vpump has been selected on programmer AND an externally provided
+         Vpump has also been detected. Using externally provided Vpump voltage source.
+programmer '80078' : Scan Chain PASSED.
+programmer '80078' : Executing action PROGRAM
+programmer '80078' : EXPORT FSN[48] = 0114ab403c7c
+programmer '80078' : Erase ...
+programmer '80078' : Completed erase
+programmer '80078' : EXPORT CHECKSUM: [16] = 93fc
+programmer '80078' : Programming FPGA Array
+programmer '80078' : Verifying FPGA Array
+programmer '80078' :         Verifying FPGA Array -- pass
+programmer '80078' : Program System Init and Boot Clients...
+programmer '80078' : Verify System Init and Boot Clients...
+programmer '80078' : Finished: Sun Nov 24 14:32:27 2013 (Elapsed time 00:00:39)
+programmer '80078' : Executing action PROGRAM PASSED.
+
+                        o - o - o - o - o - o
+
+The 'run_selected_actions' command succeeded.
+Project saved.
+The 'save_project' command succeeded.
+Project closed.

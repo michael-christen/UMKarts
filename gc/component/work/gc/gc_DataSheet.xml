@@ -11,37 +11,43 @@
     <hdl-type>Verilog</hdl-type>
     <project-description>
     </project-description>
-    <location>C:/Users/knekritz/UMKarts/gc/component/work/gc</location>
-    <state>GENERATED ( Wed Nov 20 19:24:50 2013 )</state>
-    <swide-toolchain>SoftConsole workspace generated to C:\Users\knekritz\UMKarts\gc\SoftConsole</swide-toolchain>
+    <location>C:/Users/mttschlt/UMKarts/gc/component/work/gc</location>
+    <state>GENERATED ( Sun Nov 24 14:28:23 2013 )</state>
+    <swide-toolchain>SoftConsole workspace generated to C:\Users\mttschlt\UMKarts\gc\SoftConsole</swide-toolchain>
   </project-settings>
   <site-map>
   </site-map>
   <fileset>
     <name>HDL File(s)</name>
-    <file>C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v</file>
-    <file>C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v</file>
-    <file>C:\Users\knekritz\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v</file>
-    <file>C:\Users\knekritz\UMKarts\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v</file>
-    <file>C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Clock_gen.v</file>
-    <file>C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v</file>
-    <file>C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUARTapb.v</file>
-    <file>C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\fifo_256x8_smartfusion.v</file>
-    <file>C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Rx_async.v</file>
-    <file>C:\Users\knekritz\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Tx_async.v</file>
-    <file>C:\Users\knekritz\UMKarts\gc\component\work\gc\gc.v</file>
-    <file>C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\gc_MSS.v</file>
-    <file>C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v</file>
-    <file>C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\mss_tshell.v</file>
-    <file>C:\Users\knekritz\UMKarts\gc\hdl\motor.v</file>
-    <file>C:\Users\knekritz\UMKarts\gc\hdl\motorWrapper.v</file>
-    <file>C:\Users\knekritz\UMKarts\gc\hdl\pulser.v</file>
-    <file>C:\Users\knekritz\UMKarts\gc\hdl\query.v</file>
-    <file>C:\Users\knekritz\UMKarts\gc\hdl\receive.v</file>
+    <file>C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v</file>
+    <file>C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v</file>
+    <file>C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v</file>
+    <file>C:\Users\mttschlt\UMKarts\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v</file>
+    <file>C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Clock_gen.v</file>
+    <file>C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v</file>
+    <file>C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUARTapb.v</file>
+    <file>C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\fifo_256x8_smartfusion.v</file>
+    <file>C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Rx_async.v</file>
+    <file>C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Tx_async.v</file>
+    <file>C:\Users\mttschlt\UMKarts\gc\component\work\gc\gc.v</file>
+    <file>C:\Users\mttschlt\UMKarts\gc\component\work\gc_MSS\gc_MSS.v</file>
+    <file>C:\Users\mttschlt\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v</file>
+    <file>C:\Users\mttschlt\UMKarts\gc\component\work\gc_MSS\mss_tshell.v</file>
+    <file>C:\Users\mttschlt\UMKarts\gc\hdl\APB_IR.v</file>
+    <file>C:\Users\mttschlt\UMKarts\gc\hdl\clockdivider.v</file>
+    <file>C:\Users\mttschlt\UMKarts\gc\hdl\IR_LED.v</file>
+    <file>C:\Users\mttschlt\UMKarts\gc\hdl\IR_RECV.v</file>
+    <file>C:\Users\mttschlt\UMKarts\gc\hdl\LED_PULSE.v</file>
+    <file>C:\Users\mttschlt\UMKarts\gc\hdl\motor.v</file>
+    <file>C:\Users\mttschlt\UMKarts\gc\hdl\motorWrapper.v</file>
+    <file>C:\Users\mttschlt\UMKarts\gc\hdl\pulser.v</file>
+    <file>C:\Users\mttschlt\UMKarts\gc\hdl\query.v</file>
+    <file>C:\Users\mttschlt\UMKarts\gc\hdl\receive.v</file>
+    <file>C:\Users\mttschlt\UMKarts\gc\smartgen\IR_QUEUE\IR_QUEUE.v</file>
   </fileset>
   <fileset>
     <name>Flash Memory File(s)</name>
-    <file>C:\Users\knekritz\UMKarts\gc\component\work\C:/Users/knekritz/UMKarts/gc/component/work/gc_MSS/MSS_ENVM_0/MSS_ENVM_0.efc</file>
+    <file>C:\Users\mttschlt\UMKarts\gc\component\work\./MSS_ENVM_0/MSS_ENVM_0.efc</file>
   </fileset>
   <io>
     <port-name>SPI_0_DO</port-name>
@@ -74,6 +80,12 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
+    <port-name>LED</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
     <port-name>LSERVO</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
@@ -93,6 +105,12 @@
   </io>
   <io>
     <port-name>F2M_GPI_2</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>RECV_IN</port-name>
     <direction>IN</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
@@ -169,6 +187,9 @@
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
+  <core>
+    <core-name>APB_IR_0</core-name>
+  </core>
   <core type="SpiritModule">
     <core-exttype>IP</core-exttype>
     <core-type>SpiritModule</core-type>
@@ -212,9 +233,9 @@ There is one APB3 Master interface.
     </core-param>
     <core-param>
       <param-name>Slot 3:</param-name>
-      <param-value>false</param-value>
+      <param-value>true</param-value>
       <param-hdlname>APBSLOT3ENABLE</param-hdlname>
-      <param-hdlvalue>0</param-hdlvalue>
+      <param-hdlvalue>1</param-hdlvalue>
       <param-tag>spirit:hwParameter</param-tag>
     </core-param>
     <core-param>
@@ -519,7 +540,7 @@ There is one APB3 Master interface.
   <core type="ComponentModule">
     <core-type>ComponentModule</core-type>
     <core-exttype>HierSpiritDesign</core-exttype>
-    <core-location>C:/Users/knekritz/UMKarts/gc/component/work/gc_MSS</core-location>
+    <core-location>C:/Users/mttschlt/UMKarts/gc/component/work/gc_MSS</core-location>
     <core-name>gc_MSS_0</core-name>
   </core>
   <core type="HdlModule">
@@ -536,6 +557,30 @@ There is one APB3 Master interface.
     <core-exttype>gc_state</core-exttype>
     <core-location>hdl\query.v</core-location>
     <core-name>gc_state_0</core-name>
+  </core>
+  <core type="HdlModule">
+    <core-type>HdlModule</core-type>
+    <core-exttype>IR_LED</core-exttype>
+    <core-location>hdl\IR_LED.v</core-location>
+    <core-name>IR_LED_0</core-name>
+  </core>
+  <core type="ComponentModule">
+    <core-type>ComponentModule</core-type>
+    <core-exttype>SmartGen</core-exttype>
+    <core-location>C:/Users/mttschlt/UMKarts/gc/smartgen/IR_QUEUE</core-location>
+    <core-name>IR_QUEUE_0</core-name>
+  </core>
+  <core type="HdlModule">
+    <core-type>HdlModule</core-type>
+    <core-exttype>LED_PULSE</core-exttype>
+    <core-location>hdl\LED_PULSE.v</core-location>
+    <core-name>LED_PULSE_0</core-name>
+  </core>
+  <core type="HdlModule">
+    <core-type>HdlModule</core-type>
+    <core-exttype>LED_RECV</core-exttype>
+    <core-location>hdl\IR_RECV.v</core-location>
+    <core-name>LED_RECV_0</core-name>
   </core>
   <core>
     <core-name>motorWrapper_0</core-name>
@@ -2625,6 +2670,13 @@ These files are required by the SmartFusion bare metal peripheral drivers to bui
           <fullPinName>CoreUARTapb_0:APB_bif</fullPinName>
           <remapAddress>0x40050200</remapAddress>
           <fullAddressSpace>0x40050200 - 0x400502FF</fullAddressSpace>
+          <range>0x00000100</range>
+        </slave>
+        <slave>
+          <name>APB_IR_0</name>
+          <fullPinName>APB_IR_0:IR_BIF</fullPinName>
+          <remapAddress>0x40050300</remapAddress>
+          <fullAddressSpace>0x40050300 - 0x400503FF</fullAddressSpace>
           <range>0x00000100</range>
         </slave>
         <slave>

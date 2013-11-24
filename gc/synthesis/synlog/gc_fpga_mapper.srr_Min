@@ -1,7 +1,7 @@
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Wed Nov 20 19:25:28 2013
+# Timing Report written on Sun Nov 24 14:28:57 2013
 #
 
 
@@ -11,7 +11,7 @@ Requested Frequency:    100.0 MHz
 Wire load mode:         top
 Wire load model:        smartfusion
 Paths requested:        5
-Constraint File(s):    C:\Users\knekritz\UMKarts\gc\component\work\gc_MSS\mss_tshell_syn.sdc
+Constraint File(s):    C:\Users\mttschlt\UMKarts\gc\component\work\gc_MSS\mss_tshell_syn.sdc
                        
 @N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
 
@@ -25,32 +25,36 @@ Performance Summary
 
 Worst slack in design: 0.192
 
-                      Requested     Estimated     Requested     Estimated                Clock        Clock              
-Starting Clock        Frequency     Frequency     Period        Period        Slack      Type         Group              
--------------------------------------------------------------------------------------------------------------------------
-FAB_CLK               100.0 MHz     78.8 MHz      10.000        12.695        -2.695     declared     clk_group_0        
-FCLK                  100.0 MHz     NA            10.000        NA            NA         declared     clk_group_0        
-gc|CAPTURE_SWITCH     100.0 MHz     238.2 MHz     10.000        4.199         5.801      inferred     Inferred_clkgroup_0
-System                100.0 MHz     142.5 MHz     10.000        7.019         2.981      system       system_clkgroup    
-=========================================================================================================================
+                                              Requested     Estimated     Requested     Estimated                Clock        Clock              
+Starting Clock                                Frequency     Frequency     Period        Period        Slack      Type         Group              
+-------------------------------------------------------------------------------------------------------------------------------------------------
+FAB_CLK                                       100.0 MHz     73.7 MHz      10.000        13.560        -3.560     declared     clk_group_0        
+FCLK                                          100.0 MHz     NA            10.000        NA            NA         declared     clk_group_0        
+clk_div_20000_10000|clkOut_inferred_clock     100.0 MHz     92.7 MHz      10.000        10.783        -0.783     inferred     Inferred_clkgroup_0
+gc|CAPTURE_SWITCH                             100.0 MHz     238.2 MHz     10.000        4.199         5.801      inferred     Inferred_clkgroup_1
+System                                        100.0 MHz     131.9 MHz     10.000        7.583         2.417      system       system_clkgroup    
+=================================================================================================================================================
 
 
 
 Clock Relationships
 *******************
 
-Clocks                                |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
-----------------------------------------------------------------------------------------------------------------------------
-Starting           Ending             |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
-----------------------------------------------------------------------------------------------------------------------------
-System             System             |  0.000       0.192  |  No paths    -      |  No paths    -      |  No paths    -    
-System             FAB_CLK            |  0.000       False  |  No paths    -      |  No paths    -      |  No paths    -    
-FAB_CLK            System             |  0.000       1.319  |  No paths    -      |  No paths    -      |  No paths    -    
-FAB_CLK            FAB_CLK            |  0.000       False  |  No paths    -      |  No paths    -      |  No paths    -    
-FAB_CLK            gc|CAPTURE_SWITCH  |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
-gc|CAPTURE_SWITCH  FAB_CLK            |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
-gc|CAPTURE_SWITCH  gc|CAPTURE_SWITCH  |  0.000       False  |  No paths    -      |  No paths    -      |  No paths    -    
-============================================================================================================================
+Clocks                                                                                |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                   Ending                                     |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                     System                                     |  0.000       0.192  |  No paths    -      |  No paths    -      |  No paths    -    
+System                                     FAB_CLK                                    |  0.000       False  |  No paths    -      |  No paths    -      |  No paths    -    
+FAB_CLK                                    System                                     |  0.000       1.319  |  No paths    -      |  No paths    -      |  No paths    -    
+FAB_CLK                                    FAB_CLK                                    |  0.000       False  |  No paths    -      |  No paths    -      |  No paths    -    
+FAB_CLK                                    clk_div_20000_10000|clkOut_inferred_clock  |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
+FAB_CLK                                    gc|CAPTURE_SWITCH                          |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
+clk_div_20000_10000|clkOut_inferred_clock  FAB_CLK                                    |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
+clk_div_20000_10000|clkOut_inferred_clock  clk_div_20000_10000|clkOut_inferred_clock  |  0.000       False  |  No paths    -      |  No paths    -      |  No paths    -    
+gc|CAPTURE_SWITCH                          FAB_CLK                                    |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
+gc|CAPTURE_SWITCH                          gc|CAPTURE_SWITCH                          |  0.000       False  |  No paths    -      |  No paths    -      |  No paths    -    
+============================================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 
@@ -76,16 +80,16 @@ Starting Points with Worst Slack
 Instance                         Reference     Type     Pin     Net                                  Time        Slack
                                  Clock                                                                                
 ----------------------------------------------------------------------------------------------------------------------
-gc_response_apb_0.PRDATA[8]      FAB_CLK       DFN1     Q       CoreAPB3_0_APBmslave0_PRDATA[8]      0.494       1.483
 gc_response_apb_0.PRDATA[9]      FAB_CLK       DFN1     Q       CoreAPB3_0_APBmslave0_PRDATA[9]      0.494       1.483
 gc_response_apb_0.PRDATA[10]     FAB_CLK       DFN1     Q       CoreAPB3_0_APBmslave0_PRDATA[10]     0.494       1.483
 gc_response_apb_0.PRDATA[11]     FAB_CLK       DFN1     Q       CoreAPB3_0_APBmslave0_PRDATA[11]     0.494       1.483
 gc_response_apb_0.PRDATA[12]     FAB_CLK       DFN1     Q       CoreAPB3_0_APBmslave0_PRDATA[12]     0.494       1.483
 gc_response_apb_0.PRDATA[13]     FAB_CLK       DFN1     Q       CoreAPB3_0_APBmslave0_PRDATA[13]     0.494       1.483
-gc_response_apb_0.PRDATA[14]     FAB_CLK       DFN1     Q       CoreAPB3_0_APBmslave0_PRDATA[14]     0.494       1.483
 gc_response_apb_0.PRDATA[15]     FAB_CLK       DFN1     Q       CoreAPB3_0_APBmslave0_PRDATA[15]     0.494       1.483
 gc_response_apb_0.PRDATA[16]     FAB_CLK       DFN1     Q       CoreAPB3_0_APBmslave0_PRDATA[16]     0.494       1.483
 gc_response_apb_0.PRDATA[17]     FAB_CLK       DFN1     Q       CoreAPB3_0_APBmslave0_PRDATA[17]     0.494       1.483
+gc_response_apb_0.PRDATA[18]     FAB_CLK       DFN1     Q       CoreAPB3_0_APBmslave0_PRDATA[18]     0.494       1.483
+gc_response_apb_0.PRDATA[19]     FAB_CLK       DFN1     Q       CoreAPB3_0_APBmslave0_PRDATA[19]     0.494       1.483
 ======================================================================================================================
 
 
@@ -96,7 +100,6 @@ Ending Points with Worst Slack
 Instance                    Reference     Type        Pin               Net                                    Time         Slack
                             Clock                                                                                                
 ---------------------------------------------------------------------------------------------------------------------------------
-gc_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[8]      gc_MSS_0_MSS_MASTER_APB_PRDATA[8]      0.000        1.319
 gc_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[9]      gc_MSS_0_MSS_MASTER_APB_PRDATA[9]      0.000        1.319
 gc_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[10]     gc_MSS_0_MSS_MASTER_APB_PRDATA[10]     0.000        1.319
 gc_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[11]     gc_MSS_0_MSS_MASTER_APB_PRDATA[11]     0.000        1.319
@@ -106,6 +109,7 @@ gc_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[14]     gc_MSS_0
 gc_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[15]     gc_MSS_0_MSS_MASTER_APB_PRDATA[15]     0.000        1.319
 gc_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[16]     gc_MSS_0_MSS_MASTER_APB_PRDATA[16]     0.000        1.319
 gc_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[17]     gc_MSS_0_MSS_MASTER_APB_PRDATA[17]     0.000        1.319
+gc_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[18]     gc_MSS_0_MSS_MASTER_APB_PRDATA[18]     0.000        1.319
 =================================================================================================================================
 
 
@@ -124,20 +128,20 @@ Path information for path number 1:
     = Slack (non-critical) :                 1.319
 
     Number of logic level(s):                1
-    Starting point:                          gc_response_apb_0.PRDATA[8] / Q
-    Ending point:                            gc_MSS_0.MSS_ADLIB_INST / MSSPRDATA[8]
+    Starting point:                          gc_response_apb_0.PRDATA[9] / Q
+    Ending point:                            gc_MSS_0.MSS_ADLIB_INST / MSSPRDATA[9]
     The start point is clocked by            FAB_CLK [rising] on pin CLK
     The end   point is clocked by            System [rising]
 
 Instance / Net                                      Pin              Pin               Arrival     No. of    
 Name                                    Type        Name             Dir     Delay     Time        Fan Out(s)
 -------------------------------------------------------------------------------------------------------------
-gc_response_apb_0.PRDATA[8]             DFN1        Q                Out     0.494     0.494       -         
-CoreAPB3_0_APBmslave0_PRDATA[8]         Net         -                -       0.192     -           1         
-CoreAPB3_0.CAPB3lOII.PRDATA_0_iv[8]     AO1         A                In      -         0.685       -         
-CoreAPB3_0.CAPB3lOII.PRDATA_0_iv[8]     AO1         Y                Out     0.442     1.128       -         
-gc_MSS_0_MSS_MASTER_APB_PRDATA[8]       Net         -                -       0.192     -           1         
-gc_MSS_0.MSS_ADLIB_INST                 MSS_APB     MSSPRDATA[8]     In      -         1.319       -         
+gc_response_apb_0.PRDATA[9]             DFN1        Q                Out     0.494     0.494       -         
+CoreAPB3_0_APBmslave0_PRDATA[9]         Net         -                -       0.192     -           1         
+CoreAPB3_0.CAPB3lOII.PRDATA_0_iv[9]     AO1         A                In      -         0.685       -         
+CoreAPB3_0.CAPB3lOII.PRDATA_0_iv[9]     AO1         Y                Out     0.442     1.128       -         
+gc_MSS_0_MSS_MASTER_APB_PRDATA[9]       Net         -                -       0.192     -           1         
+gc_MSS_0.MSS_ADLIB_INST                 MSS_APB     MSSPRDATA[9]     In      -         1.319       -         
 =============================================================================================================
 
 
@@ -156,6 +160,7 @@ Starting Points with Worst Slack
 Instance                      Reference     Type        Pin              Net                                 Time        Slack
                               Clock                                                                                           
 ------------------------------------------------------------------------------------------------------------------------------
+gc_MSS_0.MSSINT_GPI_0         System        MSSINT      Y                MSSINT_GPI_0_Y                      0.000       0.274
 gc_MSS_0.MSSINT_GPI_2         System        MSSINT      Y                MSSINT_GPI_2_Y                      0.000       0.274
 gc_MSS_0.MSSINT_GPI_4         System        MSSINT      Y                MSSINT_GPI_4_Y                      0.000       0.274
 gc_MSS_0.MSS_ACE_0_VAREF0     System        INBUF_A     Y                MSS_ACE_0_VAREF0_Y                  0.000       0.274
@@ -163,9 +168,8 @@ gc_MSS_0.MSS_ADLIB_INST       System        MSS_APB     EMCCLK           MSS_ADL
 gc_MSS_0.MSS_ADLIB_INST       System        MSS_APB     SDD0             MSS_ACE_0_SDD0_D                    0.000       0.274
 gc_MSS_0.MSS_ADLIB_INST       System        MSS_APB     SPI0DO           MSS_SPI_0_DO_D                      0.000       0.274
 gc_MSS_0.MSS_ADLIB_INST       System        MSS_APB     SPI0DOE          MSS_SPI_0_DO_E                      0.000       0.274
-gc_MSS_0.MSS_ADLIB_INST       System        MSS_APB     MSSPADDR[11]     CoreAPB3_0_APBmslave0_PADDR[11]     0.000       4.066
-gc_MSS_0.MSS_ADLIB_INST       System        MSS_APB     MSSPSEL          gc_MSS_0_MSS_MASTER_APB_PSELx       0.000       4.267
-gc_MSS_0.MSS_ADLIB_INST       System        MSS_APB     MSSPADDR[10]     CoreAPB3_0_APBmslave0_PADDR[10]     0.000       4.305
+gc_MSS_0.MSS_ADLIB_INST       System        MSS_APB     MSSPADDR[10]     CoreAPB3_0_APBmslave0_PADDR[10]     0.000       3.748
+gc_MSS_0.MSS_ADLIB_INST       System        MSS_APB     MSSPSEL          gc_MSS_0_MSS_MASTER_APB_PSELx       0.000       3.949
 ==============================================================================================================================
 
 
@@ -178,14 +182,14 @@ Instance                    Reference     Type            Pin              Net  
 -----------------------------------------------------------------------------------------------------------------------------------
 gc_MSS_0.MSS_ACE_0_SDD0     System        OUTBUF_A        D                MSS_ACE_0_SDD0_D                      0.000        0.192
 gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB         EMCCLKRTN        MSS_ADLIB_INST_EMCCLK                 0.000        0.192
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB         GPI[0]           MSSINT_GPI_0_Y                        0.000        0.192
 gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB         GPI[2]           MSSINT_GPI_2_Y                        0.000        0.192
 gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB         GPI[4]           MSSINT_GPI_4_Y                        0.000        0.192
 gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB         VAREF0           MSS_ACE_0_VAREF0_Y                    0.000        0.192
 gc_MSS_0.MSS_SPI_0_DO       System        TRIBUFF_MSS     D                MSS_SPI_0_DO_D                        0.000        0.192
 gc_MSS_0.MSS_SPI_0_DO       System        TRIBUFF_MSS     E                MSS_SPI_0_DO_E                        0.000        0.192
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB         MSSPRDATA[0]     gc_MSS_0_MSS_MASTER_APB_PRDATA[0]     0.000        3.181
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB         MSSPRDATA[1]     gc_MSS_0_MSS_MASTER_APB_PRDATA[1]     0.000        3.181
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB         MSSPRDATA[2]     gc_MSS_0_MSS_MASTER_APB_PRDATA[2]     0.000        3.181
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB         MSSPRDATA[1]     gc_MSS_0_MSS_MASTER_APB_PRDATA[1]     0.000        2.958
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB         MSSPRDATA[2]     gc_MSS_0_MSS_MASTER_APB_PRDATA[2]     0.000        2.958
 ===================================================================================================================================
 
 
@@ -205,17 +209,17 @@ Path information for path number 1:
     = Slack (critical) :                     0.192
 
     Number of logic level(s):                0
-    Starting point:                          gc_MSS_0.MSSINT_GPI_2 / Y
-    Ending point:                            gc_MSS_0.MSS_ADLIB_INST / GPI[2]
+    Starting point:                          gc_MSS_0.MSSINT_GPI_0 / Y
+    Ending point:                            gc_MSS_0.MSS_ADLIB_INST / GPI[0]
     The start point is clocked by            System [rising]
     The end   point is clocked by            System [rising]
 
 Instance / Net                          Pin        Pin               Arrival     No. of    
 Name                        Type        Name       Dir     Delay     Time        Fan Out(s)
 -------------------------------------------------------------------------------------------
-gc_MSS_0.MSSINT_GPI_2       MSSINT      Y          Out     0.000     0.000       -         
-MSSINT_GPI_2_Y              Net         -          -       0.192     -           1         
-gc_MSS_0.MSS_ADLIB_INST     MSS_APB     GPI[2]     In      -         0.192       -         
+gc_MSS_0.MSSINT_GPI_0       MSSINT      Y          Out     0.000     0.000       -         
+MSSINT_GPI_0_Y              Net         -          -       0.192     -           1         
+gc_MSS_0.MSS_ADLIB_INST     MSS_APB     GPI[0]     In      -         0.192       -         
 ===========================================================================================
 
 

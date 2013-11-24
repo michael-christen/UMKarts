@@ -5,7 +5,7 @@
 Product: Designer
 Release: v11.0
 Version: 11.0.0.23
-Date: Wed Nov 20 19:27:14 2013
+Date: Sun Nov 24 14:31:03 2013
 Design Name: gc  Family: SmartFusion  Die: A2F200M3F  Package: 484 FBGA
 
 
@@ -20,13 +20,13 @@ Global Nets Information:
         |---------------------------------------------------------------|
         |Name                          |Core      |IO        |RAM       |
         |---------------------------------------------------------------|
-        |CoreAPB3_0_APBmslave0_PADDR[3]|      116 |        0 |        0 |
+        |CoreAPB3_0_APBmslave0_PADDR[3]|      117 |        0 |        0 |
         |---------------------------------------------------------------|
-        |CoreAPB3_0_APBmslave0_PADDR[4]|      139 |        0 |        0 |
+        |CoreAPB3_0_APBmslave0_PADDR[4]|      137 |        0 |        0 |
         |---------------------------------------------------------------|
-        |FAB_CLK                       |      611 |        0 |        0 |
+        |FAB_CLK                       |      776 |        0 |       32 |
         |---------------------------------------------------------------|
-        |gc_MSS_0_M2F_RESET_N          |      256 |        0 |        0 |
+        |gc_MSS_0_M2F_RESET_N          |      292 |        0 |        0 |
         |---------------------------------------------------------------|
 
 Nets Sharing Loads:
@@ -37,12 +37,10 @@ Nets Sharing Loads:
         |CoreAPB3_0_APBmslave0_PADDR[3]|CoreAPB3_0_APBmslave0_PADDR[4]|
         |-------------------------------------------------------------|
         |CoreAPB3_0_APBmslave0_PADDR[4]|CoreAPB3_0_APBmslave0_PADDR[3]|
-        |                              |gc_MSS_0_M2F_RESET_N          |
         |-------------------------------------------------------------|
         |FAB_CLK                       |gc_MSS_0_M2F_RESET_N          |
         |-------------------------------------------------------------|
-        |gc_MSS_0_M2F_RESET_N          |CoreAPB3_0_APBmslave0_PADDR[4]|
-        |                              |FAB_CLK                       |
+        |gc_MSS_0_M2F_RESET_N          |FAB_CLK                       |
         |-------------------------------------------------------------|
 
 Summary of Global Net Placement:

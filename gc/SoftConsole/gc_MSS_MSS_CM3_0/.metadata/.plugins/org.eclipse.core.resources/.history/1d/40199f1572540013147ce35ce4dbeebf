@@ -1,7 +1,0 @@
-################################################################################
-# Automatically-generated file. Do not edit!
-################################################################################
-
-USER_OBJS :=
-
-LIBS := -lcircle_buffer -lgc_MSS_MSS_CM3_0_hw_platform -lxbee -lsimple_allocator -lxbee_interface

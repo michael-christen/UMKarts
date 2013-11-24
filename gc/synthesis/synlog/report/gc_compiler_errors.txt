@@ -1,2 +1,2 @@
-@E: CS171 :"C:\Users\knekritz\UMKarts\gc\hdl\receive.v":45:25:45:44|Reversed range
+@E: CS168 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc\gc.v":583:20:583:20|Port WIRE_ERROR does not exist
 
