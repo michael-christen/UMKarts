@@ -2,3 +2,5 @@
 *.o
 **/Debug
 **/Release
+**/.history
+**/.metadata
