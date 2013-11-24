@@ -12,12 +12,12 @@ Opened an existing Libero design gc.adb.
 'IDE_DESIGNERVIEW_ROOTDIR' set to 'C:\Users\mttschlt\UMKarts\gc\designer'
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
 
- Netlist Reading Time = 1.0 seconds
+ Netlist Reading Time = 0.0 seconds
 Imported the files:
    C:\Users\mttschlt\UMKarts\gc\synthesis\gc.edn
    C:\Users\mttschlt\UMKarts\gc\component\work\gc\gc.pdc
 
-The Import command succeeded ( 00:00:14 )
+The Import command succeeded ( 00:00:12 )
 =====================================================================
 Parameters used to run compile:
 ===============================
@@ -356,9 +356,9 @@ Optimized macros:
   - Buffers:                3
   - Inverters:              0
   - Tieoff:                 14
-  - Logic combining:        60
+  - Logic combining:        56
 
-    Total macros optimized  77
+    Total macros optimized  73
 
 Warning: CMP503: Remapped 73 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
          pin on the enable flip-flop is not being driven by a global net.
@@ -383,7 +383,7 @@ Compile report:
 ===============
 
     Microcontroller Subsystem  Used:      1  Total:      1   (100.00%)
-    Fabric                     Used:   2885  Total:   4608   (62.61%)
+    Fabric                     Used:   3008  Total:   4608   (65.28%)
     Fabric IO (W/ clocks)      Used:     12  Total:     94   (12.77%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      2  Total:     32   (6.25%)
@@ -412,7 +412,7 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 2005         | 2005
+    COMB    | 2128         | 2128
     SEQ     | 880          | 880
 
 I/O Function:
@@ -435,11 +435,9 @@ I/O Technology:
 
 I/O Placement:
 
-    Locked  :  10 ( 83.33% )
+    Locked  :  12 ( 100.00% )
     Placed  :   0
-    UnPlaced:   2 ( 16.67% )
-
-Warning: Only some I/Os are locked
+    UnPlaced:   0
 
 Net information report:
 =======================
@@ -461,68 +459,68 @@ The following nets drive enable flip-flops that have been remapped to a 2-tile i
 The following nets have been assigned to a chip global resource:
     Fanout  Type          Name
     --------------------------
-    778     CLK_NET       Net   : gc_MSS_0_FAB_CLK
+    778     CLK_NET       Net   : FAB_CLK
                           Driver: gc_MSS_0/MSS_CCC_0/I_MSSCCC
                           Source: ESSENTIAL
-    284     INT_NET       Net   : gc_MSS_0_M2F_RESET_N
+    292     INT_NET       Net   : gc_MSS_0_M2F_RESET_N
                           Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3/U_CLKSRC
                           Source: NETLIST
-    141     INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[4]
-                          Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_0/U_CLKSRC
+    137     INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[4]
+                          Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_1/U_CLKSRC
                           Source: NETLIST
-    72      CLK_NET       Net   : IR_LED_0_DIVCLK
-                          Driver: IR_LED_0/div/clkOut_RNIF2OB/U_CLKSRC
+    117     INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[3]
+                          Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_0/U_CLKSRC
                           Source: NETLIST
 
 High fanout nets in the post compile netlist:
     Fanout  Type          Name
     --------------------------
-    24      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR_0[2]
-                          Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_2
-    24      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR_1[2]
-                          Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_1
-    24      INT_NET       Net   : gc_receive_0/response_0_sqmuxa_0
-                          Driver: gc_receive_0/next_response_count_RNICL693_0[5]
-    23      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[3]
+    72      CLK_NET       Net   : clkOut
+                          Driver: IR_LED_0/div/clkOut
+    24      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[2]
                           Driver: gc_MSS_0/MSS_ADLIB_INST
-    23      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR_2[2]
-                          Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_3
+    23      INT_NET       Net   : gc_receive_0/N_181
+                          Driver: gc_receive_0/count_RNICJH81_2[7]
     23      INT_NET       Net   : gc_receive_0/N_181_1
-                          Driver: gc_receive_0/count_RNICJH81_1[7]
-    23      INT_NET       Net   : gc_receive_0/N_181_0
                           Driver: gc_receive_0/count_RNICJH81_0[7]
-    23      INT_NET       Net   : gc_receive_0/response_0_sqmuxa
-                          Driver: gc_receive_0/next_response_count_RNICL693[5]
+    23      INT_NET       Net   : gc_receive_0/N_181_0
+                          Driver: gc_receive_0/count_RNICJH81_1[7]
     23      INT_NET       Net   : IR_LED_0/LATCHED_RESET
                           Driver: IR_LED_0/LATCHED_RESET
-    22      INT_NET       Net   : gc_receive_0/N_181
-                          Driver: gc_receive_0/count_RNICJH81_2[7]
+    22      INT_NET       Net   : gc_receive_0/response_0_sqmuxa_0
+                          Driver: gc_receive_0/next_response_count_RNICL693_0[5]
+    22      INT_NET       Net   : gc_receive_0/response_0_sqmuxa
+                          Driver: gc_receive_0/next_response_count_RNICL693[5]
+    21      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR_0[2]
+                          Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_3
+    21      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR_1[2]
+                          Driver: gc_MSS_0/MSS_ADLIB_INST_RNI49L3_4
 
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
     --------------------------
-    103     INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[3]
+    84      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[2]
                           Driver: gc_MSS_0/MSS_ADLIB_INST
-    71      INT_NET       Net   : gc_MSS_0/CoreAPB3_0_APBmslave0_PADDR[2]
-                          Driver: gc_MSS_0/MSS_ADLIB_INST
+    72      CLK_NET       Net   : clkOut
+                          Driver: IR_LED_0/div/clkOut
     36      CLK_NET       Net   : CAPTURE_SWITCH_c
                           Driver: CAPTURE_SWITCH_pad
-    24      INT_NET       Net   : gc_receive_0/response_0_sqmuxa_0
-                          Driver: gc_receive_0/next_response_count_RNICL693_0[5]
+    23      INT_NET       Net   : gc_receive_0/N_181
+                          Driver: gc_receive_0/count_RNICJH81_2[7]
     23      INT_NET       Net   : gc_receive_0/N_181_1
-                          Driver: gc_receive_0/count_RNICJH81_1[7]
-    23      INT_NET       Net   : gc_receive_0/N_181_0
                           Driver: gc_receive_0/count_RNICJH81_0[7]
-    23      INT_NET       Net   : gc_receive_0/response_0_sqmuxa
-                          Driver: gc_receive_0/next_response_count_RNICL693[5]
+    23      INT_NET       Net   : gc_receive_0/N_181_0
+                          Driver: gc_receive_0/count_RNICJH81_1[7]
     23      INT_NET       Net   : IR_LED_0/LATCHED_RESET
                           Driver: IR_LED_0/LATCHED_RESET
-    22      INT_NET       Net   : gc_receive_0/N_181
-                          Driver: gc_receive_0/count_RNICJH81_2[7]
-    21      INT_NET       Net   : gc_receive_0/N_401
-                          Driver: gc_receive_0/next_response_count_RNIVTE73[5]
+    22      INT_NET       Net   : gc_receive_0/response_0_sqmuxa_0
+                          Driver: gc_receive_0/next_response_count_RNICL693_0[5]
+    22      INT_NET       Net   : gc_receive_0/response_0_sqmuxa
+                          Driver: gc_receive_0/next_response_count_RNICL693[5]
+    20      SET/RESET_NET Net   : IR_QUEUE_0/READ_RESET_P_0
+                          Driver: IR_QUEUE_0/DFN1C0_READ_RESET_P_0
 
-The Compile command succeeded ( 00:00:06 )
+The Compile command succeeded ( 00:00:08 )
 Wrote status report to file: gc_compile_report.txt
 
 The Report command succeeded ( 00:00:00 )

@@ -2,7 +2,7 @@
 #define gc_HW_PLATFORM_H_
 /*****************************************************************************
 *
-*Created by Actel SmartDesign  Sat Nov 23 21:14:59 2013
+*Created by Actel SmartDesign  Sun Nov 24 14:08:43 2013
 *
 *Memory map specification for peripherals in gc
 */

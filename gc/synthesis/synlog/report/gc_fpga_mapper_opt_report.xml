@@ -5,7 +5,7 @@ The file contains the optimization information from mapper to be displayed as pa
 *******************************************************************************************-->
 <report_table display_priority="3" name="Optimizations Summary">
 <parameter tooltip="Non-gated/non-generated clock trees / Gated/generated clock trees" name="Combined Clock Conversion">
-<data>1 / 2</data>
+<data>2 / 1</data>
 <report_link name="more">
 <data>C:\Users\mttschlt\UMKarts\gc\synthesis\synlog\report\gc_fpga_mapper_combined_clk.rpt</data>
 </report_link>

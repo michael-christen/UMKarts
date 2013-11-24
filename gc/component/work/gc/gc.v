@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Sat Nov 23 21:14:55 2013
+// Created by SmartDesign Sun Nov 24 14:08:36 2013
 // Version: v11.0 11.0.0.23
 //////////////////////////////////////////////////////////////////////
 
@@ -178,22 +178,22 @@ wire          EMPTY_OUT_PRE_INV0_0;
 //--------------------------------------------------------------------
 // Bus Interface Nets Declarations - Unequal Pin Widths
 //--------------------------------------------------------------------
-wire   [4:0]  CoreAPB3_0_APBmslave0_PADDR_1_4to0;
-wire   [4:0]  CoreAPB3_0_APBmslave0_PADDR_1;
 wire   [31:0] CoreAPB3_0_APBmslave0_PADDR;
 wire   [7:0]  CoreAPB3_0_APBmslave0_PADDR_0_7to0;
 wire   [7:0]  CoreAPB3_0_APBmslave0_PADDR_0;
+wire   [4:0]  CoreAPB3_0_APBmslave0_PADDR_1_4to0;
+wire   [4:0]  CoreAPB3_0_APBmslave0_PADDR_1;
+wire   [31:0] CoreAPB3_0_APBmslave0_PWDATA;
 wire   [7:0]  CoreAPB3_0_APBmslave0_PWDATA_0_7to0;
 wire   [7:0]  CoreAPB3_0_APBmslave0_PWDATA_0;
-wire   [31:0] CoreAPB3_0_APBmslave0_PWDATA;
-wire   [7:0]  CoreAPB3_0_APBmslave2_PRDATA;
 wire   [31:8] CoreAPB3_0_APBmslave2_PRDATA_0_31to8;
 wire   [7:0]  CoreAPB3_0_APBmslave2_PRDATA_0_7to0;
 wire   [31:0] CoreAPB3_0_APBmslave2_PRDATA_0;
-wire   [19:0] gc_MSS_0_MSS_MASTER_APB_PADDR;
+wire   [7:0]  CoreAPB3_0_APBmslave2_PRDATA;
 wire   [31:20]gc_MSS_0_MSS_MASTER_APB_PADDR_0_31to20;
 wire   [19:0] gc_MSS_0_MSS_MASTER_APB_PADDR_0_19to0;
 wire   [31:0] gc_MSS_0_MSS_MASTER_APB_PADDR_0;
+wire   [19:0] gc_MSS_0_MSS_MASTER_APB_PADDR;
 //--------------------------------------------------------------------
 // Constant assignments
 //--------------------------------------------------------------------
@@ -247,10 +247,10 @@ assign LED                = LED_net_1;
 //--------------------------------------------------------------------
 // Bus Interface Nets Assignments - Unequal Pin Widths
 //--------------------------------------------------------------------
-assign CoreAPB3_0_APBmslave0_PADDR_1_4to0 = CoreAPB3_0_APBmslave0_PADDR[4:0];
-assign CoreAPB3_0_APBmslave0_PADDR_1 = { CoreAPB3_0_APBmslave0_PADDR_1_4to0 };
 assign CoreAPB3_0_APBmslave0_PADDR_0_7to0 = CoreAPB3_0_APBmslave0_PADDR[7:0];
 assign CoreAPB3_0_APBmslave0_PADDR_0 = { CoreAPB3_0_APBmslave0_PADDR_0_7to0 };
+assign CoreAPB3_0_APBmslave0_PADDR_1_4to0 = CoreAPB3_0_APBmslave0_PADDR[4:0];
+assign CoreAPB3_0_APBmslave0_PADDR_1 = { CoreAPB3_0_APBmslave0_PADDR_1_4to0 };
 
 assign CoreAPB3_0_APBmslave0_PWDATA_0_7to0 = CoreAPB3_0_APBmslave0_PWDATA[7:0];
 assign CoreAPB3_0_APBmslave0_PWDATA_0 = { CoreAPB3_0_APBmslave0_PWDATA_0_7to0 };
@@ -274,16 +274,16 @@ APB_IR APB_IR_0(
         .PSEL     ( CoreAPB3_0_APBmslave3_PSELx ),
         .PENABLE  ( CoreAPB3_0_APBmslave0_PENABLE ),
         .PWRITE   ( CoreAPB3_0_APBmslave0_PWRITE ),
+        .BUF_FULL ( IR_QUEUE_0_FULL ),
         .PADDR    ( CoreAPB3_0_APBmslave0_PADDR ),
         .PWDATA   ( CoreAPB3_0_APBmslave0_PWDATA ),
         .IR_DATA  ( LED_RECV_0_DATA ),
-        .BUF_FULL ( IR_QUEUE_0_FULL ),
         // Outputs
         .PREADY   ( CoreAPB3_0_APBmslave3_PREADY ),
         .PSLVERR  ( CoreAPB3_0_APBmslave3_PSLVERR ),
+        .ENQUEUE  ( APB_IR_0_ENQUEUE ),
         .PRDATA   ( CoreAPB3_0_APBmslave3_PRDATA ),
-        .MSG      ( APB_IR_0_MSG ),
-        .ENQUEUE  ( APB_IR_0_ENQUEUE ) 
+        .MSG      ( APB_IR_0_MSG ) 
         );
 
 //--------CoreAPB3   -   Actel:DirectCore:CoreAPB3:4.0.100
@@ -458,8 +458,8 @@ gc_MSS gc_MSS_0(
         .F2M_GPI_2   ( F2M_GPI_2 ),
         .SPI_0_DI    ( SPI_0_DI ),
         .VAREF0      ( VAREF0 ),
-        .MSSPRDATA   ( gc_MSS_0_MSS_MASTER_APB_PRDATA ),
         .F2M_GPI_0   ( LED_RECV_0_INTERRUPT ),
+        .MSSPRDATA   ( gc_MSS_0_MSS_MASTER_APB_PRDATA ),
         // Outputs
         .FAB_CLK     ( gc_MSS_0_FAB_CLK ),
         .M2F_RESET_N ( gc_MSS_0_M2F_RESET_N ),
@@ -530,9 +530,9 @@ IR_LED IR_LED_0(
         // Inputs
         .CLK       ( gc_MSS_0_FAB_CLK ),
         .INV_RESET ( gc_MSS_0_M2F_RESET_N ),
-        .MSG       ( IR_QUEUE_0_Q ),
         .MSG_VALID ( IR_QUEUE_0_DVLD ),
         .SEND      ( IR_QUEUE_0_EMPTY ),
+        .MSG       ( IR_QUEUE_0_Q ),
         // Outputs
         .DIVCLK    ( IR_LED_0_DIVCLK ),
         .LEDOUT    ( IR_LED_0_LEDOUT ),
@@ -542,17 +542,17 @@ IR_LED IR_LED_0(
 //--------IR_QUEUE
 IR_QUEUE IR_QUEUE_0(
         // Inputs
-        .DATA   ( APB_IR_0_MSG ),
         .WE     ( APB_IR_0_ENQUEUE ),
         .RE     ( IR_LED_0_IR_READY ),
         .WCLOCK ( gc_MSS_0_FAB_CLK ),
         .RCLOCK ( IR_LED_0_DIVCLK ),
         .RESET  ( gc_MSS_0_M2F_RESET_N ),
+        .DATA   ( APB_IR_0_MSG ),
         // Outputs
-        .Q      ( IR_QUEUE_0_Q ),
         .FULL   ( IR_QUEUE_0_FULL ),
         .EMPTY  ( EMPTY_OUT_PRE_INV0_0 ),
-        .DVLD   ( IR_QUEUE_0_DVLD ) 
+        .DVLD   ( IR_QUEUE_0_DVLD ),
+        .Q      ( IR_QUEUE_0_Q ) 
         );
 
 //--------LED_PULSE

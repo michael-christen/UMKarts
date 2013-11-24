@@ -79,7 +79,7 @@ int main()
         MSS_GPIO_enable_irq(MSS_GPIO_0);
         initItemWeights();
 
-        IR_LED_write(0xAB);
+		IR_LED_write(0xAB);
 
         int x = 1;
         LCD_init();

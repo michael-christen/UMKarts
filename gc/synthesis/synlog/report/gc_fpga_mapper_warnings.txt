@@ -6,7 +6,6 @@
 @W: MO111 :"c:\users\mttschlt\umkarts\gc\hdl\motorwrapper.v":36:13:36:15|Tristate driver TPS_3 on net TPS_3 has its enable tied to GND (module motorWrapper) 
 @W: MO111 :"c:\users\mttschlt\umkarts\gc\hdl\motorwrapper.v":36:13:36:15|Tristate driver TPS_4 on net TPS_4 has its enable tied to GND (module motorWrapper) 
 @W: MO111 :"c:\users\mttschlt\umkarts\gc\hdl\motorwrapper.v":36:13:36:15|Tristate driver TPS_5 on net TPS_5 has its enable tied to GND (module motorWrapper) 
-@W: MT462 :"c:\users\mttschlt\umkarts\gc\component\work\gc_mss\mss_ccc_0\gc_mss_tmp_mss_ccc_0_mss_ccc.v":81:40:81:47|Net send_query_0.clk100mhz appears to be an unidentified clock source. Assuming default frequency. 
 @W: BN522 |Property syn_clock_priority is not supported for this target technology
 @W: MT246 :"c:\users\mttschlt\umkarts\gc\component\work\gc_mss\gc_mss.v":592:7:592:18|Blackbox MSSINT is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
 @W: MT246 :"c:\users\mttschlt\umkarts\gc\component\work\gc_mss\gc_mss.v":509:0:509:11|Blackbox TRIBUFF_MSS is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
