@@ -1,0 +1,31 @@
+#ifndef __ATOMICS_H_
+#define __ATOMICS_H_
+
+static inline unsigned char atomic_cmpxchg_size_t(size_t * mem, size_t old, size_t new) {
+	unsigned char failure;
+	size_t old_mem_val;
+	asm(
+		"ldrex %[old_mem_val], [%[mem]]\n"
+		"teq   %[old_mem_val],  %[old_val]\n"
+		"strexeq %[res], %[new_val], [%[mem]]"
+		: [res] "=&l" (failure), [old_mem_val] "=&l" (old_mem_val)
+		: [mem] "l" (mem), [new_val] "l" (new), [old_val] "l" (old)
+		: "memory"
+	);
+	return res;
+}
+
+static inline unsigned char atomic_lock_test_and_set_1(unsigned char *mem, unsigned char val) {
+	unsigned char failure;
+	asm(
+		"mov.w %[failure], #1"
+		"ldrex %[old_lock_val], [%[mem]]\n"
+		"teq   %[old_lock_val], #0\n"
+		"strexeq %[failure], #1, %[mem]"
+		"1:"
+	);
+	failure = strexb(mem, val);
+	return  (failure == 0);
+}
+
+#endif

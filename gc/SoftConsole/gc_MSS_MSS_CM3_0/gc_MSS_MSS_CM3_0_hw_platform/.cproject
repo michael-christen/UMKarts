@@ -26,7 +26,7 @@
 <targetPlatform id="cdt.managedbuild.target.gnu.platform.cross.cortexm3.lib.debug.328970973" name="%PlatformName.Dbg" superClass="cdt.managedbuild.target.gnu.platform.cross.cortexm3.lib.debug"/>
 <builder buildPath="${workspace_loc:/gc_MSS_MSS_CM3_0_hw_platform/Debug}" id="cdt.managedbuild.target.gnu.builder.cross.cortexm3.lib.debug.568072199" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.cross.cortexm3.lib.debug"/>
 <tool id="cdt.managedbuild.tool.gnu.c.compiler.cross.cortexm3.lib.debug.2065819927" name="GNU C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.cross.cortexm3.lib.debug">
-<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.cross.cortexm3.lib.debug.option.optimization.level.681489611" name="Optimization Level" superClass="gnu.c.compiler.cross.cortexm3.lib.debug.option.optimization.level" valueType="enumerated"/>
+<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.cross.cortexm3.lib.debug.option.optimization.level.681489611" name="Optimization Level" superClass="gnu.c.compiler.cross.cortexm3.lib.debug.option.optimization.level" value="gnu.c.optimization.level.none" valueType="enumerated"/>
 <option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.cross.cortexm3.lib.debug.option.debugging.level.1682080951" name="Debug Level" superClass="gnu.c.compiler.cross.cortexm3.lib.debug.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
 <option id="gnu.c.compiler.option.include.paths.1398648520" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
 <listOptionValue builtIn="false" value="${workspace_loc:/gc_MSS_MSS_CM3_0_hw_platform/}"/>
@@ -59,7 +59,7 @@
 <tool id="cdt.managedbuild.tool.gnu.archiver.cross.cortexm3.lib.debug.223490042" name="GNU Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.cross.cortexm3.lib.debug">
 <outputType id="cdt.managedbuild.tool.gnu.archiver.output.882723846" outputPrefix="lib" superClass="cdt.managedbuild.tool.gnu.archiver.output"/>
 </tool>
-<tool id="cdt.managedbuild.tool.gnu.assembler.cross.cortexm3.lib.debug.1647173666" name="GNU Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.cross.cortexm3.lib.debug">
+<tool command="arm-none-eabi-gcc -c -mthumb -mcpu=cortex-m3" id="cdt.managedbuild.tool.gnu.assembler.cross.cortexm3.lib.debug.1647173666" name="GNU Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.cross.cortexm3.lib.debug">
 <inputType id="cdt.managedbuild.tool.gnu.assembler.input.1769880125" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 </tool>
 </toolChain>

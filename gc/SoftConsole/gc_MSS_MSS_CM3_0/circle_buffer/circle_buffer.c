@@ -12,18 +12,18 @@ void CircularBufferInit(CircularBuffer * cb, void ** buffer, size_t capacity) {
 
 
 int CircularBufferWrite(CircularBuffer *cb, void *item) {
-  size_t write, new_write;
+  size_t old_write, new_write;
   do {
-    write = (size_t) ldrex((int *) &(cb->write));
-    new_write = write + 1;
+	old_write = *((volatile size_t *) &(cb->write));
+    new_write = old_write + 1;
     if (new_write >= cb->len) new_write = 0;
     /* If were at new_write == cb->read, then we're out of room */
     if (new_write == cb->read) {
       return -EBUFFULL;
     }
-  }while(strex((int *) &(cb->write), (int) new_write) != write);
+  }while(atomic_cmpxchg_4((int *) &(cb->write), (int) new_write, (int) old_write) != 0);
 
-  cb->buffer[write] = item;
+  cb->buffer[new_write] = item;
 
   return 0;
 }
