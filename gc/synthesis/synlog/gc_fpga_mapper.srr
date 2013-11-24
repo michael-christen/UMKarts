@@ -141,7 +141,7 @@ gc_state_0.last_response_n2_i_0_o3 / Y                           33
 @N: FP130 |Promoting Net CoreAPB3_0_APBmslave0_PADDR[4] on CLKINT  I_323 
 @N: FP130 |Promoting Net CoreAPB3_0_APBmslave0_PADDR[3] on CLKINT  I_324 
 
-Finished technology mapping (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 134MB peak: 137MB)
+Finished technology mapping (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 134MB peak: 137MB)
 
 
 Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 135MB peak: 137MB)
@@ -179,7 +179,7 @@ Added 28 Cells via replication
 	Added 7 Sequential Cells via replication
 	Added 21 Combinational Cells via replication
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 135MB peak: 137MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 135MB peak: 137MB)
 
 
 
@@ -212,7 +212,7 @@ Finished Writing Netlist Databases (Real Time elapsed 0h:00m:09s; CPU Time elaps
 Writing EDIF Netlist and constraint files
 G-2012.09M-SP1 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 134MB peak: 137MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 134MB peak: 137MB)
 
 @W: MT246 :"c:\users\mttschlt\umkarts\gc\component\work\gc_mss\gc_mss.v":592:7:592:18|Blackbox MSSINT is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
 @W: MT246 :"c:\users\mttschlt\umkarts\gc\component\work\gc_mss\gc_mss.v":509:0:509:11|Blackbox TRIBUFF_MSS is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
@@ -225,7 +225,7 @@ Found clock FCLK with period 10.00ns
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Sun Nov 24 14:44:04 2013
+# Timing Report written on Sun Nov 24 15:17:02 2013
 #
 
 
@@ -1534,9 +1534,9 @@ Block Rams : 1 of 8 (12%)
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 44MB peak: 137MB)
+At Mapper Exit (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 44MB peak: 137MB)
 
-Process took 0h:00m:09s realtime, 0h:00m:09s cputime
-# Sun Nov 24 14:44:04 2013
+Process took 0h:00m:10s realtime, 0h:00m:10s cputime
+# Sun Nov 24 15:17:02 2013
 
 ###########################################################]
