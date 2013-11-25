@@ -49,7 +49,7 @@ PARENT="<project>\component\work\gc\gc.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\coreparameters.v,tb_hdl"
 STATE="utd"
-TIME="1385324822"
+TIME="1385325818"
 SIZE="1256"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
@@ -347,7 +347,7 @@ SIZE="413"
 ENDFILE
 VALUE "<project>\component\work\gc\CoreUARTapb_0\coreparameters.v,tb_hdl"
 STATE="utd"
-TIME="1385324822"
+TIME="1385325818"
 SIZE="601"
 PARENT="<project>\component\work\gc\CoreUARTapb_0\gc_CoreUARTapb_0_CoreUARTapb.cxf"
 IS_READONLY="TRUE"
@@ -431,7 +431,7 @@ SIZE="9920"
 ENDFILE
 VALUE "<project>\component\work\gc\gc.pdc,pdc"
 STATE="utd"
-TIME="1385324822"
+TIME="1385325818"
 SIZE="4061"
 PARENT="<project>\component\work\gc\gc.cxf"
 BEGIN_USE_CONSTRAINT
@@ -442,14 +442,14 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\gc\gc.v,hdl"
 STATE="utd"
-TIME="1385324822"
+TIME="1385325818"
 SIZE="24470"
 PARENT="<project>\component\work\gc\gc.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\gc\testbench.v,tb_hdl"
 STATE="utd"
-TIME="1385324826"
+TIME="1385325818"
 SIZE="1889"
 PARENT="<project>\component\work\gc\gc.cxf"
 IS_READONLY="TRUE"
@@ -530,52 +530,52 @@ PARENT="<project>\component\work\gc_MSS\gc_MSS.cxf"
 ENDFILE
 VALUE "<project>\designer\impl1\gc.adb,adb"
 STATE="utd"
-TIME="1385324607"
+TIME="1385393883"
 SIZE="1305600"
 ENDFILE
 VALUE "<project>\designer\impl1\gc.fdb,fdb"
 STATE="utd"
-TIME="1385325539"
+TIME="1385394352"
 SIZE="102544"
 ENDFILE
 VALUE "<project>\designer\impl1\gc.ide_des,ide_des"
 STATE="utd"
-TIME="1385321920"
+TIME="1385325541"
 SIZE="998"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_compile_log.rpt,log"
 STATE="utd"
-TIME="1385324882"
-SIZE="31376"
+TIME="1385393884"
+SIZE="31563"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_fp\gc.pdb,pdb"
 STATE="utd"
-TIME="1385321920"
+TIME="1385325818"
 SIZE="112128"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_fp\gc.pro,pro"
 STATE="utd"
-TIME="1385321920"
+TIME="1385325599"
 SIZE="1915"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_fp\projectData\gc.pdb,pdb"
 STATE="utd"
-TIME="1385325599"
+TIME="1385394411"
 SIZE="112128"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1385325514"
+TIME="1385394327"
 SIZE="2367"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_prgdata_log.rpt,log"
 STATE="utd"
-TIME="1385325541"
+TIME="1385394353"
 SIZE="600"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_verifytiming_log.rpt,log"
 STATE="utd"
-TIME="1385325524"
+TIME="1385394337"
 SIZE="1082"
 ENDFILE
 VALUE "<project>\hdl\APB_IR.v,hdl"
@@ -660,7 +660,7 @@ PARENT="<project>\component\work\gc\CoreUARTapb_0\gc_CoreUARTapb_0_CoreUARTapb.c
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1385324823"
+TIME="1385325818"
 SIZE="734"
 PARENT="<project>\component\work\gc\gc.cxf"
 ENDFILE
@@ -701,22 +701,22 @@ PARENT="<project>\smartgen\IR_QUEUE\IR_QUEUE.cxf"
 ENDFILE
 VALUE "<project>\synthesis\gc.edn,syn_edn"
 STATE="utd"
-TIME="1385324515"
+TIME="1385393848"
 SIZE="1668418"
 ENDFILE
 VALUE "<project>\synthesis\gc.so,so"
 STATE="utd"
-TIME="1385321920"
+TIME="1385324859"
 SIZE="202"
 ENDFILE
 VALUE "<project>\synthesis\gc_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1385321336"
+TIME="1385324859"
 SIZE="633"
 ENDFILE
 VALUE "<project>\synthesis\gc_syn.prj,prj"
 STATE="utd"
-TIME="1385321920"
+TIME="1385324861"
 SIZE="3763"
 ENDFILE
 VALUE "<project>\synthesis\synwork\gc_compiler.so,so"
@@ -745,8 +745,8 @@ LIST ProjectState5.1
 LIST Impl1
 LiberoState=Post_Layout
 ideSTIMULUS=StateSuccess
-ideSYNTHESIS(<project>\synthesis\gc.edn,syn_edn)=StateSuccess
 ideDESIGNER(<project>\designer\impl1\gc.adb,adb)=StateSuccess
+ideSYNTHESIS(<project>\synthesis\gc.edn,syn_edn)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -998,8 +998,8 @@ LIST "gc::work"
 LIST Impl1
 LiberoState=Post_Layout
 ideSTIMULUS=StateSuccess
-ideSYNTHESIS(<project>\synthesis\gc.edn,syn_edn)=StateSuccess
 ideDESIGNER(<project>\designer\impl1\gc.adb,adb)=StateSuccess
+ideSYNTHESIS(<project>\synthesis\gc.edn,syn_edn)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
