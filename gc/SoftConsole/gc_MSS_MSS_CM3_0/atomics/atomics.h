@@ -42,7 +42,16 @@ static inline unsigned char atomic_cmpxchg_1(unsigned char * mem, unsigned char 
 }
 
 static inline unsigned char atomic_lock_test_and_set_1(unsigned char *mem) {
-	return atomic_cmpxchg_1(mem, 0, 1);
+	return atomic_cmpxchg_1(mem, 1, 0);
+}
+
+static inline void atomic_lock_release(unsigned char *mem) {
+  asm("cpsid i");
+  *mem = 0;
+  asm(
+    "dmb st\n"
+    "cpsie i"
+  );
 }
 
 #endif
