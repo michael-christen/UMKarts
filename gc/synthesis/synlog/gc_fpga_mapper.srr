@@ -290,12 +290,12 @@ Clock Tree ID     Driving Element         Drive Element Type     Fanout     Samp
 
 Writing Analyst data base C:\Users\mttschlt\eecs373\UMKarts\gc\synthesis\gc.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 126MB peak: 130MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 126MB peak: 130MB)
 
 Writing EDIF Netlist and constraint files
 G-2012.09M-SP1 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 127MB peak: 130MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 127MB peak: 130MB)
 
 @W: MT246 :"c:\users\mttschlt\eecs373\umkarts\gc\component\work\gc_mss\gc_mss.v":592:7:592:18|Blackbox MSSINT is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
 @W: MT246 :"c:\users\mttschlt\eecs373\umkarts\gc\component\work\gc_mss\gc_mss.v":509:0:509:11|Blackbox TRIBUFF_MSS is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
@@ -308,7 +308,7 @@ Found clock FCLK with period 10.00ns
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Mon Nov 25 13:13:17 2013
+# Timing Report written on Mon Nov 25 14:09:15 2013
 #
 
 
@@ -1577,6 +1577,6 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 43MB peak: 130MB)
 
 Process took 0h:00m:09s realtime, 0h:00m:09s cputime
-# Mon Nov 25 13:13:17 2013
+# Mon Nov 25 14:09:15 2013
 
 ###########################################################]
