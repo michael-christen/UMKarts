@@ -11,43 +11,43 @@
     <hdl-type>Verilog</hdl-type>
     <project-description>
     </project-description>
-    <location>C:/Users/mttschlt/UMKarts/gc/component/work/gc</location>
-    <state>GENERATED ( Mon Nov 25 11:21:41 2013 )</state>
-    <swide-toolchain>SoftConsole workspace generated to C:\Users\mttschlt\UMKarts\gc\SoftConsole</swide-toolchain>
+    <location>C:/Users/mttschlt/eecs373/UMKarts/gc/component/work/gc</location>
+    <state>GENERATED ( Mon Nov 25 13:11:57 2013 )</state>
+    <swide-toolchain>SoftConsole workspace generated to C:\Users\mttschlt\eecs373\UMKarts\gc\SoftConsole</swide-toolchain>
   </project-settings>
   <site-map>
   </site-map>
   <fileset>
     <name>HDL File(s)</name>
-    <file>C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v</file>
-    <file>C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v</file>
-    <file>C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v</file>
-    <file>C:\Users\mttschlt\UMKarts\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v</file>
-    <file>C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Clock_gen.v</file>
-    <file>C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v</file>
-    <file>C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUARTapb.v</file>
-    <file>C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\fifo_256x8_smartfusion.v</file>
-    <file>C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Rx_async.v</file>
-    <file>C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Tx_async.v</file>
-    <file>C:\Users\mttschlt\UMKarts\gc\component\work\gc\gc.v</file>
-    <file>C:\Users\mttschlt\UMKarts\gc\component\work\gc_MSS\gc_MSS.v</file>
-    <file>C:\Users\mttschlt\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v</file>
-    <file>C:\Users\mttschlt\UMKarts\gc\component\work\gc_MSS\mss_tshell.v</file>
-    <file>C:\Users\mttschlt\UMKarts\gc\hdl\APB_IR.v</file>
-    <file>C:\Users\mttschlt\UMKarts\gc\hdl\clockdivider.v</file>
-    <file>C:\Users\mttschlt\UMKarts\gc\hdl\IR_LED.v</file>
-    <file>C:\Users\mttschlt\UMKarts\gc\hdl\IR_RECV.v</file>
-    <file>C:\Users\mttschlt\UMKarts\gc\hdl\LED_PULSE.v</file>
-    <file>C:\Users\mttschlt\UMKarts\gc\hdl\motor.v</file>
-    <file>C:\Users\mttschlt\UMKarts\gc\hdl\motorWrapper.v</file>
-    <file>C:\Users\mttschlt\UMKarts\gc\hdl\pulser.v</file>
-    <file>C:\Users\mttschlt\UMKarts\gc\hdl\query.v</file>
-    <file>C:\Users\mttschlt\UMKarts\gc\hdl\receive.v</file>
-    <file>C:\Users\mttschlt\UMKarts\gc\smartgen\IR_QUEUE\IR_QUEUE.v</file>
+    <file>C:\Users\mttschlt\eecs373\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v</file>
+    <file>C:\Users\mttschlt\eecs373\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v</file>
+    <file>C:\Users\mttschlt\eecs373\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v</file>
+    <file>C:\Users\mttschlt\eecs373\UMKarts\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v</file>
+    <file>C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Clock_gen.v</file>
+    <file>C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v</file>
+    <file>C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUARTapb.v</file>
+    <file>C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\fifo_256x8_smartfusion.v</file>
+    <file>C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Rx_async.v</file>
+    <file>C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Tx_async.v</file>
+    <file>C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc\gc.v</file>
+    <file>C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc_MSS\gc_MSS.v</file>
+    <file>C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v</file>
+    <file>C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc_MSS\mss_tshell.v</file>
+    <file>C:\Users\mttschlt\eecs373\UMKarts\gc\hdl\APB_IR.v</file>
+    <file>C:\Users\mttschlt\eecs373\UMKarts\gc\hdl\clockdivider.v</file>
+    <file>C:\Users\mttschlt\eecs373\UMKarts\gc\hdl\IR_LED.v</file>
+    <file>C:\Users\mttschlt\eecs373\UMKarts\gc\hdl\IR_RECV.v</file>
+    <file>C:\Users\mttschlt\eecs373\UMKarts\gc\hdl\LED_PULSE.v</file>
+    <file>C:\Users\mttschlt\eecs373\UMKarts\gc\hdl\motor.v</file>
+    <file>C:\Users\mttschlt\eecs373\UMKarts\gc\hdl\motorWrapper.v</file>
+    <file>C:\Users\mttschlt\eecs373\UMKarts\gc\hdl\pulser.v</file>
+    <file>C:\Users\mttschlt\eecs373\UMKarts\gc\hdl\query.v</file>
+    <file>C:\Users\mttschlt\eecs373\UMKarts\gc\hdl\receive.v</file>
+    <file>C:\Users\mttschlt\eecs373\UMKarts\gc\smartgen\IR_QUEUE\IR_QUEUE.v</file>
   </fileset>
   <fileset>
     <name>Flash Memory File(s)</name>
-    <file>C:\Users\mttschlt\UMKarts\gc\component\work\./MSS_ENVM_0/MSS_ENVM_0.efc</file>
+    <file>C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\./MSS_ENVM_0/MSS_ENVM_0.efc</file>
   </fileset>
   <io>
     <port-name>LED_RECV_IN</port-name>
@@ -540,7 +540,7 @@ There is one APB3 Master interface.
   <core type="ComponentModule">
     <core-type>ComponentModule</core-type>
     <core-exttype>HierSpiritDesign</core-exttype>
-    <core-location>C:/Users/mttschlt/UMKarts/gc/component/work/gc_MSS</core-location>
+    <core-location>C:/Users/mttschlt/eecs373/UMKarts/gc/component/work/gc_MSS</core-location>
     <core-name>gc_MSS_0</core-name>
   </core>
   <core type="HdlModule">
@@ -567,7 +567,7 @@ There is one APB3 Master interface.
   <core type="ComponentModule">
     <core-type>ComponentModule</core-type>
     <core-exttype>SmartGen</core-exttype>
-    <core-location>C:/Users/mttschlt/UMKarts/gc/smartgen/IR_QUEUE</core-location>
+    <core-location>C:/Users/mttschlt/eecs373/UMKarts/gc/smartgen/IR_QUEUE</core-location>
     <core-name>IR_QUEUE_0</core-name>
   </core>
   <core type="HdlModule">

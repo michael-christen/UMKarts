@@ -1,60 +1,60 @@
-#OPTIONS:"|-top|gc|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|C:\\Users\\mttschlt\\UMKarts\\gc\\synthesis\\|-I|C:\\Microsemi\\Libero_v11.0\\Synopsys\\synplify_G201209MSP1\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_v11.0\\Synopsys\\synplify_G201209MSP1\\lib\\proasic\\smartfusion.v|-encrypt|-pro|-ll|2000|-ui|-fid2|-ram|-sharing|on|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|work"
+#OPTIONS:"|-top|gc|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|C:\\Users\\mttschlt\\eecs373\\UMKarts\\gc\\synthesis\\|-I|C:\\Microsemi\\Libero_v11.0\\Synopsys\\synplify_G201209MSP1\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_v11.0\\Synopsys\\synplify_G201209MSP1\\lib\\proasic\\smartfusion.v|-encrypt|-pro|-ll|2000|-ui|-fid2|-ram|-sharing|on|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|work"
 #CUR:"C:\\Microsemi\\Libero_v11.0\\Synopsys\\synplify_G201209MSP1\\bin64\\c_ver.exe":1361373522
 #CUR:"C:\\Microsemi\\Libero_v11.0\\Synopsys\\synplify_G201209MSP1\\lib\\proasic\\smartfusion.v":1360942192
 #CUR:"C:\\Microsemi\\Libero_v11.0\\Synopsys\\synplify_G201209MSP1\\lib\\vlog\\umr_capim.v":1360942352
 #CUR:"C:\\Microsemi\\Libero_v11.0\\Synopsys\\synplify_G201209MSP1\\lib\\vlog\\scemi_objects.v":1360942352
 #CUR:"C:\\Microsemi\\Libero_v11.0\\Synopsys\\synplify_G201209MSP1\\lib\\vlog\\scemi_pipes.svh":1360942352
 #CUR:"C:\\Microsemi\\Libero_v11.0\\Synopsys\\synplify_G201209MSP1\\lib\\vlog\\hypermods.v":1360942352
-#CUR:"C:\\Users\\mttschlt\\UMKarts\\gc\\hdl\\APB_IR.v":1385396441
-#CUR:"C:\\Users\\mttschlt\\UMKarts\\gc\\component\\work\\gc\\CoreUARTapb_0\\rtl\\vlog\\core_obfuscated\\Clock_gen.v":1385396493
-#CUR:"C:\\Users\\mttschlt\\UMKarts\\gc\\component\\work\\gc\\CoreUARTapb_0\\rtl\\vlog\\core_obfuscated\\Tx_async.v":1385396493
-#CUR:"C:\\Users\\mttschlt\\UMKarts\\gc\\component\\work\\gc\\CoreUARTapb_0\\rtl\\vlog\\core_obfuscated\\Rx_async.v":1385396493
-#CUR:"C:\\Users\\mttschlt\\UMKarts\\gc\\component\\work\\gc\\CoreUARTapb_0\\rtl\\vlog\\core_obfuscated\\fifo_256x8_smartfusion.v":1385396493
-#CUR:"C:\\Users\\mttschlt\\UMKarts\\gc\\component\\work\\gc\\CoreUARTapb_0\\rtl\\vlog\\core_obfuscated\\CoreUART.v":1385396493
-#CUR:"C:\\Users\\mttschlt\\UMKarts\\gc\\component\\work\\gc\\CoreUARTapb_0\\rtl\\vlog\\core_obfuscated\\CoreUARTapb.v":1385396493
-#CUR:"C:\\Users\\mttschlt\\UMKarts\\gc\\component\\work\\gc_MSS\\mss_tshell.v":1385396441
-#CUR:"C:\\Users\\mttschlt\\UMKarts\\gc\\component\\Actel\\SmartFusionMSS\\MSS\\2.5.106\\mss_comps.v":1359492172
-#CUR:"C:\\Users\\mttschlt\\UMKarts\\gc\\component\\work\\gc_MSS\\MSS_CCC_0\\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":1385396239
-#CUR:"C:\\Users\\mttschlt\\UMKarts\\gc\\component\\work\\gc_MSS\\gc_MSS.v":1385396441
-#CUR:"C:\\Users\\mttschlt\\UMKarts\\gc\\hdl\\receive.v":1385396441
-#CUR:"C:\\Users\\mttschlt\\UMKarts\\gc\\hdl\\query.v":1385396441
-#CUR:"C:\\Users\\mttschlt\\UMKarts\\gc\\hdl\\clockdivider.v":1385396441
-#CUR:"C:\\Users\\mttschlt\\UMKarts\\gc\\hdl\\IR_LED.v":1385396441
-#CUR:"C:\\Users\\mttschlt\\UMKarts\\gc\\smartgen\\IR_QUEUE\\IR_QUEUE.v":1385396442
-#CUR:"C:\\Users\\mttschlt\\UMKarts\\gc\\hdl\\LED_PULSE.v":1385396441
-#CUR:"C:\\Users\\mttschlt\\UMKarts\\gc\\hdl\\IR_RECV.v":1385396441
-#CUR:"C:\\Users\\mttschlt\\UMKarts\\gc\\hdl\\motor.v":1385258674
-#CUR:"C:\\Users\\mttschlt\\UMKarts\\gc\\hdl\\motorWrapper.v":1385395766
-#CUR:"C:\\Users\\mttschlt\\UMKarts\\gc\\component\\Actel\\DirectCore\\CoreAPB3\\4.0.100\\rtl\\vlog\\core_obfuscated\\coreapb3_muxptob3.v":1366759807
-#CUR:"C:\\Users\\mttschlt\\UMKarts\\gc\\component\\Actel\\DirectCore\\CoreAPB3\\4.0.100\\rtl\\vlog\\core_obfuscated\\coreapb3_iaddr_reg.v":1366759807
-#CUR:"C:\\Users\\mttschlt\\UMKarts\\gc\\component\\Actel\\DirectCore\\CoreAPB3\\4.0.100\\rtl\\vlog\\core_obfuscated\\coreapb3.v":1366759807
-#CUR:"C:\\Users\\mttschlt\\UMKarts\\gc\\component\\work\\gc\\gc.v":1385396493
+#CUR:"C:\\Users\\mttschlt\\eecs373\\UMKarts\\gc\\hdl\\APB_IR.v":1385403011
+#CUR:"C:\\Users\\mttschlt\\eecs373\\UMKarts\\gc\\component\\work\\gc\\CoreUARTapb_0\\rtl\\vlog\\core_obfuscated\\Clock_gen.v":1385403109
+#CUR:"C:\\Users\\mttschlt\\eecs373\\UMKarts\\gc\\component\\work\\gc\\CoreUARTapb_0\\rtl\\vlog\\core_obfuscated\\Tx_async.v":1385403109
+#CUR:"C:\\Users\\mttschlt\\eecs373\\UMKarts\\gc\\component\\work\\gc\\CoreUARTapb_0\\rtl\\vlog\\core_obfuscated\\Rx_async.v":1385403109
+#CUR:"C:\\Users\\mttschlt\\eecs373\\UMKarts\\gc\\component\\work\\gc\\CoreUARTapb_0\\rtl\\vlog\\core_obfuscated\\fifo_256x8_smartfusion.v":1385403109
+#CUR:"C:\\Users\\mttschlt\\eecs373\\UMKarts\\gc\\component\\work\\gc\\CoreUARTapb_0\\rtl\\vlog\\core_obfuscated\\CoreUART.v":1385403109
+#CUR:"C:\\Users\\mttschlt\\eecs373\\UMKarts\\gc\\component\\work\\gc\\CoreUARTapb_0\\rtl\\vlog\\core_obfuscated\\CoreUARTapb.v":1385403109
+#CUR:"C:\\Users\\mttschlt\\eecs373\\UMKarts\\gc\\component\\work\\gc_MSS\\mss_tshell.v":1385403010
+#CUR:"C:\\Users\\mttschlt\\eecs373\\UMKarts\\gc\\component\\Actel\\SmartFusionMSS\\MSS\\2.5.106\\mss_comps.v":1385403007
+#CUR:"C:\\Users\\mttschlt\\eecs373\\UMKarts\\gc\\component\\work\\gc_MSS\\MSS_CCC_0\\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":1385403010
+#CUR:"C:\\Users\\mttschlt\\eecs373\\UMKarts\\gc\\component\\work\\gc_MSS\\gc_MSS.v":1385403010
+#CUR:"C:\\Users\\mttschlt\\eecs373\\UMKarts\\gc\\hdl\\receive.v":1385403011
+#CUR:"C:\\Users\\mttschlt\\eecs373\\UMKarts\\gc\\hdl\\query.v":1385403011
+#CUR:"C:\\Users\\mttschlt\\eecs373\\UMKarts\\gc\\hdl\\clockdivider.v":1385403011
+#CUR:"C:\\Users\\mttschlt\\eecs373\\UMKarts\\gc\\hdl\\IR_LED.v":1385403011
+#CUR:"C:\\Users\\mttschlt\\eecs373\\UMKarts\\gc\\smartgen\\IR_QUEUE\\IR_QUEUE.v":1385403012
+#CUR:"C:\\Users\\mttschlt\\eecs373\\UMKarts\\gc\\hdl\\LED_PULSE.v":1385403011
+#CUR:"C:\\Users\\mttschlt\\eecs373\\UMKarts\\gc\\hdl\\IR_RECV.v":1385403011
+#CUR:"C:\\Users\\mttschlt\\eecs373\\UMKarts\\gc\\hdl\\motor.v":1385403011
+#CUR:"C:\\Users\\mttschlt\\eecs373\\UMKarts\\gc\\hdl\\motorWrapper.v":1385403011
+#CUR:"C:\\Users\\mttschlt\\eecs373\\UMKarts\\gc\\component\\Actel\\DirectCore\\CoreAPB3\\4.0.100\\rtl\\vlog\\core_obfuscated\\coreapb3_muxptob3.v":1366759807
+#CUR:"C:\\Users\\mttschlt\\eecs373\\UMKarts\\gc\\component\\Actel\\DirectCore\\CoreAPB3\\4.0.100\\rtl\\vlog\\core_obfuscated\\coreapb3_iaddr_reg.v":1366759807
+#CUR:"C:\\Users\\mttschlt\\eecs373\\UMKarts\\gc\\component\\Actel\\DirectCore\\CoreAPB3\\4.0.100\\rtl\\vlog\\core_obfuscated\\coreapb3.v":1366759807
+#CUR:"C:\\Users\\mttschlt\\eecs373\\UMKarts\\gc\\component\\work\\gc\\gc.v":1385403109
 #numinternalfiles:5
 #defaultlanguage:verilog
-0			"C:\Users\mttschlt\UMKarts\gc\hdl\APB_IR.v" verilog
-1			"C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Clock_gen.v" verilog
-2			"C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Tx_async.v" verilog
-3			"C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Rx_async.v" verilog
-4			"C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\fifo_256x8_smartfusion.v" verilog
-5			"C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v" verilog
-6			"C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUARTapb.v" verilog
-7			"C:\Users\mttschlt\UMKarts\gc\component\work\gc_MSS\mss_tshell.v" verilog
-8			"C:\Users\mttschlt\UMKarts\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v" verilog
-9			"C:\Users\mttschlt\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v" verilog
-10			"C:\Users\mttschlt\UMKarts\gc\component\work\gc_MSS\gc_MSS.v" verilog
-11			"C:\Users\mttschlt\UMKarts\gc\hdl\receive.v" verilog
-12			"C:\Users\mttschlt\UMKarts\gc\hdl\query.v" verilog
-13			"C:\Users\mttschlt\UMKarts\gc\hdl\clockdivider.v" verilog
-14			"C:\Users\mttschlt\UMKarts\gc\hdl\IR_LED.v" verilog
-15			"C:\Users\mttschlt\UMKarts\gc\smartgen\IR_QUEUE\IR_QUEUE.v" verilog
-16			"C:\Users\mttschlt\UMKarts\gc\hdl\LED_PULSE.v" verilog
-17			"C:\Users\mttschlt\UMKarts\gc\hdl\IR_RECV.v" verilog
-18			"C:\Users\mttschlt\UMKarts\gc\hdl\motor.v" verilog
-19			"C:\Users\mttschlt\UMKarts\gc\hdl\motorWrapper.v" verilog
-20			"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v" verilog
-21			"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v" verilog
-22			"C:\Users\mttschlt\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v" verilog
-23			"C:\Users\mttschlt\UMKarts\gc\component\work\gc\gc.v" verilog
+0			"C:\Users\mttschlt\eecs373\UMKarts\gc\hdl\APB_IR.v" verilog
+1			"C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Clock_gen.v" verilog
+2			"C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Tx_async.v" verilog
+3			"C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Rx_async.v" verilog
+4			"C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\fifo_256x8_smartfusion.v" verilog
+5			"C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v" verilog
+6			"C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUARTapb.v" verilog
+7			"C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc_MSS\mss_tshell.v" verilog
+8			"C:\Users\mttschlt\eecs373\UMKarts\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v" verilog
+9			"C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v" verilog
+10			"C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc_MSS\gc_MSS.v" verilog
+11			"C:\Users\mttschlt\eecs373\UMKarts\gc\hdl\receive.v" verilog
+12			"C:\Users\mttschlt\eecs373\UMKarts\gc\hdl\query.v" verilog
+13			"C:\Users\mttschlt\eecs373\UMKarts\gc\hdl\clockdivider.v" verilog
+14			"C:\Users\mttschlt\eecs373\UMKarts\gc\hdl\IR_LED.v" verilog
+15			"C:\Users\mttschlt\eecs373\UMKarts\gc\smartgen\IR_QUEUE\IR_QUEUE.v" verilog
+16			"C:\Users\mttschlt\eecs373\UMKarts\gc\hdl\LED_PULSE.v" verilog
+17			"C:\Users\mttschlt\eecs373\UMKarts\gc\hdl\IR_RECV.v" verilog
+18			"C:\Users\mttschlt\eecs373\UMKarts\gc\hdl\motor.v" verilog
+19			"C:\Users\mttschlt\eecs373\UMKarts\gc\hdl\motorWrapper.v" verilog
+20			"C:\Users\mttschlt\eecs373\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v" verilog
+21			"C:\Users\mttschlt\eecs373\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v" verilog
+22			"C:\Users\mttschlt\eecs373\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v" verilog
+23			"C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc\gc.v" verilog
 #Dependency Lists(Uses List)
 0 -1
 1 -1
