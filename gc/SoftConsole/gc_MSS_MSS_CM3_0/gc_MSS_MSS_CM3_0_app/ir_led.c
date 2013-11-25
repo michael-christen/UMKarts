@@ -1,4 +1,5 @@
 #include "ir_led.h"
+#include "item.h"
 #include <stdio.h>
 #include "drivers/mss_gpio/mss_gpio.h"
 #include "CMSIS/a2fxxxm3.h"
@@ -59,7 +60,6 @@ void IR_LED_recv_enable() {
 
 
 __attribute__ ((interrupt)) void GPIO0_IRQHandler( void ) {
-	volatile uint8_t data = IR_LED_read();
-	printf("Data: %x\r\n", data);
+	ITEM_HIT_FUNCTIONS[GREEN_SHELL]();
 	MSS_GPIO_clear_irq(IR_GPIO_PIN);
 }
