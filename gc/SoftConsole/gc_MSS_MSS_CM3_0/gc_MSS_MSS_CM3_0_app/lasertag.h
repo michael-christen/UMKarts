@@ -1,5 +1,6 @@
 // Wrapper for IR_LED class to play laser tag
 #include <stdbool.h>
+#include <stdint.h>
 
 /*
  * Initializes the Laser tag system

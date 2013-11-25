@@ -1,3 +1,4 @@
+#include "ir_led.h"
 #include "lasertag.h"
 
 const uint8_t KEY = 0xE;
