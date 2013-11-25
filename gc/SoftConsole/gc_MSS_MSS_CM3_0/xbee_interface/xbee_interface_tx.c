@@ -43,7 +43,7 @@ int xbee_send(struct xbee_packet *xp) {
       /* Low probability, that someting else clears buffer between appending
        * and grabbing lock
        */
-      __sync_lock_release(&(_xbee_tx.lock));
+      atomic_lock_release(&(_xbee_tx.lock));
     }
   }
   return err;

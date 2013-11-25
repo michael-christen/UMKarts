@@ -4,6 +4,11 @@
 #include "drivers/mss_uart/mss_uart.h"
 #include "drivers/mss_timer/mss_timer.h"
 
+static uint32_t cur_addr = 0;
+static uint32_t stop_addr = 0;
+static uint32_t	buf_start = -1;
+static uint8_t sound_buf[512];
+
 void sound_init() {
 	spi_flash_init();
 
@@ -20,27 +25,37 @@ void sound_init() {
 
 	MSS_TIM1_init(MSS_TIMER_PERIODIC_MODE);
 
-	// 16000 Hz
-	MSS_TIM1_load_background((uint32_t) 100000000/16000);
+	// 8000 Hz
+	MSS_TIM1_load_background((uint32_t) 100000000/8000);
 
 	MSS_TIM1_enable_irq();
+}
+
+void sound_play(uint32_t begin, uint32_t end) {
+	cur_addr = begin;
+	stop_addr = end;
 
 	MSS_TIM1_start();
 }
 
 __attribute__ ((interrupt)) void Timer1_IRQHandler( void ){
-	static uint32_t addr = 0;
 	uint8_t buf;
 
-	spi_flash_read(addr, &buf, 1);
+	if (cur_addr < buf_start || cur_addr >= (buf_start + sizeof(sound_buf))) {
+		buf_start = cur_addr & 0xFFFFFFFE;
+		spi_flash_read(buf_start, &sound_buf, sizeof(sound_buf));
+	}
 
-	//buf = sin(((double) (addr % 16000)) / 8.0) * 255;
+	ACE_set_sdd_value(SDD1_OUT, (uint32_t) sound_buf[cur_addr - buf_start]);
 
-	ACE_set_sdd_value(SDD1_OUT, (uint32_t) buf);
+	cur_addr++;
 
-	addr+=1;
+	if (cur_addr >= stop_addr)
+		MSS_TIM1_stop();
 
 	MSS_TIM1_clear_irq();
+
+
 }
 
 void flash_write() {
