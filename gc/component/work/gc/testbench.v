@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by Actel SmartDesign Sun Nov 24 14:43:36 2013
+// Created by Actel SmartDesign Mon Nov 25 11:21:33 2013
 // Testbench Template
 // This is a basic testbench that instantiates your design with basic 
 // clock and reset pins connected.  If your design has special
@@ -52,7 +52,7 @@ gc gc_0 (
     .F2M_GPI_2({1{1'b0}}),
     .SPI_0_DI({1{1'b0}}),
     .VAREF0({1{1'b0}}),
-    .RECV_IN({1{1'b0}}),
+    .LED_RECV_IN({1{1'b0}}),
 
     // Outputs
     .UART_0_TXD( ),
@@ -65,10 +65,10 @@ gc gc_0 (
     .TX( ),
     .SPI_0_DO( ),
     .SPEAKER_DAC( ),
-    .LED( ),
+    .LED_OUT( ),
+    .controller_data( ),
 
     // Inouts
-    .data( ),
     .SPI_0_CLK( ),
     .SPI_0_SS( )
 

@@ -964,15 +964,15 @@ design rules under a new name.</description>
 <attribute name="MF" value="TEXAS INSTRUMENTS" x="157.48" y="88.9" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="1296120" x="157.48" y="88.9" size="1.778" layer="27" display="off"/>
 </element>
-<element name="LM219" library="ic-package" package="SOCKET-14" value="" x="125.73" y="80.01" rot="R270"/>
+<element name="LM219" library="ic-package" package="SOCKET-14" value="" x="125.73" y="78.74" rot="R270"/>
 <element name="R1" library="rcl" package="0207/12" value="2.2K" x="149.86" y="73.66" rot="R180"/>
 <element name="R3" library="rcl" package="0309/12" value="10k" x="149.86" y="77.47"/>
 <element name="R4" library="rcl" package="0309/12" value="10K" x="149.86" y="68.58"/>
-<element name="H-BRIDGE1" library="st-microelectronics" package="MULTIWATT-15" value="L298" x="125.73" y="55.88" rot="R180">
-<attribute name="OC_NEWARK" value="32M1527" x="88.9" y="69.85" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="L298N" x="88.9" y="69.85" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MF" value="" x="88.9" y="69.85" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_FARNELL" value="1589425" x="88.9" y="69.85" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="H-BRIDGE1" library="st-microelectronics" package="MULTIWATT-15" value="L298" x="58.42" y="80.01" rot="R180">
+<attribute name="OC_NEWARK" value="32M1527" x="21.59" y="93.98" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="L298N" x="21.59" y="93.98" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="21.59" y="93.98" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_FARNELL" value="1589425" x="21.59" y="93.98" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R6" library="rcl" package="0309/12" value="200" x="149.86" y="63.5"/>
 <element name="R7" library="rcl" package="0309/12" value="10k" x="149.86" y="82.55"/>
@@ -981,7 +981,7 @@ design rules under a new name.</description>
 <signal name="F2-200-IO_0">
 <contactref element="P1" pad="P$27"/>
 <contactref element="H-BRIDGE1" pad="6"/>
-<wire x1="128.27" y1="58.42" x2="108.585" y2="94.53" width="0" layer="19" extent="1-1"/>
+<wire x1="60.96" y1="82.55" x2="108.585" y2="94.53" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MSS_GP_IO_0">
 <contactref element="P1" pad="P$7"/>
@@ -997,8 +997,8 @@ design rules under a new name.</description>
 <contactref element="P1" pad="P$9"/>
 <contactref element="LM219" pad="12"/>
 <contactref element="R1" pad="1"/>
-<wire x1="129.54" y1="82.55" x2="156.21" y2="73.66" width="0" layer="19" extent="1-1"/>
-<wire x1="120.015" y1="94.53" x2="129.54" y2="82.55" width="0" layer="19" extent="1-1"/>
+<wire x1="129.54" y1="81.28" x2="156.21" y2="73.66" width="0" layer="19" extent="1-1"/>
+<wire x1="120.015" y1="94.53" x2="129.54" y2="81.28" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MSS_GP_IO_3">
 <contactref element="P1" pad="P$10"/>
@@ -1023,7 +1023,7 @@ design rules under a new name.</description>
 <signal name="F2-200-IO_4">
 <contactref element="P1" pad="P$33"/>
 <contactref element="H-BRIDGE1" pad="7"/>
-<wire x1="127" y1="63.5" x2="104.775" y2="94.53" width="0" layer="19" extent="1-1"/>
+<wire x1="59.69" y1="87.63" x2="104.775" y2="94.53" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="F2-200-IO_5">
 <contactref element="P1" pad="P$34"/>
@@ -1033,7 +1033,7 @@ design rules under a new name.</description>
 <signal name="F2-200-IO_6">
 <contactref element="P1" pad="P$35"/>
 <contactref element="H-BRIDGE1" pad="10"/>
-<wire x1="123.19" y1="58.42" x2="103.505" y2="94.53" width="0" layer="19" extent="1-1"/>
+<wire x1="55.88" y1="82.55" x2="103.505" y2="94.53" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VDD3.3">
 <contactref element="P1" pad="P$97"/>
@@ -1053,7 +1053,7 @@ design rules under a new name.</description>
 <signal name="F2-200-IO_7">
 <contactref element="P1" pad="P$37"/>
 <contactref element="H-BRIDGE1" pad="12"/>
-<wire x1="120.65" y1="58.42" x2="102.235" y2="94.53" width="0" layer="19" extent="1-1"/>
+<wire x1="53.34" y1="82.55" x2="102.235" y2="94.53" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DGND">
 <contactref element="P1" pad="P$5"/>
@@ -1224,7 +1224,7 @@ design rules under a new name.</description>
 <signal name="F2-200-IO_3">
 <contactref element="P1" pad="P$32"/>
 <contactref element="H-BRIDGE1" pad="5"/>
-<wire x1="129.54" y1="63.5" x2="106.045" y2="98.51" width="0" layer="19" extent="1-1"/>
+<wire x1="62.23" y1="87.63" x2="106.045" y2="98.51" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="F2-200-IO_8">
 <contactref element="P1" pad="P$38"/>
@@ -1330,32 +1330,32 @@ design rules under a new name.</description>
 <contactref element="LM219" pad="3"/>
 <contactref element="LM219" pad="6"/>
 <contactref element="LM219" pad="8"/>
-<wire x1="121.92" y1="82.55" x2="134.62" y2="92.3925" width="0" layer="19" extent="1-1"/>
-<wire x1="121.92" y1="74.93" x2="121.92" y2="82.55" width="0" layer="19" extent="1-1"/>
-<wire x1="129.54" y1="72.39" x2="121.92" y2="74.93" width="0" layer="19" extent="1-1"/>
-<wire x1="134.62" y1="63.5" x2="129.54" y2="72.39" width="0" layer="19" extent="1-1"/>
-<wire x1="125.73" y1="58.42" x2="134.62" y2="63.5" width="0" layer="19" extent="1-1"/>
-<wire x1="116.84" y1="63.5" x2="125.73" y2="58.42" width="0" layer="19" extent="1-1"/>
+<wire x1="121.92" y1="81.28" x2="134.62" y2="92.3925" width="0" layer="19" extent="1-1"/>
+<wire x1="121.92" y1="73.66" x2="121.92" y2="81.28" width="0" layer="19" extent="1-1"/>
+<wire x1="129.54" y1="71.12" x2="121.92" y2="73.66" width="0" layer="19" extent="1-1"/>
+<wire x1="67.31" y1="87.63" x2="129.54" y2="71.12" width="0" layer="19" extent="1-1"/>
+<wire x1="58.42" y1="82.55" x2="67.31" y2="87.63" width="0" layer="19" extent="1-1"/>
+<wire x1="49.53" y1="87.63" x2="58.42" y2="82.55" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LMOTOR">
 <contactref element="H-BRIDGE1" pad="2"/>
 <contactref element="P8" pad="21"/>
-<wire x1="96.52" y1="46.99" x2="133.35" y2="58.42" width="0" layer="19" extent="1-1"/>
+<wire x1="96.52" y1="46.99" x2="66.04" y2="82.55" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RMOTOR">
 <contactref element="H-BRIDGE1" pad="3"/>
 <contactref element="P8" pad="22"/>
-<wire x1="93.98" y1="46.99" x2="132.08" y2="63.5" width="0" layer="19" extent="1-1"/>
+<wire x1="93.98" y1="46.99" x2="64.77" y2="87.63" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LSERVO">
 <contactref element="H-BRIDGE1" pad="13"/>
 <contactref element="P8" pad="23"/>
-<wire x1="91.44" y1="46.99" x2="119.38" y2="63.5" width="0" layer="19" extent="1-1"/>
+<wire x1="91.44" y1="46.99" x2="52.07" y2="87.63" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RSERVO">
 <contactref element="H-BRIDGE1" pad="14"/>
 <contactref element="P8" pad="24"/>
-<wire x1="88.9" y1="46.99" x2="118.11" y2="58.42" width="0" layer="19" extent="1-1"/>
+<wire x1="88.9" y1="46.99" x2="50.8" y2="82.55" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="7.2V">
 <contactref element="VOLT_REG" pad="3"/>
@@ -1365,7 +1365,7 @@ design rules under a new name.</description>
 <signal name="12.8V">
 <contactref element="H-BRIDGE1" pad="4"/>
 <contactref element="P8" pad="39"/>
-<wire x1="50.8" y1="46.99" x2="130.81" y2="58.42" width="0" layer="19" extent="1-1"/>
+<wire x1="50.8" y1="46.99" x2="63.5" y2="82.55" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="5V">
 <contactref element="VOLT_REG" pad="2"/>
@@ -1376,13 +1376,13 @@ design rules under a new name.</description>
 <contactref element="R3" pad="1"/>
 <contactref element="R4" pad="1"/>
 <contactref element="R6" pad="1"/>
-<wire x1="129.54" y1="80.01" x2="137.16" y2="92.3925" width="0" layer="19" extent="1-1"/>
-<wire x1="143.51" y1="77.47" x2="129.54" y2="80.01" width="0" layer="19" extent="1-1"/>
+<wire x1="129.54" y1="78.74" x2="137.16" y2="92.3925" width="0" layer="19" extent="1-1"/>
+<wire x1="143.51" y1="77.47" x2="129.54" y2="78.74" width="0" layer="19" extent="1-1"/>
 <wire x1="143.51" y1="73.66" x2="143.51" y2="77.47" width="0" layer="19" extent="1-1"/>
 <wire x1="143.51" y1="68.58" x2="143.51" y2="73.66" width="0" layer="19" extent="1-1"/>
 <wire x1="143.51" y1="63.5" x2="143.51" y2="68.58" width="0" layer="19" extent="1-1"/>
-<wire x1="124.46" y1="63.5" x2="129.54" y2="80.01" width="0" layer="19" extent="1-1"/>
-<wire x1="121.92" y1="63.5" x2="124.46" y2="63.5" width="0" layer="19" extent="1-1"/>
+<wire x1="57.15" y1="87.63" x2="129.54" y2="78.74" width="0" layer="19" extent="1-1"/>
+<wire x1="54.61" y1="87.63" x2="57.15" y2="87.63" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="REFS_IN">
 <contactref element="R6" pad="2"/>
@@ -1393,13 +1393,13 @@ design rules under a new name.</description>
 <contactref element="R3" pad="2"/>
 <contactref element="LM219" pad="4"/>
 <contactref element="P8" pad="25"/>
-<wire x1="121.92" y1="80.01" x2="156.21" y2="77.47" width="0" layer="19" extent="1-1"/>
-<wire x1="86.36" y1="46.99" x2="121.92" y2="80.01" width="0" layer="19" extent="1-1"/>
+<wire x1="121.92" y1="78.74" x2="156.21" y2="77.47" width="0" layer="19" extent="1-1"/>
+<wire x1="86.36" y1="46.99" x2="121.92" y2="78.74" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="LM219" pad="5"/>
 <contactref element="R4" pad="2"/>
-<wire x1="121.92" y1="77.47" x2="156.21" y2="68.58" width="0" layer="19" extent="1-1"/>
+<wire x1="121.92" y1="76.2" x2="156.21" y2="68.58" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

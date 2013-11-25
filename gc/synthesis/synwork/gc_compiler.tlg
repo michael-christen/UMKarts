@@ -333,12 +333,12 @@ Selecting top level module gc
 @N: CG179 :"C:\Users\mttschlt\UMKarts\gc\hdl\query.v":92:11:92:15|Removing redundant assignment
 @W: CG360 :"C:\Users\mttschlt\UMKarts\gc\hdl\query.v":69:5:69:7|No assignment to wire clk
 
-@W: CL169 :"C:\Users\mttschlt\UMKarts\gc\hdl\query.v":87:0:87:5|Pruning register data_cl 
+@W: CL169 :"C:\Users\mttschlt\UMKarts\gc\hdl\query.v":87:0:87:5|Pruning register controller_data_cl 
 
-@N: CL177 :"C:\Users\mttschlt\UMKarts\gc\hdl\query.v":98:5:114:49|Sharing sequential element data.
+@N: CL177 :"C:\Users\mttschlt\UMKarts\gc\hdl\query.v":98:5:114:49|Sharing sequential element controller_data.
 @N: CG364 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc\gc.v":9:7:9:8|Synthesizing module gc
 
-@W: CL246 :"C:\Users\mttschlt\UMKarts\gc\hdl\query.v":55:76:55:86|Input port bits 23 to 16 of wavebird_id[23:0] are unused
+@W: CL246 :"C:\Users\mttschlt\UMKarts\gc\hdl\query.v":55:87:55:97|Input port bits 23 to 16 of wavebird_id[23:0] are unused
 
 @W: CL157 :"C:\Users\mttschlt\UMKarts\gc\hdl\motorWrapper.v":36:13:36:15|*Output TPS has undriven bits -- simulation mismatch possible.
 @W: CL246 :"C:\Users\mttschlt\UMKarts\gc\hdl\motor.v":20:12:20:19|Input port bits 7 to 5 of bus_addr[7:0] are unused

@@ -18,7 +18,7 @@ The file contains the job information from mapper to be displayed as part of the
 </report_link>
 </info>
 <info name="Warnings">
-<data>13</data>
+<data>100</data>
 <report_link name="more">
 <data>C:\Users\mttschlt\UMKarts\gc\synthesis\synlog\report\gc_fpga_mapper_warnings.txt</data>
 </report_link>
@@ -36,10 +36,10 @@ The file contains the job information from mapper to be displayed as part of the
 <data>0h:00m:09s</data>
 </info>
 <info name="Peak Memory">
-<data>137MB</data>
+<data>130MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1385322244</data>
+<data type="timestamp">1385396551</data>
 </info>
 </job_info>
 </job_run_status>

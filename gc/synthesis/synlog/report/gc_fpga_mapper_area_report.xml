@@ -8,7 +8,7 @@ The file contains the area information from mapper to be displayed as part of th
 <data>C:\Users\mttschlt\UMKarts\gc\synthesis\synlog\report\gc_fpga_mapper_resourceusage.rpt</data>
 </report_link>
 <parameter tooltip="Total Core Cells used" name="Core Cells">
-<data>3005</data>
+<data>2801</data>
 </parameter>
 <parameter tooltip="Total IO Cells used" name="IO Cells">
 <data>23</data>

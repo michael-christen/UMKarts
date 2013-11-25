@@ -1,0 +1,25 @@
+PIN ASSIGNMENTS
+===============
+CAPTURE_SWITCH = F3 (F1)
+
+// Gamecube controller
+controller_data = J19
+
+// IR system
+RECV_IN = J20
+LED = J21
+
+// GPIO Pins (not sure what these are used for)
+GPIO_2 = J22
+GPIO_4 = K19
+
+// Motor
+LMOTOR = H6
+RMOTOR = H5
+
+// Servo
+LSERVO = C22
+RSERVO = B22
+
+// XBee
+TX = J6

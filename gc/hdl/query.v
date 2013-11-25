@@ -52,35 +52,35 @@ end
 endmodule
 
 
-module send_query(clk100mhz, data, send, controller_init, wavebird_id_send, wavebird_id, wavebird_id_sent);
+module send_query(clk100mhz, controller_data, send, controller_init, wavebird_id_send, wavebird_id, wavebird_id_sent);
 input wire clk100mhz;
 input wire controller_init;
 input wire wavebird_id_send;
 input wire [23:0]wavebird_id;
-output data;
+output controller_data;
 output send;
 output reg wavebird_id_sent;
 
 reg [6:0] c_count;
 reg [12:0] count;
-reg data;
+reg controller_data;
 reg send;
 
 wire clk;
 
 task send0; begin
 	if (count % 4 == 3) begin
-		data <= 1'bz;
+		controller_data <= 1'bz;
 	end else begin
-		data <= 0;
+		controller_data <= 0;
 	end
 end endtask
 
 task send1; begin
 	if (count % 4 == 0) begin
-		data <= 0;
+		controller_data <= 0;
 	end else begin
-		data <= 1'bz;
+		controller_data <= 1'bz;
 	end
 end endtask
 
@@ -120,7 +120,7 @@ always @(posedge clk100mhz) begin
 			send0();
 	end else begin
 		send <= 1'b0;
-		data <= 1'bz;
+		controller_data <= 1'bz;
 	end
 /*
 	if ((wavebird_init && wavebird_id_ready && (count / 4 == 1 || count / 4 == 4 || count / 4 == 5 || count / 4 == 6 || count / 4 == 8 || count / 4 == 9 || count / 4 == 10 || count / 4 == 12 || count / 4 == 16 || count / 4 == 17 || count / 4 == 19 || count / 4 == 21 || count / 4 == 22 || count / 4 == 24)) ||
@@ -128,14 +128,14 @@ always @(posedge clk100mhz) begin
 		(wavebird_init && !wavebird_id_ready && count / 4 == 8)) begin
 		send <= 1'b1;
 		if (count % 4 == 0) begin
-			data <= 0;
+			controller_data <= 0;
 		end else begin
-			data <= 1'bz;
+			controller_data <= 1'bz;
 		end
 	end else if (count / 4 < 9 || ((~wavebird_init || wavebird_id_ready) && count / 4 < 25)) begin
 		
 	end else begin
-		data <= 1'bz;
+		controller_data <= 1'bz;
 		send <= 1'b0;
 	end*/
 end

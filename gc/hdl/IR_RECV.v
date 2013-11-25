@@ -1,5 +1,5 @@
 // IR_RECV.v
-module LED_RECV(input wire INV_RESET, input wire RECV_IN, input wire CLK, output reg [7:0] DATA, output wire INTERRUPT);
+module LED_RECV(input wire INV_RESET, input wire LED_RECV_IN, input wire CLK, output reg [7:0] DATA, output wire INTERRUPT);
   // Assuming CLK == 100 MHz
   reg[2:0] SYNC_IN;
   reg[31:0] COUNTER;
@@ -25,7 +25,7 @@ module LED_RECV(input wire INV_RESET, input wire RECV_IN, input wire CLK, output
     if (RESET)
       SYNC_IN <= 3'd0;
     else begin
-      SYNC_IN[2] <= RECV_IN;
+      SYNC_IN[2] <= LED_RECV_IN;
       SYNC_IN[1:0] <= SYNC_IN[2:1];
     end
   end
