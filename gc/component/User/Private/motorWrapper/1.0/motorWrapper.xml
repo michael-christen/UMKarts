@@ -125,14 +125,6 @@
   <spirit:choices>
   </spirit:choices>
   <spirit:fileSets>
-  <spirit:fileSet spirit:fileSetId="HDL_FILESET">
-    <spirit:file>
-      <spirit:name>hdl/motorWrapper.v</spirit:name>
-      <spirit:fileType>verilogSource</spirit:fileType>
-    <spirit:vendorExtensions></spirit:vendorExtensions>
-    </spirit:file>
-  <spirit:vendorExtensions></spirit:vendorExtensions>
-  </spirit:fileSet>
   </spirit:fileSets>
   <spirit:vendorExtensions>
     <actel-cc:type typeName="IP"/>

@@ -55,7 +55,7 @@
 @N: CG364 :"C:\Users\mttschlt\UMKarts\gc\hdl\motorWrapper.v":2:7:2:18|Synthesizing module motorWrapper
 @N: CG364 :"C:\Users\mttschlt\UMKarts\gc\hdl\query.v":55:7:55:16|Synthesizing module send_query
 @N: CG179 :"C:\Users\mttschlt\UMKarts\gc\hdl\query.v":92:11:92:15|Removing redundant assignment
-@N: CL177 :"C:\Users\mttschlt\UMKarts\gc\hdl\query.v":98:5:114:49|Sharing sequential element data.
+@N: CL177 :"C:\Users\mttschlt\UMKarts\gc\hdl\query.v":98:5:114:49|Sharing sequential element controller_data.
 @N: CG364 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc\gc.v":9:7:9:8|Synthesizing module gc
 @N: CL201 :"C:\Users\mttschlt\UMKarts\gc\hdl\IR_LED.v":57:1:57:6|Trying to extract state machine for register state
 @N: CL201 :"C:\Users\mttschlt\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Rx_async.v":723:0:723:5|Trying to extract state machine for register CUARTOl0

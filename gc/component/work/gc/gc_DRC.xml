@@ -41,13 +41,6 @@
     <status>C:\Microsemi\Libero_v11.0\Designer/data/drcreport\warn.png</status>
     <StatusMessage>Warning</StatusMessage>
     <message>Floating Driver</message>
-    <detail>Floating output pin gc_receive_0:count</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/gc/pins/gc_receive_0:count</crossprobe>
-  </drc>
-  <drc>
-    <status>C:\Microsemi\Libero_v11.0\Designer/data/drcreport\warn.png</status>
-    <StatusMessage>Warning</StatusMessage>
-    <message>Floating Driver</message>
     <detail>Floating output pin motorWrapper_0:FABINT</detail>
     <crossprobe>liberoaction://cross_probe/smartdesign/gc/pins/motorWrapper_0:FABINT</crossprobe>
   </drc>

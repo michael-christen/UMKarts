@@ -67,8 +67,8 @@
 @W: CL168 :"C:\Users\mttschlt\UMKarts\gc\smartgen\IR_QUEUE\IR_QUEUE.v":102:9:102:15|Pruning instance XOR2_19 -- not in use ...
 @W: CL168 :"C:\Users\mttschlt\UMKarts\gc\smartgen\IR_QUEUE\IR_QUEUE.v":94:9:94:15|Pruning instance AND2_11 -- not in use ...
 @W: CG360 :"C:\Users\mttschlt\UMKarts\gc\hdl\query.v":69:5:69:7|No assignment to wire clk
-@W: CL169 :"C:\Users\mttschlt\UMKarts\gc\hdl\query.v":87:0:87:5|Pruning register data_cl 
-@W: CL246 :"C:\Users\mttschlt\UMKarts\gc\hdl\query.v":55:76:55:86|Input port bits 23 to 16 of wavebird_id[23:0] are unused
+@W: CL169 :"C:\Users\mttschlt\UMKarts\gc\hdl\query.v":87:0:87:5|Pruning register controller_data_cl 
+@W: CL246 :"C:\Users\mttschlt\UMKarts\gc\hdl\query.v":55:87:55:97|Input port bits 23 to 16 of wavebird_id[23:0] are unused
 @W: CL157 :"C:\Users\mttschlt\UMKarts\gc\hdl\motorWrapper.v":36:13:36:15|*Output TPS has undriven bits -- simulation mismatch possible.
 @W: CL246 :"C:\Users\mttschlt\UMKarts\gc\hdl\motor.v":20:12:20:19|Input port bits 7 to 5 of bus_addr[7:0] are unused
 @W: CL246 :"C:\Users\mttschlt\UMKarts\gc\hdl\motor.v":20:12:20:19|Input port bits 1 to 0 of bus_addr[7:0] are unused

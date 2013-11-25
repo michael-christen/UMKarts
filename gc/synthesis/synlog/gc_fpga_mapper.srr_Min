@@ -1,7 +1,7 @@
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Mon Nov 25 10:37:28 2013
+# Timing Report written on Mon Nov 25 11:12:33 2013
 #
 
 
@@ -28,11 +28,11 @@ Worst slack in design: 0.192
                                               Requested     Estimated     Requested     Estimated                Clock        Clock              
 Starting Clock                                Frequency     Frequency     Period        Period        Slack      Type         Group              
 -------------------------------------------------------------------------------------------------------------------------------------------------
-FAB_CLK                                       100.0 MHz     73.7 MHz      10.000        13.560        -3.560     declared     clk_group_0        
+FAB_CLK                                       100.0 MHz     79.3 MHz      10.000        12.603        -2.603     declared     clk_group_0        
 FCLK                                          100.0 MHz     NA            10.000        NA            NA         declared     clk_group_0        
 clk_div_20000_10000|clkOut_inferred_clock     100.0 MHz     92.7 MHz      10.000        10.783        -0.783     inferred     Inferred_clkgroup_0
 gc|CAPTURE_SWITCH                             100.0 MHz     238.2 MHz     10.000        4.199         5.801      inferred     Inferred_clkgroup_1
-System                                        100.0 MHz     131.9 MHz     10.000        7.583         2.417      system       system_clkgroup    
+System                                        100.0 MHz     141.1 MHz     10.000        7.089         2.911      system       system_clkgroup    
 =================================================================================================================================================
 
 
@@ -85,11 +85,11 @@ gc_response_apb_0.PRDATA[10]     FAB_CLK       DFN1     Q       CoreAPB3_0_APBms
 gc_response_apb_0.PRDATA[11]     FAB_CLK       DFN1     Q       CoreAPB3_0_APBmslave0_PRDATA[11]     0.494       1.483
 gc_response_apb_0.PRDATA[12]     FAB_CLK       DFN1     Q       CoreAPB3_0_APBmslave0_PRDATA[12]     0.494       1.483
 gc_response_apb_0.PRDATA[13]     FAB_CLK       DFN1     Q       CoreAPB3_0_APBmslave0_PRDATA[13]     0.494       1.483
+gc_response_apb_0.PRDATA[14]     FAB_CLK       DFN1     Q       CoreAPB3_0_APBmslave0_PRDATA[14]     0.494       1.483
 gc_response_apb_0.PRDATA[15]     FAB_CLK       DFN1     Q       CoreAPB3_0_APBmslave0_PRDATA[15]     0.494       1.483
 gc_response_apb_0.PRDATA[16]     FAB_CLK       DFN1     Q       CoreAPB3_0_APBmslave0_PRDATA[16]     0.494       1.483
 gc_response_apb_0.PRDATA[17]     FAB_CLK       DFN1     Q       CoreAPB3_0_APBmslave0_PRDATA[17]     0.494       1.483
 gc_response_apb_0.PRDATA[18]     FAB_CLK       DFN1     Q       CoreAPB3_0_APBmslave0_PRDATA[18]     0.494       1.483
-gc_response_apb_0.PRDATA[19]     FAB_CLK       DFN1     Q       CoreAPB3_0_APBmslave0_PRDATA[19]     0.494       1.483
 ======================================================================================================================
 
 
@@ -168,8 +168,8 @@ gc_MSS_0.MSS_ADLIB_INST       System        MSS_APB     EMCCLK           MSS_ADL
 gc_MSS_0.MSS_ADLIB_INST       System        MSS_APB     SDD0             MSS_ACE_0_SDD0_D                    0.000       0.274
 gc_MSS_0.MSS_ADLIB_INST       System        MSS_APB     SPI0DO           MSS_SPI_0_DO_D                      0.000       0.274
 gc_MSS_0.MSS_ADLIB_INST       System        MSS_APB     SPI0DOE          MSS_SPI_0_DO_E                      0.000       0.274
-gc_MSS_0.MSS_ADLIB_INST       System        MSS_APB     MSSPADDR[10]     CoreAPB3_0_APBmslave0_PADDR[10]     0.000       3.748
-gc_MSS_0.MSS_ADLIB_INST       System        MSS_APB     MSSPSEL          gc_MSS_0_MSS_MASTER_APB_PSELx       0.000       3.949
+gc_MSS_0.MSS_ADLIB_INST       System        MSS_APB     MSSPADDR[11]     CoreAPB3_0_APBmslave0_PADDR[11]     0.000       4.066
+gc_MSS_0.MSS_ADLIB_INST       System        MSS_APB     MSSPSEL          gc_MSS_0_MSS_MASTER_APB_PSELx       0.000       4.267
 ==============================================================================================================================
 
 
@@ -188,8 +188,8 @@ gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB         GPI[4]           MSSIN
 gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB         VAREF0           MSS_ACE_0_VAREF0_Y                    0.000        0.192
 gc_MSS_0.MSS_SPI_0_DO       System        TRIBUFF_MSS     D                MSS_SPI_0_DO_D                        0.000        0.192
 gc_MSS_0.MSS_SPI_0_DO       System        TRIBUFF_MSS     E                MSS_SPI_0_DO_E                        0.000        0.192
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB         MSSPRDATA[1]     gc_MSS_0_MSS_MASTER_APB_PRDATA[1]     0.000        2.958
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB         MSSPRDATA[2]     gc_MSS_0_MSS_MASTER_APB_PRDATA[2]     0.000        2.958
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB         MSSPRDATA[0]     gc_MSS_0_MSS_MASTER_APB_PRDATA[0]     0.000        3.181
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB         MSSPRDATA[2]     gc_MSS_0_MSS_MASTER_APB_PRDATA[2]     0.000        3.181
 ===================================================================================================================================
 
 
