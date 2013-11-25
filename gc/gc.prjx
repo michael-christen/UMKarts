@@ -530,8 +530,8 @@ PARENT="<project>\component\work\gc_MSS\gc_MSS.cxf"
 ENDFILE
 VALUE "<project>\designer\impl1\gc.adb,adb"
 STATE="utd"
-TIME="1385396583"
-SIZE="1247744"
+TIME="1385396705"
+SIZE="1249280"
 ENDFILE
 VALUE "<project>\designer\impl1\gc.fdb,fdb"
 STATE="ood"
@@ -540,8 +540,8 @@ SIZE="102544"
 ENDFILE
 VALUE "<project>\designer\impl1\gc.ide_des,ide_des"
 STATE="utd"
-TIME="1385396441"
-SIZE="999"
+TIME="1385396705"
+SIZE="1001"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_compile_log.rpt,log"
 STATE="utd"
@@ -691,17 +691,17 @@ SIZE="1581116"
 ENDFILE
 VALUE "<project>\synthesis\gc.so,so"
 STATE="utd"
-TIME="1385396442"
+TIME="1385396551"
 SIZE="202"
 ENDFILE
 VALUE "<project>\synthesis\gc_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1385396413"
+TIME="1385396550"
 SIZE="633"
 ENDFILE
 VALUE "<project>\synthesis\gc_syn.prj,prj"
 STATE="utd"
-TIME="1385396442"
+TIME="1385396552"
 SIZE="3763"
 ENDFILE
 VALUE "<project>\synthesis\synwork\gc_compiler.so,so"
@@ -959,8 +959,8 @@ NAME="Synplify Pro AE"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro AE"
 LOCATION="C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 EndProfile
 NAME="ModelSim AE"
 FUNCTION="Simulation"
