@@ -13,7 +13,6 @@ gc/synthesis/gc.areasrr
 gc/synthesis/run_options.txt
 
 # Compile Files
-gc/designer/impl1/gc.adb
 gc/designer/impl1/gc_compile_log.rpt
 gc/designer/impl1/gc_compile_report.txt
 

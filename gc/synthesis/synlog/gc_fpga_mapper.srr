@@ -176,7 +176,7 @@ Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01
 Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 116MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 116MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 116MB)
 
 
 Finished Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 121MB peak: 121MB)
@@ -226,7 +226,7 @@ CoreAPB3_0.CAPB3O0OI_1[0] / Y                                    46
 @N: FP130 |Promoting Net CoreAPB3_0_APBmslave0_PADDR[4] on CLKINT  I_300 
 @N: FP130 |Promoting Net CoreAPB3_0_APBmslave0_PADDR[3] on CLKINT  I_301 
 
-Finished technology mapping (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 127MB peak: 130MB)
+Finished technology mapping (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 127MB peak: 130MB)
 
 
 Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 128MB peak: 130MB)
@@ -290,7 +290,7 @@ Clock Tree ID     Driving Element         Drive Element Type     Fanout     Samp
 
 Writing Analyst data base C:\Users\mttschlt\UMKarts\gc\synthesis\gc.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 126MB peak: 130MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 126MB peak: 130MB)
 
 Writing EDIF Netlist and constraint files
 G-2012.09M-SP1 
@@ -308,7 +308,7 @@ Found clock FCLK with period 10.00ns
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Mon Nov 25 11:12:33 2013
+# Timing Report written on Mon Nov 25 11:22:31 2013
 #
 
 
@@ -1577,6 +1577,6 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 43MB peak: 130MB)
 
 Process took 0h:00m:09s realtime, 0h:00m:09s cputime
-# Mon Nov 25 11:12:33 2013
+# Mon Nov 25 11:22:31 2013
 
 ###########################################################]

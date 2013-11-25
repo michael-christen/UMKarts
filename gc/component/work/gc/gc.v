@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Mon Nov 25 11:10:46 2013
+// Created by SmartDesign Mon Nov 25 11:21:33 2013
 // Version: v11.0 11.0.0.23
 //////////////////////////////////////////////////////////////////////
 
@@ -178,10 +178,10 @@ wire          EMPTY_OUT_PRE_INV0_0;
 // Bus Interface Nets Declarations - Unequal Pin Widths
 //--------------------------------------------------------------------
 wire   [31:0] CoreAPB3_0_APBmslave0_PADDR;
-wire   [7:0]  CoreAPB3_0_APBmslave0_PADDR_0_7to0;
-wire   [7:0]  CoreAPB3_0_APBmslave0_PADDR_0;
 wire   [4:0]  CoreAPB3_0_APBmslave0_PADDR_1_4to0;
 wire   [4:0]  CoreAPB3_0_APBmslave0_PADDR_1;
+wire   [7:0]  CoreAPB3_0_APBmslave0_PADDR_0_7to0;
+wire   [7:0]  CoreAPB3_0_APBmslave0_PADDR_0;
 wire   [31:0] CoreAPB3_0_APBmslave0_PWDATA;
 wire   [7:0]  CoreAPB3_0_APBmslave0_PWDATA_0_7to0;
 wire   [7:0]  CoreAPB3_0_APBmslave0_PWDATA_0;
@@ -246,10 +246,10 @@ assign controller_data         = controller_data_1_net_0;
 //--------------------------------------------------------------------
 // Bus Interface Nets Assignments - Unequal Pin Widths
 //--------------------------------------------------------------------
-assign CoreAPB3_0_APBmslave0_PADDR_0_7to0 = CoreAPB3_0_APBmslave0_PADDR[7:0];
-assign CoreAPB3_0_APBmslave0_PADDR_0 = { CoreAPB3_0_APBmslave0_PADDR_0_7to0 };
 assign CoreAPB3_0_APBmslave0_PADDR_1_4to0 = CoreAPB3_0_APBmslave0_PADDR[4:0];
 assign CoreAPB3_0_APBmslave0_PADDR_1 = { CoreAPB3_0_APBmslave0_PADDR_1_4to0 };
+assign CoreAPB3_0_APBmslave0_PADDR_0_7to0 = CoreAPB3_0_APBmslave0_PADDR[7:0];
+assign CoreAPB3_0_APBmslave0_PADDR_0 = { CoreAPB3_0_APBmslave0_PADDR_0_7to0 };
 
 assign CoreAPB3_0_APBmslave0_PWDATA_0_7to0 = CoreAPB3_0_APBmslave0_PWDATA[7:0];
 assign CoreAPB3_0_APBmslave0_PWDATA_0 = { CoreAPB3_0_APBmslave0_PWDATA_0_7to0 };
@@ -484,10 +484,10 @@ gc_receive gc_receive_0(
         .send              ( send ),
         .controller_init   ( controller_init ),
         // Outputs
-        .response          ( gc_receive_0_response ),
-        .wavebird_id       ( wavebird_id ),
         .wavebird_id_ready ( wavebird_id_ready ),
-        .button_data_ready ( button_data_ready ) 
+        .button_data_ready ( button_data_ready ),
+        .response          ( gc_receive_0_response ),
+        .wavebird_id       ( wavebird_id ) 
         );
 
 //--------gc_response_apb
@@ -570,8 +570,8 @@ LED_RECV LED_RECV_0(
         .LED_RECV_IN ( LED_RECV_IN ),
         .CLK         ( gc_MSS_0_FAB_CLK ),
         // Outputs
-        .DATA        ( LED_RECV_0_DATA ),
-        .INTERRUPT   ( LED_RECV_0_INTERRUPT ) 
+        .INTERRUPT   ( LED_RECV_0_INTERRUPT ),
+        .DATA        ( LED_RECV_0_DATA ) 
         );
 
 //--------motorWrapper
