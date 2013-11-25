@@ -1,0 +1,4 @@
+PIN ASSIGNMENTS
+===============
+RECV_IN = J20
+LED = J21
