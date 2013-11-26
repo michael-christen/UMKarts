@@ -19,7 +19,10 @@ const double CONVERSION_FACTOR = 0.00017006802;
 int lastVals[10];
 int arrCount=0;
 
-
+__attribute__ ((interrupt)) void GPIO1_IRQHandler( void ){
+	printf("Magnetic sensor sees something\n\r");
+	MSS_GPIO_clear_irq( MSS_GPIO_1 );
+}
 
 __attribute__ ((interrupt)) void GPIO2_IRQHandler( void ){
 	printf("Reflective sensor sees something\n\r");
@@ -73,11 +76,17 @@ int main()
 
         CONTROLLER_setup_mem();
 
+		// Setting up GPIO interrupts for item pick ups
         MSS_GPIO_init();
+
+        // Reflective Sensor
         MSS_GPIO_config(MSS_GPIO_2, MSS_GPIO_INPUT_MODE | MSS_GPIO_IRQ_EDGE_NEGATIVE);
         MSS_GPIO_enable_irq(MSS_GPIO_2);
-        MSS_GPIO_config(MSS_GPIO_0, MSS_GPIO_INPUT_MODE | MSS_GPIO_IRQ_EDGE_POSITIVE);
-        MSS_GPIO_enable_irq(MSS_GPIO_0);
+
+		// Magnetic sensor
+        MSS_GPIO_config(MSS_GPIO_1, MSS_GPIO_INPUT_MODE | MSS_GPIO_IRQ_EDGE_NEGATIVE);
+        MSS_GPIO_enable_irq(MSS_GPIO_1);
+
         initItemWeights();
 
         LASER_TAG_init();
