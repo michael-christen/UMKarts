@@ -1,8 +1,10 @@
 #ifndef __ITEM__H__
 #define __ITEM__H__
 #include <stdlib.h>
+#include <stdio.h>
 #include <time.h>
 #include "lcd.h"
+#include "lasertag.h"
 
 typedef enum {
     GREEN_SHELL,

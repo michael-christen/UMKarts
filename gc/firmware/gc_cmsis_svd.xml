@@ -2,7 +2,7 @@
 <device>
   <name>gc</name>
   <version>1.0</version>
-  <description>CMSIS description for gc.  Created by Actel SmartDesign on Mon Nov 25 11:21:41 2013</description>
+  <description>CMSIS description for gc.  Created by Actel SmartDesign on Mon Nov 25 14:08:07 2013</description>
   <addressUnitBits>8</addressUnitBits>
   <width>32</width>
   <peripherals>

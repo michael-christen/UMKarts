@@ -1,7 +1,7 @@
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Mon Nov 25 11:22:31 2013
+# Timing Report written on Mon Nov 25 14:09:15 2013
 #
 
 
@@ -11,7 +11,7 @@ Requested Frequency:    100.0 MHz
 Wire load mode:         top
 Wire load model:        smartfusion
 Paths requested:        5
-Constraint File(s):    C:\Users\mttschlt\UMKarts\gc\component\work\gc_MSS\mss_tshell_syn.sdc
+Constraint File(s):    C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc_MSS\mss_tshell_syn.sdc
                        
 @N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
 

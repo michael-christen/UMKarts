@@ -6,7 +6,7 @@
 #include "controller.h"
 #include "lcd.h"
 #include "item.h"
-#include "ir_led.h"
+#include "lasertag.h"
 #include "drivers/mss_ace/mss_ace.h"
 #include "sound.h"
 
@@ -64,7 +64,7 @@ sound_init();
         MOTOR_set_speed(0);
         MOTOR_set_servo_direction(0);
 
-        printf("HEY\n");
+        printf("Mike Loves Double Dash!!!\r\n");
         count = 0;
         int lastVal = 1;
         double speed = 0;
@@ -79,7 +79,9 @@ sound_init();
         MSS_GPIO_enable_irq(MSS_GPIO_0);
         initItemWeights();
 
-		IR_LED_write(0xAB);
+        LASER_TAG_init();
+
+        LASER_TAG_shoot();
 
         int x = 1;
         LCD_init();

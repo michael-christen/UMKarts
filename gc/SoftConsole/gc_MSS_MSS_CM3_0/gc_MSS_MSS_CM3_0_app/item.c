@@ -90,6 +90,8 @@ void use_lightning() {
 }
 
 void hit_green_shell() {
+	uint8_t opId = LASER_TAG_hit();
+	printf("He shot me, %d\r\n", opId);
 }
 void hit_mushroom() {
 }
