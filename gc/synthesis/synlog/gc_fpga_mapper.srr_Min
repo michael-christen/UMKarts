@@ -1,7 +1,7 @@
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Mon Nov 25 14:09:15 2013
+# Timing Report written on Tue Nov 26 12:14:48 2013
 #
 
 
@@ -11,7 +11,7 @@ Requested Frequency:    100.0 MHz
 Wire load mode:         top
 Wire load model:        smartfusion
 Paths requested:        5
-Constraint File(s):    C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc_MSS\mss_tshell_syn.sdc
+Constraint File(s):    C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\mss_tshell_syn.sdc
                        
 @N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
 
@@ -161,6 +161,7 @@ Instance                      Reference     Type        Pin              Net    
                               Clock                                                                                           
 ------------------------------------------------------------------------------------------------------------------------------
 gc_MSS_0.MSSINT_GPI_0         System        MSSINT      Y                MSSINT_GPI_0_Y                      0.000       0.274
+gc_MSS_0.MSSINT_GPI_1         System        MSSINT      Y                MSSINT_GPI_1_Y                      0.000       0.274
 gc_MSS_0.MSSINT_GPI_2         System        MSSINT      Y                MSSINT_GPI_2_Y                      0.000       0.274
 gc_MSS_0.MSSINT_GPI_4         System        MSSINT      Y                MSSINT_GPI_4_Y                      0.000       0.274
 gc_MSS_0.MSS_ACE_0_VAREF0     System        INBUF_A     Y                MSS_ACE_0_VAREF0_Y                  0.000       0.274
@@ -169,7 +170,6 @@ gc_MSS_0.MSS_ADLIB_INST       System        MSS_APB     SDD0             MSS_ACE
 gc_MSS_0.MSS_ADLIB_INST       System        MSS_APB     SPI0DO           MSS_SPI_0_DO_D                      0.000       0.274
 gc_MSS_0.MSS_ADLIB_INST       System        MSS_APB     SPI0DOE          MSS_SPI_0_DO_E                      0.000       0.274
 gc_MSS_0.MSS_ADLIB_INST       System        MSS_APB     MSSPADDR[11]     CoreAPB3_0_APBmslave0_PADDR[11]     0.000       4.066
-gc_MSS_0.MSS_ADLIB_INST       System        MSS_APB     MSSPSEL          gc_MSS_0_MSS_MASTER_APB_PSELx       0.000       4.267
 ==============================================================================================================================
 
 
@@ -183,13 +183,13 @@ Instance                    Reference     Type            Pin              Net  
 gc_MSS_0.MSS_ACE_0_SDD0     System        OUTBUF_A        D                MSS_ACE_0_SDD0_D                      0.000        0.192
 gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB         EMCCLKRTN        MSS_ADLIB_INST_EMCCLK                 0.000        0.192
 gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB         GPI[0]           MSSINT_GPI_0_Y                        0.000        0.192
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB         GPI[1]           MSSINT_GPI_1_Y                        0.000        0.192
 gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB         GPI[2]           MSSINT_GPI_2_Y                        0.000        0.192
 gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB         GPI[4]           MSSINT_GPI_4_Y                        0.000        0.192
 gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB         VAREF0           MSS_ACE_0_VAREF0_Y                    0.000        0.192
 gc_MSS_0.MSS_SPI_0_DO       System        TRIBUFF_MSS     D                MSS_SPI_0_DO_D                        0.000        0.192
 gc_MSS_0.MSS_SPI_0_DO       System        TRIBUFF_MSS     E                MSS_SPI_0_DO_E                        0.000        0.192
 gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB         MSSPRDATA[0]     gc_MSS_0_MSS_MASTER_APB_PRDATA[0]     0.000        3.181
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB         MSSPRDATA[2]     gc_MSS_0_MSS_MASTER_APB_PRDATA[2]     0.000        3.181
 ===================================================================================================================================
 
 

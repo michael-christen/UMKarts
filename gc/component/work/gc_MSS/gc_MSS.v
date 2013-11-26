@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Mon Nov 25 14:06:22 2013
+// Created by SmartDesign Tue Nov 26 12:09:51 2013
 // Version: v11.0 11.0.0.23
 //////////////////////////////////////////////////////////////////////
 
@@ -9,6 +9,7 @@
 module gc_MSS(
     // Inputs
     F2M_GPI_0,
+    F2M_GPI_1,
     F2M_GPI_2,
     F2M_GPI_4,
     MSSPRDATA,
@@ -40,6 +41,7 @@ module gc_MSS(
 // Input
 //--------------------------------------------------------------------
 input         F2M_GPI_0;
+input         F2M_GPI_1;
 input         F2M_GPI_2;
 input         F2M_GPI_4;
 input  [31:0] MSSPRDATA;
@@ -73,6 +75,7 @@ inout         SPI_0_SS;
 // Nets
 //--------------------------------------------------------------------
 wire          F2M_GPI_0;
+wire          F2M_GPI_1;
 wire          F2M_GPI_2;
 wire          F2M_GPI_4;
 wire          MSS_ACE_0_SDD0_D;
@@ -98,6 +101,7 @@ wire          MSS_UART_0_TXD_D;
 wire          MSS_UART_1_RXD_Y;
 wire          MSS_UART_1_TXD_D;
 wire          MSSINT_GPI_0_Y;
+wire          MSSINT_GPI_1_Y;
 wire          MSSINT_GPI_2_Y;
 wire          MSSINT_GPI_4_Y;
 wire          net_71;
@@ -186,7 +190,7 @@ assign MSS_SPI_0_SS_D[0] = SPI0SSO_net_0[0:0];
 //--------------------------------------------------------------------
 // Concatenation assignments
 //--------------------------------------------------------------------
-assign GPI_net_0 = { 27'h0000000 , MSSINT_GPI_4_Y , 1'b0 , MSSINT_GPI_2_Y , 1'b0 , MSSINT_GPI_0_Y };
+assign GPI_net_0 = { 27'h0000000 , MSSINT_GPI_4_Y , 1'b0 , MSSINT_GPI_2_Y , MSSINT_GPI_1_Y , MSSINT_GPI_0_Y };
 //--------------------------------------------------------------------
 // Component instances
 //--------------------------------------------------------------------
@@ -578,6 +582,14 @@ MSSINT MSSINT_GPI_0(
         .A ( F2M_GPI_0 ),
         // Outputs
         .Y ( MSSINT_GPI_0_Y ) 
+        );
+
+//--------MSSINT
+MSSINT MSSINT_GPI_1(
+        // Inputs
+        .A ( F2M_GPI_1 ),
+        // Outputs
+        .Y ( MSSINT_GPI_1_Y ) 
         );
 
 //--------MSSINT

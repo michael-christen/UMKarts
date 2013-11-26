@@ -1,5 +1,5 @@
 # Created by Actel Designer Software 11.0.0.23
-# Mon Nov 25 14:11:07 2013
+# Tue Nov 26 12:17:48 2013
 
 # (OPEN DESIGN)
 
@@ -11,7 +11,7 @@ set_defvar "IDE_DESIGNERVIEW_NAME" {Impl1}
 set_defvar "IDE_DESIGNERVIEW_COUNT" "1"
 set_defvar "IDE_DESIGNERVIEW_REV0" {Impl1}
 set_defvar "IDE_DESIGNERVIEW_REVNUM0" "1"
-set_defvar "IDE_DESIGNERVIEW_ROOTDIR" {C:\Users\mttschlt\eecs373\UMKarts\gc\designer}
+set_defvar "IDE_DESIGNERVIEW_ROOTDIR" {C:\Users\mikechri\Downloads\gc\gc\designer}
 set_defvar "IDE_DESIGNERVIEW_LASTREV" "1"
 
 report -type "timing" -format "TEXT" -analysis "max" -print_summary "yes" -use_slack_threshold "no"                             -print_paths "yes" -max_paths 5 -max_expanded_paths 1                             -max_parallel_paths 1 -include_user_sets "no"                             -include_pin_to_pin "yes" -include_clock_domains "yes"                             -select_clock_domains "no" {gc_maxdelay_timing_report.txt}

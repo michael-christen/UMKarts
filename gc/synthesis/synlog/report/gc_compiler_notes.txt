@@ -1,37 +1,37 @@
 @N|Running in 64-bit mode
-@N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\hdl\APB_IR.v":3:7:3:12|Synthesizing module APB_IR
-@N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v":13:0:13:5|Synthesizing module CAPB3l
-@N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Synthesizing module CoreAPB3
-@N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Clock_gen.v":30:0:30:25|Synthesizing module gc_CoreUARTapb_0_Clock_gen
-@N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Tx_async.v":14:0:14:24|Synthesizing module gc_CoreUARTapb_0_Tx_async
-@N: CG179 :"C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Tx_async.v":794:0:794:8|Removing redundant assignment
-@N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Rx_async.v":14:0:14:24|Synthesizing module gc_CoreUARTapb_0_Rx_async
-@N: CG179 :"C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Rx_async.v":654:0:654:7|Removing redundant assignment
-@N: CL177 :"C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Rx_async.v":1414:0:1414:5|Sharing sequential element CUARTl0l.
-@N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":14:0:14:24|Synthesizing module gc_CoreUARTapb_0_COREUART
-@N: CG179 :"C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":1209:0:1209:7|Removing redundant assignment
-@N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUARTapb.v":14:0:14:27|Synthesizing module gc_CoreUARTapb_0_CoreUARTapb
-@N: CG179 :"C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUARTapb.v":700:0:700:8|Removing redundant assignment
-@N: CG179 :"C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUARTapb.v":776:0:776:8|Removing redundant assignment
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\APB_IR.v":3:7:3:12|Synthesizing module APB_IR
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v":13:0:13:5|Synthesizing module CAPB3l
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Synthesizing module CoreAPB3
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Clock_gen.v":30:0:30:25|Synthesizing module gc_CoreUARTapb_0_Clock_gen
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Tx_async.v":14:0:14:24|Synthesizing module gc_CoreUARTapb_0_Tx_async
+@N: CG179 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Tx_async.v":794:0:794:8|Removing redundant assignment
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Rx_async.v":14:0:14:24|Synthesizing module gc_CoreUARTapb_0_Rx_async
+@N: CG179 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Rx_async.v":654:0:654:7|Removing redundant assignment
+@N: CL177 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Rx_async.v":1414:0:1414:5|Sharing sequential element CUARTl0l.
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":14:0:14:24|Synthesizing module gc_CoreUARTapb_0_COREUART
+@N: CG179 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUART.v":1209:0:1209:7|Removing redundant assignment
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUARTapb.v":14:0:14:27|Synthesizing module gc_CoreUARTapb_0_CoreUARTapb
+@N: CG179 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUARTapb.v":700:0:700:8|Removing redundant assignment
+@N: CG179 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\CoreUARTapb.v":776:0:776:8|Removing redundant assignment
 @N: CG364 :"C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v":2668:7:2668:14|Synthesizing module OUTBUF_A
 @N: CG364 :"C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v":2663:7:2663:13|Synthesizing module INBUF_A
-@N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc_MSS\mss_tshell.v":1:7:1:13|Synthesizing module MSS_APB
-@N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":151:7:151:13|Synthesizing module MSS_CCC
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\mss_tshell.v":1:7:1:13|Synthesizing module MSS_APB
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":151:7:151:13|Synthesizing module MSS_CCC
 @N: CG364 :"C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v":2620:7:2620:11|Synthesizing module RCOSC
 @N: CG364 :"C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v":1141:7:1141:9|Synthesizing module GND
 @N: CG364 :"C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v":1868:7:1868:9|Synthesizing module VCC
-@N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":5:7:5:34|Synthesizing module gc_MSS_tmp_MSS_CCC_0_MSS_CCC
-@N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":23:7:23:15|Synthesizing module INBUF_MSS
-@N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":67:7:67:15|Synthesizing module BIBUF_MSS
-@N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":51:7:51:17|Synthesizing module TRIBUFF_MSS
-@N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":37:7:37:16|Synthesizing module OUTBUF_MSS
-@N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":145:7:145:12|Synthesizing module MSSINT
-@N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc_MSS\gc_MSS.v":9:7:9:12|Synthesizing module gc_MSS
-@N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\hdl\receive.v":1:7:1:16|Synthesizing module gc_receive
-@N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\hdl\receive.v":64:7:64:21|Synthesizing module gc_response_apb
-@N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\hdl\query.v":1:7:1:14|Synthesizing module gc_state
-@N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\hdl\clockdivider.v":3:7:3:13|Synthesizing module clk_div
-@N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\hdl\IR_LED.v":3:7:3:12|Synthesizing module IR_LED
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\MSS_CCC_0\gc_MSS_tmp_MSS_CCC_0_MSS_CCC.v":5:7:5:34|Synthesizing module gc_MSS_tmp_MSS_CCC_0_MSS_CCC
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":23:7:23:15|Synthesizing module INBUF_MSS
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":67:7:67:15|Synthesizing module BIBUF_MSS
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":51:7:51:17|Synthesizing module TRIBUFF_MSS
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":37:7:37:16|Synthesizing module OUTBUF_MSS
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":145:7:145:12|Synthesizing module MSSINT
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\gc_MSS.v":9:7:9:12|Synthesizing module gc_MSS
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":1:7:1:16|Synthesizing module gc_receive
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\receive.v":64:7:64:21|Synthesizing module gc_response_apb
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\query.v":1:7:1:14|Synthesizing module gc_state
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\clockdivider.v":3:7:3:13|Synthesizing module clk_div
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\IR_LED.v":3:7:3:12|Synthesizing module IR_LED
 @N: CG364 :"C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v":1913:7:1913:11|Synthesizing module XNOR3
 @N: CG364 :"C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v":909:7:909:12|Synthesizing module DFN1C0
 @N: CG364 :"C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v":2:7:2:10|Synthesizing module AND2
@@ -47,17 +47,17 @@
 @N: CG364 :"C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v":1353:7:1353:11|Synthesizing module NAND2
 @N: CG364 :"C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v":7:7:7:11|Synthesizing module AND2A
 @N: CG364 :"C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v":981:7:981:12|Synthesizing module DFN1P0
-@N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\smartgen\IR_QUEUE\IR_QUEUE.v":5:7:5:14|Synthesizing module IR_QUEUE
-@N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\hdl\clockdivider.v":3:7:3:13|Synthesizing module clk_div
-@N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\hdl\LED_PULSE.v":2:7:2:15|Synthesizing module LED_PULSE
-@N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\hdl\IR_RECV.v":2:7:2:14|Synthesizing module LED_RECV
-@N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\hdl\motor.v":1:7:1:11|Synthesizing module motor
-@N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\hdl\motorWrapper.v":2:7:2:18|Synthesizing module motorWrapper
-@N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\hdl\query.v":55:7:55:16|Synthesizing module send_query
-@N: CG179 :"C:\Users\mttschlt\eecs373\UMKarts\gc\hdl\query.v":92:11:92:15|Removing redundant assignment
-@N: CL177 :"C:\Users\mttschlt\eecs373\UMKarts\gc\hdl\query.v":98:5:114:49|Sharing sequential element controller_data.
-@N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc\gc.v":9:7:9:8|Synthesizing module gc
-@N: CL201 :"C:\Users\mttschlt\eecs373\UMKarts\gc\hdl\IR_LED.v":57:1:57:6|Trying to extract state machine for register state
-@N: CL201 :"C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Rx_async.v":723:0:723:5|Trying to extract state machine for register CUARTOl0
-@N: CL201 :"C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Tx_async.v":253:0:253:5|Trying to extract state machine for register CUARTO1ll
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\smartgen\IR_QUEUE\IR_QUEUE.v":5:7:5:14|Synthesizing module IR_QUEUE
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\clockdivider.v":3:7:3:13|Synthesizing module clk_div
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\LED_PULSE.v":2:7:2:15|Synthesizing module LED_PULSE
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\IR_RECV.v":2:7:2:14|Synthesizing module LED_RECV
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\motor.v":1:7:1:11|Synthesizing module motor
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\motorWrapper.v":2:7:2:18|Synthesizing module motorWrapper
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\hdl\query.v":55:7:55:16|Synthesizing module send_query
+@N: CG179 :"C:\Users\mikechri\Downloads\gc\gc\hdl\query.v":92:11:92:15|Removing redundant assignment
+@N: CL177 :"C:\Users\mikechri\Downloads\gc\gc\hdl\query.v":98:5:114:49|Sharing sequential element controller_data.
+@N: CG364 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc\gc.v":9:7:9:8|Synthesizing module gc
+@N: CL201 :"C:\Users\mikechri\Downloads\gc\gc\hdl\IR_LED.v":57:1:57:6|Trying to extract state machine for register state
+@N: CL201 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Rx_async.v":723:0:723:5|Trying to extract state machine for register CUARTOl0
+@N: CL201 :"C:\Users\mikechri\Downloads\gc\gc\component\work\gc\CoreUARTapb_0\rtl\vlog\core_obfuscated\Tx_async.v":253:0:253:5|Trying to extract state machine for register CUARTO1ll
 
