@@ -25,6 +25,7 @@
 <option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.cross.cortexm3.exe.debug.option.debugging.level.1651102437" name="Debug Level" superClass="gnu.c.compiler.cross.cortexm3.exe.debug.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
 <option id="gnu.c.compiler.option.include.paths.1731877217" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
 <listOptionValue builtIn="false" value="&quot;${workspace_loc:/xbee_interface}&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gc_MSS_MSS_CM3_0_hw_platform/drivers/mss_uart}&quot;"/>
 <listOptionValue builtIn="false" value="&quot;${workspace_loc:/xbee}&quot;"/>
 </option>
 <option id="gnu.c.compiler.option.preprocessor.def.symbols.1161725310" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">

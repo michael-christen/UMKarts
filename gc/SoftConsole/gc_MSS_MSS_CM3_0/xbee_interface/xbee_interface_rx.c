@@ -18,7 +18,11 @@ static struct {
     XBEE_RX_INPROGRESS,
   } state;
   uint8_t flags;
+  struct xbee_packet error_packet;
 } _xbee_rx;
+
+/* Temporary memory location so that we can read in packets even we are out of memory! */
+static struct xbee_packet xbee_packet_error;
 
 void _xbee_interface_rx_init() {
   CircularBufferInit(&_xbee_rx.circle_buf,
@@ -58,8 +62,8 @@ static void _xbee_interface_rx_handler(mss_uart_instance_t * this_uart) {
       xp = xbee_interface_create_packet(); 
       if (!xp) {
         _xbee_rx.flags |= XBEE_RX_OUTOF_MEMORY;
-        MSS_UART_enable_irq(this_uart, MSS_UART_RBF_IRQ);
-        return;
+        /* Use a temporary packet instead of regular pool to read in out of memory packet */
+        xp = &(_xbee_rx.error_packet);
       }
       XBeeReaderInit(&(_xbee_rx.xr), xp);
       _xbee_rx.state = XBEE_RX_INPROGRESS;
@@ -74,7 +78,10 @@ static void _xbee_interface_rx_handler(mss_uart_instance_t * this_uart) {
     /* Deal with completed packet */
     if (XBeeReaderDone(&(_xbee_rx.xr))) {
       if (XBeeReaderGood(&(_xbee_rx.xr))) {
-        err = CircularBufferWrite(&(_xbee_rx.circle_buf), _xbee_rx.xr.xp);
+    	if (_xbee_rx.xr.xp != &(_xbee_rx.error_packet)) {
+    	  /* Only add non error packets to our write buffer */
+          err = CircularBufferWrite(&(_xbee_rx.circle_buf), _xbee_rx.xr.xp);
+    	}
         /* Error check: Mark error if our circular buffer is full */
         if (err < 0) {
           _xbee_rx.flags |= XBEE_RX_OVERFLOW_PACKET_LOSS;

@@ -12,7 +12,7 @@
 #define  XBEE_XOFF_BYTE     ((uint8_t) 0x13)
 #define  XBEE_XOR_BYTE      ((uint8_t) 0x20)
 
-#define  LOWBYTE(v)         ((uint8_t) (v))
+#define  LOWBYTE(v)         ((uint8_t) (v & 0xff))
 #define  HIGHBYTE(v)        ((uint8_t) (((uint16_t) (v)) >> 8))
 
 #define XBEE_API_AT_COMMAND ((uint8_t) 0x08)
