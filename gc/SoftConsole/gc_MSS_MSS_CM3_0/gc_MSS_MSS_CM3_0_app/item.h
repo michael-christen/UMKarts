@@ -9,6 +9,13 @@
 #define DRIVER MARIO
 
 typedef enum {
+    MARIO,
+    LUIGI,
+    WARIO,
+    PEACH
+} driver;
+
+typedef enum {
     GREEN_SHELL,
     MUSHROOM,
     LIGHTNING,

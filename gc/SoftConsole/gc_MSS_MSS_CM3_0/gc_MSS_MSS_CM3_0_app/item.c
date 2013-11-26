@@ -31,6 +31,48 @@ double ITEM_PROB [MAX_NUM_ITEMS] = {
 
 int TOTAL_WEIGHT = 1000000;
 
+int FAST_SOUND_BEGIN[] = {
+	MARIOFAST_BEGIN,
+	LUIGIFAST_BEGIN,
+	WARIOFAST_BEGIN,
+	PEACHFAST_BEGIN
+};
+
+int FAST_SOUND_END[] = {
+	MARIOFAST_END,
+	LUIGIFAST_END,
+	WARIOFAST_END,
+	PEACHFAST_END
+};
+
+int OW_SOUND_BEGIN[] = {
+	MARIOOW_BEGIN,
+	LUIGIOW_BEGIN,
+	WARIOOW_BEGIN,
+	PEACHOW_BEGIN
+};
+
+int OW_SOUND_END[] = {
+	MARIOOW_END,
+	LUIGIOW_END,
+	WARIOOW_END,
+	PEACHOW_END
+};
+
+int SUCCESS_SOUND_BEGIN[] = {
+	MARIOSUCCESS_BEGIN,
+	LUIGISUCCESS_BEGIN,
+	WARIOSUCCESS_BEGIN,
+	PEACHSUCCESS_BEGIN
+};
+
+int SUCCESS_SOUND_END[] = {
+	MARIOSUCCESS_END,
+	LUIGISUCCESS_END,
+	WARIOSUCCESS_END,
+	PEACHSUCCESS_END
+};
+
 //Requires all probs to sum to 1
 void initItemWeights() {
     /*
@@ -90,7 +132,7 @@ void use_green_shell() {
 	LASER_TAG_shoot();
 }
 void use_mushroom() {
-	sound_play(MARIOFAST_BEGIN, MARIOFAST_END);
+	sound_play(FAST_SOUND_BEGIN[DRIVER], FAST_SOUND_END[DRIVER]);
 }
 void use_lightning() {
 	sound_play(LIGHTNING_BEGIN, LIGHTNING_END);
@@ -99,7 +141,7 @@ void use_lightning() {
 void hit_green_shell() {
 	uint8_t opId = LASER_TAG_hit();
 	printf("He shot me, %d\r\n", opId);
-	sound_play(MARIOOW_BEGIN, MARIOOW_END);
+	sound_play(OW_SOUND_BEGIN[DRIVER], OW_SOUND_END[DRIVER]);
 }
 void hit_mushroom() {
 }
