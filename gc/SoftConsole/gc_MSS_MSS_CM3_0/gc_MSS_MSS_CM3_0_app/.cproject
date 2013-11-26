@@ -79,6 +79,9 @@
 <tool id="cdt.managedbuild.tool.gnu.objdump.cross.cortexm3.lst.debug.541279749" name="GNU Listing Generator" superClass="cdt.managedbuild.tool.gnu.objdump.cross.cortexm3.lst.debug"/>
 </toolChain>
 </folderInfo>
+<sourceEntries>
+<entry excluding="vtimer.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+</sourceEntries>
 </configuration>
 </storageModule>
 <storageModule moduleId="scannerConfiguration">

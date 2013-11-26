@@ -12829,7 +12829,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <instance part="C10" gate="G$1" x="284.48" y="45.72"/>
 <instance part="C11" gate="G$1" x="292.1" y="45.72"/>
 <instance part="C12" gate="G$1" x="299.72" y="45.72"/>
-<instance part="R9" gate="G$1" x="228.6" y="2.54" rot="R180"/>
+<instance part="R9" gate="G$1" x="218.44" y="2.54" rot="R180"/>
 <instance part="R10" gate="G$1" x="106.68" y="33.02" rot="R180"/>
 <instance part="R11" gate="G$1" x="106.68" y="22.86"/>
 <instance part="R12" gate="G$1" x="111.76" y="17.78" rot="R180"/>
@@ -13772,7 +13772,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <net name="LSERVO" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="233.68" y1="2.54" x2="246.38" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="2.54" x2="246.38" y2="2.54" width="0.1524" layer="91"/>
 <label x="243.84" y="2.54" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -13891,7 +13891,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <segment>
 <pinref part="H-BRIDGE1" gate="L298" pin="OUT3"/>
 <pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="200.66" y1="2.54" x2="223.52" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="2.54" x2="213.36" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MSS_GPIO_5" class="0">

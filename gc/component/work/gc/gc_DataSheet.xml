@@ -12,7 +12,7 @@
     <project-description>
     </project-description>
     <location>C:/Users/mikechri/Downloads/gc/gc/component/work/gc</location>
-    <state>GENERATED ( Tue Nov 26 12:14:13 2013 )</state>
+    <state>GENERATED ( Tue Nov 26 14:35:58 2013 )</state>
     <swide-toolchain>SoftConsole workspace generated to C:\Users\mikechri\Downloads\gc\gc\SoftConsole</swide-toolchain>
   </project-settings>
   <site-map>
@@ -47,7 +47,7 @@
   </fileset>
   <fileset>
     <name>Flash Memory File(s)</name>
-    <file>C:\Users\mikechri\Downloads\gc\gc\component\work\C:/Users/mikechri/Downloads/gc/gc/component/work/gc_MSS/MSS_ENVM_0/MSS_ENVM_0.efc</file>
+    <file>C:\Users\mikechri\Downloads\gc\gc\component\work\./MSS_ENVM_0/MSS_ENVM_0.efc</file>
   </fileset>
   <io>
     <port-name>LED_RECV_IN</port-name>
@@ -110,8 +110,8 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>controller_data</port-name>
-    <direction>OUT</direction>
+    <port-name>F2M_GPI_1</port-name>
+    <direction>IN</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
@@ -170,8 +170,8 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>F2M_GPI_1</port-name>
-    <direction>IN</direction>
+    <port-name>controller_data</port-name>
+    <direction>INOUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
