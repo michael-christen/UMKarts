@@ -2,24 +2,24 @@ EAGLE AutoRouter Statistics:
 
 Job           : C:/Users/mikechri/Downloads/gc/pcb/official.brd
 
-Start at      : 17:43:01 (11/20/2013)
-End at        : 17:43:01 (11/20/2013)
-Elapsed time  : 00:00:00
+Start at      : 22:01:04 (11/25/2013)
+End at        : 22:01:06 (11/25/2013)
+Elapsed time  : 00:00:02
 
-Signals       :    67   RoutingGrid: 50 mil  Layers: 2
-Connections   :   111   predefined:  0 ( 0 Vias )
+Signals       :    79   RoutingGrid: 25 mil  Layers: 2
+Connections   :   164   predefined:  8 ( 0 Vias )
 
-Router memory :   21780
+Router memory :   62832
 
-Passname          :    Busses     Route Optimize1 Optimize2 Optimize3 Optimize4
+Passname          :    Busses     Route
 
-Time per pass     :  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00
-Number of Ripups  :         0         0         0         0         0         0
-max. Level        :         0         0         0         0         0         0
-max. Total        :         0         0         0         0         0         0
+Time per pass     :  00:00:00  00:00:02
+Number of Ripups  :         0        22
+max. Level        :         0         2
+max. Total        :         0        33
 
-Routed            :        16        40        40        40        40        40
-Vias              :         0        26         6         1         0         1
-Resolution        :    14.4 %    36.0 %    36.0 %    36.0 %    36.0 %    36.0 %
+Routed            :        21       118
+Vias              :         0       214
+Resolution        :    17.7 %    76.8 %
 
-Final             : 36.0% finished
+Final             : 100.0% finished

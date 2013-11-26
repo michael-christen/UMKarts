@@ -7,7 +7,7 @@
 #include <stddef.h>
 
 typedef struct {
-  void ** volatile buffer;
+  void ** buffer;
   size_t len;
   size_t read;
   size_t write;

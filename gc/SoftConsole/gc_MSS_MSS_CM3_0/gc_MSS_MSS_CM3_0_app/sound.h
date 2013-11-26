@@ -16,4 +16,8 @@ void sound_init();
 
 void sound_play(uint32_t begin, uint32_t end);
 
+void sound_play_repeat(uint32_t begin, uint32_t end);
+
+void sound_stop();
+
 #endif /* SOUND_H_ */

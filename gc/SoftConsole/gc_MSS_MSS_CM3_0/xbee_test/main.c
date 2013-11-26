@@ -28,6 +28,9 @@ int main() {
 		if (err != 0) {
 			printf("Error sending packet: %d\r\n", err);
 		}
+		else {
+			printf("Packet sent!\n\r");
+		}
 		for (i = 0; i < 1000; i++) ;
 	}
 
