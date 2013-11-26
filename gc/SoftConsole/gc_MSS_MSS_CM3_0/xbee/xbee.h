@@ -4,6 +4,7 @@
 
 /* MAX_XBEE_PACKET_SIZE given on page 11 of of XBEE 802.15.4 spec */
 /* 100 Bytes payload + 14 bytes overhead possible */
+/* TODO: Check the xbee spec, see if we can make packet size even bigger for printf */
 #define MAX_XBEE_PAYLOAD_SIZE 114
 #define MAX_XBEE_TX_PAYLOAD_SIZE 100
 
