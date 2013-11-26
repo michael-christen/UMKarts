@@ -1,6 +1,7 @@
 #include "item.h"
 #include "sound.h"
 #include "sound_samples.h"
+#include "drivers/mss_rtc/mss_rtc.h"
 
 int ITEM_WEIGHT [MAX_NUM_ITEMS];
 item CURRENT_ITEM = MAX_NUM_ITEMS;
@@ -75,6 +76,9 @@ int SUCCESS_SOUND_END[] = {
 
 //Requires all probs to sum to 1
 void initItemWeights() {
+	MSS_RTC_init();
+	MSS_RTC_start();
+
     /*
     int i, weight_bottom = 1, weight_top = 100000;
     double epsilon = 0.0001;
@@ -90,7 +94,7 @@ void initItemWeights() {
 }
 
 item getNewItem() {
-	//srand(time(NULL));
+	srand((uint32_t) MSS_RTC_get_rtc_count());
     int rChoice = rand() % TOTAL_WEIGHT;
     int i;
     for(i=0; i < MAX_NUM_ITEMS; ++i) {
