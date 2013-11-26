@@ -133,10 +133,12 @@ int main()
                         MOTOR_set_servo_direction(0);
                 }
 
-                if (CONTROLLER->y) {
-                	sound_play(8000, 16000);
+                if (CONTROLLER->l) {
+                	useCurrentItem();
                 } else if (CONTROLLER->x) {
-                	sound_play(100000,130000);
+                	handleItemGrab();
+                } else if (CONTROLLER->y) {
+                	use_green_shell();
                 }
 
                 //for (d = 0; d < 1000000; d++);
