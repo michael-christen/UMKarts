@@ -78,6 +78,7 @@ int SUCCESS_SOUND_END[] = {
 void initItemWeights() {
 	MSS_RTC_init();
 	MSS_RTC_start();
+	srand((uint32_t) MSS_RTC_get_rtc_count());
 
     /*
     int i, weight_bottom = 1, weight_top = 100000;
@@ -94,7 +95,6 @@ void initItemWeights() {
 }
 
 item getNewItem() {
-	srand((uint32_t) MSS_RTC_get_rtc_count());
     int rChoice = rand() % TOTAL_WEIGHT;
     int i;
     for(i=0; i < MAX_NUM_ITEMS; ++i) {
