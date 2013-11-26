@@ -21,9 +21,6 @@ static struct {
   struct xbee_packet error_packet;
 } _xbee_rx;
 
-/* Temporary memory location so that we can read in packets even we are out of memory! */
-static struct xbee_packet xbee_packet_error;
-
 void _xbee_interface_rx_init() {
   CircularBufferInit(&_xbee_rx.circle_buf,
                      _xbee_rx.circle_buf_mem,
