@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -23,17 +23,17 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -104,48 +104,51 @@
 <wire x1="0" y1="36.926" x2="0" y2="0" width="0.127" layer="20"/>
 <circle x="9.525" y="21.082" radius="0.127" width="0.762" layer="21"/>
 <circle x="9.525" y="23.622" radius="0.127" width="0.762" layer="21"/>
-<text x="13.462" y="4.064" size="1.778" layer="21" font="vector" ratio="15" rot="R90">5V</text>
-<text x="16.002" y="4.064" size="1.778" layer="21" font="vector" ratio="15" rot="R90">3.3V</text>
 <text x="3.302" y="4.064" size="1.778" layer="21" font="vector" ratio="15" rot="R90">DGND</text>
 <text x="5.842" y="4.064" size="1.778" layer="21" font="vector" ratio="15" rot="R90">DGND</text>
-<text x="31.242" y="4.064" size="1.778" layer="21" font="vector" ratio="15" rot="R90">MSS0</text>
-<text x="33.782" y="4.064" size="1.778" layer="21" font="vector" ratio="15" rot="R90">MSS1</text>
-<text x="36.322" y="4.064" size="1.778" layer="21" font="vector" ratio="15" rot="R90">MSS2</text>
-<text x="38.862" y="4.064" size="1.778" layer="21" font="vector" ratio="15" rot="R90">MSS3</text>
-<text x="41.402" y="4.064" size="1.778" layer="21" font="vector" ratio="15" rot="R90">MSS4</text>
-<text x="43.942" y="4.064" size="1.778" layer="21" font="vector" ratio="15" rot="R90">MSS5</text>
-<text x="46.482" y="4.064" size="1.778" layer="21" font="vector" ratio="15" rot="R90">MSS6</text>
-<text x="49.022" y="4.064" size="1.778" layer="21" font="vector" ratio="15" rot="R90">MSS7</text>
-<text x="51.562" y="4.064" size="1.778" layer="21" font="vector" ratio="15" rot="R90">MSS8</text>
-<text x="54.102" y="4.064" size="1.778" layer="21" font="vector" ratio="15" rot="R90">MSS9</text>
-<text x="56.642" y="4.064" size="1.778" layer="21" font="vector" ratio="15" rot="R90">MSS10</text>
-<text x="59.182" y="4.064" size="1.778" layer="21" font="vector" ratio="15" rot="R90">MSS11</text>
-<text x="61.722" y="4.064" size="1.778" layer="21" font="vector" ratio="15" rot="R90">MSS12</text>
-<text x="64.262" y="4.064" size="1.778" layer="21" font="vector" ratio="15" rot="R90">MSS13</text>
-<text x="66.802" y="4.064" size="1.778" layer="21" font="vector" ratio="15" rot="R90">MSS14</text>
-<text x="69.342" y="4.064" size="1.778" layer="21" font="vector" ratio="15" rot="R90">MSS15</text>
-<text x="28.702" y="4.064" size="1.778" layer="21" font="vector" ratio="15" rot="R90">DGND</text>
-<text x="71.882" y="4.064" size="1.778" layer="21" font="vector" ratio="15" rot="R90">DGND</text>
 <text x="122.682" y="4.064" size="1.778" layer="21" font="vector" ratio="15" rot="R90">9</text>
 <text x="48.26" y="17.78" size="1.778" layer="25">UMKARTS EECS 373 Car Board</text>
 <text x="48.26" y="15.24" size="1.778" layer="25">Nov. 25  '13     Christen</text>
-<text x="81.28" y="2.54" size="1.778" layer="25" rot="R90">LMOTOR</text>
-<text x="83.82" y="2.54" size="1.778" layer="25" rot="R90">RMOTOR</text>
-<text x="86.36" y="2.54" size="1.778" layer="25" rot="R90">LSERVO</text>
-<text x="88.9" y="2.54" size="1.778" layer="25" rot="R90">RSERVO</text>
-<text x="91.44" y="2.54" size="1.778" layer="25" rot="R90">REF_IN</text>
-<text x="93.98" y="2.54" size="1.778" layer="25" rot="R90">REF_OUT</text>
-<text x="96.52" y="2.54" size="1.778" layer="25" rot="R90">IR_IN</text>
-<text x="99.06" y="2.54" size="1.778" layer="25" rot="R90">IR_OUT</text>
-<text x="101.6" y="2.54" size="1.778" layer="25" rot="R90">LCD_SIG</text>
-<text x="104.14" y="2.54" size="1.778" layer="25" rot="R90">GC_SIG</text>
-<text x="106.68" y="2.54" size="1.778" layer="25" rot="R90">SPKR</text>
-<text x="109.22" y="2.54" size="1.778" layer="25" rot="R90">MAG_S</text>
-<text x="111.76" y="2.54" size="1.778" layer="25" rot="R90">XB_RX</text>
-<text x="114.3" y="2.54" size="1.778" layer="25" rot="R90">XB_TX</text>
-<text x="116.84" y="2.54" size="1.778" layer="25" rot="R90">XB_CTS</text>
-<text x="119.38" y="2.54" size="1.778" layer="25" rot="R90">XB_RTS</text>
-<text x="121.92" y="2.54" size="1.778" layer="25" rot="R90">XB_RTR</text>
+<text x="58.42" y="2.54" size="1.778" layer="25" rot="R90">LMOTOR</text>
+<text x="60.96" y="2.54" size="1.778" layer="25" rot="R90">RMOTOR</text>
+<text x="63.5" y="2.54" size="1.778" layer="25" rot="R90">LSERVO</text>
+<text x="66.04" y="2.54" size="1.778" layer="25" rot="R90">RSERVO</text>
+<text x="68.58" y="2.54" size="1.778" layer="25" rot="R90">REF_IN</text>
+<text x="71.12" y="2.54" size="1.778" layer="25" rot="R90">REF_OUT</text>
+<text x="73.66" y="2.54" size="1.778" layer="25" rot="R90">IR_IN</text>
+<text x="76.2" y="2.54" size="1.778" layer="25" rot="R90">IR_OUT</text>
+<text x="78.74" y="2.54" size="1.778" layer="25" rot="R90">LCD_SIG</text>
+<text x="81.28" y="2.54" size="1.778" layer="25" rot="R90">GC_SIG</text>
+<text x="83.82" y="2.54" size="1.778" layer="25" rot="R90">SPKR</text>
+<text x="86.36" y="2.54" size="1.778" layer="25" rot="R90">MAG_S</text>
+<text x="88.9" y="2.54" size="1.778" layer="25" rot="R90">XB_RX</text>
+<text x="91.44" y="2.54" size="1.778" layer="25" rot="R90">XB_TX</text>
+<text x="93.98" y="2.54" size="1.778" layer="25" rot="R90">XB_CTS</text>
+<text x="96.52" y="2.54" size="1.778" layer="25" rot="R90">XB_RTS</text>
+<text x="99.06" y="2.54" size="1.778" layer="25" rot="R90">XB_RTR</text>
+<text x="121.92" y="2.54" size="1.778" layer="25" rot="R90">MSS15</text>
+<text x="119.38" y="2.54" size="1.778" layer="25" rot="R90">MSS14</text>
+<text x="116.84" y="2.54" size="1.778" layer="25" rot="R90">MSS13</text>
+<text x="114.3" y="2.54" size="1.778" layer="25" rot="R90">MSS12</text>
+<text x="111.76" y="2.54" size="1.778" layer="25" rot="R90">MSS11</text>
+<text x="109.22" y="2.54" size="1.778" layer="25" rot="R90">MSS10</text>
+<text x="106.68" y="2.54" size="1.778" layer="25" rot="R90">MSS9</text>
+<text x="104.14" y="2.54" size="1.778" layer="25" rot="R90">MSS8</text>
+<text x="101.6" y="2.54" size="1.778" layer="25" rot="R90">MSS7</text>
+<text x="55.88" y="2.54" size="1.778" layer="25" rot="R90">V3.3</text>
+<text x="53.34" y="2.54" size="1.778" layer="25" rot="R90">V3.3</text>
+<text x="50.8" y="2.54" size="1.778" layer="25" rot="R90">GND</text>
+<text x="48.26" y="2.54" size="1.778" layer="25" rot="R90">GND</text>
+<text x="45.72" y="2.54" size="1.778" layer="25" rot="R90">GND</text>
+<text x="43.18" y="2.54" size="1.778" layer="25" rot="R90">GND</text>
+<text x="40.64" y="2.54" size="1.778" layer="25" rot="R90">V12.8</text>
+<text x="38.1" y="2.54" size="1.778" layer="25" rot="R90">GND</text>
+<text x="35.56" y="2.54" size="1.778" layer="25" rot="R90">GND</text>
+<text x="33.02" y="2.54" size="1.778" layer="25" rot="R90">V7.2</text>
+<text x="30.48" y="2.54" size="1.778" layer="25" rot="R90">V5</text>
+<text x="27.94" y="2.54" size="1.778" layer="25" rot="R90">V5</text>
+<text x="15.24" y="2.54" size="1.778" layer="25" rot="R90">V5</text>
+<text x="12.7" y="2.54" size="1.778" layer="25" rot="R90">V5</text>
 </plain>
 <libraries>
 <library name="EECS370">
@@ -1666,42 +1669,38 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <element name="R1" library="rcl" package="0207/12" value="2.2K" x="102.87" y="15.24" rot="R270"/>
 <element name="R3" library="rcl" package="0309/12" value="10k" x="81.28" y="19.05"/>
 <element name="R4" library="rcl" package="0309/12" value="10K" x="81.28" y="16.51"/>
-<element name="H-BRIDGE1" library="st-microelectronics" package="MULTIWATT-15" value="L298" x="5.08" y="21.59" rot="R90">
-<attribute name="OC_NEWARK" value="32M1527" x="57.15" y="-2.54" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="L298N" x="57.15" y="-2.54" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="" x="57.15" y="-2.54" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_FARNELL" value="1589425" x="57.15" y="-2.54" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="H-BRIDGE1" library="st-microelectronics" package="MULTIWATT-15" value="L298" x="44.45" y="-31.75" rot="R180">
+<attribute name="OC_NEWARK" value="32M1527" x="68.58" y="20.32" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="L298N" x="68.58" y="20.32" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="68.58" y="20.32" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_FARNELL" value="1589425" x="68.58" y="20.32" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R6" library="rcl" package="0309/12" value="200" x="8.89" y="13.97"/>
-<element name="R7" library="rcl" package="0309/12" value="10k" x="101.6" y="5.08"/>
-<element name="R2" library="rcl" package="0207/12" value="" x="25.4" y="34.29" rot="R180"/>
-<element name="OPAMP" library="linear" package="DIL08" value="LM386N-4" x="33.02" y="19.05" rot="R270"/>
-<element name="C13" library="rcl" package="C075-032X103" value="" x="20.32" y="20.32" rot="R270"/>
-<element name="C14" library="rcl" package="C025-025X050" value="" x="25.4" y="17.78" rot="R90"/>
-<element name="R5" library="rcl" package="0207/12" value="" x="25.4" y="31.75"/>
+<element name="R2" library="rcl" package="0207/12" value="" x="96.52" y="-13.97" rot="R180"/>
+<element name="OPAMP" library="linear" package="DIL08" value="LM386N-4" x="109.22" y="-19.05" rot="R270"/>
+<element name="C13" library="rcl" package="C075-032X103" value="" x="96.52" y="-21.59" rot="R180"/>
+<element name="C14" library="rcl" package="C025-025X050" value="" x="111.76" y="-11.43" rot="R180"/>
+<element name="R5" library="rcl" package="0207/12" value="" x="96.52" y="-17.78"/>
 <element name="C15" library="rcl" package="B45181B" value="" x="44.45" y="13.97"/>
-<element name="VREG" library="linear" package="TO220H" value="7806T" x="128.27" y="8.89" rot="R270"/>
+<element name="VREG" library="linear" package="TO220H" value="7806T" x="33.02" y="20.32"/>
 <element name="C7" library="rcl" package="B45181B" value="" x="109.22" y="25.4" rot="R90"/>
 <element name="C8" library="rcl" package="B45181B" value="" x="114.3" y="25.4" rot="R90"/>
 <element name="C9" library="rcl" package="B45181B" value="" x="119.38" y="25.4" rot="R90"/>
 <element name="C10" library="rcl" package="B45181B" value="" x="119.38" y="17.78" rot="R90"/>
 <element name="C11" library="rcl" package="B45181B" value="" x="114.3" y="17.78" rot="R90"/>
 <element name="C12" library="rcl" package="B45181B" value="" x="109.22" y="17.78" rot="R90"/>
-<element name="R8" library="rcl" package="0309/12" value="750" x="10.16" y="7.62"/>
-<element name="R9" library="rcl" package="0309/12" value="10" x="10.16" y="3.81"/>
+<element name="R9" library="rcl" package="0309/12" value="10" x="26.67" y="-16.51"/>
+<element name="R10" library="rcl" package="0309/12" value="200" x="5.08" y="-7.62"/>
+<element name="R11" library="rcl" package="0309/12" value="10k" x="67.31" y="-17.78" rot="R180"/>
+<element name="R12" library="rcl" package="0309/12" value="750" x="6.35" y="-2.54"/>
 </elements>
 <signals>
 <signal name="F2-200-IO_0">
 <contactref element="P1" pad="P$27"/>
-<contactref element="P11" pad="30"/>
-<wire x1="56.655" y1="35.918" x2="95.25" y2="1.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MSS_GP_IO_0">
 <contactref element="P1" pad="P$7"/>
-<contactref element="P11" pad="35"/>
-<contactref element="R8" pad="2"/>
-<wire x1="43.955" y1="35.918" x2="107.95" y2="1.27" width="0" layer="19" extent="1-1"/>
-<wire x1="16.51" y1="7.62" x2="43.955" y2="35.918" width="0" layer="19" extent="1-1"/>
+<contactref element="R12" pad="2"/>
+<wire x1="12.7" y1="-2.54" x2="43.955" y2="35.918" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MSS_GP_IO_1">
 <contactref element="P1" pad="P$8"/>
@@ -1712,41 +1711,33 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 </signal>
 <signal name="MSS_GP_IO_2">
 <contactref element="P1" pad="P$9"/>
-<contactref element="P11" pad="36"/>
-<wire x1="45.225" y1="35.918" x2="110.49" y2="1.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MSS_GP_IO_3">
 <contactref element="P1" pad="P$10"/>
-<contactref element="P11" pad="37"/>
-<wire x1="45.225" y1="31.938" x2="113.03" y2="1.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MSS_GP_IO_4">
 <contactref element="P1" pad="P$11"/>
-<contactref element="P11" pad="38"/>
-<wire x1="46.495" y1="35.918" x2="115.57" y2="1.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MSS_GP_IO_5">
 <contactref element="P1" pad="P$13"/>
 </signal>
 <signal name="F2-200-IO_1">
 <contactref element="P1" pad="P$29"/>
-<contactref element="P11" pad="31"/>
-<wire x1="57.925" y1="35.918" x2="97.79" y2="1.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="F2-200-IO_4">
 <contactref element="P1" pad="P$33"/>
 <contactref element="H-BRIDGE1" pad="6"/>
-<wire x1="7.62" y1="19.05" x2="60.465" y2="35.918" width="0" layer="19" extent="1-1"/>
+<wire x1="46.99" y1="-29.21" x2="60.465" y2="35.918" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="F2-200-IO_5">
 <contactref element="P1" pad="P$34"/>
 <contactref element="H-BRIDGE1" pad="5"/>
-<wire x1="12.7" y1="17.78" x2="60.465" y2="31.938" width="0" layer="19" extent="1-1"/>
+<wire x1="48.26" y1="-24.13" x2="60.465" y2="31.938" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="F2-200-IO_6">
 <contactref element="P1" pad="P$35"/>
 <contactref element="H-BRIDGE1" pad="7"/>
-<wire x1="12.7" y1="20.32" x2="61.735" y2="35.918" width="0" layer="19" extent="1-1"/>
+<wire x1="45.72" y1="-24.13" x2="61.735" y2="35.918" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VDD3.3">
 <contactref element="P1" pad="P$97"/>
@@ -1759,21 +1750,21 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <vertex x="103.632" y="30.226"/>
 <vertex x="100.584" y="30.226"/>
 </polygon>
-<contactref element="R7" pad="2"/>
 <contactref element="C10" pad="+"/>
 <contactref element="C11" pad="+"/>
 <contactref element="C12" pad="+"/>
 <contactref element="P11" pad="14"/>
+<contactref element="R11" pad="2"/>
 <wire x1="114.3" y1="15.24" x2="119.38" y2="15.24" width="0" layer="19" extent="1-1"/>
 <wire x1="109.22" y1="15.24" x2="114.3" y2="15.24" width="0" layer="19" extent="1-1"/>
-<wire x1="107.95" y1="5.08" x2="109.22" y2="15.24" width="0" layer="19" extent="1-1"/>
 <wire x1="102.375" y1="31.938" x2="109.22" y2="15.24" width="0" layer="19" extent="1-1"/>
-<wire x1="54.61" y1="1.27" x2="107.95" y2="5.08" width="0" layer="19" extent="1-1"/>
+<wire x1="54.61" y1="1.27" x2="101.105" y2="31.938" width="0" layer="19" extent="1-1"/>
+<wire x1="60.96" y1="-17.78" x2="54.61" y2="1.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="F2-200-IO_7">
 <contactref element="P1" pad="P$37"/>
 <contactref element="H-BRIDGE1" pad="10"/>
-<wire x1="7.62" y1="24.13" x2="63.005" y2="35.918" width="0" layer="19" extent="1-1"/>
+<wire x1="41.91" y1="-29.21" x2="63.005" y2="35.918" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DGND">
 <contactref element="P1" pad="P$5"/>
@@ -1816,10 +1807,13 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="109.22" y1="20.32" x2="114.3" y2="20.32" width="0" layer="19" extent="1-1"/>
 <wire x1="99.835" y1="31.938" x2="109.22" y2="27.94" width="0" layer="19" extent="1-1"/>
 <wire x1="99.835" y1="35.918" x2="99.835" y2="31.938" width="0" layer="19" extent="1-1"/>
-<wire x1="118.11" y1="8.89" x2="119.38" y2="20.32" width="0" layer="19" extent="1-1"/>
 <wire x1="91.44" y1="21.59" x2="99.835" y2="31.938" width="0" layer="19" extent="1-1"/>
 <wire x1="91.44" y1="13.97" x2="91.44" y2="21.59" width="0" layer="19" extent="1-1"/>
 <wire x1="99.06" y1="11.43" x2="91.44" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="102.87" y1="-13.97" x2="99.06" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="102.87" y1="-17.78" x2="102.87" y2="-13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="105.41" y1="-17.78" x2="102.87" y2="-17.78" width="0" layer="19" extent="1-1"/>
+<wire x1="105.41" y1="-22.86" x2="105.41" y2="-17.78" width="0" layer="19" extent="1-1"/>
 <wire x1="65.545" y1="31.938" x2="91.44" y2="21.59" width="0" layer="19" extent="1-1"/>
 <wire x1="61.735" y1="31.938" x2="65.545" y2="31.938" width="0" layer="19" extent="1-1"/>
 <wire x1="65.545" y1="35.918" x2="65.545" y2="31.938" width="0" layer="19" extent="1-1"/>
@@ -1831,14 +1825,11 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="46.495" y1="31.938" x2="49.035" y2="35.918" width="0" layer="19" extent="1-1"/>
 <wire x1="42.685" y1="31.938" x2="46.495" y2="31.938" width="0" layer="19" extent="1-1"/>
 <wire x1="42.685" y1="35.918" x2="42.685" y2="31.938" width="0" layer="19" extent="1-1"/>
-<wire x1="31.75" y1="31.75" x2="42.685" y2="31.938" width="0" layer="19" extent="1-1"/>
-<wire x1="31.75" y1="34.29" x2="31.75" y2="31.75" width="0" layer="19" extent="1-1"/>
-<wire x1="29.21" y1="20.32" x2="31.75" y2="31.75" width="0" layer="19" extent="1-1"/>
-<wire x1="29.21" y1="15.24" x2="29.21" y2="20.32" width="0" layer="19" extent="1-1"/>
-<wire x1="12.7" y1="12.7" x2="29.21" y2="15.24" width="0" layer="19" extent="1-1"/>
-<wire x1="7.62" y1="21.59" x2="12.7" y2="12.7" width="0" layer="19" extent="1-1"/>
-<wire x1="12.7" y1="30.48" x2="7.62" y2="21.59" width="0" layer="19" extent="1-1"/>
-<wire x1="41.91" y1="1.27" x2="29.21" y2="15.24" width="0" layer="19" extent="1-1"/>
+<wire x1="33.02" y1="10.16" x2="42.685" y2="31.938" width="0" layer="19" extent="1-1"/>
+<wire x1="41.91" y1="1.27" x2="33.02" y2="10.16" width="0" layer="19" extent="1-1"/>
+<wire x1="35.56" y1="-24.13" x2="41.91" y2="1.27" width="0" layer="19" extent="1-1"/>
+<wire x1="44.45" y1="-29.21" x2="35.56" y2="-24.13" width="0" layer="19" extent="1-1"/>
+<wire x1="53.34" y1="-24.13" x2="44.45" y2="-29.21" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DACOUT0">
 <contactref element="P1" pad="P$45"/>
@@ -1846,7 +1837,7 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <signal name="DACOUT1">
 <contactref element="P1" pad="P$46"/>
 <contactref element="C13" pad="2"/>
-<wire x1="20.32" y1="16.51" x2="68.085" y2="31.938" width="0" layer="19" extent="1-1"/>
+<wire x1="92.71" y1="-21.59" x2="68.085" y2="31.938" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC10">
 <contactref element="P1" pad="P$89"/>
@@ -1923,87 +1914,67 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <contactref element="R1" pad="2"/>
 <contactref element="R3" pad="1"/>
 <contactref element="R4" pad="1"/>
-<contactref element="R6" pad="1"/>
 <contactref element="VREG" pad="3"/>
 <contactref element="C9" pad="+"/>
 <contactref element="C8" pad="+"/>
 <contactref element="C7" pad="+"/>
-<contactref element="R8" pad="1"/>
 <contactref element="P11" pad="4"/>
+<contactref element="R10" pad="1"/>
+<contactref element="R12" pad="1"/>
 <wire x1="114.3" y1="22.86" x2="119.38" y2="22.86" width="0" layer="19" extent="1-1"/>
 <wire x1="109.22" y1="22.86" x2="114.3" y2="22.86" width="0" layer="19" extent="1-1"/>
 <wire x1="99.06" y1="19.05" x2="109.22" y2="22.86" width="0" layer="19" extent="1-1"/>
 <wire x1="102.87" y1="8.89" x2="99.06" y2="19.05" width="0" layer="19" extent="1-1"/>
-<wire x1="118.11" y1="6.35" x2="102.87" y2="8.89" width="0" layer="19" extent="1-1"/>
 <wire x1="74.93" y1="19.05" x2="99.06" y2="19.05" width="0" layer="19" extent="1-1"/>
 <wire x1="74.93" y1="16.51" x2="74.93" y2="19.05" width="0" layer="19" extent="1-1"/>
 <wire x1="41.415" y1="31.938" x2="74.93" y2="19.05" width="0" layer="19" extent="1-1"/>
-<wire x1="12.7" y1="25.4" x2="40.145" y2="31.938" width="0" layer="19" extent="1-1"/>
-<wire x1="12.7" y1="22.86" x2="12.7" y2="25.4" width="0" layer="19" extent="1-1"/>
-<wire x1="2.54" y1="13.97" x2="12.7" y2="22.86" width="0" layer="19" extent="1-1"/>
-<wire x1="3.81" y1="7.62" x2="2.54" y2="13.97" width="0" layer="19" extent="1-1"/>
-<wire x1="11.43" y1="1.27" x2="3.81" y2="7.62" width="0" layer="19" extent="1-1"/>
-<wire x1="29.21" y1="1.27" x2="11.43" y2="1.27" width="0" layer="19" extent="1-1"/>
+<wire x1="35.56" y1="10.16" x2="40.145" y2="31.938" width="0" layer="19" extent="1-1"/>
+<wire x1="29.21" y1="1.27" x2="35.56" y2="10.16" width="0" layer="19" extent="1-1"/>
+<wire x1="11.43" y1="1.27" x2="29.21" y2="1.27" width="0" layer="19" extent="1-1"/>
+<wire x1="0" y1="-2.54" x2="11.43" y2="1.27" width="0" layer="19" extent="1-1"/>
+<wire x1="-1.27" y1="-7.62" x2="0" y2="-2.54" width="0" layer="19" extent="1-1"/>
+<wire x1="40.64" y1="-24.13" x2="29.21" y2="1.27" width="0" layer="19" extent="1-1"/>
+<wire x1="43.18" y1="-24.13" x2="40.64" y2="-24.13" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MSS_GP_IO_6">
 <contactref element="P1" pad="P$14"/>
 </signal>
 <signal name="MSS_GP_IO_7">
 <contactref element="P1" pad="P$16"/>
-<contactref element="P11" pad="15"/>
-<wire x1="57.15" y1="1.27" x2="49.035" y2="31.938" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MSS_GP_IO_9">
 <contactref element="P1" pad="P$18"/>
-<contactref element="P11" pad="17"/>
-<wire x1="62.23" y1="1.27" x2="50.305" y2="31.938" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MSS_GP_IO_12">
 <contactref element="P1" pad="P$22"/>
-<contactref element="P11" pad="20"/>
-<wire x1="69.85" y1="1.27" x2="52.845" y2="31.938" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MSS_GP_IO_13">
 <contactref element="P1" pad="P$24"/>
-<contactref element="P11" pad="21"/>
-<wire x1="72.39" y1="1.27" x2="54.115" y2="31.938" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MSS_GP_IO_15">
 <contactref element="P1" pad="P$26"/>
-<contactref element="P11" pad="23"/>
-<wire x1="77.47" y1="1.27" x2="55.385" y2="31.938" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MSS_GP_IO_8">
 <contactref element="P1" pad="P$17"/>
-<contactref element="P11" pad="16"/>
-<wire x1="59.69" y1="1.27" x2="50.305" y2="35.918" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MSS_GP_IO_10">
 <contactref element="P1" pad="P$19"/>
-<contactref element="P11" pad="18"/>
-<wire x1="64.77" y1="1.27" x2="51.575" y2="35.918" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MSS_GP_IO_14">
 <contactref element="P1" pad="P$25"/>
-<contactref element="P11" pad="22"/>
-<wire x1="74.93" y1="1.27" x2="55.385" y2="35.918" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="F2-200-IO_2">
 <contactref element="P1" pad="P$30"/>
-<contactref element="P11" pad="32"/>
-<wire x1="57.925" y1="31.938" x2="100.33" y2="1.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="F2-200-IO_3">
 <contactref element="P1" pad="P$32"/>
-<contactref element="R7" pad="1"/>
-<contactref element="P11" pad="33"/>
-<wire x1="95.25" y1="5.08" x2="102.87" y2="1.27" width="0" layer="19" extent="1-1"/>
-<wire x1="59.195" y1="31.938" x2="95.25" y2="5.08" width="0" layer="19" extent="1-1"/>
+<contactref element="R11" pad="1"/>
+<wire x1="73.66" y1="-17.78" x2="59.195" y2="31.938" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="F2-200-IO_8">
 <contactref element="P1" pad="P$38"/>
 <contactref element="H-BRIDGE1" pad="12"/>
-<wire x1="7.62" y1="26.67" x2="63.005" y2="31.938" width="0" layer="19" extent="1-1"/>
+<wire x1="39.37" y1="-29.21" x2="63.005" y2="31.938" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PWM0">
 <contactref element="P1" pad="P$39"/>
@@ -2082,28 +2053,18 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 </signal>
 <signal name="MSS_GP_IO_11">
 <contactref element="P1" pad="P$21"/>
-<contactref element="P11" pad="19"/>
-<wire x1="67.31" y1="1.27" x2="52.845" y2="35.918" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LMOTOR">
 <contactref element="H-BRIDGE1" pad="2"/>
-<contactref element="P11" pad="24"/>
-<wire x1="7.62" y1="13.97" x2="80.01" y2="1.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RMOTOR">
 <contactref element="H-BRIDGE1" pad="3"/>
-<contactref element="P11" pad="25"/>
-<wire x1="12.7" y1="15.24" x2="82.55" y2="1.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LSERVO">
-<contactref element="P11" pad="26"/>
 <contactref element="R9" pad="1"/>
-<wire x1="3.81" y1="3.81" x2="85.09" y2="1.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RSERVO">
 <contactref element="H-BRIDGE1" pad="14"/>
-<contactref element="P11" pad="27"/>
-<wire x1="7.62" y1="29.21" x2="87.63" y2="1.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="7.2V">
 <contactref element="VREG" pad="1"/>
@@ -2114,9 +2075,7 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <signal name="REFS_IN">
 <contactref element="R3" pad="2"/>
 <contactref element="COMPARATOR" pad="4"/>
-<contactref element="P11" pad="28"/>
 <wire x1="87.63" y1="19.05" x2="91.44" y2="19.05" width="0" layer="19" extent="1-1"/>
-<wire x1="90.17" y1="1.27" x2="91.44" y2="19.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="COMPARATOR" pad="5"/>
@@ -2127,44 +2086,34 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <contactref element="OPAMP" pad="3"/>
 <contactref element="C13" pad="1"/>
 <contactref element="R5" pad="1"/>
-<wire x1="20.32" y1="24.13" x2="19.05" y2="31.75" width="0" layer="19" extent="1-1"/>
-<wire x1="29.21" y1="17.78" x2="20.32" y2="24.13" width="0" layer="19" extent="1-1"/>
+<wire x1="100.33" y1="-21.59" x2="105.41" y2="-20.32" width="0" layer="19" extent="1-1"/>
+<wire x1="90.17" y1="-17.78" x2="100.33" y2="-21.59" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
 <contactref element="R2" pad="2"/>
 <contactref element="C14" pad="2"/>
-<wire x1="25.4" y1="19.05" x2="19.05" y2="34.29" width="0" layer="19" extent="1-1"/>
+<wire x1="90.17" y1="-13.97" x2="110.49" y2="-11.43" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$5">
 <contactref element="OPAMP" pad="5"/>
 <contactref element="C14" pad="1"/>
 <contactref element="C15" pad="+"/>
-<wire x1="36.83" y1="15.24" x2="41.91" y2="13.97" width="0" layer="19" extent="1-1"/>
-<wire x1="25.4" y1="16.51" x2="36.83" y2="15.24" width="0" layer="19" extent="1-1"/>
+<wire x1="113.03" y1="-22.86" x2="113.03" y2="-11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="41.91" y1="13.97" x2="113.03" y2="-11.43" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$6">
 <contactref element="OPAMP" pad="6"/>
 </signal>
 <signal name="SPKR">
-<contactref element="P11" pad="34"/>
 <contactref element="C15" pad="-"/>
-<wire x1="46.99" y1="13.97" x2="105.41" y2="1.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="REFS_OUT">
-<contactref element="R6" pad="2"/>
-<contactref element="P11" pad="29"/>
-<wire x1="15.24" y1="13.97" x2="92.71" y2="1.27" width="0" layer="19" extent="1-1"/>
+<contactref element="R10" pad="2"/>
 </signal>
 <signal name="N$1">
 <contactref element="H-BRIDGE1" pad="13"/>
 <contactref element="R9" pad="2"/>
-<wire x1="16.51" y1="3.81" x2="12.7" y2="27.94" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="MSS_GPIO_5">
-<contactref element="P11" pad="39"/>
-</signal>
-<signal name="MSS_GPIO_6">
-<contactref element="P11" pad="40"/>
+<wire x1="38.1" y1="-24.13" x2="33.02" y2="-16.51" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$7">
 <polygon width="0.4064" layer="16">
