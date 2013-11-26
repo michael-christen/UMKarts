@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdint.h>
 #include "motor.h"
+#include "xbee_interface.h"
+#include "xbee.h"
 #include "drivers/mss_uart/mss_uart.h"
 #include "drivers/mss_gpio/mss_gpio.h"
 #include "controller.h"
@@ -58,6 +60,12 @@ __attribute__ ((interrupt)) void Fabric_IRQHandler( void )
 
 int main()
 {
+	struct xbee_packet * xbee_read_packet;
+	/* Initialize the XBee interface */
+	int err = xbee_interface_init();
+	if (err == 0) {
+		return 0;
+	}
 	sound_init();
         volatile int d = 0;
         MOTOR_cmpVal = 2000000;
@@ -139,6 +147,9 @@ int main()
                 	handleItemGrab();
                 } else if (CONTROLLER->y) {
                 	use_green_shell();
+                }
+                if ((xbee_read_packet = xbee_read())) {
+                	mario_xbee_intepret_packet(xbee_read_packet);
                 }
 
                 //for (d = 0; d < 1000000; d++);
