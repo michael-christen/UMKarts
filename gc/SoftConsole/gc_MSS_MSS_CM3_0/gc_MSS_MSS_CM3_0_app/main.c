@@ -124,6 +124,12 @@ int main()
                         MOTOR_set_servo_direction(0);
                 }
 
+                if (CONTROLLER->y) {
+                	sound_play(8000, 16000);
+                } else if (CONTROLLER->x) {
+                	sound_play(100000,130000);
+                }
+
                 //for (d = 0; d < 1000000; d++);
         }
 }
