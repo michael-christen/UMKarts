@@ -69,7 +69,7 @@ void handleItemGrab() {
     CURRENT_ITEM = getNewItem();
     LCD_printf("Picked up %s", ITEM_NAMES[CURRENT_ITEM]);
     printf("player1, picked up, %S",ITEM_NAMES[CURRENT_ITEM]);
-    play_sound(ITEMPICKUP_BEGIN, ITEMPICKUP_END);
+    sound_play(ITEMPICKUP_BEGIN, ITEMPICKUP_END);
 }
 
 void useCurrentItem() {
