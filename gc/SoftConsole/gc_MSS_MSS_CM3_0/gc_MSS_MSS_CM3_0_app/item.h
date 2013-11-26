@@ -6,6 +6,8 @@
 #include "lcd.h"
 #include "lasertag.h"
 
+#define DRIVER MARIO
+
 typedef enum {
     GREEN_SHELL,
     MUSHROOM,

@@ -1,4 +1,6 @@
 #include "item.h"
+#include "sound.h"
+#include "sound_samples.h"
 
 int ITEM_WEIGHT [MAX_NUM_ITEMS];
 item CURRENT_ITEM = MAX_NUM_ITEMS;
@@ -67,6 +69,7 @@ void handleItemGrab() {
     CURRENT_ITEM = getNewItem();
     LCD_printf("Picked up %s", ITEM_NAMES[CURRENT_ITEM]);
     printf("player1, picked up, %S",ITEM_NAMES[CURRENT_ITEM]);
+    play_sound(ITEMPICKUP_BEGIN, ITEMPICKUP_END);
 }
 
 void useCurrentItem() {
@@ -83,15 +86,20 @@ void hitByItem(item i) {
 }
 
 void use_green_shell() {
+	sound_play(SHOOT_BEGIN, SHOOT_END);
+	LASER_TAG_shoot();
 }
 void use_mushroom() {
+	sound_play(MARIOFAST_BEGIN, MARIOFAST_END);
 }
 void use_lightning() {
+	sound_play(LIGHTNING_BEGIN, LIGHTNING_END);
 }
 
 void hit_green_shell() {
 	uint8_t opId = LASER_TAG_hit();
 	printf("He shot me, %d\r\n", opId);
+	sound_play(MARIOOW_BEGIN, MARIOOW_END);
 }
 void hit_mushroom() {
 }
