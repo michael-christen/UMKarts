@@ -7,6 +7,7 @@
 static uint32_t cur_addr = 0;
 static uint32_t stop_addr = 0;
 static uint32_t	buf_start = -1;
+static uint32_t repeat_addr = -1;
 static uint8_t sound_buf[512];
 
 void sound_init() {
@@ -31,16 +32,25 @@ void sound_init() {
 	MSS_TIM1_enable_irq();
 }
 
+void sound_play_repeat(uint32_t begin, uint32_t end) {
+	sound_play(begin, end);
+	repeat_addr = begin;
+}
+
 void sound_play(uint32_t begin, uint32_t end) {
 	cur_addr = begin;
 	stop_addr = end;
+	repeat_addr = -1;
 
 	MSS_TIM1_start();
 }
 
-__attribute__ ((interrupt)) void Timer1_IRQHandler( void ){
-	uint8_t buf;
+void sound_stop() {
+	repeat_addr = -1;
+	stop_addr = 0;
+}
 
+__attribute__ ((interrupt)) void Timer1_IRQHandler( void ){
 	if (cur_addr < buf_start || cur_addr >= (buf_start + sizeof(sound_buf))) {
 		buf_start = cur_addr & 0xFFFFFFFE;
 		spi_flash_read(buf_start, &sound_buf, sizeof(sound_buf));
@@ -50,8 +60,13 @@ __attribute__ ((interrupt)) void Timer1_IRQHandler( void ){
 
 	cur_addr++;
 
-	if (cur_addr >= stop_addr)
-		MSS_TIM1_stop();
+	if (cur_addr >= stop_addr) {
+		if (repeat_addr != -1) {
+			cur_addr = repeat_addr;
+		} else {
+			MSS_TIM1_stop();
+		}
+	}
 
 	MSS_TIM1_clear_irq();
 

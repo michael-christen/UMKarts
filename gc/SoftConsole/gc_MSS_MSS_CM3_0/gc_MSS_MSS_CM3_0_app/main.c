@@ -9,6 +9,7 @@
 #include "lasertag.h"
 #include "drivers/mss_ace/mss_ace.h"
 #include "sound.h"
+#include "sound_samples.h"
 
 
 volatile uint32_t count;
@@ -54,7 +55,7 @@ __attribute__ ((interrupt)) void Fabric_IRQHandler( void )
 
 int main()
 {
-sound_init();
+	sound_init();
         volatile int d = 0;
         MOTOR_cmpVal = 2000000;
         MOTOR_period = 20000000;

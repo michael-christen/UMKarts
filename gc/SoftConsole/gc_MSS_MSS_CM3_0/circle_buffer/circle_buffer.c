@@ -23,7 +23,7 @@ int CircularBufferWrite(CircularBuffer *cb, void *item) {
     }
   }while(atomic_cmpxchg_4((int *) &(cb->write), (int) new_write, (int) old_write) != 0);
 
-  cb->buffer[new_write] = item;
+  cb->buffer[old_write] = item;
 
   return 0;
 }

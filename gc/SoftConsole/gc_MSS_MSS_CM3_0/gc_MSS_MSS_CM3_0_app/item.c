@@ -1,4 +1,7 @@
 #include "item.h"
+#include "sound.h"
+#include "sound_samples.h"
+#include "drivers/mss_rtc/mss_rtc.h"
 
 int ITEM_WEIGHT [MAX_NUM_ITEMS];
 item CURRENT_ITEM = MAX_NUM_ITEMS;
@@ -29,8 +32,53 @@ double ITEM_PROB [MAX_NUM_ITEMS] = {
 
 int TOTAL_WEIGHT = 1000000;
 
+int FAST_SOUND_BEGIN[] = {
+	MARIOFAST_BEGIN,
+	LUIGIFAST_BEGIN,
+	WARIOFAST_BEGIN,
+	PEACHFAST_BEGIN
+};
+
+int FAST_SOUND_END[] = {
+	MARIOFAST_END,
+	LUIGIFAST_END,
+	WARIOFAST_END,
+	PEACHFAST_END
+};
+
+int OW_SOUND_BEGIN[] = {
+	MARIOOW_BEGIN,
+	LUIGIOW_BEGIN,
+	WARIOOW_BEGIN,
+	PEACHOW_BEGIN
+};
+
+int OW_SOUND_END[] = {
+	MARIOOW_END,
+	LUIGIOW_END,
+	WARIOOW_END,
+	PEACHOW_END
+};
+
+int SUCCESS_SOUND_BEGIN[] = {
+	MARIOSUCCESS_BEGIN,
+	LUIGISUCCESS_BEGIN,
+	WARIOSUCCESS_BEGIN,
+	PEACHSUCCESS_BEGIN
+};
+
+int SUCCESS_SOUND_END[] = {
+	MARIOSUCCESS_END,
+	LUIGISUCCESS_END,
+	WARIOSUCCESS_END,
+	PEACHSUCCESS_END
+};
+
 //Requires all probs to sum to 1
 void initItemWeights() {
+	MSS_RTC_init();
+	MSS_RTC_start();
+
     /*
     int i, weight_bottom = 1, weight_top = 100000;
     double epsilon = 0.0001;
@@ -46,7 +94,7 @@ void initItemWeights() {
 }
 
 item getNewItem() {
-	//srand(time(NULL));
+	srand((uint32_t) MSS_RTC_get_rtc_count());
     int rChoice = rand() % TOTAL_WEIGHT;
     int i;
     for(i=0; i < MAX_NUM_ITEMS; ++i) {
@@ -67,6 +115,7 @@ void handleItemGrab() {
     CURRENT_ITEM = getNewItem();
     LCD_printf("Picked up %s", ITEM_NAMES[CURRENT_ITEM]);
     printf("player1, picked up, %S",ITEM_NAMES[CURRENT_ITEM]);
+    sound_play(ITEMPICKUP_BEGIN, ITEMPICKUP_END);
 }
 
 void useCurrentItem() {
@@ -83,15 +132,20 @@ void hitByItem(item i) {
 }
 
 void use_green_shell() {
+	sound_play(SHOOT_BEGIN, SHOOT_END);
+	LASER_TAG_shoot();
 }
 void use_mushroom() {
+	sound_play(FAST_SOUND_BEGIN[DRIVER], FAST_SOUND_END[DRIVER]);
 }
 void use_lightning() {
+	sound_play(LIGHTNING_BEGIN, LIGHTNING_END);
 }
 
 void hit_green_shell() {
 	uint8_t opId = LASER_TAG_hit();
 	printf("He shot me, %d\r\n", opId);
+	sound_play(OW_SOUND_BEGIN[DRIVER], OW_SOUND_END[DRIVER]);
 }
 void hit_mushroom() {
 }
