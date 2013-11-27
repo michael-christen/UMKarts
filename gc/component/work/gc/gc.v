@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Tue Nov 26 14:35:52 2013
+// Created by SmartDesign Wed Nov 27 13:13:05 2013
 // Version: v11.0 11.0.0.23
 //////////////////////////////////////////////////////////////////////
 
@@ -188,14 +188,14 @@ wire   [4:0]  CoreAPB3_0_APBmslave0_PADDR_1;
 wire   [31:0] CoreAPB3_0_APBmslave0_PWDATA;
 wire   [7:0]  CoreAPB3_0_APBmslave0_PWDATA_0_7to0;
 wire   [7:0]  CoreAPB3_0_APBmslave0_PWDATA_0;
+wire   [7:0]  CoreAPB3_0_APBmslave2_PRDATA;
 wire   [31:8] CoreAPB3_0_APBmslave2_PRDATA_0_31to8;
 wire   [7:0]  CoreAPB3_0_APBmslave2_PRDATA_0_7to0;
 wire   [31:0] CoreAPB3_0_APBmslave2_PRDATA_0;
-wire   [7:0]  CoreAPB3_0_APBmslave2_PRDATA;
+wire   [19:0] gc_MSS_0_MSS_MASTER_APB_PADDR;
 wire   [31:20]gc_MSS_0_MSS_MASTER_APB_PADDR_0_31to20;
 wire   [19:0] gc_MSS_0_MSS_MASTER_APB_PADDR_0_19to0;
 wire   [31:0] gc_MSS_0_MSS_MASTER_APB_PADDR_0;
-wire   [19:0] gc_MSS_0_MSS_MASTER_APB_PADDR;
 //--------------------------------------------------------------------
 // Constant assignments
 //--------------------------------------------------------------------
@@ -488,10 +488,10 @@ gc_receive gc_receive_0(
         .send              ( send ),
         .controller_init   ( controller_init ),
         // Outputs
-        .response          ( gc_receive_0_response ),
-        .wavebird_id       ( wavebird_id ),
         .wavebird_id_ready ( wavebird_id_ready ),
-        .button_data_ready ( button_data_ready ) 
+        .button_data_ready ( button_data_ready ),
+        .response          ( gc_receive_0_response ),
+        .wavebird_id       ( wavebird_id ) 
         );
 
 //--------gc_response_apb
