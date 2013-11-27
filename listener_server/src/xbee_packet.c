@@ -3,26 +3,32 @@
 #include "xbee_packet.h"
 #include <stdlib.h>
 
-static int _xbee_printf(uint8_t * data, uint16_t len) {
-  int i;
-  char * str = malloc((len + 1) * sizeof(char));
-  for (i = 0; i < len; i++) str[i] = data[i];
-  str[i] = '\0';
-  printf("%s\n", str);
+static int _xbee_printf(const uint8_t * data, uint16_t len) {
+  int err;
+  char * str = malloc((len + 2) * sizeof(char));
+  strncpy(str, (const char *) data, len);
+  str[len] = 0;
+  err = printf("%s", str);
+  if (err != 0) {
+    printf("Error print string because %s\n", strerror(errno));
+  }
   free(str);
   return 0;
 }
 
-int xbee_get_next_packet(xbee_serial_t *serial, struct xbee_packet * xp) {
+int xbee_get_next_packet(xbee_serial_t *serial, struct xbee_packet * xp, unsigned char debug) {
   struct xbee_reader xr;
+  int result;
   uint8_t ch;
   XBeeReaderInit(&xr, xp);
   while (!XBeeReaderDone(&xr)) {
-    ch = xbee_ser_getchar(serial);
-    if (ch >= 0) {
+    result = xbee_ser_getchar(serial);
+    if (result >= 0) {
+      ch = result & 0xFF;
+      if (debug) printf("%c\n", ch);
       XBeeReaderRead(&xr, &ch, &ch + 1);
     }
-    else if (ch != -ENOSPC) {
+    else if (result != -ENODATA) {
       Log(EERROR, "Unable to read packet because %s", strerror(errno));
     }
   }
