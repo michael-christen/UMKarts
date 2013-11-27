@@ -63,7 +63,7 @@ int main()
 	struct xbee_packet * xbee_read_packet;
 	/* Initialize the XBee interface */
 	int err = xbee_interface_init();
-	if (err == 0) {
+	if (err != 0) {
 		return 0;
 	}
 	sound_init();
