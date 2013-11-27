@@ -1,34 +1,47 @@
 #include <stdio.h>
 #include <stdarg.h>
+#include <errno.h>
+#include "xbee_interface.h"
+#include "xbee.h"
 
-int xbee_printf(const char * format_string, ...) {
+#define MAX_PRINTF_SIZE MAX_XBEE_TX_PAYLOAD_SIZE - 1
+
+int xbee_printf(uint64_t dest_address, const char * format_string, ...) {
 	int err;
 	int size;
+	uint8_t * payload_start;
 	va_list varargs;
 	va_start(varargs, format_string);
 	struct xbee_packet * xp = xbee_interface_create_packet();
 	if (!xp) {
-		return -EMEM;
+		err = -ENOMEM;
+		goto xbee_printf_exit;
 	}
-	err = vsnprintf(xbee_txpt_payload_start(xp), MAX_XBEE_TX_PAYLOAD_SIZE, format_string, varargs);
+	payload_start = xbee_txpt_payload_start(xp);
+	*payload_start = 0x00; /* Set frame id to say that this is a printf packet */
+	err = vsnprintf(payload_start + 1, MAX_PRINTF_SIZE, format_string, varargs);
 	if (err < 0) {
-		return err;
+		goto xbee_printf_exit;
 	}
-	if (err > MAX_XBEE_TX_PAYLOAD_SIZE) {
-		size = MAX_XBEE_TX_PAYLOAD_SIZE;
+	if (err > MAX_PRINTF_SIZE) {
+		size = MAX_PRINTF_SIZE;
 	}
 	else {
 		size = err;
 	}
 
+	xbee_txpt_init(xp);
 	xbee_txpt_set_payload_size(xp, size);
 	xbee_txpt_set_frame_id(xp, xbee_next_frame_id());
 	xbee_txpt_set_options(xp, 0);
 	xbee_txpt_set_radius(xp, 0);
-	/* TODO: Remove hardcode of destenation address */
-	xbee_txpt_set_destaddress(xp, 0x0013A20040A711E0);
-	xbee_txpt_init(xp);
-	xbee_send(xp);
+	xbee_txpt_set_destaddress(xp, dest_address);
 
+	err = xbee_send(xp);
+
+xbee_printf_exit:
+	va_end(varargs);
+
+	return err;
 }
 

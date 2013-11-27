@@ -54,10 +54,19 @@ struct xp_tx_request {
 };
 
 uint8_t xbee_packet_api_id(struct xbee_packet * xp);
-uint8_t xbee_packet_frame_id(struct xbee_packet * xp);
+uint8_t xbee_next_frame_id();
+
+
 enum XBeeModemStatus xbee_packet_modem_status(struct xbee_packet * xp); 
 
-
-void xbpt_create_tx_request(const struct xp_tx_request * xptx, struct xbee_packet * xp);
+/* TX Commands */
+void xbee_txpt_init(struct xbee_packet * xp);
+void xbee_txpt_set_frame_id(struct xbee_packet * xp, uint8_t frameId);
+void xbee_txpt_set_options(struct xbee_packet * xp, uint8_t opts);
+void xbee_txpt_set_radius(struct xbee_packet *xp, uint8_t rad);
+void xbee_txpt_set_destaddress(struct xbee_packet *xp, uint64_t address);
+uint8_t * xbee_txpt_payload_start(struct xbee_packet *xp);
+void xbee_txpt_set_payload_size(struct xbee_packet *xp, uint16_t payload_size);
+/* TX Commands End */
 
 #endif

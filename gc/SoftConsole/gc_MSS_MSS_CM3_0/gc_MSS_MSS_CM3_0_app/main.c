@@ -149,9 +149,11 @@ int main()
                 	use_green_shell();
                 }
                 if ((xbee_read_packet = xbee_read())) {
-                	mario_xbee_intepret_packet(xbee_read_packet);
+                	//mario_xbee_intepret_packet(xbee_read_packet);
+                	xbee_interface_free_packet(xbee_read_packet);
                 }
 
-                //for (d = 0; d < 1000000; d++);
+                xbee_printf(0x0013A20040A711E0LL, "Hello!, this may be happening too quickly.\r\n");
+                for (d = 0; d < 10000000; d++) ;
         }
 }

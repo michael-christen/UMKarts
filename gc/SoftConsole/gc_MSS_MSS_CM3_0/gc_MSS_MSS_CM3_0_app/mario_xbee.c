@@ -9,9 +9,7 @@ void mario_xbee_intepret_packet(struct xbee_packet * xp) {
 	case XBEE_API_MODEM:
 		/* Ignore for now */
 		break;
-	case XBEE_API_REMOTE_AT_COMMAND_REQUEST:
-		/* Ignore for now, not yet implemented */
+	case XBEE_API_TX_STATUS:
 		break;
-	case
 	}
 }
