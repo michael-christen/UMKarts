@@ -114,7 +114,7 @@ void handleItemGrab() {
     }
     CURRENT_ITEM = getNewItem();
     LCD_printf("Picked up %s", ITEM_NAMES[CURRENT_ITEM]);
-    printf("player1, picked up, %S",ITEM_NAMES[CURRENT_ITEM]);
+    printf("player1, picked up, %s",ITEM_NAMES[CURRENT_ITEM]);
     sound_play(ITEMPICKUP_BEGIN, ITEMPICKUP_END);
 }
 
@@ -124,7 +124,7 @@ void useCurrentItem() {
     }
     (*ITEM_USE_FUNCTIONS[CURRENT_ITEM])();
     CURRENT_ITEM = MAX_NUM_ITEMS;
-    printf("player1, used, %S",ITEM_NAMES[CURRENT_ITEM]);
+    printf("player1, used, %s",ITEM_NAMES[CURRENT_ITEM]);
 }
 
 void hitByItem(item i) {
