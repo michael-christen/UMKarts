@@ -13,3 +13,10 @@ void mario_xbee_intepret_packet(struct xbee_packet * xp) {
 		break;
 	}
 }
+
+/*
+ * This function will be called when we are looking for other available
+ * cards on the network.
+ */
+void mario_xbee_network_discovery() {
+}

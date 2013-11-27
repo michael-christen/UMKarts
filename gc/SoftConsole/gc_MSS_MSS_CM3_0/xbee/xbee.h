@@ -2,11 +2,10 @@
 #define __XBEE_UMKART_H_
 #include <inttypes.h>
 
-/* MAX_XBEE_PACKET_SIZE given on page 11 of of XBEE 802.15.4 spec */
-/* 100 Bytes payload + 14 bytes overhead possible */
-/* TODO: Check the xbee spec, see if we can make packet size even bigger for printf */
-#define MAX_XBEE_PAYLOAD_SIZE 114
-#define MAX_XBEE_TX_PAYLOAD_SIZE 100
+/* MAX_XBEE_PACKET_SIZE given by NP command of AT Command mode */
+/* 73 byte payload + 14 bytes overhead possible */
+#define MAX_XBEE_PAYLOAD_SIZE    87
+#define MAX_XBEE_TX_PAYLOAD_SIZE 73
 
 #define  XBEE_START_BYTE    ((uint8_t) 0x7E)
 #define  XBEE_ESCAPE_BYTE   ((uint8_t) 0x7D)
@@ -43,16 +42,6 @@ struct xbee_packet {
   uint8_t payload[MAX_XBEE_PAYLOAD_SIZE];
 };
 
-
-struct xp_tx_request {
-  uint64_t dest_addres;
-  uint8_t frameId;
-  uint8_t broadcast_radius; /* Maximum hops in transmit. 0 means maximum hops */
-  uint8_t txoptions; /* bit 0: Disable ACK. bit 1: Don't attempt route discovery */
-  uint8_t *rfdata;
-  uint16_t data_len;
-};
-
 uint8_t xbee_packet_api_id(struct xbee_packet * xp);
 uint8_t xbee_next_frame_id();
 
@@ -60,6 +49,13 @@ uint8_t xbee_next_frame_id();
 enum XBeeModemStatus xbee_packet_modem_status(struct xbee_packet * xp); 
 
 /* TX Commands */
+/**
+ * Need to use all of these functions in order to create a valid xbee_txpt packet.
+ * you first must initialize, then you would set the frame id and the options and
+ * then radius. Then you set the dest address. The last thing you do is get the start
+ * address of payload, and then write up to the MAX_PAYLOAD_SIZE of data into the xbee
+ * payload, then set the size of the data you wrote. Then you're done! Yeah
+ */
 void xbee_txpt_init(struct xbee_packet * xp);
 void xbee_txpt_set_frame_id(struct xbee_packet * xp, uint8_t frameId);
 void xbee_txpt_set_options(struct xbee_packet * xp, uint8_t opts);
