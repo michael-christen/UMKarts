@@ -9,6 +9,7 @@
 struct opts {
   const char *log_file_name;
   const char *xbee_file_name;
+  unsigned char debug;
 };
 
 void print_usage(const char * name);
@@ -33,9 +34,10 @@ int main(int argc, char **argv) {
     Log(EERROR, "Unable to open XBee on path %s because %s", myOpts.xbee_file_name, strerror(errno));
     return -2;
   }
+  xbee_ser_baudrate(&myxbee, EXBEE_SERIAL_57600);
 
   while (1) {
-    err = xbee_get_next_packet(&myxbee, &xp);
+    err = xbee_get_next_packet(&myxbee, &xp, myOpts.debug);
     if (err == 0) {
       switch (xbee_packet_api_id(&xp)) {
       case XBEE_API_RX:
@@ -54,9 +56,10 @@ int main(int argc, char **argv) {
 }
 
 void print_usage(const char * name) {
-  printf("%s -l log_file_path path_to_xbee\n"
+  printf("%s -l [-d] log_file_path path_to_xbee\n"
          "          -l The path to the file you want to log. This is optional\n"
          "             and need not be set. If not set, we log to stdout\n"
+         "          -d Debug, prints out all received bytes to standard error\n"
          "          path_to_xbee - Should be the path to where the XBee device\n"
          "                         is, probably /dev/ttyUSB0\n",
          name);
@@ -66,10 +69,14 @@ int parse_args(int argc, char **argv, struct opts * myOpts) {
   int opt;
   myOpts->log_file_name = NULL;
   myOpts->xbee_file_name = NULL;
-  while ((opt = getopt(argc, argv, "l:")) != -1) {
+  myOpts->debug = 0;
+  while ((opt = getopt(argc, argv, "l:d")) != -1) {
     switch (opt) {
     case 'l':
       myOpts->log_file_name = optarg;
+      break;
+    case 'd':
+      myOpts->debug = 1;
       break;
     default:
       return -EINVAL;
