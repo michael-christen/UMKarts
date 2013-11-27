@@ -107,7 +107,7 @@ int main()
 
         int x = 1;
         LCD_init();
-        xbee_printf("%s %s", "Hello", "World");
+        xbee_printf("%s %s\n", "Hello", "World");
         /*
         while(1) {
         	LCD_printf("Hi! %d", x++);
@@ -154,10 +154,10 @@ int main()
                 }
                 while ((xbee_read_packet = xbee_read())) {
                 	//mario_xbee_intepret_packet(xbee_read_packet);
-                	xbee_interface_free_packet(xbee_read_packet);
                 	if (xbee_packet_api_id(xbee_read_packet) != XBEE_API_TX_STATUS) {
                 		xbee_printf("We received a packet with api id %x", xbee_packet_api_id(xbee_read_packet));
                 	}
+                	xbee_interface_free_packet(xbee_read_packet);
                 }
         }
 }

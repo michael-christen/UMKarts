@@ -54,7 +54,7 @@ int xbee_printf(const char * format_string, ...) {
 	}
 
 	xbee_txpt_init(xp);
-	xbee_txpt_set_payload_size(xp, size);
+	xbee_txpt_set_payload_size(xp, size + 1);
 	xbee_txpt_set_frame_id(xp, xbee_interface_next_frame_id());
 	xbee_txpt_set_options(xp, 0);
 	xbee_txpt_set_radius(xp, 0);
