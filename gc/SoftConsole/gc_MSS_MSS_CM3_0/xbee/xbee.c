@@ -1,8 +1,5 @@
 #include "xbee.h"
 
-static uint8_t _XBeeFrameId = 1;
-
-
 uint8_t xbee_packet_api_id(struct xbee_packet * xp) {
   return *(xp->payload);
 }
