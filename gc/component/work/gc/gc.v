@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Tue Nov 26 12:14:09 2013
+// Created by SmartDesign Tue Nov 26 14:35:52 2013
 // Version: v11.0 11.0.0.23
 //////////////////////////////////////////////////////////////////////
 
@@ -30,10 +30,10 @@ module gc(
     TX,
     UART_0_TXD,
     UART_1_TXD,
-    controller_data,
     // Inouts
     SPI_0_CLK,
-    SPI_0_SS
+    SPI_0_SS,
+    controller_data
 );
 
 //--------------------------------------------------------------------
@@ -63,12 +63,12 @@ output SPI_0_DO;
 output TX;
 output UART_0_TXD;
 output UART_1_TXD;
-output controller_data;
 //--------------------------------------------------------------------
 // Inout
 //--------------------------------------------------------------------
 inout  SPI_0_CLK;
 inout  SPI_0_SS;
+inout  controller_data;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
@@ -76,7 +76,7 @@ wire          APB_IR_0_ENQUEUE;
 wire   [7:0]  APB_IR_0_MSG;
 wire          button_data_ready;
 wire          CAPTURE_SWITCH;
-wire          controller_data_1;
+wire          controller_data_0;
 wire          controller_init;
 wire          CoreAPB3_0_APBmslave0_PENABLE;
 wire   [31:0] CoreAPB3_0_APBmslave0_PRDATA;
@@ -153,7 +153,7 @@ wire          TX_net_1;
 wire          SPI_0_DO_0_net_0;
 wire          SPEAKER_DAC_net_1;
 wire          LED_OUT_0_net_0;
-wire          controller_data_1_net_0;
+wire          controller_data_0_net_0;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
@@ -180,9 +180,9 @@ wire          EMPTY_OUT_PRE_INV0_0;
 //--------------------------------------------------------------------
 // Bus Interface Nets Declarations - Unequal Pin Widths
 //--------------------------------------------------------------------
+wire   [31:0] CoreAPB3_0_APBmslave0_PADDR;
 wire   [7:0]  CoreAPB3_0_APBmslave0_PADDR_0_7to0;
 wire   [7:0]  CoreAPB3_0_APBmslave0_PADDR_0;
-wire   [31:0] CoreAPB3_0_APBmslave0_PADDR;
 wire   [4:0]  CoreAPB3_0_APBmslave0_PADDR_1_4to0;
 wire   [4:0]  CoreAPB3_0_APBmslave0_PADDR_1;
 wire   [31:0] CoreAPB3_0_APBmslave0_PWDATA;
@@ -192,10 +192,10 @@ wire   [31:8] CoreAPB3_0_APBmslave2_PRDATA_0_31to8;
 wire   [7:0]  CoreAPB3_0_APBmslave2_PRDATA_0_7to0;
 wire   [31:0] CoreAPB3_0_APBmslave2_PRDATA_0;
 wire   [7:0]  CoreAPB3_0_APBmslave2_PRDATA;
-wire   [19:0] gc_MSS_0_MSS_MASTER_APB_PADDR;
 wire   [31:20]gc_MSS_0_MSS_MASTER_APB_PADDR_0_31to20;
 wire   [19:0] gc_MSS_0_MSS_MASTER_APB_PADDR_0_19to0;
 wire   [31:0] gc_MSS_0_MSS_MASTER_APB_PADDR_0;
+wire   [19:0] gc_MSS_0_MSS_MASTER_APB_PADDR;
 //--------------------------------------------------------------------
 // Constant assignments
 //--------------------------------------------------------------------
@@ -244,8 +244,8 @@ assign SPEAKER_DAC_net_1       = SPEAKER_DAC_net_0;
 assign SPEAKER_DAC             = SPEAKER_DAC_net_1;
 assign LED_OUT_0_net_0         = LED_OUT_0;
 assign LED_OUT                 = LED_OUT_0_net_0;
-assign controller_data_1_net_0 = controller_data_1;
-assign controller_data         = controller_data_1_net_0;
+assign controller_data_0_net_0 = controller_data_0;
+assign controller_data         = controller_data_0_net_0;
 //--------------------------------------------------------------------
 // Bus Interface Nets Assignments - Unequal Pin Widths
 //--------------------------------------------------------------------
@@ -461,8 +461,8 @@ gc_MSS gc_MSS_0(
         .SPI_0_DI    ( SPI_0_DI ),
         .VAREF0      ( VAREF0 ),
         .F2M_GPI_0   ( LED_RECV_0_INTERRUPT ),
-        .MSSPRDATA   ( gc_MSS_0_MSS_MASTER_APB_PRDATA ),
         .F2M_GPI_1   ( F2M_GPI_1 ),
+        .MSSPRDATA   ( gc_MSS_0_MSS_MASTER_APB_PRDATA ),
         // Outputs
         .FAB_CLK     ( gc_MSS_0_FAB_CLK ),
         .M2F_RESET_N ( gc_MSS_0_M2F_RESET_N ),
@@ -484,14 +484,14 @@ gc_MSS gc_MSS_0(
 gc_receive gc_receive_0(
         // Inputs
         .clk               ( gc_MSS_0_FAB_CLK ),
-        .controller_data   ( controller_data_1 ),
+        .controller_data   ( controller_data_0 ),
         .send              ( send ),
         .controller_init   ( controller_init ),
         // Outputs
-        .wavebird_id_ready ( wavebird_id_ready ),
-        .button_data_ready ( button_data_ready ),
         .response          ( gc_receive_0_response ),
-        .wavebird_id       ( wavebird_id ) 
+        .wavebird_id       ( wavebird_id ),
+        .wavebird_id_ready ( wavebird_id_ready ),
+        .button_data_ready ( button_data_ready ) 
         );
 
 //--------gc_response_apb
@@ -611,7 +611,7 @@ send_query send_query_0(
         .wavebird_id_send ( wavebird_id_send ),
         .wavebird_id      ( wavebird_id ),
         // Outputs
-        .controller_data  ( controller_data_1 ),
+        .controller_data  ( controller_data_0 ),
         .send             ( send ),
         .wavebird_id_sent ( send_query_0_wavebird_id_sent ) 
         );

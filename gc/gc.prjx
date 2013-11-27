@@ -538,8 +538,8 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\designer\impl1\gc.adb,adb"
 STATE="utd"
-TIME="1385434994"
-SIZE="2075648"
+TIME="1385486295"
+SIZE="2077696"
 ENDFILE
 VALUE "<project>\designer\impl1\gc.fdb,fdb"
 STATE="utd"
@@ -548,8 +548,8 @@ SIZE="99987"
 ENDFILE
 VALUE "<project>\designer\impl1\gc.ide_des,ide_des"
 STATE="utd"
-TIME="1385434994"
-SIZE="1022"
+TIME="1385486295"
+SIZE="1013"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_compile_log.rpt,log"
 STATE="utd"
@@ -558,13 +558,13 @@ SIZE="31399"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_fp\gc.pdb,pdb"
 STATE="utd"
-TIME="1385434994"
+TIME="1385486307"
 SIZE="109568"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_fp\gc.pro,pro"
 STATE="utd"
-TIME="1385434994"
-SIZE="1939"
+TIME="1385486308"
+SIZE="1720"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_fp\projectData\gc.pdb,pdb"
 STATE="utd"
@@ -709,23 +709,23 @@ PARENT="<project>\smartgen\IR_QUEUE\IR_QUEUE.cxf"
 ENDFILE
 VALUE "<project>\synthesis\gc.edn,syn_edn"
 STATE="utd"
-TIME="1385484311"
-SIZE="1581116"
+TIME="1385486087"
+SIZE="1581930"
 ENDFILE
 VALUE "<project>\synthesis\gc.so,so"
 STATE="utd"
-TIME="1385434994"
-SIZE="210"
+TIME="1385486087"
+SIZE="207"
 ENDFILE
 VALUE "<project>\synthesis\gc_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1385323084"
+TIME="1385486087"
 SIZE="633"
 ENDFILE
 VALUE "<project>\synthesis\gc_syn.prj,prj"
 STATE="utd"
-TIME="1385434994"
-SIZE="3971"
+TIME="1385486089"
+SIZE="3893"
 ENDFILE
 VALUE "<project>\synthesis\synwork\gc_compiler.so,so"
 STATE="utd"
@@ -798,6 +798,17 @@ VALUE "<project>\component\Actel\DirectCore\CoreUARTapb\5.2.2\rtl\vlog\amba_bfm\
 VALUE "<project>\component\work\gc\CoreUARTapb_0\coreparameters.v,tb_hdl"
 VALUE "<project>\component\work\gc\CoreUARTapb_0\rtl\vlog\test\user\testbench.v,tb_hdl"
 ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 ENDLIST
 LIST "gc_MSS::work"
 FILE "<project>\component\work\gc_MSS\gc_MSS.v,hdl"
@@ -847,6 +858,17 @@ VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\amba_bfm\b
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\test\user\testbench.v,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
 ENDLIST
 ENDLIST
 ENDLIST
@@ -978,8 +1000,8 @@ NAME="Synplify Pro AE"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro AE"
 LOCATION="C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 EndProfile
 NAME="ModelSim AE"
 FUNCTION="Simulation"
@@ -1011,7 +1033,29 @@ Used_File_List
 ENDUsed_File_List
 ENDLIST
 ENDLIST
+LIST "gc_CoreUARTapb_0_CoreUARTapb::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 LIST "gc_MSS::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST "CoreAPB3::COREAPB3_LIB"
 LIST Impl1
 ideSTIMULUS=StateSuccess
 LIST FlowOptions
@@ -1035,12 +1079,7 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 StartPage;StartPage
-Reports;Reports
-SmartDesign;gc
-HDL;hdl\receive.v
-HDL;hdl\query.v
-SmartDesign;gc_MSS
-ACTIVEVIEW;Reports
+ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
 LIST "APB_IR::work","hdl\APB_IR.v","FALSE","FALSE"

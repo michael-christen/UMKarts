@@ -90,7 +90,7 @@
 </toolChain>
 </folderInfo>
 <sourceEntries>
-<entry excluding="vtimer.h|vtimer.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+<entry excluding="vtimer.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 </sourceEntries>
 </configuration>
 </storageModule>
