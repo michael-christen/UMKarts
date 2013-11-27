@@ -33,3 +33,14 @@ void xbee_txpt_set_destaddress(struct xbee_packet *xp, uint64_t address) {
 	}
 }
 
+uint8_t xbee_rxpt_get_frame_id(struct xbee_packet *xp) {
+  return xp->payload[1];
+}
+
+uint8_t *xbee_rxpt_payload_start(struct xbee_packet *xp) {
+  return xp->payload + 12;
+}
+
+uint16_t xbee_rxpt_get_payload_size(struct xbee_packet *xp) {
+  return xp->len - 12;
+}

@@ -18,6 +18,7 @@
  * Allocate the xbee_interface
  */
 int xbee_interface_init();
+uint8_t xbee_interface_next_frame_id();
 
 /* Allocator for XBee packets */
 struct xbee_packet * xbee_interface_create_packet(); 

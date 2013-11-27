@@ -26,6 +26,7 @@
 #define XBEE_API_AT_RESPONSE ((uint8_t) 0x88)
 #define XBEE_API_MODEM      ((uint8_t) 0x8A)
 #define XBEE_API_TX_STATUS  ((uint8_t) 0x8B)
+#define XBEE_API_RX         ((uint8_t) 0x90)
 
 enum XBeeModemStatus {
   EXBeeModemStatus_HardwareReset,
@@ -43,8 +44,6 @@ struct xbee_packet {
 };
 
 uint8_t xbee_packet_api_id(struct xbee_packet * xp);
-uint8_t xbee_next_frame_id();
-
 
 enum XBeeModemStatus xbee_packet_modem_status(struct xbee_packet * xp); 
 
@@ -64,5 +63,10 @@ void xbee_txpt_set_destaddress(struct xbee_packet *xp, uint64_t address);
 uint8_t * xbee_txpt_payload_start(struct xbee_packet *xp);
 void xbee_txpt_set_payload_size(struct xbee_packet *xp, uint16_t payload_size);
 /* TX Commands End */
+
+/* RX Commands */
+uint8_t xbee_rxpt_get_frame_id(struct xbee_packet *xp);
+uint8_t *xbee_rxpt_payload_start(struct xbee_packet *xp);
+uint16_t xbee_rxpt_get_payload_size(struct xbee_packet *xp);
 
 #endif
