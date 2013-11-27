@@ -66,8 +66,12 @@ int main()
 	if (err != 0) {
 		return 0;
 	}
+	else {
+		xbee_printf("XBee successfully initiated\n");
+	}
 	sound_init();
-        volatile int d = 0;
+	xbee_printf("Sound initialized\n");
+        //volatile int d = 0;
         MOTOR_cmpVal = 2000000;
         MOTOR_period = 20000000;
         curClock = prevClock = 0;
@@ -76,7 +80,7 @@ int main()
         MOTOR_set_speed(0);
         MOTOR_set_servo_direction(0);
 
-        printf("Mike Loves Double Dash!!!\r\n");
+        xbee_printf("Mike Loves Double Dash!!!\n");
         count = 0;
         int lastVal = 1;
         double speed = 0;
@@ -103,7 +107,7 @@ int main()
 
         int x = 1;
         LCD_init();
-        LCD_printf("%s %s", "Hello", "World");
+        xbee_printf("%s %s", "Hello", "World");
         /*
         while(1) {
         	LCD_printf("Hi! %d", x++);
@@ -148,12 +152,12 @@ int main()
                 } else if (CONTROLLER->y) {
                 	use_green_shell();
                 }
-                if ((xbee_read_packet = xbee_read())) {
+                while ((xbee_read_packet = xbee_read())) {
                 	//mario_xbee_intepret_packet(xbee_read_packet);
                 	xbee_interface_free_packet(xbee_read_packet);
+                	if (xbee_packet_api_id(xbee_read_packet) != XBEE_API_TX_STATUS) {
+                		xbee_printf("We received a packet with api id %x", xbee_packet_api_id(xbee_read_packet));
+                	}
                 }
-
-                xbee_printf(0x0013A20040A711E0LL, "Hello!, this may be happening too quickly.\r\n");
-                for (d = 0; d < 10000000; d++) ;
         }
 }

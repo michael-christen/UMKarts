@@ -2,7 +2,7 @@
 #include "mss_uart.h"
 #include "atomics.h"
 
-static uint8_t _XBeeFrameId;
+static uint8_t _XBeeFrameId = 1;
 /* 
  * Declare initialization functions so we can call them. No in xbee_interface.h
  * because they are really global functions
