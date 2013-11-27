@@ -45,7 +45,7 @@ uint8_t * XBeeWriterWrite(struct xbee_writer * xw, uint8_t * start, uint8_t * en
       }
       break;
     case XBEE_WRITE_SECOND_LEN_ESCAPE:
-      *start++ = XBEE_XOR_BYTE ^ HIGHBYTE(xw->xp->len);
+      *start++ = XBEE_XOR_BYTE ^ LOWBYTE(xw->xp->len);
       xw->state = XBEE_WRITE_DATA;
       break;
     case XBEE_WRITE_DATA:

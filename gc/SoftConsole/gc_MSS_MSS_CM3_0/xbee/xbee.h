@@ -3,8 +3,10 @@
 #include <inttypes.h>
 
 /* MAX_XBEE_PACKET_SIZE given on page 11 of of XBEE 802.15.4 spec */
-/* 100 Bytes payload + 10 bytes overhead possible */
-#define MAX_XBEE_PAYLOAD_SIZE 110
+/* 100 Bytes payload + 14 bytes overhead possible */
+/* TODO: Check the xbee spec, see if we can make packet size even bigger for printf */
+#define MAX_XBEE_PAYLOAD_SIZE 114
+#define MAX_XBEE_TX_PAYLOAD_SIZE 100
 
 #define  XBEE_START_BYTE    ((uint8_t) 0x7E)
 #define  XBEE_ESCAPE_BYTE   ((uint8_t) 0x7D)
@@ -12,18 +14,19 @@
 #define  XBEE_XOFF_BYTE     ((uint8_t) 0x13)
 #define  XBEE_XOR_BYTE      ((uint8_t) 0x20)
 
-#define  LOWBYTE(v)         ((uint8_t) (v))
+#define  LOWBYTE(v)         ((uint8_t) (v & 0xff))
 #define  HIGHBYTE(v)        ((uint8_t) (((uint16_t) (v)) >> 8))
 
 #define XBEE_API_AT_COMMAND ((uint8_t) 0x08)
 #define XBEE_API_AT_QUEUE_COMMAND ((uint8_t) 0x09)
 #define XBEE_API_TX_REQUEST ((uint8_t) 0x10)
-/* #define XBEE_API_EX_TX_REQUEST ((uint8_t) 0x11) */ // Not implemented!!
-// #define XBEE_API_REMOTE_AT_REQUEST ((uint8_t) 0x17) // Not implemented!!
+
+#define XBEE_API_AT_COMMAND_RESPONSE ((uint8_t) 0x88)
 
 
 #define XBEE_API_AT_RESPONSE ((uint8_t) 0x88)
 #define XBEE_API_MODEM      ((uint8_t) 0x8A)
+#define XBEE_API_TX_STATUS  ((uint8_t) 0x8B)
 
 enum XBeeModemStatus {
   EXBeeModemStatus_HardwareReset,

@@ -25,6 +25,8 @@
 <option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.cross.cortexm3.exe.debug.option.debugging.level.749310406" name="Debug Level" superClass="gnu.c.compiler.cross.cortexm3.exe.debug.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
 <option id="gnu.c.compiler.option.include.paths.237389139" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
 <listOptionValue builtIn="false" value="${workspace_loc:/gc_MSS_MSS_CM3_0_hw_platform/}"/>
+<listOptionValue builtIn="false" value="&quot;${workspace_loc:/xbee_interface}&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${workspace_loc:/xbee}&quot;"/>
 <listOptionValue builtIn="false" value="${workspace_loc:/gc_MSS_MSS_CM3_0_hw_platform/CMSIS}"/>
 <listOptionValue builtIn="false" value="${workspace_loc:/gc_MSS_MSS_CM3_0_hw_platform/CMSIS/startup_gcc}"/>
 <listOptionValue builtIn="false" value="${workspace_loc:/gc_MSS_MSS_CM3_0_hw_platform/drivers}"/>
