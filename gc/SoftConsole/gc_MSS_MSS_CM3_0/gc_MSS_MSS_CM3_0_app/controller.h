@@ -48,7 +48,7 @@ typedef struct
 } controller_t;
 
 extern controller_t * CONTROLLER;
-extern uint32_t *MEM;
+extern uint32_t MEM[8];
 
 void CONTROLLER_print();
 void CONTROLLER_init();
