@@ -7,7 +7,7 @@
 #include "controller.h"
 
 controller_t * CONTROLLER;
-uint32_t *MEM;
+uint32_t MEM[8];
 
 void CONTROLLER_print() {
         CONTROLLER_load();
@@ -48,7 +48,6 @@ void CONTROLLER_init() {
 }
 
 void CONTROLLER_setup_mem() {
-    MEM = (uint32_t*) malloc(8);
     CONTROLLER = (controller_t *) MEM;
 }
 
