@@ -6,7 +6,7 @@
 static int _xbee_printf(const uint8_t * data, uint16_t len) {
   int err, i;
   for (i = 0; i < len; i++) {
-    err = printf("%c", data[i]);
+    err = printf("%c", (int) data[i]);
     if (err != 0) {
       return err;
     }
