@@ -4,16 +4,15 @@
 #include <stdlib.h>
 
 static int _xbee_printf(const uint8_t * data, uint16_t len) {
-  int err;
-  char * str = malloc((len + 2) * sizeof(char));
-  strncpy(str, (const char *) data, len);
-  str[len] = 0;
-  err = printf("%s", str);
-  if (err != 0) {
-    printf("Error print string because %s\n", strerror(errno));
+  int err, i;
+  for (i = 0; i < len; i++) {
+    err = printf("%c", data[i]);
+    if (err != 0) {
+      return err;
+    }
   }
-  free(str);
-  return 0;
+  err = printf("\n");
+  return err;
 }
 
 int xbee_get_next_packet(xbee_serial_t *serial, struct xbee_packet * xp, unsigned char debug) {
