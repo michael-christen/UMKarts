@@ -9,25 +9,29 @@ item CURRENT_ITEM = MAX_NUM_ITEMS;
 void (*ITEM_USE_FUNCTIONS[MAX_NUM_ITEMS])(void) = {
     &use_green_shell,
     &use_mushroom,
-    &use_lightning
+    &use_lightning,
+    &use_star
 };
 
 void (*ITEM_HIT_FUNCTIONS[MAX_NUM_ITEMS])(void) = {
     &hit_green_shell,
     &hit_mushroom,
-    &hit_lightning
+    &hit_lightning,
+    &hit_star
 };
 
 char *ITEM_NAMES [MAX_NUM_ITEMS] = {
     "GREEN_SHELL",
     "MUSHROOM",
-    "LIGHTNING"
+    "LIGHTNING",
+    "STAR"
 };
 
 double ITEM_PROB [MAX_NUM_ITEMS] = {
-  0.50, //GREEN_SHELL
-  0.40, //MUSHROOM
-  0.10  //Lighting
+  0.40, //GREEN_SHELL
+  0.30, //MUSHROOM
+  0.10,  //Lighting
+  0.20	//STAR
 };
 
 int TOTAL_WEIGHT = 1000000;
@@ -123,8 +127,9 @@ void useCurrentItem() {
 	return;
     }
     (*ITEM_USE_FUNCTIONS[CURRENT_ITEM])();
-    CURRENT_ITEM = MAX_NUM_ITEMS;
+
     printf("player1, used, %s",ITEM_NAMES[CURRENT_ITEM]);
+    CURRENT_ITEM = MAX_NUM_ITEMS;
 }
 
 void hitByItem(item i) {
@@ -141,6 +146,9 @@ void use_mushroom() {
 void use_lightning() {
 	sound_play(LIGHTNING_BEGIN, LIGHTNING_END);
 }
+void use_star() {
+	sound_play_repeat(STARPOWER_BEGIN, STARPOWER_END);
+}
 
 void hit_green_shell() {
 	uint8_t opId = LASER_TAG_hit();
@@ -150,4 +158,6 @@ void hit_green_shell() {
 void hit_mushroom() {
 }
 void hit_lightning() {
+}
+void hit_star() {
 }
