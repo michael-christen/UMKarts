@@ -12,6 +12,7 @@
 #include "drivers/mss_ace/mss_ace.h"
 #include "sound.h"
 #include "sound_samples.h"
+#include "mario_xbee.h"
 
 
 volatile uint32_t count;

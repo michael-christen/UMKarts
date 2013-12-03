@@ -1,6 +1,8 @@
 #ifndef __PLAYER_H_
 #define __PLAYER_H_
 
+#include <inttypes.h>
+
 #define MAX_PLAYERS 16
 
 typedef enum {
@@ -15,7 +17,7 @@ extern Driver DRIVER;
 
 struct Player {
 	uint64_t address;
-	driver Driver;
+	Driver Driver;
 	uint8_t valid;
 };
 
@@ -26,7 +28,7 @@ struct PlayerTable {
 
 struct PlayerTableIter {
 	int _pos;
-	(struct Player *) (*next)();
+	struct Player * (*next)();
 	struct PlayerTable * _table;
 };
 
@@ -40,7 +42,7 @@ void player_discovery();
  * almost immediately because it's important that we figure out who we are so
  * we know what sound to play
  */
-void driver_discovery();
+int driver_discovery();
 
 /**
  * Returns true or false to let use know if we have received our address yet or

@@ -8,16 +8,16 @@
 
 #define MAX_PRINTF_SIZE MAX_XBEE_TX_PAYLOAD_SIZE - 1
 
-void mario_xbee_intepret_packet(struct xbee_packet * xp) {
+int mario_xbee_intepret_packet(struct xbee_packet * xp) {
 	switch (xbee_packet_api_id(xp)) {
 	case XBEE_API_AT_COMMAND_RESPONSE:
 		if (xp->payload[4] != 0x00) {
 			xbee_printf("Invalid xbee packet: %c%c, %d\r\n", xp->payload[2], xp->payload[3], xp->payload[4]);
 		}
-		else if (xp->payload[2] == "S" && xp->payload[3] == "H") {
+		else if (xp->payload[2] == 'S' && xp->payload[3] == 'H') {
 			player_set_high_address(xp->payload[5]);
 		}
-		else if (xp->payload[2] == "S" && xp->payload[3] == "L") {
+		else if (xp->payload[2] == 'S' && xp->payload[3] == 'L') {
 			player_set_low_address(xp->payload[5]);
 		}
 		else {
@@ -30,6 +30,7 @@ void mario_xbee_intepret_packet(struct xbee_packet * xp) {
 	case XBEE_API_TX_STATUS:
 		break;
 	}
+	return 0;
 }
 
 int xbee_printf(const char * format_string, ...) {

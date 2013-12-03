@@ -7,7 +7,7 @@
 static struct PlayerTable _players;
 
 static struct {
-	uint16_t _address;
+	uint64_t _address;
 	enum {
 		ADDRESS_UNSET,
 		ADDRESS_LOW_SET,
@@ -17,13 +17,13 @@ static struct {
 } _myPlayerInfo;
 
 static struct {
-	uint16_t _address;
+	uint64_t _address;
 	Driver _driver;
 } _drive_lookup_table[] = {
-	{0x0013A200407A866Bull, MARIO},
-	{0x0013A200407A8640ull, LUIGI},
-	{0x0013A200407A8676ull, WARIO},
-	{0x0013A20040AE5BE4ull, PEACH},
+	{0x0013A200407A866BULL, MARIO},
+	{0x0013A200407A8640ULL, LUIGI},
+	{0x0013A200407A8676ULL, WARIO},
+	{0x0013A20040AE5BE4ULL, PEACH},
 };
 
 Driver DRIVER = DRIVER_INVALID;
@@ -31,8 +31,8 @@ Driver DRIVER = DRIVER_INVALID;
 static struct Player * _iter_next(struct PlayerTableIter * self) {
 	struct Player *player;
 	for( ; self->_pos < MAX_PLAYERS; self->_pos++) {
-		if (self->_table[self->_pos].valid) {
-			player = self->_table[self->_pos];
+		if (self->_table->players[self->_pos].valid) {
+			player = &(self->_table->players[self->_pos]);
 			self->_pos++;
 			return player;
 		}
@@ -62,34 +62,35 @@ uint64_t player_get_address_from_driver(Driver d) {
 }
 
 void player_init() {
-	_myPlayerInfo->_state = ADDRESS_UNSET;
-	memset(_players, 0, sizeof(_players));
+	_myPlayerInfo._state = ADDRESS_UNSET;
+	memset(&_players, 0, sizeof(_players));
+}
 
 uint8_t player_address_complete() {
-	return _myPlayerInfo->_state == ADDRESS_DONE;
+	return _myPlayerInfo._state == ADDRESS_DONE;
 }
 
 void player_set_low_address(uint8_t low) {
-	if (_myPlayerInfo->_state == ADDRESS_HIGH_SET) {
-		_myPlayerInfo->_address += (0xFF & low);
-		_myPlayerInfo->_state = ADDRESS_DONE;
-		DRIVER = player_get_driver_from_address(_myPlayerInfo->_address);
+	if (_myPlayerInfo._state == ADDRESS_HIGH_SET) {
+		_myPlayerInfo._address += (0xFF & low);
+		_myPlayerInfo._state = ADDRESS_DONE;
+		DRIVER = player_get_driver_from_address(_myPlayerInfo._address);
 	}
-	else if (_myPlayerInfo->_state == ADDRESS_UNSET) {
-		_myPlayerInfo->_address = (0xFF & low);
-		_myPlayerInfo->_state = ADDRESS_LOW_SET;
+	else if (_myPlayerInfo._state == ADDRESS_UNSET) {
+		_myPlayerInfo._address = (0xFF & low);
+		_myPlayerInfo._state = ADDRESS_LOW_SET;
 	}
 }
 
 void player_set_high_address(uint8_t high) {
-	if (_myPlayerInfo->_state == ADDRESS_LOW_SET) {
-		_myPlayerInfo->_adddress += ((uint16_t) (0xFF00 & ((uint16_t) high << 8)));
-		_myPlayerInfo->_state = ADDRESS_DONE;
-		DRIVER = player_get_driver_from_address(_myPlayerInfo->_address);
+	if (_myPlayerInfo._state == ADDRESS_LOW_SET) {
+		_myPlayerInfo._address += ((uint16_t) (0xFF00 & ((uint16_t) high << 8)));
+		_myPlayerInfo._state = ADDRESS_DONE;
+		DRIVER = player_get_driver_from_address(_myPlayerInfo._address);
 	}
-	else if (_myPlayerInfo->_state == ADDRESS_UNSET) {
-		_myPlayerInfo->_adddress = ((uint16_t) (0xFF00 & ((uint16_t) high << 8)));
-		_myPlayerInfo->_state = ADDRESS_HIGH_SET;
+	else if (_myPlayerInfo._state == ADDRESS_UNSET) {
+		_myPlayerInfo._address = ((uint16_t) (0xFF00 & ((uint16_t) high << 8)));
+		_myPlayerInfo._state = ADDRESS_HIGH_SET;
 	}
 }
 
@@ -97,7 +98,7 @@ void player_set_high_address(uint8_t high) {
 struct PlayerTableIter player_table_iter() {
 	struct PlayerTableIter it;
 	it._pos = 0;
-	it._table = _players;
+	it._table = &_players;
 	it.next = _iter_next;
 	return it;
 }
@@ -109,8 +110,8 @@ int driver_discovery() {
 	if (!xp) return -ENOMEM;
 	xp->payload[0] = XBEE_API_AT_COMMAND;
 	xp->payload[1] = xbee_interface_next_frame_id();
-	xp->payload[2] = "S";
-	xp->payload[3] = "H";
+	xp->payload[2] = 'S';
+	xp->payload[3] = 'H';
 	xp->len = 4;
 	err = xbee_send(xp);
 	if (err < 0) {
@@ -121,8 +122,8 @@ int driver_discovery() {
 		if (!xp) return -ENOMEM;
 		xp->payload[0] = XBEE_API_AT_COMMAND;
 		xp->payload[1] = xbee_interface_next_frame_id();
-		xp->payload[2] = "S";
-		xp->payload[3] = "L";
+		xp->payload[2] = 'S';
+		xp->payload[3] = 'L';
 		xp->len = 4;
 		err = xbee_send(xp);
 		if (err < 0) {

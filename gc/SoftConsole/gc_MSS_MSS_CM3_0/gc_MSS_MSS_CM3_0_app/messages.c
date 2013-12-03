@@ -3,6 +3,7 @@
 #include "xbee_interface.h"
 #include "player.h"
 #include <errno.h>
+#include <string.h>
 
 #define MAX_FRAME_ID 256
 
@@ -12,10 +13,14 @@ static struct {
 	uint64_t address;
 	uint8_t msg_type;
 	uint8_t noack;
-} _sent_messages[MAX_FRAME_ID] = {0};
+} _sent_messages[MAX_FRAME_ID];
 
 static void _add_sent_message(uint8_t frame_id, uint8_t msg_type, uint8_t * data, uint16_t len, uint64_t address); 
-static void _ack_sent_message(uint8_t frame_id); 
+static void _ack_sent_message(uint8_t frame_id);
+
+void send_message_init() {
+	memset(_sent_messages, 0, sizeof(_sent_messages));
+}
 
 int send_message(uint8_t message_type, uint8_t *data, uint16_t data_len) {
 	struct PlayerTableIter it;
@@ -71,7 +76,7 @@ int send_message_address(uint64_t address, uint8_t message_type, uint8_t * data,
 
 int send_message_retry(uint8_t frame_id) {
 	if (_sent_messages[frame_id].noack == 1) {
-		return send_message_addres(_sent_messages[frame_id].address,
+		return send_message_address(_sent_messages[frame_id].address,
 		                           _sent_messages[frame_id].msg_type,
 															 _sent_messages[frame_id].payload,
 															 _sent_messages[frame_id].payload_len);
