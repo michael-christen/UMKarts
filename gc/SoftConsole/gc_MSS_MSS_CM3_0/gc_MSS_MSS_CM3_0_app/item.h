@@ -5,15 +5,7 @@
 #include <time.h>
 #include "lcd.h"
 #include "lasertag.h"
-
-#define DRIVER MARIO
-
-typedef enum {
-    MARIO,
-    LUIGI,
-    WARIO,
-    PEACH
-} driver;
+#include "player.h"
 
 typedef enum {
     GREEN_SHELL,

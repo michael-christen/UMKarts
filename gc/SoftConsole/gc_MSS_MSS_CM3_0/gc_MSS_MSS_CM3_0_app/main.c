@@ -153,10 +153,7 @@ int main()
                 	use_green_shell();
                 }
                 while ((xbee_read_packet = xbee_read())) {
-                	//mario_xbee_intepret_packet(xbee_read_packet);
-                	if (xbee_packet_api_id(xbee_read_packet) != XBEE_API_TX_STATUS) {
-                		xbee_printf("We received a packet with api id %x", xbee_packet_api_id(xbee_read_packet));
-                	}
+                	mario_xbee_intepret_packet(xbee_read_packet);
                 	xbee_interface_free_packet(xbee_read_packet);
                 }
         }

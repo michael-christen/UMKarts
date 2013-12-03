@@ -1,6 +1,7 @@
 #include "xbee.h"
 #include "xbee_interface.h"
 #include "mario_xbee.h"
+#include "player.h"
 #include <stdio.h>
 #include <stdarg.h>
 #include <errno.h>
@@ -10,23 +11,26 @@
 void mario_xbee_intepret_packet(struct xbee_packet * xp) {
 	switch (xbee_packet_api_id(xp)) {
 	case XBEE_API_AT_COMMAND_RESPONSE:
-
+		if (xp->payload[4] != 0x00) {
+			xbee_printf("Invalid xbee packet: %c%c, %d\r\n", xp->payload[2], xp->payload[3], xp->payload[4]);
+		}
+		else if (xp->payload[2] == "S" && xp->payload[3] == "H") {
+			player_set_high_address(xp->payload[5]);
+		}
+		else if (xp->payload[2] == "S" && xp->payload[3] == "L") {
+			player_set_low_address(xp->payload[5]);
+		}
+		else {
+			/* Should we print an error in this case? */
+		}
+		break;
 	case XBEE_API_MODEM:
-		/* Ignore for now */
+		xbee_printf("XBee Modem Status: %d\n", xp->payload[1]);
 		break;
 	case XBEE_API_TX_STATUS:
 		break;
 	}
 }
-
-/*
- * This function will be called when we are looking for other available
- * cards on the network.
- */
-void mario_xbee_network_discovery() {
-}
-
-
 
 int xbee_printf(const char * format_string, ...) {
 	uint64_t dest_address = 0x0013A20040A711E0LL;
