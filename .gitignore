@@ -47,3 +47,6 @@ gc/synthesis/syntmp/gc_flink.htm
 gc/synthesis/syntmp/gc_srr.htm
 gc/synthesis/syntmp/gc_toc.htm
 gc/synthesis/syntmp/open.png
+
+# Compiled executable
+listener_server/src/mario_listener

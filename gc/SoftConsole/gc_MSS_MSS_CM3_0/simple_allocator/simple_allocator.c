@@ -1,14 +1,14 @@
 #include "simple_allocator.h"
 #include "atomics.h"
+#include <errno.h>
 
 
 int SimpleAllocatorInit(SimpleAllocator * sa, void *buf, size_t num_items, size_t item_sz) {
   /* sizeof(uint32_t)*8 = number of bits we have */
-  if (num_items > sizeof(sa->empty_mask)*8) return -ESIMPLEALLOCATORTOOBIG;
+  if (num_items > sizeof(sa->empty_mask)*8) return -EINVAL;
   sa->buf = buf;
   sa->num_items = num_items;
   sa->item_sz = item_sz;
-  sa->next_free = sa->buf;
   sa->empty_mask = 0;
   return 0;
 }
