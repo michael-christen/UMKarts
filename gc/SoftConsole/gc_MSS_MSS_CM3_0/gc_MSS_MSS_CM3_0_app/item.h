@@ -11,6 +11,7 @@ typedef enum {
     GREEN_SHELL,
     MUSHROOM,
     LIGHTNING,
+    STAR,
     MAX_NUM_ITEMS
 } item;
 
@@ -23,10 +24,12 @@ void useCurrentItem();
 void use_green_shell();
 void use_mushroom();
 void use_lightning();
+void use_star();
 
 void hit_green_shell();
 void hit_mushroom();
 void hit_lightning();
+void hit_star();
 
 extern char *ITEM_NAMES [MAX_NUM_ITEMS];
 

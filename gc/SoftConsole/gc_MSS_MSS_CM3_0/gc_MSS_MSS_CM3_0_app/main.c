@@ -156,5 +156,6 @@ int main()
                 	mario_xbee_intepret_packet(xbee_read_packet);
                 	xbee_interface_free_packet(xbee_read_packet);
                 }
+
         }
 }

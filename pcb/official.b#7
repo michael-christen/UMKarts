@@ -1686,7 +1686,7 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <element name="C10" library="rcl" package="B45181B" value="" x="31.75" y="17.78" rot="R90"/>
 <element name="C11" library="rcl" package="B45181B" value="" x="26.67" y="17.78" rot="R90"/>
 <element name="C12" library="rcl" package="B45181B" value="" x="21.59" y="17.78" rot="R90"/>
-<element name="R9" library="rcl" package="0309/12" value="10" x="81.28" y="20.32" rot="R270"/>
+<element name="R9" library="rcl" package="0309/12" value="10" x="81.28" y="19.05" rot="R270"/>
 <element name="R10" library="rcl" package="0309/12" value="200" x="91.44" y="20.32" rot="R90"/>
 <element name="R11" library="rcl" package="0309/12" value="10k" x="41.91" y="20.32" rot="R270"/>
 <element name="R12" library="rcl" package="0309/12" value="750" x="92.71" y="6.35" rot="R180"/>
@@ -1972,10 +1972,10 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="115.57" y1="12.7" x2="109.22" y2="19.05" width="0" layer="19" extent="1-1"/>
 <wire x1="96.52" y1="13.97" x2="109.22" y2="19.05" width="0" layer="19" extent="1-1"/>
 <wire x1="91.44" y1="13.97" x2="96.52" y2="13.97" width="0" layer="19" extent="1-1"/>
-<wire x1="99.06" y1="6.35" x2="96.52" y2="13.97" width="0" layer="19" extent="1-1"/>
 <wire x1="86.36" y1="13.97" x2="91.44" y2="13.97" width="0" layer="19" extent="1-1"/>
-<wire x1="46.99" y1="16.51" x2="86.36" y2="13.97" width="0" layer="19" extent="1-1"/>
-<wire x1="46.99" y1="13.97" x2="46.99" y2="16.51" width="0" layer="19" extent="1-1"/>
+<wire x1="99.06" y1="6.35" x2="96.52" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="46.99" y1="13.97" x2="86.36" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="46.99" y1="16.51" x2="46.99" y2="13.97" width="0" layer="19" extent="1-1"/>
 <wire x1="34.29" y1="11.43" x2="46.99" y2="13.97" width="0" layer="19" extent="1-1"/>
 <wire x1="30.48" y1="1.27" x2="34.29" y2="11.43" width="0" layer="19" extent="1-1"/>
 <wire x1="27.94" y1="1.27" x2="30.48" y2="1.27" width="0" layer="19" extent="1-1"/>
@@ -2142,7 +2142,7 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <signal name="LSERVO">
 <contactref element="R9" pad="1"/>
 <contactref element="P11" pad="17"/>
-<wire x1="63.5" y1="1.27" x2="81.28" y2="26.67" width="0" layer="19" extent="1-1"/>
+<wire x1="63.5" y1="1.27" x2="81.28" y2="25.4" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RSERVO">
 <contactref element="H-BRIDGE1" pad="14"/>
@@ -2208,7 +2208,7 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <signal name="N$1">
 <contactref element="H-BRIDGE1" pad="13"/>
 <contactref element="R9" pad="2"/>
-<wire x1="46.99" y1="11.43" x2="81.28" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="46.99" y1="11.43" x2="81.28" y2="12.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$10">
 </signal>
