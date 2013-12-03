@@ -32,6 +32,8 @@ struct PlayerTableIter {
 	struct PlayerTable * _table;
 };
 
+void player_init();
+
 /**
  * Sends out an xbee packet to find all other cars that are in the area.
  */
@@ -54,13 +56,13 @@ uint8_t player_address_complete();
  * Sets the low bits of our address. Also marks address as complete if we have
  * already set the high bits.
  */
-void player_set_low_address(uint8_t low); 
+void player_set_low_address(uint32_t low);
 
 /**
  * Sets the high bits of our xbee address. Also marks the high bits as complete
  * if we have already set the high bits
  */
-void player_set_high_address(uint8_t high); 
+void player_set_high_address(uint32_t high);
 
 struct PlayerTableIter player_table_iter();
 

@@ -2,6 +2,7 @@
 #include "xbee_interface.h"
 #include "mario_xbee.h"
 #include "player.h"
+#include "convert.h"
 #include <stdio.h>
 #include <stdarg.h>
 #include <errno.h>
@@ -15,10 +16,10 @@ int mario_xbee_intepret_packet(struct xbee_packet * xp) {
 			xbee_printf("Invalid xbee packet: %c%c, %d\r\n", xp->payload[2], xp->payload[3], xp->payload[4]);
 		}
 		else if (xp->payload[2] == 'S' && xp->payload[3] == 'H') {
-			player_set_high_address(xp->payload[5]);
+			player_set_high_address(bytes_to_uint32_t(&(xp->payload[5])));
 		}
 		else if (xp->payload[2] == 'S' && xp->payload[3] == 'L') {
-			player_set_low_address(xp->payload[5]);
+			player_set_low_address(bytes_to_uint32_t(&(xp->payload[5])));
 		}
 		else {
 			/* Should we print an error in this case? */

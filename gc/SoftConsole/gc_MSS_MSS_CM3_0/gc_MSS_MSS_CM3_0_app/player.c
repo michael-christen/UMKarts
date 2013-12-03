@@ -70,26 +70,26 @@ uint8_t player_address_complete() {
 	return _myPlayerInfo._state == ADDRESS_DONE;
 }
 
-void player_set_low_address(uint8_t low) {
+void player_set_low_address(uint32_t low) {
 	if (_myPlayerInfo._state == ADDRESS_HIGH_SET) {
-		_myPlayerInfo._address += (0xFF & low);
+		_myPlayerInfo._address += (0xFFFFFFFFull & low);
 		_myPlayerInfo._state = ADDRESS_DONE;
 		DRIVER = player_get_driver_from_address(_myPlayerInfo._address);
 	}
 	else if (_myPlayerInfo._state == ADDRESS_UNSET) {
-		_myPlayerInfo._address = (0xFF & low);
+		_myPlayerInfo._address = (0xFFFFFFFFull & low);
 		_myPlayerInfo._state = ADDRESS_LOW_SET;
 	}
 }
 
-void player_set_high_address(uint8_t high) {
+void player_set_high_address(uint32_t high) {
 	if (_myPlayerInfo._state == ADDRESS_LOW_SET) {
-		_myPlayerInfo._address += ((uint16_t) (0xFF00 & ((uint16_t) high << 8)));
+		_myPlayerInfo._address += ((uint64_t) (0xFFFFFFFF00000000ull & ((uint64_t) high << 32)));
 		_myPlayerInfo._state = ADDRESS_DONE;
 		DRIVER = player_get_driver_from_address(_myPlayerInfo._address);
 	}
 	else if (_myPlayerInfo._state == ADDRESS_UNSET) {
-		_myPlayerInfo._address = ((uint16_t) (0xFF00 & ((uint16_t) high << 8)));
+		_myPlayerInfo._address = ((uint64_t) (0xFFFFFFFF00000000ull & ((uint64_t) high << 32)));
 		_myPlayerInfo._state = ADDRESS_HIGH_SET;
 	}
 }

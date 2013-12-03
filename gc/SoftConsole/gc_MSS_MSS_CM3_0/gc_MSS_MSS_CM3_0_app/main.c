@@ -13,6 +13,8 @@
 #include "sound.h"
 #include "sound_samples.h"
 #include "mario_xbee.h"
+#include "messages.h"
+#include "player.h"
 
 
 volatile uint32_t count;
@@ -70,93 +72,84 @@ int main()
 	else {
 		xbee_printf("XBee successfully initiated\n");
 	}
+
+	player_init();
+	send_message_init();
+	driver_discovery();
+
 	sound_init();
+
 	xbee_printf("Sound initialized\n");
-        //volatile int d = 0;
-        MOTOR_cmpVal = 2000000;
-        MOTOR_period = 20000000;
-        curClock = prevClock = 0;
-   /* Setup MYTIMER */
-        MOTOR_init();
-        MOTOR_set_speed(0);
-        MOTOR_set_servo_direction(0);
+	//volatile int d = 0;
+	MOTOR_cmpVal = 2000000;
+	MOTOR_period = 20000000;
+	curClock = prevClock = 0;
+	/* Setup MYTIMER */
+	MOTOR_init();
+	MOTOR_set_speed(0);
+	MOTOR_set_servo_direction(0);
 
-        xbee_printf("Mike Loves Double Dash!!!\n");
-        count = 0;
-        int lastVal = 1;
-        double speed = 0;
-        int dir = 1;
+	xbee_printf("Mike Loves Double Dash!!!\n");
+	count = 0;
+	int lastVal = 1;
+	double speed = 0;
+	int dir = 1;
 
-        CONTROLLER_setup_mem();
+	CONTROLLER_setup_mem();
 
-		// Setting up GPIO interrupts for item pick ups
-        MSS_GPIO_init();
+	// Setting up GPIO interrupts for item pick ups
+	MSS_GPIO_init();
 
-        // Reflective Sensor
-        MSS_GPIO_config(MSS_GPIO_2, MSS_GPIO_INPUT_MODE | MSS_GPIO_IRQ_EDGE_NEGATIVE);
-        MSS_GPIO_enable_irq(MSS_GPIO_2);
+	// Reflective Sensor
+	MSS_GPIO_config(MSS_GPIO_2, MSS_GPIO_INPUT_MODE | MSS_GPIO_IRQ_EDGE_NEGATIVE);
+	MSS_GPIO_enable_irq(MSS_GPIO_2);
 
-		// Magnetic sensor
-        MSS_GPIO_config(MSS_GPIO_1, MSS_GPIO_INPUT_MODE | MSS_GPIO_IRQ_EDGE_NEGATIVE);
-        MSS_GPIO_enable_irq(MSS_GPIO_1);
+	// Magnetic sensor
+	MSS_GPIO_config(MSS_GPIO_1, MSS_GPIO_INPUT_MODE | MSS_GPIO_IRQ_EDGE_NEGATIVE);
+	MSS_GPIO_enable_irq(MSS_GPIO_1);
 
-        initItemWeights();
+	initItemWeights();
 
-        LASER_TAG_init();
+	LASER_TAG_init();
 
-        LASER_TAG_shoot();
+	LASER_TAG_shoot();
 
-        int x = 1;
-        LCD_init();
-        xbee_printf("%s %s\n", "Hello", "World");
-        /*
-        while(1) {
-        	LCD_printf("Hi! %d", x++);
-        	CONTROLLER_print();
-        	for (d = 0; d < 5000000; d++);
-        	LCD_printf("%s %s", "Hello", "World");
-        	CONTROLLER_print();
-        	for (d = 0; d < 5000000; d++);
+	int x = 1;
+	LCD_init();
+	xbee_printf("%s %s\n", "Hello", "World");
 
-        }
-        */
+	while( 1 )
+	{
+		//CONTROLLER_print();
+		CONTROLLER_load();
+		if (CONTROLLER->a) {
+			MOTOR_set_speed(1);
+		} else if (CONTROLLER->b) {
+			MOTOR_set_speed(-1);
+		} else {
+			MOTOR_set_speed(0);
+		}
 
-        while( 1 )
-        {
+		if (CONTROLLER->d_right || CONTROLLER->joystick_x > 158) {
+			MOTOR_set_servo_direction(1);
+		} else if (CONTROLLER->d_left || CONTROLLER->joystick_x < 98) {
+			MOTOR_set_servo_direction(-1);
+		} else {
+			MOTOR_set_servo_direction(0);
+		}
 
-        	//CONTROLLER_print();
-        	CONTROLLER_load();
-                if(CONTROLLER->a) {
-                        MOTOR_set_speed(1);
-                }
-                else if(CONTROLLER->b) {
-                        MOTOR_set_speed(-1);
-                }
-                else {
-                        MOTOR_set_speed(0);
-                }
+		if (CONTROLLER->l) {
+			useCurrentItem();
+		} else if (CONTROLLER->x) {
+			handleItemGrab();
+		} else if (CONTROLLER->y) {
+			use_green_shell();
+		}
+		while ((xbee_read_packet = xbee_read())) {
+			mario_xbee_intepret_packet(xbee_read_packet);
+			xbee_interface_free_packet(xbee_read_packet);
+		}
+	}
 
-                if(CONTROLLER->d_right || CONTROLLER->joystick_x > 158) {
-                        MOTOR_set_servo_direction(1);
-                }
-                else if(CONTROLLER->d_left || CONTROLLER->joystick_x < 98) {
-                        MOTOR_set_servo_direction(-1);
-                }
-                else {
-                        MOTOR_set_servo_direction(0);
-                }
-
-                if (CONTROLLER->l) {
-                	useCurrentItem();
-                } else if (CONTROLLER->x) {
-                	handleItemGrab();
-                } else if (CONTROLLER->y) {
-                	use_green_shell();
-                }
-                while ((xbee_read_packet = xbee_read())) {
-                	mario_xbee_intepret_packet(xbee_read_packet);
-                	xbee_interface_free_packet(xbee_read_packet);
-                }
-
-        }
+	return 0;
 }

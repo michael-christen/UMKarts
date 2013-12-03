@@ -10,6 +10,7 @@
 
 #define XBEE_MESSAGE_PRINTF ((uint8_t) 0x00)
 
+void send_message_init();
 /**
  * Sends a new message off to all available XBee's.
  */
