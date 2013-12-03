@@ -9,7 +9,6 @@ typedef struct {
   void *buf;
   size_t num_items;
   size_t item_sz;
-  void *next_free;
   volatile uint32_t empty_mask;
 } SimpleAllocator;
 
