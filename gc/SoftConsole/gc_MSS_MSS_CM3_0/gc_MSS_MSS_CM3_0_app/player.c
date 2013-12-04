@@ -26,7 +26,7 @@ static struct {
 	{0x0013A20040AE5BE4ULL, PEACH},
 };
 
-Driver DRIVER = DRIVER_INVALID;
+Driver DRIVER = PEACH;
 
 static struct Player * _iter_next(struct PlayerTableIter * self) {
 	struct Player *player;
