@@ -215,12 +215,12 @@
             000000880000000000000000000000000000000000000000001f1f004245
             45007e7f010000000a000008200100e1f505010000d2000000000000001e
             1a07070005001000050010000000000000280000001828b0c20a2bacb0c2
-            0a1828b0c20a2bacb0c20a2bacb0c20a2bacb0c20a2bacb0c20a2bacb0c2
+            0a1828b0c20a2bacb0c20a2bacb0c20a2baca080022b28b0c20a2bacb0c2
             0a2bacb0c20a2bacb0c20a2bacb0c20a2bacb0c20a2bacb0c20a2bacb0c2
             0a2bacb0c20a2bacb0c20a2bacb0c20a2bacb0c20a2bacb0c20a2bacb002
-            00000000789c080090d0331180fdc30078ff730033b3f9719af9a0e1
+            00000000789c080090d0331180fdc30078ff730033b3f9719af9dd2e
             <crc>
-                0e99
+                16b8
             </crc>
         </region>
         <region name="ACTEL_PPE_MERGE_CONFIG" address="0x07fb00" retrieveAddressFromFile="false" size="48" format="HEX" type="Data Storage" wordSize="32" numberWords="12" memFile="" memType="" memFileTimeStamp="" clientType="private" program="true">
