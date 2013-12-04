@@ -33,6 +33,9 @@ void hit_star();
 
 extern char *ITEM_NAMES [MAX_NUM_ITEMS];
 
+// Time (in ms) to have each item
+extern uint64_t ITEM_DURATIONS [MAX_NUM_ITEMS];
+
 extern double ITEM_PROB [MAX_NUM_ITEMS];
 
 extern int ITEM_WEIGHT [MAX_NUM_ITEMS];
