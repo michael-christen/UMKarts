@@ -34,32 +34,6 @@ __attribute__ ((interrupt)) void GPIO2_IRQHandler( void ){
 	handleItemGrab();
 	MSS_GPIO_clear_irq( MSS_GPIO_2 );
 }
-__attribute__ ((interrupt)) void Fabric_IRQHandler( void )
-{
-
-    //uint32_t time = MOTOR_getCounterVal();
-    uint32_t status = MOTOR_getInterrupt_status();
-    /*
-
-    printf("%d Count \n\r", (int)count);
-    if(status & 0x01 && count > 1000)
-    {
-        MOTOR_set_speed(.5);
-        count = 0;
-    }
-
-    if(status & 0x02)
-    {
-        printf("Compare latency %ld\n\r", (1<<27) - time);
-    }
-    if(status == 12)
-    {
-            printf("Sync time: %ld, Async time: %ld, diff: %ld\n\r", sync_out, async_out, sync_out - async_out);
-    }
-    */
-    count ++;
-    NVIC_ClearPendingIRQ( Fabric_IRQn );
-}
 
 int main()
 {
