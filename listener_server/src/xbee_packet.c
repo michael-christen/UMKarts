@@ -59,7 +59,7 @@ int xbee_received_packet(struct xbee_packet *xp) {
 		data = xbee_rxpt_payload_start(xp);
 		switch (*data) {
 			case 0x00:
-				_xbee_printf(_xbee_tx_packet_get_address(xp->payload + 1), data + 1, data_len - 1);
+				_xbee_printf(_xbee_tx_packet_get_address(xp->payload + 1), data + 3, data_len - 3);
 				break;
 			default:
 				Log(EINFO, "Recevied a tx packet that we have not configured for %x", *data);
