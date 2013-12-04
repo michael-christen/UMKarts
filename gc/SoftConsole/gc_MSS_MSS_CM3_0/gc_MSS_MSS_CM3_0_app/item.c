@@ -152,6 +152,10 @@ void use_star() {
 
 void hit_green_shell() {
 	uint8_t opId = LASER_TAG_hit();
+	// You can't shoot yourself
+	if (opId == DRIVER) {
+		return;
+	}
 	printf("He shot me, %d\r\n", opId);
 	sound_play(OW_SOUND_BEGIN[DRIVER], OW_SOUND_END[DRIVER]);
 }
