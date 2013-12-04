@@ -2,7 +2,7 @@
 #define MARIO_XBEE_H_
 #include "xbee.h"
 
-int mario_xbee_intepret_packet(struct xbee_packet *);
+int mario_xbee_interpret_packet(struct xbee_packet *);
 
 /**
  * Prints over xbee a message to be printed by someone else, probably the listener.

@@ -9,21 +9,12 @@
 
 #define MAX_PRINTF_SIZE MAX_XBEE_TX_PAYLOAD_SIZE - 1
 
-int mario_xbee_intepret_packet(struct xbee_packet * xp) {
+static void _mario_xbee_interpret_at_response(struct xbee_packet *xp);
+
+int mario_xbee_interpret_packet(struct xbee_packet * xp) {
 	switch (xbee_packet_api_id(xp)) {
 	case XBEE_API_AT_COMMAND_RESPONSE:
-		if (xp->payload[4] != 0x00) {
-			xbee_printf("Invalid xbee packet: %c%c, %d\r\n", xp->payload[2], xp->payload[3], xp->payload[4]);
-		}
-		else if (xp->payload[2] == 'S' && xp->payload[3] == 'H') {
-			player_set_high_address(bytes_to_uint32_t(&(xp->payload[5])));
-		}
-		else if (xp->payload[2] == 'S' && xp->payload[3] == 'L') {
-			player_set_low_address(bytes_to_uint32_t(&(xp->payload[5])));
-		}
-		else {
-			/* Should we print an error in this case? */
-		}
+		_mario_xbee_interpret_at_response(xp);
 		break;
 	case XBEE_API_MODEM:
 		xbee_printf("XBee Modem Status: %d\n", xp->payload[1]);
@@ -72,4 +63,27 @@ xbee_printf_exit:
 	va_end(varargs);
 
 	return err;
+}
+
+static inline uint8_t _mario_xbee_at_cmd_is(const struct xbee_packet *xp, const char * cmd) {
+	return (xp->payload[2] == cmd[0] && xp->payload[3] == cmd[1]);
+}
+
+static void _mario_xbee_interpret_at_response(struct xbee_packet *xp) {
+	uint64_t address;
+	if (xp->payload[4] != 0x00) {
+		xbee_printf("Invalid xbee packet: %c%c, %d\r\n", xp->payload[2],
+				xp->payload[3], xp->payload[4]);
+	} else if (_mario_xbee_at_cmd_is(xp, "SH")) {
+		player_set_high_address(bytes_to_uint32_t(&(xp->payload[5])));
+	} else if (_mario_xbee_at_cmd_is(xp, "SL")) {
+		player_set_low_address(bytes_to_uint32_t(&(xp->payload[5])));
+	} else if (_mario_xbee_at_cmd_is(xp, "ND")) {
+		address = bytes_to_uint64_t(xp->payload + 7);
+		if (player_get_driver_from_address(address) != DRIVER_INVALID) {
+			player_add_player(address);
+		}
+	} else {
+		/* Should we print an error in this case? */
+	}
 }

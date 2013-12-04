@@ -23,12 +23,9 @@ void send_message_init() {
 }
 
 int send_message(uint8_t message_type, uint8_t *data, uint16_t data_len) {
-	struct PlayerTableIter it;
-	int err;
-	it = player_table_iter();
-	struct Player *p;
-	while ((p = it.next())) {
-		err = send_message_address(p->address, message_type, data, data_len);
+	int err, i;
+	for (i = 0; i < g_player_table.size; i++) {
+		err = send_message_address(g_player_table.players[i], message_type, data, data_len);
 		if (err < 0)  return err;
 	}
 	return 0;

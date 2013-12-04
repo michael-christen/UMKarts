@@ -6,38 +6,23 @@
 #define MAX_PLAYERS 16
 
 typedef enum {
-    MARIO,
-    LUIGI,
-    WARIO,
-    PEACH,
-		DRIVER_INVALID,
+	MARIO, LUIGI, WARIO, PEACH, DRIVER_INVALID,
 } Driver;
 
-extern Driver DRIVER;
-
-struct Player {
-	uint64_t address;
-	Driver Driver;
-	uint8_t valid;
-};
-
 struct PlayerTable {
-	struct Player players[MAX_PLAYERS];
+	uint64_t players[MAX_PLAYERS];
 	uint8_t size;
 };
 
-struct PlayerTableIter {
-	int _pos;
-	struct Player * (*next)();
-	struct PlayerTable * _table;
-};
+extern Driver DRIVER;
+extern struct PlayerTable g_player_table;
 
 void player_init();
 
 /**
  * Sends out an xbee packet to find all other cars that are in the area.
  */
-void player_discovery();
+int player_discovery();
 
 /**
  * Sends out an xbee packet to figure out who we are. This needs to be called
@@ -64,6 +49,31 @@ void player_set_low_address(uint32_t low);
  */
 void player_set_high_address(uint32_t high);
 
-struct PlayerTableIter player_table_iter();
+/**
+ * Gets a driver from the address. Returns DRIVER_INVALID if the address does
+ * not correspond to an actual address.
+ */
+Driver player_get_driver_from_address(uint64_t p);
+
+/**
+ * Gets the address from a driver. Returns 0 if passed DRIVER_INVALID, because
+ * that is not a valid driver. (duh)
+ */
+uint64_t player_get_address_from_driver(Driver d);
+
+/**
+ * Tests to see if a player is registered in our player table.
+ */
+int player_exists(uint64_t p);
+
+/**
+ * Adds a player to our player table.
+ */
+int player_remove_player(uint64_t p);
+
+/**
+ * Removes a player from our player table.
+ */
+int player_add_player(uint64_t p);
 
 #endif /* End _PLAYER_H */

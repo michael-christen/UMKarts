@@ -4,45 +4,73 @@
 #include <errno.h>
 #include <string.h>
 
-static struct PlayerTable _players;
+struct PlayerTable g_player_table;
 
 static struct {
 	uint64_t _address;
 	enum {
-		ADDRESS_UNSET,
-		ADDRESS_LOW_SET,
-		ADDRESS_HIGH_SET,
-		ADDRESS_DONE,
+		ADDRESS_UNSET, ADDRESS_LOW_SET, ADDRESS_HIGH_SET, ADDRESS_DONE,
 	} _state;
 } _myPlayerInfo;
 
 static struct {
 	uint64_t _address;
 	Driver _driver;
-} _drive_lookup_table[] = {
-	{0x0013A200407A866BULL, MARIO},
-	{0x0013A200407A8640ULL, LUIGI},
-	{0x0013A200407A8676ULL, WARIO},
-	{0x0013A20040AE5BE4ULL, PEACH},
-};
+} _drive_lookup_table[] = { { 0x0013A200407A866BULL, MARIO }, {
+		0x0013A200407A8640ULL, LUIGI }, { 0x0013A200407A8676ULL, WARIO }, {
+		0x0013A20040AE5BE4ULL, PEACH }, };
 
 Driver DRIVER = PEACH;
 
-static struct Player * _iter_next(struct PlayerTableIter * self) {
-	struct Player *player;
-	for( ; self->_pos < MAX_PLAYERS; self->_pos++) {
-		if (self->_table->players[self->_pos].valid) {
-			player = &(self->_table->players[self->_pos]);
-			self->_pos++;
-			return player;
+int player_add_player(uint64_t p) {
+	int i;
+	if (player_get_driver_from_address(p) == DRIVER_INVALID) {
+		return -EINVAL;
+	}
+	/* Check to see if already exists */
+	for (i = 0; i < g_player_table.size; i++) {
+		if (g_player_table.players[i] == p)
+			return 0;
+	}
+	g_player_table.size += 1;
+	g_player_table.players[i] = p;
+	return 0;
+}
+
+int player_remove_player(uint64_t p) {
+	int i, state;
+	state = 0;
+	for (i = 0; i < g_player_table.size; i++) {
+		if (!state) {
+			if (g_player_table.players[i] == p)
+				state = 1;
+		}
+		else {
+			g_player_table.players[i - 1] = g_player_table.players[i];
 		}
 	}
-	return NULL;
+	if (state) {
+		g_player_table.size -= 1;
+		return 0;
+	}
+	else {
+		return -EINVAL;
+	}
+}
+
+int player_exists(uint64_t p) {
+	int i;
+	for (i = 0; i < g_player_table.size; i++) {
+		if (g_player_table.players[i] == p)
+			return 1;
+	}
+	return 0;
 }
 
 Driver player_get_driver_from_address(uint64_t p) {
 	int i;
-	for (i = 0; i < sizeof(_drive_lookup_table) / sizeof(_drive_lookup_table[0]); i++) {
+	for (i = 0; i < sizeof(_drive_lookup_table)
+			/ sizeof(_drive_lookup_table[0]); i++) {
 		if (_drive_lookup_table[i]._address == p) {
 			return _drive_lookup_table[i]._driver;
 		}
@@ -52,7 +80,8 @@ Driver player_get_driver_from_address(uint64_t p) {
 
 uint64_t player_get_address_from_driver(Driver d) {
 	int i;
-	for (i = 0; i < sizeof(_drive_lookup_table) / sizeof(_drive_lookup_table[0]); i++) {
+	for (i = 0; i < sizeof(_drive_lookup_table)
+			/ sizeof(_drive_lookup_table[0]); i++) {
 		if (_drive_lookup_table[i]._driver == d) {
 			return _drive_lookup_table[i]._address;
 		}
@@ -63,7 +92,7 @@ uint64_t player_get_address_from_driver(Driver d) {
 
 void player_init() {
 	_myPlayerInfo._state = ADDRESS_UNSET;
-	memset(&_players, 0, sizeof(_players));
+	memset(&g_player_table, 0, sizeof(g_player_table));
 }
 
 uint8_t player_address_complete() {
@@ -75,8 +104,7 @@ void player_set_low_address(uint32_t low) {
 		_myPlayerInfo._address += (0xFFFFFFFFull & low);
 		_myPlayerInfo._state = ADDRESS_DONE;
 		DRIVER = player_get_driver_from_address(_myPlayerInfo._address);
-	}
-	else if (_myPlayerInfo._state == ADDRESS_UNSET) {
+	} else if (_myPlayerInfo._state == ADDRESS_UNSET) {
 		_myPlayerInfo._address = (0xFFFFFFFFull & low);
 		_myPlayerInfo._state = ADDRESS_LOW_SET;
 	}
@@ -84,30 +112,23 @@ void player_set_low_address(uint32_t low) {
 
 void player_set_high_address(uint32_t high) {
 	if (_myPlayerInfo._state == ADDRESS_LOW_SET) {
-		_myPlayerInfo._address += ((uint64_t) (0xFFFFFFFF00000000ull & ((uint64_t) high << 32)));
+		_myPlayerInfo._address += ((uint64_t)(0xFFFFFFFF00000000ull
+				& ((uint64_t) high << 32)));
 		_myPlayerInfo._state = ADDRESS_DONE;
 		DRIVER = player_get_driver_from_address(_myPlayerInfo._address);
-	}
-	else if (_myPlayerInfo._state == ADDRESS_UNSET) {
-		_myPlayerInfo._address = ((uint64_t) (0xFFFFFFFF00000000ull & ((uint64_t) high << 32)));
+	} else if (_myPlayerInfo._state == ADDRESS_UNSET) {
+		_myPlayerInfo._address = ((uint64_t)(0xFFFFFFFF00000000ull
+				& ((uint64_t) high << 32)));
 		_myPlayerInfo._state = ADDRESS_HIGH_SET;
 	}
-}
-
-
-struct PlayerTableIter player_table_iter() {
-	struct PlayerTableIter it;
-	it._pos = 0;
-	it._table = &_players;
-	it.next = _iter_next;
-	return it;
 }
 
 int driver_discovery() {
 	int err;
 	struct xbee_packet *xp;
 	xp = xbee_interface_create_packet();
-	if (!xp) return -ENOMEM;
+	if (!xp)
+		return -ENOMEM;
 	xp->payload[0] = XBEE_API_AT_COMMAND;
 	xp->payload[1] = xbee_interface_next_frame_id();
 	xp->payload[2] = 'S';
@@ -116,10 +137,10 @@ int driver_discovery() {
 	err = xbee_send(xp);
 	if (err < 0) {
 		xbee_interface_free_packet(xp);
-	}
-	else {
+	} else {
 		xp = xbee_interface_create_packet();
-		if (!xp) return -ENOMEM;
+		if (!xp)
+			return -ENOMEM;
 		xp->payload[0] = XBEE_API_AT_COMMAND;
 		xp->payload[1] = xbee_interface_next_frame_id();
 		xp->payload[2] = 'S';
@@ -129,6 +150,24 @@ int driver_discovery() {
 		if (err < 0) {
 			xbee_interface_free_packet(xp);
 		}
+	}
+	return err;
+}
+
+int player_discovery() {
+	int err;
+	struct xbee_packet *xp;
+	xp = xbee_interface_create_packet();
+	if (!xp)
+		return -ENOMEM;
+	xp->payload[0] = XBEE_API_AT_COMMAND;
+	xp->payload[1] = xbee_interface_next_frame_id();
+	xp->payload[2] = 'N';
+	xp->payload[3] = 'D';
+	xp->len = 4;
+	err = xbee_send(xp);
+	if (err < 0) {
+		xbee_interface_free_packet(xp);
 	}
 	return err;
 }

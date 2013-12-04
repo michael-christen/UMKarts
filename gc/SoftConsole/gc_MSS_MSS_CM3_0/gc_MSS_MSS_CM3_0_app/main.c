@@ -75,7 +75,6 @@ int main()
 
 	player_init();
 	send_message_init();
-	driver_discovery();
 
 	sound_init();
 
@@ -118,6 +117,9 @@ int main()
 	LCD_init();
 	xbee_printf("%s %s\n", "Hello", "World");
 
+	driver_discovery();
+	player_discovery();
+
 	while( 1 )
 	{
 		//CONTROLLER_print();
@@ -146,7 +148,7 @@ int main()
 			use_green_shell();
 		}
 		while ((xbee_read_packet = xbee_read())) {
-			mario_xbee_intepret_packet(xbee_read_packet);
+			mario_xbee_interpret_packet(xbee_read_packet);
 			xbee_interface_free_packet(xbee_read_packet);
 		}
 	}
