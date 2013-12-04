@@ -15,6 +15,7 @@
 #include "mario_xbee.h"
 #include "messages.h"
 #include "player.h"
+#include "game.h"
 
 
 volatile uint32_t count;
@@ -122,6 +123,30 @@ int main()
 		while ((xbee_read_packet = xbee_read())) {
 			mario_xbee_interpret_packet(xbee_read_packet);
 			xbee_interface_free_packet(xbee_read_packet);
+		}
+
+		switch (g_game_state) {
+		case GAME_WAIT:
+			if (CONTROLLER->start) {
+				game_trans_wait_to_host();
+			}
+			break;
+		case GAME_HOST:
+			if (CONTROLLER->start) {
+				/* NEED TO RATE LIMIT */
+				message_game_host();
+			}
+			else {
+				message_game_start(g_player_table.players, g_player_table.size);
+			}
+			break;
+		case GAME_OVER:
+			if (CONTROLLER->start) {
+				game_trans_over_to_wait();
+			}
+			break;
+		default:
+			/* We don't care */
 		}
 	}
 

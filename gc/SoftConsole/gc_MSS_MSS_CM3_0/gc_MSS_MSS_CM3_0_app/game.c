@@ -51,3 +51,11 @@ int game_trans_in_game_to_over() {
 	}
 	return -EINVAL;
 }
+
+int game_trans_over_to_wait() {
+	if (g_game_state == GAME_OVER) {
+		g_game_state = GAME_WAIT;
+		return 0;
+	}
+	return -EINVAL;
+}

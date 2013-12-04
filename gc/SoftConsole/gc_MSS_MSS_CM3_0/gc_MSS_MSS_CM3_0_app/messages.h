@@ -38,7 +38,7 @@ int xbee_printf(const char * format_string, ...);
 
 int message_game_host();
 int message_game_join(uint64_t host_address); 
-int message_game_start(uint64_t * players, int8_t num_players); 
+int message_game_start(uint64_t * players, uint8_t num_players); 
 int message_game_over(); 
 int message_game_event(uint64_t address, uint8_t subject, uint8_t object, uint8_t action, uint8_t event, uint8_t flags); 
 

@@ -34,8 +34,8 @@ int message_game_join(uint64_t host_address) {
 	return err;
 }
 
-int message_game_start(uint64_t * players, int8_t num_players) {
-	uint8_t buf[16*sizeof(uint64_t) + sizeof(int8_t)];
+int message_game_start(uint64_t * players, uint8_t num_players) {
+	uint8_t buf[16*sizeof(uint64_t) + sizeof(uint8_t)];
 	int err, i;
 	buf[0] = num_players;
 	for (i = 0; i < num_players; i++) {
