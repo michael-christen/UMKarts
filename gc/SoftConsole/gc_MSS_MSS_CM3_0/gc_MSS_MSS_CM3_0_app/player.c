@@ -154,20 +154,3 @@ int driver_discovery() {
 	return err;
 }
 
-int player_discovery() {
-	int err;
-	struct xbee_packet *xp;
-	xp = xbee_interface_create_packet();
-	if (!xp)
-		return -ENOMEM;
-	xp->payload[0] = XBEE_API_AT_COMMAND;
-	xp->payload[1] = xbee_interface_next_frame_id();
-	xp->payload[2] = 'N';
-	xp->payload[3] = 'D';
-	xp->len = 4;
-	err = xbee_send(xp);
-	if (err < 0) {
-		xbee_interface_free_packet(xp);
-	}
-	return err;
-}

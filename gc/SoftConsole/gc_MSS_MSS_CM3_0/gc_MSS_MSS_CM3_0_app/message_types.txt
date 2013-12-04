@@ -39,7 +39,7 @@ This message tells the receiver that the game is over. As soons as this is the
 receiver should go into a "game_over" state. The only way back into a 
 "new_game" state is to hold down the start button.
 
-0x06 - SEND_MESSAGE
+0x06 - GAME_EVENT
 This is our default "in game" message. It communicates events that happen. By 
 default we send our messages to everyone, though we could probably get away 
 with just sending events to the listener.
