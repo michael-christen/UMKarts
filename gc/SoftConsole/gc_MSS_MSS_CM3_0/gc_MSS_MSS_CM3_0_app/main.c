@@ -85,8 +85,6 @@ int main()
 
 	LASER_TAG_init();
 
-	LASER_TAG_shoot();
-
 	int x = 1;
 	LCD_init();
 	xbee_printf("%s %s\n", "Hello", "World");
