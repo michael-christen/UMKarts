@@ -1,0 +1,50 @@
+APPLICATION LEVEL MESSAGE TYPES
+
+This files contains information of the different message types that we 
+currently support being sent in our system. There are currently very few, but 
+we may extend them later in the future so don't try to optimize for the few 
+that are available right now.
+
+0x00 - PRINTF
+This message type is really only used with the listener. We use it to send data 
+to the listner that can that be printed for debugging purposes. The payload of 
+this message is just a string. We do not support longer strings than can fit in 
+one message (although we may support that in the future)
+
+0x01 - PRINTF_EXTENDED
+Reserved for allowing us to print longer strings than one packet sized
+
+0x02 - GAME_HOST
+This message type contains no payload, and announces to the world that we are 
+hosting a game. All cars default into a game hosting state. If two cars in the 
+same area are both trying to host a game, the car with the lower XBee address 
+wins as host and the other must become a client.
+This message is special because it is the only message in the entire game that 
+is sent in broadcast mode. This is because we want to give all XBee's a chance 
+to respond.
+
+0x03 - GAME_JOIN
+This message allows us to ask the host if we may join there game. Upon 
+receiving an ACK for this packet, we know that we are actually in the game!
+
+0x04 - GAME_START
+This message is sent out from the host to signify that we are starting a new 
+game. It contains a payload of the following:
+[uint8_t num_players][uint64_t address0][uint64_t address1].....
+Upon receiving this packet, we may start playing the game. Only the game host 
+can send this packet, no one else.
+
+0x05 - GAME_OVER
+This message tells the receiver that the game is over. As soons as this is the 
+receiver should go into a "game_over" state. The only way back into a 
+"new_game" state is to hold down the start button.
+
+0x06 - SEND_MESSAGE
+This is our default "in game" message. It communicates events that happen. By 
+default we send our messages to everyone, though we could probably get away 
+with just sending events to the listener.
+
+0x80 - ACK
+This is our ACK message. We send it, when a packet asks for an ACK, containing 
+the following payload:
+[uint8_t frame_id_of_acked_packet][uint8_t message_type_of_acked_packet]
