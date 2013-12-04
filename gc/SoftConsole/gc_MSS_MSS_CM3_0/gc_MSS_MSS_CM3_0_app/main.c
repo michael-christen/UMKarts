@@ -45,7 +45,7 @@ int main()
 		return 0;
 	}
 	else {
-		xbee_printf("XBee successfully initiated\n");
+		xbee_printf("XBee successfully initiated");
 	}
 
 	player_init();
@@ -53,7 +53,7 @@ int main()
 
 	sound_init();
 
-	xbee_printf("Sound initialized\n");
+	xbee_printf("Sound initialized");
 	//volatile int d = 0;
 	MOTOR_cmpVal = 2000000;
 	MOTOR_period = 20000000;
@@ -63,7 +63,7 @@ int main()
 	MOTOR_set_speed(0);
 	MOTOR_set_servo_direction(0);
 
-	xbee_printf("Mike Loves Double Dash!!!\n");
+	xbee_printf("Mike Loves Double Dash!!!");
 	count = 0;
 	int lastVal = 1;
 	double speed = 0;
@@ -88,10 +88,9 @@ int main()
 
 	int x = 1;
 	LCD_init();
-	xbee_printf("%s %s\n", "Hello", "World");
+	xbee_printf("%s %s", "Hello", "World");
 
 	driver_discovery();
-	player_discovery();
 
 	while( 1 )
 	{
@@ -146,7 +145,8 @@ int main()
 			}
 			break;
 		default:
-			/* We don't care */
+			/* Do nothing */
+			break;
 		}
 	}
 

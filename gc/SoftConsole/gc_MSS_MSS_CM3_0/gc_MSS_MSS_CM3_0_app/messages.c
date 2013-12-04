@@ -83,6 +83,7 @@ int send_message_retry(uint8_t frame_id) {
 		if (_sent_messages[frame_id].retries++ < 3) {
 			return send_message_address(_sent_messages[frame_id].address,
 																 _sent_messages[frame_id].msg_type,
+																 _sent_messages[frame_id].app_flags,
 																 _sent_messages[frame_id].payload,
 																 _sent_messages[frame_id].payload_len);
 		}

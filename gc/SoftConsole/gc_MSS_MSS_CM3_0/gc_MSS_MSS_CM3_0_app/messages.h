@@ -22,6 +22,9 @@
 #define XBEE_MESSAGE_GAME_EVENT    (0x06)
 #define XBEE_MESSAGE_ACK           (0x80)
 
+#define XBEE_APP_OPT_NO_ACK        (0x01)
+#define XBEE_APP_OPT_ACK           (0x00)
+
 void send_message_init();
 
 /**
@@ -50,5 +53,6 @@ int send_message(uint8_t message_type, uint8_t app_flags, uint8_t * data, uint16
 int send_message_address(uint64_t address, uint8_t message_type, uint8_t app_flags, uint8_t * data, uint16_t data_len);
 
 void send_message_ack(uint8_t frame_id);
+int send_message_retry(uint8_t frame_id);
 
 #endif /* __MESSAGES_H_ */

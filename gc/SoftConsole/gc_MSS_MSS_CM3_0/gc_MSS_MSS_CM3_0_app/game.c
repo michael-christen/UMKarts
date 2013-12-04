@@ -45,7 +45,7 @@ int game_trans_join_to_in_game() {
 }
 
 int game_trans_in_game_to_over() {
-	if (g_game_state = GAME_IN_GAME) {
+	if (g_game_state == GAME_IN_GAME) {
 		g_game_state = GAME_OVER;
 		return 0;
 	}

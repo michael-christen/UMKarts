@@ -1,6 +1,8 @@
 #ifndef __GAME_H_
 #define __GAME_H_
 
+#include <inttypes.h>
+
 enum GameState {
 	GAME_WAIT,
 	GAME_HOST,

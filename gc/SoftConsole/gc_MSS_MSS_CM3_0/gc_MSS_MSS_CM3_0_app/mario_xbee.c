@@ -4,6 +4,7 @@
 #include "player.h"
 #include "convert.h"
 #include "game.h"
+#include "messages.h"
 #include <stdio.h>
 #include <stdarg.h>
 #include <errno.h>
@@ -23,8 +24,9 @@ int mario_xbee_interpret_packet(struct xbee_packet * xp) {
 		break;
 	case XBEE_API_TX_STATUS:
 		break;
-	XBEE_API_RX:
+	case XBEE_API_RX:
 		_mario_xbee_interpret_rx_packet(xp);
+		break;
 	}
 	return 0;
 }
@@ -53,13 +55,13 @@ static void _mario_xbee_interpret_at_response(struct xbee_packet *xp) {
 }
 
 static int _mario_xbee_interpret_rx_packet(struct xbee_packet *xp) {
-	int err;
+	int err, i;
 	uint64_t sender = bytes_to_uint64_t(xp->payload + 1);
 	uint8_t msg_type = xp->payload[12];
-	uint8_t msg_opts = xp->payload[13];
-	uint8_t msg_id   = xp->payload[14];
+	/* uint8_t msg_opts = xp->payload[13]; */
+	/* uint8_t msg_id   = xp->payload[14]; */
 	uint8_t *data = xp->payload + 15;
-	uint16_t data_len = xp->len - 15;
+	/*uint16_t data_len = xp->len - 15; */
 	switch (msg_type) {
 	case XBEE_MESSAGE_PRINTF:
 		/* We ignore PRINTF calls */
@@ -120,7 +122,7 @@ static int _mario_xbee_interpret_rx_packet(struct xbee_packet *xp) {
 			}
 		}
 		else {
-			xbee_printf("Ignoring GAME_OVER packet because in state %s\n", g_game_start_str[g_game_state]);
+			xbee_printf("Ignoring GAME_OVER packet because in state %s\n", g_game_state_str[g_game_state]);
 		}
 		break;
 	case XBEE_MESSAGE_GAME_EVENT:
@@ -138,5 +140,6 @@ static int _mario_xbee_interpret_rx_packet(struct xbee_packet *xp) {
 		}
 		break;
 	}
+	return 0;
 }
 

@@ -1,4 +1,6 @@
 #include "messages.h"
+#include <stdarg.h>
+#include <stdio.h>
 
 
 int xbee_printf(const char * format_string, ...) {
@@ -19,7 +21,7 @@ int xbee_printf(const char * format_string, ...) {
 		size = err;
 	}
 
-	err = send_message_address(dest_address, XBEE_MESSAGE_PRINTF, XBEE_MESSAGE_OPT_NO_ACK, buf, size);
+	err = send_message_address(dest_address, XBEE_MESSAGE_PRINTF, XBEE_APP_OPT_NO_ACK, buf, size);
 xbee_printf_exit:
 	va_end(varargs);
 
