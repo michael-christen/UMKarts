@@ -19,6 +19,7 @@ void game_init();
 
 int game_trans_wait_to_host(); 
 int game_trans_host_to_join();
+int game_trans_host_to_in_game();
 int game_trans_join_to_in_game(); 
 int game_trans_in_game_to_over();
 int game_trans_over_to_wait();

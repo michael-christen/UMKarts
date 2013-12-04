@@ -87,8 +87,6 @@ int SUCCESS_SOUND_END[] = {
 
 //Requires all probs to sum to 1
 void initItemWeights() {
-	MSS_RTC_init();
-	MSS_RTC_start();
 	srand((uint32_t) MSS_RTC_get_rtc_count());
 
     /*

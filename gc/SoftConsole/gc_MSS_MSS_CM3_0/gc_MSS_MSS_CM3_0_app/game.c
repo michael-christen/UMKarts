@@ -1,5 +1,6 @@
 #include "game.h"
 #include "player.h"
+#include "messages.h"
 #include <errno.h>
 
 enum GameState g_game_state;
@@ -22,6 +23,7 @@ int game_trans_wait_to_host() {
 		g_game_host = player_get_address_from_driver(DRIVER);
 		g_game_state = GAME_HOST;
 		/* Don't send a message here. Messages will be sent in the main loop */
+		xbee_printf("GAME STATE TRANS: WAIT -> HOST");
 		return 0;
 	}
 	return -EINVAL;
@@ -31,6 +33,7 @@ int game_trans_host_to_join(uint64_t host) {
 	if (g_game_state == GAME_HOST) {
 		g_game_host = host;
 		g_game_state = GAME_JOIN;
+		xbee_printf("GAME STATE TRANS: HOST -> JOIN");
 		return 0;
 	}
 	return -EINVAL;
@@ -39,6 +42,16 @@ int game_trans_host_to_join(uint64_t host) {
 int game_trans_join_to_in_game() {
 	if (g_game_state == GAME_JOIN) {
 		g_game_state = GAME_IN_GAME;
+		xbee_printf("GAME STATE TRANS: JOIN -> IN GAME");
+		return 0;
+	}
+	return -EINVAL;
+}
+
+int game_trans_host_to_in_game() {
+	if (g_game_state == GAME_HOST) {
+		g_game_state = GAME_IN_GAME;
+		xbee_printf("GAME STATE TRANS: HOST -> IN GAME");
 		return 0;
 	}
 	return -EINVAL;

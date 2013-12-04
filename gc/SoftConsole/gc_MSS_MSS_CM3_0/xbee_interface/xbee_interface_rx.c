@@ -95,11 +95,11 @@ static void _xbee_interface_rx_handler(mss_uart_instance_t * this_uart) {
 			_xbee_rx.state = XBEE_RX_READY;
 			/* Determine the bytes remaining that were read from the UART Buffer  and
 			 * not consumed by the xbee_packet being created */
-			bytes_remaining = bytes_from_uart + bytes_remaining - (end_of_read - _xbee_rx.buf);
-			/* Copy on used bytes to front of buffer */
-			for (i = 0; i < bytes_remaining; i++) {
-				_xbee_rx.buf[i] = *end_of_read++;
-			}
+		}
+		bytes_remaining = bytes_from_uart + bytes_remaining - (end_of_read - _xbee_rx.buf);
+		/* Copy on used bytes to front of buffer */
+		for (i = 0; i < bytes_remaining; i++) {
+			_xbee_rx.buf[i] = *end_of_read++;
 		}
 	} while (bytes_remaining > 0);
 	MSS_UART_enable_irq(this_uart, MSS_UART_RBF_IRQ);

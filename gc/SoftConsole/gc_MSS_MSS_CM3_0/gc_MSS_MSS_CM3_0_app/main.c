@@ -5,6 +5,7 @@
 #include "xbee.h"
 #include "drivers/mss_uart/mss_uart.h"
 #include "drivers/mss_gpio/mss_gpio.h"
+#include "drivers/mss_rtc/mss_rtc.h"
 #include "controller.h"
 #include "lcd.h"
 #include "item.h"
@@ -38,6 +39,12 @@ __attribute__ ((interrupt)) void GPIO2_IRQHandler( void ){
 
 int main()
 {
+	uint32_t xbee_rapid_packet_limiter = 0;
+	/* Initialize the timer */
+	MSS_RTC_init();
+	MSS_RTC_start();
+	/* End initializing timer */
+
 	struct xbee_packet * xbee_read_packet;
 	/* Initialize the XBee interface */
 	int err = xbee_interface_init();
@@ -127,16 +134,26 @@ int main()
 		switch (g_game_state) {
 		case GAME_WAIT:
 			if (CONTROLLER->start) {
-				game_trans_wait_to_host();
+				err = game_trans_wait_to_host();
+				if (err < 0) {
+					if (MSS_RTC_get_seconds_count() - 1 > xbee_rapid_packet_limiter) {
+						driver_discovery();
+						xbee_rapid_packet_limiter = MSS_RTC_get_seconds_count();
+					}
+				}
 			}
 			break;
 		case GAME_HOST:
 			if (CONTROLLER->start) {
 				/* NEED TO RATE LIMIT */
-				message_game_host();
+				if (MSS_RTC_get_seconds_count() - 1 > xbee_rapid_packet_limiter) {
+					message_game_host();
+					xbee_rapid_packet_limiter = MSS_RTC_get_seconds_count();
+				}
 			}
 			else {
 				message_game_start(g_player_table.players, g_player_table.size);
+				game_trans_host_to_in_game();
 			}
 			break;
 		case GAME_OVER:
