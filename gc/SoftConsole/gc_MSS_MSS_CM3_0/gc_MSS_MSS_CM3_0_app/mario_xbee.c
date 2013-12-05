@@ -38,6 +38,9 @@ static inline uint8_t _mario_xbee_at_cmd_is(const struct xbee_packet *xp, const 
 
 static void _mario_xbee_interpret_at_response(struct xbee_packet *xp) {
 	uint64_t address;
+	struct xbee_packet *sent_xp;
+	sent_xp = xbee_interface_tx_next_status();
+	xbee_interface_free_packet(sent_xp);
 	if (xp->payload[4] != 0x00) {
 		xbee_printf("Invalid xbee packet: %c%c, %d\r\n", xp->payload[2],
 				xp->payload[3], xp->payload[4]);
@@ -145,6 +148,8 @@ static int _mario_xbee_interpret_rx_packet(struct xbee_packet *xp) {
 }
 
 static int _mario_xbee_interpret_tx_status(struct xbee_packet *xp) {
+	struct xbee_packet *sent_xp;
+	sent_xp = xbee_interface_tx_next_status();
 	switch (xp->payload[5]) {
 		case 0x00: /* Success */
 			/* Nothing to do, successful */
@@ -157,7 +162,21 @@ static int _mario_xbee_interpret_tx_status(struct xbee_packet *xp) {
 			 * see if we can't communicate with master, and get into a game
 			 * join state if that is the case
 			 */
-			/* TODO: THIS (see above comment) */
+			if (sent_xp->payload[0] == XBEE_API_TX_REQUEST) {
+				if (player_we_are_host()) {
+					message_send_player_left(bytes_to_uint64_t(xp->payload + 2));
+					player_remove_player(bytes_to_uint64_t(xp->payload + 2));
+				}
+				else {
+					if (player_address_is_host(bytes_to_uint64_t(xp->payload + 2))) {
+						/* Need to send that we are leaving the game */
+						/* Then leave the game */
+					}
+				}
+			}
+			else {
+				xbee_printf("MAJOR ISSUE: Expected a tx packet in sent buffer, got %d", sent_xp->payload[0]);
+			}
 			break;
 		case 0x15: /* Invalid destinattion endpoint */
 			xbee_printf("Trying to send to invalid destination");
@@ -166,5 +185,7 @@ static int _mario_xbee_interpret_tx_status(struct xbee_packet *xp) {
 			xbee_printf("Trying to send a packet with too big of payload");
 			break;
 	}
+	xbee_interface_free_packet(sent_xp);
+	/* TX status packet gets freed later */
 }
 
