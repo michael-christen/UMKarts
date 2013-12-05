@@ -16,14 +16,14 @@ Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 
 Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 104MB peak: 104MB)
 
-@W: MO111 :"c:\users\mikechri\downloads\gc\gc\component\work\gc_mss\mss_ccc_0\gc_mss_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT on net LPXIN_CLKOUT has its enable tied to GND (module gc_MSS_tmp_MSS_CCC_0_MSS_CCC) 
-@W: MO111 :"c:\users\mikechri\downloads\gc\gc\component\work\gc_mss\mss_ccc_0\gc_mss_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT on net MAINXIN_CLKOUT has its enable tied to GND (module gc_MSS_tmp_MSS_CCC_0_MSS_CCC) 
-@W: MO111 :"c:\users\mikechri\downloads\gc\gc\component\work\gc_mss\mss_ccc_0\gc_mss_tmp_mss_ccc_0_mss_ccc.v":62:7:62:18|Tristate driver RCOSC_CLKOUT on net RCOSC_CLKOUT has its enable tied to GND (module gc_MSS_tmp_MSS_CCC_0_MSS_CCC) 
-@W: MO111 :"c:\users\mikechri\downloads\gc\gc\hdl\motorwrapper.v":36:13:36:15|Tristate driver TPS_1 on net TPS_1 has its enable tied to GND (module motorWrapper) 
-@W: MO111 :"c:\users\mikechri\downloads\gc\gc\hdl\motorwrapper.v":36:13:36:15|Tristate driver TPS_2 on net TPS_2 has its enable tied to GND (module motorWrapper) 
-@W: MO111 :"c:\users\mikechri\downloads\gc\gc\hdl\motorwrapper.v":36:13:36:15|Tristate driver TPS_3 on net TPS_3 has its enable tied to GND (module motorWrapper) 
-@W: MO111 :"c:\users\mikechri\downloads\gc\gc\hdl\motorwrapper.v":36:13:36:15|Tristate driver TPS_4 on net TPS_4 has its enable tied to GND (module motorWrapper) 
-@W: MO111 :"c:\users\mikechri\downloads\gc\gc\hdl\motorwrapper.v":36:13:36:15|Tristate driver TPS_5 on net TPS_5 has its enable tied to GND (module motorWrapper) 
+@W: MO111 :"c:\users\mttschlt\eecs373\umkarts\gc\component\work\gc_mss\mss_ccc_0\gc_mss_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT on net LPXIN_CLKOUT has its enable tied to GND (module gc_MSS_tmp_MSS_CCC_0_MSS_CCC) 
+@W: MO111 :"c:\users\mttschlt\eecs373\umkarts\gc\component\work\gc_mss\mss_ccc_0\gc_mss_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT on net MAINXIN_CLKOUT has its enable tied to GND (module gc_MSS_tmp_MSS_CCC_0_MSS_CCC) 
+@W: MO111 :"c:\users\mttschlt\eecs373\umkarts\gc\component\work\gc_mss\mss_ccc_0\gc_mss_tmp_mss_ccc_0_mss_ccc.v":62:7:62:18|Tristate driver RCOSC_CLKOUT on net RCOSC_CLKOUT has its enable tied to GND (module gc_MSS_tmp_MSS_CCC_0_MSS_CCC) 
+@W: MO111 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motorwrapper.v":36:13:36:15|Tristate driver TPS_1 on net TPS_1 has its enable tied to GND (module motorWrapper) 
+@W: MO111 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motorwrapper.v":36:13:36:15|Tristate driver TPS_2 on net TPS_2 has its enable tied to GND (module motorWrapper) 
+@W: MO111 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motorwrapper.v":36:13:36:15|Tristate driver TPS_3 on net TPS_3 has its enable tied to GND (module motorWrapper) 
+@W: MO111 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motorwrapper.v":36:13:36:15|Tristate driver TPS_4 on net TPS_4 has its enable tied to GND (module motorWrapper) 
+@W: MO111 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motorwrapper.v":36:13:36:15|Tristate driver TPS_5 on net TPS_5 has its enable tied to GND (module motorWrapper) 
 
 Available hyper_sources - for debug and ip models
 	None Found
@@ -32,9 +32,9 @@ Available hyper_sources - for debug and ip models
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 104MB peak: 106MB)
 
-@N:"c:\users\mikechri\downloads\gc\gc\component\work\gc\coreuartapb_0\rtl\vlog\core_obfuscated\clock_gen.v":962:0:962:5|Found counter in view:work.gc_CoreUARTapb_0_Clock_gen_0s(verilog) inst genblk1\.genblk2\.CUARTO0[12:0]
-@N:"c:\users\mikechri\downloads\gc\gc\component\work\gc\coreuartapb_0\rtl\vlog\core_obfuscated\clock_gen.v":1039:0:1039:5|Found counter in view:work.gc_CoreUARTapb_0_Clock_gen_0s(verilog) inst CUARTO1[3:0]
-@N:"c:\users\mikechri\downloads\gc\gc\component\work\gc\coreuartapb_0\rtl\vlog\core_obfuscated\tx_async.v":550:0:550:5|Found counter in view:work.gc_CoreUARTapb_0_Tx_async_0s_0s_1s_2s_3s_4s_5s_6s(verilog) inst CUARTOO0l[3:0]
+@N:"c:\users\mttschlt\eecs373\umkarts\gc\component\work\gc\coreuartapb_0\rtl\vlog\core_obfuscated\clock_gen.v":962:0:962:5|Found counter in view:work.gc_CoreUARTapb_0_Clock_gen_0s(verilog) inst genblk1\.genblk2\.CUARTO0[12:0]
+@N:"c:\users\mttschlt\eecs373\umkarts\gc\component\work\gc\coreuartapb_0\rtl\vlog\core_obfuscated\clock_gen.v":1039:0:1039:5|Found counter in view:work.gc_CoreUARTapb_0_Clock_gen_0s(verilog) inst CUARTO1[3:0]
+@N:"c:\users\mttschlt\eecs373\umkarts\gc\component\work\gc\coreuartapb_0\rtl\vlog\core_obfuscated\tx_async.v":550:0:550:5|Found counter in view:work.gc_CoreUARTapb_0_Tx_async_0s_0s_1s_2s_3s_4s_5s_6s(verilog) inst CUARTOO0l[3:0]
 Encoding state machine CUARTO1ll[5:0] (view:work.gc_CoreUARTapb_0_Tx_async_0s_0s_1s_2s_3s_4s_5s_6s(verilog))
 original code -> new code
    00000000000000000000000000000000 -> 000001
@@ -43,16 +43,16 @@ original code -> new code
    00000000000000000000000000000011 -> 001000
    00000000000000000000000000000100 -> 010000
    00000000000000000000000000000101 -> 100000
-@N:"c:\users\mikechri\downloads\gc\gc\component\work\gc\coreuartapb_0\rtl\vlog\core_obfuscated\rx_async.v":967:0:967:5|Found counter in view:work.gc_CoreUARTapb_0_Rx_async_0s_0s_1s_2s(verilog) inst CUARTOOIl[3:0]
-@N:"c:\users\mikechri\downloads\gc\gc\component\work\gc\coreuartapb_0\rtl\vlog\core_obfuscated\rx_async.v":422:0:422:5|Found counter in view:work.gc_CoreUARTapb_0_Rx_async_0s_0s_1s_2s(verilog) inst CUARTl0Ol[3:0]
+@N:"c:\users\mttschlt\eecs373\umkarts\gc\component\work\gc\coreuartapb_0\rtl\vlog\core_obfuscated\rx_async.v":967:0:967:5|Found counter in view:work.gc_CoreUARTapb_0_Rx_async_0s_0s_1s_2s(verilog) inst CUARTOOIl[3:0]
+@N:"c:\users\mttschlt\eecs373\umkarts\gc\component\work\gc\coreuartapb_0\rtl\vlog\core_obfuscated\rx_async.v":422:0:422:5|Found counter in view:work.gc_CoreUARTapb_0_Rx_async_0s_0s_1s_2s(verilog) inst CUARTl0Ol[3:0]
 Encoding state machine CUARTOl0[2:0] (view:work.gc_CoreUARTapb_0_Rx_async_0s_0s_1s_2s(verilog))
 original code -> new code
    00 -> 00
    01 -> 01
    10 -> 10
-@N:"c:\users\mikechri\downloads\gc\gc\hdl\receive.v":19:0:19:5|Found counter in view:work.gc_receive(verilog) inst next_response_count[5:0]
-@N:"c:\users\mikechri\downloads\gc\gc\hdl\query.v":13:0:13:5|Found counter in view:work.gc_state(verilog) inst last_response[31:0]
-@N:"c:\users\mikechri\downloads\gc\gc\hdl\ir_led.v":57:1:57:6|Found counter in view:work.IR_LED(verilog) inst size[7:0]
+@N:"c:\users\mttschlt\eecs373\umkarts\gc\hdl\receive.v":19:0:19:5|Found counter in view:work.gc_receive(verilog) inst next_response_count[5:0]
+@N:"c:\users\mttschlt\eecs373\umkarts\gc\hdl\query.v":13:0:13:5|Found counter in view:work.gc_state(verilog) inst last_response[31:0]
+@N:"c:\users\mttschlt\eecs373\umkarts\gc\hdl\ir_led.v":57:1:57:6|Found counter in view:work.IR_LED(verilog) inst size[7:0]
 Encoding state machine state[11:0] (view:work.IR_LED(verilog))
 original code -> new code
    0000 -> 000000000000
@@ -67,74 +67,74 @@ original code -> new code
    1001 -> 001000000001
    1010 -> 010000000001
    1011 -> 100000000001
-@N:"c:\users\mikechri\downloads\gc\gc\hdl\clockdivider.v":13:1:13:6|Found counter in view:work.clk_div_20000_10000(verilog) inst counter[31:0]
-@N:"c:\users\mikechri\downloads\gc\gc\hdl\clockdivider.v":13:1:13:6|Found counter in view:work.clk_div_1786_893(verilog) inst counter[31:0]
-@N:"c:\users\mikechri\downloads\gc\gc\hdl\ir_recv.v":52:2:52:7|Found counter in view:work.LED_RECV(verilog) inst COUNTER[31:0]
-@N:"c:\users\mikechri\downloads\gc\gc\hdl\ir_recv.v":60:2:60:7|Found counter in view:work.LED_RECV(verilog) inst SIZE[3:0]
-@N:"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":208:0:208:5|Found counter in view:work.motor(verilog) inst counterReg[31:0]
-@W: MO129 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":254:0:254:5|Sequential instance motorWrapper_0.motor_0.switch_syncer[0] reduced to a combinational gate by constant propagation
-@W: MO129 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":254:0:254:5|Sequential instance motorWrapper_0.motor_0.switch_syncer[1] reduced to a combinational gate by constant propagation
-@W: MO129 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":254:0:254:5|Sequential instance motorWrapper_0.motor_0.switch_syncer[2] reduced to a combinational gate by constant propagation
-@W: MO160 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":267:0:267:5|Register bit capture_status_sync is always 0, optimizing ...
-@N:"c:\users\mikechri\downloads\gc\gc\hdl\query.v":87:0:87:5|Found counter in view:work.send_query(verilog) inst count[12:0]
-@N: MF238 :"c:\users\mikechri\downloads\gc\gc\hdl\query.v":93:13:93:24|Found 7-bit incrementor, 'un3_c_count_1[6:0]'
+@N:"c:\users\mttschlt\eecs373\umkarts\gc\hdl\clockdivider.v":13:1:13:6|Found counter in view:work.clk_div_20000_10000(verilog) inst counter[31:0]
+@N:"c:\users\mttschlt\eecs373\umkarts\gc\hdl\clockdivider.v":13:1:13:6|Found counter in view:work.clk_div_1786_893(verilog) inst counter[31:0]
+@N:"c:\users\mttschlt\eecs373\umkarts\gc\hdl\ir_recv.v":52:2:52:7|Found counter in view:work.LED_RECV(verilog) inst COUNTER[31:0]
+@N:"c:\users\mttschlt\eecs373\umkarts\gc\hdl\ir_recv.v":60:2:60:7|Found counter in view:work.LED_RECV(verilog) inst SIZE[3:0]
+@N:"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":209:0:209:5|Found counter in view:work.motor(verilog) inst counterReg[31:0]
+@W: MO129 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":255:0:255:5|Sequential instance motorWrapper_0.motor_0.switch_syncer[0] reduced to a combinational gate by constant propagation
+@W: MO129 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":255:0:255:5|Sequential instance motorWrapper_0.motor_0.switch_syncer[1] reduced to a combinational gate by constant propagation
+@W: MO129 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":255:0:255:5|Sequential instance motorWrapper_0.motor_0.switch_syncer[2] reduced to a combinational gate by constant propagation
+@W: MO160 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":268:0:268:5|Register bit capture_status_sync is always 0, optimizing ...
+@N:"c:\users\mttschlt\eecs373\umkarts\gc\hdl\query.v":87:0:87:5|Found counter in view:work.send_query(verilog) inst count[12:0]
+@N: MF238 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\query.v":93:13:93:24|Found 7-bit incrementor, 'un3_c_count_1[6:0]'
 
-Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 114MB)
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 114MB peak: 114MB)
 
-@N: BN362 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":75:0:75:5|Removing sequential instance motorWrapper_0.motor_0.fabint of view:PrimLib.dff(prim) in hierarchy view:work.gc(verilog) because there are no references to its outputs 
-@N: BN362 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":208:0:208:5|Removing sequential instance motorWrapper_0.motor_0.timer_interrupt of view:PrimLib.dff(prim) in hierarchy view:work.gc(verilog) because there are no references to its outputs 
-@N: BN362 :"c:\users\mikechri\downloads\gc\gc\component\work\gc\coreuartapb_0\rtl\vlog\core_obfuscated\rx_async.v":1414:0:1414:5|Removing sequential instance CoreUARTapb_0.CUARTOOlI.CUARTIl1.CUARTllI of view:PrimLib.dffs(prim) in hierarchy view:work.gc(verilog) because there are no references to its outputs 
-@N: BN362 :"c:\users\mikechri\downloads\gc\gc\component\work\gc\coreuartapb_0\rtl\vlog\core_obfuscated\rx_async.v":1414:0:1414:5|Removing sequential instance CoreUARTapb_0.CUARTOOlI.CUARTIl1.CUARTl1l_1 of view:PrimLib.dffr(prim) in hierarchy view:work.gc(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":75:0:75:5|Removing sequential instance motorWrapper_0.motor_0.fabint of view:PrimLib.dff(prim) in hierarchy view:work.gc(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":209:0:209:5|Removing sequential instance motorWrapper_0.motor_0.timer_interrupt of view:PrimLib.dff(prim) in hierarchy view:work.gc(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\mttschlt\eecs373\umkarts\gc\component\work\gc\coreuartapb_0\rtl\vlog\core_obfuscated\rx_async.v":1414:0:1414:5|Removing sequential instance CoreUARTapb_0.CUARTOOlI.CUARTIl1.CUARTllI of view:PrimLib.dffs(prim) in hierarchy view:work.gc(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\mttschlt\eecs373\umkarts\gc\component\work\gc\coreuartapb_0\rtl\vlog\core_obfuscated\rx_async.v":1414:0:1414:5|Removing sequential instance CoreUARTapb_0.CUARTOOlI.CUARTIl1.CUARTl1l_1 of view:PrimLib.dffr(prim) in hierarchy view:work.gc(verilog) because there are no references to its outputs 
 
 Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 111MB peak: 115MB)
 
-@W: MO160 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":267:0:267:5|Register bit motorWrapper_0.motor_0.captureSyncReg[31] is always 0, optimizing ...
-@W: MO160 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":267:0:267:5|Register bit motorWrapper_0.motor_0.captureSyncReg[30] is always 0, optimizing ...
-@W: MO160 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":267:0:267:5|Register bit motorWrapper_0.motor_0.captureSyncReg[29] is always 0, optimizing ...
-@W: MO160 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":267:0:267:5|Register bit motorWrapper_0.motor_0.captureSyncReg[28] is always 0, optimizing ...
-@W: MO160 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":267:0:267:5|Register bit motorWrapper_0.motor_0.captureSyncReg[27] is always 0, optimizing ...
-@W: MO160 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":267:0:267:5|Register bit motorWrapper_0.motor_0.captureSyncReg[26] is always 0, optimizing ...
-@W: MO160 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":267:0:267:5|Register bit motorWrapper_0.motor_0.captureSyncReg[25] is always 0, optimizing ...
-@W: MO160 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":267:0:267:5|Register bit motorWrapper_0.motor_0.captureSyncReg[24] is always 0, optimizing ...
-@W: MO160 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":267:0:267:5|Register bit motorWrapper_0.motor_0.captureSyncReg[23] is always 0, optimizing ...
-@W: MO160 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":267:0:267:5|Register bit motorWrapper_0.motor_0.captureSyncReg[22] is always 0, optimizing ...
-@W: MO160 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":267:0:267:5|Register bit motorWrapper_0.motor_0.captureSyncReg[21] is always 0, optimizing ...
-@W: MO160 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":267:0:267:5|Register bit motorWrapper_0.motor_0.captureSyncReg[20] is always 0, optimizing ...
-@W: MO160 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":267:0:267:5|Register bit motorWrapper_0.motor_0.captureSyncReg[19] is always 0, optimizing ...
-@W: MO160 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":267:0:267:5|Register bit motorWrapper_0.motor_0.captureSyncReg[18] is always 0, optimizing ...
-@W: MO160 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":267:0:267:5|Register bit motorWrapper_0.motor_0.captureSyncReg[17] is always 0, optimizing ...
-@W: MO160 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":267:0:267:5|Register bit motorWrapper_0.motor_0.captureSyncReg[16] is always 0, optimizing ...
-@W: MO160 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":267:0:267:5|Register bit motorWrapper_0.motor_0.captureSyncReg[15] is always 0, optimizing ...
-@W: MO160 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":267:0:267:5|Register bit motorWrapper_0.motor_0.captureSyncReg[14] is always 0, optimizing ...
-@W: MO160 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":267:0:267:5|Register bit motorWrapper_0.motor_0.captureSyncReg[13] is always 0, optimizing ...
-@W: MO160 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":267:0:267:5|Register bit motorWrapper_0.motor_0.captureSyncReg[12] is always 0, optimizing ...
-@W: MO160 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":267:0:267:5|Register bit motorWrapper_0.motor_0.captureSyncReg[11] is always 0, optimizing ...
-@W: MO160 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":267:0:267:5|Register bit motorWrapper_0.motor_0.captureSyncReg[10] is always 0, optimizing ...
-@W: MO160 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":267:0:267:5|Register bit motorWrapper_0.motor_0.captureSyncReg[9] is always 0, optimizing ...
-@W: MO160 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":267:0:267:5|Register bit motorWrapper_0.motor_0.captureSyncReg[8] is always 0, optimizing ...
-@W: MO160 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":267:0:267:5|Register bit motorWrapper_0.motor_0.captureSyncReg[7] is always 0, optimizing ...
-@W: MO160 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":267:0:267:5|Register bit motorWrapper_0.motor_0.captureSyncReg[6] is always 0, optimizing ...
-@W: MO160 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":267:0:267:5|Register bit motorWrapper_0.motor_0.captureSyncReg[5] is always 0, optimizing ...
-@W: MO160 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":267:0:267:5|Register bit motorWrapper_0.motor_0.captureSyncReg[4] is always 0, optimizing ...
-@W: MO160 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":267:0:267:5|Register bit motorWrapper_0.motor_0.captureSyncReg[3] is always 0, optimizing ...
-@W: MO160 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":267:0:267:5|Register bit motorWrapper_0.motor_0.captureSyncReg[2] is always 0, optimizing ...
-@W: MO160 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":267:0:267:5|Register bit motorWrapper_0.motor_0.captureSyncReg[1] is always 0, optimizing ...
-@W: MO160 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":267:0:267:5|Register bit motorWrapper_0.motor_0.captureSyncReg[0] is always 0, optimizing ...
-@N: BN362 :"c:\users\mikechri\downloads\gc\gc\hdl\motor.v":86:0:86:5|Removing sequential instance motorWrapper_0.motor_0.reset_capture_sync of view:PrimLib.dff(prim) in hierarchy view:work.gc(verilog) because there are no references to its outputs 
+@W: MO160 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":268:0:268:5|Register bit motorWrapper_0.motor_0.captureSyncReg[31] is always 0, optimizing ...
+@W: MO160 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":268:0:268:5|Register bit motorWrapper_0.motor_0.captureSyncReg[30] is always 0, optimizing ...
+@W: MO160 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":268:0:268:5|Register bit motorWrapper_0.motor_0.captureSyncReg[29] is always 0, optimizing ...
+@W: MO160 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":268:0:268:5|Register bit motorWrapper_0.motor_0.captureSyncReg[28] is always 0, optimizing ...
+@W: MO160 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":268:0:268:5|Register bit motorWrapper_0.motor_0.captureSyncReg[27] is always 0, optimizing ...
+@W: MO160 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":268:0:268:5|Register bit motorWrapper_0.motor_0.captureSyncReg[26] is always 0, optimizing ...
+@W: MO160 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":268:0:268:5|Register bit motorWrapper_0.motor_0.captureSyncReg[25] is always 0, optimizing ...
+@W: MO160 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":268:0:268:5|Register bit motorWrapper_0.motor_0.captureSyncReg[24] is always 0, optimizing ...
+@W: MO160 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":268:0:268:5|Register bit motorWrapper_0.motor_0.captureSyncReg[23] is always 0, optimizing ...
+@W: MO160 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":268:0:268:5|Register bit motorWrapper_0.motor_0.captureSyncReg[22] is always 0, optimizing ...
+@W: MO160 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":268:0:268:5|Register bit motorWrapper_0.motor_0.captureSyncReg[21] is always 0, optimizing ...
+@W: MO160 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":268:0:268:5|Register bit motorWrapper_0.motor_0.captureSyncReg[20] is always 0, optimizing ...
+@W: MO160 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":268:0:268:5|Register bit motorWrapper_0.motor_0.captureSyncReg[19] is always 0, optimizing ...
+@W: MO160 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":268:0:268:5|Register bit motorWrapper_0.motor_0.captureSyncReg[18] is always 0, optimizing ...
+@W: MO160 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":268:0:268:5|Register bit motorWrapper_0.motor_0.captureSyncReg[17] is always 0, optimizing ...
+@W: MO160 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":268:0:268:5|Register bit motorWrapper_0.motor_0.captureSyncReg[16] is always 0, optimizing ...
+@W: MO160 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":268:0:268:5|Register bit motorWrapper_0.motor_0.captureSyncReg[15] is always 0, optimizing ...
+@W: MO160 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":268:0:268:5|Register bit motorWrapper_0.motor_0.captureSyncReg[14] is always 0, optimizing ...
+@W: MO160 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":268:0:268:5|Register bit motorWrapper_0.motor_0.captureSyncReg[13] is always 0, optimizing ...
+@W: MO160 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":268:0:268:5|Register bit motorWrapper_0.motor_0.captureSyncReg[12] is always 0, optimizing ...
+@W: MO160 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":268:0:268:5|Register bit motorWrapper_0.motor_0.captureSyncReg[11] is always 0, optimizing ...
+@W: MO160 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":268:0:268:5|Register bit motorWrapper_0.motor_0.captureSyncReg[10] is always 0, optimizing ...
+@W: MO160 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":268:0:268:5|Register bit motorWrapper_0.motor_0.captureSyncReg[9] is always 0, optimizing ...
+@W: MO160 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":268:0:268:5|Register bit motorWrapper_0.motor_0.captureSyncReg[8] is always 0, optimizing ...
+@W: MO160 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":268:0:268:5|Register bit motorWrapper_0.motor_0.captureSyncReg[7] is always 0, optimizing ...
+@W: MO160 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":268:0:268:5|Register bit motorWrapper_0.motor_0.captureSyncReg[6] is always 0, optimizing ...
+@W: MO160 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":268:0:268:5|Register bit motorWrapper_0.motor_0.captureSyncReg[5] is always 0, optimizing ...
+@W: MO160 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":268:0:268:5|Register bit motorWrapper_0.motor_0.captureSyncReg[4] is always 0, optimizing ...
+@W: MO160 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":268:0:268:5|Register bit motorWrapper_0.motor_0.captureSyncReg[3] is always 0, optimizing ...
+@W: MO160 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":268:0:268:5|Register bit motorWrapper_0.motor_0.captureSyncReg[2] is always 0, optimizing ...
+@W: MO160 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":268:0:268:5|Register bit motorWrapper_0.motor_0.captureSyncReg[1] is always 0, optimizing ...
+@W: MO160 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":268:0:268:5|Register bit motorWrapper_0.motor_0.captureSyncReg[0] is always 0, optimizing ...
+@N: BN362 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":86:0:86:5|Removing sequential instance motorWrapper_0.motor_0.reset_capture_sync of view:PrimLib.dff(prim) in hierarchy view:work.gc(verilog) because there are no references to its outputs 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 114MB peak: 120MB)
-
-
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 114MB peak: 120MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 117MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 122MB peak: 123MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 114MB peak: 117MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 122MB peak: 123MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 121MB peak: 121MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 121MB peak: 123MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 120MB peak: 122MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 119MB peak: 122MB)
 
 
 High Fanout Net Report
@@ -142,74 +142,78 @@ High Fanout Net Report
 
 Driver Instance / Pin Name                                       Fanout, notes                   
 -------------------------------------------------------------------------------------------------
-gc_MSS_0.MSS_ADLIB_INST / M2FRESETn                              249 : 115 asynchronous set/reset
+gc_MSS_0.MSS_ADLIB_INST / M2FRESETn                              280 : 115 asynchronous set/reset
 gc_MSS_0.MSS_ADLIB_INST / MSSPADDR[2]                            70                              
-gc_MSS_0.MSS_ADLIB_INST / MSSPADDR[3]                            103                             
-gc_MSS_0.MSS_ADLIB_INST / MSSPADDR[4]                            138                             
-gc_state_0.controller_init / Q                                   77                              
+gc_MSS_0.MSS_ADLIB_INST / MSSPADDR[3]                            104                             
+gc_MSS_0.MSS_ADLIB_INST / MSSPADDR[4]                            140                             
+gc_state_0.controller_init / Q                                   76                              
 IR_QUEUE_0.DFN1C0_WRITE_RESET_P / Q                              30 : 30 asynchronous set/reset  
 IR_QUEUE_0.DFN1C0_READ_RESET_P / Q                               39 : 39 asynchronous set/reset  
 motorWrapper_0.motor_0.capture_status_async8_i_a2 / Y            33 : 33 asynchronous set/reset  
 LED_RECV_0.COUNTER7_0_o3 / Y                                     33                              
+LED_PULSE_0.pulse.un1_reset_i_i_o2 / Y                           32                              
 IR_LED_0.div.un1_reset_i_i_o3 / Y                                32                              
-gc_receive_0.response_m2_e / Y                                   61                              
+gc_receive_0.response_m2_e / Y                                   43                              
 gc_receive_0.wavebird_id_1_sqmuxa_0_a4 / Y                       25                              
 CoreUARTapb_0.CUARTOOlI.CUARTI10.genblk1.genblk2.CUARTI0 / Q     29                              
-gc_receive_0.count14_0_o2 / Y                                    68                              
+gc_receive_0.count14_0_o2 / Y                                    67                              
+gc_receive_0.un1_next_response_count_0_sqmuxa_0_a2 / Y           28                              
+motorWrapper_0.motor_0.overflowReset_2_sqmuxa_0_a2 / Y           33                              
+motorWrapper_0.motor_0.un1_fabint9_i_a2 / Y                      33                              
+CoreAPB3_0.CAPB3O0OI[0] / Y                                      33                              
 motorWrapper_0.motor_0.compareReg_1_sqmuxa_0_a2 / Y              32                              
 motorWrapper_0.motor_0.controlReg_1_sqmuxa_0_a2 / Y              32                              
-CoreAPB3_0.CAPB3O0OI[1] / Y                                      34                              
 motorWrapper_0.motor_0.overflowReset_0_sqmuxa_0_a2 / Y           33                              
-motorWrapper_0.motor_0.un1_fabint9_i_a2 / Y                      33                              
-motorWrapper_0.motor_0.directionReg_1_sqmuxa_0_a2 / Y            32                              
+motorWrapper_0.motor_0.capture_status_async4 / Y                 32                              
 motorWrapper_0.motor_0.un1_nreset_1_i_0_0 / Y                    32                              
 motorWrapper_0.motor_0.counterReglde_0 / Y                       32                              
-motorWrapper_0.motor_0.capture_status_async4 / Y                 32                              
-CoreAPB3_0.CAPB3O0OI[0] / Y                                      33                              
 gc_state_0.last_response_n2_i_0_o3 / Y                           33                              
-LED_PULSE_0.pulse.un1_reset_i_i_o2 / Y                           32                              
+CoreAPB3_0.CAPB3O0OI_2[1] / Y                                    34                              
+CoreAPB3_0.CAPB3O0OI_1[0] / Y                                    46                              
 =================================================================================================
 
-@N: FP130 |Promoting Net gc_MSS_0_M2F_RESET_N on CLKINT  I_324 
-@N: FP130 |Promoting Net CoreAPB3_0_APBmslave0_PADDR[4] on CLKINT  I_325 
+@N: FP130 |Promoting Net gc_MSS_0_M2F_RESET_N on CLKINT  I_323 
+@N: FP130 |Promoting Net CoreAPB3_0_APBmslave0_PADDR[4] on CLKINT  I_324 
 @N: FP130 |Promoting Net IR_LED_0_DIVCLK on CLKINT  IR_LED_0.div.clkOut_inferred_clock 
 
-Finished technology mapping (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 134MB peak: 137MB)
+Finished technology mapping (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 132MB peak: 135MB)
 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 135MB peak: 137MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 132MB peak: 135MB)
 
-Replicating Combinational Instance LED_PULSE_0.pulse.un1_reset_i_i_o2, fanout 32 segments 2
+Replicating Combinational Instance CoreAPB3_0.CAPB3O0OI_1[0], fanout 46 segments 2
+Replicating Combinational Instance CoreAPB3_0.CAPB3O0OI_2[1], fanout 34 segments 2
 Replicating Combinational Instance gc_state_0.last_response_n2_i_0_o3, fanout 33 segments 2
-Replicating Combinational Instance CoreAPB3_0.CAPB3O0OI[0], fanout 33 segments 2
-Replicating Combinational Instance motorWrapper_0.motor_0.capture_status_async4, fanout 32 segments 2
 Replicating Combinational Instance motorWrapper_0.motor_0.counterReglde_0, fanout 32 segments 2
 Replicating Combinational Instance motorWrapper_0.motor_0.un1_nreset_1_i_0_0, fanout 32 segments 2
-Replicating Combinational Instance motorWrapper_0.motor_0.directionReg_1_sqmuxa_0_a2, fanout 32 segments 2
-Replicating Combinational Instance motorWrapper_0.motor_0.un1_fabint9_i_a2, fanout 33 segments 2
+Replicating Combinational Instance motorWrapper_0.motor_0.capture_status_async4, fanout 32 segments 2
 Replicating Combinational Instance motorWrapper_0.motor_0.overflowReset_0_sqmuxa_0_a2, fanout 33 segments 2
-Replicating Combinational Instance CoreAPB3_0.CAPB3O0OI[1], fanout 34 segments 2
 Replicating Combinational Instance motorWrapper_0.motor_0.controlReg_1_sqmuxa_0_a2, fanout 32 segments 2
 Replicating Combinational Instance motorWrapper_0.motor_0.compareReg_1_sqmuxa_0_a2, fanout 32 segments 2
+Replicating Combinational Instance CoreAPB3_0.CAPB3O0OI[0], fanout 33 segments 2
+Replicating Combinational Instance motorWrapper_0.motor_0.un1_fabint9_i_a2, fanout 33 segments 2
+Replicating Combinational Instance motorWrapper_0.motor_0.overflowReset_2_sqmuxa_0_a2, fanout 33 segments 2
+Replicating Combinational Instance gc_receive_0.un1_next_response_count_0_sqmuxa_0_a2, fanout 28 segments 2
 Replicating Combinational Instance gc_receive_0.count14_0_o2, fanout 68 segments 3
 Replicating Sequential Instance CoreUARTapb_0.CUARTOOlI.CUARTI10.genblk1.genblk2.CUARTI0, fanout 29 segments 2
 Replicating Combinational Instance gc_receive_0.wavebird_id_1_sqmuxa_0_a4, fanout 25 segments 2
-Replicating Combinational Instance gc_receive_0.response_m2_e, fanout 61 segments 3
+Replicating Combinational Instance gc_receive_0.response_m2_e, fanout 43 segments 2
 Replicating Combinational Instance IR_LED_0.div.un1_reset_i_i_o3, fanout 32 segments 2
+Replicating Combinational Instance LED_PULSE_0.pulse.un1_reset_i_i_o2, fanout 32 segments 2
 Replicating Combinational Instance LED_RECV_0.COUNTER7_0_o3, fanout 33 segments 2
 Replicating Combinational Instance motorWrapper_0.motor_0.capture_status_async8_i_a2, fanout 33 segments 2
 Replicating Sequential Instance IR_QUEUE_0.DFN1C0_READ_RESET_P, fanout 39 segments 2
 Replicating Sequential Instance IR_QUEUE_0.DFN1C0_WRITE_RESET_P, fanout 30 segments 2
-Replicating Sequential Instance gc_state_0.controller_init, fanout 78 segments 4
-Buffering CoreAPB3_0_APBmslave0_PADDR[3], fanout 103 segments 5
+Replicating Sequential Instance gc_state_0.controller_init, fanout 76 segments 4
+Buffering CoreAPB3_0_APBmslave0_PADDR[3], fanout 104 segments 5
 Buffering CoreAPB3_0_APBmslave0_PADDR[2], fanout 70 segments 3
 
 Added 6 Buffers
-Added 26 Cells via replication
+Added 27 Cells via replication
 	Added 6 Sequential Cells via replication
-	Added 20 Combinational Cells via replication
+	Added 21 Combinational Cells via replication
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 135MB peak: 137MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 133MB peak: 135MB)
 
 
 
@@ -234,17 +238,17 @@ Clock Tree ID     Driving Element         Drive Element Type     Fanout     Samp
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
-Writing Analyst data base C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.srm
+Writing Analyst data base C:\Users\mttschlt\eecs373\UMKarts\gc\synthesis\gc.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 133MB peak: 137MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 131MB peak: 135MB)
 
 Writing EDIF Netlist and constraint files
 G-2012.09M-SP1 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 135MB peak: 137MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 132MB peak: 135MB)
 
-@W: MT246 :"c:\users\mikechri\downloads\gc\gc\component\work\gc_mss\gc_mss.v":613:7:613:18|Blackbox MSSINT is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
-@W: MT246 :"c:\users\mikechri\downloads\gc\gc\component\work\gc_mss\gc_mss.v":546:0:546:11|Blackbox TRIBUFF_MSS is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\mttschlt\eecs373\umkarts\gc\component\work\gc_mss\gc_mss.v":613:7:613:18|Blackbox MSSINT is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\mttschlt\eecs373\umkarts\gc\component\work\gc_mss\gc_mss.v":546:0:546:11|Blackbox TRIBUFF_MSS is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
 @W: MT420 |Found inferred clock clk_div_20000_10000|clkOut_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:IR_LED_0.div.clkOut"
 
 Found clock FAB_CLK with period 10.00ns 
@@ -252,7 +256,7 @@ Found clock FCLK with period 10.00ns
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Tue Dec 03 17:46:12 2013
+# Timing Report written on Thu Dec 05 16:03:12 2013
 #
 
 
@@ -263,7 +267,7 @@ Requested Frequency:    100.0 MHz
 Wire load mode:         top
 Wire load model:        smartfusion
 Paths requested:        5
-Constraint File(s):    C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\mss_tshell_syn.sdc
+Constraint File(s):    C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc_MSS\mss_tshell_syn.sdc
                        
 @N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
 
@@ -275,15 +279,15 @@ Performance Summary
 *******************
 
 
-Worst slack in design: -5.434
+Worst slack in design: -5.515
 
                                               Requested     Estimated     Requested     Estimated                Clock        Clock              
 Starting Clock                                Frequency     Frequency     Period        Period        Slack      Type         Group              
 -------------------------------------------------------------------------------------------------------------------------------------------------
-FAB_CLK                                       100.0 MHz     79.1 MHz      10.000        12.647        -2.647     declared     clk_group_0        
+FAB_CLK                                       100.0 MHz     78.8 MHz      10.000        12.695        -2.695     declared     clk_group_0        
 FCLK                                          100.0 MHz     NA            10.000        NA            NA         declared     clk_group_0        
 clk_div_20000_10000|clkOut_inferred_clock     100.0 MHz     92.7 MHz      10.000        10.783        -0.783     inferred     Inferred_clkgroup_0
-System                                        100.0 MHz     127.0 MHz     10.000        7.871         2.129      system       system_clkgroup    
+System                                        100.0 MHz     141.1 MHz     10.000        7.089         2.911      system       system_clkgroup    
 =================================================================================================================================================
 
 
@@ -297,10 +301,10 @@ Clocks                                                                          
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Starting                                   Ending                                     |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-System                                     System                                     |  10.000      2.129   |  No paths    -      |  No paths    -      |  No paths    -    
-System                                     FAB_CLK                                    |  10.000      -5.434  |  No paths    -      |  No paths    -      |  No paths    -    
-FAB_CLK                                    System                                     |  10.000      6.664   |  No paths    -      |  No paths    -      |  No paths    -    
-FAB_CLK                                    FAB_CLK                                    |  10.000      -2.647  |  No paths    -      |  No paths    -      |  No paths    -    
+System                                     System                                     |  10.000      2.911   |  No paths    -      |  No paths    -      |  No paths    -    
+System                                     FAB_CLK                                    |  10.000      -5.515  |  No paths    -      |  No paths    -      |  No paths    -    
+FAB_CLK                                    System                                     |  10.000      6.556   |  No paths    -      |  No paths    -      |  No paths    -    
+FAB_CLK                                    FAB_CLK                                    |  10.000      -2.695  |  No paths    -      |  No paths    -      |  No paths    -    
 FAB_CLK                                    clk_div_20000_10000|clkOut_inferred_clock  |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -    
 clk_div_20000_10000|clkOut_inferred_clock  FAB_CLK                                    |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -    
 clk_div_20000_10000|clkOut_inferred_clock  clk_div_20000_10000|clkOut_inferred_clock  |  10.000      -0.783  |  No paths    -      |  No paths    -      |  No paths    -    
@@ -330,37 +334,37 @@ Starting Points with Worst Slack
 Instance                                 Reference     Type       Pin     Net                 Time        Slack 
                                          Clock                                                                  
 ----------------------------------------------------------------------------------------------------------------
-gc_receive_0.count[2]                    FAB_CLK       DFN1       Q       count[2]            0.627       -2.647
+gc_receive_0.count[4]                    FAB_CLK       DFN1       Q       count[4]            0.627       -2.695
+gc_receive_0.count[0]                    FAB_CLK       DFN1       Q       count[0]            0.627       -2.644
+gc_receive_0.count[2]                    FAB_CLK       DFN1       Q       count[2]            0.627       -2.610
 IR_QUEUE_0.DFN1C0_FULL                   FAB_CLK       DFN1C0     Q       IR_QUEUE_0_FULL     0.494       -2.603
-gc_receive_0.count[0]                    FAB_CLK       DFN1       Q       count[0]            0.627       -2.563
-gc_receive_0.count[1]                    FAB_CLK       DFN1       Q       count[1]            0.627       -2.532
-gc_receive_0.count[4]                    FAB_CLK       DFN1       Q       count[4]            0.627       -2.421
-gc_receive_0.count[5]                    FAB_CLK       DFN1       Q       count[5]            0.627       -2.208
-motorWrapper_0.motor_0.counterReg[3]     FAB_CLK       DFN1E1     Q       counterReg[3]       0.627       -2.135
-motorWrapper_0.motor_0.counterReg[8]     FAB_CLK       DFN1E1     Q       counterReg[8]       0.494       -2.071
-motorWrapper_0.motor_0.counterReg[7]     FAB_CLK       DFN1E1     Q       counterReg[7]       0.494       -2.047
-LED_RECV_0.COUNTER[9]                    FAB_CLK       DFN1       Q       COUNTER[9]          0.494       -2.033
+motorWrapper_0.motor_0.counterReg[7]     FAB_CLK       DFN1E1     Q       counterReg[7]       0.494       -2.482
+motorWrapper_0.motor_0.counterReg[3]     FAB_CLK       DFN1E1     Q       counterReg[3]       0.494       -2.470
+gc_receive_0.count[1]                    FAB_CLK       DFN1       Q       count[1]            0.627       -2.421
+motorWrapper_0.motor_0.counterReg[8]     FAB_CLK       DFN1E1     Q       counterReg[8]       0.494       -2.409
+gc_receive_0.count[5]                    FAB_CLK       DFN1       Q       count[5]            0.627       -2.408
+motorWrapper_0.motor_0.counterReg[4]     FAB_CLK       DFN1E1     Q       counterReg[4]       0.494       -2.350
 ================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                                          Starting                                            Required           
-Instance                                  Reference     Type       Pin     Net                Time         Slack 
-                                          Clock                                                                  
------------------------------------------------------------------------------------------------------------------
-gc_receive_0.count[7]                     FAB_CLK       DFN1       D       N_11               9.542        -2.647
-IR_QUEUE_0.DFN1C0_FULL                    FAB_CLK       DFN1C0     D       FULLINT            9.542        -2.603
-motorWrapper_0.motor_0.counterReg[27]     FAB_CLK       DFN1E1     D       counterReg_n27     9.512        -2.135
-motorWrapper_0.motor_0.counterReg[26]     FAB_CLK       DFN1E1     D       counterReg_n26     9.512        -2.043
-motorWrapper_0.motor_0.counterReg[28]     FAB_CLK       DFN1E1     D       N_1230             9.512        -2.043
-LED_RECV_0.COUNTER[21]                    FAB_CLK       DFN1       D       COUNTER_n21        9.512        -2.033
-gc_receive_0.count[6]                     FAB_CLK       DFN1       D       N_9                9.542        -1.936
-LED_PULSE_0.pulse.counter[29]             FAB_CLK       DFN1       D       counter_n29        9.512        -1.899
-motorWrapper_0.motor_0.counterReg[19]     FAB_CLK       DFN1E1     D       N_1050             9.512        -1.839
-motorWrapper_0.motor_0.counterReg[4]      FAB_CLK       DFN1E1     D       N_58               9.512        -1.475
-=================================================================================================================
+                                          Starting                                     Required           
+Instance                                  Reference     Type       Pin     Net         Time         Slack 
+                                          Clock                                                           
+----------------------------------------------------------------------------------------------------------
+gc_receive_0.count[7]                     FAB_CLK       DFN1       D       N_11        9.542        -2.695
+IR_QUEUE_0.DFN1C0_FULL                    FAB_CLK       DFN1C0     D       FULLINT     9.542        -2.603
+motorWrapper_0.motor_0.counterReg[19]     FAB_CLK       DFN1E1     D       N_1050      9.542        -2.482
+motorWrapper_0.motor_0.counterReg[8]      FAB_CLK       DFN1E1     D       N_66        9.512        -2.441
+motorWrapper_0.motor_0.counterReg[24]     FAB_CLK       DFN1E1     D       N_1055      9.512        -2.441
+motorWrapper_0.motor_0.counterReg[0]      FAB_CLK       DFN1E1     D       N_1186      9.542        -2.364
+motorWrapper_0.motor_0.counterReg[1]      FAB_CLK       DFN1E1     D       N_1152      9.542        -2.364
+motorWrapper_0.motor_0.counterReg[2]      FAB_CLK       DFN1E1     D       N_1153      9.542        -2.364
+motorWrapper_0.motor_0.counterReg[3]      FAB_CLK       DFN1E1     D       N_56        9.542        -2.364
+motorWrapper_0.motor_0.counterReg[4]      FAB_CLK       DFN1E1     D       N_58        9.542        -2.364
+==========================================================================================================
 
 
 
@@ -374,9 +378,123 @@ Path information for path number 1:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         9.542
 
-    - Propagation time:                      12.189
+    - Propagation time:                      12.236
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -2.647
+    = Slack (non-critical) :                 -2.695
+
+    Number of logic level(s):                10
+    Starting point:                          gc_receive_0.count[4] / Q
+    Ending point:                            gc_receive_0.count[7] / D
+    The start point is clocked by            FAB_CLK [rising] on pin CLK
+    The end   point is clocked by            FAB_CLK [rising] on pin CLK
+
+Instance / Net                                Pin      Pin               Arrival     No. of    
+Name                                Type      Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------
+gc_receive_0.count[4]               DFN1      Q        Out     0.627     0.627       -         
+count[4]                            Net       -        -       1.089     -           5         
+gc_receive_0.count_RNIJD6F[0]       OR3       B        In      -         1.716       -         
+gc_receive_0.count_RNIJD6F[0]       OR3       Y        Out     0.608     2.323       -         
+count_3_0_i_o2_0_2                  Net       -        -       0.274     -           1         
+gc_receive_0.count_RNIEQAP_0[0]     OR2       A        In      -         2.597       -         
+gc_receive_0.count_RNIEQAP_0[0]     OR2       Y        Out     0.432     3.029       -         
+N_178                               Net       -        -       1.299     -           7         
+gc_receive_0.count_RNICJH81[7]      OR2A      B        In      -         4.327       -         
+gc_receive_0.count_RNICJH81[7]      OR2A      Y        Out     0.550     4.877       -         
+count_RNICJH81[7]                   Net       -        -       1.089     -           5         
+gc_receive_0.un1_count_10.I_1       AND2      B        In      -         5.966       -         
+gc_receive_0.un1_count_10.I_1       AND2      Y        Out     0.534     6.500       -         
+DWACT_ADD_CI_0_TMP[0]               Net       -        -       0.328     -           2         
+gc_receive_0.un1_count_10.I_35      NOR2B     A        In      -         6.828       -         
+gc_receive_0.un1_count_10.I_35      NOR2B     Y        Out     0.438     7.266       -         
+DWACT_ADD_CI_0_g_array_1[0]         Net       -        -       0.686     -           3         
+gc_receive_0.un1_count_10.I_36      NOR2B     A        In      -         7.952       -         
+gc_receive_0.un1_count_10.I_36      NOR2B     Y        Out     0.438     8.390       -         
+DWACT_ADD_CI_0_g_array_2[0]         Net       -        -       0.686     -           3         
+gc_receive_0.un1_count_10.I_39      NOR2B     A        In      -         9.076       -         
+gc_receive_0.un1_count_10.I_39      NOR2B     Y        Out     0.438     9.514       -         
+DWACT_ADD_CI_0_g_array_11[0]        Net       -        -       0.328     -           2         
+gc_receive_0.un1_count_10.I_45      NOR2B     A        In      -         9.842       -         
+gc_receive_0.un1_count_10.I_45      NOR2B     Y        Out     0.438     10.280      -         
+DWACT_ADD_CI_0_g_array_12_2[0]      Net       -        -       0.274     -           1         
+gc_receive_0.un1_count_10.I_34      XOR2      B        In      -         10.553      -         
+gc_receive_0.un1_count_10.I_34      XOR2      Y        Out     0.797     11.351      -         
+I_34                                Net       -        -       0.274     -           1         
+gc_receive_0.count_RNO[7]           OA1A      C        In      -         11.624      -         
+gc_receive_0.count_RNO[7]           OA1A      Y        Out     0.339     11.963      -         
+N_11                                Net       -        -       0.274     -           1         
+gc_receive_0.count[7]               DFN1      D        In      -         12.236      -         
+===============================================================================================
+Total path delay (propagation time + setup) of 12.695 is 6.095(48.0%) logic and 6.599(52.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      10.000
+    - Setup time:                            0.458
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.542
+
+    - Propagation time:                      12.186
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -2.644
+
+    Number of logic level(s):                10
+    Starting point:                          gc_receive_0.count[0] / Q
+    Ending point:                            gc_receive_0.count[7] / D
+    The start point is clocked by            FAB_CLK [rising] on pin CLK
+    The end   point is clocked by            FAB_CLK [rising] on pin CLK
+
+Instance / Net                                Pin      Pin               Arrival     No. of    
+Name                                Type      Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------
+gc_receive_0.count[0]               DFN1      Q        Out     0.627     0.627       -         
+count[0]                            Net       -        -       1.007     -           4         
+gc_receive_0.count_RNIJD6F[0]       OR3       C        In      -         1.634       -         
+gc_receive_0.count_RNIJD6F[0]       OR3       Y        Out     0.639     2.273       -         
+count_3_0_i_o2_0_2                  Net       -        -       0.274     -           1         
+gc_receive_0.count_RNIEQAP_0[0]     OR2       A        In      -         2.547       -         
+gc_receive_0.count_RNIEQAP_0[0]     OR2       Y        Out     0.432     2.978       -         
+N_178                               Net       -        -       1.299     -           7         
+gc_receive_0.count_RNICJH81[7]      OR2A      B        In      -         4.277       -         
+gc_receive_0.count_RNICJH81[7]      OR2A      Y        Out     0.550     4.827       -         
+count_RNICJH81[7]                   Net       -        -       1.089     -           5         
+gc_receive_0.un1_count_10.I_1       AND2      B        In      -         5.916       -         
+gc_receive_0.un1_count_10.I_1       AND2      Y        Out     0.534     6.450       -         
+DWACT_ADD_CI_0_TMP[0]               Net       -        -       0.328     -           2         
+gc_receive_0.un1_count_10.I_35      NOR2B     A        In      -         6.778       -         
+gc_receive_0.un1_count_10.I_35      NOR2B     Y        Out     0.438     7.216       -         
+DWACT_ADD_CI_0_g_array_1[0]         Net       -        -       0.686     -           3         
+gc_receive_0.un1_count_10.I_36      NOR2B     A        In      -         7.902       -         
+gc_receive_0.un1_count_10.I_36      NOR2B     Y        Out     0.438     8.340       -         
+DWACT_ADD_CI_0_g_array_2[0]         Net       -        -       0.686     -           3         
+gc_receive_0.un1_count_10.I_39      NOR2B     A        In      -         9.026       -         
+gc_receive_0.un1_count_10.I_39      NOR2B     Y        Out     0.438     9.464       -         
+DWACT_ADD_CI_0_g_array_11[0]        Net       -        -       0.328     -           2         
+gc_receive_0.un1_count_10.I_45      NOR2B     A        In      -         9.792       -         
+gc_receive_0.un1_count_10.I_45      NOR2B     Y        Out     0.438     10.230      -         
+DWACT_ADD_CI_0_g_array_12_2[0]      Net       -        -       0.274     -           1         
+gc_receive_0.un1_count_10.I_34      XOR2      B        In      -         10.503      -         
+gc_receive_0.un1_count_10.I_34      XOR2      Y        Out     0.797     11.300      -         
+I_34                                Net       -        -       0.274     -           1         
+gc_receive_0.count_RNO[7]           OA1A      C        In      -         11.574      -         
+gc_receive_0.count_RNO[7]           OA1A      Y        Out     0.339     11.913      -         
+N_11                                Net       -        -       0.274     -           1         
+gc_receive_0.count[7]               DFN1      D        In      -         12.186      -         
+===============================================================================================
+Total path delay (propagation time + setup) of 12.644 is 6.127(48.5%) logic and 6.518(51.5%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      10.000
+    - Setup time:                            0.458
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.542
+
+    - Propagation time:                      12.152
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -2.610
 
     Number of logic level(s):                10
     Starting point:                          gc_receive_0.count[2] / Q
@@ -389,43 +507,43 @@ Name                                Type      Name     Dir     Delay     Time   
 -----------------------------------------------------------------------------------------------
 gc_receive_0.count[2]               DFN1      Q        Out     0.627     0.627       -         
 count[2]                            Net       -        -       1.007     -           4         
-gc_receive_0.count_RNIRC4A[5]       OR2       B        In      -         1.634       -         
-gc_receive_0.count_RNIRC4A[5]       OR2       Y        Out     0.550     2.184       -         
+gc_receive_0.count_RNIRC4A[5]       OR2       A        In      -         1.634       -         
+gc_receive_0.count_RNIRC4A[5]       OR2       Y        Out     0.432     2.066       -         
 count_3_0_i_o2_0_0                  Net       -        -       0.328     -           2         
-gc_receive_0.count_RNIEQAP_0[0]     OR2       B        In      -         2.513       -         
-gc_receive_0.count_RNIEQAP_0[0]     OR2       Y        Out     0.550     3.063       -         
+gc_receive_0.count_RNIEQAP_0[0]     OR2       B        In      -         2.394       -         
+gc_receive_0.count_RNIEQAP_0[0]     OR2       Y        Out     0.550     2.944       -         
 N_178                               Net       -        -       1.299     -           7         
-gc_receive_0.count_RNICJH81[7]      OR2A      B        In      -         4.361       -         
-gc_receive_0.count_RNICJH81[7]      OR2A      Y        Out     0.550     4.911       -         
-count_RNICJH81[7]                   Net       -        -       1.007     -           4         
-gc_receive_0.un1_count_10.I_1       AND2      B        In      -         5.919       -         
-gc_receive_0.un1_count_10.I_1       AND2      Y        Out     0.534     6.452       -         
+gc_receive_0.count_RNICJH81[7]      OR2A      B        In      -         4.243       -         
+gc_receive_0.count_RNICJH81[7]      OR2A      Y        Out     0.550     4.793       -         
+count_RNICJH81[7]                   Net       -        -       1.089     -           5         
+gc_receive_0.un1_count_10.I_1       AND2      B        In      -         5.882       -         
+gc_receive_0.un1_count_10.I_1       AND2      Y        Out     0.534     6.415       -         
 DWACT_ADD_CI_0_TMP[0]               Net       -        -       0.328     -           2         
-gc_receive_0.un1_count_10.I_35      NOR2B     A        In      -         6.781       -         
-gc_receive_0.un1_count_10.I_35      NOR2B     Y        Out     0.438     7.218       -         
+gc_receive_0.un1_count_10.I_35      NOR2B     A        In      -         6.744       -         
+gc_receive_0.un1_count_10.I_35      NOR2B     Y        Out     0.438     7.181       -         
 DWACT_ADD_CI_0_g_array_1[0]         Net       -        -       0.686     -           3         
-gc_receive_0.un1_count_10.I_36      NOR2B     A        In      -         7.905       -         
-gc_receive_0.un1_count_10.I_36      NOR2B     Y        Out     0.438     8.342       -         
+gc_receive_0.un1_count_10.I_36      NOR2B     A        In      -         7.868       -         
+gc_receive_0.un1_count_10.I_36      NOR2B     Y        Out     0.438     8.306       -         
 DWACT_ADD_CI_0_g_array_2[0]         Net       -        -       0.686     -           3         
-gc_receive_0.un1_count_10.I_39      NOR2B     A        In      -         9.029       -         
-gc_receive_0.un1_count_10.I_39      NOR2B     Y        Out     0.438     9.466       -         
+gc_receive_0.un1_count_10.I_39      NOR2B     A        In      -         8.992       -         
+gc_receive_0.un1_count_10.I_39      NOR2B     Y        Out     0.438     9.430       -         
 DWACT_ADD_CI_0_g_array_11[0]        Net       -        -       0.328     -           2         
-gc_receive_0.un1_count_10.I_45      NOR2B     A        In      -         9.795       -         
-gc_receive_0.un1_count_10.I_45      NOR2B     Y        Out     0.438     10.233      -         
+gc_receive_0.un1_count_10.I_45      NOR2B     A        In      -         9.758       -         
+gc_receive_0.un1_count_10.I_45      NOR2B     Y        Out     0.438     10.195      -         
 DWACT_ADD_CI_0_g_array_12_2[0]      Net       -        -       0.274     -           1         
-gc_receive_0.un1_count_10.I_34      XOR2      B        In      -         10.506      -         
-gc_receive_0.un1_count_10.I_34      XOR2      Y        Out     0.797     11.303      -         
-un1_count_10[7]                     Net       -        -       0.274     -           1         
-gc_receive_0.count_RNO[7]           OA1A      C        In      -         11.577      -         
-gc_receive_0.count_RNO[7]           OA1A      Y        Out     0.339     11.915      -         
+gc_receive_0.un1_count_10.I_34      XOR2      B        In      -         10.469      -         
+gc_receive_0.un1_count_10.I_34      XOR2      Y        Out     0.797     11.266      -         
+I_34                                Net       -        -       0.274     -           1         
+gc_receive_0.count_RNO[7]           OA1A      C        In      -         11.540      -         
+gc_receive_0.count_RNO[7]           OA1A      Y        Out     0.339     11.878      -         
 N_11                                Net       -        -       0.274     -           1         
-gc_receive_0.count[7]               DFN1      D        In      -         12.189      -         
+gc_receive_0.count[7]               DFN1      D        In      -         12.152      -         
 ===============================================================================================
-Total path delay (propagation time + setup) of 12.647 is 6.156(48.7%) logic and 6.491(51.3%) route.
+Total path delay (propagation time + setup) of 12.610 is 6.038(47.9%) logic and 6.573(52.1%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
-Path information for path number 2: 
+Path information for path number 4: 
       Requested Period:                      10.000
     - Setup time:                            0.458
     + Clock delay at ending point:           0.000 (ideal)
@@ -485,7 +603,7 @@ Total path delay (propagation time + setup) of 12.603 is 6.881(54.6%) logic and 
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
-Path information for path number 3: 
+Path information for path number 5: 
       Requested Period:                      10.000
     - Setup time:                            0.458
     + Clock delay at ending point:           0.000 (ideal)
@@ -542,120 +660,6 @@ FULLINT                                       Net        -        -       0.274 
 IR_QUEUE_0.DFN1C0_FULL                        DFN1C0     D        In      -         12.132      -         
 ==========================================================================================================
 Total path delay (propagation time + setup) of 12.590 is 6.868(54.5%) logic and 5.722(45.5%) route.
-Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
-
-
-Path information for path number 4: 
-      Requested Period:                      10.000
-    - Setup time:                            0.458
-    + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.542
-
-    - Propagation time:                      12.105
-    - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -2.563
-
-    Number of logic level(s):                10
-    Starting point:                          gc_receive_0.count[0] / Q
-    Ending point:                            gc_receive_0.count[7] / D
-    The start point is clocked by            FAB_CLK [rising] on pin CLK
-    The end   point is clocked by            FAB_CLK [rising] on pin CLK
-
-Instance / Net                                Pin      Pin               Arrival     No. of    
-Name                                Type      Name     Dir     Delay     Time        Fan Out(s)
------------------------------------------------------------------------------------------------
-gc_receive_0.count[0]               DFN1      Q        Out     0.627     0.627       -         
-count[0]                            Net       -        -       1.007     -           4         
-gc_receive_0.count_RNIJD6F[0]       OR3       C        In      -         1.634       -         
-gc_receive_0.count_RNIJD6F[0]       OR3       Y        Out     0.639     2.273       -         
-count_3_0_i_o2_0_2                  Net       -        -       0.274     -           1         
-gc_receive_0.count_RNIEQAP_0[0]     OR2       A        In      -         2.547       -         
-gc_receive_0.count_RNIEQAP_0[0]     OR2       Y        Out     0.432     2.978       -         
-N_178                               Net       -        -       1.299     -           7         
-gc_receive_0.count_RNICJH81[7]      OR2A      B        In      -         4.277       -         
-gc_receive_0.count_RNICJH81[7]      OR2A      Y        Out     0.550     4.827       -         
-count_RNICJH81[7]                   Net       -        -       1.007     -           4         
-gc_receive_0.un1_count_10.I_1       AND2      B        In      -         5.834       -         
-gc_receive_0.un1_count_10.I_1       AND2      Y        Out     0.534     6.368       -         
-DWACT_ADD_CI_0_TMP[0]               Net       -        -       0.328     -           2         
-gc_receive_0.un1_count_10.I_35      NOR2B     A        In      -         6.697       -         
-gc_receive_0.un1_count_10.I_35      NOR2B     Y        Out     0.438     7.134       -         
-DWACT_ADD_CI_0_g_array_1[0]         Net       -        -       0.686     -           3         
-gc_receive_0.un1_count_10.I_36      NOR2B     A        In      -         7.821       -         
-gc_receive_0.un1_count_10.I_36      NOR2B     Y        Out     0.438     8.258       -         
-DWACT_ADD_CI_0_g_array_2[0]         Net       -        -       0.686     -           3         
-gc_receive_0.un1_count_10.I_39      NOR2B     A        In      -         8.945       -         
-gc_receive_0.un1_count_10.I_39      NOR2B     Y        Out     0.438     9.382       -         
-DWACT_ADD_CI_0_g_array_11[0]        Net       -        -       0.328     -           2         
-gc_receive_0.un1_count_10.I_45      NOR2B     A        In      -         9.711       -         
-gc_receive_0.un1_count_10.I_45      NOR2B     Y        Out     0.438     10.148      -         
-DWACT_ADD_CI_0_g_array_12_2[0]      Net       -        -       0.274     -           1         
-gc_receive_0.un1_count_10.I_34      XOR2      B        In      -         10.422      -         
-gc_receive_0.un1_count_10.I_34      XOR2      Y        Out     0.797     11.219      -         
-un1_count_10[7]                     Net       -        -       0.274     -           1         
-gc_receive_0.count_RNO[7]           OA1A      C        In      -         11.493      -         
-gc_receive_0.count_RNO[7]           OA1A      Y        Out     0.339     11.831      -         
-N_11                                Net       -        -       0.274     -           1         
-gc_receive_0.count[7]               DFN1      D        In      -         12.105      -         
-===============================================================================================
-Total path delay (propagation time + setup) of 12.563 is 6.127(48.8%) logic and 6.437(51.2%) route.
-Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
-
-
-Path information for path number 5: 
-      Requested Period:                      10.000
-    - Setup time:                            0.458
-    + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.542
-
-    - Propagation time:                      12.074
-    - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -2.532
-
-    Number of logic level(s):                10
-    Starting point:                          gc_receive_0.count[1] / Q
-    Ending point:                            gc_receive_0.count[7] / D
-    The start point is clocked by            FAB_CLK [rising] on pin CLK
-    The end   point is clocked by            FAB_CLK [rising] on pin CLK
-
-Instance / Net                                Pin      Pin               Arrival     No. of    
-Name                                Type      Name     Dir     Delay     Time        Fan Out(s)
------------------------------------------------------------------------------------------------
-gc_receive_0.count[1]               DFN1      Q        Out     0.627     0.627       -         
-count[1]                            Net       -        -       1.007     -           4         
-gc_receive_0.count_RNIJD6F[0]       OR3       B        In      -         1.634       -         
-gc_receive_0.count_RNIJD6F[0]       OR3       Y        Out     0.608     2.242       -         
-count_3_0_i_o2_0_2                  Net       -        -       0.274     -           1         
-gc_receive_0.count_RNIEQAP_0[0]     OR2       A        In      -         2.516       -         
-gc_receive_0.count_RNIEQAP_0[0]     OR2       Y        Out     0.432     2.947       -         
-N_178                               Net       -        -       1.299     -           7         
-gc_receive_0.count_RNICJH81[7]      OR2A      B        In      -         4.246       -         
-gc_receive_0.count_RNICJH81[7]      OR2A      Y        Out     0.550     4.796       -         
-count_RNICJH81[7]                   Net       -        -       1.007     -           4         
-gc_receive_0.un1_count_10.I_1       AND2      B        In      -         5.803       -         
-gc_receive_0.un1_count_10.I_1       AND2      Y        Out     0.534     6.337       -         
-DWACT_ADD_CI_0_TMP[0]               Net       -        -       0.328     -           2         
-gc_receive_0.un1_count_10.I_35      NOR2B     A        In      -         6.665       -         
-gc_receive_0.un1_count_10.I_35      NOR2B     Y        Out     0.438     7.103       -         
-DWACT_ADD_CI_0_g_array_1[0]         Net       -        -       0.686     -           3         
-gc_receive_0.un1_count_10.I_36      NOR2B     A        In      -         7.790       -         
-gc_receive_0.un1_count_10.I_36      NOR2B     Y        Out     0.438     8.227       -         
-DWACT_ADD_CI_0_g_array_2[0]         Net       -        -       0.686     -           3         
-gc_receive_0.un1_count_10.I_39      NOR2B     A        In      -         8.914       -         
-gc_receive_0.un1_count_10.I_39      NOR2B     Y        Out     0.438     9.351       -         
-DWACT_ADD_CI_0_g_array_11[0]        Net       -        -       0.328     -           2         
-gc_receive_0.un1_count_10.I_45      NOR2B     A        In      -         9.680       -         
-gc_receive_0.un1_count_10.I_45      NOR2B     Y        Out     0.438     10.117      -         
-DWACT_ADD_CI_0_g_array_12_2[0]      Net       -        -       0.274     -           1         
-gc_receive_0.un1_count_10.I_34      XOR2      B        In      -         10.391      -         
-gc_receive_0.un1_count_10.I_34      XOR2      Y        Out     0.797     11.188      -         
-un1_count_10[7]                     Net       -        -       0.274     -           1         
-gc_receive_0.count_RNO[7]           OA1A      C        In      -         11.461      -         
-gc_receive_0.count_RNO[7]           OA1A      Y        Out     0.339     11.800      -         
-N_11                                Net       -        -       0.274     -           1         
-gc_receive_0.count[7]               DFN1      D        In      -         12.074      -         
-===============================================================================================
-Total path delay (propagation time + setup) of 12.532 is 6.095(48.6%) logic and 6.437(51.4%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -976,37 +980,37 @@ Starting Points with Worst Slack
 Instance                    Reference     Type        Pin              Net                                 Time        Slack 
                             Clock                                                                                            
 -----------------------------------------------------------------------------------------------------------------------------
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[8]      CoreAPB3_0_APBmslave0_PADDR[8]      0.000       -5.434
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[9]      CoreAPB3_0_APBmslave0_PADDR[9]      0.000       -5.338
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[11]     CoreAPB3_0_APBmslave0_PADDR[11]     0.000       -5.236
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPSEL          gc_MSS_0_MSS_MASTER_APB_PSELx       0.000       -5.236
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[10]     CoreAPB3_0_APBmslave0_PADDR[10]     0.000       -4.996
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[8]      CoreAPB3_0_APBmslave0_PADDR[8]      0.000       -5.515
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[9]      CoreAPB3_0_APBmslave0_PADDR[9]      0.000       -5.419
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[11]     CoreAPB3_0_APBmslave0_PADDR[11]     0.000       -5.265
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPSEL          gc_MSS_0_MSS_MASTER_APB_PSELx       0.000       -5.265
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[10]     CoreAPB3_0_APBmslave0_PADDR[10]     0.000       -5.026
 gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     M2FRESETn        MSS_ADLIB_INST_M2FRESETn            0.000       -4.211
 gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWRITE        CoreAPB3_0_APBmslave0_PWRITE        0.000       -3.767
 gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPENABLE       CoreAPB3_0_APBmslave0_PENABLE       0.000       -3.420
 gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[2]      CoreAPB3_0_APBmslave0_PADDR[2]      0.000       0.153 
-gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[3]      CoreAPB3_0_APBmslave0_PADDR[3]      0.000       0.212 
+gc_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[3]      CoreAPB3_0_APBmslave0_PADDR[3]      0.000       0.226 
 =============================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                                           Starting                                                 Required           
-Instance                                   Reference     Type       Pin     Net                     Time         Slack 
-                                           Clock                                                                       
------------------------------------------------------------------------------------------------------------------------
-IR_QUEUE_0.DFN1C0_FULL                     System        DFN1C0     D       FULLINT                 9.542        -5.434
-motorWrapper_0.motor_0.overflowReset       System        DFN1       D       overflowReset_RNO       9.512        -3.881
-motorWrapper_0.motor_0.overflowReg[10]     System        DFN1       D       overflowReg_RNO[10]     9.542        -3.668
-motorWrapper_0.motor_0.overflowReg[11]     System        DFN1       D       overflowReg_RNO[11]     9.542        -3.668
-motorWrapper_0.motor_0.overflowReg[12]     System        DFN1       D       overflowReg_RNO[12]     9.542        -3.668
-motorWrapper_0.motor_0.overflowReg[13]     System        DFN1       D       overflowReg_RNO[13]     9.542        -3.668
-motorWrapper_0.motor_0.overflowReg[14]     System        DFN1       D       overflowReg_RNO[14]     9.542        -3.668
-motorWrapper_0.motor_0.overflowReg[15]     System        DFN1       D       overflowReg_RNO[15]     9.542        -3.668
-motorWrapper_0.motor_0.overflowReg[16]     System        DFN1       D       N_108                   9.542        -3.668
-motorWrapper_0.motor_0.overflowReg[17]     System        DFN1       D       N_110                   9.542        -3.668
-=======================================================================================================================
+                                     Starting                                               Required           
+Instance                             Reference     Type       Pin     Net                   Time         Slack 
+                                     Clock                                                                     
+---------------------------------------------------------------------------------------------------------------
+IR_QUEUE_0.DFN1C0_FULL               System        DFN1C0     D       FULLINT               9.542        -5.515
+IR_QUEUE_0.DFN1C0_WGRY\[4\]          System        DFN1C0     D       XOR2_25_Y             9.542        -3.273
+IR_QUEUE_0.DFN1C0_WGRY\[5\]          System        DFN1C0     D       XOR2_15_Y             9.542        -3.273
+IR_QUEUE_0.DFN1C0_WGRY\[6\]          System        DFN1C0     D       XOR2_21_Y             9.542        -2.892
+IR_QUEUE_0.DFN1C0_WGRY\[3\]          System        DFN1C0     D       XOR2_30_Y             9.542        -2.491
+IR_QUEUE_0.DFN1C0_MEM_WADDR\[5\]     System        DFN1C0     D       WBINNXTSHIFT\[5\]     9.542        -2.203
+IR_QUEUE_0.DFN1C0_MEM_WADDR\[6\]     System        DFN1C0     D       WBINNXTSHIFT\[6\]     9.542        -2.203
+IR_QUEUE_0.DFN1C0_WGRY\[2\]          System        DFN1C0     D       XOR2_9_Y              9.542        -2.078
+IR_QUEUE_0.DFN1C0_MEM_WADDR\[4\]     System        DFN1C0     D       WBINNXTSHIFT\[4\]     9.542        -1.420
+IR_QUEUE_0.DFN1C0_WGRY\[1\]          System        DFN1C0     D       XOR2_14_Y             9.542        -1.296
+===============================================================================================================
 
 
 
@@ -1020,10 +1024,10 @@ Path information for path number 1:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         9.542
 
-    - Propagation time:                      14.976
+    - Propagation time:                      15.057
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (critical) :                     -5.434
+    = Slack (critical) :                     -5.515
 
     Number of logic level(s):                13
     Starting point:                          gc_MSS_0.MSS_ADLIB_INST / MSSPADDR[8]
@@ -1035,49 +1039,49 @@ Instance / Net                                            Pin             Pin   
 Name                                          Type        Name            Dir     Delay     Time        Fan Out(s)
 ------------------------------------------------------------------------------------------------------------------
 gc_MSS_0.MSS_ADLIB_INST                       MSS_APB     MSSPADDR[8]     Out     0.000     0.000       -         
-CoreAPB3_0_APBmslave0_PADDR[8]                Net         -               -       1.007     -           4         
-CoreAPB3_0.CAPB3O0OI_2[3]                     NOR2B       B               In      -         1.007       -         
-CoreAPB3_0.CAPB3O0OI_2[3]                     NOR2B       Y               Out     0.534     1.541       -         
+CoreAPB3_0_APBmslave0_PADDR[8]                Net         -               -       1.089     -           5         
+CoreAPB3_0.CAPB3O0OI_2[3]                     NOR2B       B               In      -         1.089       -         
+CoreAPB3_0.CAPB3O0OI_2[3]                     NOR2B       Y               Out     0.534     1.622       -         
 CAPB3I0I30_2                                  Net         -               -       1.454     -           10        
-APB_IR_0.ENQUEUE_1                            NOR3C       B               In      -         2.995       -         
-APB_IR_0.ENQUEUE_1                            NOR3C       Y               Out     0.516     3.511       -         
+APB_IR_0.ENQUEUE_1                            NOR3C       B               In      -         3.076       -         
+APB_IR_0.ENQUEUE_1                            NOR3C       Y               Out     0.516     3.592       -         
 ENQUEUE_1                                     Net         -               -       0.274     -           1         
-APB_IR_0.ENQUEUE                              NOR3B       A               In      -         3.785       -         
-APB_IR_0.ENQUEUE                              NOR3B       Y               Out     0.546     4.330       -         
+APB_IR_0.ENQUEUE                              NOR3B       A               In      -         3.866       -         
+APB_IR_0.ENQUEUE                              NOR3B       Y               Out     0.546     4.412       -         
 APB_IR_0_ENQUEUE                              Net         -               -       0.274     -           1         
-IR_QUEUE_0.NAND2_0_RNI8DHJ1                   AND2        B               In      -         4.604       -         
-IR_QUEUE_0.NAND2_0_RNI8DHJ1                   AND2        Y               Out     0.534     5.138       -         
+IR_QUEUE_0.NAND2_0_RNI8DHJ1                   AND2        B               In      -         4.685       -         
+IR_QUEUE_0.NAND2_0_RNI8DHJ1                   AND2        Y               Out     0.534     5.219       -         
 MEMORYWE                                      Net         -               -       0.686     -           3         
-IR_QUEUE_0.DFN1C0_MEM_WADDR\[0\]_RNIN1DS1     AND2        B               In      -         5.824       -         
-IR_QUEUE_0.DFN1C0_MEM_WADDR\[0\]_RNIN1DS1     AND2        Y               Out     0.534     6.358       -         
+IR_QUEUE_0.DFN1C0_MEM_WADDR\[0\]_RNIN1DS1     AND2        B               In      -         5.906       -         
+IR_QUEUE_0.DFN1C0_MEM_WADDR\[0\]_RNIN1DS1     AND2        Y               Out     0.534     6.439       -         
 AND2_14_Y                                     Net         -               -       0.328     -           2         
-IR_QUEUE_0.XOR2_16_RNI6BMC2                   AO1         B               In      -         6.686       -         
-IR_QUEUE_0.XOR2_16_RNI6BMC2                   AO1         Y               Out     0.509     7.195       -         
+IR_QUEUE_0.XOR2_16_RNI6BMC2                   AO1         B               In      -         6.768       -         
+IR_QUEUE_0.XOR2_16_RNI6BMC2                   AO1         Y               Out     0.509     7.276       -         
 AO1_0_Y                                       Net         -               -       0.686     -           3         
-IR_QUEUE_0.AND2_2_RNIAB1V2                    AO1         B               In      -         7.881       -         
-IR_QUEUE_0.AND2_2_RNIAB1V2                    AO1         Y               Out     0.509     8.390       -         
+IR_QUEUE_0.AND2_2_RNIAB1V2                    AO1         B               In      -         7.963       -         
+IR_QUEUE_0.AND2_2_RNIAB1V2                    AO1         Y               Out     0.509     8.471       -         
 AO1_2_Y                                       Net         -               -       0.686     -           3         
-IR_QUEUE_0.XOR2_35_RNISMAF3                   AO1         B               In      -         9.076       -         
-IR_QUEUE_0.XOR2_35_RNISMAF3                   AO1         Y               Out     0.509     9.585       -         
+IR_QUEUE_0.XOR2_35_RNISMAF3                   AO1         B               In      -         9.158       -         
+IR_QUEUE_0.XOR2_35_RNISMAF3                   AO1         Y               Out     0.509     9.666       -         
 AO1_10_Y                                      Net         -               -       0.274     -           1         
-IR_QUEUE_0.XOR2_5_RNIN6UH3                    XOR2        B               In      -         9.859       -         
-IR_QUEUE_0.XOR2_5_RNIN6UH3                    XOR2        Y               Out     0.797     10.656      -         
+IR_QUEUE_0.XOR2_5_RNIN6UH3                    XOR2        B               In      -         9.940       -         
+IR_QUEUE_0.XOR2_5_RNIN6UH3                    XOR2        Y               Out     0.797     10.737      -         
 WBINNXTSHIFT\[5\]                             Net         -               -       1.007     -           4         
-IR_QUEUE_0.DFN1C0_FULL_RNO_7                  XNOR2       B               In      -         11.663      -         
-IR_QUEUE_0.DFN1C0_FULL_RNO_7                  XNOR2       Y               Out     0.797     12.460      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO_7                  XNOR2       B               In      -         11.744      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO_7                  XNOR2       Y               Out     0.797     12.541      -         
 XNOR2_2_Y                                     Net         -               -       0.274     -           1         
-IR_QUEUE_0.DFN1C0_FULL_RNO_4                  AND2        B               In      -         12.734      -         
-IR_QUEUE_0.DFN1C0_FULL_RNO_4                  AND2        Y               Out     0.439     13.173      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO_4                  AND2        B               In      -         12.815      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO_4                  AND2        Y               Out     0.439     13.254      -         
 AND2_15_Y                                     Net         -               -       0.274     -           1         
-IR_QUEUE_0.DFN1C0_FULL_RNO_0                  AND3        C               In      -         13.447      -         
-IR_QUEUE_0.DFN1C0_FULL_RNO_0                  AND3        Y               Out     0.566     14.013      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO_0                  AND3        C               In      -         13.528      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO_0                  AND3        Y               Out     0.566     14.094      -         
 AND3_0_Y                                      Net         -               -       0.274     -           1         
-IR_QUEUE_0.DFN1C0_FULL_RNO                    AND2        A               In      -         14.287      -         
-IR_QUEUE_0.DFN1C0_FULL_RNO                    AND2        Y               Out     0.415     14.702      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO                    AND2        A               In      -         14.368      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO                    AND2        Y               Out     0.415     14.783      -         
 FULLINT                                       Net         -               -       0.274     -           1         
-IR_QUEUE_0.DFN1C0_FULL                        DFN1C0      D               In      -         14.976      -         
+IR_QUEUE_0.DFN1C0_FULL                        DFN1C0      D               In      -         15.057      -         
 ==================================================================================================================
-Total path delay (propagation time + setup) of 15.434 is 7.663(49.7%) logic and 7.771(50.3%) route.
+Total path delay (propagation time + setup) of 15.515 is 7.663(49.4%) logic and 7.852(50.6%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -1087,10 +1091,10 @@ Path information for path number 2:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         9.542
 
-    - Propagation time:                      14.879
+    - Propagation time:                      14.961
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (non-critical) :                 -5.338
+    = Slack (non-critical) :                 -5.419
 
     Number of logic level(s):                13
     Starting point:                          gc_MSS_0.MSS_ADLIB_INST / MSSPADDR[9]
@@ -1102,49 +1106,49 @@ Instance / Net                                            Pin             Pin   
 Name                                          Type        Name            Dir     Delay     Time        Fan Out(s)
 ------------------------------------------------------------------------------------------------------------------
 gc_MSS_0.MSS_ADLIB_INST                       MSS_APB     MSSPADDR[9]     Out     0.000     0.000       -         
-CoreAPB3_0_APBmslave0_PADDR[9]                Net         -               -       1.007     -           4         
-CoreAPB3_0.CAPB3O0OI_2[3]                     NOR2B       A               In      -         1.007       -         
-CoreAPB3_0.CAPB3O0OI_2[3]                     NOR2B       Y               Out     0.438     1.445       -         
+CoreAPB3_0_APBmslave0_PADDR[9]                Net         -               -       1.089     -           5         
+CoreAPB3_0.CAPB3O0OI_2[3]                     NOR2B       A               In      -         1.089       -         
+CoreAPB3_0.CAPB3O0OI_2[3]                     NOR2B       Y               Out     0.438     1.526       -         
 CAPB3I0I30_2                                  Net         -               -       1.454     -           10        
-APB_IR_0.ENQUEUE_1                            NOR3C       B               In      -         2.899       -         
-APB_IR_0.ENQUEUE_1                            NOR3C       Y               Out     0.516     3.415       -         
+APB_IR_0.ENQUEUE_1                            NOR3C       B               In      -         2.980       -         
+APB_IR_0.ENQUEUE_1                            NOR3C       Y               Out     0.516     3.496       -         
 ENQUEUE_1                                     Net         -               -       0.274     -           1         
-APB_IR_0.ENQUEUE                              NOR3B       A               In      -         3.688       -         
-APB_IR_0.ENQUEUE                              NOR3B       Y               Out     0.546     4.234       -         
+APB_IR_0.ENQUEUE                              NOR3B       A               In      -         3.770       -         
+APB_IR_0.ENQUEUE                              NOR3B       Y               Out     0.546     4.316       -         
 APB_IR_0_ENQUEUE                              Net         -               -       0.274     -           1         
-IR_QUEUE_0.NAND2_0_RNI8DHJ1                   AND2        B               In      -         4.508       -         
-IR_QUEUE_0.NAND2_0_RNI8DHJ1                   AND2        Y               Out     0.534     5.042       -         
+IR_QUEUE_0.NAND2_0_RNI8DHJ1                   AND2        B               In      -         4.589       -         
+IR_QUEUE_0.NAND2_0_RNI8DHJ1                   AND2        Y               Out     0.534     5.123       -         
 MEMORYWE                                      Net         -               -       0.686     -           3         
-IR_QUEUE_0.DFN1C0_MEM_WADDR\[0\]_RNIN1DS1     AND2        B               In      -         5.728       -         
-IR_QUEUE_0.DFN1C0_MEM_WADDR\[0\]_RNIN1DS1     AND2        Y               Out     0.534     6.262       -         
+IR_QUEUE_0.DFN1C0_MEM_WADDR\[0\]_RNIN1DS1     AND2        B               In      -         5.809       -         
+IR_QUEUE_0.DFN1C0_MEM_WADDR\[0\]_RNIN1DS1     AND2        Y               Out     0.534     6.343       -         
 AND2_14_Y                                     Net         -               -       0.328     -           2         
-IR_QUEUE_0.XOR2_16_RNI6BMC2                   AO1         B               In      -         6.590       -         
-IR_QUEUE_0.XOR2_16_RNI6BMC2                   AO1         Y               Out     0.509     7.099       -         
+IR_QUEUE_0.XOR2_16_RNI6BMC2                   AO1         B               In      -         6.672       -         
+IR_QUEUE_0.XOR2_16_RNI6BMC2                   AO1         Y               Out     0.509     7.180       -         
 AO1_0_Y                                       Net         -               -       0.686     -           3         
-IR_QUEUE_0.AND2_2_RNIAB1V2                    AO1         B               In      -         7.785       -         
-IR_QUEUE_0.AND2_2_RNIAB1V2                    AO1         Y               Out     0.509     8.294       -         
+IR_QUEUE_0.AND2_2_RNIAB1V2                    AO1         B               In      -         7.867       -         
+IR_QUEUE_0.AND2_2_RNIAB1V2                    AO1         Y               Out     0.509     8.375       -         
 AO1_2_Y                                       Net         -               -       0.686     -           3         
-IR_QUEUE_0.XOR2_35_RNISMAF3                   AO1         B               In      -         8.980       -         
-IR_QUEUE_0.XOR2_35_RNISMAF3                   AO1         Y               Out     0.509     9.489       -         
+IR_QUEUE_0.XOR2_35_RNISMAF3                   AO1         B               In      -         9.062       -         
+IR_QUEUE_0.XOR2_35_RNISMAF3                   AO1         Y               Out     0.509     9.570       -         
 AO1_10_Y                                      Net         -               -       0.274     -           1         
-IR_QUEUE_0.XOR2_5_RNIN6UH3                    XOR2        B               In      -         9.762       -         
-IR_QUEUE_0.XOR2_5_RNIN6UH3                    XOR2        Y               Out     0.797     10.560      -         
+IR_QUEUE_0.XOR2_5_RNIN6UH3                    XOR2        B               In      -         9.844       -         
+IR_QUEUE_0.XOR2_5_RNIN6UH3                    XOR2        Y               Out     0.797     10.641      -         
 WBINNXTSHIFT\[5\]                             Net         -               -       1.007     -           4         
-IR_QUEUE_0.DFN1C0_FULL_RNO_7                  XNOR2       B               In      -         11.567      -         
-IR_QUEUE_0.DFN1C0_FULL_RNO_7                  XNOR2       Y               Out     0.797     12.364      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO_7                  XNOR2       B               In      -         11.648      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO_7                  XNOR2       Y               Out     0.797     12.445      -         
 XNOR2_2_Y                                     Net         -               -       0.274     -           1         
-IR_QUEUE_0.DFN1C0_FULL_RNO_4                  AND2        B               In      -         12.637      -         
-IR_QUEUE_0.DFN1C0_FULL_RNO_4                  AND2        Y               Out     0.439     13.077      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO_4                  AND2        B               In      -         12.719      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO_4                  AND2        Y               Out     0.439     13.158      -         
 AND2_15_Y                                     Net         -               -       0.274     -           1         
-IR_QUEUE_0.DFN1C0_FULL_RNO_0                  AND3        C               In      -         13.350      -         
-IR_QUEUE_0.DFN1C0_FULL_RNO_0                  AND3        Y               Out     0.566     13.917      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO_0                  AND3        C               In      -         13.432      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO_0                  AND3        Y               Out     0.566     13.998      -         
 AND3_0_Y                                      Net         -               -       0.274     -           1         
-IR_QUEUE_0.DFN1C0_FULL_RNO                    AND2        A               In      -         14.190      -         
-IR_QUEUE_0.DFN1C0_FULL_RNO                    AND2        Y               Out     0.415     14.606      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO                    AND2        A               In      -         14.272      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO                    AND2        Y               Out     0.415     14.687      -         
 FULLINT                                       Net         -               -       0.274     -           1         
-IR_QUEUE_0.DFN1C0_FULL                        DFN1C0      D               In      -         14.879      -         
+IR_QUEUE_0.DFN1C0_FULL                        DFN1C0      D               In      -         14.961      -         
 ==================================================================================================================
-Total path delay (propagation time + setup) of 15.338 is 7.567(49.3%) logic and 7.771(50.7%) route.
+Total path delay (propagation time + setup) of 15.419 is 7.567(49.1%) logic and 7.852(50.9%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -1154,10 +1158,10 @@ Path information for path number 3:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         9.542
 
-    - Propagation time:                      14.777
+    - Propagation time:                      14.807
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (non-critical) :                 -5.236
+    = Slack (non-critical) :                 -5.265
 
     Number of logic level(s):                13
     Starting point:                          gc_MSS_0.MSS_ADLIB_INST / MSSPADDR[11]
@@ -1169,49 +1173,49 @@ Instance / Net                                            Pin              Pin  
 Name                                          Type        Name             Dir     Delay     Time        Fan Out(s)
 -------------------------------------------------------------------------------------------------------------------
 gc_MSS_0.MSS_ADLIB_INST                       MSS_APB     MSSPADDR[11]     Out     0.000     0.000       -         
-CoreAPB3_0_APBmslave0_PADDR[11]               Net         -                -       0.274     -           1         
-CoreAPB3_0.CAPB3O0OI_1[0]                     NOR3A       C                In      -         0.274       -         
-CoreAPB3_0.CAPB3O0OI_1[0]                     NOR3A       Y                Out     0.546     0.819       -         
-CoreAPB3_0_APBmslave2_PSELx_1                 Net         -                -       2.099     -           24        
-APB_IR_0.ENQUEUE_1                            NOR3C       A                In      -         2.918       -         
-APB_IR_0.ENQUEUE_1                            NOR3C       Y                Out     0.395     3.313       -         
+CoreAPB3_0_APBmslave0_PADDR[11]               Net         -                -       0.328     -           2         
+CoreAPB3_0.CAPB3O0OI_1_0[0]                   NOR3A       C                In      -         0.328       -         
+CoreAPB3_0.CAPB3O0OI_1_0[0]                   NOR3A       Y                Out     0.546     0.874       -         
+CoreAPB3_0_APBmslave2_PSELx_1_0               Net         -                -       2.074     -           23        
+APB_IR_0.ENQUEUE_1                            NOR3C       A                In      -         2.948       -         
+APB_IR_0.ENQUEUE_1                            NOR3C       Y                Out     0.395     3.342       -         
 ENQUEUE_1                                     Net         -                -       0.274     -           1         
-APB_IR_0.ENQUEUE                              NOR3B       A                In      -         3.586       -         
-APB_IR_0.ENQUEUE                              NOR3B       Y                Out     0.546     4.132       -         
+APB_IR_0.ENQUEUE                              NOR3B       A                In      -         3.616       -         
+APB_IR_0.ENQUEUE                              NOR3B       Y                Out     0.546     4.162       -         
 APB_IR_0_ENQUEUE                              Net         -                -       0.274     -           1         
-IR_QUEUE_0.NAND2_0_RNI8DHJ1                   AND2        B                In      -         4.406       -         
-IR_QUEUE_0.NAND2_0_RNI8DHJ1                   AND2        Y                Out     0.534     4.940       -         
+IR_QUEUE_0.NAND2_0_RNI8DHJ1                   AND2        B                In      -         4.435       -         
+IR_QUEUE_0.NAND2_0_RNI8DHJ1                   AND2        Y                Out     0.534     4.969       -         
 MEMORYWE                                      Net         -                -       0.686     -           3         
-IR_QUEUE_0.DFN1C0_MEM_WADDR\[0\]_RNIN1DS1     AND2        B                In      -         5.626       -         
-IR_QUEUE_0.DFN1C0_MEM_WADDR\[0\]_RNIN1DS1     AND2        Y                Out     0.534     6.160       -         
+IR_QUEUE_0.DFN1C0_MEM_WADDR\[0\]_RNIN1DS1     AND2        B                In      -         5.656       -         
+IR_QUEUE_0.DFN1C0_MEM_WADDR\[0\]_RNIN1DS1     AND2        Y                Out     0.534     6.189       -         
 AND2_14_Y                                     Net         -                -       0.328     -           2         
-IR_QUEUE_0.XOR2_16_RNI6BMC2                   AO1         B                In      -         6.488       -         
-IR_QUEUE_0.XOR2_16_RNI6BMC2                   AO1         Y                Out     0.509     6.997       -         
+IR_QUEUE_0.XOR2_16_RNI6BMC2                   AO1         B                In      -         6.518       -         
+IR_QUEUE_0.XOR2_16_RNI6BMC2                   AO1         Y                Out     0.509     7.026       -         
 AO1_0_Y                                       Net         -                -       0.686     -           3         
-IR_QUEUE_0.AND2_2_RNIAB1V2                    AO1         B                In      -         7.683       -         
-IR_QUEUE_0.AND2_2_RNIAB1V2                    AO1         Y                Out     0.509     8.192       -         
+IR_QUEUE_0.AND2_2_RNIAB1V2                    AO1         B                In      -         7.713       -         
+IR_QUEUE_0.AND2_2_RNIAB1V2                    AO1         Y                Out     0.509     8.221       -         
 AO1_2_Y                                       Net         -                -       0.686     -           3         
-IR_QUEUE_0.XOR2_35_RNISMAF3                   AO1         B                In      -         8.878       -         
-IR_QUEUE_0.XOR2_35_RNISMAF3                   AO1         Y                Out     0.509     9.387       -         
+IR_QUEUE_0.XOR2_35_RNISMAF3                   AO1         B                In      -         8.908       -         
+IR_QUEUE_0.XOR2_35_RNISMAF3                   AO1         Y                Out     0.509     9.416       -         
 AO1_10_Y                                      Net         -                -       0.274     -           1         
-IR_QUEUE_0.XOR2_5_RNIN6UH3                    XOR2        B                In      -         9.660       -         
-IR_QUEUE_0.XOR2_5_RNIN6UH3                    XOR2        Y                Out     0.797     10.458      -         
+IR_QUEUE_0.XOR2_5_RNIN6UH3                    XOR2        B                In      -         9.690       -         
+IR_QUEUE_0.XOR2_5_RNIN6UH3                    XOR2        Y                Out     0.797     10.487      -         
 WBINNXTSHIFT\[5\]                             Net         -                -       1.007     -           4         
-IR_QUEUE_0.DFN1C0_FULL_RNO_7                  XNOR2       B                In      -         11.465      -         
-IR_QUEUE_0.DFN1C0_FULL_RNO_7                  XNOR2       Y                Out     0.797     12.262      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO_7                  XNOR2       B                In      -         11.494      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO_7                  XNOR2       Y                Out     0.797     12.291      -         
 XNOR2_2_Y                                     Net         -                -       0.274     -           1         
-IR_QUEUE_0.DFN1C0_FULL_RNO_4                  AND2        B                In      -         12.535      -         
-IR_QUEUE_0.DFN1C0_FULL_RNO_4                  AND2        Y                Out     0.439     12.975      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO_4                  AND2        B                In      -         12.565      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO_4                  AND2        Y                Out     0.439     13.004      -         
 AND2_15_Y                                     Net         -                -       0.274     -           1         
-IR_QUEUE_0.DFN1C0_FULL_RNO_0                  AND3        C                In      -         13.248      -         
-IR_QUEUE_0.DFN1C0_FULL_RNO_0                  AND3        Y                Out     0.566     13.815      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO_0                  AND3        C                In      -         13.278      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO_0                  AND3        Y                Out     0.566     13.844      -         
 AND3_0_Y                                      Net         -                -       0.274     -           1         
-IR_QUEUE_0.DFN1C0_FULL_RNO                    AND2        A                In      -         14.088      -         
-IR_QUEUE_0.DFN1C0_FULL_RNO                    AND2        Y                Out     0.415     14.504      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO                    AND2        A                In      -         14.118      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO                    AND2        Y                Out     0.415     14.533      -         
 FULLINT                                       Net         -                -       0.274     -           1         
-IR_QUEUE_0.DFN1C0_FULL                        DFN1C0      D                In      -         14.777      -         
+IR_QUEUE_0.DFN1C0_FULL                        DFN1C0      D                In      -         14.807      -         
 ===================================================================================================================
-Total path delay (propagation time + setup) of 15.236 is 7.554(49.6%) logic and 7.682(50.4%) route.
+Total path delay (propagation time + setup) of 15.265 is 7.554(49.5%) logic and 7.712(50.5%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -1221,10 +1225,10 @@ Path information for path number 4:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         9.542
 
-    - Propagation time:                      14.777
+    - Propagation time:                      14.807
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (non-critical) :                 -5.236
+    = Slack (non-critical) :                 -5.265
 
     Number of logic level(s):                13
     Starting point:                          gc_MSS_0.MSS_ADLIB_INST / MSSPSEL
@@ -1236,49 +1240,49 @@ Instance / Net                                            Pin         Pin       
 Name                                          Type        Name        Dir     Delay     Time        Fan Out(s)
 --------------------------------------------------------------------------------------------------------------
 gc_MSS_0.MSS_ADLIB_INST                       MSS_APB     MSSPSEL     Out     0.000     0.000       -         
-gc_MSS_0_MSS_MASTER_APB_PSELx                 Net         -           -       0.274     -           1         
-CoreAPB3_0.CAPB3O0OI_1[0]                     NOR3A       A           In      -         0.274       -         
-CoreAPB3_0.CAPB3O0OI_1[0]                     NOR3A       Y           Out     0.546     0.819       -         
-CoreAPB3_0_APBmslave2_PSELx_1                 Net         -           -       2.099     -           24        
-APB_IR_0.ENQUEUE_1                            NOR3C       A           In      -         2.918       -         
-APB_IR_0.ENQUEUE_1                            NOR3C       Y           Out     0.395     3.313       -         
+gc_MSS_0_MSS_MASTER_APB_PSELx                 Net         -           -       0.328     -           2         
+CoreAPB3_0.CAPB3O0OI_1_0[0]                   NOR3A       A           In      -         0.328       -         
+CoreAPB3_0.CAPB3O0OI_1_0[0]                   NOR3A       Y           Out     0.546     0.874       -         
+CoreAPB3_0_APBmslave2_PSELx_1_0               Net         -           -       2.074     -           23        
+APB_IR_0.ENQUEUE_1                            NOR3C       A           In      -         2.948       -         
+APB_IR_0.ENQUEUE_1                            NOR3C       Y           Out     0.395     3.342       -         
 ENQUEUE_1                                     Net         -           -       0.274     -           1         
-APB_IR_0.ENQUEUE                              NOR3B       A           In      -         3.586       -         
-APB_IR_0.ENQUEUE                              NOR3B       Y           Out     0.546     4.132       -         
+APB_IR_0.ENQUEUE                              NOR3B       A           In      -         3.616       -         
+APB_IR_0.ENQUEUE                              NOR3B       Y           Out     0.546     4.162       -         
 APB_IR_0_ENQUEUE                              Net         -           -       0.274     -           1         
-IR_QUEUE_0.NAND2_0_RNI8DHJ1                   AND2        B           In      -         4.406       -         
-IR_QUEUE_0.NAND2_0_RNI8DHJ1                   AND2        Y           Out     0.534     4.940       -         
+IR_QUEUE_0.NAND2_0_RNI8DHJ1                   AND2        B           In      -         4.435       -         
+IR_QUEUE_0.NAND2_0_RNI8DHJ1                   AND2        Y           Out     0.534     4.969       -         
 MEMORYWE                                      Net         -           -       0.686     -           3         
-IR_QUEUE_0.DFN1C0_MEM_WADDR\[0\]_RNIN1DS1     AND2        B           In      -         5.626       -         
-IR_QUEUE_0.DFN1C0_MEM_WADDR\[0\]_RNIN1DS1     AND2        Y           Out     0.534     6.160       -         
+IR_QUEUE_0.DFN1C0_MEM_WADDR\[0\]_RNIN1DS1     AND2        B           In      -         5.656       -         
+IR_QUEUE_0.DFN1C0_MEM_WADDR\[0\]_RNIN1DS1     AND2        Y           Out     0.534     6.189       -         
 AND2_14_Y                                     Net         -           -       0.328     -           2         
-IR_QUEUE_0.XOR2_16_RNI6BMC2                   AO1         B           In      -         6.488       -         
-IR_QUEUE_0.XOR2_16_RNI6BMC2                   AO1         Y           Out     0.509     6.997       -         
+IR_QUEUE_0.XOR2_16_RNI6BMC2                   AO1         B           In      -         6.518       -         
+IR_QUEUE_0.XOR2_16_RNI6BMC2                   AO1         Y           Out     0.509     7.026       -         
 AO1_0_Y                                       Net         -           -       0.686     -           3         
-IR_QUEUE_0.AND2_2_RNIAB1V2                    AO1         B           In      -         7.683       -         
-IR_QUEUE_0.AND2_2_RNIAB1V2                    AO1         Y           Out     0.509     8.192       -         
+IR_QUEUE_0.AND2_2_RNIAB1V2                    AO1         B           In      -         7.713       -         
+IR_QUEUE_0.AND2_2_RNIAB1V2                    AO1         Y           Out     0.509     8.221       -         
 AO1_2_Y                                       Net         -           -       0.686     -           3         
-IR_QUEUE_0.XOR2_35_RNISMAF3                   AO1         B           In      -         8.878       -         
-IR_QUEUE_0.XOR2_35_RNISMAF3                   AO1         Y           Out     0.509     9.387       -         
+IR_QUEUE_0.XOR2_35_RNISMAF3                   AO1         B           In      -         8.908       -         
+IR_QUEUE_0.XOR2_35_RNISMAF3                   AO1         Y           Out     0.509     9.416       -         
 AO1_10_Y                                      Net         -           -       0.274     -           1         
-IR_QUEUE_0.XOR2_5_RNIN6UH3                    XOR2        B           In      -         9.660       -         
-IR_QUEUE_0.XOR2_5_RNIN6UH3                    XOR2        Y           Out     0.797     10.458      -         
+IR_QUEUE_0.XOR2_5_RNIN6UH3                    XOR2        B           In      -         9.690       -         
+IR_QUEUE_0.XOR2_5_RNIN6UH3                    XOR2        Y           Out     0.797     10.487      -         
 WBINNXTSHIFT\[5\]                             Net         -           -       1.007     -           4         
-IR_QUEUE_0.DFN1C0_FULL_RNO_7                  XNOR2       B           In      -         11.465      -         
-IR_QUEUE_0.DFN1C0_FULL_RNO_7                  XNOR2       Y           Out     0.797     12.262      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO_7                  XNOR2       B           In      -         11.494      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO_7                  XNOR2       Y           Out     0.797     12.291      -         
 XNOR2_2_Y                                     Net         -           -       0.274     -           1         
-IR_QUEUE_0.DFN1C0_FULL_RNO_4                  AND2        B           In      -         12.535      -         
-IR_QUEUE_0.DFN1C0_FULL_RNO_4                  AND2        Y           Out     0.439     12.975      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO_4                  AND2        B           In      -         12.565      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO_4                  AND2        Y           Out     0.439     13.004      -         
 AND2_15_Y                                     Net         -           -       0.274     -           1         
-IR_QUEUE_0.DFN1C0_FULL_RNO_0                  AND3        C           In      -         13.248      -         
-IR_QUEUE_0.DFN1C0_FULL_RNO_0                  AND3        Y           Out     0.566     13.815      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO_0                  AND3        C           In      -         13.278      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO_0                  AND3        Y           Out     0.566     13.844      -         
 AND3_0_Y                                      Net         -           -       0.274     -           1         
-IR_QUEUE_0.DFN1C0_FULL_RNO                    AND2        A           In      -         14.088      -         
-IR_QUEUE_0.DFN1C0_FULL_RNO                    AND2        Y           Out     0.415     14.504      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO                    AND2        A           In      -         14.118      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO                    AND2        Y           Out     0.415     14.533      -         
 FULLINT                                       Net         -           -       0.274     -           1         
-IR_QUEUE_0.DFN1C0_FULL                        DFN1C0      D           In      -         14.777      -         
+IR_QUEUE_0.DFN1C0_FULL                        DFN1C0      D           In      -         14.807      -         
 ==============================================================================================================
-Total path delay (propagation time + setup) of 15.236 is 7.554(49.6%) logic and 7.682(50.4%) route.
+Total path delay (propagation time + setup) of 15.265 is 7.554(49.5%) logic and 7.712(50.5%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -1288,10 +1292,10 @@ Path information for path number 5:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         9.542
 
-    - Propagation time:                      14.538
+    - Propagation time:                      14.567
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (non-critical) :                 -4.996
+    = Slack (non-critical) :                 -5.026
 
     Number of logic level(s):                13
     Starting point:                          gc_MSS_0.MSS_ADLIB_INST / MSSPADDR[10]
@@ -1303,49 +1307,49 @@ Instance / Net                                            Pin              Pin  
 Name                                          Type        Name             Dir     Delay     Time        Fan Out(s)
 -------------------------------------------------------------------------------------------------------------------
 gc_MSS_0.MSS_ADLIB_INST                       MSS_APB     MSSPADDR[10]     Out     0.000     0.000       -         
-CoreAPB3_0_APBmslave0_PADDR[10]               Net         -                -       0.274     -           1         
-CoreAPB3_0.CAPB3O0OI_1[0]                     NOR3A       B                In      -         0.274       -         
-CoreAPB3_0.CAPB3O0OI_1[0]                     NOR3A       Y                Out     0.306     0.580       -         
-CoreAPB3_0_APBmslave2_PSELx_1                 Net         -                -       2.099     -           24        
-APB_IR_0.ENQUEUE_1                            NOR3C       A                In      -         2.678       -         
-APB_IR_0.ENQUEUE_1                            NOR3C       Y                Out     0.395     3.073       -         
+CoreAPB3_0_APBmslave0_PADDR[10]               Net         -                -       0.328     -           2         
+CoreAPB3_0.CAPB3O0OI_1_0[0]                   NOR3A       B                In      -         0.328       -         
+CoreAPB3_0.CAPB3O0OI_1_0[0]                   NOR3A       Y                Out     0.306     0.634       -         
+CoreAPB3_0_APBmslave2_PSELx_1_0               Net         -                -       2.074     -           23        
+APB_IR_0.ENQUEUE_1                            NOR3C       A                In      -         2.708       -         
+APB_IR_0.ENQUEUE_1                            NOR3C       Y                Out     0.395     3.103       -         
 ENQUEUE_1                                     Net         -                -       0.274     -           1         
-APB_IR_0.ENQUEUE                              NOR3B       A                In      -         3.347       -         
-APB_IR_0.ENQUEUE                              NOR3B       Y                Out     0.546     3.893       -         
+APB_IR_0.ENQUEUE                              NOR3B       A                In      -         3.376       -         
+APB_IR_0.ENQUEUE                              NOR3B       Y                Out     0.546     3.922       -         
 APB_IR_0_ENQUEUE                              Net         -                -       0.274     -           1         
-IR_QUEUE_0.NAND2_0_RNI8DHJ1                   AND2        B                In      -         4.166       -         
-IR_QUEUE_0.NAND2_0_RNI8DHJ1                   AND2        Y                Out     0.534     4.700       -         
+IR_QUEUE_0.NAND2_0_RNI8DHJ1                   AND2        B                In      -         4.196       -         
+IR_QUEUE_0.NAND2_0_RNI8DHJ1                   AND2        Y                Out     0.534     4.730       -         
 MEMORYWE                                      Net         -                -       0.686     -           3         
-IR_QUEUE_0.DFN1C0_MEM_WADDR\[0\]_RNIN1DS1     AND2        B                In      -         5.386       -         
-IR_QUEUE_0.DFN1C0_MEM_WADDR\[0\]_RNIN1DS1     AND2        Y                Out     0.534     5.920       -         
+IR_QUEUE_0.DFN1C0_MEM_WADDR\[0\]_RNIN1DS1     AND2        B                In      -         5.416       -         
+IR_QUEUE_0.DFN1C0_MEM_WADDR\[0\]_RNIN1DS1     AND2        Y                Out     0.534     5.950       -         
 AND2_14_Y                                     Net         -                -       0.328     -           2         
-IR_QUEUE_0.XOR2_16_RNI6BMC2                   AO1         B                In      -         6.248       -         
-IR_QUEUE_0.XOR2_16_RNI6BMC2                   AO1         Y                Out     0.509     6.757       -         
+IR_QUEUE_0.XOR2_16_RNI6BMC2                   AO1         B                In      -         6.278       -         
+IR_QUEUE_0.XOR2_16_RNI6BMC2                   AO1         Y                Out     0.509     6.787       -         
 AO1_0_Y                                       Net         -                -       0.686     -           3         
-IR_QUEUE_0.AND2_2_RNIAB1V2                    AO1         B                In      -         7.444       -         
-IR_QUEUE_0.AND2_2_RNIAB1V2                    AO1         Y                Out     0.509     7.952       -         
+IR_QUEUE_0.AND2_2_RNIAB1V2                    AO1         B                In      -         7.473       -         
+IR_QUEUE_0.AND2_2_RNIAB1V2                    AO1         Y                Out     0.509     7.982       -         
 AO1_2_Y                                       Net         -                -       0.686     -           3         
-IR_QUEUE_0.XOR2_35_RNISMAF3                   AO1         B                In      -         8.639       -         
-IR_QUEUE_0.XOR2_35_RNISMAF3                   AO1         Y                Out     0.509     9.147       -         
+IR_QUEUE_0.XOR2_35_RNISMAF3                   AO1         B                In      -         8.668       -         
+IR_QUEUE_0.XOR2_35_RNISMAF3                   AO1         Y                Out     0.509     9.177       -         
 AO1_10_Y                                      Net         -                -       0.274     -           1         
-IR_QUEUE_0.XOR2_5_RNIN6UH3                    XOR2        B                In      -         9.421       -         
-IR_QUEUE_0.XOR2_5_RNIN6UH3                    XOR2        Y                Out     0.797     10.218      -         
+IR_QUEUE_0.XOR2_5_RNIN6UH3                    XOR2        B                In      -         9.450       -         
+IR_QUEUE_0.XOR2_5_RNIN6UH3                    XOR2        Y                Out     0.797     10.248      -         
 WBINNXTSHIFT\[5\]                             Net         -                -       1.007     -           4         
-IR_QUEUE_0.DFN1C0_FULL_RNO_7                  XNOR2       B                In      -         11.225      -         
-IR_QUEUE_0.DFN1C0_FULL_RNO_7                  XNOR2       Y                Out     0.797     12.022      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO_7                  XNOR2       B                In      -         11.255      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO_7                  XNOR2       Y                Out     0.797     12.052      -         
 XNOR2_2_Y                                     Net         -                -       0.274     -           1         
-IR_QUEUE_0.DFN1C0_FULL_RNO_4                  AND2        B                In      -         12.296      -         
-IR_QUEUE_0.DFN1C0_FULL_RNO_4                  AND2        Y                Out     0.439     12.735      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO_4                  AND2        B                In      -         12.325      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO_4                  AND2        Y                Out     0.439     12.765      -         
 AND2_15_Y                                     Net         -                -       0.274     -           1         
-IR_QUEUE_0.DFN1C0_FULL_RNO_0                  AND3        C                In      -         13.009      -         
-IR_QUEUE_0.DFN1C0_FULL_RNO_0                  AND3        Y                Out     0.566     13.575      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO_0                  AND3        C                In      -         13.038      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO_0                  AND3        Y                Out     0.566     13.605      -         
 AND3_0_Y                                      Net         -                -       0.274     -           1         
-IR_QUEUE_0.DFN1C0_FULL_RNO                    AND2        A                In      -         13.849      -         
-IR_QUEUE_0.DFN1C0_FULL_RNO                    AND2        Y                Out     0.415     14.264      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO                    AND2        A                In      -         13.878      -         
+IR_QUEUE_0.DFN1C0_FULL_RNO                    AND2        Y                Out     0.415     14.294      -         
 FULLINT                                       Net         -                -       0.274     -           1         
-IR_QUEUE_0.DFN1C0_FULL                        DFN1C0      D                In      -         14.538      -         
+IR_QUEUE_0.DFN1C0_FULL                        DFN1C0      D                In      -         14.567      -         
 ===================================================================================================================
-Total path delay (propagation time + setup) of 14.996 is 7.314(48.8%) logic and 7.682(51.2%) route.
+Total path delay (propagation time + setup) of 15.026 is 7.314(48.7%) logic and 7.712(51.3%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -1357,23 +1361,23 @@ Target Part: A2F200M3F_FBGA484_-1
 Report for cell gc.verilog
   Core Cell usage:
               cell count     area count*area
-              AND2    21      1.0       21.0
+              AND2    22      1.0       22.0
              AND2A     1      1.0        1.0
               AND3     6      1.0        6.0
-               AO1    68      1.0       68.0
+               AO1    66      1.0       66.0
               AO1A     7      1.0        7.0
               AO1B     5      1.0        5.0
               AO1C     9      1.0        9.0
               AO1D     2      1.0        2.0
-              AOI1    17      1.0       17.0
+              AOI1    19      1.0       19.0
              AOI1B     1      1.0        1.0
-              AOI5     2      1.0        2.0
-               AX1     5      1.0        5.0
-              AX1A     6      1.0        6.0
+              AOI5     1      1.0        1.0
+               AX1     7      1.0        7.0
+              AX1A     9      1.0        9.0
               AX1B     2      1.0        2.0
-              AX1C    11      1.0       11.0
+              AX1C    12      1.0       12.0
               AX1D     4      1.0        4.0
-              AX1E     3      1.0        3.0
+              AX1E     4      1.0        4.0
               AXO1     1      1.0        1.0
              AXOI3     1      1.0        1.0
              AXOI7     1      1.0        1.0
@@ -1385,54 +1389,54 @@ Report for cell gc.verilog
             MSSINT     1      0.0        0.0
            MSS_APB     1      0.0        0.0
            MSS_CCC     1      0.0        0.0
-               MX2   395      1.0      395.0
+               MX2   427      1.0      427.0
               MX2A    29      1.0       29.0
               MX2B     3      1.0        3.0
              NAND2     2      1.0        2.0
-              NOR2    65      1.0       65.0
-             NOR2A   191      1.0      191.0
-             NOR2B   312      1.0      312.0
-              NOR3    28      1.0       28.0
-             NOR3A    65      1.0       65.0
-             NOR3B    56      1.0       56.0
-             NOR3C   121      1.0      121.0
-               OA1     5      1.0        5.0
-              OA1A     8      1.0        8.0
+              NOR2    79      1.0       79.0
+             NOR2A   198      1.0      198.0
+             NOR2B   309      1.0      309.0
+              NOR3    29      1.0       29.0
+             NOR3A    60      1.0       60.0
+             NOR3B    62      1.0       62.0
+             NOR3C   145      1.0      145.0
+               OA1     6      1.0        6.0
+              OA1A    10      1.0       10.0
               OA1B     7      1.0        7.0
-              OA1C    24      1.0       24.0
+              OA1C    20      1.0       20.0
               OAI1     1      1.0        1.0
-               OR2    46      1.0       46.0
-              OR2A    81      1.0       81.0
-              OR2B    36      1.0       36.0
+               OR2    48      1.0       48.0
+              OR2A    85      1.0       85.0
+              OR2B    34      1.0       34.0
                OR3    51      1.0       51.0
               OR3A    11      1.0       11.0
-              OR3B    22      1.0       22.0
-              OR3C    16      1.0       16.0
+              OR3B    19      1.0       19.0
+              OR3C    14      1.0       14.0
              RCOSC     1      0.0        0.0
                VCC    23      0.0        0.0
                XA1     4      1.0        4.0
-              XA1A     7      1.0        7.0
-              XA1B    48      1.0       48.0
-              XA1C    70      1.0       70.0
-             XNOR2    22      1.0       22.0
+              XA1A     6      1.0        6.0
+              XA1B    44      1.0       44.0
+              XA1C    61      1.0       61.0
+             XNOR2    24      1.0       24.0
              XNOR3    13      1.0       13.0
                XO1    20      1.0       20.0
-              XOR2   128      1.0      128.0
-              XOR3     8      1.0        8.0
+              XOR2   135      1.0      135.0
+              XOR3     9      1.0        9.0
 
 
-              DFN1   410      1.0      410.0
+              DFN1   442      1.0      442.0
             DFN1C0    95      1.0       95.0
             DFN1E0    87      1.0       87.0
           DFN1E0C0    16      1.0       16.0
           DFN1E0P0     1      1.0        1.0
-            DFN1E1   126      1.0      126.0
+            DFN1E1    94      1.0       94.0
           DFN1E1C0   103      1.0      103.0
           DFN1E1P0     1      1.0        1.0
             DFN1P0     3      1.0        3.0
             RAM4K9     1      0.0        0.0
                    -----          ----------
-             TOTAL  2976              2922.0
+             TOTAL  3053              2999.0
 
 
   IO Cell usage:
@@ -1450,7 +1454,7 @@ Report for cell gc.verilog
              TOTAL    23
 
 
-Core Cells         : 2922 of 4608 (63%)
+Core Cells         : 2999 of 4608 (65%)
 IO Cells           : 23
 
   RAM/ROM Usage Summary
@@ -1458,9 +1462,9 @@ Block Rams : 1 of 8 (12%)
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 43MB peak: 137MB)
+At Mapper Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 43MB peak: 135MB)
 
-Process took 0h:00m:06s realtime, 0h:00m:05s cputime
-# Tue Dec 03 17:46:12 2013
+Process took 0h:00m:05s realtime, 0h:00m:05s cputime
+# Thu Dec 05 16:03:12 2013
 
 ###########################################################]

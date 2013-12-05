@@ -1,16 +1,16 @@
-C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin64\m_proasic.exe  -prodtype synplify_pro -encrypt  -pro  -rundir  C:\Users\mikechri\Downloads\gc\gc\synthesis  -part A2F200M3F  -package FBGA484  -grade -1   -globalthreshold 50 -maxfan 24 -opcond COMWC     -report_path 0   -RWCheckOnRam 0     -summaryfile C:\Users\mikechri\Downloads\gc\gc\synthesis\synlog\report\gc_fpga_mapper.xml -top_level_module  gc  -flow mapping  -mp 1 -prjfile  C:\Users\mikechri\Downloads\gc\gc\synthesis\scratchproject.prs  -implementation synthesis -licensetype  synplifypro_actel  -oedif  C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.edn  -freq 100.000  -tcl  C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\mss_tshell_syn.sdc  C:\Users\mikechri\Downloads\gc\gc\synthesis\synwork\gc_premap.srd  -sap  C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.sap  -otap  C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.tap  -omap  C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.map  -devicelib  C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v  -sap  C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.sap  -ologparam  C:\Users\mikechri\Downloads\gc\gc\synthesis\syntmp\gc.plg  -osyn  C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.srm  -prjdir  C:\Users\mikechri\Downloads\gc\gc\synthesis\  -prjname  gc_syn  -log  C:\Users\mikechri\Downloads\gc\gc\synthesis\synlog\gc_fpga_mapper.srr 
+C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin64\m_proasic.exe  -prodtype synplify_pro -encrypt  -pro  -rundir  C:\Users\mttschlt\eecs373\UMKarts\gc\synthesis  -part A2F200M3F  -package FBGA484  -grade -1   -globalthreshold 50 -maxfan 24 -opcond COMWC     -report_path 0   -RWCheckOnRam 0     -summaryfile C:\Users\mttschlt\eecs373\UMKarts\gc\synthesis\synlog\report\gc_fpga_mapper.xml -top_level_module  gc  -flow mapping  -mp 1 -prjfile  C:\Users\mttschlt\eecs373\UMKarts\gc\synthesis\scratchproject.prs  -implementation synthesis -licensetype  synplifypro_actel  -oedif  C:\Users\mttschlt\eecs373\UMKarts\gc\synthesis\gc.edn  -freq 100.000  -tcl  C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc_MSS\mss_tshell_syn.sdc  C:\Users\mttschlt\eecs373\UMKarts\gc\synthesis\synwork\gc_premap.srd  -sap  C:\Users\mttschlt\eecs373\UMKarts\gc\synthesis\gc.sap  -otap  C:\Users\mttschlt\eecs373\UMKarts\gc\synthesis\gc.tap  -omap  C:\Users\mttschlt\eecs373\UMKarts\gc\synthesis\gc.map  -devicelib  C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v  -sap  C:\Users\mttschlt\eecs373\UMKarts\gc\synthesis\gc.sap  -ologparam  C:\Users\mttschlt\eecs373\UMKarts\gc\synthesis\syntmp\gc.plg  -osyn  C:\Users\mttschlt\eecs373\UMKarts\gc\synthesis\gc.srm  -prjdir  C:\Users\mttschlt\eecs373\UMKarts\gc\synthesis\  -prjname  gc_syn  -log  C:\Users\mttschlt\eecs373\UMKarts\gc\synthesis\synlog\gc_fpga_mapper.srr 
 rc:1 success:1
-C:\Users\mikechri\Downloads\gc\gc\synthesis\scratchproject.prs|o|1385484296|3977
-C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.edn|o|1386110772|1639857
-C:\Users\mikechri\Downloads\gc\gc\component\work\gc_MSS\mss_tshell_syn.sdc|i|1386110631|184
-C:\Users\mikechri\Downloads\gc\gc\synthesis\synwork\gc_premap.srd|i|1386110765|119479
-C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.sap|o|1386110765|34369
-C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.tap|o|0|0
-C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.map|o|1386110772|28
+C:\Users\mttschlt\eecs373\UMKarts\gc\synthesis\scratchproject.prs|o|1386277383|4061
+C:\Users\mttschlt\eecs373\UMKarts\gc\synthesis\gc.edn|o|1386277392|1654833
+C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc_MSS\mss_tshell_syn.sdc|i|1386277319|184
+C:\Users\mttschlt\eecs373\UMKarts\gc\synthesis\synwork\gc_premap.srd|i|1386277386|119384
+C:\Users\mttschlt\eecs373\UMKarts\gc\synthesis\gc.sap|o|1386277386|34416
+C:\Users\mttschlt\eecs373\UMKarts\gc\synthesis\gc.tap|o|0|0
+C:\Users\mttschlt\eecs373\UMKarts\gc\synthesis\gc.map|o|1386277392|28
 C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v|i|1360942192|72817
-C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.sap|o|1386110765|34369
-C:\Users\mikechri\Downloads\gc\gc\synthesis\syntmp\gc.plg|o|1386110772|2917
-C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.srm|o|1386110771|304908
-C:\Users\mikechri\Downloads\gc\gc\synthesis\synlog\gc_fpga_mapper.srr|o|1386110772|120641
+C:\Users\mttschlt\eecs373\UMKarts\gc\synthesis\gc.sap|o|1386277386|34416
+C:\Users\mttschlt\eecs373\UMKarts\gc\synthesis\syntmp\gc.plg|o|1386277392|2917
+C:\Users\mttschlt\eecs373\UMKarts\gc\synthesis\gc.srm|o|1386277392|305823
+C:\Users\mttschlt\eecs373\UMKarts\gc\synthesis\synlog\gc_fpga_mapper.srr|o|1386277392|121014
 C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin64\m_proasic.exe|i|1360942034|13812224
 C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin\m_proasic.exe|i|1360942022|11409920

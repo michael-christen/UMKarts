@@ -37,6 +37,8 @@ void PLAYER_DRIVE_reset() {
 
 static void PLAYER_DRIVE_update_from_controller() {
 	CONTROLLER_load();
+
+	// Set Motor Direction
 	if (CONTROLLER->a && CONTROLLER->b){
 		player_driver.motor_direction = BRAKE;
 	} else if (CONTROLLER->a) {
@@ -47,12 +49,14 @@ static void PLAYER_DRIVE_update_from_controller() {
 		player_driver.motor_direction = BRAKE;
 	}
 
+	// Set Motor Speed
 	if (CONTROLLER->a || CONTROLLER->b) {
 		player_driver.speed = NORMAL;
 	} else {
 		player_driver.speed = BRAKE;
 	}
 
+	// Set Servo Direction
 	if (CONTROLLER->d_right || CONTROLLER->joystick_x > 158) {
 		player_driver.servo_direction = RIGHT;
 	} else if (CONTROLLER->d_left || CONTROLLER->joystick_x < 98) {
@@ -61,6 +65,7 @@ static void PLAYER_DRIVE_update_from_controller() {
 		player_driver.servo_direction = STRAIGHT;
 	}
 
+	// Deal with Items
 	if (CONTROLLER->l) {
 		useCurrentItem();
 	} else if (CONTROLLER->x) {
