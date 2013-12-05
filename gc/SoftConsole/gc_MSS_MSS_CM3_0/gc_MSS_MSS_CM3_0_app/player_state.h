@@ -3,16 +3,25 @@
 
 #ifndef __MATT_PLAYER_STATE__
 #define __MATT_PLAYER_STATE__
-#include "item.h"
 
 enum PLAYER_MOTOR_SPEED {NORMAL, SLOWED, BOOSTED};
-enum PLAYER_MOTOR_DIRECTION {BRAKE = 0, FORWARD = 1, REVERSE = -1, FREE_ROLL = 2};
+// BRAKE is just free roll
+enum PLAYER_MOTOR_DIRECTION {BRAKE = 0, FORWARD = 1, REVERSE = -1};
 enum PLAYER_SERVO_DIRECTION {STRAIGHT = 0, LEFT = -1, RIGHT = 1};
 
 struct player_state;
 
-void PLAYER_STATE_reset(player_state* state);
-void PLAYER_STATE_update(player_state* state);
-void PLAYER_STATE_apply(player_state* state);
-void PLAYER_STATE_set_modification(player_state* state, void (*mod)(player_state*), uint32_t millisecs);
+// Effects: Resets the player state to beginning state
+//          Motor off, Servo straight
+//          No item
+void PLAYER_STATE_reset(struct player_state*);
+
+// Effects: updates the player state. This should be running in the main loop
+void PLAYER_STATE_update(struct player_state*);
+
+// Effects: applies the state to the motor and servos
+void PLAYER_STATE_apply(struct player_state*);
+
+// Effects: adds a modification to the player and a timeout
+void PLAYER_STATE_set_modification(struct player_state*, void (*mod)(struct player_state*), uint32_t millisecs);
 #endif

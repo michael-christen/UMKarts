@@ -6,40 +6,41 @@
  */
 
 #include "drivers/mss_rtc/mss_rtc.h"
-#include "controller.h"
 
+#include "controller.h"
+#include "item.h"
+#include "motor.h"
 #include "player_state.h"
+
 
 static const int MS_TO_COUNT = 33;
 
 struct player_state {
-	PLAYER_MOTOR_SPEED speed;
-	PLAYER_MOTOR_DIRECTION motor_direction;
-	PLAYER_SERVO_DIRECTION servo_direction;
-	item i;
-	void (*mod)(player_state*);
+	enum PLAYER_MOTOR_SPEED speed;
+	enum PLAYER_MOTOR_DIRECTION motor_direction;
+	enum PLAYER_SERVO_DIRECTION servo_direction;
+	void (*mod)(struct player_state*);
 	uint64_t mod_stop;
 };
 
-void PLAYER_STATE_reset(player_state* state) {
+void PLAYER_STATE_reset(struct player_state* state) {
 	state->speed = NORMAL;
 	state->motor_direction = BRAKE;
 	state->servo_direction = STRAIGHT;
-	state->i = MAX_NUM_ITEMS;
 	state->mod = 0;
 	state->mod_stop = 0;
 }
 
-void PLAYER_STATE_update_from_controller(player_state* state) {
+void PLAYER_STATE_update_from_controller(struct player_state* state) {
 	CONTROLLER_load();
 	if (CONTROLLER->a && CONTROLLER->b)
 		state->motor_direction = BRAKE;
 	else if (CONTROLLER->a) {
-		state->motor_directon = FORWARD;
+		state->motor_direction = FORWARD;
 	} else if (CONTROLLER->b) {
-		state->motor_directon = FORWARD;
+		state->motor_direction = FORWARD;
 	} else {
-		state->motor_direction = FREE_ROLL;
+		state->motor_direction = BRAKE;
 	}
 
 	if (CONTROLLER->d_right || CONTROLLER->joystick_x > 158) {
@@ -52,7 +53,6 @@ void PLAYER_STATE_update_from_controller(player_state* state) {
 
 	if (CONTROLLER->l) {
 		useCurrentItem();
-		state->i = MAX_NUM_ITEMS;
 	} else if (CONTROLLER->x) {
 		handleItemGrab();
 	} else if (CONTROLLER->y) {
@@ -60,9 +60,11 @@ void PLAYER_STATE_update_from_controller(player_state* state) {
 	}
 }
 
-void PLAYER_STATE_update(player_state* state) {
+void PLAYER_STATE_update(struct player_state* state) {
 	PLAYER_STATE_update_from_controller(state);
 	if (state->mod == 0) return;
+
+	// Deal with modifications
 	if (MSS_RTC_get_rtc_count() >= state->mod_stop) {
 		state->mod = 0;
 		state->mod_stop = 0;
@@ -71,7 +73,24 @@ void PLAYER_STATE_update(player_state* state) {
 	}
 }
 
-void PLAYER_STATE_set_modification(player_state* state, void (*mod)(player_state*), uint32_t millisecs) {
+void PLAYER_STATE_set_modification(struct player_state* state, void (*mod)(struct player_state*), uint32_t millisecs) {
 	state->mod = mod;
 	state->mod_stop = MSS_RTC_get_rtc_count() + (millisecs * MS_TO_COUNT);
+}
+
+// Item pick up is dealt with separately!
+void PLAYER_STATE_apply(struct player_state* state) {
+	// Deal with the servo
+	MOTOR_set_servo_direction((int)state->servo_direction);
+
+	// Deal with the motor
+	double speed = 0;
+	if (state->speed == BOOSTED) {
+		speed = 1.0;
+	} else if (state->speed == SLOWED) {
+		speed = 0.5;
+	} else {
+		speed = 0.7;
+	}
+	MOTOR_set_speed(speed * (int)(state->motor_direction));
 }
