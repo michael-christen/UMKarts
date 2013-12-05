@@ -20,6 +20,7 @@ void game_init() {
 
 int game_trans_wait_to_host() {
 	if (g_game_state == GAME_WAIT && player_address_complete()) {
+		player_add_player(player_get_address_from_driver(DRIVER));
 		g_game_host = player_get_address_from_driver(DRIVER);
 		g_game_state = GAME_HOST;
 		/* Don't send a message here. Messages will be sent in the main loop */
