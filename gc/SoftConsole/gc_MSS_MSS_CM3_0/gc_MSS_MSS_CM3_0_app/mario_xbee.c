@@ -23,6 +23,7 @@ int mario_xbee_interpret_packet(struct xbee_packet * xp) {
 		xbee_printf("XBee Modem Status: %d\n", xp->payload[1]);
 		break;
 	case XBEE_API_TX_STATUS:
+		_mario_xbee_interpret_tx_status(xp);
 		break;
 	case XBEE_API_RX:
 		_mario_xbee_interpret_rx_packet(xp);
@@ -141,5 +142,29 @@ static int _mario_xbee_interpret_rx_packet(struct xbee_packet *xp) {
 		break;
 	}
 	return 0;
+}
+
+static int _mario_xbee_interpret_tx_status(struct xbee_packet *xp) {
+	switch (xp->payload[5]) {
+		case 0x00: /* Success */
+			/* Nothing to do, successful */
+			break;
+		case 0x01: /* MAC ACK Failure */
+		case 0x21: /* Network ACK Failure */
+		case 0x25: /* No route found */
+			/* Here we need to check if we are master, and remove them from
+			 * the game if we are. If we aren't, then we should check to
+			 * see if we can't communicate with master, and get into a game
+			 * join state if that is the case
+			 */
+			/* TODO: THIS (see above comment) */
+			break;
+		case 0x15: /* Invalid destinattion endpoint */
+			xbee_printf("Trying to send to invalid destination");
+			break;
+		case 0x74:
+			xbee_printf("Trying to send a packet with too big of payload");
+			break;
+	}
 }
 
