@@ -70,7 +70,7 @@ int main()
 	// 2 mil (to high)
 	// 1 mil (to high)
 	// 500 thou (to low)
-	MOTOR_period = 800000;
+	MOTOR_period = 1000000;
 	curClock = prevClock = 0;
 	/* Setup MYTIMER */
 	MOTOR_init();
@@ -79,9 +79,6 @@ int main()
 
 	xbee_printf("Mike Loves Double Dash!!!");
 	count = 0;
-	int lastVal = 1;
-	double speed = 0;
-	int dir = 1;
 
 	CONTROLLER_setup_mem();
 
@@ -100,7 +97,6 @@ int main()
 
 	LASER_TAG_init();
 
-	int x = 1;
 	LCD_init();
 	xbee_printf("%s %s", "Hello", "World");
 

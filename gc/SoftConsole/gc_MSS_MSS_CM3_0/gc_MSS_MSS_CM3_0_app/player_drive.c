@@ -95,7 +95,6 @@ void PLAYER_DRIVE_apply() {
 	// Deal with the motor
 	double speed = ((int)(player_driver.speed)) / 10.0;
 	MOTOR_set_speed(speed * (int)(player_driver.motor_direction));
-
 }
 
 void mod_disable_motors_and_servos() {
