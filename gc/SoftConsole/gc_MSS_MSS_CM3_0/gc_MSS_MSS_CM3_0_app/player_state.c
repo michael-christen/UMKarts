@@ -5,9 +5,12 @@
  *      Author: mttschlt
  */
 
+#include "drivers/mss_rtc/mss_rtc.h"
 #include "controller.h"
 
 #include "player_state.h"
+
+static const int MS_TO_COUNT = 33;
 
 struct player_state {
 	PLAYER_MOTOR_SPEED speed;
@@ -55,4 +58,20 @@ void PLAYER_STATE_update_from_controller(player_state* state) {
 	} else if (CONTROLLER->y) {
 		use_green_shell();
 	}
+}
+
+void PLAYER_STATE_update(player_state* state) {
+	PLAYER_STATE_update_from_controller(state);
+	if (state->mod == 0) return;
+	if (MSS_RTC_get_rtc_count() >= state->mod_stop) {
+		state->mod = 0;
+		state->mod_stop = 0;
+	} else {
+		state->mod(state);
+	}
+}
+
+void PLAYER_STATE_set_modification(player_state* state, void (*mod)(player_state*), uint32_t millisecs) {
+	state->mod = mod;
+	state->mod_stop = MSS_RTC_get_rtc_count() + (millisecs * MS_TO_COUNT);
 }
