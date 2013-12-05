@@ -29,4 +29,5 @@ void PLAYER_DRIVE_set_modification(void (*mod)(), uint32_t secs);
 // Start list of modification functions
 void mod_disable_motors_and_servos();
 void mod_speed_boost();
+void mod_speed_slow();
 #endif

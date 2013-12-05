@@ -151,6 +151,7 @@ void use_mushroom() {
 }
 void use_lightning() {
 	sound_play(LIGHTNING_BEGIN, LIGHTNING_END);
+	PLAYER_DRIVE_set_modification(mod_speed_slow, ITEM_DURATIONS[LIGHTNING]);
 }
 void use_star() {
 	sound_play_repeat(STARPOWER_BEGIN, STARPOWER_END);

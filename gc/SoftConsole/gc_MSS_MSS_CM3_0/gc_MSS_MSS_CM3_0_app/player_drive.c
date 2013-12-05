@@ -106,3 +106,7 @@ void mod_disable_motors_and_servos() {
 void mod_speed_boost() {
 	player_driver.speed = BOOSTED;
 }
+
+void mod_speed_slow() {
+	player_driver.speed = SLOWED;
+}
