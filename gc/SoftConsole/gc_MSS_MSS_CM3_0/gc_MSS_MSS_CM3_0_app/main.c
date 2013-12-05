@@ -62,8 +62,14 @@ int main()
 
 	xbee_printf("Sound initialized");
 	//volatile int d = 0;
-	MOTOR_cmpVal = 2000000;
-	MOTOR_period = 20000000;
+	MOTOR_cmpVal = 20000;
+	// Old values
+	// 20 mil (to high)
+	// 200 thous (to low)
+	// 2 mil (to high)
+	// 1 mil (to high)
+	// 500 thou (to low)
+	MOTOR_period = 800000;
 	curClock = prevClock = 0;
 	/* Setup MYTIMER */
 	MOTOR_init();
@@ -104,9 +110,9 @@ int main()
 		//CONTROLLER_print();
 		CONTROLLER_load();
 		if (CONTROLLER->a) {
-			MOTOR_set_speed(1);
+			MOTOR_set_speed(0.7);
 		} else if (CONTROLLER->b) {
-			MOTOR_set_speed(-1);
+			MOTOR_set_speed(-0.7);
 		} else {
 			MOTOR_set_speed(0);
 		}
