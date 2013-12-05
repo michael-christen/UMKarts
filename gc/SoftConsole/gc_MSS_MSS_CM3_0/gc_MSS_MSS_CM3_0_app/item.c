@@ -1,4 +1,5 @@
 #include "item.h"
+#include "player_drive.h"
 #include "sound.h"
 #include "sound_samples.h"
 #include "drivers/mss_rtc/mss_rtc.h"
@@ -27,7 +28,7 @@ char *ITEM_NAMES [MAX_NUM_ITEMS] = {
     "STAR"
 };
 
-uint64_t ITEM_DURATIONS [] = {0, 400, 0, 10000};
+uint64_t ITEM_DURATIONS [] = {0, 4, 0, 10};
 /*ITEM_DURATIONS[GREEN_SHELL] = 0;
 ITEM_DURATIONS[MUSHROOM] = 400;
 ITEM_DURATIONS[LIGHTNING] = 0;
@@ -87,8 +88,6 @@ int SUCCESS_SOUND_END[] = {
 
 //Requires all probs to sum to 1
 void initItemWeights() {
-	srand((uint32_t) MSS_RTC_get_rtc_count());
-
     /*
     int i, weight_bottom = 1, weight_top = 100000;
     double epsilon = 0.0001;
@@ -99,8 +98,9 @@ void initItemWeights() {
     */
     int i;
     for(i=0; i < MAX_NUM_ITEMS; ++i) {
-	ITEM_WEIGHT[i] = ITEM_PROB[i] * TOTAL_WEIGHT;
+    	ITEM_WEIGHT[i] = ITEM_PROB[i] * TOTAL_WEIGHT;
     }
+    srand((uint32_t) MSS_RTC_get_rtc_count());
 }
 
 item getNewItem() {
@@ -147,12 +147,14 @@ void use_green_shell() {
 }
 void use_mushroom() {
 	sound_play(FAST_SOUND_BEGIN[DRIVER], FAST_SOUND_END[DRIVER]);
+	PLAYER_DRIVE_set_modification(mod_speed_boost, ITEM_DURATIONS[MUSHROOM]);
 }
 void use_lightning() {
 	sound_play(LIGHTNING_BEGIN, LIGHTNING_END);
 }
 void use_star() {
 	sound_play_repeat(STARPOWER_BEGIN, STARPOWER_END);
+	PLAYER_DRIVE_set_modification(mod_speed_boost, ITEM_DURATIONS[STAR]);
 }
 
 void hit_green_shell() {
@@ -162,6 +164,7 @@ void hit_green_shell() {
 		return;
 	}
 	printf("He shot me, %d\r\n", opId);
+	PLAYER_DRIVE_set_modification(mod_disable_motors_and_servos, ITEM_DURATIONS[GREEN_SHELL]);
 	sound_play(OW_SOUND_BEGIN[DRIVER], OW_SOUND_END[DRIVER]);
 }
 void hit_mushroom() {
