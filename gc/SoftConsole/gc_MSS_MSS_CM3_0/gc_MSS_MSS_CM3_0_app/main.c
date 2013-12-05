@@ -148,12 +148,16 @@ int main()
 				/* NEED TO RATE LIMIT */
 				if (MSS_RTC_get_seconds_count() - 1 > xbee_rapid_packet_limiter) {
 					message_game_host();
+					xbee_printf("Hosting game. Registered %d players", g_player_table.size);
 					xbee_rapid_packet_limiter = MSS_RTC_get_seconds_count();
 				}
 			}
 			else {
-				message_game_start(g_player_table.players, g_player_table.size);
-				game_trans_host_to_in_game();
+				/* Don't actually start a game until we have more than just us in our table */
+				if (g_player_table.size > 1) {
+					message_game_start(g_player_table.players, g_player_table.size);
+					game_trans_host_to_in_game();
+				}
 			}
 			break;
 		case GAME_OVER:

@@ -26,8 +26,11 @@ void send_message_init() {
 int send_message(uint8_t message_type, uint8_t app_flags, uint8_t *data, uint16_t data_len) {
 	int err, i;
 	for (i = 0; i < g_player_table.size; i++) {
-		err = send_message_address(g_player_table.players[i], message_type, app_flags, data, data_len);
-		if (err < 0)  return err;
+		/* Don't send a message to ourselves!! */
+		if (g_player_table.players[i] != player_get_address_from_driver(DRIVER)) {
+			err = send_message_address(g_player_table.players[i], message_type, app_flags, data, data_len);
+			if (err < 0)  return err;
+		}
 	}
 	return 0;
 }
