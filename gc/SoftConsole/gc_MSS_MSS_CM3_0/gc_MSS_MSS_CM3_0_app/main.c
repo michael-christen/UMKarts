@@ -5,6 +5,7 @@
 #include "xbee.h"
 #include "drivers/mss_uart/mss_uart.h"
 #include "drivers/mss_gpio/mss_gpio.h"
+#include "drivers/mss_rtc/mss_rtc.h"
 #include "controller.h"
 #include "lcd.h"
 #include "item.h"
@@ -15,6 +16,7 @@
 #include "mario_xbee.h"
 #include "messages.h"
 #include "player.h"
+#include "game.h"
 
 
 volatile uint32_t count;
@@ -37,6 +39,12 @@ __attribute__ ((interrupt)) void GPIO2_IRQHandler( void ){
 
 int main()
 {
+	uint32_t xbee_rapid_packet_limiter = 0;
+	/* Initialize the timer */
+	MSS_RTC_init();
+	MSS_RTC_start();
+	/* End initializing timer */
+
 	struct xbee_packet * xbee_read_packet;
 	/* Initialize the XBee interface */
 	int err = xbee_interface_init();
@@ -44,7 +52,7 @@ int main()
 		return 0;
 	}
 	else {
-		xbee_printf("XBee successfully initiated\n");
+		xbee_printf("XBee successfully initiated");
 	}
 
 	player_init();
@@ -52,7 +60,7 @@ int main()
 
 	sound_init();
 
-	xbee_printf("Sound initialized\n");
+	xbee_printf("Sound initialized");
 	//volatile int d = 0;
 	MOTOR_cmpVal = 2000000;
 	MOTOR_period = 20000000;
@@ -62,7 +70,7 @@ int main()
 	MOTOR_set_speed(0);
 	MOTOR_set_servo_direction(0);
 
-	xbee_printf("Mike Loves Double Dash!!!\n");
+	xbee_printf("Mike Loves Double Dash!!!");
 	count = 0;
 	int lastVal = 1;
 	double speed = 0;
@@ -87,10 +95,9 @@ int main()
 
 	int x = 1;
 	LCD_init();
-	xbee_printf("%s %s\n", "Hello", "World");
+	xbee_printf("%s %s", "Hello", "World");
 
 	driver_discovery();
-	player_discovery();
 
 	while( 1 )
 	{
@@ -122,6 +129,45 @@ int main()
 		while ((xbee_read_packet = xbee_read())) {
 			mario_xbee_interpret_packet(xbee_read_packet);
 			xbee_interface_free_packet(xbee_read_packet);
+		}
+
+		switch (g_game_state) {
+		case GAME_WAIT:
+			if (CONTROLLER->start) {
+				err = game_trans_wait_to_host();
+				if (err < 0) {
+					if (MSS_RTC_get_seconds_count() - 1 > xbee_rapid_packet_limiter) {
+						driver_discovery();
+						xbee_rapid_packet_limiter = MSS_RTC_get_seconds_count();
+					}
+				}
+			}
+			break;
+		case GAME_HOST:
+			if (CONTROLLER->start) {
+				/* NEED TO RATE LIMIT */
+				if (MSS_RTC_get_seconds_count() - 1 > xbee_rapid_packet_limiter) {
+					message_game_host();
+					xbee_printf("Hosting game. Registered %d players", g_player_table.size);
+					xbee_rapid_packet_limiter = MSS_RTC_get_seconds_count();
+				}
+			}
+			else {
+				/* Don't actually start a game until we have more than just us in our table */
+				if (g_player_table.size > 1) {
+					message_game_start(g_player_table.players, g_player_table.size);
+					game_trans_host_to_in_game();
+				}
+			}
+			break;
+		case GAME_OVER:
+			if (CONTROLLER->start) {
+				game_trans_over_to_wait();
+			}
+			break;
+		default:
+			/* Do nothing */
+			break;
 		}
 	}
 

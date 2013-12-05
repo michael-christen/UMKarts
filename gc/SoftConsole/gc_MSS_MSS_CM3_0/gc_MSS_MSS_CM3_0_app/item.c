@@ -27,11 +27,11 @@ char *ITEM_NAMES [MAX_NUM_ITEMS] = {
     "STAR"
 };
 
-uint64_t ITEM_DURATIONS [MAX_NUM_ITEMS];
-ITEM_DURATIONS[GREEN_SHELL] = 0;
+uint64_t ITEM_DURATIONS [] = {0, 400, 0, 10000};
+/*ITEM_DURATIONS[GREEN_SHELL] = 0;
 ITEM_DURATIONS[MUSHROOM] = 400;
 ITEM_DURATIONS[LIGHTNING] = 0;
-ITEM_DURATIONS[STAR] = 10000;
+ITEM_DURATIONS[STAR] = 10000;*/
 
 
 double ITEM_PROB [MAX_NUM_ITEMS] = {
@@ -87,8 +87,6 @@ int SUCCESS_SOUND_END[] = {
 
 //Requires all probs to sum to 1
 void initItemWeights() {
-	MSS_RTC_init();
-	MSS_RTC_start();
 	srand((uint32_t) MSS_RTC_get_rtc_count());
 
     /*

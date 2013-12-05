@@ -1,11 +1,12 @@
 #include "xbee_reader.h"
 #include "log.h"
 #include "xbee_packet.h"
+#include "convert.h"
 #include <stdlib.h>
 
 static int _xbee_printf(uint64_t address, const uint8_t * data, uint16_t len) {
 	int err, i;
-	err = printf("0x%" PRIu64 ": ", address);
+	err = printf("0x%" PRIX64 ": ", address);
 	if (err < 0) return err;
 	for (i = 0; i < len; i++) {
 		err = printf("%c", data[i]);
@@ -59,7 +60,10 @@ int xbee_received_packet(struct xbee_packet *xp) {
 		data = xbee_rxpt_payload_start(xp);
 		switch (*data) {
 			case 0x00:
-				_xbee_printf(_xbee_tx_packet_get_address(xp->payload + 1), data + 1, data_len - 1);
+				_xbee_printf(bytes_to_uint64_t(xp->payload + 1), data + 3, data_len - 3);
+				break;
+			case 0x02:
+				printf("0x%" PRIX64 " is trying to host a game\n", bytes_to_uint64_t(xp->payload + 1));
 				break;
 			default:
 				Log(EINFO, "Recevied a tx packet that we have not configured for %x", *data);

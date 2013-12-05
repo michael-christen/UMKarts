@@ -28,6 +28,8 @@
 #define XBEE_API_TX_STATUS  ((uint8_t) 0x8B)
 #define XBEE_API_RX         ((uint8_t) 0x90)
 
+#define XBEE_BROADCAST_ADDRESS (0x000000000000FFFFull)
+
 enum XBeeModemStatus {
   EXBeeModemStatus_HardwareReset,
   EXBeeModemStatus_WatchdogReset,

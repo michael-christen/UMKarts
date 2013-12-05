@@ -20,11 +20,6 @@ extern struct PlayerTable g_player_table;
 void player_init();
 
 /**
- * Sends out an xbee packet to find all other cars that are in the area.
- */
-int player_discovery();
-
-/**
  * Sends out an xbee packet to figure out who we are. This needs to be called
  * almost immediately because it's important that we figure out who we are so
  * we know what sound to play

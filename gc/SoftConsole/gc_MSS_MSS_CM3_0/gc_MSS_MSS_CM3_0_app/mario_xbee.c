@@ -3,6 +3,8 @@
 #include "mario_xbee.h"
 #include "player.h"
 #include "convert.h"
+#include "game.h"
+#include "messages.h"
 #include <stdio.h>
 #include <stdarg.h>
 #include <errno.h>
@@ -10,6 +12,7 @@
 #define MAX_PRINTF_SIZE MAX_XBEE_TX_PAYLOAD_SIZE - 1
 
 static void _mario_xbee_interpret_at_response(struct xbee_packet *xp);
+static int _mario_xbee_interpret_rx_packet(struct xbee_packet *xp);
 
 int mario_xbee_interpret_packet(struct xbee_packet * xp) {
 	switch (xbee_packet_api_id(xp)) {
@@ -21,48 +24,11 @@ int mario_xbee_interpret_packet(struct xbee_packet * xp) {
 		break;
 	case XBEE_API_TX_STATUS:
 		break;
+	case XBEE_API_RX:
+		_mario_xbee_interpret_rx_packet(xp);
+		break;
 	}
 	return 0;
-}
-
-int xbee_printf(const char * format_string, ...) {
-	uint64_t dest_address = 0x0013A20040A711E0LL;
-	int err;
-	int size;
-	uint8_t * payload_start;
-	va_list varargs;
-	va_start(varargs, format_string);
-	struct xbee_packet * xp = xbee_interface_create_packet();
-	if (!xp) {
-		err = -ENOMEM;
-		goto xbee_printf_exit;
-	}
-	payload_start = xbee_txpt_payload_start(xp);
-	*payload_start = 0x00; /* Set frame id to say that this is a printf packet */
-	err = vsnprintf(payload_start + 1, MAX_PRINTF_SIZE - 1, format_string, varargs); /* -1 for null terminator */
-	if (err < 0) {
-		goto xbee_printf_exit;
-	}
-	if (err > MAX_PRINTF_SIZE) {
-		size = MAX_PRINTF_SIZE;
-	}
-	else {
-		size = err;
-	}
-
-	xbee_txpt_init(xp);
-	xbee_txpt_set_payload_size(xp, size + 1);
-	xbee_txpt_set_frame_id(xp, xbee_interface_next_frame_id());
-	xbee_txpt_set_options(xp, 0);
-	xbee_txpt_set_radius(xp, 0);
-	xbee_txpt_set_destaddress(xp, dest_address);
-
-	err = xbee_send(xp);
-
-xbee_printf_exit:
-	va_end(varargs);
-
-	return err;
 }
 
 static inline uint8_t _mario_xbee_at_cmd_is(const struct xbee_packet *xp, const char * cmd) {
@@ -87,3 +53,93 @@ static void _mario_xbee_interpret_at_response(struct xbee_packet *xp) {
 		/* Should we print an error in this case? */
 	}
 }
+
+static int _mario_xbee_interpret_rx_packet(struct xbee_packet *xp) {
+	int err, i;
+	uint64_t sender = bytes_to_uint64_t(xp->payload + 1);
+	uint8_t msg_type = xp->payload[12];
+	/* uint8_t msg_opts = xp->payload[13]; */
+	/* uint8_t msg_id   = xp->payload[14]; */
+	uint8_t *data = xp->payload + 15;
+	/*uint16_t data_len = xp->len - 15; */
+	switch (msg_type) {
+	case XBEE_MESSAGE_PRINTF:
+		/* We ignore PRINTF calls */
+		break;
+	case XBEE_MESSAGE_GAME_HOST:
+		if (g_game_state == GAME_HOST) {
+			if (sender < player_get_address_from_driver(DRIVER)) {
+				err = game_trans_host_to_join(sender);
+				if (err == 0) {
+					message_game_join(sender);
+				}
+				else {
+					xbee_printf("Unable to switch into GAME JOIN state\n");
+				}
+			}
+		}
+		else if (g_game_state == GAME_JOIN) {
+			g_game_host = sender;
+			message_game_join(sender);
+		}
+		else {
+			xbee_printf("Ignoring GAME_HOST packet because in state %s\n", g_game_state_str[g_game_state]);
+		}
+		break;
+	case XBEE_MESSAGE_GAME_JOIN:
+		if (g_game_state == GAME_HOST) {
+			err = player_add_player(sender);
+			if (err < 0) {
+				xbee_printf("Unable to find driver for player: %llx\n", sender);
+			}
+		}
+		else {
+			xbee_printf("Ignoring GAME_JOIN packet because in state %s\n", g_game_state_str[g_game_state]);
+		}
+		break;
+	case XBEE_MESSAGE_GAME_START:
+		if (g_game_state == GAME_JOIN) {
+			for (i = 0; i < data[0]; i++) {
+				err = player_add_player(bytes_to_uint64_t(data + (i*sizeof(uint64_t) + 1)));
+				if (err < 0) {
+					xbee_printf("Game table: invalid player address: %llx\n", bytes_to_uint64_t(data + (i*sizeof(uint64_t) + 1)));
+				}
+			}
+			err = game_trans_join_to_in_game();
+			if (err < 0) {
+				xbee_printf("Unable to transition into game start?\n");
+			}
+		}
+		else {
+			xbee_printf("Ingoring GAME_START packet because in state %s\n", g_game_state_str[g_game_state]);
+		}
+		break;
+	case XBEE_MESSAGE_GAME_OVER:
+		if (g_game_state == GAME_IN_GAME) {
+			err = game_trans_in_game_to_over();
+			if (err < 0) {
+				xbee_printf("Unable to transition into game start\n");
+			}
+		}
+		else {
+			xbee_printf("Ignoring GAME_OVER packet because in state %s\n", g_game_state_str[g_game_state]);
+		}
+		break;
+	case XBEE_MESSAGE_GAME_EVENT:
+		/* For now do nothing */
+		break;
+	case XBEE_MESSAGE_ACK:
+		if (data[2] == 0) {
+			send_message_ack(data[0]);
+		}
+		else {
+			err = send_message_retry(data[0]);
+			if (err < 0) {
+				xbee_printf("Error, receiving bad ack. Error: %d\n", err);
+			}
+		}
+		break;
+	}
+	return 0;
+}
+
