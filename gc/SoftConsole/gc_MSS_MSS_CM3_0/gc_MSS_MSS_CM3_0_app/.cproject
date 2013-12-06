@@ -52,14 +52,14 @@
 <option id="gnu.cpp.compiler.cross.cortexm3.exe.debug.option.optimization.level.141468934" name="Optimization Level" superClass="gnu.cpp.compiler.cross.cortexm3.exe.debug.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
 <option id="gnu.cpp.compiler.cross.cortexm3.exe.debug.option.debugging.level.1870407154" name="Debug Level" superClass="gnu.cpp.compiler.cross.cortexm3.exe.debug.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
 </tool>
-<tool command="arm-none-eabi-gcc -mthumb -mcpu=cortex-m3 " id="cdt.managedbuild.tool.gnu.c.linker.cross.cortexm3.exe.debug.2105782767" name="GNU C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.cross.cortexm3.exe.debug">
+<tool command="arm-none-eabi-gcc -mthumb -mcpu=cortex-m3 " commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG}${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" id="cdt.managedbuild.tool.gnu.c.linker.cross.cortexm3.exe.debug.2105782767" name="GNU C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.cross.cortexm3.exe.debug">
 <option id="gnu.c.link.option.libs.259558666" name="Libraries (-l)" superClass="gnu.c.link.option.libs" valueType="libs">
 <listOptionValue builtIn="false" value="xbee_interface"/>
 <listOptionValue builtIn="false" value="xbee"/>
 <listOptionValue builtIn="false" value="gc_MSS_MSS_CM3_0_hw_platform"/>
 <listOptionValue builtIn="false" value="simple_allocator"/>
-<listOptionValue builtIn="false" value="circle_buffer"/>
 <listOptionValue builtIn="false" value="convert"/>
+<listOptionValue builtIn="false" value="circle_buffer"/>
 </option>
 <option id="gnu.c.link.option.paths.71294329" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
 <listOptionValue builtIn="false" value="&quot;${workspace_loc:/gc_MSS_MSS_CM3_0_hw_platform/Debug}&quot;"/>
