@@ -13,6 +13,7 @@
 
 static void _mario_xbee_interpret_at_response(struct xbee_packet *xp);
 static int _mario_xbee_interpret_rx_packet(struct xbee_packet *xp);
+static int _mario_xbee_interpret_tx_status(struct xbee_packet *xp);
 
 int mario_xbee_interpret_packet(struct xbee_packet * xp) {
 	switch (xbee_packet_api_id(xp)) {
@@ -23,6 +24,7 @@ int mario_xbee_interpret_packet(struct xbee_packet * xp) {
 		xbee_printf("XBee Modem Status: %d\n", xp->payload[1]);
 		break;
 	case XBEE_API_TX_STATUS:
+		_mario_xbee_interpret_tx_status(xp);
 		break;
 	case XBEE_API_RX:
 		_mario_xbee_interpret_rx_packet(xp);
@@ -37,6 +39,9 @@ static inline uint8_t _mario_xbee_at_cmd_is(const struct xbee_packet *xp, const 
 
 static void _mario_xbee_interpret_at_response(struct xbee_packet *xp) {
 	uint64_t address;
+	const struct xbee_packet *sent_xp;
+	sent_xp = xbee_interface_tx_get_packet_by_frame_id(xp->payload[1]);
+	xbee_interface_free_packet(sent_xp);
 	if (xp->payload[4] != 0x00) {
 		xbee_printf("Invalid xbee packet: %c%c, %d\r\n", xp->payload[2],
 				xp->payload[3], xp->payload[4]);
@@ -128,6 +133,9 @@ static int _mario_xbee_interpret_rx_packet(struct xbee_packet *xp) {
 	case XBEE_MESSAGE_GAME_EVENT:
 		/* For now do nothing */
 		break;
+	case XBEE_MESSAGE_PLAYER_LEFT:
+		player_remove_player(bytes_to_uint64_t(data));
+		break;
 	case XBEE_MESSAGE_ACK:
 		if (data[2] == 0) {
 			send_message_ack(data[0]);
@@ -140,6 +148,50 @@ static int _mario_xbee_interpret_rx_packet(struct xbee_packet *xp) {
 		}
 		break;
 	}
+	return 0;
+}
+
+static int _mario_xbee_interpret_tx_status(struct xbee_packet *xp) {
+	const struct xbee_packet *sent_xp;
+	sent_xp = xbee_interface_tx_get_packet_by_frame_id(xp->payload[1]);
+	switch (xp->payload[5]) {
+		case 0x00: /* Success */
+			/* Nothing to do, successful */
+			break;
+		case 0x01: /* MAC ACK Failure */
+		case 0x21: /* Network ACK Failure */
+		case 0x25: /* No route found */
+			/* Here we need to check if we are master, and remove them from
+			 * the game if we are. If we aren't, then we should check to
+			 * see if we can't communicate with master, and get into a game
+			 * join state if that is the case
+			 */
+			if (sent_xp->payload[0] == XBEE_API_TX_REQUEST) {
+				if (g_game_host == player_get_address_from_driver(DRIVER)) {
+					player_remove_player(bytes_to_uint64_t(sent_xp->payload + 2));
+					message_player_left(bytes_to_uint64_t(sent_xp->payload + 2));
+					xbee_printf("Player %llx left game", bytes_to_uint64_t(sent_xp->payload + 2));
+				}
+				else {
+					if (g_game_host == (bytes_to_uint64_t(sent_xp->payload + 2))) {
+						/* Need to send that we are leaving the game */
+						/* Then leave the game */
+					}
+				}
+			}
+			else {
+				xbee_printf("MAJOR ISSUE: Expected a tx packet in sent buffer, got %d", sent_xp->payload[0]);
+			}
+			break;
+		case 0x15: /* Invalid destinattion endpoint */
+			xbee_printf("Trying to send to invalid destination");
+			break;
+		case 0x74:
+			xbee_printf("Trying to send a packet with too big of payload");
+			break;
+	}
+	xbee_interface_free_packet(sent_xp);
+	/* TX status packet gets freed later */
 	return 0;
 }
 
