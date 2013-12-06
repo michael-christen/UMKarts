@@ -63,7 +63,12 @@ int xbee_send(struct xbee_packet *xp) {
 
 void xbee_interface_tx_unlock_wait() {
 	_xbee_tx.wait_for_response.lock = 0;
-	MSS_UART_enable_irq( &g_mss_uart1, MSS_UART_TBE_IRQ );
+	if (atomic_lock_test_and_set_1(&(_xbee_tx.lock)) == 0) {
+		if ((xp = CircularBufferRead(&(_xbee_tx.circle_buf)))) {
+			_xbee_interface_tx_start(xp);
+			MSS_UART_enable_irq( &g_mss_uart1, MSS_UART_TBE_IRQ );
+		}
+	}
 }
 
 struct xbee_packet * xbee_interface_tx_next_status_packet() {
@@ -95,7 +100,6 @@ static void _xbee_interface_tx_handler(mss_uart_instance_t * this_uart) {
 
 	if (_xbee_tx.wait_for_response.lock) {
 		/* 1 second = a difference of 256 */
-		return;
 		if (_xbee_tx.wait_for_response.rtc_count - MSS_RTC_get_rtc_count() > 128) {
 			_xbee_tx.wait_for_response.lock = 0;
 			xbee_interface_free_packet(xbee_interface_tx_next_status_packet());
