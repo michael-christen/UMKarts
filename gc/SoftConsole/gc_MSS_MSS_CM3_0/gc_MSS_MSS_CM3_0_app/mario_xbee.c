@@ -40,7 +40,7 @@ static inline uint8_t _mario_xbee_at_cmd_is(const struct xbee_packet *xp, const 
 static void _mario_xbee_interpret_at_response(struct xbee_packet *xp) {
 	uint64_t address;
 	const struct xbee_packet *sent_xp;
-//	sent_xp = xbee_interface_tx_get_packet_by_frame_id(xp->payload[1]);
+	sent_xp = xbee_interface_tx_get_packet_by_frame_id(xp->payload[1]);
 	xbee_interface_free_packet(sent_xp);
 	if (xp->payload[4] != 0x00) {
 		xbee_printf("Invalid xbee packet: %c%c, %d\r\n", xp->payload[2],
@@ -63,10 +63,17 @@ static int _mario_xbee_interpret_rx_packet(struct xbee_packet *xp) {
 	int err, i;
 	uint64_t sender = bytes_to_uint64_t(xp->payload + 1);
 	uint8_t msg_type = xp->payload[12];
-	/* uint8_t msg_opts = xp->payload[13]; */
-	/* uint8_t msg_id   = xp->payload[14]; */
+	uint8_t msg_opts = xp->payload[13];
+	uint8_t old_message_frame_id   = xp->payload[14];
 	uint8_t *data = xp->payload + 15;
 	/*uint16_t data_len = xp->len - 15; */
+	if (msg_opts & XBEE_RX_BAD_PACKET) {
+		message_ack(sender, old_message_frame_id, msg_type, xbee_read_get_errors(old_message_frame_id));
+	}
+	if (xbee_read_get_errors(old_message_frame_id) != 0) {
+		/* Got a bad packet, need to return early so as not to parse */
+		return 0;
+	}
 	switch (msg_type) {
 	case XBEE_MESSAGE_PRINTF:
 		/* We ignore PRINTF calls */
@@ -165,7 +172,7 @@ static int _mario_xbee_interpret_rx_packet(struct xbee_packet *xp) {
 
 static int _mario_xbee_interpret_tx_status(struct xbee_packet *xp) {
 	const struct xbee_packet *sent_xp;
-//	sent_xp = xbee_interface_tx_get_packet_by_frame_id(xp->payload[1]);
+	sent_xp = xbee_interface_tx_get_packet_by_frame_id(xp->payload[1]);
 	switch (xp->payload[5]) {
 		case 0x00: /* Success */
 			/* Nothing to do, successful */
@@ -181,7 +188,7 @@ static int _mario_xbee_interpret_tx_status(struct xbee_packet *xp) {
 			if (sent_xp->payload[0] == XBEE_API_TX_REQUEST) {
 				if (g_game_host == player_get_address_from_driver(DRIVER)) {
 					player_remove_player(bytes_to_uint64_t(sent_xp->payload + 2));
-//					message_player_left(bytes_to_uint64_t(sent_xp->payload + 2));
+					message_player_left(bytes_to_uint64_t(sent_xp->payload + 2));
 					xbee_printf("Player %llx left game", bytes_to_uint64_t(sent_xp->payload + 2));
 				}
 				else {

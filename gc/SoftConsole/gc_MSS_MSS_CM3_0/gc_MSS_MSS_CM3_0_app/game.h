@@ -27,6 +27,8 @@ int game_trans_join_to_in_game();
 int game_trans_in_game_to_over();
 int game_trans_over_to_wait();
 int game_trans_host_to_wait();
+int game_trans_join_to_host();
+int game_trans_join_to_wait();
 
 uint8_t game_host_announce_wait_long_enough();
 void game_host_announce_set_last_announce();

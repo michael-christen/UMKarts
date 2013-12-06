@@ -15,7 +15,7 @@
 #define XBEE_MESSAGE_MAX_SIZE      MAX_XBEE_TX_PAYLOAD_SIZE - 3
 
 #define XBEE_MESSAGE_PRINTF        (0x00)
-#define XBEE_MESSAGE_GAME_HOST     (0x02)
+#define XBEE_MESSAGE_GAME_HOST_ANNOUNCE     (0x02)
 #define XBEE_MESSAGE_GAME_JOIN     (0x03)
 #define XBEE_MESSAGE_GAME_START    (0x04)
 #define XBEE_MESSAGE_GAME_OVER     (0x05)
@@ -41,7 +41,7 @@ void send_message_init();
  */
 int xbee_printf(const char * format_string, ...);
 
-int message_game_host_annouce();
+int message_game_host_announce();
 int message_game_join(uint64_t host_address);
 int message_game_leave();
 int message_game_start(uint64_t * players, uint8_t num_players);

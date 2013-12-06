@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>xbee_interface</name>
+	<name>convert</name>
 	<comment></comment>
 	<projects>
-		<project>atomics</project>
-		<project>circle_buffer</project>
-		<project>convert</project>
-		<project>simple_allocator</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
@@ -34,7 +30,7 @@
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.buildLocation</key>
-					<value>${workspace_loc:/xbee_interface/Debug}</value>
+					<value>${workspace_loc:/convert/Debug}</value>
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.cleanBuildTarget</key>

@@ -1,6 +1,7 @@
 #include "game.h"
 #include "player.h"
 #include "messages.h"
+#include "mss_rtc.h"
 #include <errno.h>
 
 enum GameState g_game_state;
@@ -39,6 +40,26 @@ int game_trans_host_to_join(uint64_t host) {
 		g_game_state = GAME_JOIN;
 		xbee_printf("GAME STATE TRANS: HOST -> JOIN");
 		game_join_set_last_ack();
+		return 0;
+	}
+	return -EINVAL;
+}
+
+int game_trans_join_to_host() {
+	if (g_game_state == GAME_JOIN) {
+		g_game_state = GAME_HOST;
+		player_add_player(player_get_address_from_driver(DRIVER));
+		g_game_host = player_get_address_from_driver(DRIVER);
+		xbee_printf("GAME STATE TRANS: JOIN -> HOST");
+		return 0;
+	}
+	return -EINVAL;
+}
+
+int game_trans_join_to_wait() {
+	if (g_game_state == GAME_JOIN) {
+		g_game_state = GAME_WAIT;
+		xbee_printf("GAME STATE TRANS: JOIN -> WAIT");
 		return 0;
 	}
 	return -EINVAL;

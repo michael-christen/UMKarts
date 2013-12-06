@@ -25,8 +25,9 @@
 <option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.cross.cortexm3.exe.debug.option.debugging.level.749310406" name="Debug Level" superClass="gnu.c.compiler.cross.cortexm3.exe.debug.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
 <option id="gnu.c.compiler.option.include.paths.237389139" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
 <listOptionValue builtIn="false" value="${workspace_loc:/gc_MSS_MSS_CM3_0_hw_platform/}"/>
-<listOptionValue builtIn="false" value="&quot;${workspace_loc:/xbee_interface}&quot;"/>
-<listOptionValue builtIn="false" value="&quot;${workspace_loc:/xbee}&quot;"/>
+<listOptionValue builtIn="false" value="${workspace_loc:/xbee_interface}"/>
+<listOptionValue builtIn="false" value="${workspace_loc:/xbee}"/>
+<listOptionValue builtIn="false" value="${workspace_loc:/convert}"/>
 <listOptionValue builtIn="false" value="${workspace_loc:/gc_MSS_MSS_CM3_0_hw_platform/CMSIS}"/>
 <listOptionValue builtIn="false" value="${workspace_loc:/gc_MSS_MSS_CM3_0_hw_platform/CMSIS/startup_gcc}"/>
 <listOptionValue builtIn="false" value="${workspace_loc:/gc_MSS_MSS_CM3_0_hw_platform/drivers}"/>
@@ -58,6 +59,7 @@
 <listOptionValue builtIn="false" value="gc_MSS_MSS_CM3_0_hw_platform"/>
 <listOptionValue builtIn="false" value="simple_allocator"/>
 <listOptionValue builtIn="false" value="circle_buffer"/>
+<listOptionValue builtIn="false" value="convert"/>
 </option>
 <option id="gnu.c.link.option.paths.71294329" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
 <listOptionValue builtIn="false" value="&quot;${workspace_loc:/gc_MSS_MSS_CM3_0_hw_platform/Debug}&quot;"/>
@@ -65,6 +67,7 @@
 <listOptionValue builtIn="false" value="&quot;${workspace_loc:/simple_allocator/Debug}&quot;"/>
 <listOptionValue builtIn="false" value="&quot;${workspace_loc:/xbee_interface/Debug}&quot;"/>
 <listOptionValue builtIn="false" value="&quot;${workspace_loc:/xbee/Debug}&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${workspace_loc:/convert/Debug}&quot;"/>
 </option>
 <option id="gnu.c.link.option.ldflags.988543446" name="Linker flags" superClass="gnu.c.link.option.ldflags" value="-T../../gc_MSS_MSS_CM3_0_hw_platform/CMSIS/startup_gcc/debug-in-actel-smartfusion-envm.ld" valueType="string"/>
 <option id="gnu.c.link.option.userobjs.1227465178" name="Other objects" superClass="gnu.c.link.option.userobjs" valueType="userObjs">

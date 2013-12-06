@@ -4,6 +4,8 @@
 
 #define EXBEEALLOCMEM 0x2
 
+#define MAX_POSSIBLE_UINT8_INDEX 256
+
 #define XBEE_RX_OVERFLOW_PACKET_LOSS 0x01
 #define XBEE_RX_BAD_PACKET           0x02
 #define XBEE_RX_OUTOF_MEMORY         0x04
@@ -73,11 +75,6 @@ struct xbee_packet * xbee_read();
  *   xbee_read_get_errors() & XBEE_RX_BAD_PACKET - Check for bad checksum
  *   xbee_read_get_errors() & XBEE_RX_OUTOF_MEMORY - Check out of memory
  */
-uint8_t xbee_read_get_errors();
-
-/**
- * Clear the received error flags
- */
-void xbee_read_clear_errors();
+uint8_t xbee_read_get_errors(uint8_t frame_id);
 
 #endif

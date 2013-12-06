@@ -6,7 +6,6 @@
 #include "atomics.h"
 
 #define MSS_UART_QUEUE_CAPACITY 16
-#define MAX_POSSIBLE_UINT8_INDEX 256
 
 static void _xbee_interface_tx_handler(mss_uart_instance_t * this_uart);
 static inline void _xbee_interface_tx_start(struct xbee_packet * xp);
