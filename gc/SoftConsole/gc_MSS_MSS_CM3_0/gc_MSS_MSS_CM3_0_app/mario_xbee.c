@@ -9,8 +9,6 @@
 #include <stdarg.h>
 #include <errno.h>
 
-#define MAX_PRINTF_SIZE MAX_XBEE_TX_PAYLOAD_SIZE - 1
-
 static void _mario_xbee_interpret_at_response(struct xbee_packet *xp);
 static int _mario_xbee_interpret_rx_packet(struct xbee_packet *xp);
 
