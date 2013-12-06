@@ -13,6 +13,9 @@ const char *g_game_state_str[] = {
 	"GAME OVER",
 };
 
+static uint32_t _game_host_announce_last_time;
+static uint32_t _game_join_last_ack_time;
+
 void game_init() {
 	g_game_state = GAME_WAIT;
 	g_game_host = 0;
@@ -35,6 +38,7 @@ int game_trans_host_to_join(uint64_t host) {
 		g_game_host = host;
 		g_game_state = GAME_JOIN;
 		xbee_printf("GAME STATE TRANS: HOST -> JOIN");
+		game_join_set_last_ack();
 		return 0;
 	}
 	return -EINVAL;
@@ -81,4 +85,26 @@ int game_trans_over_to_wait() {
 		return 0;
 	}
 	return -EINVAL;
+}
+
+uint8_t game_host_announce_wait_long_enough() {
+	if (MSS_RTC_get_seconds_count() - _game_host_announce_last_time > GAME_HOST_ANNOUNCE_DELAY) {
+		return 1;
+	}
+	return 0;
+}
+
+void game_host_announce_set_last_announce() {
+	_game_host_announce_last_time = MSS_RTC_get_seconds_count();
+}
+
+uint8_t game_join_ack_timeout() {
+	if (MSS_RTC_get_seconds_count() - _game_join_last_ack_time > GAME_JOIN_ACK_TIMEOUT) {
+		return 1;
+	}
+	return 0;
+}
+
+void game_join_set_last_ack() {
+	_game_join_last_ack_time = MSS_RTC_get_seconds_count();
 }

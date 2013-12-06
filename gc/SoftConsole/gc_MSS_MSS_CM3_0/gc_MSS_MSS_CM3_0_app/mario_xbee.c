@@ -71,7 +71,7 @@ static int _mario_xbee_interpret_rx_packet(struct xbee_packet *xp) {
 	case XBEE_MESSAGE_PRINTF:
 		/* We ignore PRINTF calls */
 		break;
-	case XBEE_MESSAGE_GAME_HOST:
+	case XBEE_MESSAGE_GAME_HOST_ANNOUNCE:
 		if (g_game_state == GAME_HOST) {
 			if (sender < player_get_address_from_driver(DRIVER)) {
 				err = game_trans_host_to_join(sender);
@@ -100,6 +100,18 @@ static int _mario_xbee_interpret_rx_packet(struct xbee_packet *xp) {
 		}
 		else {
 			xbee_printf("Ignoring GAME_JOIN packet because in state %s\n", g_game_state_str[g_game_state]);
+		}
+		break;
+	case XBEE_MESSAGE_LEAVE_GAME:
+		if (g_game_state == GAME_HOST) {
+			player_remove_player(sender);
+		}
+		else if (g_game_state == GAME_IN_GAME) {
+			player_remove_player(sender);
+			message_player_left(sender);
+		}
+		else {
+			xbee_printf("Ignoring LEAVE_GAME packet because in state %s\n", g_game_state_str[g_game_state]);
 		}
 		break;
 	case XBEE_MESSAGE_GAME_START:
