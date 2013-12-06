@@ -58,13 +58,13 @@ int message_game_over() {
 	return err;
 }
 
-int message_game_event(uint64_t address, uint8_t subject, uint8_t object, uint8_t action, uint8_t event, uint8_t flags) {
+int message_game_event(uint64_t address, uint8_t subject, uint8_t object, uint8_t action, uint8_t item, uint8_t flags) {
 	int err;
 	uint8_t buf[4];
 	buf[0] = subject;
 	buf[1] = object;
 	buf[2] = action;
-	buf[3] = event;
+	buf[3] = item;
 
 	if (address != 0) {
 		err = send_message_address(address, XBEE_MESSAGE_GAME_EVENT, flags, buf, 4);
