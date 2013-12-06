@@ -6,6 +6,7 @@
 #include "atomics.h"
 
 #define MSS_UART_QUEUE_CAPACITY 16
+#define MAX_POSSIBLE_UINT8_INDEX 256
 
 static void _xbee_interface_tx_handler(mss_uart_instance_t * this_uart);
 static inline void _xbee_interface_tx_start(struct xbee_packet * xp);
@@ -18,29 +19,24 @@ static struct {
 	uint8_t uart_queue[MSS_UART_QUEUE_CAPACITY];
 	size_t  uart_queue_size;
 	unsigned char lock;
-	struct {
-		void * circle_buf_mem[XBEE_PACKET_BUF_SIZE];
-		CircularBuffer circle_buf;
-		unsigned char lock;
-		uint64_t rtc_count;
-	} wait_for_response;
 	struct xbee_writer xw;
-	struct xbee_packet *xp;
+	const struct xbee_packet *xbee_packet_wait_for_ack[MAX_POSSIBLE_UINT8_INDEX];
 } _xbee_tx;
 
 void  _xbee_interface_tx_init() {
+	int i;
 	CircularBufferInit(&_xbee_tx.circle_buf,
 					 _xbee_tx.circle_buf_mem,
 					 XBEE_PACKET_BUF_SIZE);
-	CircularBufferInit(&_xbee_tx.wait_for_response.circle_buf,
-	                   _xbee_tx.wait_for_response.circle_buf_mem,
-					   XBEE_PACKET_BUF_SIZE);
 	_xbee_tx.uart_queue_size = 0;
 	_xbee_tx.lock = 0;
-	_xbee_tx.wait_for_response.lock = 0;
 
 	MSS_UART_set_tx_handler(&g_mss_uart1, _xbee_interface_tx_handler);
 	MSS_UART_disable_irq(&g_mss_uart1, MSS_UART_TBE_IRQ );
+
+	for (i = 0; i < MAX_POSSIBLE_UINT8_INDEX; i++) {
+		_xbee_tx.xbee_packet_wait_for_ack[i] = 0;
+	}
 }
 
 int xbee_send(struct xbee_packet *xp) {
@@ -61,31 +57,21 @@ int xbee_send(struct xbee_packet *xp) {
 	return err;
 }
 
-void xbee_interface_tx_unlock_wait() {
-	_xbee_tx.wait_for_response.lock = 0;
-	if (atomic_lock_test_and_set_1(&(_xbee_tx.lock)) == 0) {
-		if ((xp = CircularBufferRead(&(_xbee_tx.circle_buf)))) {
-			_xbee_interface_tx_start(xp);
-			MSS_UART_enable_irq( &g_mss_uart1, MSS_UART_TBE_IRQ );
-		}
-	}
-}
-
-struct xbee_packet * xbee_interface_tx_next_status_packet() {
-	return CircularBufferRead(&(_xbee_tx.wait_for_response.circle_buf));
+const struct xbee_packet * xbee_interface_tx_get_packet_by_frame_id(uint8_t frame_id) {
+	const struct xbee_packet *xp = _xbee_tx.xbee_packet_wait_for_ack[frame_id];
+	_xbee_tx.xbee_packet_wait_for_ack[frame_id] = NULL;
+	return xp;
 }
 
 static inline void _xbee_interface_tx_start(struct xbee_packet * xp) {
 	XBeeWriterInit(&(_xbee_tx.xw), xp);
 	_xbee_tx.uart_queue_size = 0;
-	_xbee_tx.xp = xp;
 }
 
 static void _xbee_interface_tx_handler(mss_uart_instance_t * this_uart) {
 	struct xbee_packet * xp;
 	uint8_t * start_ptr, * end_ptr, * move_ptr;
 	size_t items_in_fifo;
-	int err;
 	MSS_UART_disable_irq( this_uart, MSS_UART_TBE_IRQ );
 
 	if (atomic_lock_test_and_set_1(&(_xbee_tx.lock)) == 0) {
@@ -94,21 +80,6 @@ static void _xbee_interface_tx_handler(mss_uart_instance_t * this_uart) {
 		}
 		else {
 			__sync_lock_release(&(_xbee_tx.lock));
-			return;
-		}
-	}
-
-	if (_xbee_tx.wait_for_response.lock) {
-		/* 1 second = a difference of 256 */
-		if (_xbee_tx.wait_for_response.rtc_count - MSS_RTC_get_rtc_count() > 128) {
-			_xbee_tx.wait_for_response.lock = 0;
-			xbee_interface_free_packet(xbee_interface_tx_next_status_packet());
-			/* Need some form of error reporting ! */
-			/* @TODO Add some error reporting mechanism */
-		}
-		else {
-			/* We need to wait for a response, so disable interrupts until we get
-			 * an RX response */
 			return;
 		}
 	}
@@ -130,14 +101,8 @@ static void _xbee_interface_tx_handler(mss_uart_instance_t * this_uart) {
 	 * nothing left in the the uart_queue, and the XBeeWriter says it's done */
 	if (_xbee_tx.uart_queue_size == 0 && XBeeWriterDone(&(_xbee_tx.xw))) {
 		if (XBEE_INTERFACE_EXPECT_RESPONSE(_xbee_tx.xw.xp)) {
-			err = CircularBufferWrite(&_xbee_tx.wait_for_response.circle_buf, _xbee_tx.xp);
-			if (err == 0) {
-				_xbee_tx.wait_for_response.lock = 1;
-				_xbee_tx.wait_for_response.rtc_count = MSS_RTC_get_rtc_count();
-			}
-			else {
-				xbee_interface_free_packet(_xbee_tx.xw.xp);
-			}
+			/* Need to add to the simple list */
+			_xbee_tx.xbee_packet_wait_for_ack[_xbee_tx.xw.xp->payload[1]] = _xbee_tx.xw.xp;
 		}
 		else {
 			xbee_interface_free_packet(_xbee_tx.xw.xp);

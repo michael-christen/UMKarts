@@ -50,19 +50,7 @@ void xbee_interface_free_packet(const struct xbee_packet *xp);
  */
 int xbee_send(struct xbee_packet *);
 
-/**
- * When sending, we lock the uart device for up to 0.5 seconds to wait for a
- * response from the XBee. when we are expeciting a response. This function
- * lifts that lock, and is mostly called from the xbee received uart interrupt.
- *
- * This is part of a collection of functions that insures that status packets
- * will be received in the order they are sent. When you receive a rx status
- * packet or a AT command response, just call
- * xbee_interface_tx_next_status_packet() and you will be given the
- * corresponding status packet.
- */
-void xbee_interface_tx_unlock_wait();
-struct xbee_packet * xbee_interface_tx_next_status_packet();
+const struct xbee_packet *xbee_interface_tx_get_packet_by_frame_id(uint8_t frame_id);
 
 /**
  * Reads the next available packet from the buffer.

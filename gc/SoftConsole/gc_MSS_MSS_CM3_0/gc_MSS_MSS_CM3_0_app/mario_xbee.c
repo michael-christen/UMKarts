@@ -39,8 +39,8 @@ static inline uint8_t _mario_xbee_at_cmd_is(const struct xbee_packet *xp, const 
 
 static void _mario_xbee_interpret_at_response(struct xbee_packet *xp) {
 	uint64_t address;
-	struct xbee_packet *sent_xp;
-	sent_xp = xbee_interface_tx_next_status_packet();
+	const struct xbee_packet *sent_xp;
+	sent_xp = xbee_interface_tx_get_packet_by_frame_id(xp->payload[1]);
 	xbee_interface_free_packet(sent_xp);
 	if (xp->payload[4] != 0x00) {
 		xbee_printf("Invalid xbee packet: %c%c, %d\r\n", xp->payload[2],
@@ -152,8 +152,8 @@ static int _mario_xbee_interpret_rx_packet(struct xbee_packet *xp) {
 }
 
 static int _mario_xbee_interpret_tx_status(struct xbee_packet *xp) {
-	struct xbee_packet *sent_xp;
-	sent_xp = xbee_interface_tx_next_status_packet();
+	const struct xbee_packet *sent_xp;
+	sent_xp = xbee_interface_tx_get_packet_by_frame_id(xp->payload[1]);
 	switch (xp->payload[5]) {
 		case 0x00: /* Success */
 			/* Nothing to do, successful */

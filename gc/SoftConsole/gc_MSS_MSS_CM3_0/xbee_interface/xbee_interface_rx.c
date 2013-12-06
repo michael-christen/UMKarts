@@ -82,10 +82,6 @@ static void _xbee_interface_rx_handler(mss_uart_instance_t * this_uart) {
 		/* Deal with completed packet */
 		if (XBeeReaderDone(&(_xbee_rx.xr))) {
 			if (XBeeReaderGood(&(_xbee_rx.xr))) {
-				if (_xbee_rx.xr.xp->payload[0] == XBEE_API_TX_STATUS ||
-					_xbee_rx.xr.xp->payload[0] == XBEE_API_AT_RESPONSE) {
-					xbee_interface_tx_unlock_wait();
-				}
 				err = CircularBufferWrite(&(_xbee_rx.circle_buf),
 						_xbee_rx.xr.xp);
 				/* Error check: Mark error if our circular buffer is full */
