@@ -155,7 +155,7 @@ void use_lightning() {
 }
 void use_star() {
 	sound_play_repeat(STARPOWER_BEGIN, STARPOWER_END);
-	PLAYER_DRIVE_set_modification(mod_speed_boost, ITEM_DURATIONS[STAR]);
+	PLAYER_DRIVE_set_modification(mod_star, ITEM_DURATIONS[STAR]);
 }
 
 void hit_green_shell() {

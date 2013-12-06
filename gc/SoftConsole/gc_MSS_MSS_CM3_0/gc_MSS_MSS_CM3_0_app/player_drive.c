@@ -11,6 +11,9 @@
 #include "item.h"
 #include "motor.h"
 #include "player_drive.h"
+#include "sound.h"
+
+#include <stdio.h>
 
 // Millisecs to rtc conversion factor
 static const int MS_TO_COUNT = 33;
@@ -75,20 +78,28 @@ static void PLAYER_DRIVE_update_from_controller() {
 	}
 }
 
+static void PLAYER_DRIVE_remove_modification() {
+	if (player_driver.mod == mod_star) {
+		sound_stop();
+	}
+	player_driver.mod = 0;
+	player_driver.mod_stop = 0;
+}
+
 void PLAYER_DRIVE_update() {
 	PLAYER_DRIVE_update_from_controller();
 	if (player_driver.mod == 0) return;
 
 	// Deal with modifications
-	if (MSS_RTC_get_seconds_count() >= player_driver.mod_stop) {
-		player_driver.mod = 0;
-		player_driver.mod_stop = 0;
+	if (player_driver.mod && MSS_RTC_get_seconds_count() >= player_driver.mod_stop) {
+		PLAYER_DRIVE_remove_modification();
 	} else {
 		player_driver.mod();
 	}
 }
 
 void PLAYER_DRIVE_set_modification(void (*mod)(), uint32_t secs) {
+	PLAYER_DRIVE_remove_modification();
 	player_driver.mod = mod;
 	player_driver.mod_stop = MSS_RTC_get_seconds_count() + secs;
 }
@@ -100,6 +111,7 @@ void PLAYER_DRIVE_apply() {
 	// Deal with the motor
 	double speed = ((int)(player_driver.speed)) / 10.0;
 	MOTOR_set_speed(speed * (int)(player_driver.motor_direction));
+	printf("Speed: %f Direction %d\r\n", speed * (int)(player_driver.motor_direction), (int)player_driver.servo_direction);
 }
 
 void mod_disable_motors_and_servos() {
@@ -113,4 +125,8 @@ void mod_speed_boost() {
 
 void mod_speed_slow() {
 	player_driver.speed = SLOWED;
+}
+
+void mod_star() {
+	mod_speed_boost();
 }

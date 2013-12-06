@@ -122,10 +122,10 @@ Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01
 @W: MO160 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":268:0:268:5|Register bit motorWrapper_0.motor_0.captureSyncReg[0] is always 0, optimizing ...
 @N: BN362 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":86:0:86:5|Removing sequential instance motorWrapper_0.motor_0.reset_capture_sync of view:PrimLib.dff(prim) in hierarchy view:work.gc(verilog) because there are no references to its outputs 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 117MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 117MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 114MB peak: 117MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 114MB peak: 117MB)
 
 
 Finished Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 121MB peak: 121MB)
@@ -134,7 +134,7 @@ Finished Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elaps
 Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 120MB peak: 122MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 119MB peak: 122MB)
+Finished preparing to map (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 119MB peak: 122MB)
 
 
 High Fanout Net Report
@@ -176,7 +176,7 @@ CoreAPB3_0.CAPB3O0OI_1[0] / Y                                    46
 @N: FP130 |Promoting Net CoreAPB3_0_APBmslave0_PADDR[4] on CLKINT  I_324 
 @N: FP130 |Promoting Net IR_LED_0_DIVCLK on CLKINT  IR_LED_0.div.clkOut_inferred_clock 
 
-Finished technology mapping (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 132MB peak: 135MB)
+Finished technology mapping (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 132MB peak: 135MB)
 
 
 Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 132MB peak: 135MB)
@@ -240,7 +240,7 @@ Clock Tree ID     Driving Element         Drive Element Type     Fanout     Samp
 
 Writing Analyst data base C:\Users\mttschlt\eecs373\UMKarts\gc\synthesis\gc.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 131MB peak: 135MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 131MB peak: 135MB)
 
 Writing EDIF Netlist and constraint files
 G-2012.09M-SP1 
@@ -256,7 +256,7 @@ Found clock FCLK with period 10.00ns
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Thu Dec 05 16:03:12 2013
+# Timing Report written on Fri Dec 06 12:14:34 2013
 #
 
 
@@ -1465,6 +1465,6 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 43MB peak: 135MB)
 
 Process took 0h:00m:05s realtime, 0h:00m:05s cputime
-# Thu Dec 05 16:03:12 2013
+# Fri Dec 06 12:14:34 2013
 
 ###########################################################]
