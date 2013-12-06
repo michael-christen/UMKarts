@@ -20,6 +20,7 @@
 #define XBEE_MESSAGE_GAME_START    (0x04)
 #define XBEE_MESSAGE_GAME_OVER     (0x05)
 #define XBEE_MESSAGE_GAME_EVENT    (0x06)
+#define XBEE_MESSAGE_PLAYER_LEFT   (0x07)
 #define XBEE_MESSAGE_ACK           (0x80)
 
 #define XBEE_APP_OPT_NO_ACK        (0x01)
@@ -46,6 +47,8 @@ int message_game_over();
 int message_game_event(uint64_t address, uint8_t subject, uint8_t object, uint8_t action, uint8_t item, uint8_t flags);
 
 int message_ack(uint64_t address, uint8_t frame_id, uint8_t msg_id, uint8_t failure);
+
+int message_player_left(uint64_t address);
 /**
  * Sends a new message off to all available XBee's.
  */

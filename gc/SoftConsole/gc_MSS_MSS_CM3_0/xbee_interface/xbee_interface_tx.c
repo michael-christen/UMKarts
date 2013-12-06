@@ -25,6 +25,7 @@ static struct {
 		uint64_t rtc_count;
 	} wait_for_response;
 	struct xbee_writer xw;
+	struct xbee_packet *xp;
 } _xbee_tx;
 
 void  _xbee_interface_tx_init() {
@@ -62,6 +63,7 @@ int xbee_send(struct xbee_packet *xp) {
 
 void xbee_interface_tx_unlock_wait() {
 	_xbee_tx.wait_for_response.lock = 0;
+	MSS_UART_enable_irq( &g_mss_uart1, MSS_UART_TBE_IRQ );
 }
 
 struct xbee_packet * xbee_interface_tx_next_status_packet() {
@@ -71,6 +73,7 @@ struct xbee_packet * xbee_interface_tx_next_status_packet() {
 static inline void _xbee_interface_tx_start(struct xbee_packet * xp) {
 	XBeeWriterInit(&(_xbee_tx.xw), xp);
 	_xbee_tx.uart_queue_size = 0;
+	_xbee_tx.xp = xp;
 }
 
 static void _xbee_interface_tx_handler(mss_uart_instance_t * this_uart) {
@@ -92,6 +95,7 @@ static void _xbee_interface_tx_handler(mss_uart_instance_t * this_uart) {
 
 	if (_xbee_tx.wait_for_response.lock) {
 		/* 1 second = a difference of 256 */
+		return;
 		if (_xbee_tx.wait_for_response.rtc_count - MSS_RTC_get_rtc_count() > 128) {
 			_xbee_tx.wait_for_response.lock = 0;
 			xbee_interface_free_packet(xbee_interface_tx_next_status_packet());
@@ -122,7 +126,7 @@ static void _xbee_interface_tx_handler(mss_uart_instance_t * this_uart) {
 	 * nothing left in the the uart_queue, and the XBeeWriter says it's done */
 	if (_xbee_tx.uart_queue_size == 0 && XBeeWriterDone(&(_xbee_tx.xw))) {
 		if (XBEE_INTERFACE_EXPECT_RESPONSE(_xbee_tx.xw.xp)) {
-			err = CircularBufferWrite(&_xbee_tx.wait_for_response.circle_buf, _xbee_tx.xw.xp);
+			err = CircularBufferWrite(&_xbee_tx.wait_for_response.circle_buf, _xbee_tx.xp);
 			if (err == 0) {
 				_xbee_tx.wait_for_response.lock = 1;
 				_xbee_tx.wait_for_response.rtc_count = MSS_RTC_get_rtc_count();

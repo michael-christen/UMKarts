@@ -2,6 +2,7 @@
 #include "xbee.h"
 #include "xbee_interface.h"
 #include "player.h"
+#include "convert.h"
 #include <errno.h>
 
 int message_game_host() {
@@ -72,5 +73,13 @@ int message_game_event(uint64_t address, uint8_t subject, uint8_t object, uint8_
 	else {
 		err = send_message(XBEE_MESSAGE_GAME_EVENT, flags, buf, 4);
 	}
+	return err;
+}
+
+int message_player_left(uint64_t address) {
+	int err;
+	uint8_t buf[8];
+	uint64_t_to_bytes(address, buf);
+	err = send_message(XBEE_MESSAGE_PLAYER_LEFT, XBEE_APP_OPT_ACK, buf, 8);
 	return err;
 }

@@ -70,8 +70,10 @@ static void _xbee_interface_rx_handler(mss_uart_instance_t * this_uart) {
 		}
 
 		/* Read up to first 16 bytes from the serial port queue */
-		bytes_from_uart = MSS_UART_get_rx(this_uart, _xbee_rx.buf
-				+ bytes_remaining, MSS_UART_RX_BUF_SIZE - bytes_remaining);
+		if (MSS_UART_RX_BUF_SIZE > bytes_remaining) {
+			bytes_from_uart = MSS_UART_get_rx(this_uart, _xbee_rx.buf
+					+ bytes_remaining, MSS_UART_RX_BUF_SIZE - bytes_remaining);
+		}
 
 		/* Parse packets from uart into our packet */
 		end_of_read = XBeeReaderRead(&(_xbee_rx.xr), _xbee_rx.buf, _xbee_rx.buf

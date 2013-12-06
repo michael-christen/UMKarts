@@ -13,3 +13,10 @@ uint64_t bytes_to_uint64_t(uint8_t *a) {
 			| ((uint64_t) a[5] << 16) | ((uint64_t) a[6] << 8)
 			| (uint64_t) a[7];
 }
+
+void uint64_t_to_bytes(uint64_t in, uint8_t *buffer) {
+	int i, j;
+	for (i = 56, j = 0; i >= 0; i -= 8, j++) {
+		buffer[j] = (in >> i) & 0xFF;
+	}
+}

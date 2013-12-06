@@ -129,7 +129,7 @@ int main()
 			}
 			break;
 		case GAME_HOST:
-			if (CONTROLLER->start) {
+			if (CONTROLLER->start || g_player_table.size < 2) {
 				/* NEED TO RATE LIMIT */
 				if (MSS_RTC_get_seconds_count() - 1 > xbee_rapid_packet_limiter) {
 					message_game_host();
@@ -142,6 +142,9 @@ int main()
 				if (g_player_table.size > 1) {
 					message_game_start(g_player_table.players, g_player_table.size);
 					game_trans_host_to_in_game();
+				}
+				else {
+					game_trans_host_to_wait();
 				}
 			}
 			break;

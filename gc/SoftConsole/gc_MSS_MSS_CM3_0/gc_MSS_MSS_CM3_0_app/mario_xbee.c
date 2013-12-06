@@ -13,6 +13,7 @@
 
 static void _mario_xbee_interpret_at_response(struct xbee_packet *xp);
 static int _mario_xbee_interpret_rx_packet(struct xbee_packet *xp);
+static int _mario_xbee_interpret_tx_status(struct xbee_packet *xp);
 
 int mario_xbee_interpret_packet(struct xbee_packet * xp) {
 	switch (xbee_packet_api_id(xp)) {
@@ -39,7 +40,7 @@ static inline uint8_t _mario_xbee_at_cmd_is(const struct xbee_packet *xp, const 
 static void _mario_xbee_interpret_at_response(struct xbee_packet *xp) {
 	uint64_t address;
 	struct xbee_packet *sent_xp;
-	sent_xp = xbee_interface_tx_next_status();
+	sent_xp = xbee_interface_tx_next_status_packet();
 	xbee_interface_free_packet(sent_xp);
 	if (xp->payload[4] != 0x00) {
 		xbee_printf("Invalid xbee packet: %c%c, %d\r\n", xp->payload[2],
@@ -132,6 +133,9 @@ static int _mario_xbee_interpret_rx_packet(struct xbee_packet *xp) {
 	case XBEE_MESSAGE_GAME_EVENT:
 		/* For now do nothing */
 		break;
+	case XBEE_MESSAGE_PLAYER_LEFT:
+		player_remove_player(bytes_to_uint64_t(data));
+		break;
 	case XBEE_MESSAGE_ACK:
 		if (data[2] == 0) {
 			send_message_ack(data[0]);
@@ -149,7 +153,7 @@ static int _mario_xbee_interpret_rx_packet(struct xbee_packet *xp) {
 
 static int _mario_xbee_interpret_tx_status(struct xbee_packet *xp) {
 	struct xbee_packet *sent_xp;
-	sent_xp = xbee_interface_tx_next_status();
+	sent_xp = xbee_interface_tx_next_status_packet();
 	switch (xp->payload[5]) {
 		case 0x00: /* Success */
 			/* Nothing to do, successful */
@@ -163,12 +167,13 @@ static int _mario_xbee_interpret_tx_status(struct xbee_packet *xp) {
 			 * join state if that is the case
 			 */
 			if (sent_xp->payload[0] == XBEE_API_TX_REQUEST) {
-				if (player_we_are_host()) {
-					message_send_player_left(bytes_to_uint64_t(xp->payload + 2));
-					player_remove_player(bytes_to_uint64_t(xp->payload + 2));
+				if (g_game_host == player_get_address_from_driver(DRIVER)) {
+					player_remove_player(bytes_to_uint64_t(sent_xp->payload + 2));
+					message_player_left(bytes_to_uint64_t(sent_xp->payload + 2));
+					xbee_printf("Player %llx left game", bytes_to_uint64_t(sent_xp->payload + 2));
 				}
 				else {
-					if (player_address_is_host(bytes_to_uint64_t(xp->payload + 2))) {
+					if (g_game_host == (bytes_to_uint64_t(sent_xp->payload + 2))) {
 						/* Need to send that we are leaving the game */
 						/* Then leave the game */
 					}
@@ -187,5 +192,6 @@ static int _mario_xbee_interpret_tx_status(struct xbee_packet *xp) {
 	}
 	xbee_interface_free_packet(sent_xp);
 	/* TX status packet gets freed later */
+	return 0;
 }
 

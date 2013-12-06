@@ -62,7 +62,7 @@ int xbee_send(struct xbee_packet *);
  * corresponding status packet.
  */
 void xbee_interface_tx_unlock_wait();
-struct xbee_packet * xbee_interface_tx_next_status_packet() {
+struct xbee_packet * xbee_interface_tx_next_status_packet();
 
 /**
  * Reads the next available packet from the buffer.

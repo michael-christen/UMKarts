@@ -58,6 +58,15 @@ int game_trans_host_to_in_game() {
 	return -EINVAL;
 }
 
+int game_trans_host_to_wait() {
+	if (g_game_state == GAME_HOST) {
+		g_game_state = GAME_WAIT;
+		xbee_printf("GAME STATE TRANS: HOST -> WAIT");
+		return 0;
+	}
+	return -EINVAL;
+}
+
 int game_trans_in_game_to_over() {
 	if (g_game_state == GAME_IN_GAME) {
 		g_game_state = GAME_OVER;
