@@ -109,7 +109,7 @@ static int _mario_xbee_interpret_rx_packet(struct xbee_packet *xp) {
 			}
 		}
 		else {
-			xbee_printf("Ingoring GAME_START packet because in state %s\n", g_game_state_str[g_game_state]);
+			xbee_printf("Ignoring GAME_START packet because in state %s\n", g_game_state_str[g_game_state]);
 		}
 		break;
 	case XBEE_MESSAGE_GAME_OVER:

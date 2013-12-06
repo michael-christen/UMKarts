@@ -90,6 +90,7 @@ if(~nreset)
     compareReg      <= 32'h00000000;
     overflowReg     <= 32'h00000000;
     controlReg      <= 32'h00000000;
+    directionReg    <= 32'd0;
     reset_interrupt     <= 1'b0;
     reset_capture_sync  <= 1'b0;
     reset_capture_async <= 1'b0;

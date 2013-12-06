@@ -16,6 +16,7 @@
 #include "mario_xbee.h"
 #include "messages.h"
 #include "player.h"
+#include "player_drive.h"
 #include "game.h"
 
 
@@ -62,8 +63,14 @@ int main()
 
 	xbee_printf("Sound initialized");
 	//volatile int d = 0;
-	MOTOR_cmpVal = 2000000;
-	MOTOR_period = 20000000;
+	MOTOR_cmpVal = 20000;
+	// Old values
+	// 20 mil (to high)
+	// 200 thous (to low)
+	// 2 mil (to high)
+	// 1 mil (to high)
+	// 500 thou (to low)
+	MOTOR_period = 1000000;
 	curClock = prevClock = 0;
 	/* Setup MYTIMER */
 	MOTOR_init();
@@ -72,9 +79,6 @@ int main()
 
 	xbee_printf("Mike Loves Double Dash!!!");
 	count = 0;
-	int lastVal = 1;
-	double speed = 0;
-	int dir = 1;
 
 	CONTROLLER_setup_mem();
 
@@ -93,39 +97,20 @@ int main()
 
 	LASER_TAG_init();
 
-	int x = 1;
 	LCD_init();
 	xbee_printf("%s %s", "Hello", "World");
 
 	driver_discovery();
 
+	// Sets turns motor off and sets servo to straight
+	PLAYER_DRIVE_reset();
+
 	while( 1 )
 	{
 		//CONTROLLER_print();
-		CONTROLLER_load();
-		if (CONTROLLER->a) {
-			MOTOR_set_speed(1);
-		} else if (CONTROLLER->b) {
-			MOTOR_set_speed(-1);
-		} else {
-			MOTOR_set_speed(0);
-		}
+		PLAYER_DRIVE_update();
+		PLAYER_DRIVE_apply();
 
-		if (CONTROLLER->d_right || CONTROLLER->joystick_x > 158) {
-			MOTOR_set_servo_direction(1);
-		} else if (CONTROLLER->d_left || CONTROLLER->joystick_x < 98) {
-			MOTOR_set_servo_direction(-1);
-		} else {
-			MOTOR_set_servo_direction(0);
-		}
-
-		if (CONTROLLER->l) {
-			useCurrentItem();
-		} else if (CONTROLLER->x) {
-			handleItemGrab();
-		} else if (CONTROLLER->y) {
-			use_green_shell();
-		}
 		while ((xbee_read_packet = xbee_read())) {
 			mario_xbee_interpret_packet(xbee_read_packet);
 			xbee_interface_free_packet(xbee_read_packet);

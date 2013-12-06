@@ -20,10 +20,10 @@ KEY IDE_DES_BLOCK_PUBLISH "FALSE"
 KEY IDE_DES_BA_EXPORTED "FALSE"
 KEY IDE_DES_INTERACTIVE "FALSE"
 KEY IDE_DES_ERROR_FOUND "FALSE"
-KEY IDE_DES_ADB_PATH "C:\Users\mikechri\Downloads\gc\gc\designer\impl1\gc.adb"
+KEY IDE_DES_ADB_PATH "C:\Users\mttschlt\eecs373\UMKarts\gc\designer\impl1\gc.adb"
 LIST SOURCE_FILES
-VALUE "C:\Users\mikechri\Downloads\gc\gc\synthesis\gc.edn;edn"
-VALUE "C:\Users\mikechri\Downloads\gc\gc\component\work\gc\gc.pdc;pdc"
+VALUE "C:\Users\mttschlt\eecs373\UMKarts\gc\synthesis\gc.edn;edn"
+VALUE "C:\Users\mttschlt\eecs373\UMKarts\gc\component\work\gc\gc.pdc;pdc"
 ENDLIST
 LIST OPTIONAL_FILES
 ENDLIST
