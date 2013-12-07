@@ -81,18 +81,10 @@ int main()
 
 	// Hit LED (not working, but won't work)
 	MSS_GPIO_config(MSS_GPIO_3, MSS_GPIO_OUTPUT_MODE);
+	// This LED is active LOW. So turn it off here
 	MSS_GPIO_set_output(MSS_GPIO_3, 1);
-	MSS_GPIO_set_output(MSS_GPIO_3, 0);
 
 	OLED_init();
-
-	struct oled_data write_data;
-
-	write_data.line1 = FIRST_LINE;
-	write_data.char_offset1 = 0;
-
-	write_data.contrast_val = 0x01;
-
 
 
 	initItemWeights();
@@ -103,9 +95,6 @@ int main()
 	xbee_printf("%s %s", "Hello", "World");
 
 	driver_discovery();
-
-	write_data.string1 = driver_names[DRIVER];
-	OLED_write_data(&write_data,FIRST_LINE);
 
 	// Sets turns motor off and sets servo to straight
 	PLAYER_DRIVE_reset();

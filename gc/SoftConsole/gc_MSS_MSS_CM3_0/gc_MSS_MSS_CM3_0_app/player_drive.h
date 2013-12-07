@@ -30,4 +30,5 @@ void mod_disable_motors_and_servos();
 void mod_speed_boost();
 void mod_speed_slow();
 void mod_star();
+void mod_hit_by_shell();
 #endif

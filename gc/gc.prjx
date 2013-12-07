@@ -1,6 +1,6 @@
 KEY LIBERO "11.0"
 KEY CAPTURE "11.0.0.23"
-KEY DEFAULT_IMPORT_LOC ""
+KEY DEFAULT_IMPORT_LOC "C:\Libero_projects\test_fabric2\hdl"
 KEY DEFAULT_OPEN_LOC ""
 KEY ProjectID "0"
 KEY HDLTechnology "VERILOG"
@@ -544,8 +544,8 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\designer\impl1\gc.adb,adb"
 STATE="utd"
-TIME="1386365404"
-SIZE="2275328"
+TIME="1386445140"
+SIZE="2279936"
 ENDFILE
 VALUE "<project>\designer\impl1\gc.fdb,fdb"
 STATE="utd"
@@ -554,7 +554,7 @@ SIZE="102525"
 ENDFILE
 VALUE "<project>\designer\impl1\gc.ide_des,ide_des"
 STATE="utd"
-TIME="1386350347"
+TIME="1386445141"
 SIZE="1022"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_compile_log.rpt,log"
@@ -564,12 +564,12 @@ SIZE="30636"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_fp\gc.pdb,pdb"
 STATE="utd"
-TIME="1386365404"
+TIME="1386445155"
 SIZE="112128"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_fp\gc.pro,pro"
 STATE="utd"
-TIME="1386365404"
+TIME="1386445199"
 SIZE="1939"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_fp\projectData\gc.pdb,pdb"
@@ -715,22 +715,22 @@ PARENT="<project>\smartgen\IR_QUEUE\IR_QUEUE.cxf"
 ENDFILE
 VALUE "<project>\synthesis\gc.edn,syn_edn"
 STATE="utd"
-TIME="1386350074"
-SIZE="1654834"
+TIME="1386444995"
+SIZE="1656465"
 ENDFILE
 VALUE "<project>\synthesis\gc.so,so"
 STATE="utd"
-TIME="1386350074"
+TIME="1386444995"
 SIZE="210"
 ENDFILE
 VALUE "<project>\synthesis\gc_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1386350074"
+TIME="1386444995"
 SIZE="530"
 ENDFILE
 VALUE "<project>\synthesis\gc_syn.prj,prj"
 STATE="utd"
-TIME="1386350076"
+TIME="1386444999"
 SIZE="3971"
 ENDFILE
 VALUE "<project>\synthesis\synwork\gc_compiler.so,so"
@@ -804,6 +804,17 @@ VALUE "<project>\component\Actel\DirectCore\CoreUARTapb\5.2.2\rtl\vlog\amba_bfm\
 VALUE "<project>\component\work\gc\CoreUARTapb_0\coreparameters.v,tb_hdl"
 VALUE "<project>\component\work\gc\CoreUARTapb_0\rtl\vlog\test\user\testbench.v,tb_hdl"
 ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 ENDLIST
 LIST "gc_MSS::work"
 FILE "<project>\component\work\gc_MSS\gc_MSS.v,hdl"
@@ -853,6 +864,17 @@ VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\amba_bfm\b
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\test\user\testbench.v,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
 ENDLIST
 ENDLIST
 ENDLIST
@@ -984,8 +1006,8 @@ NAME="Synplify Pro AE"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro AE"
 LOCATION="C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 EndProfile
 NAME="ModelSim AE"
 FUNCTION="Simulation"
@@ -1017,7 +1039,29 @@ Used_File_List
 ENDUsed_File_List
 ENDLIST
 ENDLIST
+LIST "gc_CoreUARTapb_0_CoreUARTapb::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 LIST "gc_MSS::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST "CoreAPB3::COREAPB3_LIB"
 LIST Impl1
 ideSTIMULUS=StateSuccess
 LIST FlowOptions
@@ -1041,12 +1085,7 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 StartPage;StartPage
-HDL;hdl\motorWrapper.v
-HDL;hdl\motor.v
-SmartDesign;gc
-SmartDesign;gc_MSS
-Reports;Reports
-ACTIVEVIEW;gc_MSS
+ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
 LIST "APB_IR::work","hdl\APB_IR.v","FALSE","FALSE"

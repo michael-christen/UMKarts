@@ -6,6 +6,7 @@
  */
 
 #include "drivers/mss_rtc/mss_rtc.h"
+#include "drivers/mss_gpio/mss_gpio.h"
 
 #include "controller.h"
 #include "item.h"
@@ -81,6 +82,8 @@ static void PLAYER_DRIVE_update_from_controller() {
 static void PLAYER_DRIVE_remove_modification() {
 	if (player_driver.mod == mod_star) {
 		sound_stop();
+	} else if (player_driver.mod == mod_hit_by_shell) {
+		MSS_GPIO_set_output(MSS_GPIO_3, 1);
 	}
 	player_driver.mod = 0;
 	player_driver.mod_stop = 0;
@@ -115,6 +118,7 @@ void PLAYER_DRIVE_apply() {
 
 void mod_disable_motors_and_servos() {
 	player_driver.motor_direction = BRAKE;
+	player_driver.speed = 0;
 	player_driver.servo_direction = STRAIGHT;
 }
 
@@ -128,4 +132,9 @@ void mod_speed_slow() {
 
 void mod_star() {
 	mod_speed_boost();
+}
+
+void mod_hit_by_shell() {
+	mod_disable_motors_and_servos();
+	MSS_GPIO_set_output(MSS_GPIO_3, 0);
 }

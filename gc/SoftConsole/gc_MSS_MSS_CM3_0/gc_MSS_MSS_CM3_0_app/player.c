@@ -1,4 +1,5 @@
 #include "player.h"
+#include "oled.h"
 #include "xbee.h"
 #include "xbee_interface.h"
 #include <errno.h>
@@ -11,7 +12,6 @@ const char* driver_names[DRIVER_INVALID] = {
 		"Luigi",
 		"Wario",
 		"Peach",
-		"INVALID"
 };
 
 static struct {
@@ -111,6 +111,17 @@ void player_set_low_address(uint32_t low) {
 	if (_myPlayerInfo._state == ADDRESS_HIGH_SET) {
 		_myPlayerInfo._address += (0xFFFFFFFFull & low);
 		_myPlayerInfo._state = ADDRESS_DONE;
+		if (DRIVER != player_get_driver_from_address(_myPlayerInfo._address)) {
+			struct oled_data write_data;
+
+			write_data.line1 = FIRST_LINE;
+			write_data.char_offset1 = 0;
+
+			write_data.contrast_val = 0x01;
+
+			write_data.string1 = driver_names[player_get_driver_from_address(_myPlayerInfo._address)];
+			OLED_write_data(&write_data, FIRST_LINE);
+		}
 		DRIVER = player_get_driver_from_address(_myPlayerInfo._address);
 	} else if (_myPlayerInfo._state == ADDRESS_UNSET) {
 		_myPlayerInfo._address = (0xFFFFFFFFull & low);
@@ -123,6 +134,17 @@ void player_set_high_address(uint32_t high) {
 		_myPlayerInfo._address += ((uint64_t)(0xFFFFFFFF00000000ull
 				& ((uint64_t) high << 32)));
 		_myPlayerInfo._state = ADDRESS_DONE;
+		if (DRIVER != player_get_driver_from_address(_myPlayerInfo._address)) {
+			struct oled_data write_data;
+
+			write_data.line1 = FIRST_LINE;
+			write_data.char_offset1 = 0;
+
+			write_data.contrast_val = 0x01;
+
+			write_data.string1 = driver_names[player_get_driver_from_address(_myPlayerInfo._address)];
+			OLED_write_data(&write_data, FIRST_LINE);
+		}
 		DRIVER = player_get_driver_from_address(_myPlayerInfo._address);
 	} else if (_myPlayerInfo._state == ADDRESS_UNSET) {
 		_myPlayerInfo._address = ((uint64_t)(0xFFFFFFFF00000000ull

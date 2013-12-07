@@ -28,7 +28,7 @@ char *ITEM_NAMES [MAX_NUM_ITEMS] = {
     "STAR"
 };
 
-uint64_t ITEM_DURATIONS [] = {0, 4, 0, 10};
+uint64_t ITEM_DURATIONS [] = {3, 4, 0, 10};
 /*ITEM_DURATIONS[GREEN_SHELL] = 0;
 ITEM_DURATIONS[MUSHROOM] = 400;
 ITEM_DURATIONS[LIGHTNING] = 0;
@@ -165,7 +165,7 @@ void hit_green_shell() {
 		return;
 	}
 	printf("He shot me, %d\r\n", opId);
-	PLAYER_DRIVE_set_modification(mod_disable_motors_and_servos, ITEM_DURATIONS[GREEN_SHELL]);
+	PLAYER_DRIVE_set_modification(mod_hit_by_shell, ITEM_DURATIONS[GREEN_SHELL]);
 	sound_play(OW_SOUND_BEGIN[DRIVER], OW_SOUND_END[DRIVER]);
 }
 void hit_mushroom() {
