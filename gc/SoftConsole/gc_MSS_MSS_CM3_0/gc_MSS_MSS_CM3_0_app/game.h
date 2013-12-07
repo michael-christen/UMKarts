@@ -4,7 +4,7 @@
 #include <inttypes.h>
 
 #define GAME_HOST_ANNOUNCE_DELAY 1
-#define GAME_JOIN_ACK_TIMEOUT    2
+#define GAME_JOIN_ACK_TIMEOUT    3
 
 enum GameState {
 	GAME_WAIT,
