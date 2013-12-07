@@ -26,6 +26,8 @@ void use_mushroom();
 void use_lightning();
 void use_star();
 
+void hitByItem(item);
+
 void hit_green_shell();
 void hit_mushroom();
 void hit_lightning();
