@@ -9,6 +9,8 @@ typedef enum {
 	MARIO, LUIGI, WARIO, PEACH, DRIVER_INVALID,
 } Driver;
 
+extern const char* driver_names[DRIVER_INVALID];
+
 struct PlayerTable {
 	uint64_t players[MAX_PLAYERS];
 	uint8_t size;

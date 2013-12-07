@@ -18,6 +18,7 @@
 #include "player.h"
 #include "player_drive.h"
 #include "game.h"
+#include "oled.h"
 
 
 volatile uint32_t count;
@@ -27,13 +28,8 @@ const double CONVERSION_FACTOR = 0.00017006802;
 int lastVals[10];
 int arrCount=0;
 
-__attribute__ ((interrupt)) void GPIO1_IRQHandler( void ){
-	printf("Magnetic sensor sees something\n\r");
-	MSS_GPIO_clear_irq( MSS_GPIO_1 );
-}
-
 __attribute__ ((interrupt)) void GPIO2_IRQHandler( void ){
-	printf("Reflective sensor sees something\n\r");
+	printf("Magentic sensor sees something\n\r");
 	handleItemGrab();
 	MSS_GPIO_clear_irq( MSS_GPIO_2 );
 }
@@ -64,12 +60,6 @@ int main()
 	xbee_printf("Sound initialized");
 	//volatile int d = 0;
 	MOTOR_cmpVal = 20000;
-	// Old values
-	// 20 mil (to high)
-	// 200 thous (to low)
-	// 2 mil (to high)
-	// 1 mil (to high)
-	// 500 thou (to low)
 	MOTOR_period = 1000000;
 	curClock = prevClock = 0;
 	/* Setup MYTIMER */
@@ -85,13 +75,25 @@ int main()
 	// Setting up GPIO interrupts for item pick ups
 	MSS_GPIO_init();
 
-	// Reflective Sensor
+	// Magnetic sensor
 	MSS_GPIO_config(MSS_GPIO_2, MSS_GPIO_INPUT_MODE | MSS_GPIO_IRQ_EDGE_NEGATIVE);
 	MSS_GPIO_enable_irq(MSS_GPIO_2);
 
-	// Magnetic sensor
-	MSS_GPIO_config(MSS_GPIO_1, MSS_GPIO_INPUT_MODE | MSS_GPIO_IRQ_EDGE_NEGATIVE);
-	MSS_GPIO_enable_irq(MSS_GPIO_1);
+	// Hit LED (not working, but won't work)
+	MSS_GPIO_config(MSS_GPIO_3, MSS_GPIO_OUTPUT_MODE);
+	MSS_GPIO_set_output(MSS_GPIO_3, 1);
+	MSS_GPIO_set_output(MSS_GPIO_3, 0);
+
+	OLED_init();
+
+	struct oled_data write_data;
+
+	write_data.line1 = FIRST_LINE;
+	write_data.char_offset1 = 0;
+
+	write_data.contrast_val = 0x01;
+
+
 
 	initItemWeights();
 
@@ -101,6 +103,9 @@ int main()
 	xbee_printf("%s %s", "Hello", "World");
 
 	driver_discovery();
+
+	write_data.string1 = driver_names[DRIVER];
+	OLED_write_data(&write_data,FIRST_LINE);
 
 	// Sets turns motor off and sets servo to straight
 	PLAYER_DRIVE_reset();

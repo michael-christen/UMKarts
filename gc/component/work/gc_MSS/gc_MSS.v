@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Fri Dec 06 12:14:04 2013
+// Created by SmartDesign Sat Dec 07 14:32:50 2013
 // Version: v11.0 11.0.0.23
 //////////////////////////////////////////////////////////////////////
 
@@ -9,7 +9,6 @@
 module gc_MSS(
     // Inputs
     F2M_GPI_0,
-    GPIO_1_IN,
     GPIO_2_IN,
     GPIO_4_IN,
     MSSPRDATA,
@@ -22,6 +21,7 @@ module gc_MSS(
     VAREF0,
     // Outputs
     FAB_CLK,
+    GPIO_3_OUT,
     M2F_RESET_N,
     MSSPADDR,
     MSSPENABLE,
@@ -33,6 +33,8 @@ module gc_MSS(
     UART_0_TXD,
     UART_1_TXD,
     // Inouts
+    I2C_0_SCL,
+    I2C_0_SDA,
     SPI_0_CLK,
     SPI_0_SS
 );
@@ -41,7 +43,6 @@ module gc_MSS(
 // Input
 //--------------------------------------------------------------------
 input         F2M_GPI_0;
-input         GPIO_1_IN;
 input         GPIO_2_IN;
 input         GPIO_4_IN;
 input  [31:0] MSSPRDATA;
@@ -56,6 +57,7 @@ input         VAREF0;
 // Output
 //--------------------------------------------------------------------
 output        FAB_CLK;
+output        GPIO_3_OUT;
 output        M2F_RESET_N;
 output [19:0] MSSPADDR;
 output        MSSPENABLE;
@@ -69,15 +71,19 @@ output        UART_1_TXD;
 //--------------------------------------------------------------------
 // Inout
 //--------------------------------------------------------------------
+inout         I2C_0_SCL;
+inout         I2C_0_SDA;
 inout         SPI_0_CLK;
 inout         SPI_0_SS;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
 wire          F2M_GPI_0;
-wire          GPIO_1_IN;
 wire          GPIO_2_IN;
+wire          GPIO_3_OUT_net_0;
 wire          GPIO_4_IN;
+wire          I2C_0_SCL;
+wire          I2C_0_SDA;
 wire          MSS_ACE_0_SDD0_D;
 wire          MSS_ACE_0_VAREF0_Y;
 wire          MSS_ADLIB_INST_EMCCLK;
@@ -86,9 +92,13 @@ wire          MSS_ADLIB_INST_MACCLK;
 wire          MSS_ADLIB_INST_MACCLKCCC;
 wire          MSS_ADLIB_INST_PLLLOCK;
 wire          MSS_ADLIB_INST_SYNCCLKFDBK;
-wire          MSS_GPIO_0_GPIO_1_IN_Y;
 wire          MSS_GPIO_0_GPIO_2_IN_Y;
+wire   [3:3]  MSS_GPIO_0_GPIO_3_OUT_D;
 wire          MSS_GPIO_0_GPIO_4_IN_Y;
+wire          MSS_I2C_0_SCL_E;
+wire          MSS_I2C_0_SCL_Y;
+wire          MSS_I2C_0_SDA_E;
+wire          MSS_I2C_0_SDA_Y;
 wire          MSS_RESET_0_MSS_RESET_N_Y;
 wire          MSS_RESET_N;
 wire          MSS_SPI_0_CLK_D;
@@ -134,7 +144,9 @@ wire          UART_0_TXD_net_1;
 wire          UART_1_TXD_net_1;
 wire          SPI_0_DO_net_1;
 wire          SPEAKER_DAC_net_1;
+wire          GPIO_3_OUT_net_1;
 wire   [31:0] GPI_net_0;
+wire   [31:0] GPO_net_0;
 wire   [7:0]  SPI0SSO_net_0;
 //--------------------------------------------------------------------
 // TiedOff Nets
@@ -183,14 +195,17 @@ assign SPI_0_DO_net_1                   = SPI_0_DO_net_0;
 assign SPI_0_DO                         = SPI_0_DO_net_1;
 assign SPEAKER_DAC_net_1                = SPEAKER_DAC_net_0;
 assign SPEAKER_DAC                      = SPEAKER_DAC_net_1;
+assign GPIO_3_OUT_net_1                 = GPIO_3_OUT_net_0;
+assign GPIO_3_OUT                       = GPIO_3_OUT_net_1;
 //--------------------------------------------------------------------
 // Slices assignments
 //--------------------------------------------------------------------
-assign MSS_SPI_0_SS_D[0] = SPI0SSO_net_0[0:0];
+assign MSS_GPIO_0_GPIO_3_OUT_D[3] = GPO_net_0[3:3];
+assign MSS_SPI_0_SS_D[0]          = SPI0SSO_net_0[0:0];
 //--------------------------------------------------------------------
 // Concatenation assignments
 //--------------------------------------------------------------------
-assign GPI_net_0 = { 27'h0000000 , MSS_GPIO_0_GPIO_4_IN_Y , 1'b0 , MSS_GPIO_0_GPIO_2_IN_Y , MSS_GPIO_0_GPIO_1_IN_Y , MSSINT_GPI_0_Y };
+assign GPI_net_0 = { 27'h0000000 , MSS_GPIO_0_GPIO_4_IN_Y , 1'b0 , MSS_GPIO_0_GPIO_2_IN_Y , 1'b0 , MSSINT_GPI_0_Y };
 //--------------------------------------------------------------------
 // Component instances
 //--------------------------------------------------------------------
@@ -281,8 +296,8 @@ MSS_ADLIB_INST(
         .SPI0CLKI       ( MSS_SPI_0_CLK_Y ),
         .SPI0SSI        ( MSS_SPI_0_SS_Y ),
         .UART0RXD       ( MSS_UART_0_RXD_Y ),
-        .I2C0SDAI       ( GND_net ), // tied to 1'b0 from definition
-        .I2C0SCLI       ( GND_net ), // tied to 1'b0 from definition
+        .I2C0SDAI       ( MSS_I2C_0_SDA_Y ),
+        .I2C0SCLI       ( MSS_I2C_0_SCL_Y ),
         .SPI1DI         ( GND_net ), // tied to 1'b0 from definition
         .SPI1CLKI       ( GND_net ), // tied to 1'b0 from definition
         .SPI1SSI        ( GND_net ), // tied to 1'b0 from definition
@@ -355,7 +370,7 @@ MSS_ADLIB_INST(
         .DEEPSLEEP      (  ),
         .SLEEP          (  ),
         .TXEV           (  ),
-        .GPO            (  ),
+        .GPO            ( GPO_net_0 ),
         .UART0RTSn      (  ),
         .UART0DTRn      (  ),
         .UART1RTSn      (  ),
@@ -404,8 +419,8 @@ MSS_ADLIB_INST(
         .SPI0MODE       ( MSS_SPI_0_SS_E ),
         .SPI0SSO        ( SPI0SSO_net_0 ),
         .UART0TXD       ( MSS_UART_0_TXD_D ),
-        .I2C0SDAO       (  ),
-        .I2C0SCLO       (  ),
+        .I2C0SDAO       ( MSS_I2C_0_SDA_E ),
+        .I2C0SCLO       ( MSS_I2C_0_SCL_E ),
         .SPI1DO         (  ),
         .SPI1DOE        (  ),
         .SPI1CLKO       (  ),
@@ -473,23 +488,23 @@ gc_MSS_tmp_MSS_CCC_0_MSS_CCC MSS_CCC_0(
 //--------INBUF_MSS
 INBUF_MSS #( 
         .ACT_CONFIG ( 0 ),
-        .ACT_PIN    ( "R3" ) )
-MSS_GPIO_0_GPIO_1_IN(
-        // Inputs
-        .PAD ( GPIO_1_IN ),
-        // Outputs
-        .Y   ( MSS_GPIO_0_GPIO_1_IN_Y ) 
-        );
-
-//--------INBUF_MSS
-INBUF_MSS #( 
-        .ACT_CONFIG ( 0 ),
         .ACT_PIN    ( "W1" ) )
 MSS_GPIO_0_GPIO_2_IN(
         // Inputs
         .PAD ( GPIO_2_IN ),
         // Outputs
         .Y   ( MSS_GPIO_0_GPIO_2_IN_Y ) 
+        );
+
+//--------OUTBUF_MSS
+OUTBUF_MSS #( 
+        .ACT_CONFIG ( 0 ),
+        .ACT_PIN    ( "Y1" ) )
+MSS_GPIO_0_GPIO_3_OUT(
+        // Inputs
+        .D   ( MSS_GPIO_0_GPIO_3_OUT_D ),
+        // Outputs
+        .PAD ( GPIO_3_OUT_net_0 ) 
         );
 
 //--------INBUF_MSS
@@ -501,6 +516,32 @@ MSS_GPIO_0_GPIO_4_IN(
         .PAD ( GPIO_4_IN ),
         // Outputs
         .Y   ( MSS_GPIO_0_GPIO_4_IN_Y ) 
+        );
+
+//--------BIBUF_OPEND_MSS
+BIBUF_OPEND_MSS #( 
+        .ACT_CONFIG ( 0 ),
+        .ACT_PIN    ( "U21" ) )
+MSS_I2C_0_SCL(
+        // Inputs
+        .E   ( MSS_I2C_0_SCL_E ),
+        // Outputs
+        .Y   ( MSS_I2C_0_SCL_Y ),
+        // Inouts
+        .PAD ( I2C_0_SCL ) 
+        );
+
+//--------BIBUF_OPEND_MSS
+BIBUF_OPEND_MSS #( 
+        .ACT_CONFIG ( 0 ),
+        .ACT_PIN    ( "V21" ) )
+MSS_I2C_0_SDA(
+        // Inputs
+        .E   ( MSS_I2C_0_SDA_E ),
+        // Outputs
+        .Y   ( MSS_I2C_0_SDA_Y ),
+        // Inouts
+        .PAD ( I2C_0_SDA ) 
         );
 
 //--------INBUF_MSS
