@@ -91,6 +91,8 @@ int main()
 
 	LASER_TAG_init();
 
+	game_init();
+
 	LCD_init();
 	xbee_printf("%s %s", "Hello", "World");
 
