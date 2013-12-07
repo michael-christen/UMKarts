@@ -5,6 +5,7 @@
 #include "convert.h"
 #include "game.h"
 #include "messages.h"
+#include "item.h"
 #include <stdio.h>
 #include <stdarg.h>
 #include <errno.h>
@@ -14,6 +15,7 @@
 static void _mario_xbee_interpret_at_response(struct xbee_packet_received *xpr);
 static int _mario_xbee_interpret_rx_packet(struct xbee_packet_received *xpr);
 static int _mario_xbee_interpret_tx_status(struct xbee_packet_received *xpr);
+static int _mario_xbee_interpret_game_event(uint64_t sender, uint8_t * data, uint16_t len);
 
 int mario_xbee_interpret_packet(struct xbee_packet_received * xpr) {
 	switch (xbee_packet_api_id(&(xpr->xp))) {
@@ -73,7 +75,7 @@ static int _mario_xbee_interpret_rx_packet(struct xbee_packet_received *xpr) {
 	uint8_t msg_opts = xpr->xp.payload[13];
 	uint8_t old_message_frame_id   = xpr->xp.payload[14];
 	uint8_t *data = xpr->xp.payload + 15;
-	/*uint16_t data_len = xpr->xp.len - 15; */
+	uint16_t data_len = xpr->xp.len - 15;
 	if (msg_opts & XBEE_APP_OPT_ACK) {
 		message_ack(sender, old_message_frame_id, msg_type, xpr->flags);
 	}
@@ -157,7 +159,7 @@ static int _mario_xbee_interpret_rx_packet(struct xbee_packet_received *xpr) {
 		}
 		break;
 	case XBEE_MESSAGE_GAME_EVENT:
-		/* For now do nothing */
+		_mario_xbee_interpret_game_event(sender, data, data_len);
 		break;
 	case XBEE_MESSAGE_PLAYER_LEFT:
 		player_remove_player(bytes_to_uint64_t(data));
@@ -173,6 +175,25 @@ static int _mario_xbee_interpret_rx_packet(struct xbee_packet_received *xpr) {
 			}
 		}
 		break;
+	}
+	return 0;
+}
+
+static int _mario_xbee_interpret_game_event(uint64_t sender, uint8_t * data, uint16_t data_len) {
+	uint8_t sender = data[0];
+	uint8_t object = data[1];
+	uint8_t action = (enum MessageActions) data[2];
+	uint8_t item   = (item) data[3];
+
+	switch (action) {
+		case eMessageActionItemPickup:
+			/* We don't care, should never receive this */
+			break;
+		case eMessageActionItemActionUse:
+			if (item == LIGHTNING) {
+				hit_lightning();
+			}
+			break;
 	}
 	return 0;
 }
