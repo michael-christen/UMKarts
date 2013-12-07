@@ -56,12 +56,20 @@ int message_game_start(uint64_t * players, uint8_t num_players) {
 		buf[i*sizeof(uint64_t) + 7] = players[i] & 0xFF;
 	}
 	err = send_message(XBEE_MESSAGE_GAME_START, XBEE_APP_OPT_ACK, buf, 1 + num_players * sizeof(uint64_t));
+	if (err == 0) {
+		err = send_message_address(XBEE_LISTENER_ADDRESS,
+				XBEE_MESSAGE_GAME_START, XBEE_APP_OPT_NO_ACK, buf, 1 + num_players * sizeof(uint64_t));
+	}
 	return err;
 }
 
 int message_game_over() {
 	int err;
 	err = send_message(XBEE_MESSAGE_GAME_OVER, XBEE_APP_OPT_ACK, 0, 0);
+	if (err == 0) {
+		err = send_message_address(XBEE_LISTENER_ADDRESS,
+				XBEE_MESSAGE_GAME_OVER, XBEE_APP_OPT_NO_ACK, 0, 0);
+	}
 	return err;
 }
 
@@ -72,20 +80,35 @@ int message_game_event(uint64_t address, uint8_t subject, uint8_t object, uint8_
 	buf[1] = object;
 	buf[2] = action;
 	buf[3] = item;
+	err = send_message_address(address, XBEE_MESSAGE_GAME_EVENT, flags, buf, 4);
 
-	if (address != 0) {
-		err = send_message_address(address, XBEE_MESSAGE_GAME_EVENT, flags, buf, 4);
-	}
-	else {
-		err = send_message(XBEE_MESSAGE_GAME_EVENT, flags, buf, 4);
-	}
 	return err;
 }
+
+int message_game_event_all(uint8_t subject, uint8_t object, uint8_t action, uint8_t item, uint8_t flags) {
+	int err;
+	uint8_t buf[4];
+	buf[0] = subject;
+	buf[1] = object;
+	buf[2] = action;
+	buf[3] = item;
+	err = send_message(XBEE_MESSAGE_GAME_EVENT, flags, buf, 4);
+	if (err == 0) {
+		err = send_message_address(XBEE_LISTENER_ADDRESS, XBEE_MESSAGE_GAME_EVENT, XBEE_APP_OPT_NO_ACK, buf, 4);
+	}
+
+	return err;
+}
+
 
 int message_player_left(uint64_t address) {
 	int err;
 	uint8_t buf[8];
 	uint64_t_to_bytes(address, buf);
 	err = send_message(XBEE_MESSAGE_PLAYER_LEFT, XBEE_APP_OPT_ACK, buf, 8);
+	if (err == 0) {
+		err = send_message_address(XBEE_LISTENER_ADDRESS,
+				XBEE_MESSAGE_PLAYER_LEFT, XBEE_APP_OPT_NO_ACK, buf, 8);
+	}
 	return err;
 }

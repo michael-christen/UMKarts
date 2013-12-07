@@ -3,6 +3,7 @@
 #include "mss_uart.h"
 #include "circle_buffer.h"
 #include "convert.h"
+#include <stdio.h>
 
 #define MSS_UART_RX_BUF_SIZE 16
 

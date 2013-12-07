@@ -4,7 +4,7 @@
 
 
 int xbee_printf(const char * format_string, ...) {
-	uint64_t dest_address = 0x0013A20040A711E0ull;
+	uint64_t dest_address = XBEE_LISTENER_ADDRESS;
 	uint8_t buf[XBEE_MESSAGE_MAX_SIZE + 1]; /* Plus one for null */
 	int err;
 	int size;

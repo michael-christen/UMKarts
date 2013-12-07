@@ -78,10 +78,10 @@ struct oled_data
     uint8_t char_offset2;
     /* String 1 holds the data to be displayed on line 1 of OLED, It has to be
      * less that 49 characters*/
-    char    *string1;
+    const char    *string1;
     /* String 1 holds the data to be displayed on line 2 of OLED, It has to be
      * less that 49 characters*/
-    char    *string2;
+    const char    *string2;
     /* Represents line number, where String 3 has to be stored in GDRAM */
         uint8_t line3;
       /* Represents character offset within the line3, from where String 3 has to be
