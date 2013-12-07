@@ -122,7 +122,7 @@ Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01
 @W: MO160 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":268:0:268:5|Register bit motorWrapper_0.motor_0.captureSyncReg[0] is always 0, optimizing ...
 @N: BN362 :"c:\users\mttschlt\eecs373\umkarts\gc\hdl\motor.v":86:0:86:5|Removing sequential instance motorWrapper_0.motor_0.reset_capture_sync of view:PrimLib.dff(prim) in hierarchy view:work.gc(verilog) because there are no references to its outputs 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 117MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 117MB)
 
 
 Starting Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 114MB peak: 117MB)
@@ -179,7 +179,7 @@ CoreAPB3_0.CAPB3O0OI_1[0] / Y                                    46
 Finished technology mapping (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 132MB peak: 135MB)
 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 132MB peak: 135MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 133MB peak: 135MB)
 
 Replicating Combinational Instance CoreAPB3_0.CAPB3O0OI_1[0], fanout 46 segments 2
 Replicating Combinational Instance CoreAPB3_0.CAPB3O0OI_2[1], fanout 34 segments 2
@@ -247,8 +247,8 @@ G-2012.09M-SP1
 
 Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 132MB peak: 135MB)
 
-@W: MT246 :"c:\users\mttschlt\eecs373\umkarts\gc\component\work\gc_mss\gc_mss.v":613:7:613:18|Blackbox MSSINT is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
-@W: MT246 :"c:\users\mttschlt\eecs373\umkarts\gc\component\work\gc_mss\gc_mss.v":546:0:546:11|Blackbox TRIBUFF_MSS is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\mttschlt\eecs373\umkarts\gc\component\work\gc_mss\gc_mss.v":654:7:654:18|Blackbox MSSINT is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\mttschlt\eecs373\umkarts\gc\component\work\gc_mss\gc_mss.v":587:0:587:11|Blackbox TRIBUFF_MSS is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
 @W: MT420 |Found inferred clock clk_div_20000_10000|clkOut_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:IR_LED_0.div.clkOut"
 
 Found clock FAB_CLK with period 10.00ns 
@@ -256,7 +256,7 @@ Found clock FCLK with period 10.00ns
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Fri Dec 06 12:14:34 2013
+# Timing Report written on Sat Dec 07 14:36:35 2013
 #
 
 
@@ -1443,28 +1443,29 @@ Report for cell gc.verilog
               cell count
              BIBUF     1
          BIBUF_MSS     2
+   BIBUF_OPEND_MSS     2
              INBUF     1
            INBUF_A     1
-         INBUF_MSS     7
+         INBUF_MSS     6
             OUTBUF     7
           OUTBUF_A     1
-        OUTBUF_MSS     2
+        OUTBUF_MSS     3
        TRIBUFF_MSS     1
                    -----
-             TOTAL    23
+             TOTAL    25
 
 
 Core Cells         : 2999 of 4608 (65%)
-IO Cells           : 23
+IO Cells           : 25
 
   RAM/ROM Usage Summary
 Block Rams : 1 of 8 (12%)
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 43MB peak: 135MB)
+At Mapper Exit (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:05s; Memory used current: 43MB peak: 135MB)
 
-Process took 0h:00m:05s realtime, 0h:00m:05s cputime
-# Fri Dec 06 12:14:34 2013
+Process took 0h:00m:08s realtime, 0h:00m:05s cputime
+# Sat Dec 07 14:36:37 2013
 
 ###########################################################]

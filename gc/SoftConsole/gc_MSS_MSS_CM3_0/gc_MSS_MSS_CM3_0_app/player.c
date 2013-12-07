@@ -6,6 +6,14 @@
 
 struct PlayerTable g_player_table;
 
+const char* driver_names[DRIVER_INVALID] = {
+		"Mario",
+		"Luigi",
+		"Wario",
+		"Peach",
+		"INVALID"
+};
+
 static struct {
 	uint64_t _address;
 	enum {
