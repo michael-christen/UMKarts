@@ -680,7 +680,7 @@ void OLED_write_data(struct oled_data* data, oled_no_of_line LINES)
 {
     uint8_t line;
     uint8_t char_offset;
-    char *string;
+    const char *string;
 
     switch(LINES)
        {

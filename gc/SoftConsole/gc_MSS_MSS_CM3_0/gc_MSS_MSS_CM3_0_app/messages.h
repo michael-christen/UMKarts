@@ -27,6 +27,15 @@
 #define XBEE_APP_OPT_NO_ACK        (0x01)
 #define XBEE_APP_OPT_ACK           (0x00)
 
+#define XBEE_LISTENER_ADDRESS       0x0013A20040A711E0ull
+
+enum MessageActions {
+	eMessageActionItemPickup,
+	eMessageActionItemActionUse,
+};
+
+
+
 void send_message_init();
 
 /**
@@ -47,6 +56,7 @@ int message_game_leave();
 int message_game_start(uint64_t * players, uint8_t num_players);
 int message_game_over();
 int message_game_event(uint64_t address, uint8_t subject, uint8_t object, uint8_t action, uint8_t item, uint8_t flags);
+int message_game_event_all(uint8_t subject, uint8_t object, uint8_t action, uint8_t item, uint8_t flags);
 int message_ack(uint64_t address, uint8_t frame_id, uint8_t msg_id, uint8_t failure);
 int message_player_left(uint64_t address);
 /**

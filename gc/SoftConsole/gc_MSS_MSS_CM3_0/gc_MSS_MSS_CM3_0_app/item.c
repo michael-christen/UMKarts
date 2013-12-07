@@ -3,6 +3,7 @@
 #include "sound.h"
 #include "sound_samples.h"
 #include "drivers/mss_rtc/mss_rtc.h"
+#include "messages.h"
 
 int ITEM_WEIGHT [MAX_NUM_ITEMS];
 item CURRENT_ITEM = MAX_NUM_ITEMS;
@@ -124,6 +125,7 @@ void handleItemGrab() {
     CURRENT_ITEM = getNewItem();
     LCD_printf("Picked up %s", ITEM_NAMES[CURRENT_ITEM]);
     printf("player1, picked up, %s",ITEM_NAMES[CURRENT_ITEM]);
+    message_game_event(XBEE_LISTENER_ADDRESS, DRIVER, 255, eMessageActionItemPickup, (uint8_t) CURRENT_ITEM, XBEE_APP_OPT_NO_ACK);
     sound_play(ITEMPICKUP_BEGIN, ITEMPICKUP_END);
 }
 
@@ -134,6 +136,7 @@ void useCurrentItem() {
     (*ITEM_USE_FUNCTIONS[CURRENT_ITEM])();
 
     printf("player1, used, %s",ITEM_NAMES[CURRENT_ITEM]);
+    message_game_event_all(DRIVER, 255, eMessageActionItemPickup, (uint8_t) CURRENT_ITEM, XBEE_APP_OPT_NO_ACK);
     CURRENT_ITEM = MAX_NUM_ITEMS;
 }
 
