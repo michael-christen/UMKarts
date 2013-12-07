@@ -30,6 +30,8 @@ int game_trans_host_to_wait();
 int game_trans_join_to_host();
 int game_trans_join_to_wait();
 
+int game_trans_start_game();
+
 uint8_t game_host_announce_wait_long_enough();
 void game_host_announce_set_last_announce();
 

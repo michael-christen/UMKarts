@@ -2,6 +2,9 @@
 #include "player.h"
 #include "messages.h"
 #include "mss_rtc.h"
+#include "sound.h"
+#include "player_drive.h"
+#include "sound_samples.h"
 #include <errno.h>
 
 enum GameState g_game_state;
@@ -69,6 +72,7 @@ int game_trans_join_to_in_game() {
 	if (g_game_state == GAME_JOIN) {
 		g_game_state = GAME_IN_GAME;
 		xbee_printf("GAME STATE TRANS: JOIN -> IN GAME");
+		game_trans_start_game();
 		return 0;
 	}
 	return -EINVAL;
@@ -78,6 +82,7 @@ int game_trans_host_to_in_game() {
 	if (g_game_state == GAME_HOST) {
 		g_game_state = GAME_IN_GAME;
 		xbee_printf("GAME STATE TRANS: HOST -> IN GAME");
+		game_trans_start_game();
 		return 0;
 	}
 	return -EINVAL;
@@ -106,6 +111,11 @@ int game_trans_over_to_wait() {
 		return 0;
 	}
 	return -EINVAL;
+}
+
+int game_trans_start_game() {
+	sound_play(START_BEGIN, START_END);
+	PLAYER_DRIVE_set_modification(mod_disable_motors_and_servos, 3);
 }
 
 uint8_t game_host_announce_wait_long_enough() {

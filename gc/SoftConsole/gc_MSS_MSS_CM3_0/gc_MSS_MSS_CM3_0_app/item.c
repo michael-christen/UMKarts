@@ -138,6 +138,9 @@ void useCurrentItem() {
 }
 
 void hitByItem(item i) {
+	if (PLAYER_DRIVE_is_invincible()) {
+		return;
+	}
     (*ITEM_HIT_FUNCTIONS[i])();
 }
 

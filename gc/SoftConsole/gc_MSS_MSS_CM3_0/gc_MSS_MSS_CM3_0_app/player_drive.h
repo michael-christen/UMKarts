@@ -1,13 +1,13 @@
 // mttschlt
 // Used to keep track of a player's state
 
-#ifndef __MATT_PLAYER_STATE__
+#ifndef __MATT_PLAYER_DRIVE__
 #define __MATT_PLAYER_DRIVE__
 
 // Scale is 0 - 10 for MOTOR_SPEED (its really 0 - 1)
 enum PLAYER_MOTOR_SPEED {NORMAL = 7, SLOWED = 5, BOOSTED = 10};
 // BRAKE is just free roll
-enum PLAYER_MOTOR_DIRECTION {BRAKE = 0, FORWARD = 1, REVERSE = -1};
+enum PLAYER_MOTOR_DIRECTION {FREEROLL = 0, FORWARD = 1, REVERSE = -1};
 enum PLAYER_SERVO_DIRECTION {STRAIGHT = 0, LEFT = -1, RIGHT = 1};
 
 
@@ -24,6 +24,9 @@ void PLAYER_DRIVE_apply();
 
 // Effects: adds a modification to the player and a timeout. This will overwrite any previous modifications
 void PLAYER_DRIVE_set_modification(void (*mod)(), uint32_t secs);
+
+// Effects: return true if player invincible
+uint8_t PLAYER_DRIVE_is_invincible();
 
 // Start list of modification functions
 void mod_disable_motors_and_servos();

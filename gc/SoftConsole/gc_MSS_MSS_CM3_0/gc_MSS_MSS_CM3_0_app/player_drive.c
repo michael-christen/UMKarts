@@ -26,17 +26,19 @@ struct PLAYER_DRIVE {
 	enum PLAYER_SERVO_DIRECTION servo_direction;
 	void (*mod)();
 	uint64_t mod_stop;
+	uint8_t invincible;
 };
 
 // The global that will be our driver
-static struct PLAYER_DRIVE player_driver = {NORMAL, BRAKE, STRAIGHT, 0, 0};
+static struct PLAYER_DRIVE player_driver = {NORMAL, FREEROLL, STRAIGHT, 0, 0};
 
 void PLAYER_DRIVE_reset() {
 	player_driver.speed = NORMAL;
-	player_driver.motor_direction = BRAKE;
+	player_driver.motor_direction = FREEROLL;
 	player_driver.servo_direction = STRAIGHT;
 	player_driver.mod = 0;
 	player_driver.mod_stop = 0;
+	player_driver.invincible = 0;
 }
 
 static void PLAYER_DRIVE_update_from_controller() {
@@ -44,20 +46,20 @@ static void PLAYER_DRIVE_update_from_controller() {
 
 	// Set Motor Direction
 	if (CONTROLLER->a && CONTROLLER->b){
-		player_driver.motor_direction = BRAKE;
+		player_driver.motor_direction = FREEROLL;
 	} else if (CONTROLLER->a) {
 		player_driver.motor_direction = FORWARD;
 	} else if (CONTROLLER->b) {
 		player_driver.motor_direction = REVERSE;
 	} else {
-		player_driver.motor_direction = BRAKE;
+		player_driver.motor_direction = FREEROLL;
 	}
 
 	// Set Motor Speed
 	if (CONTROLLER->a || CONTROLLER->b) {
 		player_driver.speed = NORMAL;
 	} else {
-		player_driver.speed = BRAKE;
+		player_driver.speed = FREEROLL;
 	}
 
 	// Set Servo Direction
@@ -91,6 +93,7 @@ static void PLAYER_DRIVE_remove_modification() {
 
 void PLAYER_DRIVE_update() {
 	PLAYER_DRIVE_update_from_controller();
+	player_driver.invincible = 0;
 	if (player_driver.mod == 0) return;
 
 	// Deal with modifications
@@ -111,13 +114,16 @@ void PLAYER_DRIVE_apply() {
 	// Deal with the servo
 	MOTOR_set_servo_direction((int)player_driver.servo_direction);
 
-	// Deal with the motor
 	double speed = ((int)(player_driver.speed)) / 10.0;
 	MOTOR_set_speed(speed * (int)(player_driver.motor_direction));
 }
 
+uint8_t PLAYER_DRIVE_is_invincible() {
+	return player_driver.invincible;
+}
+
 void mod_disable_motors_and_servos() {
-	player_driver.motor_direction = BRAKE;
+	player_driver.motor_direction = FREEROLL;
 	player_driver.speed = 0;
 	player_driver.servo_direction = STRAIGHT;
 }
@@ -132,9 +138,11 @@ void mod_speed_slow() {
 
 void mod_star() {
 	mod_speed_boost();
+	player_driver.invincible = 1;
 }
 
 void mod_hit_by_shell() {
 	mod_disable_motors_and_servos();
+	player_driver.invincible = 1;
 	MSS_GPIO_set_output(MSS_GPIO_3, 0);
 }
