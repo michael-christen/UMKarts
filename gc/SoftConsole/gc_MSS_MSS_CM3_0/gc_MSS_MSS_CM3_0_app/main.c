@@ -46,7 +46,7 @@ int main()
 	MSS_RTC_start();
 	/* End initializing timer */
 
-	struct xbee_packet * xbee_read_packet;
+	struct xbee_packet_received * xbee_read_packet;
 	/* Initialize the XBee interface */
 	int err = xbee_interface_init();
 	if (err != 0) {
@@ -113,7 +113,7 @@ int main()
 
 		while ((xbee_read_packet = xbee_read())) {
 			mario_xbee_interpret_packet(xbee_read_packet);
-			xbee_interface_free_packet(xbee_read_packet);
+			xbee_interface_free_packet_received(xbee_read_packet);
 		}
 
 		switch (g_game_state) {

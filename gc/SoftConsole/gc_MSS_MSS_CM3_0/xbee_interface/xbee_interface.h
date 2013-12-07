@@ -18,6 +18,11 @@
 
 #define XBEE_INTERFACE_EXPECT_RESPONSE(xp) (xp->payload[1] != 0x0)
 
+struct xbee_packet_received {
+	struct xbee_packet xp;
+	uint8_t flags;
+};
+
 /*
  * Allocate the xbee_interface
  */
@@ -27,6 +32,9 @@ uint8_t xbee_interface_next_frame_id();
 /* Allocator for XBee packets */
 struct xbee_packet * xbee_interface_create_packet();
 void xbee_interface_free_packet(const struct xbee_packet *xp);
+
+struct xbee_packet_received * xbee_interface_create_receive_packet();
+void xbee_interface_free_packet_received(const struct xbee_packet_received *xpr);
 
 /* XBee send and receive functions */
 
@@ -64,7 +72,7 @@ const struct xbee_packet *xbee_interface_tx_get_packet_by_frame_id(uint8_t frame
  *
  * @ret - Valid xbee_packet if there is one available, else NULL
  */
-struct xbee_packet * xbee_read();
+struct xbee_packet_received * xbee_read();
 
 /**
  * Get the error flags from the xbee_reader. This will tell us if we've received
