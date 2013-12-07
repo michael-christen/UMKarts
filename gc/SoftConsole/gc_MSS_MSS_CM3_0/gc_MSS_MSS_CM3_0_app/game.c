@@ -116,6 +116,7 @@ int game_trans_over_to_wait() {
 int game_trans_start_game() {
 	sound_play(START_BEGIN, START_END);
 	PLAYER_DRIVE_set_modification(mod_disable_motors_and_servos, 3);
+	return 0;
 }
 
 uint8_t game_host_announce_wait_long_enough() {

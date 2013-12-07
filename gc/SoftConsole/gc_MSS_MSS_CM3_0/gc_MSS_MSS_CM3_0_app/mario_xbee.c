@@ -180,18 +180,18 @@ static int _mario_xbee_interpret_rx_packet(struct xbee_packet_received *xpr) {
 }
 
 static int _mario_xbee_interpret_game_event(uint64_t sender, uint8_t * data, uint16_t data_len) {
-	uint8_t sender = data[0];
-	uint8_t object = data[1];
+	/*uint8_t driver_sender = data[0]; */
+	/* uint8_t object = data[1]; */
 	uint8_t action = (enum MessageActions) data[2];
-	uint8_t item   = (item) data[3];
+	uint8_t their_item   = (item) data[3];
 
 	switch (action) {
 		case eMessageActionItemPickup:
 			/* We don't care, should never receive this */
 			break;
-		case eMessageActionItemActionUse:
-			if (item == LIGHTNING) {
-				hit_lightning();
+		case eMessageActionItemUse:
+			if (their_item == LIGHTNING) {
+				hitByItem(LIGHTNING);
 			}
 			break;
 	}

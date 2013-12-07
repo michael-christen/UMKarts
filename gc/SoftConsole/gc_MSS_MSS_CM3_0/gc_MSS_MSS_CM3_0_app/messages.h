@@ -31,7 +31,7 @@
 
 enum MessageActions {
 	eMessageActionItemPickup,
-	eMessageActionItemActionUse,
+	eMessageActionItemUse,
 };
 
 

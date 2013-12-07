@@ -37,10 +37,10 @@ ITEM_DURATIONS[STAR] = 10000;*/
 
 
 double ITEM_PROB [MAX_NUM_ITEMS] = {
-  0.40, //GREEN_SHELL
-  0.30, //MUSHROOM
-  0.10,  //Lighting
-  0.20	//STAR
+  0.5, //GREEN_SHELL
+  0.3, //MUSHROOM
+  0.1,  //Lighting
+  0.1	//STAR
 };
 
 int TOTAL_WEIGHT = 1000000;
@@ -107,6 +107,7 @@ void initItemWeights() {
 item getNewItem() {
     int rChoice = rand() % TOTAL_WEIGHT;
     int i;
+
     for(i=0; i < MAX_NUM_ITEMS; ++i) {
 	if(rChoice < ITEM_WEIGHT[i]) {
 	    return (item) i;
@@ -136,7 +137,7 @@ void useCurrentItem() {
     (*ITEM_USE_FUNCTIONS[CURRENT_ITEM])();
 
     printf("player1, used, %s",ITEM_NAMES[CURRENT_ITEM]);
-    message_game_event_all(DRIVER, 255, eMessageActionItemPickup, (uint8_t) CURRENT_ITEM, XBEE_APP_OPT_NO_ACK);
+    message_game_event_all(DRIVER, 255, eMessageActionItemUse, (uint8_t) CURRENT_ITEM, XBEE_APP_OPT_NO_ACK);
     CURRENT_ITEM = MAX_NUM_ITEMS;
 }
 
@@ -177,6 +178,9 @@ void hit_green_shell() {
 void hit_mushroom() {
 }
 void hit_lightning() {
+	xbee_printf("He shot me with lightning\r\n");
+	PLAYER_DRIVE_set_modification(mod_hit_by_shell, ITEM_DURATIONS[GREEN_SHELL]);
+	sound_play(OW_SOUND_BEGIN[DRIVER], OW_SOUND_END[DRIVER]);
 }
 void hit_star() {
 }
