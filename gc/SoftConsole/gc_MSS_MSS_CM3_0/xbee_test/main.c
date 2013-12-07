@@ -18,7 +18,7 @@ int main() {
 	volatile int i;
 	uint8_t modem_status, receive_status;
 	struct xbee_packet * myPacket;
-	struct xbee_packet * receivedPacket;
+	struct xbee_packet_received * receivedPacket;
 	err = xbee_interface_init();
 	if (err != 0) {
 		//printf("Unable to successfully initialize xbee interface. Error: %d\r\n", err);
@@ -41,10 +41,10 @@ int main() {
 			//printf("Packet sent!\n\r");
 		}
 		while (!(receivedPacket = xbee_read())) ;
-		xbee_interface_free_packet(receivedPacket);
+		xbee_interface_free_packet_received(receivedPacket);
 		while ((receivedPacket = xbee_read())) {
 			//printf("Received packet: It's delivery status is: %x\r\n", receivedPacket->payload[5]);
-			xbee_interface_free_packet(receivedPacket);
+			xbee_interface_free_packet_received(receivedPacket);
 		}
 		for (i = 0; i < 1000; i++) ;
 	}

@@ -5,7 +5,7 @@
 #include "convert.h"
 #include <errno.h>
 
-int message_game_host() {
+int message_game_host_announce() {
 	/* Special implementation because need to send broadcast packet */
 	int err;
 	uint8_t *payload;
@@ -19,7 +19,7 @@ int message_game_host() {
 	xbee_txpt_set_radius(xp, 0);
 	xbee_txpt_set_destaddress(xp, XBEE_BROADCAST_ADDRESS);
 	payload = xbee_txpt_payload_start(xp);
-	payload[0] = XBEE_MESSAGE_GAME_HOST;
+	payload[0] = XBEE_MESSAGE_GAME_HOST_ANNOUNCE;
 	payload[1] = XBEE_APP_OPT_NO_ACK; /* No App Ack */
 	xbee_txpt_set_payload_size(xp, 2);
 	err = xbee_send(xp);
@@ -31,7 +31,13 @@ int message_game_host() {
 
 int message_game_join(uint64_t host_address) {
 	int err;
-	err = send_message_address(host_address, XBEE_MESSAGE_GAME_JOIN, 0x00, 0, 0);
+	err = send_message_address(host_address, XBEE_MESSAGE_GAME_JOIN, XBEE_APP_OPT_ACK, 0, 0);
+	return err;
+}
+
+int message_game_leave() {
+	int err;
+	err = send_message(XBEE_MESSAGE_LEAVE_GAME, XBEE_APP_OPT_NO_ACK, 0, 0);
 	return err;
 }
 

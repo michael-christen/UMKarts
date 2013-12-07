@@ -5,6 +5,7 @@
 	<projects>
 		<project>atomics</project>
 		<project>circle_buffer</project>
+		<project>convert</project>
 		<project>gc_MSS_MSS_CM3_0_hw_platform</project>
 		<project>simple_allocator</project>
 		<project>xbee</project>

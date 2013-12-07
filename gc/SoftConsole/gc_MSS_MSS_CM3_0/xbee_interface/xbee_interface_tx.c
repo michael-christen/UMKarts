@@ -6,7 +6,6 @@
 #include "atomics.h"
 
 #define MSS_UART_QUEUE_CAPACITY 16
-#define MAX_POSSIBLE_UINT8_INDEX 256
 
 static void _xbee_interface_tx_handler(mss_uart_instance_t * this_uart);
 static inline void _xbee_interface_tx_start(struct xbee_packet * xp);
@@ -57,6 +56,9 @@ int xbee_send(struct xbee_packet *xp) {
 	return err;
 }
 
+/**
+ * Used to deal with message ACK
+ */
 const struct xbee_packet * xbee_interface_tx_get_packet_by_frame_id(uint8_t frame_id) {
 	const struct xbee_packet *xp = _xbee_tx.xbee_packet_wait_for_ack[frame_id];
 	_xbee_tx.xbee_packet_wait_for_ack[frame_id] = NULL;
@@ -102,6 +104,9 @@ static void _xbee_interface_tx_handler(mss_uart_instance_t * this_uart) {
 	if (_xbee_tx.uart_queue_size == 0 && XBeeWriterDone(&(_xbee_tx.xw))) {
 		if (XBEE_INTERFACE_EXPECT_RESPONSE(_xbee_tx.xw.xp)) {
 			/* Need to add to the simple list */
+			if (_xbee_tx.xbee_packet_wait_for_ack[_xbee_tx.xw.xp->payload[1]]) {
+				xbee_interface_free_packet(_xbee_tx.xbee_packet_wait_for_ack[_xbee_tx.xw.xp->payload[1]]);
+			}
 			_xbee_tx.xbee_packet_wait_for_ack[_xbee_tx.xw.xp->payload[1]] = _xbee_tx.xw.xp;
 		}
 		else {

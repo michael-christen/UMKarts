@@ -3,12 +3,12 @@
 
 <cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
 <storageModule moduleId="org.eclipse.cdt.core.settings">
-<cconfiguration id="cdt.managedbuild.config.gnu.cross.cortexm3.lib.debug.39625511">
-<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.cross.cortexm3.lib.debug.39625511" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+<cconfiguration id="cdt.managedbuild.config.gnu.cross.cortexm3.lib.debug.1262127082">
+<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.cross.cortexm3.lib.debug.1262127082" moduleId="org.eclipse.cdt.core.settings" name="Debug">
 <externalSettings>
 <externalSetting>
-<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/xbee_interface"/>
-<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/xbee_interface/Debug"/>
+<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/convert"/>
+<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/convert/Debug"/>
 </externalSetting>
 </externalSettings>
 <extensions>
@@ -20,48 +20,23 @@
 </extensions>
 </storageModule>
 <storageModule moduleId="cdtBuildSystem" version="4.0.0">
-<configuration artifactExtension="a" artifactName="xbee_interface" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.staticLib" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.staticLib" cleanCommand="rm -rf" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser" id="cdt.managedbuild.config.gnu.cross.cortexm3.lib.debug.39625511" name="Debug" parent="cdt.managedbuild.config.gnu.cross.cortexm3.lib.debug">
-<folderInfo id="cdt.managedbuild.config.gnu.cross.cortexm3.lib.debug.39625511." name="/" resourcePath="">
-<toolChain id="cdt.managedbuild.toolchain.gnu.cross.cortexm3.lib.debug.1293399315" name="Microsemi Cortex-M3 Tools" superClass="cdt.managedbuild.toolchain.gnu.cross.cortexm3.lib.debug">
-<targetPlatform id="cdt.managedbuild.target.gnu.platform.cross.cortexm3.lib.debug.1444792845" name="%PlatformName.Dbg" superClass="cdt.managedbuild.target.gnu.platform.cross.cortexm3.lib.debug"/>
-<builder buildPath="${workspace_loc:/xbee_interface/Debug}" id="cdt.managedbuild.target.gnu.builder.cross.cortexm3.lib.debug.1338634142" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.cross.cortexm3.lib.debug"/>
-<tool id="cdt.managedbuild.tool.gnu.c.compiler.cross.cortexm3.lib.debug.1944814192" name="GNU C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.cross.cortexm3.lib.debug">
-<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.cross.cortexm3.lib.debug.option.optimization.level.1574918374" name="Optimization Level" superClass="gnu.c.compiler.cross.cortexm3.lib.debug.option.optimization.level" value="gnu.c.optimization.level.none" valueType="enumerated"/>
-<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.cross.cortexm3.lib.debug.option.debugging.level.1059979554" name="Debug Level" superClass="gnu.c.compiler.cross.cortexm3.lib.debug.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
-<option id="gnu.c.compiler.option.include.paths.239550499" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
-<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gc_MSS_MSS_CM3_0_hw_platform/CMSIS}&quot;"/>
-<listOptionValue builtIn="false" value="&quot;${workspace_loc:/convert}&quot;"/>
-<listOptionValue builtIn="false" value="&quot;${workspace_loc:/atomics}&quot;"/>
-<listOptionValue builtIn="false" value="&quot;${workspace_loc:/circle_buffer}&quot;"/>
-<listOptionValue builtIn="false" value="&quot;${workspace_loc:/xbee}&quot;"/>
-<listOptionValue builtIn="false" value="&quot;${workspace_loc:/simple_allocator}&quot;"/>
-<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gc_MSS_MSS_CM3_0_hw_platform/CMSIS/startup_gcc}&quot;"/>
-<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gc_MSS_MSS_CM3_0_hw_platform/drivers}&quot;"/>
-<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gc_MSS_MSS_CM3_0_hw_platform/drivers/CoreUARTapb}&quot;"/>
-<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gc_MSS_MSS_CM3_0_hw_platform/drivers/mss_ace}&quot;"/>
-<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gc_MSS_MSS_CM3_0_hw_platform/drivers/mss_gpio}&quot;"/>
-<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gc_MSS_MSS_CM3_0_hw_platform/drivers/mss_nvm}&quot;"/>
-<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gc_MSS_MSS_CM3_0_hw_platform/drivers/mss_pdma}&quot;"/>
-<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gc_MSS_MSS_CM3_0_hw_platform/drivers/mss_rtc}&quot;"/>
-<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gc_MSS_MSS_CM3_0_hw_platform/drivers/mss_spi}&quot;"/>
-<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gc_MSS_MSS_CM3_0_hw_platform/drivers/mss_timer}&quot;"/>
-<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gc_MSS_MSS_CM3_0_hw_platform/drivers/mss_uart}&quot;"/>
-<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gc_MSS_MSS_CM3_0_hw_platform/drivers_config}&quot;"/>
-<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gc_MSS_MSS_CM3_0_hw_platform/drivers_config/mss_ace}&quot;"/>
-<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gc_MSS_MSS_CM3_0_hw_platform/hal}&quot;"/>
-<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gc_MSS_MSS_CM3_0_hw_platform/hal/CortexM3}&quot;"/>
-<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gc_MSS_MSS_CM3_0_hw_platform/hal/CortexM3/GNU}&quot;"/>
-</option>
-<option id="gnu.c.compiler.option.optimization.flags.1144372088" name="Other optimization flags" superClass="gnu.c.compiler.option.optimization.flags" value="-ffunction-sections -fdata-sections" valueType="string"/>
-<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.128832223" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+<configuration artifactExtension="a" artifactName="convert" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.staticLib" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.staticLib" cleanCommand="rm -rf" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser" id="cdt.managedbuild.config.gnu.cross.cortexm3.lib.debug.1262127082" name="Debug" parent="cdt.managedbuild.config.gnu.cross.cortexm3.lib.debug">
+<folderInfo id="cdt.managedbuild.config.gnu.cross.cortexm3.lib.debug.1262127082." name="/" resourcePath="">
+<toolChain id="cdt.managedbuild.toolchain.gnu.cross.cortexm3.lib.debug.1170344367" name="Microsemi Cortex-M3 Tools" superClass="cdt.managedbuild.toolchain.gnu.cross.cortexm3.lib.debug">
+<targetPlatform id="cdt.managedbuild.target.gnu.platform.cross.cortexm3.lib.debug.92549843" name="%PlatformName.Dbg" superClass="cdt.managedbuild.target.gnu.platform.cross.cortexm3.lib.debug"/>
+<builder buildPath="${workspace_loc:/convert/Debug}" id="cdt.managedbuild.target.gnu.builder.cross.cortexm3.lib.debug.1122094784" managedBuildOn="true" name="Gnu Make Builder.Debug" superClass="cdt.managedbuild.target.gnu.builder.cross.cortexm3.lib.debug"/>
+<tool id="cdt.managedbuild.tool.gnu.c.compiler.cross.cortexm3.lib.debug.2091112581" name="GNU C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.cross.cortexm3.lib.debug">
+<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.cross.cortexm3.lib.debug.option.optimization.level.1043718656" superClass="gnu.c.compiler.cross.cortexm3.lib.debug.option.optimization.level" valueType="enumerated"/>
+<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.cross.cortexm3.lib.debug.option.debugging.level.1102781000" superClass="gnu.c.compiler.cross.cortexm3.lib.debug.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1478137697" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 </tool>
-<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.cross.cortexm3.lib.debug.741955102" name="GNU C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cross.cortexm3.lib.debug">
-<option id="gnu.cpp.compiler.cross.cortexm3.lib.debug.option.optimization.level.193050519" name="Optimization Level" superClass="gnu.cpp.compiler.cross.cortexm3.lib.debug.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
-<option id="gnu.cpp.compiler.cross.cortexm3.lib.debug.option.debugging.level.1876668549" name="Debug Level" superClass="gnu.cpp.compiler.cross.cortexm3.lib.debug.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.cross.cortexm3.lib.debug.2012638039" name="GNU C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cross.cortexm3.lib.debug">
+<option id="gnu.cpp.compiler.cross.cortexm3.lib.debug.option.optimization.level.1328545753" superClass="gnu.cpp.compiler.cross.cortexm3.lib.debug.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+<option id="gnu.cpp.compiler.cross.cortexm3.lib.debug.option.debugging.level.1488658350" superClass="gnu.cpp.compiler.cross.cortexm3.lib.debug.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
 </tool>
-<tool id="cdt.managedbuild.tool.gnu.archiver.cross.cortexm3.lib.debug.439020232" name="GNU Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.cross.cortexm3.lib.debug"/>
-<tool command="arm-none-eabi-gcc -c -mthumb -mcpu=cortex-m3" id="cdt.managedbuild.tool.gnu.assembler.cross.cortexm3.lib.debug.1230227746" name="GNU Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.cross.cortexm3.lib.debug">
-<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1060501639" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+<tool id="cdt.managedbuild.tool.gnu.archiver.cross.cortexm3.lib.debug.1707502602" name="GNU Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.cross.cortexm3.lib.debug"/>
+<tool id="cdt.managedbuild.tool.gnu.assembler.cross.cortexm3.lib.debug.1767693609" name="GNU Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.cross.cortexm3.lib.debug">
+<inputType id="cdt.managedbuild.tool.gnu.assembler.input.489963185" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 </tool>
 </toolChain>
 </folderInfo>
@@ -189,7 +164,7 @@
 <parser enabled="true"/>
 </scannerInfoProvider>
 </profile>
-<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cross.cortexm3.lib.debug.39625511;cdt.managedbuild.config.gnu.cross.cortexm3.lib.debug.39625511.">
+<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cross.cortexm3.lib.debug.1262127082;cdt.managedbuild.config.gnu.cross.cortexm3.lib.debug.1262127082.">
 <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.actel.softconsole.cortexm3.ActelCortexM3ManagedMakePerProjectProfile"/>
 <profile id="com.actel.softconsole.arm.ActelARMManagedMakePerProjectProfile">
 <buildOutputProvider>
@@ -314,16 +289,13 @@
 </scannerConfigBuildInfo>
 </storageModule>
 <storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
-<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
-<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
-<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
 </cconfiguration>
-<cconfiguration id="cdt.managedbuild.config.gnu.cross.cortexm3.lib.release.820380987">
-<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.cross.cortexm3.lib.release.820380987" moduleId="org.eclipse.cdt.core.settings" name="Release">
+<cconfiguration id="cdt.managedbuild.config.gnu.cross.cortexm3.lib.release.909184133">
+<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.cross.cortexm3.lib.release.909184133" moduleId="org.eclipse.cdt.core.settings" name="Release">
 <externalSettings>
 <externalSetting>
-<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/xbee_interface"/>
-<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/xbee_interface/Release"/>
+<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/convert"/>
+<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/convert/Release"/>
 </externalSetting>
 </externalSettings>
 <extensions>
@@ -335,19 +307,15 @@
 </extensions>
 </storageModule>
 <storageModule moduleId="cdtBuildSystem" version="4.0.0">
-<configuration artifactExtension="a" artifactName="xbee_interface" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.staticLib" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.staticLib" cleanCommand="rm -rf" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser" id="cdt.managedbuild.config.gnu.cross.cortexm3.lib.release.820380987" name="Release" parent="cdt.managedbuild.config.gnu.cross.cortexm3.lib.release">
-<folderInfo id="cdt.managedbuild.config.gnu.cross.cortexm3.lib.release.820380987." name="/" resourcePath="">
-<toolChain id="cdt.managedbuild.toolchain.gnu.cross.cortexm3.lib.release.426139753" name="Microsemi Cortex-M3 Tools" superClass="cdt.managedbuild.toolchain.gnu.cross.cortexm3.lib.release">
-<targetPlatform id="cdt.managedbuild.target.gnu.platform.cross.cortexm3.lib.release.824733054" name="%PlatformName.Dbg" superClass="cdt.managedbuild.target.gnu.platform.cross.cortexm3.lib.release"/>
-<builder buildPath="${workspace_loc:/xbee_interface/Release}" id="cdt.managedbuild.target.gnu.builder.cross.cortexm3.lib.release.941255174" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.cross.cortexm3.lib.release"/>
-<tool id="cdt.managedbuild.tool.gnu.c.compiler.cross.cortexm3.lib.release.2022331540" name="GNU C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.cross.cortexm3.lib.release">
-<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.2062299971" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
-</tool>
-<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.cross.cortexm3.lib.release.284950991" name="GNU C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cross.cortexm3.lib.release"/>
-<tool id="cdt.managedbuild.tool.gnu.archiver.cross.cortexm3.lib.release.409985780" name="GNU Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.cross.cortexm3.lib.release"/>
-<tool id="cdt.managedbuild.tool.gnu.assembler.cross.cortexm3.lib.release.1681062042" name="GNU Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.cross.cortexm3.lib.release">
-<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1282484661" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
-</tool>
+<configuration artifactExtension="a" artifactName="convert" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.staticLib" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.staticLib" cleanCommand="rm -rf" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser" id="cdt.managedbuild.config.gnu.cross.cortexm3.lib.release.909184133" name="Release" parent="cdt.managedbuild.config.gnu.cross.cortexm3.lib.release">
+<folderInfo id="cdt.managedbuild.config.gnu.cross.cortexm3.lib.release.909184133." name="/" resourcePath="">
+<toolChain id="cdt.managedbuild.toolchain.gnu.cross.cortexm3.lib.release.2147189678" name="Microsemi Cortex-M3 Tools" superClass="cdt.managedbuild.toolchain.gnu.cross.cortexm3.lib.release">
+<targetPlatform id="cdt.managedbuild.target.gnu.platform.cross.cortexm3.lib.release.218693113" name="%PlatformName.Dbg" superClass="cdt.managedbuild.target.gnu.platform.cross.cortexm3.lib.release"/>
+<builder buildPath="${workspace_loc:/convert/Release}" id="cdt.managedbuild.target.gnu.builder.cross.cortexm3.lib.release.914421854" managedBuildOn="true" name="Gnu Make Builder.Release" superClass="cdt.managedbuild.target.gnu.builder.cross.cortexm3.lib.release"/>
+<tool id="cdt.managedbuild.tool.gnu.c.compiler.cross.cortexm3.lib.release.1824104235" name="GNU C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.cross.cortexm3.lib.release"/>
+<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.cross.cortexm3.lib.release.1970170468" name="GNU C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cross.cortexm3.lib.release"/>
+<tool id="cdt.managedbuild.tool.gnu.archiver.cross.cortexm3.lib.release.555001587" name="GNU Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.cross.cortexm3.lib.release"/>
+<tool id="cdt.managedbuild.tool.gnu.assembler.cross.cortexm3.lib.release.1652937007" name="GNU Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.cross.cortexm3.lib.release"/>
 </toolChain>
 </folderInfo>
 </configuration>
@@ -474,7 +442,7 @@
 <parser enabled="true"/>
 </scannerInfoProvider>
 </profile>
-<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cross.cortexm3.lib.debug.39625511;cdt.managedbuild.config.gnu.cross.cortexm3.lib.debug.39625511.">
+<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cross.cortexm3.lib.debug.1262127082;cdt.managedbuild.config.gnu.cross.cortexm3.lib.debug.1262127082.">
 <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.actel.softconsole.cortexm3.ActelCortexM3ManagedMakePerProjectProfile"/>
 <profile id="com.actel.softconsole.arm.ActelARMManagedMakePerProjectProfile">
 <buildOutputProvider>
@@ -598,13 +566,9 @@
 </profile>
 </scannerConfigBuildInfo>
 </storageModule>
-<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
-<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
-<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
-<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
 </cconfiguration>
 </storageModule>
 <storageModule moduleId="cdtBuildSystem" version="4.0.0">
-<project id="xbee_interface.cdt.managedbuild.target.gnu.cross.cortexm3.lib.174798536" name="Static Library" projectType="cdt.managedbuild.target.gnu.cross.cortexm3.lib"/>
+<project id="convert.cdt.managedbuild.target.gnu.cross.cortexm3.lib.861115264" name="Static Library" projectType="cdt.managedbuild.target.gnu.cross.cortexm3.lib"/>
 </storageModule>
 </cproject>

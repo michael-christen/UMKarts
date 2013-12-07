@@ -42,7 +42,7 @@ int main()
 	MSS_RTC_start();
 	/* End initializing timer */
 
-	struct xbee_packet * xbee_read_packet;
+	struct xbee_packet_received * xbee_read_packet;
 	/* Initialize the XBee interface */
 	int err = xbee_interface_init();
 	if (err != 0) {
@@ -118,7 +118,7 @@ int main()
 
 		while ((xbee_read_packet = xbee_read())) {
 			mario_xbee_interpret_packet(xbee_read_packet);
-			xbee_interface_free_packet(xbee_read_packet);
+			xbee_interface_free_packet_received(xbee_read_packet);
 		}
 
 		switch (g_game_state) {
@@ -134,12 +134,13 @@ int main()
 			}
 			break;
 		case GAME_HOST:
+			/* No timeouts can occur in this state */
 			if (CONTROLLER->start) {
 				/* NEED TO RATE LIMIT */
-				if (MSS_RTC_get_seconds_count() - 1 > xbee_rapid_packet_limiter) {
-					message_game_host();
+				if (game_host_announce_wait_long_enough()) {
+					message_game_host_announce();
+					game_host_announce_set_last_announce();
 					xbee_printf("Hosting game. Registered %d players", g_player_table.size);
-					xbee_rapid_packet_limiter = MSS_RTC_get_seconds_count();
 				}
 			}
 			else {
@@ -150,6 +151,18 @@ int main()
 				}
 				else {
 					game_trans_host_to_wait();
+				}
+			}
+			break;
+		case GAME_JOIN:
+			/* Need to test our last packet from the host, in case we time out */
+			if (game_join_ack_timeout()) {
+				message_game_leave();
+				if (CONTROLLER->start) {
+					game_trans_join_to_host();
+				}
+				else {
+					game_trans_join_to_wait();
 				}
 			}
 			break;
