@@ -58,11 +58,11 @@ int main()
 	sound_init();
 
 	xbee_printf("Sound initialized");
-	//volatile int d = 0;
+
 	MOTOR_cmpVal = 20000;
 	MOTOR_period = 1000000;
 	curClock = prevClock = 0;
-	/* Setup MYTIMER */
+
 	MOTOR_init();
 	MOTOR_set_speed(0);
 	MOTOR_set_servo_direction(0);
