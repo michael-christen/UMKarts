@@ -4,15 +4,24 @@
 
 #define EXBEEALLOCMEM 0x2
 
+#define MAX_POSSIBLE_UINT8_INDEX 256
+
 #define XBEE_RX_OVERFLOW_PACKET_LOSS 0x01
 #define XBEE_RX_BAD_PACKET           0x02
 #define XBEE_RX_OUTOF_MEMORY         0x04
 
 /* Can't be higher than 32, because allocator can only hold 32 of an item */
-#define XBEE_PACKET_BUF_SIZE 32 
+#define XBEE_PACKET_BUF_SIZE 32
 #if XBEE_PACKET_BUF_SIZE > 32
 #error "XBEE_PACKET_BUF_SIZE must be less than or equal to 32 because SimpleAllocator restrictions"
 #endif
+
+#define XBEE_INTERFACE_EXPECT_RESPONSE(xp) (xp->payload[1] != 0x0)
+
+struct xbee_packet_received {
+	struct xbee_packet xp;
+	uint8_t flags;
+};
 
 /*
  * Allocate the xbee_interface
@@ -21,8 +30,11 @@ int xbee_interface_init();
 uint8_t xbee_interface_next_frame_id();
 
 /* Allocator for XBee packets */
-struct xbee_packet * xbee_interface_create_packet(); 
+struct xbee_packet * xbee_interface_create_packet();
 void xbee_interface_free_packet(const struct xbee_packet *xp);
+
+struct xbee_packet_received * xbee_interface_create_receive_packet();
+void xbee_interface_free_packet_received(const struct xbee_packet_received *xpr);
 
 /* XBee send and receive functions */
 
@@ -48,6 +60,8 @@ void xbee_interface_free_packet(const struct xbee_packet *xp);
  */
 int xbee_send(struct xbee_packet *);
 
+const struct xbee_packet *xbee_interface_tx_get_packet_by_frame_id(uint8_t frame_id);
+
 /**
  * Reads the next available packet from the buffer.
  *
@@ -58,7 +72,7 @@ int xbee_send(struct xbee_packet *);
  *
  * @ret - Valid xbee_packet if there is one available, else NULL
  */
-struct xbee_packet * xbee_read(); 
+struct xbee_packet_received * xbee_read();
 
 /**
  * Get the error flags from the xbee_reader. This will tell us if we've received
@@ -69,11 +83,6 @@ struct xbee_packet * xbee_read();
  *   xbee_read_get_errors() & XBEE_RX_BAD_PACKET - Check for bad checksum
  *   xbee_read_get_errors() & XBEE_RX_OUTOF_MEMORY - Check out of memory
  */
-uint8_t xbee_read_get_errors(); 
-
-/**
- * Clear the received error flags
- */
-void xbee_read_clear_errors(); 
+uint8_t xbee_read_get_errors(uint8_t frame_id);
 
 #endif

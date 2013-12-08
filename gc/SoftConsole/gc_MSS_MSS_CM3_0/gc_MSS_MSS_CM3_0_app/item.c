@@ -3,6 +3,7 @@
 #include "sound.h"
 #include "sound_samples.h"
 #include "drivers/mss_rtc/mss_rtc.h"
+#include "messages.h"
 
 int ITEM_WEIGHT [MAX_NUM_ITEMS];
 item CURRENT_ITEM = MAX_NUM_ITEMS;
@@ -28,7 +29,7 @@ char *ITEM_NAMES [MAX_NUM_ITEMS] = {
     "STAR"
 };
 
-uint64_t ITEM_DURATIONS [] = {0, 4, 0, 10};
+uint64_t ITEM_DURATIONS [] = {3, 4, 3, 10};
 /*ITEM_DURATIONS[GREEN_SHELL] = 0;
 ITEM_DURATIONS[MUSHROOM] = 400;
 ITEM_DURATIONS[LIGHTNING] = 0;
@@ -36,10 +37,10 @@ ITEM_DURATIONS[STAR] = 10000;*/
 
 
 double ITEM_PROB [MAX_NUM_ITEMS] = {
-  0.40, //GREEN_SHELL
-  0.30, //MUSHROOM
-  0.10,  //Lighting
-  0.20	//STAR
+  0.5, //GREEN_SHELL
+  0.3, //MUSHROOM
+  0.1,  //Lighting
+  0.1	//STAR
 };
 
 int TOTAL_WEIGHT = 1000000;
@@ -106,6 +107,7 @@ void initItemWeights() {
 item getNewItem() {
     int rChoice = rand() % TOTAL_WEIGHT;
     int i;
+
     for(i=0; i < MAX_NUM_ITEMS; ++i) {
 	if(rChoice < ITEM_WEIGHT[i]) {
 	    return (item) i;
@@ -124,6 +126,7 @@ void handleItemGrab() {
     CURRENT_ITEM = getNewItem();
     LCD_printf("Picked up %s", ITEM_NAMES[CURRENT_ITEM]);
     printf("player1, picked up, %s",ITEM_NAMES[CURRENT_ITEM]);
+    message_game_event(XBEE_LISTENER_ADDRESS, DRIVER, 255, eMessageActionItemPickup, (uint8_t) CURRENT_ITEM, XBEE_APP_OPT_NO_ACK);
     sound_play(ITEMPICKUP_BEGIN, ITEMPICKUP_END);
 }
 
@@ -134,10 +137,14 @@ void useCurrentItem() {
     (*ITEM_USE_FUNCTIONS[CURRENT_ITEM])();
 
     printf("player1, used, %s",ITEM_NAMES[CURRENT_ITEM]);
+    message_game_event_all(DRIVER, 255, eMessageActionItemUse, (uint8_t) CURRENT_ITEM, XBEE_APP_OPT_NO_ACK);
     CURRENT_ITEM = MAX_NUM_ITEMS;
 }
 
 void hitByItem(item i) {
+	if (PLAYER_DRIVE_is_invincible()) {
+		return;
+	}
     (*ITEM_HIT_FUNCTIONS[i])();
 }
 
@@ -154,8 +161,9 @@ void use_lightning() {
 	PLAYER_DRIVE_set_modification(mod_speed_slow, ITEM_DURATIONS[LIGHTNING]);
 }
 void use_star() {
+	PLAYER_DRIVE_set_invincible();
 	sound_play_repeat(STARPOWER_BEGIN, STARPOWER_END);
-	PLAYER_DRIVE_set_modification(mod_speed_boost, ITEM_DURATIONS[STAR]);
+	PLAYER_DRIVE_set_modification(mod_star, ITEM_DURATIONS[STAR]);
 }
 
 void hit_green_shell() {
@@ -164,13 +172,18 @@ void hit_green_shell() {
 	if (opId == DRIVER) {
 		return;
 	}
-	printf("He shot me, %d\r\n", opId);
-	PLAYER_DRIVE_set_modification(mod_disable_motors_and_servos, ITEM_DURATIONS[GREEN_SHELL]);
+	xbee_printf("He shot me, %d\r\n", opId);
+	PLAYER_DRIVE_set_modification(mod_hit_by_shell, ITEM_DURATIONS[GREEN_SHELL]);
+	PLAYER_DRIVE_set_invincible();
 	sound_play(OW_SOUND_BEGIN[DRIVER], OW_SOUND_END[DRIVER]);
 }
 void hit_mushroom() {
 }
 void hit_lightning() {
+	xbee_printf("He shot me with lightning\r\n");
+	PLAYER_DRIVE_set_modification(mod_hit_by_lightning, ITEM_DURATIONS[LIGHTNING]);
+	PLAYER_DRIVE_set_invincible();
+	sound_play(OW_SOUND_BEGIN[DRIVER], OW_SOUND_END[DRIVER]);
 }
 void hit_star() {
 }

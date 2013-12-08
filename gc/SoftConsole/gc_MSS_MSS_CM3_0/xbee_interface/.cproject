@@ -30,6 +30,7 @@
 <option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.cross.cortexm3.lib.debug.option.debugging.level.1059979554" name="Debug Level" superClass="gnu.c.compiler.cross.cortexm3.lib.debug.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
 <option id="gnu.c.compiler.option.include.paths.239550499" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
 <listOptionValue builtIn="false" value="&quot;${workspace_loc:/gc_MSS_MSS_CM3_0_hw_platform/CMSIS}&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${workspace_loc:/convert}&quot;"/>
 <listOptionValue builtIn="false" value="&quot;${workspace_loc:/atomics}&quot;"/>
 <listOptionValue builtIn="false" value="&quot;${workspace_loc:/circle_buffer}&quot;"/>
 <listOptionValue builtIn="false" value="&quot;${workspace_loc:/xbee}&quot;"/>

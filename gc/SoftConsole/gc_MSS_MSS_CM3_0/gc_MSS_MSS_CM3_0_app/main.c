@@ -18,6 +18,7 @@
 #include "player.h"
 #include "player_drive.h"
 #include "game.h"
+#include "oled.h"
 
 
 volatile uint32_t count;
@@ -27,13 +28,8 @@ const double CONVERSION_FACTOR = 0.00017006802;
 int lastVals[10];
 int arrCount=0;
 
-__attribute__ ((interrupt)) void GPIO1_IRQHandler( void ){
-	printf("Magnetic sensor sees something\n\r");
-	MSS_GPIO_clear_irq( MSS_GPIO_1 );
-}
-
 __attribute__ ((interrupt)) void GPIO2_IRQHandler( void ){
-	printf("Reflective sensor sees something\n\r");
+	printf("Magentic sensor sees something\n\r");
 	handleItemGrab();
 	MSS_GPIO_clear_irq( MSS_GPIO_2 );
 }
@@ -46,7 +42,7 @@ int main()
 	MSS_RTC_start();
 	/* End initializing timer */
 
-	struct xbee_packet * xbee_read_packet;
+	struct xbee_packet_received * xbee_read_packet;
 	/* Initialize the XBee interface */
 	int err = xbee_interface_init();
 	if (err != 0) {
@@ -62,17 +58,11 @@ int main()
 	sound_init();
 
 	xbee_printf("Sound initialized");
-	//volatile int d = 0;
+
 	MOTOR_cmpVal = 20000;
-	// Old values
-	// 20 mil (to high)
-	// 200 thous (to low)
-	// 2 mil (to high)
-	// 1 mil (to high)
-	// 500 thou (to low)
 	MOTOR_period = 1000000;
 	curClock = prevClock = 0;
-	/* Setup MYTIMER */
+
 	MOTOR_init();
 	MOTOR_set_speed(0);
 	MOTOR_set_servo_direction(0);
@@ -85,17 +75,18 @@ int main()
 	// Setting up GPIO interrupts for item pick ups
 	MSS_GPIO_init();
 
-	// Reflective Sensor
+	// Magnetic sensor
 	MSS_GPIO_config(MSS_GPIO_2, MSS_GPIO_INPUT_MODE | MSS_GPIO_IRQ_EDGE_NEGATIVE);
 	MSS_GPIO_enable_irq(MSS_GPIO_2);
 
-	// Magnetic sensor
-	MSS_GPIO_config(MSS_GPIO_1, MSS_GPIO_INPUT_MODE | MSS_GPIO_IRQ_EDGE_NEGATIVE);
-	MSS_GPIO_enable_irq(MSS_GPIO_1);
+	OLED_init();
+
 
 	initItemWeights();
 
 	LASER_TAG_init();
+
+	game_init();
 
 	LCD_init();
 	xbee_printf("%s %s", "Hello", "World");
@@ -107,13 +98,12 @@ int main()
 
 	while( 1 )
 	{
-		//CONTROLLER_print();
 		PLAYER_DRIVE_update();
 		PLAYER_DRIVE_apply();
 
 		while ((xbee_read_packet = xbee_read())) {
 			mario_xbee_interpret_packet(xbee_read_packet);
-			xbee_interface_free_packet(xbee_read_packet);
+			xbee_interface_free_packet_received(xbee_read_packet);
 		}
 
 		switch (g_game_state) {
@@ -129,12 +119,13 @@ int main()
 			}
 			break;
 		case GAME_HOST:
+			/* No timeouts can occur in this state */
 			if (CONTROLLER->start) {
 				/* NEED TO RATE LIMIT */
-				if (MSS_RTC_get_seconds_count() - 1 > xbee_rapid_packet_limiter) {
-					message_game_host();
+				if (game_host_announce_wait_long_enough()) {
+					message_game_host_announce();
+					game_host_announce_set_last_announce();
 					xbee_printf("Hosting game. Registered %d players", g_player_table.size);
-					xbee_rapid_packet_limiter = MSS_RTC_get_seconds_count();
 				}
 			}
 			else {
@@ -142,6 +133,21 @@ int main()
 				if (g_player_table.size > 1) {
 					message_game_start(g_player_table.players, g_player_table.size);
 					game_trans_host_to_in_game();
+				}
+				else {
+					game_trans_host_to_wait();
+				}
+			}
+			break;
+		case GAME_JOIN:
+			/* Need to test our last packet from the host, in case we time out */
+			if (game_join_ack_timeout()) {
+				message_game_leave();
+				if (CONTROLLER->start) {
+					game_trans_join_to_host();
+				}
+				else {
+					game_trans_join_to_wait();
 				}
 			}
 			break;

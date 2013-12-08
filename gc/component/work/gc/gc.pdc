@@ -3,7 +3,7 @@
 
 # Version: v11.0 11.0.0.23
 # Family: SmartFusion , Die: A2F200M3F , Package: 484 FBGA
-# Date generated: Thu Dec 05 16:02:16 2013 
+# Date generated: Sat Dec 07 14:33:26 2013 
 
 
 # 
@@ -15,6 +15,8 @@ define_group -name UART_0_PADs
 define_group -name UART_1_PADs
 
 define_group -name SPI_0_PADs
+
+define_group -name I2C_0_PADs
 
 
 # 
@@ -38,79 +40,36 @@ define_group -name SPI_0_PADs
 # Dedicated Peripheral I/O Settings
 # 
 
+# User Group I2C_0_PADs
 
-# 
-# Unlocked I/O settings
-# The I/Os in this section are unplaced or placed but are not locked
-# the other listed attributes have been applied
-# 
-
-set_io GPIO_1_IN          \
-    -iostd LVTTL          \
-    -RES_PULL None        \
-    -SCHMITT_TRIGGER Off  \
-    -DIRECTION INPUT
+set_io I2C_0_SCL            \
+    -GROUP_NAME I2C_0_PADs  \
+    -DIRECTION INOUT
 
 
-set_io GPIO_2_IN          \
-    -iostd LVTTL          \
-    -RES_PULL None        \
-    -SCHMITT_TRIGGER Off  \
-    -DIRECTION INPUT
-
-
-set_io GPIO_4_IN          \
-    -iostd LVTTL          \
-    -RES_PULL None        \
-    -SCHMITT_TRIGGER Off  \
-    -DIRECTION INPUT
-
-
-set_io MSS_RESET_N        \
-    -iostd LVTTL          \
-    -RES_PULL None        \
-    -SCHMITT_TRIGGER Off  \
-    -DIRECTION INPUT
+set_io I2C_0_SDA            \
+    -GROUP_NAME I2C_0_PADs  \
+    -DIRECTION INOUT
 
 
 # User Group SPI_0_PADs
 
 set_io SPI_0_CLK            \
-    -iostd LVTTL            \
-    -OUT_LOAD 35            \
-    -RES_PULL None          \
-    -SCHMITT_TRIGGER Off    \
-    -SKEW Off               \
-    -SLEW High              \
     -GROUP_NAME SPI_0_PADs  \
     -DIRECTION INOUT
 
 
 set_io SPI_0_DI             \
-    -iostd LVTTL            \
-    -RES_PULL None          \
-    -SCHMITT_TRIGGER Off    \
     -GROUP_NAME SPI_0_PADs  \
     -DIRECTION INPUT
 
 
 set_io SPI_0_DO             \
-    -iostd LVTTL            \
-    -OUT_LOAD 35            \
-    -RES_PULL None          \
-    -SKEW Off               \
-    -SLEW High              \
     -GROUP_NAME SPI_0_PADs  \
     -DIRECTION OUTPUT
 
 
 set_io SPI_0_SS             \
-    -iostd LVTTL            \
-    -OUT_LOAD 35            \
-    -RES_PULL None          \
-    -SCHMITT_TRIGGER Off    \
-    -SKEW Off               \
-    -SLEW High              \
     -GROUP_NAME SPI_0_PADs  \
     -DIRECTION INOUT
 
@@ -118,19 +77,11 @@ set_io SPI_0_SS             \
 # User Group UART_0_PADs
 
 set_io UART_0_RXD            \
-    -iostd LVTTL             \
-    -RES_PULL None           \
-    -SCHMITT_TRIGGER Off     \
     -GROUP_NAME UART_0_PADs  \
     -DIRECTION INPUT
 
 
 set_io UART_0_TXD            \
-    -iostd LVTTL             \
-    -OUT_LOAD 35             \
-    -RES_PULL None           \
-    -SKEW Off                \
-    -SLEW High               \
     -GROUP_NAME UART_0_PADs  \
     -DIRECTION OUTPUT
 
@@ -138,22 +89,21 @@ set_io UART_0_TXD            \
 # User Group UART_1_PADs
 
 set_io UART_1_RXD            \
-    -iostd LVTTL             \
-    -RES_PULL None           \
-    -SCHMITT_TRIGGER Off     \
     -GROUP_NAME UART_1_PADs  \
     -DIRECTION INPUT
 
 
 set_io UART_1_TXD            \
-    -iostd LVTTL             \
-    -OUT_LOAD 35             \
-    -RES_PULL None           \
-    -SKEW Off                \
-    -SLEW High               \
     -GROUP_NAME UART_1_PADs  \
     -DIRECTION OUTPUT
 
+
+
+# 
+# Unlocked I/O settings
+# The I/Os in this section are unplaced or placed but are not locked
+# the other listed attributes have been applied
+# 
 
 
 #
@@ -165,6 +115,28 @@ set_io UART_1_TXD            \
 # Old IO constraints, commented out for reference
 #
 
+# set_io GPIO_1_IN -iostd LVTTL -RES_PULL None -SCHMITT_TRIGGER Off -DIRECTION INPUT 
+# set_io GPIO_2_IN -iostd LVTTL -RES_PULL None -SCHMITT_TRIGGER Off -DIRECTION INPUT 
+# set_io GPIO_4_IN -iostd LVTTL -RES_PULL None -SCHMITT_TRIGGER Off -DIRECTION INPUT 
+# set_io MSS_RESET_N -iostd LVTTL -RES_PULL None -SCHMITT_TRIGGER Off -DIRECTION INPUT 
+# set_io SPI_0_CLK -iostd LVTTL -OUT_LOAD 35 -RES_PULL None -SCHMITT_TRIGGER Off -SKEW Off -SLEW High -GROUP_NAME SPI_0_PADs -DIRECTION INOUT 
+# set_io SPI_0_DI -iostd LVTTL -RES_PULL None -SCHMITT_TRIGGER Off -GROUP_NAME SPI_0_PADs -DIRECTION INPUT 
+# set_io SPI_0_DO -iostd LVTTL -OUT_LOAD 35 -RES_PULL None -SKEW Off -SLEW High -GROUP_NAME SPI_0_PADs -DIRECTION OUTPUT 
+# set_io SPI_0_SS -iostd LVTTL -OUT_LOAD 35 -RES_PULL None -SCHMITT_TRIGGER Off -SKEW Off -SLEW High -GROUP_NAME SPI_0_PADs -DIRECTION INOUT 
+# set_io UART_0_RXD -iostd LVTTL -RES_PULL None -SCHMITT_TRIGGER Off -GROUP_NAME UART_0_PADs -DIRECTION INPUT 
+# set_io UART_0_TXD -iostd LVTTL -OUT_LOAD 35 -RES_PULL None -SKEW Off -SLEW High -GROUP_NAME UART_0_PADs -DIRECTION OUTPUT 
+# set_io UART_1_RXD -iostd LVTTL -RES_PULL None -SCHMITT_TRIGGER Off -GROUP_NAME UART_1_PADs -DIRECTION INPUT 
+# set_io UART_1_TXD -iostd LVTTL -OUT_LOAD 35 -RES_PULL None -SKEW Off -SLEW High -GROUP_NAME UART_1_PADs -DIRECTION OUTPUT 
+# set_io SPI_0_CLK -GROUP_NAME SPI_0_PADs -DIRECTION INOUT 
+# set_io SPI_0_DI -GROUP_NAME SPI_0_PADs -DIRECTION INPUT 
+# set_io SPI_0_DO -GROUP_NAME SPI_0_PADs -DIRECTION OUTPUT 
+# set_io SPI_0_SS -GROUP_NAME SPI_0_PADs -DIRECTION INOUT 
+# set_io UART_0_RXD -GROUP_NAME UART_0_PADs -DIRECTION INPUT 
+# set_io UART_0_TXD -GROUP_NAME UART_0_PADs -DIRECTION OUTPUT 
+# set_io UART_1_RXD -GROUP_NAME UART_1_PADs -DIRECTION INPUT 
+# set_io UART_1_TXD -GROUP_NAME UART_1_PADs -DIRECTION OUTPUT 
+# set_io I2C_0_SCL -GROUP_NAME I2C_0_PADs -DIRECTION INOUT 
+# set_io I2C_0_SDA -GROUP_NAME I2C_0_PADs -DIRECTION INOUT 
 # set_io SPI_0_CLK -GROUP_NAME SPI_0_PADs -DIRECTION INOUT 
 # set_io SPI_0_DI -GROUP_NAME SPI_0_PADs -DIRECTION INPUT 
 # set_io SPI_0_DO -GROUP_NAME SPI_0_PADs -DIRECTION OUTPUT 

@@ -60,6 +60,6 @@ void IR_LED_recv_enable() {
 
 
 __attribute__ ((interrupt)) void GPIO0_IRQHandler( void ) {
-	ITEM_HIT_FUNCTIONS[GREEN_SHELL]();
+	hitByItem(GREEN_SHELL);
 	MSS_GPIO_clear_irq(IR_GPIO_PIN);
 }

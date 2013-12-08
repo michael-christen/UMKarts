@@ -5,6 +5,7 @@
 	<projects>
 		<project>atomics</project>
 		<project>circle_buffer</project>
+		<project>convert</project>
 		<project>simple_allocator</project>
 	</projects>
 	<buildSpec>

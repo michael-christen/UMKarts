@@ -4,13 +4,13 @@
 
 
 int xbee_printf(const char * format_string, ...) {
-	uint64_t dest_address = 0x0013A20040A711E0ull;
+	uint64_t dest_address = XBEE_LISTENER_ADDRESS;
 	uint8_t buf[XBEE_MESSAGE_MAX_SIZE + 1]; /* Plus one for null */
 	int err;
 	int size;
 	va_list varargs;
 	va_start(varargs, format_string);
-	err = vsnprintf(buf, XBEE_MESSAGE_MAX_SIZE, format_string, varargs); /* -1 for null terminator */
+	err = vsnprintf((char *) buf, XBEE_MESSAGE_MAX_SIZE, format_string, varargs); /* -1 for null terminator */
 	if (err < 0) {
 		goto xbee_printf_exit;
 	}

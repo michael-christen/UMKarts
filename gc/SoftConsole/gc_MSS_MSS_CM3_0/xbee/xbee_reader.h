@@ -27,5 +27,7 @@ void XBeeReaderInit(struct xbee_reader * xr, struct xbee_packet *xp);
 uint8_t *XBeeReaderRead(struct xbee_reader * xr, uint8_t * start, uint8_t * end);
 uint8_t XBeeReaderDone(struct xbee_reader * xr);
 uint8_t XBeeReaderGood(struct xbee_reader * xr);
+uint8_t XBeeReaderGoodOrBadCheckSum(struct xbee_reader * xr);
+uint8_t XBeeReaderCheckCheckSum(struct xbee_reader *xr);
 
 #endif

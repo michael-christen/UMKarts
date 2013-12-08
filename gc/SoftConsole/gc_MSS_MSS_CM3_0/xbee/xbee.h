@@ -19,6 +19,7 @@
 #define XBEE_API_AT_COMMAND ((uint8_t) 0x08)
 #define XBEE_API_AT_QUEUE_COMMAND ((uint8_t) 0x09)
 #define XBEE_API_TX_REQUEST ((uint8_t) 0x10)
+#define XBEE_API_EXPLICIT_TX ((uint8_t) 0x11)
 
 #define XBEE_API_AT_COMMAND_RESPONSE ((uint8_t) 0x88)
 
@@ -47,7 +48,7 @@ struct xbee_packet {
 
 uint8_t xbee_packet_api_id(struct xbee_packet * xp);
 
-enum XBeeModemStatus xbee_packet_modem_status(struct xbee_packet * xp); 
+enum XBeeModemStatus xbee_packet_modem_status(struct xbee_packet * xp);
 
 /* TX Commands */
 /**

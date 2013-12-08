@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Thu Dec 05 16:02:18 2013
+// Created by SmartDesign Sat Dec 07 14:33:28 2013
 // Version: v11.0 11.0.0.23
 //////////////////////////////////////////////////////////////////////
 
@@ -8,7 +8,6 @@
 // gc
 module gc(
     // Inputs
-    GPIO_1_IN,
     GPIO_2_IN,
     GPIO_4_IN,
     LED_RECV_IN,
@@ -18,6 +17,7 @@ module gc(
     UART_1_RXD,
     VAREF0,
     // Outputs
+    GPIO_3_OUT,
     LED_OUT,
     LMOTOR,
     LSERVO,
@@ -30,6 +30,8 @@ module gc(
     UART_0_TXD,
     UART_1_TXD,
     // Inouts
+    I2C_0_SCL,
+    I2C_0_SDA,
     SPI_0_CLK,
     SPI_0_SS,
     controller_data
@@ -38,7 +40,6 @@ module gc(
 //--------------------------------------------------------------------
 // Input
 //--------------------------------------------------------------------
-input  GPIO_1_IN;
 input  GPIO_2_IN;
 input  GPIO_4_IN;
 input  LED_RECV_IN;
@@ -50,6 +51,7 @@ input  VAREF0;
 //--------------------------------------------------------------------
 // Output
 //--------------------------------------------------------------------
+output GPIO_3_OUT;
 output LED_OUT;
 output LMOTOR;
 output LSERVO;
@@ -64,6 +66,8 @@ output UART_1_TXD;
 //--------------------------------------------------------------------
 // Inout
 //--------------------------------------------------------------------
+inout  I2C_0_SCL;
+inout  I2C_0_SDA;
 inout  SPI_0_CLK;
 inout  SPI_0_SS;
 inout  controller_data;
@@ -103,9 +107,11 @@ wire   [31:0] gc_MSS_0_MSS_MASTER_APB_PWDATA;
 wire          gc_MSS_0_MSS_MASTER_APB_PWRITE;
 wire   [63:0] gc_receive_0_response;
 wire          gc_response_apb_0_start_init;
-wire          GPIO_1_IN;
 wire          GPIO_2_IN;
+wire          GPIO_3_OUT_net_0;
 wire          GPIO_4_IN;
+wire          I2C_0_SCL;
+wire          I2C_0_SDA;
 wire          IR_LED_0_DIVCLK;
 wire          IR_LED_0_IR_READY;
 wire          IR_LED_0_LEDOUT;
@@ -151,6 +157,7 @@ wire          SPI_0_DO_1_net_0;
 wire          SPEAKER_DAC_net_1;
 wire          LED_OUT_0_net_0;
 wire          controller_data_0_net_0;
+wire          GPIO_3_OUT_net_1;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
@@ -178,17 +185,17 @@ wire          EMPTY_OUT_PRE_INV0_0;
 // Bus Interface Nets Declarations - Unequal Pin Widths
 //--------------------------------------------------------------------
 wire   [31:0] CoreAPB3_0_APBmslave0_PADDR;
-wire   [4:0]  CoreAPB3_0_APBmslave0_PADDR_1_4to0;
-wire   [4:0]  CoreAPB3_0_APBmslave0_PADDR_1;
 wire   [7:0]  CoreAPB3_0_APBmslave0_PADDR_0_7to0;
 wire   [7:0]  CoreAPB3_0_APBmslave0_PADDR_0;
+wire   [4:0]  CoreAPB3_0_APBmslave0_PADDR_1_4to0;
+wire   [4:0]  CoreAPB3_0_APBmslave0_PADDR_1;
 wire   [31:0] CoreAPB3_0_APBmslave0_PWDATA;
 wire   [7:0]  CoreAPB3_0_APBmslave0_PWDATA_0_7to0;
 wire   [7:0]  CoreAPB3_0_APBmslave0_PWDATA_0;
+wire   [7:0]  CoreAPB3_0_APBmslave2_PRDATA;
 wire   [31:8] CoreAPB3_0_APBmslave2_PRDATA_0_31to8;
 wire   [7:0]  CoreAPB3_0_APBmslave2_PRDATA_0_7to0;
 wire   [31:0] CoreAPB3_0_APBmslave2_PRDATA_0;
-wire   [7:0]  CoreAPB3_0_APBmslave2_PRDATA;
 wire   [31:20]gc_MSS_0_MSS_MASTER_APB_PADDR_0_31to20;
 wire   [19:0] gc_MSS_0_MSS_MASTER_APB_PADDR_0_19to0;
 wire   [31:0] gc_MSS_0_MSS_MASTER_APB_PADDR_0;
@@ -243,13 +250,15 @@ assign LED_OUT_0_net_0         = LED_OUT_0;
 assign LED_OUT                 = LED_OUT_0_net_0;
 assign controller_data_0_net_0 = controller_data_0;
 assign controller_data         = controller_data_0_net_0;
+assign GPIO_3_OUT_net_1        = GPIO_3_OUT_net_0;
+assign GPIO_3_OUT              = GPIO_3_OUT_net_1;
 //--------------------------------------------------------------------
 // Bus Interface Nets Assignments - Unequal Pin Widths
 //--------------------------------------------------------------------
-assign CoreAPB3_0_APBmslave0_PADDR_1_4to0 = CoreAPB3_0_APBmslave0_PADDR[4:0];
-assign CoreAPB3_0_APBmslave0_PADDR_1 = { CoreAPB3_0_APBmslave0_PADDR_1_4to0 };
 assign CoreAPB3_0_APBmslave0_PADDR_0_7to0 = CoreAPB3_0_APBmslave0_PADDR[7:0];
 assign CoreAPB3_0_APBmslave0_PADDR_0 = { CoreAPB3_0_APBmslave0_PADDR_0_7to0 };
+assign CoreAPB3_0_APBmslave0_PADDR_1_4to0 = CoreAPB3_0_APBmslave0_PADDR[4:0];
+assign CoreAPB3_0_APBmslave0_PADDR_1 = { CoreAPB3_0_APBmslave0_PADDR_1_4to0 };
 
 assign CoreAPB3_0_APBmslave0_PWDATA_0_7to0 = CoreAPB3_0_APBmslave0_PWDATA[7:0];
 assign CoreAPB3_0_APBmslave0_PWDATA_0 = { CoreAPB3_0_APBmslave0_PWDATA_0_7to0 };
@@ -458,7 +467,6 @@ gc_MSS gc_MSS_0(
         .F2M_GPI_0   ( LED_RECV_0_INTERRUPT ),
         .GPIO_4_IN   ( GPIO_4_IN ),
         .GPIO_2_IN   ( GPIO_2_IN ),
-        .GPIO_1_IN   ( GPIO_1_IN ),
         .MSSPRDATA   ( gc_MSS_0_MSS_MASTER_APB_PRDATA ),
         // Outputs
         .FAB_CLK     ( gc_MSS_0_FAB_CLK ),
@@ -472,9 +480,12 @@ gc_MSS gc_MSS_0(
         .SPEAKER_DAC ( SPEAKER_DAC_net_0 ),
         .MSSPADDR    ( gc_MSS_0_MSS_MASTER_APB_PADDR ),
         .MSSPWDATA   ( gc_MSS_0_MSS_MASTER_APB_PWDATA ),
+        .GPIO_3_OUT  ( GPIO_3_OUT_net_0 ),
         // Inouts
         .SPI_0_CLK   ( SPI_0_CLK ),
-        .SPI_0_SS    ( SPI_0_SS ) 
+        .SPI_0_SS    ( SPI_0_SS ),
+        .I2C_0_SCL   ( I2C_0_SCL ),
+        .I2C_0_SDA   ( I2C_0_SDA ) 
         );
 
 //--------gc_receive

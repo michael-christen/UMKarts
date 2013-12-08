@@ -111,3 +111,11 @@ uint8_t XBeeReaderDone(struct xbee_reader * xr) {
 uint8_t XBeeReaderGood(struct xbee_reader * xr) {
 	return xr->state == XBEE_READ_DONE_GOOD;
 }
+
+uint8_t XBeeReaderGoodOrBadCheckSum(struct xbee_reader * xr) {
+	return xr->state == XBEE_READ_DONE_BAD_CHECKSUM || XBeeReaderGood(xr);
+}
+
+uint8_t XBeeReaderCheckCheckSum(struct xbee_reader *xr) {
+	return XBeeReaderGood(xr);
+}

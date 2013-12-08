@@ -32,6 +32,6 @@ uint8_t xbee_interface_next_frame_id() {
 		ret_val = (*((volatile uint8_t *) &_XBeeFrameId));
 		new_val = ret_val + 1;
 		if (new_val == 0) new_val = 1;
-	}while (atomic_cmpxchg_1(&_XBeeFrameId, ret_val, new_val) == 0);
+	}while (atomic_cmpxchg_1(&_XBeeFrameId, new_val, ret_val) != 0);
 	return ret_val;
 }

@@ -52,6 +52,9 @@ int send_message_address(uint64_t address, uint8_t message_type, uint8_t app_fla
 
 	xbee_txpt_init(xp);
 	frameId = xbee_interface_next_frame_id();
+	if (address == XBEE_LISTENER_ADDRESS) {
+		frameId = 0;
+	}
 
 	xbee_txpt_set_frame_id(xp, frameId);
 	xbee_txpt_set_options(xp, 0);

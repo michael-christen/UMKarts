@@ -216,11 +216,13 @@ Selecting top level module gc
 
 @N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":23:7:23:15|Synthesizing module INBUF_MSS
 
+@N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":37:7:37:16|Synthesizing module OUTBUF_MSS
+
+@N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":85:7:85:21|Synthesizing module BIBUF_OPEND_MSS
+
 @N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":67:7:67:15|Synthesizing module BIBUF_MSS
 
 @N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":51:7:51:17|Synthesizing module TRIBUFF_MSS
-
-@N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":37:7:37:16|Synthesizing module OUTBUF_MSS
 
 @N: CG364 :"C:\Users\mttschlt\eecs373\UMKarts\gc\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":145:7:145:12|Synthesizing module MSSINT
 
