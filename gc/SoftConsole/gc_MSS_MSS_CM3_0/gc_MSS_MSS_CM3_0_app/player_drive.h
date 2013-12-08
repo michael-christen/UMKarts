@@ -28,6 +28,9 @@ void PLAYER_DRIVE_set_modification(void (*mod)(), uint32_t secs);
 // Effects: return true if player invincible
 uint8_t PLAYER_DRIVE_is_invincible();
 
+// Effects: sets the player to be invincible
+void PLAYER_DRIVE_set_invincible();
+
 // Start list of modification functions
 void mod_disable_motors_and_servos();
 void mod_speed_boost();

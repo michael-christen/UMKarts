@@ -171,9 +171,10 @@ void hit_green_shell() {
 	if (opId == DRIVER) {
 		return;
 	}
-	printf("He shot me, %d\r\n", opId);
+	xbee_printf("He shot me, %d\r\n", opId);
 	PLAYER_DRIVE_set_modification(mod_hit_by_shell, ITEM_DURATIONS[GREEN_SHELL]);
 	sound_play(OW_SOUND_BEGIN[DRIVER], OW_SOUND_END[DRIVER]);
+	PLAYER_DRIVE_set_invincible();
 }
 void hit_mushroom() {
 }

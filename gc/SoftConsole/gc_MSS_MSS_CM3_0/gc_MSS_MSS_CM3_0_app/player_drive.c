@@ -122,6 +122,10 @@ uint8_t PLAYER_DRIVE_is_invincible() {
 	return player_driver.invincible;
 }
 
+void PLAYER_DRIVE_set_invincible() {
+	player_driver.invincible = 1;
+}
+
 void mod_disable_motors_and_servos() {
 	player_driver.motor_direction = FREEROLL;
 	player_driver.speed = 0;
