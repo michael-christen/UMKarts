@@ -2,6 +2,7 @@
 #include "log.h"
 #include "xbee_packet.h"
 #include "convert.h"
+#include "zeromq.h"
 #include <stdlib.h>
 
 static int _xbee_printf(uint64_t address, const uint8_t * data, uint16_t len) {
@@ -53,11 +54,16 @@ int xbee_get_next_packet(xbee_serial_t *serial, struct xbee_packet * xp, unsigne
 }
 
 int xbee_received_packet(struct xbee_packet *xp) {
+	int err;
 	uint8_t * data;
 	uint16_t data_len;
 	data_len = xbee_rxpt_get_payload_size(xp);
 	if (data_len > 0) {
 		data = xbee_rxpt_payload_start(xp);
+		err = listener_zero_mq_send(data, data_len);
+		if (err < 0) {
+			fprintf(stderr, "Error when sending packet to TCP port 6666. Error %s\n", strerror(errno));
+		}
 		switch (*data) {
 			case 0x00:
 				_xbee_printf(bytes_to_uint64_t(xp->payload + 1), data + 3, data_len - 3);
