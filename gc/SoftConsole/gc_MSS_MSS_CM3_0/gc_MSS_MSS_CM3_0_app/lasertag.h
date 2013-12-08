@@ -16,5 +16,12 @@ bool LASER_TAG_shoot();
  */
 uint8_t LASER_TAG_hit();
 
+/*
+ * Sets the LED in the IR Reciever on or off
+ *
+ * @param int on 1 = on
+ *               0 = off
+ *               All other input is invalid
+ */
 void LASER_TAG_set_hit_LED(uint8_t on);
 #endif
