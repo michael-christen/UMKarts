@@ -5,6 +5,7 @@
 #include "log.h"
 #include "xbee.h"
 #include "xbee_packet.h"
+#include "zeromq.h"
 
 struct opts {
   const char *log_file_name;
@@ -22,13 +23,18 @@ int main(int argc, char **argv) {
   xbee_serial_t myxbee;
   struct xbee_packet xp;
   int err;
-  
+
   if ((err = parse_args(argc, argv, &myOpts)) < 0) {
     print_usage(argv[0]);
     return -1;
   }
 
   log_file_open(myOpts.log_file_name);
+  err = listener_zero_mq_init("tcp://*:6666");
+  if (err != 0) {
+	  fprintf(stderr, "Unable to init zeromq because %s\n", strerror(errno));
+	  return -2;
+  }
 
   if ((err = xbee_ser_open(&myxbee, myOpts.xbee_file_name)) < 0) {
     Log(EERROR, "Unable to open XBee on path %s because %s", myOpts.xbee_file_name, strerror(errno));
