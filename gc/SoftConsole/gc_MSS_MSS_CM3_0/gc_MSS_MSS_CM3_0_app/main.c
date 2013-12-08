@@ -79,11 +79,6 @@ int main()
 	MSS_GPIO_config(MSS_GPIO_2, MSS_GPIO_INPUT_MODE | MSS_GPIO_IRQ_EDGE_NEGATIVE);
 	MSS_GPIO_enable_irq(MSS_GPIO_2);
 
-	// Hit LED (not working, but won't work)
-	MSS_GPIO_config(MSS_GPIO_3, MSS_GPIO_OUTPUT_MODE);
-	// This LED is active LOW. So turn it off here
-	MSS_GPIO_set_output(MSS_GPIO_3, 1);
-
 	OLED_init();
 
 
@@ -103,7 +98,6 @@ int main()
 
 	while( 1 )
 	{
-		//CONTROLLER_print();
 		PLAYER_DRIVE_update();
 		PLAYER_DRIVE_apply();
 

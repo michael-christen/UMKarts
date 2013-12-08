@@ -84,8 +84,8 @@ static void PLAYER_DRIVE_update_from_controller() {
 static void PLAYER_DRIVE_remove_modification() {
 	if (player_driver.mod == mod_star) {
 		sound_stop();
-	} else if (player_driver.mod == mod_hit_by_shell) {
-		MSS_GPIO_set_output(MSS_GPIO_3, 1);
+	} else if (player_driver.mod == mod_hit_by_shell || player_driver.mod == mod_hit_by_lightning) {
+		LASER_TAG_set_hit_LED(0);
 	}
 	player_driver.mod = 0;
 	player_driver.mod_stop = 0;
@@ -148,10 +148,10 @@ void mod_star() {
 void mod_hit_by_shell() {
 	mod_disable_motors_and_servos();
 	player_driver.invincible = 1;
-	MSS_GPIO_set_output(MSS_GPIO_3, 0);
+	LASER_TAG_set_hit_LED(1);
 }
 void mod_hit_by_lightning() {
 	mod_speed_slow();
 	player_driver.invincible = 1;
-	MSS_GPIO_set_output(MSS_GPIO_3, 0);
+	LASER_TAG_set_hit_LED(1);
 }
