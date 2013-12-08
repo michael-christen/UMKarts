@@ -161,6 +161,7 @@ void use_lightning() {
 	PLAYER_DRIVE_set_modification(mod_speed_slow, ITEM_DURATIONS[LIGHTNING]);
 }
 void use_star() {
+	PLAYER_DRIVE_set_invincible();
 	sound_play_repeat(STARPOWER_BEGIN, STARPOWER_END);
 	PLAYER_DRIVE_set_modification(mod_star, ITEM_DURATIONS[STAR]);
 }
@@ -173,14 +174,15 @@ void hit_green_shell() {
 	}
 	xbee_printf("He shot me, %d\r\n", opId);
 	PLAYER_DRIVE_set_modification(mod_hit_by_shell, ITEM_DURATIONS[GREEN_SHELL]);
-	sound_play(OW_SOUND_BEGIN[DRIVER], OW_SOUND_END[DRIVER]);
 	PLAYER_DRIVE_set_invincible();
+	sound_play(OW_SOUND_BEGIN[DRIVER], OW_SOUND_END[DRIVER]);
 }
 void hit_mushroom() {
 }
 void hit_lightning() {
 	xbee_printf("He shot me with lightning\r\n");
 	PLAYER_DRIVE_set_modification(mod_hit_by_lightning, ITEM_DURATIONS[LIGHTNING]);
+	PLAYER_DRIVE_set_invincible();
 	sound_play(OW_SOUND_BEGIN[DRIVER], OW_SOUND_END[DRIVER]);
 }
 void hit_star() {
