@@ -146,3 +146,7 @@ void mod_hit_by_shell() {
 	player_driver.invincible = 1;
 	MSS_GPIO_set_output(MSS_GPIO_3, 0);
 }
+void mod_hit_by_lightning() {
+	mod_speed_slow();
+	MSS_GPIO_set_output(MSS_GPIO_3, 0);
+}

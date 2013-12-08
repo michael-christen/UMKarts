@@ -574,7 +574,7 @@ SIZE="1939"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_fp\projectData\gc.pdb,pdb"
 STATE="utd"
-TIME="1386445199"
+TIME="1386450905"
 SIZE="112128"
 ENDFILE
 VALUE "<project>\designer\impl1\gc_placeroute_log.rpt,log"
@@ -1085,7 +1085,12 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 StartPage;StartPage
-ACTIVEVIEW;StartPage
+HDL;hdl\motorWrapper.v
+HDL;hdl\motor.v
+SmartDesign;gc
+SmartDesign;gc_MSS
+Reports;Reports
+ACTIVEVIEW;hdl\motor.v
 ENDLIST
 LIST ModuleSubBlockList
 LIST "APB_IR::work","hdl\APB_IR.v","FALSE","FALSE"
