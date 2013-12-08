@@ -33,6 +33,8 @@ void hit_mushroom();
 void hit_lightning();
 void hit_star();
 
+void subtractLife();
+
 extern char *ITEM_NAMES [MAX_NUM_ITEMS];
 
 // Time (in ms) to have each item
@@ -49,5 +51,8 @@ extern void (*ITEM_USE_FUNCTIONS[MAX_NUM_ITEMS])(void);
 extern void (*ITEM_HIT_FUNCTIONS[MAX_NUM_ITEMS])(void);
 
 extern item CURRENT_ITEM;
+
+extern int SUCCESS_SOUND_BEGIN[];
+extern int SUCCESS_SOUND_END[];
 
 #endif

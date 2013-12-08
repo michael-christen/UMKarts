@@ -19,6 +19,7 @@
 // Millisecs to rtc conversion factor
 static const int MS_TO_COUNT = 33;
 
+int player_lives = 0;
 
 struct PLAYER_DRIVE {
 	enum PLAYER_MOTOR_SPEED speed;
