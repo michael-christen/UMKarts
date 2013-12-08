@@ -32,6 +32,8 @@
 enum MessageActions {
 	eMessageActionItemPickup,
 	eMessageActionItemUse,
+	eMessageActionItemHitBy,
+	eMessageActionLoseLife
 };
 
 

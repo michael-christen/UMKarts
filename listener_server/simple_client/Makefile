@@ -2,10 +2,10 @@ CC = gcc
 CFLAGS = -Wall -g
 LIBS = -lzmq
 
-SRCS = log.c serial.c xbee_packet.c main.c xbee.c xbee_reader.c xbee_tx_rx.c convert.c zeromq.c
+SRCS = client.c
 OBJS = $(SRCS:.c=.o)
 
-MAIN = mario_listener
+MAIN = client
 
 .PHONY = clean
 

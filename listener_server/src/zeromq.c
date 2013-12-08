@@ -8,14 +8,14 @@ static struct {
 	int rc;
 } _zero_mq;
 
-static void _listener_zero_mq_destroy(); 
+static void _listener_zero_mq_destroy();
 
 int listener_zero_mq_init(const char * host) {
 	atexit(_listener_zero_mq_destroy);
 	_zero_mq.context = zmq_ctx_new();
 	_zero_mq.socket = zmq_socket(_zero_mq.context, ZMQ_PUB);
 	_zero_mq.rc = zmq_bind(_zero_mq.socket, host);
-	return zero_mq.rc;
+	return _zero_mq.rc;
 }
 
 int listener_zero_mq_send(const uint8_t *data, size_t len) {
@@ -28,7 +28,7 @@ int listener_zero_mq_send(const uint8_t *data, size_t len) {
 
 	memcpy(zmq_msg_data(&msg), data, len);
 
-	err = zmq_send(_zero_mq.socket, &msg, 0);
+	err = zmq_sendmsg(_zero_mq.socket, &msg, 0);
 
 	/* No error checking, because really can't fail */
 	zmq_msg_close(&msg);

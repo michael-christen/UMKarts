@@ -4,6 +4,7 @@
 #include "sound_samples.h"
 #include "drivers/mss_rtc/mss_rtc.h"
 #include "messages.h"
+#include "game.h"
 
 int ITEM_WEIGHT [MAX_NUM_ITEMS];
 item CURRENT_ITEM = MAX_NUM_ITEMS;
@@ -137,7 +138,7 @@ void useCurrentItem() {
     (*ITEM_USE_FUNCTIONS[CURRENT_ITEM])();
 
     printf("player1, used, %s",ITEM_NAMES[CURRENT_ITEM]);
-    message_game_event_all(DRIVER, 255, eMessageActionItemUse, (uint8_t) CURRENT_ITEM, XBEE_APP_OPT_NO_ACK);
+    message_game_event_all(DRIVER, 255, eMessageActionItemUse, (uint8_t) CURRENT_ITEM, XBEE_APP_OPT_ACK);
     CURRENT_ITEM = MAX_NUM_ITEMS;
 }
 
@@ -176,6 +177,9 @@ void hit_green_shell() {
 	xbee_printf("He shot me, %d\r\n", opId);
 	PLAYER_DRIVE_set_modification(mod_hit_by_shell, ITEM_DURATIONS[GREEN_SHELL]);
 	sound_play(OW_SOUND_BEGIN[DRIVER], OW_SOUND_END[DRIVER]);
+	message_game_event_all(DRIVER, opId, eMessageActionItemHitBy, (uint8_t) GREEN_SHELL, XBEE_APP_OPT_ACK);
+	subtractLife();
+
 }
 void hit_mushroom() {
 }
@@ -186,4 +190,16 @@ void hit_lightning() {
 	sound_play(OW_SOUND_BEGIN[DRIVER], OW_SOUND_END[DRIVER]);
 }
 void hit_star() {
+}
+
+void subtractLife() {
+	if (g_game_state == GAME_IN_GAME) {
+		if (player_lives == 0) {
+			message_game_leave();
+			g_game_state = GAME_OVER;
+		} else {
+			message_game_event_all(DRIVER, 255, eMessageActionLoseLife, 255, XBEE_APP_OPT_ACK);
+			player_lives--;
+		}
+	}
 }
