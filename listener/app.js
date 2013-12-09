@@ -1,7 +1,6 @@
 var fs = require('fs')
     , http = require('http')
     , socketio = require('socket.io')
-    , serialport = require('serialport')
     , zmq = require('zmq')
     , port = 'tcp://67.194.114.219:6666'
     //, port = 'tcp://67.194.42.30:6666'
