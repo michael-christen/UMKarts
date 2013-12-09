@@ -6,6 +6,7 @@
 #include "xbee.h"
 #include "xbee_packet.h"
 #include "zeromq.h"
+#include "convert.h"
 
 struct opts {
   const char *log_file_name;
@@ -49,6 +50,9 @@ int main(int argc, char **argv) {
       case XBEE_API_RX:
         xbee_received_packet(&xp);
         break;
+	case 0x95:
+		printf("0x%" PRIX64 " is sending a node identification packet\n", bytes_to_uint64_t(xp.payload + 1));
+		break;
       default:
         Log(EINFO, "Received packet that hasn't been implemented %x", xbee_packet_api_id(&xp));
       }
