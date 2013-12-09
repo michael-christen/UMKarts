@@ -66,7 +66,7 @@ int xbee_received_packet(struct xbee_packet *xp) {
 		}
 		switch (*data) {
 			case 0x00:
-				_xbee_printf(bytes_to_uint64_t(xp->payload + 1), data + 3, data_len - 3);
+				_xbee_printf(bytes_to_uint64_t(xp->payload + 1), data + 4, data_len - 4);
 				break;
 			case 0x02:
 				printf("0x%" PRIX64 " is trying to host a game\n", bytes_to_uint64_t(xp->payload + 1));
