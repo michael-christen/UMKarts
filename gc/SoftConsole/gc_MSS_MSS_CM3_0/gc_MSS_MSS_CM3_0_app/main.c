@@ -45,6 +45,7 @@ int main()
 	struct xbee_packet_received * xbee_read_packet;
 	/* Initialize the XBee interface */
 	int err = xbee_interface_init();
+
 	if (err != 0) {
 		return 0;
 	}

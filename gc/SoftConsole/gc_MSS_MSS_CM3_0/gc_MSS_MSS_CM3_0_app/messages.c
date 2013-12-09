@@ -58,6 +58,9 @@ int send_message_address(uint64_t address, uint8_t message_type, uint8_t app_fla
 
 	xbee_txpt_set_frame_id(xp, frameId);
 	xbee_txpt_set_options(xp, 0);
+	if (address == XBEE_LISTENER_ADDRESS) {
+		xbee_txpt_set_options(xp, 1);
+	}
 	xbee_txpt_set_radius(xp, 0);
 	xbee_txpt_set_destaddress(xp, address);
 	payload = xbee_txpt_payload_start(xp);
