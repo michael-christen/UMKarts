@@ -54,7 +54,7 @@ static void _xbee_interface_rx_handler(mss_uart_instance_t * this_uart) {
 				 * than that at this moment because we're out of memory */
 				MSS_UART_get_rx(this_uart, _overflow_buffer,
 						sizeof(_overflow_buffer));
-				return;
+				goto _xbee_interface_rx_handler_end;
 			}
 			_xbee_rx.xpr->flags = 0;
 			XBeeReaderInit(&(_xbee_rx.xr), &(_xbee_rx.xpr->xp));
@@ -65,6 +65,11 @@ static void _xbee_interface_rx_handler(mss_uart_instance_t * this_uart) {
 		if (MSS_UART_RX_BUF_SIZE > bytes_remaining) {
 			bytes_from_uart = MSS_UART_get_rx(this_uart, _xbee_rx.buf
 					+ bytes_remaining, MSS_UART_RX_BUF_SIZE - bytes_remaining);
+		}
+		for (i = 0; i < bytes_from_uart; i++) {
+			if (_xbee_rx.buf[bytes_remaining + i] == 0x11 || _xbee_rx.buf[bytes_remaining + i] == 0x13) {
+				while (1) ;
+			}
 		}
 
 		/* Parse packets from uart into our packet */
@@ -94,5 +99,6 @@ static void _xbee_interface_rx_handler(mss_uart_instance_t * this_uart) {
 			_xbee_rx.buf[i] = *end_of_read++;
 		}
 	} while (bytes_remaining > 0);
+_xbee_interface_rx_handler_end:
 	MSS_UART_enable_irq(this_uart, MSS_UART_RBF_IRQ);
 }

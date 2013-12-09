@@ -73,8 +73,9 @@ static int _mario_xbee_interpret_rx_packet(struct xbee_packet_received *xpr) {
 	uint8_t msg_type = xpr->xp.payload[12];
 	uint8_t msg_opts = xpr->xp.payload[13];
 	uint8_t old_message_frame_id   = xpr->xp.payload[14];
-	uint8_t *data = xpr->xp.payload + 15;
-	uint16_t data_len = xpr->xp.len - 15;
+	uint8_t driver = xpr->xp.payload[15];
+	uint8_t *data = xpr->xp.payload + 16;
+	uint16_t data_len = xpr->xp.len - 16;
 	if (msg_opts & XBEE_APP_OPT_ACK) {
 		message_ack(sender, old_message_frame_id, msg_type, xpr->flags);
 	}
@@ -133,10 +134,7 @@ static int _mario_xbee_interpret_rx_packet(struct xbee_packet_received *xpr) {
 	case XBEE_MESSAGE_GAME_START:
 		if (g_game_state == GAME_JOIN) {
 			for (i = 0; i < data[0]; i++) {
-				err = player_add_player(bytes_to_uint64_t(data + (i*sizeof(uint64_t) + 1)));
-				if (err < 0) {
-					xbee_printf("Game table: invalid player address: %llx\n", bytes_to_uint64_t(data + (i*sizeof(uint64_t) + 1)));
-				}
+				err = player_add_player(player_get_address_from_driver(data[i + 1]));
 			}
 			err = game_trans_join_to_in_game();
 			if (err < 0) {
@@ -162,7 +160,7 @@ static int _mario_xbee_interpret_rx_packet(struct xbee_packet_received *xpr) {
 		_mario_xbee_interpret_game_event(sender, data, data_len);
 		break;
 	case XBEE_MESSAGE_PLAYER_LEFT:
-		player_remove_player(bytes_to_uint64_t(data));
+		player_remove_player(player_get_address_from_driver(*data));
 		if (g_player_table.size == 1) {
 			// You won.
 		}

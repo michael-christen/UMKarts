@@ -21,7 +21,9 @@ int message_game_host_announce() {
 	payload = xbee_txpt_payload_start(xp);
 	payload[0] = XBEE_MESSAGE_GAME_HOST_ANNOUNCE;
 	payload[1] = XBEE_APP_OPT_NO_ACK; /* No App Ack */
-	xbee_txpt_set_payload_size(xp, 2);
+	payload[2] = 0; /* Frame id 0 */
+	payload[3] = DRIVER;
+	xbee_txpt_set_payload_size(xp, 4);
 	err = xbee_send(xp);
 	if (err < 0) {
 		xbee_interface_free_packet(xp);
@@ -42,23 +44,16 @@ int message_game_leave() {
 }
 
 int message_game_start(uint64_t * players, uint8_t num_players) {
-	uint8_t buf[16*sizeof(uint64_t) + sizeof(uint8_t)];
+	uint8_t buf[16*sizeof(uint8_t) + sizeof(uint8_t)];
 	int err, i;
 	buf[0] = num_players;
 	for (i = 0; i < num_players; i++) {
-		buf[i*sizeof(uint64_t) + 1] = players[i] >> 56 & 0xFF;
-		buf[i*sizeof(uint64_t) + 2] = players[i] >> 48 & 0xFF;
-		buf[i*sizeof(uint64_t) + 3] = players[i] >> 40 & 0xFF;
-		buf[i*sizeof(uint64_t) + 4] = players[i] >> 32 & 0xFF;
-		buf[i*sizeof(uint64_t) + 5] = players[i] >> 24 & 0xFF;
-		buf[i*sizeof(uint64_t) + 6] = players[i] >> 16 & 0xFF;
-		buf[i*sizeof(uint64_t) + 7] = players[i] >> 8 & 0xFF;
-		buf[i*sizeof(uint64_t) + 8] = players[i] & 0xFF;
+		buf[i + 1] = player_get_driver_from_address(players[i]);
 	}
-	err = send_message(XBEE_MESSAGE_GAME_START, XBEE_APP_OPT_ACK, buf, 1 + num_players * sizeof(uint64_t));
+	err = send_message(XBEE_MESSAGE_GAME_START, XBEE_APP_OPT_ACK, buf, 1 + num_players * sizeof(uint8_t));
 	if (err == 0) {
 		err = send_message_address(XBEE_LISTENER_ADDRESS,
-				XBEE_MESSAGE_GAME_START, XBEE_APP_OPT_NO_ACK, buf, 1 + num_players * sizeof(uint64_t));
+				XBEE_MESSAGE_GAME_START, XBEE_APP_OPT_NO_ACK, buf, 1 + num_players * sizeof(uint8_t));
 	}
 	return err;
 }
@@ -103,12 +98,12 @@ int message_game_event_all(uint8_t subject, uint8_t object, uint8_t action, uint
 
 int message_player_left(uint64_t address) {
 	int err;
-	uint8_t buf[8];
-	uint64_t_to_bytes(address, buf);
-	err = send_message(XBEE_MESSAGE_PLAYER_LEFT, XBEE_APP_OPT_ACK, buf, 8);
+	uint8_t buf;
+	buf = player_get_driver_from_address(address);
+	err = send_message(XBEE_MESSAGE_PLAYER_LEFT, XBEE_APP_OPT_ACK, &buf, 1);
 	if (err == 0) {
 		err = send_message_address(XBEE_LISTENER_ADDRESS,
-				XBEE_MESSAGE_PLAYER_LEFT, XBEE_APP_OPT_NO_ACK, buf, 8);
+				XBEE_MESSAGE_PLAYER_LEFT, XBEE_APP_OPT_NO_ACK, &buf, 1);
 	}
 	return err;
 }

@@ -10,8 +10,6 @@ void MOTOR_init()
     MOTOR_enable_allInterrupts();
     MOTOR_enable_pwm();
 
-    NVIC_EnableIRQ(Fabric_IRQn);
-
     MOTOR_enable();
 }
 

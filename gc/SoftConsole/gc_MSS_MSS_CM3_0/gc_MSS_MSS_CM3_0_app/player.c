@@ -100,6 +100,11 @@ uint64_t player_get_address_from_driver(Driver d) {
 
 void player_init() {
 	_myPlayerInfo._state = ADDRESS_UNSET;
+	DRIVER = PEACH;
+	player_table_reset();
+}
+
+void player_table_reset() {
 	memset(&g_player_table, 0, sizeof(g_player_table));
 }
 

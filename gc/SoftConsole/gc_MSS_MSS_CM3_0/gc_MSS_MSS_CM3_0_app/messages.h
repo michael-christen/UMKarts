@@ -12,7 +12,7 @@
  * Message flags may contain:
  *  - 0x01 - No Application level ACK required
  */
-#define XBEE_MESSAGE_MAX_SIZE      MAX_XBEE_TX_PAYLOAD_SIZE - 3
+#define XBEE_MESSAGE_MAX_SIZE      MAX_XBEE_TX_PAYLOAD_SIZE - 4
 
 #define XBEE_MESSAGE_PRINTF        (0x00)
 #define XBEE_MESSAGE_GAME_HOST_ANNOUNCE     (0x02)

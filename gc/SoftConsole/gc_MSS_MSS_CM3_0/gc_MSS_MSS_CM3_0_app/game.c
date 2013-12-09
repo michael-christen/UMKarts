@@ -1,10 +1,12 @@
 #include "game.h"
 #include "player.h"
+#include "item.h"
 #include "messages.h"
 #include "mss_rtc.h"
 #include "sound.h"
 #include "player_drive.h"
 #include "sound_samples.h"
+#include "lasertag.h"
 #include <errno.h>
 
 enum GameState g_game_state;
@@ -21,8 +23,16 @@ static uint32_t _game_host_announce_last_time;
 static uint32_t _game_join_last_ack_time;
 
 void game_init() {
+	game_reset();
+}
+
+void game_reset() {
 	g_game_state = GAME_WAIT;
 	g_game_host = 0;
+	_game_host_announce_last_time = 0;
+	player_table_reset();
+	CURRENT_ITEM = MAX_NUM_ITEMS;
+	LASER_TAG_set_hit_LED(0);
 }
 
 int game_trans_wait_to_host() {
@@ -117,6 +127,7 @@ int game_trans_start_game() {
 	sound_play(START_BEGIN, START_END);
 	PLAYER_DRIVE_set_modification(mod_disable_motors_and_servos, 3);
 	player_lives = GAME_LIVES;
+	LASER_TAG_set_hit_LED(0);
 	return 0;
 }
 

@@ -45,6 +45,7 @@ int main()
 	struct xbee_packet_received * xbee_read_packet;
 	/* Initialize the XBee interface */
 	int err = xbee_interface_init();
+
 	if (err != 0) {
 		return 0;
 	}
@@ -98,6 +99,11 @@ int main()
 
 	while( 1 )
 	{
+		if (CONTROLLER->start && CONTROLLER->l && CONTROLLER->r) {
+			game_reset();
+			PLAYER_DRIVE_update();
+			continue;
+		}
 		PLAYER_DRIVE_update();
 		PLAYER_DRIVE_apply();
 
@@ -108,6 +114,7 @@ int main()
 
 		switch (g_game_state) {
 		case GAME_WAIT:
+			LASER_TAG_set_hit_LED(0);
 			if (CONTROLLER->start) {
 				err = game_trans_wait_to_host();
 				if (err < 0) {
@@ -119,6 +126,7 @@ int main()
 			}
 			break;
 		case GAME_HOST:
+			LASER_TAG_set_hit_LED(MSS_RTC_get_seconds_count() % 2);
 			/* No timeouts can occur in this state */
 			if (CONTROLLER->start) {
 				/* NEED TO RATE LIMIT */
@@ -140,6 +148,7 @@ int main()
 			}
 			break;
 		case GAME_JOIN:
+			LASER_TAG_set_hit_LED(MSS_RTC_get_seconds_count() % 2);
 			/* Need to test our last packet from the host, in case we time out */
 			if (game_join_ack_timeout()) {
 				message_game_leave();
