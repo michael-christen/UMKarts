@@ -73,7 +73,7 @@ static int _mario_xbee_interpret_rx_packet(struct xbee_packet_received *xpr) {
 	uint8_t msg_type = xpr->xp.payload[12];
 	uint8_t msg_opts = xpr->xp.payload[13];
 	uint8_t old_message_frame_id   = xpr->xp.payload[14];
-	uint8_t driver = xpr->xp.paylod[15];
+	uint8_t driver = xpr->xp.payload[15];
 	uint8_t *data = xpr->xp.payload + 16;
 	uint16_t data_len = xpr->xp.len - 16;
 	if (msg_opts & XBEE_APP_OPT_ACK) {
