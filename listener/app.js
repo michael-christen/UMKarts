@@ -56,61 +56,62 @@ socket.on('connection', function(client){
     clients[client.id] = client;
 });
 function parseData(data) {
+    var returnObj = null;
     if(data.length <= 0) {
-	return '';
+	return returnObj;
     };
     switch(data[0]) {
 	case 0:
-	   var msg = data.slice(3);
-	   console.log("printf msg = " +msg);
+	   var sender = data[3];
+	   var msg = data.slice(4);
+	   console.log("printf: sender = " 
+		   + sender+ " msg = " +msg);
 	   break;
 	case 1:
 	   console.log("Printf_extended"); 
 	   break;
 	case 2:
-	   console.log("game host, driver is " + data[1]); 
+	   console.log("driver " + data[3] + " is hosting a game"); 
 	   break;
 	case 3:
-	   console.log("game join"); 
-	   console.log("driver joined " + data);
-	   console.log(data);
+	   console.log("driver " + data[3] + "joined game"); 
 	   break;
 	case 4:
-	   console.log("game start"); 
-	   console.log("here are players: " + data);
+	   var pStr = '';
+	   var numPlayers = data[4];
+	   for(var i = 0; i < numPlayers; ++i) {
+	       pStr += data[5+i] + ' ';
+	   }
+	   console.log("game starting with players: " + pStr);
+	   console.log("game is being hosted by player " + data[3]);
 	   break;
 	case 5:
-	   console.log("game over"); 
+	   console.log("game over declared by player " + data[3]); 
 	   break;
 	case 6:
 	   console.log("game event");
-	   var subj = data[1];
-	   var obj = data[2];
-	   var act = data[3];
-	   var item = data[3];
-	   var returnObj = {
+	   var subj = data[4];
+	   var obj = data[5];
+	   var act = data[6];
+	   var item = data[7];
+	   returnObj = {
 		subject:subj,
 		object:obj,
 		item:item,
 		action:act
 	   };
-	   console.log(data);
 	   console.log(returnObj);
 	   return returnObj;
 	   break;
         case 7:
 	   console.log("xb_msg_player_left");
+	   console.log("Player " + data[3] + " noticed player "
+		   + data[4] + " left");
 	   break;
 	case 8:
 	   console.log("ack");
 	   break;
     }
-    var returnObj = {
-	subject:'player1',
-        object:'player2',
-	item: 'GREEN_SHELL',
-	action:'hit'
-    };
     return returnObj;
 }
 
@@ -132,8 +133,10 @@ tcpSocket.on('message', function(data) {
 	    }
 	    */
 	    var dObj = parseData(data);
-	    clients[c].broadcast.emit('message',
-	    JSON.stringify(dObj));
+	    if(dObj) {
+		clients[c].broadcast.emit('message',
+		    JSON.stringify(dObj));
+	    }
 	    //Only go through once
 	    break;
 	}
