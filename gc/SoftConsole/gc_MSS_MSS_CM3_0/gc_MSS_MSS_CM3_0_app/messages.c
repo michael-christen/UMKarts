@@ -74,7 +74,7 @@ int send_message_address(uint64_t address, uint8_t message_type, uint8_t app_fla
 	for (i = 0; i < data_len; i++) {
 		payload[i + 4] = data[i];
 	}
-	xbee_txpt_set_payload_size(xp, data_len + 3);
+	xbee_txpt_set_payload_size(xp, data_len + 4);
 	err = xbee_send(xp);
 	if (err < 0) {
 		goto send_message_address_error;
