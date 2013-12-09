@@ -1,7 +1,6 @@
 #include "xbee_interface.h"
 #include "mss_uart.h"
 #include "atomics.h"
-#include <errno.h>
 
 static uint8_t _XBeeFrameId = 1;
 /* 
