@@ -20,6 +20,7 @@ extern Driver DRIVER;
 extern struct PlayerTable g_player_table;
 
 void player_init();
+void player_table_reset();
 
 /**
  * Sends out an xbee packet to figure out who we are. This needs to be called

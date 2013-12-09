@@ -17,7 +17,7 @@ static struct {
 	uint8_t retries;
 } _sent_messages[MAX_FRAME_ID];
 
-static void _add_sent_message(uint8_t frame_id, uint8_t msg_type, uint8_t app_flags, uint8_t * data, uint16_t len, uint64_t address); 
+static void _add_sent_message(uint8_t frame_id, uint8_t msg_type, uint8_t app_flags, uint8_t * data, uint16_t len, uint64_t address);
 
 void send_message_init() {
 	memset(_sent_messages, 0, sizeof(_sent_messages));
@@ -57,15 +57,22 @@ int send_message_address(uint64_t address, uint8_t message_type, uint8_t app_fla
 	}
 
 	xbee_txpt_set_frame_id(xp, frameId);
-	xbee_txpt_set_options(xp, 0);
+	/* We don't want an ACK from the listener */
+	if (address == XBEE_LISTENER_ADDRESS) {
+		xbee_txpt_set_options(xp, 0x1);
+	}
+	else {
+		xbee_txpt_set_options(xp, 0);
+	}
 	xbee_txpt_set_radius(xp, 0);
 	xbee_txpt_set_destaddress(xp, address);
 	payload = xbee_txpt_payload_start(xp);
 	payload[0] = message_type;
 	payload[1] = app_flags;
 	payload[2] = frameId;
+	payload[3] = DRIVER;
 	for (i = 0; i < data_len; i++) {
-		payload[i + 3] = data[i];
+		payload[i + 4] = data[i];
 	}
 	xbee_txpt_set_payload_size(xp, data_len + 3);
 	err = xbee_send(xp);

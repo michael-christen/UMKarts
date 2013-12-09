@@ -23,6 +23,7 @@ static uint32_t _game_join_last_ack_time;
 void game_init() {
 	g_game_state = GAME_WAIT;
 	g_game_host = 0;
+	_game_host_announce_last_time = 0;
 }
 
 int game_trans_wait_to_host() {
