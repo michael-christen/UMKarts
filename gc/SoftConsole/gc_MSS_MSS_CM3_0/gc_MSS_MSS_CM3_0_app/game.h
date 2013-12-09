@@ -19,6 +19,7 @@ extern const char *g_game_state_str[];
 extern uint64_t g_game_host;
 
 void game_init();
+void game_reset();
 
 int game_trans_wait_to_host();
 int game_trans_host_to_join();

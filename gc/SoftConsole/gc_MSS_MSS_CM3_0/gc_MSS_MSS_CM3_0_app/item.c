@@ -192,7 +192,7 @@ void hit_star() {
 
 void subtractLife() {
 	if (g_game_state == GAME_IN_GAME) {
-		if (player_lives == 0) {
+		if (player_lives == 1) {
 			message_game_leave();
 			g_game_state = GAME_OVER;
 		} else {
