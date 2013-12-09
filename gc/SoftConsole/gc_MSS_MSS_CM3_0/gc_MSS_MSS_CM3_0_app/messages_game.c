@@ -46,14 +46,14 @@ int message_game_start(uint64_t * players, uint8_t num_players) {
 	int err, i;
 	buf[0] = num_players;
 	for (i = 0; i < num_players; i++) {
-		buf[i*sizeof(uint64_t) + 0] = players[i] >> 56 & 0xFF;
-		buf[i*sizeof(uint64_t) + 1] = players[i] >> 48 & 0xFF;
-		buf[i*sizeof(uint64_t) + 2] = players[i] >> 40 & 0xFF;
-		buf[i*sizeof(uint64_t) + 3] = players[i] >> 32 & 0xFF;
-		buf[i*sizeof(uint64_t) + 4] = players[i] >> 24 & 0xFF;
-		buf[i*sizeof(uint64_t) + 5] = players[i] >> 16 & 0xFF;
-		buf[i*sizeof(uint64_t) + 6] = players[i] >> 8 & 0xFF;
-		buf[i*sizeof(uint64_t) + 7] = players[i] & 0xFF;
+		buf[i*sizeof(uint64_t) + 1] = players[i] >> 56 & 0xFF;
+		buf[i*sizeof(uint64_t) + 2] = players[i] >> 48 & 0xFF;
+		buf[i*sizeof(uint64_t) + 3] = players[i] >> 40 & 0xFF;
+		buf[i*sizeof(uint64_t) + 4] = players[i] >> 32 & 0xFF;
+		buf[i*sizeof(uint64_t) + 5] = players[i] >> 24 & 0xFF;
+		buf[i*sizeof(uint64_t) + 6] = players[i] >> 16 & 0xFF;
+		buf[i*sizeof(uint64_t) + 7] = players[i] >> 8 & 0xFF;
+		buf[i*sizeof(uint64_t) + 8] = players[i] & 0xFF;
 	}
 	err = send_message(XBEE_MESSAGE_GAME_START, XBEE_APP_OPT_ACK, buf, 1 + num_players * sizeof(uint64_t));
 	if (err == 0) {

@@ -31,7 +31,7 @@ struct PLAYER_DRIVE {
 };
 
 // The global that will be our driver
-static struct PLAYER_DRIVE player_driver = {NORMAL, FREEROLL, STRAIGHT, 0, 0};
+static volatile struct PLAYER_DRIVE player_driver = {NORMAL, FREEROLL, STRAIGHT, 0, 0};
 
 void PLAYER_DRIVE_reset() {
 	player_driver.speed = NORMAL;
@@ -85,7 +85,9 @@ static void PLAYER_DRIVE_update_from_controller() {
 static void PLAYER_DRIVE_remove_modification() {
 	if (player_driver.mod == mod_star) {
 		sound_stop();
+		player_driver.invincible = 0;
 	} else if (player_driver.mod == mod_hit_by_shell || player_driver.mod == mod_hit_by_lightning) {
+		player_driver.invincible = 0;
 		LASER_TAG_set_hit_LED(0);
 	}
 	player_driver.mod = 0;
@@ -94,7 +96,6 @@ static void PLAYER_DRIVE_remove_modification() {
 
 void PLAYER_DRIVE_update() {
 	PLAYER_DRIVE_update_from_controller();
-	player_driver.invincible = 0;
 	if (player_driver.mod == 0) return;
 
 	// Deal with modifications

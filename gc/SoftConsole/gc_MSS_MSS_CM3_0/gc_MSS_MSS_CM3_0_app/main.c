@@ -18,7 +18,7 @@
 #include "player.h"
 #include "player_drive.h"
 #include "game.h"
-#include "oled.h"
+//#include "oled.h"
 
 
 volatile uint32_t count;
@@ -79,7 +79,7 @@ int main()
 	MSS_GPIO_config(MSS_GPIO_2, MSS_GPIO_INPUT_MODE | MSS_GPIO_IRQ_EDGE_NEGATIVE);
 	MSS_GPIO_enable_irq(MSS_GPIO_2);
 
-	OLED_init();
+	// OLED_init();
 
 
 	initItemWeights();

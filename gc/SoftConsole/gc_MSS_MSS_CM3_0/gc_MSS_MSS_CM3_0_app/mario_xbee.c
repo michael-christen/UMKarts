@@ -122,6 +122,7 @@ static int _mario_xbee_interpret_rx_packet(struct xbee_packet_received *xpr) {
 			player_remove_player(sender);
 		}
 		else if (g_game_state == GAME_IN_GAME) {
+
 			player_remove_player(sender);
 			message_player_left(sender);
 		}
@@ -198,6 +199,7 @@ static int _mario_xbee_interpret_game_event(uint64_t sender, uint8_t * data, uin
 			break;
 		case eMessageActionItemHitBy:
 			if (their_item == GREEN_SHELL && object == DRIVER) {
+				xbee_printf("WE hIT THME");
 				sound_play(SUCCESS_SOUND_BEGIN[DRIVER], SUCCESS_SOUND_END[DRIVER]);
 			}
 			break;
