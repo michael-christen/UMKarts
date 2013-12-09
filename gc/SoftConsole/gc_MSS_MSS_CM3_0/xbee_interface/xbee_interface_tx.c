@@ -40,7 +40,7 @@ void  _xbee_interface_tx_init() {
 
 int xbee_send(struct xbee_packet *xp) {
 	int err;
-	err = CircularBufferWrite(&_xbee_tx.circle_buf, xp);
+	err = CircularBufferWrite(&_xbee_tx.circle_buf, xp);\
 	if (err == 0 && (atomic_lock_test_and_set_1(&(_xbee_tx.lock)) == 0)) {
 		if ((xp = CircularBufferRead(&(_xbee_tx.circle_buf)))) {
 			_xbee_interface_tx_start(xp);
@@ -74,13 +74,13 @@ static void _xbee_interface_tx_handler(mss_uart_instance_t * this_uart) {
 	struct xbee_packet * xp;
 	uint8_t * start_ptr, * end_ptr, * move_ptr;
 	size_t items_in_fifo;
-	MSS_UART_disable_irq( this_uart, MSS_UART_TBE_IRQ );
 
 	if (atomic_lock_test_and_set_1(&(_xbee_tx.lock)) == 0) {
 		if ((xp = CircularBufferRead(&(_xbee_tx.circle_buf)))) {
 			_xbee_interface_tx_start(xp);
 		}
 		else {
+			MSS_UART_disable_irq( this_uart, MSS_UART_TBE_IRQ );
 			__sync_lock_release(&(_xbee_tx.lock));
 			return;
 		}

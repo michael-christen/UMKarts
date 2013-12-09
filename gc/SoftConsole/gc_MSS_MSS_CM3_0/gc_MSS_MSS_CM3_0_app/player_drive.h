@@ -10,6 +10,9 @@ enum PLAYER_MOTOR_SPEED {NORMAL = 7, SLOWED = 5, BOOSTED = 10};
 enum PLAYER_MOTOR_DIRECTION {FREEROLL = 0, FORWARD = 1, REVERSE = -1};
 enum PLAYER_SERVO_DIRECTION {STRAIGHT = 0, LEFT = -1, RIGHT = 1};
 
+#define GAME_LIVES 3
+
+extern int player_lives;
 
 // Effects: Resets the player state to beginning state
 //          Motor off, Servo straight

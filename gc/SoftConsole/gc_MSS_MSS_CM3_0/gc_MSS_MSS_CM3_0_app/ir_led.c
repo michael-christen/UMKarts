@@ -14,7 +14,7 @@
  *
  */
 
-#define IR_GPIO_PIN MSS_GPIO_0
+static const int IR_GPIO_PIN = MSS_GPIO_0;
 
 typedef struct {
 	// FPGA_FABRIC_BASE

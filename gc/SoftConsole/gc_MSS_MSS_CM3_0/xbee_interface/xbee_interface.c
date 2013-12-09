@@ -9,7 +9,7 @@ static uint8_t _XBeeFrameId = 1;
  */
 void  _xbee_interface_tx_init(); 
 void  _xbee_interface_rx_init(); 
-int _xbee_interface_alloc_init(); 
+int _xbee_interface_alloc_init();
 
 int xbee_interface_init() {
   int check;

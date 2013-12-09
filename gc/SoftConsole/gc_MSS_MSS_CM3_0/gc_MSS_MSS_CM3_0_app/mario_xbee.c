@@ -6,6 +6,7 @@
 #include "game.h"
 #include "messages.h"
 #include "item.h"
+#include "sound.h"
 #include <stdio.h>
 #include <stdarg.h>
 #include <errno.h>
@@ -122,6 +123,7 @@ static int _mario_xbee_interpret_rx_packet(struct xbee_packet_received *xpr) {
 			player_remove_player(sender);
 		}
 		else if (g_game_state == GAME_IN_GAME) {
+
 			player_remove_player(sender);
 			message_player_left(sender);
 		}
@@ -159,6 +161,9 @@ static int _mario_xbee_interpret_rx_packet(struct xbee_packet_received *xpr) {
 		break;
 	case XBEE_MESSAGE_PLAYER_LEFT:
 		player_remove_player(player_get_address_from_driver(*data));
+		if (g_player_table.size == 1) {
+			// You won.
+		}
 		break;
 	case XBEE_MESSAGE_ACK:
 		if (data[2] == 0) {
@@ -177,7 +182,7 @@ static int _mario_xbee_interpret_rx_packet(struct xbee_packet_received *xpr) {
 
 static int _mario_xbee_interpret_game_event(uint64_t sender, uint8_t * data, uint16_t data_len) {
 	/*uint8_t driver_sender = data[0]; */
-	/* uint8_t object = data[1]; */
+	uint8_t object = data[1];
 	uint8_t action = (enum MessageActions) data[2];
 	uint8_t their_item   = (item) data[3];
 
@@ -188,6 +193,12 @@ static int _mario_xbee_interpret_game_event(uint64_t sender, uint8_t * data, uin
 		case eMessageActionItemUse:
 			if (their_item == LIGHTNING) {
 				hitByItem(LIGHTNING);
+			}
+			break;
+		case eMessageActionItemHitBy:
+			if (their_item == GREEN_SHELL && object == DRIVER) {
+				xbee_printf("WE hIT THME");
+				sound_play(SUCCESS_SOUND_BEGIN[DRIVER], SUCCESS_SOUND_END[DRIVER]);
 			}
 			break;
 	}
