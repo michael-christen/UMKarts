@@ -3,7 +3,8 @@ var fs = require('fs')
     , socketio = require('socket.io')
     , serialport = require('serialport')
     , zmq = require('zmq')
-    , port = 'tcp://67.194.60.45:6666'
+    , port = 'tcp://67.194.114.219:6666'
+    //, port = 'tcp://67.194.42.30:6666'
     , static = require('node-static')
     , util   = require('util')
     , path   = require('path');
@@ -55,6 +56,28 @@ socket.on('connection', function(client){
     console.log("Id: " + client.id);
     clients[client.id] = client;
 });
+
+var actionArr = [
+    'picked up',
+    'used',
+    'hit',
+    'joined',
+    'died',
+    'won',
+    'start'
+];
+
+var itemArr = [
+    'GREEN_SHELL',
+    'MUSHROOM',
+    'LIGHTNING',
+    'STAR',
+    'RED_SHELL',
+    'BLUE_SHELL',
+    'SUPER_MUSHROOM',
+    'EMPTY'
+];
+
 function parseData(data) {
     var returnObj = null;
     if(data.length <= 0) {
@@ -84,6 +107,12 @@ function parseData(data) {
 	   }
 	   console.log("game starting with players: " + pStr);
 	   console.log("game is being hosted by player " + data[3]);
+	   returnObj = {
+		subject: pStr,
+		object:null,
+		action:'start',
+		item:null
+	   };
 	   break;
 	case 5:
 	   console.log("game over declared by player " + data[3]); 
@@ -94,12 +123,25 @@ function parseData(data) {
 	   var obj = data[5];
 	   var act = data[6];
 	   var item = data[7];
+	   //Lose life
+	   if(act == 3) {
+	       break;
+	   }
 	   returnObj = {
-		subject:subj,
-		object:obj,
-		item:item,
-		action:act
+		subject:'player'+subj,
+		object:'player'+obj,
+		item:itemArr[item],
+		action:actionArr[act]
 	   };
+	   //is actually hit by
+	   if(returnObj['action'] == 'hit') {
+	       var tmp = returnObj['object'];
+	       returnObj['object'] = returnObj['subject'];
+	       returnObj['subject']= tmp;
+	   }
+	   if(returnObj['object'] == 'player255') {
+	       returnObj['object'] = null;
+	   }
 	   console.log(returnObj);
 	   return returnObj;
 	   break;

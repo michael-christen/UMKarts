@@ -37,6 +37,10 @@ $(function(){
 	    name:"Star",
 	    img:"/static/media/Item_star.png"
 	 },
+	'LIGHTNING': {
+	    name:"Lightning",
+   	    img:"/static/media/Item_lightning.png"
+	},
 	'EMPTY': {
 	    name: "none",
 	    img:"/static/media/Item_empty.png"
@@ -79,7 +83,12 @@ $(function(){
             name: "Bowser"
 	}
     };
-    var nameMap = {};
+    var nameMap = {
+	'player0':'MARIO',
+	'player1':'LUIGI',
+	'player2':'WARIO',
+	'player3':'PEACH'
+    };
     function getCharById(id) {
 	if(nameMap[id]) {
 	    id = nameMap[id];
@@ -87,11 +96,17 @@ $(function(){
 	return CharacterEnum[id];
     }
 
-    function generatePlayerStr() {
-	var id = numPlayers++;
+    function generatePlayerStr(num) {
+	var id = num;
 	var playerName = "player"+id;
-	nameMap[playerName] = playerName;
 	var pSrc = '/static/media/Person_qmark.png';
+	if(!(playerName in nameMap)) {
+	    nameMap[playerName] = playerName;
+	}
+	else {
+	    playerName = nameMap[playerName];
+	    pSrc=CharacterEnum[playerName]['img'];
+	}
 	var itemSrc = '/static/media/Item_empty.png';
 	var playerStatusStr = " \
 	   <div id='player"+id+"'class='playerstatus row-fluid'> \
@@ -102,10 +117,12 @@ $(function(){
 	   </div>";
 	return playerStatusStr;
     }
-    function insertPlayer() {
-	$('#allplayerstatus').append(generatePlayerStr());
+    function insertPlayer(num) {
+	$('#allplayerstatus').append(generatePlayerStr(num));
     }
     var numEvents = 0;
+
+    
     /*
        action -> [picked up, used, hit, joined, died, won, start]
        (last is a game state)
@@ -120,6 +137,7 @@ $(function(){
 	var newsBody = '';
 	//Handle display of characters
 	if(action == 'picked up') {
+	    console.log(itemObj);
 	    $('#'+subject).find('.item').attr('src',itemObj.img);
 	}
 	else if(action == 'used') {
@@ -130,12 +148,23 @@ $(function(){
 	    origStr = origStr.substr(0,origStr.length-1);
 	    $('#'+object).find('.lives').text(origStr);
 	}
+	/*
 	else if(action =='joined') {
 	    insertPlayer();
 	}
+	*/
 	if(action == 'start') {
+	    console.log("STARTING");
+	    var players = subject.split(' ');
+	    console.log(players);
+	    //Last is ''
+	    for(var i = 0; i < players.length-1; ++i) {
+		insertPlayer(players[i]);
+	    }
 	    newsBody = "\
-		<p>The Game has Started</p>\
+		<p>The Game has Started with players \
+		" + subject + "\
+		</p>\
 		";
 	}
 	else {
@@ -169,27 +198,19 @@ $(function(){
     function insertEvent(subj,obj,item,act) {
 	$('#newsfeed').prepend(generateEvent(subj,obj,item,act));
     }
-    insertPlayer();
-    insertPlayer();
-    insertPlayer();
+    /*
     insertPlayer();
     insertEvent("", "", "", "start");
     insertEvent("player0", "", "GREEN_SHELL", "picked up");
     insertEvent("MARIO", "LUIGI", "GREEN_SHELL", "hit");
-    insertEvent("MARIO", "LUIGI", "GREEN_SHELL", "hit");
-    insertEvent("MARIO", "LUIGI", "GREEN_SHELL", "hit");
-    insertEvent("MARIO", "LUIGI", "GREEN_SHELL", "hit");
-    insertEvent("MARIO", "LUIGI", "GREEN_SHELL", "hit");
-    insertEvent("MARIO", "LUIGI", "GREEN_SHELL", "hit");
-    insertEvent("MARIO", "LUIGI", "GREEN_SHELL", "hit");
-    insertEvent("MARIO", "LUIGI", "GREEN_SHELL", "hit");
-    insertEvent("MARIO", "LUIGI", "GREEN_SHELL", "hit");
+    */
     $(document).ready(function() {
 	$('.playerstatus').on('click', function(event) {
 	    selectedPlayerId = $(this).attr('id');
 	    $('#myModal').modal();
 	});
 	$('.pselect').on('click', function(event) {
+	    console.log("clicked");
 	    if(selectedPlayerId) {
 		var charId = $(this).attr('id');
 		var charObj = getCharById(charId);
