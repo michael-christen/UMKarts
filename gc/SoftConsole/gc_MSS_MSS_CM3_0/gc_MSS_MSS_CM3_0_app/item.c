@@ -194,6 +194,8 @@ void subtractLife() {
 	if (g_game_state == GAME_IN_GAME) {
 		if (player_lives == 1) {
 			message_game_leave();
+			PLAYER_DRIVE_set_modification(mod_died, 10);
+			player_lives = 0;
 			g_game_state = GAME_OVER;
 		} else {
 			message_game_event_all(DRIVER, 255, eMessageActionLoseLife, 255, XBEE_APP_OPT_ACK);
