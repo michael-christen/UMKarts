@@ -167,10 +167,11 @@ void use_star() {
 }
 
 uint8_t _hit_check_valid_player(uint8_t shot_me_id) {
-	if (opId == DRIVER) return 0;
+	int i;
+	if (shot_me_id == DRIVER) return 0;
 	if (g_game_state == GAME_IN_GAME) {
 		for (i = 0; i < g_player_table.size; i++) {
-			if (opId == g_player_table.players[i]) {
+			if (shot_me_id == player_get_driver_from_address(g_player_table.players[i])) {
 				return 1;
 			}
 		}
@@ -181,7 +182,6 @@ uint8_t _hit_check_valid_player(uint8_t shot_me_id) {
 
 
 void hit_green_shell() {
-	int i;
 	uint8_t opId = LASER_TAG_hit();
 	// You can't shoot yourself
 	if (opId == DRIVER) {
@@ -189,7 +189,7 @@ void hit_green_shell() {
 	}
 
 	if (!_hit_check_valid_player(opId)) {
-		xbee_printf("Not shot be a valid player %d", opId);
+		/* DO NO CALL XBEE PRINTF !! */
 		return;
 	}
 
