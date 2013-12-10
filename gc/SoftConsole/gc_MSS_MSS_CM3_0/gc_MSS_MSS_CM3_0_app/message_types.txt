@@ -28,7 +28,7 @@ to respond.
 	[0x02] [msg_opts] [frame_id] [driver_id]
 
 0x03 - GAME_JOIN
-This message allows us to ask the host if we may join there game. Upon 
+This message allows us to ask the host if we may join their game. Upon 
 receiving an ACK for this packet, we know that we are actually in the game!
 	FORMAT:
 	[0x03] [msg_opts] [frame_id] [driver_id]

@@ -157,3 +157,7 @@ void mod_hit_by_lightning() {
 	player_driver.invincible = 1;
 	LASER_TAG_set_hit_LED(1);
 }
+
+void mod_died() {
+    mod_disable_motors_and_servos();
+}

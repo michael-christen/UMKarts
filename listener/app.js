@@ -1,13 +1,14 @@
 var fs = require('fs')
     , http = require('http')
     , socketio = require('socket.io')
-    , serialport = require('serialport')
+    , zmq = require('zmq')
+    , port = 'tcp://67.194.114.219:6666'
+    //, port = 'tcp://67.194.42.30:6666'
     , static = require('node-static')
     , util   = require('util')
     , path   = require('path');
 
 //var folder = new(static.Server)(__dirname + '/static');
-
 var server = http.createServer(function(request, response) {
     console.log('request starting...');
     var filePath = '.' + request.url;
@@ -17,6 +18,7 @@ var server = http.createServer(function(request, response) {
 		
     var extname = path.extname(filePath);
     var contentType = 'text/html';
+    //load static files
     switch (extname) {
 	case '.js':
 		contentType = 'text/javascript';
@@ -41,52 +43,10 @@ var server = http.createServer(function(request, response) {
 	    response.end();
 	}
     });
-	/*
-
-var server = http.createServer(function(req, res) {
-    res.writeHead(200, { 'Content-type': 'text/html'});
-    res.end(fs.readFileSync(__dirname + '/index.html'));
-    req.addListener('end', function() {
-    folder.serve(req, res, function(err, result) {
-	if (err) {
-	    console.error('Error serving %s - %s',
-	    req.url, err.message);
-	    if (err.status === 404 || err.status === 500) {
-		folder.serveFile(util.format('/%d.html', err.status), err.status, {}, req, res);
-	    } else {
-		res.writeHead(err.status, err.headers);
-		res.end();
-	    }
-	} else {
-	    console.log('%s - %s', req.url, res.message); 
-	}
-});
-*/
-    /*
-    req.addListener('end', function() {
-	folder.serve(req,res);
-    });
-    */
 }).listen(8080, function() {
     console.log('Listening at: http://localhost:8080');
 });
 
-    /*`
-var server = http.createServer(app);
-server.listen(8080, function() {
-    console.log('Listening at: http://localhost:8080');
-});
-app.use(express.static(__dirname+"/jQuery"));
-app.use(express.static(__dirname+"/bootstrap"));
-*/
-var SerialPort = serialport.SerialPort;
-var serialPort = new SerialPort("/dev/ttyUSB0", {
-    baudrate: 57600,
-    databits: 8,
-    stopbits: 1,
-    parity: 'none',
-    parser: serialport.parsers.readline("\n")
-});
 var socket = socketio.listen(server);
 var numConnections = 0;
 var clients = new Object();
@@ -94,54 +54,132 @@ var clients = new Object();
 socket.on('connection', function(client){ 
     console.log("Id: " + client.id);
     clients[client.id] = client;
-    client.send("hello world");
-    client.on('message', function (msg) {
-	console.log('Message Received: ', msg);
-	client.broadcast.emit('message', msg);
-    });
-    /*
-    client.on('disconnect', function () {
-	delete clients[client.id];
-    });
-    */
 });
-/*
-socketio.listen(server).on('connection', function (socketA) {
-    socketA.on('message', function (msg) {
-	console.log('Message Received: ', msg);
-	socket.broadcast.emit('message', msg);
-    });
 
-});
-*/
-    serialPort.on("open", function() {
-	console.log('open serial');
-	serialPort.on('data', function(data) {
-	    //console.log('data received: ' + data);
-	    //console.log('len = ' + data.length);
-	    for(var c in clients) {
-		if (clients.hasOwnProperty(c)) {
-		    for(var cl in clients) {
-		        console.log(cl + ' ' + clients[cl]);
-		    }
-		    console.log('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@');
-		    console.log('length = ' + data.length);
-		    console.log('msg = ' + data);
-		    var dObj = parseData(data);
-		    clients[c].broadcast.emit('message',
-			JSON.stringify(dObj));
-		    //Only go through once
-		    break;
-		}
-	    }
-	});
-    });
+var actionArr = [
+    'picked up',
+    'used',
+    'hit',
+    'joined',
+    'died',
+    'won',
+    'start'
+];
+
+var itemArr = [
+    'GREEN_SHELL',
+    'MUSHROOM',
+    'LIGHTNING',
+    'STAR',
+    'RED_SHELL',
+    'BLUE_SHELL',
+    'SUPER_MUSHROOM',
+    'EMPTY'
+];
+
 function parseData(data) {
-    var returnObj = {
-	subject:'player1',
-        object:'player1',
-	item: 'GREEN_SHELL',
-	action:'hit'
+    var returnObj = null;
+    if(data.length <= 0) {
+	return returnObj;
     };
+    switch(data[0]) {
+	case 0:
+	   var sender = data[3];
+	   var msg = data.slice(4);
+	   console.log("printf: sender = " 
+		   + sender+ " msg = " +msg);
+	   break;
+	case 1:
+	   console.log("Printf_extended"); 
+	   break;
+	case 2:
+	   console.log("driver " + data[3] + " is hosting a game"); 
+	   break;
+	case 3:
+	   console.log("driver " + data[3] + "joined game"); 
+	   break;
+	case 4:
+	   var pStr = '';
+	   var numPlayers = data[4];
+	   for(var i = 0; i < numPlayers; ++i) {
+	       pStr += data[5+i] + ' ';
+	   }
+	   console.log("game starting with players: " + pStr);
+	   console.log("game is being hosted by player " + data[3]);
+	   returnObj = {
+		subject: pStr,
+		object:null,
+		action:'start',
+		item:null
+	   };
+	   break;
+	case 5:
+	   console.log("game over declared by player " + data[3]); 
+	   break;
+	case 6:
+	   console.log("game event");
+	   var subj = data[4];
+	   var obj = data[5];
+	   var act = data[6];
+	   var item = data[7];
+	   //Lose life
+	   if(act == 3) {
+	       break;
+	   }
+	   returnObj = {
+		subject:'player'+subj,
+		object:'player'+obj,
+		item:itemArr[item],
+		action:actionArr[act]
+	   };
+	   //is actually hit by
+	   if(returnObj['action'] == 'hit') {
+	       var tmp = returnObj['object'];
+	       returnObj['object'] = returnObj['subject'];
+	       returnObj['subject']= tmp;
+	   }
+	   if(returnObj['object'] == 'player255') {
+	       returnObj['object'] = null;
+	   }
+	   console.log(returnObj);
+	   return returnObj;
+	   break;
+        case 7:
+	   console.log("xb_msg_player_left");
+	   console.log("Player " + data[3] + " noticed player "
+		   + data[4] + " left");
+	   break;
+	case 8:
+	   console.log("ack");
+	   break;
+    }
     return returnObj;
 }
+
+var tcpSocket = zmq.socket('sub');
+tcpSocket.identity = 'subscriber' + process.pid;
+tcpSocket.connect(port);
+tcpSocket.subscribe('');
+tcpSocket.on('message', function(data) {
+    for(var c in clients) {
+	if (clients.hasOwnProperty(c)) {
+	    for(var cl in clients) {
+		console.log(cl + ' ' + clients[cl]);
+	    }
+	    /*
+	    console.log('length = ' + data.length);
+	    console.log('msg = ' + data);
+	    for(var i=0; i < data.length; ++i) {
+	        console.log(data[i]);
+	    }
+	    */
+	    var dObj = parseData(data);
+	    if(dObj) {
+		clients[c].broadcast.emit('message',
+		    JSON.stringify(dObj));
+	    }
+	    //Only go through once
+	    break;
+	}
+    }
+});
