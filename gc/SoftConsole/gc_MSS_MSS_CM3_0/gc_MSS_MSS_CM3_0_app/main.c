@@ -100,6 +100,7 @@ int main()
 	while( 1 )
 	{
 		if (CONTROLLER->start && CONTROLLER->l && CONTROLLER->r) {
+			LASER_TAG_set_hit_LED(1);
 			game_reset();
 			PLAYER_DRIVE_update();
 			continue;
