@@ -4,17 +4,19 @@
 #include "drivers/mss_uart/mss_uart.h"
 #include "drivers/mss_timer/mss_timer.h"
 
-static uint32_t cur_addr_1 = 0;
-static uint32_t stop_addr_1 = 0;
-static uint32_t	buf_start_1 = -1;
-static uint32_t repeat_addr_1 = -1;
-static uint8_t sound_buf_1[512];
+static uint8_t sound_playing1 = 0;
+static uint32_t cur_addr1 = 0;
+static uint32_t stop_addr1 = 0;
+static uint32_t	buf_start1 = -1;
+static uint32_t repeat_addr1 = -1;
+static uint8_t sound_buf1[512];
 
-static uint32_t cur_addr_2 = 0;
-static uint32_t stop_addr_2 = 0;
-static uint32_t	buf_start_2 = -1;
-static uint32_t repeat_addr_2 = -1;
-static uint8_t sound_buf_2[512];
+static uint8_t sound_playing2 = 0;
+static uint32_t cur_addr2 = 0;
+static uint32_t stop_addr2 = 0;
+static uint32_t	buf_start2 = -1;
+static uint32_t repeat_addr2 = -1;
+static uint8_t sound_buf2[512];
 
 void sound_init() {
 	spi_flash_init();
@@ -50,6 +52,7 @@ void sound_play_start(uint32_t begin, uint32_t end, int repeat) {
 			repeat_addr1 = begin;
 		else
 			repeat_addr1 = -1;
+		sound_playing1 = 1;
 	} else {
 		cur_addr2 = begin;
 		stop_addr2 = end;
@@ -57,6 +60,7 @@ void sound_play_start(uint32_t begin, uint32_t end, int repeat) {
 			repeat_addr2 = begin;
 		else
 			repeat_addr2 = -1;
+		sound_playing2 = 1;
 	}
 
 	MSS_TIM1_start();
@@ -93,7 +97,7 @@ __attribute__ ((interrupt)) void Timer1_IRQHandler( void ){
 		
 		if (cur_addr1 >= stop_addr1) {
 			if (repeat_addr1 != -1) {
-				cur_addr = repeat_addr;
+				cur_addr1 = repeat_addr1;
 			} else {
 				sound_playing1 = 0;
 			}

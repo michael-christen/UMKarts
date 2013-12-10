@@ -3,7 +3,7 @@
 
 # Version: v11.0 11.0.0.23
 # Family: SmartFusion , Die: A2F200M3F , Package: 484 FBGA
-# Date generated: Sat Dec 07 14:32:40 2013 
+# Date generated: Mon Dec 09 22:27:58 2013 
 
 
 # 
@@ -17,6 +17,8 @@ define_group -name UART_1_PADs
 define_group -name SPI_0_PADs
 
 define_group -name I2C_0_PADs
+
+define_group -name UART_1_MODEM
 
 
 # 
@@ -86,24 +88,44 @@ set_io UART_0_TXD            \
     -DIRECTION OUTPUT
 
 
-# User Group UART_1_PADs
-
-set_io UART_1_RXD            \
-    -GROUP_NAME UART_1_PADs  \
-    -DIRECTION INPUT
-
-
-set_io UART_1_TXD            \
-    -GROUP_NAME UART_1_PADs  \
-    -DIRECTION OUTPUT
-
-
 
 # 
 # Unlocked I/O settings
 # The I/Os in this section are unplaced or placed but are not locked
 # the other listed attributes have been applied
 # 
+
+# User Group UART_1_MODEM
+
+set_io UART_1_CTS_N           \
+    -GROUP_NAME UART_1_MODEM  \
+    -DIRECTION INPUT
+
+
+set_io UART_1_DCD_N           \
+    -GROUP_NAME UART_1_MODEM  \
+    -DIRECTION INPUT
+
+
+set_io UART_1_DSR_N           \
+    -GROUP_NAME UART_1_MODEM  \
+    -DIRECTION INPUT
+
+
+set_io UART_1_DTR_N           \
+    -GROUP_NAME UART_1_MODEM  \
+    -DIRECTION OUTPUT
+
+
+set_io UART_1_RI_N            \
+    -GROUP_NAME UART_1_MODEM  \
+    -DIRECTION INPUT
+
+
+set_io UART_1_RTS_N           \
+    -GROUP_NAME UART_1_MODEM  \
+    -DIRECTION OUTPUT
+
 
 
 #
@@ -115,6 +137,8 @@ set_io UART_1_TXD            \
 # Old IO constraints, commented out for reference
 #
 
+# set_io I2C_0_SCL -GROUP_NAME I2C_0_PADs -DIRECTION INOUT 
+# set_io I2C_0_SDA -GROUP_NAME I2C_0_PADs -DIRECTION INOUT 
 # set_io SPI_0_CLK -GROUP_NAME SPI_0_PADs -DIRECTION INOUT 
 # set_io SPI_0_DI -GROUP_NAME SPI_0_PADs -DIRECTION INPUT 
 # set_io SPI_0_DO -GROUP_NAME SPI_0_PADs -DIRECTION OUTPUT 
@@ -123,6 +147,8 @@ set_io UART_1_TXD            \
 # set_io UART_0_TXD -GROUP_NAME UART_0_PADs -DIRECTION OUTPUT 
 # set_io UART_1_RXD -GROUP_NAME UART_1_PADs -DIRECTION INPUT 
 # set_io UART_1_TXD -GROUP_NAME UART_1_PADs -DIRECTION OUTPUT 
+# set_io I2C_0_SCL -GROUP_NAME I2C_0_PADs -DIRECTION INOUT 
+# set_io I2C_0_SDA -GROUP_NAME I2C_0_PADs -DIRECTION INOUT 
 # set_io SPI_0_CLK -GROUP_NAME SPI_0_PADs -DIRECTION INOUT 
 # set_io SPI_0_DI -GROUP_NAME SPI_0_PADs -DIRECTION INPUT 
 # set_io SPI_0_DO -GROUP_NAME SPI_0_PADs -DIRECTION OUTPUT 

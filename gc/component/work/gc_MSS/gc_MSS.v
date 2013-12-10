@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Sat Dec 07 14:32:50 2013
+// Created by SmartDesign Mon Dec 09 22:28:07 2013
 // Version: v11.0 11.0.0.23
 //////////////////////////////////////////////////////////////////////
 
@@ -17,11 +17,16 @@ module gc_MSS(
     MSS_RESET_N,
     SPI_0_DI,
     UART_0_RXD,
+    UART_1_CTS_N,
+    UART_1_DCD_N,
+    UART_1_DSR_N,
+    UART_1_RI_N,
     UART_1_RXD,
     VAREF0,
     // Outputs
     FAB_CLK,
     GPIO_3_OUT,
+    GPIO_5_OUT,
     M2F_RESET_N,
     MSSPADDR,
     MSSPENABLE,
@@ -31,6 +36,8 @@ module gc_MSS(
     SPEAKER_DAC,
     SPI_0_DO,
     UART_0_TXD,
+    UART_1_DTR_N,
+    UART_1_RTS_N,
     UART_1_TXD,
     // Inouts
     I2C_0_SCL,
@@ -51,6 +58,10 @@ input         MSSPSLVERR;
 input         MSS_RESET_N;
 input         SPI_0_DI;
 input         UART_0_RXD;
+input         UART_1_CTS_N;
+input         UART_1_DCD_N;
+input         UART_1_DSR_N;
+input         UART_1_RI_N;
 input         UART_1_RXD;
 input         VAREF0;
 //--------------------------------------------------------------------
@@ -58,6 +69,7 @@ input         VAREF0;
 //--------------------------------------------------------------------
 output        FAB_CLK;
 output        GPIO_3_OUT;
+output        GPIO_5_OUT;
 output        M2F_RESET_N;
 output [19:0] MSSPADDR;
 output        MSSPENABLE;
@@ -67,6 +79,8 @@ output        MSSPWRITE;
 output        SPEAKER_DAC;
 output        SPI_0_DO;
 output        UART_0_TXD;
+output        UART_1_DTR_N;
+output        UART_1_RTS_N;
 output        UART_1_TXD;
 //--------------------------------------------------------------------
 // Inout
@@ -82,6 +96,7 @@ wire          F2M_GPI_0;
 wire          GPIO_2_IN;
 wire          GPIO_3_OUT_net_0;
 wire          GPIO_4_IN;
+wire          GPIO_5_OUT_net_0;
 wire          I2C_0_SCL;
 wire          I2C_0_SDA;
 wire          MSS_ACE_0_SDD0_D;
@@ -95,6 +110,7 @@ wire          MSS_ADLIB_INST_SYNCCLKFDBK;
 wire          MSS_GPIO_0_GPIO_2_IN_Y;
 wire   [3:3]  MSS_GPIO_0_GPIO_3_OUT_D;
 wire          MSS_GPIO_0_GPIO_4_IN_Y;
+wire   [5:5]  MSS_GPIO_0_GPIO_5_OUT_D;
 wire          MSS_I2C_0_SCL_E;
 wire          MSS_I2C_0_SCL_Y;
 wire          MSS_I2C_0_SDA_E;
@@ -115,14 +131,16 @@ wire          MSS_UART_1_RXD_Y;
 wire          MSS_UART_1_TXD_D;
 wire          MSSINT_GPI_0_Y;
 wire          net_71;
-wire   [19:0] net_72_PADDR;
-wire          net_72_PENABLE;
+wire          net_72;
+wire          net_73;
+wire   [19:0] net_74_PADDR;
+wire          net_74_PENABLE;
 wire   [31:0] MSSPRDATA;
 wire          MSSPREADY;
-wire          net_72_PSELx;
+wire          net_74_PSELx;
 wire          MSSPSLVERR;
-wire   [31:0] net_72_PWDATA;
-wire          net_72_PWRITE;
+wire   [31:0] net_74_PWDATA;
+wire          net_74_PWRITE;
 wire          SPEAKER_DAC_net_0;
 wire          SPI_0_CLK;
 wire          SPI_0_DI;
@@ -130,20 +148,27 @@ wire          SPI_0_DO_net_0;
 wire          SPI_0_SS;
 wire          UART_0_RXD;
 wire          UART_0_TXD_net_0;
+wire          UART_1_CTS_N;
+wire          UART_1_DCD_N;
+wire          UART_1_DSR_N;
+wire          UART_1_RI_N;
 wire          UART_1_RXD;
 wire          UART_1_TXD_net_0;
 wire          VAREF0;
 wire          MSS_ADLIB_INST_SYNCCLKFDBK_net_0;
 wire          net_71_net_0;
-wire          net_72_PSELx_net_0;
-wire          net_72_PENABLE_net_0;
-wire          net_72_PWRITE_net_0;
-wire   [19:0] net_72_PADDR_net_0;
-wire   [31:0] net_72_PWDATA_net_0;
+wire          net_74_PSELx_net_0;
+wire          net_74_PENABLE_net_0;
+wire          net_74_PWRITE_net_0;
+wire          net_73_net_0;
+wire          net_72_net_0;
+wire   [19:0] net_74_PADDR_net_0;
+wire   [31:0] net_74_PWDATA_net_0;
 wire          UART_0_TXD_net_1;
 wire          UART_1_TXD_net_1;
 wire          SPI_0_DO_net_1;
 wire          SPEAKER_DAC_net_1;
+wire          GPIO_5_OUT_net_1;
 wire          GPIO_3_OUT_net_1;
 wire   [31:0] GPI_net_0;
 wire   [31:0] GPO_net_0;
@@ -177,16 +202,20 @@ assign MSS_ADLIB_INST_SYNCCLKFDBK_net_0 = MSS_ADLIB_INST_SYNCCLKFDBK;
 assign FAB_CLK                          = MSS_ADLIB_INST_SYNCCLKFDBK_net_0;
 assign net_71_net_0                     = net_71;
 assign M2F_RESET_N                      = net_71_net_0;
-assign net_72_PSELx_net_0               = net_72_PSELx;
-assign MSSPSEL                          = net_72_PSELx_net_0;
-assign net_72_PENABLE_net_0             = net_72_PENABLE;
-assign MSSPENABLE                       = net_72_PENABLE_net_0;
-assign net_72_PWRITE_net_0              = net_72_PWRITE;
-assign MSSPWRITE                        = net_72_PWRITE_net_0;
-assign net_72_PADDR_net_0               = net_72_PADDR;
-assign MSSPADDR[19:0]                   = net_72_PADDR_net_0;
-assign net_72_PWDATA_net_0              = net_72_PWDATA;
-assign MSSPWDATA[31:0]                  = net_72_PWDATA_net_0;
+assign net_74_PSELx_net_0               = net_74_PSELx;
+assign MSSPSEL                          = net_74_PSELx_net_0;
+assign net_74_PENABLE_net_0             = net_74_PENABLE;
+assign MSSPENABLE                       = net_74_PENABLE_net_0;
+assign net_74_PWRITE_net_0              = net_74_PWRITE;
+assign MSSPWRITE                        = net_74_PWRITE_net_0;
+assign net_73_net_0                     = net_73;
+assign UART_1_RTS_N                     = net_73_net_0;
+assign net_72_net_0                     = net_72;
+assign UART_1_DTR_N                     = net_72_net_0;
+assign net_74_PADDR_net_0               = net_74_PADDR;
+assign MSSPADDR[19:0]                   = net_74_PADDR_net_0;
+assign net_74_PWDATA_net_0              = net_74_PWDATA;
+assign MSSPWDATA[31:0]                  = net_74_PWDATA_net_0;
 assign UART_0_TXD_net_1                 = UART_0_TXD_net_0;
 assign UART_0_TXD                       = UART_0_TXD_net_1;
 assign UART_1_TXD_net_1                 = UART_1_TXD_net_0;
@@ -195,12 +224,15 @@ assign SPI_0_DO_net_1                   = SPI_0_DO_net_0;
 assign SPI_0_DO                         = SPI_0_DO_net_1;
 assign SPEAKER_DAC_net_1                = SPEAKER_DAC_net_0;
 assign SPEAKER_DAC                      = SPEAKER_DAC_net_1;
+assign GPIO_5_OUT_net_1                 = GPIO_5_OUT_net_0;
+assign GPIO_5_OUT                       = GPIO_5_OUT_net_1;
 assign GPIO_3_OUT_net_1                 = GPIO_3_OUT_net_0;
 assign GPIO_3_OUT                       = GPIO_3_OUT_net_1;
 //--------------------------------------------------------------------
 // Slices assignments
 //--------------------------------------------------------------------
 assign MSS_GPIO_0_GPIO_3_OUT_D[3] = GPO_net_0[3:3];
+assign MSS_GPIO_0_GPIO_5_OUT_D[5] = GPO_net_0[5:5];
 assign MSS_SPI_0_SS_D[0]          = SPI0SSO_net_0[0:0];
 //--------------------------------------------------------------------
 // Concatenation assignments
@@ -253,10 +285,10 @@ MSS_ADLIB_INST(
         .UART0DSRn      ( GND_net ), // tied to 1'b0 from definition
         .UART0RIn       ( GND_net ), // tied to 1'b0 from definition
         .UART0DCDn      ( GND_net ), // tied to 1'b0 from definition
-        .UART1CTSn      ( GND_net ), // tied to 1'b0 from definition
-        .UART1DSRn      ( GND_net ), // tied to 1'b0 from definition
-        .UART1RIn       ( GND_net ), // tied to 1'b0 from definition
-        .UART1DCDn      ( GND_net ), // tied to 1'b0 from definition
+        .UART1CTSn      ( UART_1_CTS_N ),
+        .UART1DSRn      ( UART_1_DSR_N ),
+        .UART1RIn       ( UART_1_RI_N ),
+        .UART1DCDn      ( UART_1_DCD_N ),
         .I2C0SMBUSNI    ( GND_net ), // tied to 1'b0 from definition
         .I2C0SMBALERTNI ( GND_net ), // tied to 1'b0 from definition
         .I2C0BCLK       ( GND_net ), // tied to 1'b0 from definition
@@ -355,11 +387,11 @@ MSS_ADLIB_INST(
         .GNDVAREF       ( GND_net ), // tied to 1'b0 from definition
         .PUn            ( GND_net ), // tied to 1'b0 from definition
         // Outputs
-        .MSSPADDR       ( net_72_PADDR ),
-        .MSSPWDATA      ( net_72_PWDATA ),
-        .MSSPWRITE      ( net_72_PWRITE ),
-        .MSSPSEL        ( net_72_PSELx ),
-        .MSSPENABLE     ( net_72_PENABLE ),
+        .MSSPADDR       ( net_74_PADDR ),
+        .MSSPWDATA      ( net_74_PWDATA ),
+        .MSSPWRITE      ( net_74_PWRITE ),
+        .MSSPSEL        ( net_74_PSELx ),
+        .MSSPENABLE     ( net_74_PENABLE ),
         .FABPRDATA      (  ),
         .FABPREADY      (  ),
         .FABPSLVERR     (  ),
@@ -373,8 +405,8 @@ MSS_ADLIB_INST(
         .GPO            ( GPO_net_0 ),
         .UART0RTSn      (  ),
         .UART0DTRn      (  ),
-        .UART1RTSn      (  ),
-        .UART1DTRn      (  ),
+        .UART1RTSn      ( net_73 ),
+        .UART1DTRn      ( net_72 ),
         .I2C0SMBUSNO    (  ),
         .I2C0SMBALERTNO (  ),
         .I2C1SMBUSNO    (  ),
@@ -516,6 +548,17 @@ MSS_GPIO_0_GPIO_4_IN(
         .PAD ( GPIO_4_IN ),
         // Outputs
         .Y   ( MSS_GPIO_0_GPIO_4_IN_Y ) 
+        );
+
+//--------OUTBUF_MSS
+OUTBUF_MSS #( 
+        .ACT_CONFIG ( 0 ),
+        .ACT_PIN    ( "U2" ) )
+MSS_GPIO_0_GPIO_5_OUT(
+        // Inputs
+        .D   ( MSS_GPIO_0_GPIO_5_OUT_D ),
+        // Outputs
+        .PAD ( GPIO_5_OUT_net_0 ) 
         );
 
 //--------BIBUF_OPEND_MSS

@@ -1,5 +1,6 @@
 #include "xbee_interface.h"
 #include "mss_uart.h"
+#include "mss_gpio.h"
 #include "atomics.h"
 
 static uint8_t _XBeeFrameId = 1;
@@ -15,6 +16,10 @@ int xbee_interface_init() {
   int check;
   check = _xbee_interface_alloc_init();
   if (check < 0) return check;
+
+  MSS_GPIO_config(MSS_GPIO_5, MSS_GPIO_OUTPUT_MODE);
+  MSS_GPIO_set_output(MSS_GPIO_5, 0x0);
+  MSS_GPIO_set_output(MSS_GPIO_5, 0x1);
 
   MSS_UART_init(&g_mss_uart1,
                 MSS_UART_57600_BAUD,

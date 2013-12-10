@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by Actel SmartDesign Sat Dec 07 14:33:28 2013
+// Created by Actel SmartDesign Mon Dec 09 22:28:11 2013
 // Testbench Template
 // This is a basic testbench that instantiates your design with basic 
 // clock and reset pins connected.  If your design has special
@@ -52,6 +52,7 @@ gc gc_0 (
     .LED_RECV_IN({1{1'b0}}),
     .GPIO_4_IN({1{1'b0}}),
     .GPIO_2_IN({1{1'b0}}),
+    .UART_1_CTS_N({1{1'b0}}),
 
     // Outputs
     .UART_0_TXD( ),
@@ -66,6 +67,8 @@ gc gc_0 (
     .SPEAKER_DAC( ),
     .LED_OUT( ),
     .GPIO_3_OUT( ),
+    .GPIO_5_OUT( ),
+    .UART_1_RTS_N( ),
 
     // Inouts
     .SPI_0_CLK( ),

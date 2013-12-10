@@ -11,7 +11,7 @@ The file contains the area information from mapper to be displayed as part of th
 <data>2999</data>
 </parameter>
 <parameter tooltip="Total IO Cells used" name="IO Cells">
-<data>25</data>
+<data>28</data>
 </parameter>
 <parameter tooltip="Total Block RAMs used" name="Block RAMs">
 <data>1</data>

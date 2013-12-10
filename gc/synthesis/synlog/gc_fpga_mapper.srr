@@ -125,16 +125,16 @@ Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01
 Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 117MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 114MB peak: 117MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 114MB peak: 117MB)
 
 
 Finished Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 121MB peak: 121MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 120MB peak: 122MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 120MB peak: 121MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 119MB peak: 122MB)
+Finished preparing to map (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 119MB peak: 121MB)
 
 
 High Fanout Net Report
@@ -176,7 +176,7 @@ CoreAPB3_0.CAPB3O0OI_1[0] / Y                                    46
 @N: FP130 |Promoting Net CoreAPB3_0_APBmslave0_PADDR[4] on CLKINT  I_324 
 @N: FP130 |Promoting Net IR_LED_0_DIVCLK on CLKINT  IR_LED_0.div.clkOut_inferred_clock 
 
-Finished technology mapping (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 132MB peak: 135MB)
+Finished technology mapping (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 132MB peak: 135MB)
 
 
 Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 133MB peak: 135MB)
@@ -240,15 +240,15 @@ Clock Tree ID     Driving Element         Drive Element Type     Fanout     Samp
 
 Writing Analyst data base C:\Users\mttschlt\eecs373\UMKarts\gc\synthesis\gc.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 131MB peak: 135MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 131MB peak: 135MB)
 
 Writing EDIF Netlist and constraint files
 G-2012.09M-SP1 
 
 Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 132MB peak: 135MB)
 
-@W: MT246 :"c:\users\mttschlt\eecs373\umkarts\gc\component\work\gc_mss\gc_mss.v":654:7:654:18|Blackbox MSSINT is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
-@W: MT246 :"c:\users\mttschlt\eecs373\umkarts\gc\component\work\gc_mss\gc_mss.v":587:0:587:11|Blackbox TRIBUFF_MSS is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\mttschlt\eecs373\umkarts\gc\component\work\gc_mss\gc_mss.v":697:7:697:18|Blackbox MSSINT is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\mttschlt\eecs373\umkarts\gc\component\work\gc_mss\gc_mss.v":630:0:630:11|Blackbox TRIBUFF_MSS is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
 @W: MT420 |Found inferred clock clk_div_20000_10000|clkOut_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:IR_LED_0.div.clkOut"
 
 Found clock FAB_CLK with period 10.00ns 
@@ -256,7 +256,7 @@ Found clock FCLK with period 10.00ns
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Sat Dec 07 14:36:35 2013
+# Timing Report written on Mon Dec 09 22:28:32 2013
 #
 
 
@@ -1444,28 +1444,28 @@ Report for cell gc.verilog
              BIBUF     1
          BIBUF_MSS     2
    BIBUF_OPEND_MSS     2
-             INBUF     1
+             INBUF     2
            INBUF_A     1
          INBUF_MSS     6
-            OUTBUF     7
+            OUTBUF     8
           OUTBUF_A     1
-        OUTBUF_MSS     3
+        OUTBUF_MSS     4
        TRIBUFF_MSS     1
                    -----
-             TOTAL    25
+             TOTAL    28
 
 
 Core Cells         : 2999 of 4608 (65%)
-IO Cells           : 25
+IO Cells           : 28
 
   RAM/ROM Usage Summary
 Block Rams : 1 of 8 (12%)
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:05s; Memory used current: 43MB peak: 135MB)
+At Mapper Exit (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 43MB peak: 135MB)
 
-Process took 0h:00m:08s realtime, 0h:00m:05s cputime
-# Sat Dec 07 14:36:37 2013
+Process took 0h:00m:09s realtime, 0h:00m:05s cputime
+# Mon Dec 09 22:28:35 2013
 
 ###########################################################]

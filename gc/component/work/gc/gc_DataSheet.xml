@@ -12,7 +12,7 @@
     <project-description>
     </project-description>
     <location>C:/Users/mttschlt/eecs373/UMKarts/gc/component/work/gc</location>
-    <state>GENERATED ( Sat Dec 07 14:33:34 2013 )</state>
+    <state>GENERATED ( Mon Dec 09 22:28:16 2013 )</state>
     <swide-toolchain>SoftConsole workspace generated to C:\Users\mttschlt\eecs373\UMKarts\gc\SoftConsole</swide-toolchain>
   </project-settings>
   <site-map>
@@ -116,6 +116,18 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
+    <port-name>UART_1_RTS_N</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>UART_1_CTS_N</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
     <port-name>UART_1_TXD</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
@@ -165,6 +177,12 @@
   </io>
   <io>
     <port-name>PWM1</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>GPIO_5_OUT</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>

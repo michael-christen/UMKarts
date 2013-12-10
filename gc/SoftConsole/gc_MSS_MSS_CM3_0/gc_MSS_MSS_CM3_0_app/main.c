@@ -34,17 +34,23 @@ __attribute__ ((interrupt)) void GPIO2_IRQHandler( void ){
 	MSS_GPIO_clear_irq( MSS_GPIO_2 );
 }
 
-int main()
-{
+int main() {
+	uint64_t wait_for_xbee;
 	uint32_t xbee_rapid_packet_limiter = 0;
 	/* Initialize the timer */
 	MSS_RTC_init();
 	MSS_RTC_start();
 	/* End initializing timer */
 
+	MSS_GPIO_init();
+
 	struct xbee_packet_received * xbee_read_packet;
 	/* Initialize the XBee interface */
 	int err = xbee_interface_init();
+
+	/* Wait for 100ms for xbee */
+	wait_for_xbee = MSS_RTC_get_rtc_count();
+	while (MSS_RTC_get_rtc_count() - wait_for_xbee < 28) ;
 
 	if (err != 0) {
 		return 0;
@@ -74,8 +80,6 @@ int main()
 	CONTROLLER_setup_mem();
 
 	// Setting up GPIO interrupts for item pick ups
-	MSS_GPIO_init();
-
 	// Magnetic sensor
 	MSS_GPIO_config(MSS_GPIO_2, MSS_GPIO_INPUT_MODE | MSS_GPIO_IRQ_EDGE_NEGATIVE);
 	MSS_GPIO_enable_irq(MSS_GPIO_2);

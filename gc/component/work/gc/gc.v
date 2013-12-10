@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Sat Dec 07 14:33:28 2013
+// Created by SmartDesign Mon Dec 09 22:28:11 2013
 // Version: v11.0 11.0.0.23
 //////////////////////////////////////////////////////////////////////
 
@@ -14,10 +14,12 @@ module gc(
     MSS_RESET_N,
     SPI_0_DI,
     UART_0_RXD,
+    UART_1_CTS_N,
     UART_1_RXD,
     VAREF0,
     // Outputs
     GPIO_3_OUT,
+    GPIO_5_OUT,
     LED_OUT,
     LMOTOR,
     LSERVO,
@@ -28,6 +30,7 @@ module gc(
     SPI_0_DO,
     TX,
     UART_0_TXD,
+    UART_1_RTS_N,
     UART_1_TXD,
     // Inouts
     I2C_0_SCL,
@@ -46,12 +49,14 @@ input  LED_RECV_IN;
 input  MSS_RESET_N;
 input  SPI_0_DI;
 input  UART_0_RXD;
+input  UART_1_CTS_N;
 input  UART_1_RXD;
 input  VAREF0;
 //--------------------------------------------------------------------
 // Output
 //--------------------------------------------------------------------
 output GPIO_3_OUT;
+output GPIO_5_OUT;
 output LED_OUT;
 output LMOTOR;
 output LSERVO;
@@ -62,6 +67,7 @@ output SPEAKER_DAC;
 output SPI_0_DO;
 output TX;
 output UART_0_TXD;
+output UART_1_RTS_N;
 output UART_1_TXD;
 //--------------------------------------------------------------------
 // Inout
@@ -110,6 +116,7 @@ wire          gc_response_apb_0_start_init;
 wire          GPIO_2_IN;
 wire          GPIO_3_OUT_net_0;
 wire          GPIO_4_IN;
+wire          GPIO_5_OUT_net_0;
 wire          I2C_0_SCL;
 wire          I2C_0_SDA;
 wire          IR_LED_0_DIVCLK;
@@ -134,30 +141,34 @@ wire          send_query_0_wavebird_id_sent;
 wire          SPEAKER_DAC_net_0;
 wire          SPI_0_CLK;
 wire          SPI_0_DI;
-wire          SPI_0_DO_1;
+wire          SPI_0_DO_0;
 wire          SPI_0_SS;
 wire          TX_net_0;
 wire          UART_0_RXD;
-wire          UART_0_TXD_0;
+wire          UART_0_TXD_1;
+wire          UART_1_CTS_N;
+wire          UART_1_RTS_N_net_0;
 wire          UART_1_RXD;
-wire          UART_1_TXD_0;
+wire          UART_1_TXD_1;
 wire          VAREF0;
 wire   [23:0] wavebird_id;
 wire          wavebird_id_ready;
 wire          wavebird_id_send;
-wire          UART_0_TXD_0_net_0;
+wire          UART_0_TXD_1_net_0;
 wire          PWM1_net_1;
 wire          LMOTOR_net_1;
 wire          RMOTOR_net_1;
 wire          LSERVO_net_1;
 wire          RSERVO_net_1;
-wire          UART_1_TXD_0_net_0;
+wire          UART_1_TXD_1_net_0;
 wire          TX_net_1;
-wire          SPI_0_DO_1_net_0;
+wire          SPI_0_DO_0_net_0;
 wire          SPEAKER_DAC_net_1;
 wire          LED_OUT_0_net_0;
 wire          controller_data_0_net_0;
 wire          GPIO_3_OUT_net_1;
+wire          GPIO_5_OUT_net_1;
+wire          UART_1_RTS_N_net_1;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
@@ -192,10 +203,10 @@ wire   [4:0]  CoreAPB3_0_APBmslave0_PADDR_1;
 wire   [31:0] CoreAPB3_0_APBmslave0_PWDATA;
 wire   [7:0]  CoreAPB3_0_APBmslave0_PWDATA_0_7to0;
 wire   [7:0]  CoreAPB3_0_APBmslave0_PWDATA_0;
-wire   [7:0]  CoreAPB3_0_APBmslave2_PRDATA;
 wire   [31:8] CoreAPB3_0_APBmslave2_PRDATA_0_31to8;
 wire   [7:0]  CoreAPB3_0_APBmslave2_PRDATA_0_7to0;
 wire   [31:0] CoreAPB3_0_APBmslave2_PRDATA_0;
+wire   [7:0]  CoreAPB3_0_APBmslave2_PRDATA;
 wire   [31:20]gc_MSS_0_MSS_MASTER_APB_PADDR_0_31to20;
 wire   [19:0] gc_MSS_0_MSS_MASTER_APB_PADDR_0_19to0;
 wire   [31:0] gc_MSS_0_MSS_MASTER_APB_PADDR_0;
@@ -226,8 +237,8 @@ assign IR_QUEUE_0_EMPTY = ~ EMPTY_OUT_PRE_INV0_0;
 //--------------------------------------------------------------------
 // Top level output port assignments
 //--------------------------------------------------------------------
-assign UART_0_TXD_0_net_0      = UART_0_TXD_0;
-assign UART_0_TXD              = UART_0_TXD_0_net_0;
+assign UART_0_TXD_1_net_0      = UART_0_TXD_1;
+assign UART_0_TXD              = UART_0_TXD_1_net_0;
 assign PWM1_net_1              = PWM1_net_0;
 assign PWM1                    = PWM1_net_1;
 assign LMOTOR_net_1            = LMOTOR_net_0;
@@ -238,12 +249,12 @@ assign LSERVO_net_1            = LSERVO_net_0;
 assign LSERVO                  = LSERVO_net_1;
 assign RSERVO_net_1            = RSERVO_net_0;
 assign RSERVO                  = RSERVO_net_1;
-assign UART_1_TXD_0_net_0      = UART_1_TXD_0;
-assign UART_1_TXD              = UART_1_TXD_0_net_0;
+assign UART_1_TXD_1_net_0      = UART_1_TXD_1;
+assign UART_1_TXD              = UART_1_TXD_1_net_0;
 assign TX_net_1                = TX_net_0;
 assign TX                      = TX_net_1;
-assign SPI_0_DO_1_net_0        = SPI_0_DO_1;
-assign SPI_0_DO                = SPI_0_DO_1_net_0;
+assign SPI_0_DO_0_net_0        = SPI_0_DO_0;
+assign SPI_0_DO                = SPI_0_DO_0_net_0;
 assign SPEAKER_DAC_net_1       = SPEAKER_DAC_net_0;
 assign SPEAKER_DAC             = SPEAKER_DAC_net_1;
 assign LED_OUT_0_net_0         = LED_OUT_0;
@@ -252,6 +263,10 @@ assign controller_data_0_net_0 = controller_data_0;
 assign controller_data         = controller_data_0_net_0;
 assign GPIO_3_OUT_net_1        = GPIO_3_OUT_net_0;
 assign GPIO_3_OUT              = GPIO_3_OUT_net_1;
+assign GPIO_5_OUT_net_1        = GPIO_5_OUT_net_0;
+assign GPIO_5_OUT              = GPIO_5_OUT_net_1;
+assign UART_1_RTS_N_net_1      = UART_1_RTS_N_net_0;
+assign UART_1_RTS_N            = UART_1_RTS_N_net_1;
 //--------------------------------------------------------------------
 // Bus Interface Nets Assignments - Unequal Pin Widths
 //--------------------------------------------------------------------
@@ -457,35 +472,42 @@ CoreUARTapb_0(
 //--------gc_MSS
 gc_MSS gc_MSS_0(
         // Inputs
-        .MSS_RESET_N ( MSS_RESET_N ),
-        .MSSPREADY   ( gc_MSS_0_MSS_MASTER_APB_PREADY ),
-        .MSSPSLVERR  ( gc_MSS_0_MSS_MASTER_APB_PSLVERR ),
-        .UART_0_RXD  ( UART_0_RXD ),
-        .UART_1_RXD  ( UART_1_RXD ),
-        .SPI_0_DI    ( SPI_0_DI ),
-        .VAREF0      ( VAREF0 ),
-        .F2M_GPI_0   ( LED_RECV_0_INTERRUPT ),
-        .GPIO_4_IN   ( GPIO_4_IN ),
-        .GPIO_2_IN   ( GPIO_2_IN ),
-        .MSSPRDATA   ( gc_MSS_0_MSS_MASTER_APB_PRDATA ),
+        .MSS_RESET_N  ( MSS_RESET_N ),
+        .MSSPREADY    ( gc_MSS_0_MSS_MASTER_APB_PREADY ),
+        .MSSPSLVERR   ( gc_MSS_0_MSS_MASTER_APB_PSLVERR ),
+        .UART_0_RXD   ( UART_0_RXD ),
+        .UART_1_RXD   ( UART_1_RXD ),
+        .SPI_0_DI     ( SPI_0_DI ),
+        .VAREF0       ( VAREF0 ),
+        .F2M_GPI_0    ( LED_RECV_0_INTERRUPT ),
+        .GPIO_4_IN    ( GPIO_4_IN ),
+        .GPIO_2_IN    ( GPIO_2_IN ),
+        .MSSPRDATA    ( gc_MSS_0_MSS_MASTER_APB_PRDATA ),
+        .UART_1_DSR_N ( GND_net ),
+        .UART_1_CTS_N ( UART_1_CTS_N ),
+        .UART_1_RI_N  ( GND_net ),
+        .UART_1_DCD_N ( GND_net ),
         // Outputs
-        .FAB_CLK     ( gc_MSS_0_FAB_CLK ),
-        .M2F_RESET_N ( gc_MSS_0_M2F_RESET_N ),
-        .MSSPSEL     ( gc_MSS_0_MSS_MASTER_APB_PSELx ),
-        .MSSPENABLE  ( gc_MSS_0_MSS_MASTER_APB_PENABLE ),
-        .MSSPWRITE   ( gc_MSS_0_MSS_MASTER_APB_PWRITE ),
-        .UART_0_TXD  ( UART_0_TXD_0 ),
-        .UART_1_TXD  ( UART_1_TXD_0 ),
-        .SPI_0_DO    ( SPI_0_DO_1 ),
-        .SPEAKER_DAC ( SPEAKER_DAC_net_0 ),
-        .MSSPADDR    ( gc_MSS_0_MSS_MASTER_APB_PADDR ),
-        .MSSPWDATA   ( gc_MSS_0_MSS_MASTER_APB_PWDATA ),
-        .GPIO_3_OUT  ( GPIO_3_OUT_net_0 ),
+        .FAB_CLK      ( gc_MSS_0_FAB_CLK ),
+        .M2F_RESET_N  ( gc_MSS_0_M2F_RESET_N ),
+        .MSSPSEL      ( gc_MSS_0_MSS_MASTER_APB_PSELx ),
+        .MSSPENABLE   ( gc_MSS_0_MSS_MASTER_APB_PENABLE ),
+        .MSSPWRITE    ( gc_MSS_0_MSS_MASTER_APB_PWRITE ),
+        .UART_0_TXD   ( UART_0_TXD_1 ),
+        .UART_1_TXD   ( UART_1_TXD_1 ),
+        .SPI_0_DO     ( SPI_0_DO_0 ),
+        .SPEAKER_DAC  ( SPEAKER_DAC_net_0 ),
+        .GPIO_3_OUT   ( GPIO_3_OUT_net_0 ),
+        .MSSPADDR     ( gc_MSS_0_MSS_MASTER_APB_PADDR ),
+        .MSSPWDATA    ( gc_MSS_0_MSS_MASTER_APB_PWDATA ),
+        .GPIO_5_OUT   ( GPIO_5_OUT_net_0 ),
+        .UART_1_RTS_N ( UART_1_RTS_N_net_0 ),
+        .UART_1_DTR_N (  ),
         // Inouts
-        .SPI_0_CLK   ( SPI_0_CLK ),
-        .SPI_0_SS    ( SPI_0_SS ),
-        .I2C_0_SCL   ( I2C_0_SCL ),
-        .I2C_0_SDA   ( I2C_0_SDA ) 
+        .SPI_0_CLK    ( SPI_0_CLK ),
+        .SPI_0_SS     ( SPI_0_SS ),
+        .I2C_0_SCL    ( I2C_0_SCL ),
+        .I2C_0_SDA    ( I2C_0_SDA ) 
         );
 
 //--------gc_receive

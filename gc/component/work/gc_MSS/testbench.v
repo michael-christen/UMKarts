@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by Actel SmartDesign Sat Dec 07 14:32:50 2013
+// Created by Actel SmartDesign Mon Dec 09 22:28:07 2013
 // Testbench Template
 // This is a basic testbench that instantiates your design with basic 
 // clock and reset pins connected.  If your design has special
@@ -47,6 +47,10 @@ gc_MSS gc_MSS_0 (
     .MSSPREADY({1{1'b0}}),
     .MSSPSLVERR({1{1'b0}}),
     .F2M_GPI_0({1{1'b0}}),
+    .UART_1_DSR_N({1{1'b0}}),
+    .UART_1_CTS_N({1{1'b0}}),
+    .UART_1_RI_N({1{1'b0}}),
+    .UART_1_DCD_N({1{1'b0}}),
     .MSSPRDATA({32{1'b0}}),
     .UART_0_RXD({1{1'b0}}),
     .UART_1_RXD({1{1'b0}}),
@@ -62,12 +66,15 @@ gc_MSS gc_MSS_0 (
     .MSSPSEL( ),
     .MSSPENABLE( ),
     .MSSPWRITE( ),
+    .UART_1_RTS_N( ),
+    .UART_1_DTR_N( ),
     .MSSPADDR( ),
     .MSSPWDATA( ),
     .UART_0_TXD( ),
     .UART_1_TXD( ),
     .SPI_0_DO( ),
     .SPEAKER_DAC( ),
+    .GPIO_5_OUT( ),
     .GPIO_3_OUT( ),
 
     // Inouts
