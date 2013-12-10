@@ -4,11 +4,17 @@
 #include "drivers/mss_uart/mss_uart.h"
 #include "drivers/mss_timer/mss_timer.h"
 
-static uint32_t cur_addr = 0;
-static uint32_t stop_addr = 0;
-static uint32_t	buf_start = -1;
-static uint32_t repeat_addr = -1;
-static uint8_t sound_buf[512];
+static uint32_t cur_addr_1 = 0;
+static uint32_t stop_addr_1 = 0;
+static uint32_t	buf_start_1 = -1;
+static uint32_t repeat_addr_1 = -1;
+static uint8_t sound_buf_1[512];
+
+static uint32_t cur_addr_2 = 0;
+static uint32_t stop_addr_2 = 0;
+static uint32_t	buf_start_2 = -1;
+static uint32_t repeat_addr_2 = -1;
+static uint8_t sound_buf_2[512];
 
 void sound_init() {
 	spi_flash_init();
@@ -32,45 +38,98 @@ void sound_init() {
 	MSS_TIM1_enable_irq();
 }
 
-void sound_play_repeat(uint32_t begin, uint32_t end) {
-	sound_play(begin, end);
-	repeat_addr = begin;
-}
+void sound_play_start(uint32_t begin, uint32_t end, int repeat) {
+	// If we're already playing the same sound, don't start it over.
+	if ((sound_playing1 && end == stop_addr1) || (sound_playing2 && end == stop_addr2))
+		return;
 
-void sound_play(uint32_t begin, uint32_t end) {
-	cur_addr = begin;
-	stop_addr = end;
-	repeat_addr = -1;
+	if (!sound_playing1) {
+		cur_addr1 = begin;
+		stop_addr1 = end;
+		if (repeat)
+			repeat_addr1 = begin;
+		else
+			repeat_addr1 = -1;
+	} else {
+		cur_addr2 = begin;
+		stop_addr2 = end;
+		if (repeat)
+			repeat_addr2 = begin;
+		else
+			repeat_addr2 = -1;
+	}
 
 	MSS_TIM1_start();
 }
 
+void sound_play_repeat(uint32_t begin, uint32_t end) {
+	sound_play_start(begin, end, 1);
+}
+
+void sound_play(uint32_t begin, uint32_t end) {
+	sound_play_start(begin, end, 0);
+}
+
 void sound_stop() {
-	repeat_addr = -1;
-	stop_addr = 0;
+	repeat_addr1 = -1;
+	stop_addr1 = 0;
+	
+	repeat_addr2 = -1;
+	stop_addr2 = 0;
 }
 
 __attribute__ ((interrupt)) void Timer1_IRQHandler( void ){
-	if (cur_addr < buf_start || cur_addr >= (buf_start + sizeof(sound_buf))) {
-		buf_start = cur_addr & 0xFFFFFFFE;
-		spi_flash_read(buf_start, &sound_buf, sizeof(sound_buf));
-	}
+	uint32_t sample = 0;
 
-	ACE_set_sdd_value(SDD1_OUT, (uint32_t) sound_buf[cur_addr - buf_start]);
-
-	cur_addr++;
-
-	if (cur_addr >= stop_addr) {
-		if (repeat_addr != -1) {
-			cur_addr = repeat_addr;
-		} else {
-			MSS_TIM1_stop();
+	if (sound_playing1) {
+		if (cur_addr1 < buf_start1 || cur_addr1 >= (buf_start1 + sizeof(sound_buf1))) {
+			buf_start1 = cur_addr1 & 0xFFFFFFFE;
+			spi_flash_read(buf_start1, &sound_buf1, sizeof(sound_buf1));
 		}
+		
+		sample += sound_buf1[cur_addr1 - buf_start1];
+		
+		cur_addr1++;
+		
+		if (cur_addr1 >= stop_addr1) {
+			if (repeat_addr1 != -1) {
+				cur_addr = repeat_addr;
+			} else {
+				sound_playing1 = 0;
+			}
+		}
+	}
+	
+	if (sound_playing2) {
+		if (cur_addr2 < buf_start2 || cur_addr2 >= (buf_start2 + sizeof(sound_buf2))) {
+			buf_start2 = cur_addr2 & 0xFFFFFFFE;
+			spi_flash_read(buf_start2, &sound_buf2, sizeof(sound_buf2));
+		}
+		
+		sample += sound_buf2[cur_addr2 - buf_start2];
+		
+		cur_addr2++;
+		
+		if (cur_addr2 >= stop_addr2) {
+			if (repeat_addr2 != -1) {
+				cur_addr2 = repeat_addr2;
+			} else {
+				sound_playing2 = 0;
+			}
+		}
+	}
+	
+	if (sound_playing1 && sound_playing2) {
+		sample -= 128;
+	}
+	
+	ACE_set_sdd_value(SDD1_OUT, sample);
+	
+	if (!sound_playing1 && !sound_playing2) {
+		MSS_TIM1_stop();
 	}
 
 	MSS_TIM1_clear_irq();
-
-
 }
 
 void flash_write() {
