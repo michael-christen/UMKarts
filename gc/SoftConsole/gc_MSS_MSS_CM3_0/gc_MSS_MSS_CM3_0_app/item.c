@@ -5,6 +5,7 @@
 #include "drivers/mss_rtc/mss_rtc.h"
 #include "messages.h"
 #include "game.h"
+#include "player.h"
 
 int ITEM_WEIGHT [MAX_NUM_ITEMS];
 item CURRENT_ITEM = MAX_NUM_ITEMS;
@@ -165,12 +166,33 @@ void use_star() {
 	PLAYER_DRIVE_set_modification(mod_star, ITEM_DURATIONS[STAR]);
 }
 
+uint8_t _hit_check_valid_player(uint8_t shot_me_id) {
+	if (opId == DRIVER) return 0;
+	if (g_game_state == GAME_IN_GAME) {
+		for (i = 0; i < g_player_table.size; i++) {
+			if (opId == g_player_table.players[i]) {
+				return 1;
+			}
+		}
+		return 0;
+	}
+	return 1;
+}
+
+
 void hit_green_shell() {
+	int i;
 	uint8_t opId = LASER_TAG_hit();
 	// You can't shoot yourself
 	if (opId == DRIVER) {
 		return;
 	}
+
+	if (!_hit_check_valid_player(opId)) {
+		xbee_printf("Not shot be a valid player %d", opId);
+		return;
+	}
+
 	PLAYER_DRIVE_set_invincible();
 	xbee_printf("He shot me, %d\r\n", opId);
 	PLAYER_DRIVE_set_modification(mod_hit_by_shell, ITEM_DURATIONS[GREEN_SHELL]);
@@ -197,6 +219,9 @@ void subtractLife() {
 			PLAYER_DRIVE_set_modification(mod_died, 10);
 			player_lives = 0;
 			g_game_state = GAME_OVER;
+			g_player_table.size = 0;
+			player_add_player(player_get_address_from_driver(DRIVER));
+			xbee_printf("WE LOST, SAD DAY!");
 		} else {
 			message_game_event_all(DRIVER, 255, eMessageActionLoseLife, 255, XBEE_APP_OPT_ACK);
 			player_lives--;
