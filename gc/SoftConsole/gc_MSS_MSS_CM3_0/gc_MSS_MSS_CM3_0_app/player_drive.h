@@ -41,4 +41,5 @@ void mod_speed_slow();
 void mod_star();
 void mod_hit_by_shell();
 void mod_hit_by_lightning();
+void mod_died();
 #endif
