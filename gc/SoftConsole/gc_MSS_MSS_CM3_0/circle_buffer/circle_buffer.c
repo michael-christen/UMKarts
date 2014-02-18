@@ -14,7 +14,7 @@ void CircularBufferInit(CircularBuffer * cb, void ** buffer, size_t capacity) {
 int CircularBufferWrite(CircularBuffer *cb, void *item) {
   size_t old_write, new_write;
   do {
-	old_write = *((volatile size_t *) &(cb->write));
+    old_write = *((volatile size_t *) &(cb->write));
     new_write = old_write + 1;
     if (new_write >= cb->len) new_write = 0;
     /* If were at new_write == cb->read, then we're out of room */
